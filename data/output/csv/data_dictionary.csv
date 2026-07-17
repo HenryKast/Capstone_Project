@@ -1,0 +1,17 @@
+sheet,column,description,source
+players,hs_class,HS class year (recruiting match or estimate),On3 ingest / birthdate estimate
+recruiting,recruiting_rank,"Industry Composite rank, else Rivals-only",On3/Rivals
+recruiting,recruiting_source,industry_composite | rivals | unranked,derived
+draft,college,College at time of NFL draft,nflverse draft picks
+draft,draft_overall,Overall NFL draft pick,nflverse
+draft,draft_team,Team that drafted the player,nflverse
+team_context,sos_opp_win_pct,Rookie-season schedule SOS (avg opponent win%),nflverse schedules
+team_context,opportunity_proxy,Prior-year team positional PPR (vacated usage proxy),nflverse player stats
+team_context,off_pass_rate_proxy,Team pass-rate proxy in draft/rookie year,nflverse team stats
+combine,forty,40-yard dash,nflverse combine
+college_production,cfb_*,Final CFB season production (requires CFBD_API_KEY),CollegeFootballData
+fantasy_rookie,rookie_ppr,PPR fantasy points in first NFL season,nflverse player stats
+pre_draft_fantasy,ff_adp,FantasyPros overall ADP (AVG) in the player's rookie season only,data/manual/FantasyPros_*_Overall_ADP_Rankings.csv
+pre_draft_fantasy,ff_adp_rank,FantasyPros overall rank in that same rookie-season ADP file,FantasyPros
+pre_draft_fantasy,ff_ecr,Same as overall ADP rank from FantasyPros file (Rank column),FantasyPros
+players_master,*,Wide joined modeling table,compiled

@@ -1,0 +1,1057 @@
+hs_class,player_name,position,industry_composite_rank,industry_composite_stars,industry_composite_rating,rivals_rank,rivals_stars,rivals_rating,hometown,high_school,state,on3_person_key,source_page
+2019,Jadon Haselwood,WR,3,5,98.86182795698926,4.0,5.0,6.1,"Ellenwood, GA",Cedar Grove,GA,52747,industry_comparison
+2019,Trey Sanders,RB,10,5,98.20645161290322,3.0,5.0,6.1,"Bradenton, FL",IMG Academy,FL,116221,industry_comparison
+2019,John Emery Jr.,RB,12,5,97.96856007480132,36.0,4.0,6.0,"Destrehan, LA",Destrehan,LA,63140,industry_comparison
+2019,Spencer Rattler,QB,15,5,97.8483870967742,13.0,5.0,6.1,"Phoenix, AZ",Pinnacle,AZ,108040,industry_comparison
+2019,Bru McCoy,WR,19,5,97.6252688172043,12.0,5.0,6.1,"Santa Ana, CA",Mater Dei,CA,15293,industry_comparison
+2019,Garrett Wilson,WR,22,5,97.24677419354839,32.0,4.0,6.0,"Austin, TX",Lake Travis,TX,45104,industry_comparison
+2019,Theo Wease Jr.,WR,23,5,97.24074333800841,11.0,5.0,6.1,"Allen, TX",Allen,TX,112161,industry_comparison
+2019,George Pickens,WR,25,5,97.10647498831229,7.0,5.0,6.1,"Hoover, AL",Hoover,AL,45750,industry_comparison
+2019,Jerrion Ealy,RB,26,5,97.03004908835906,58.0,4.0,6.0,"Flowood, MS",Jackson Prep,MS,61051,industry_comparison
+2019,Bo Nix,QB,32,5,96.60855539971948,29.0,5.0,6.1,"Pinson, AL",Scottsboro,AL,11186,industry_comparison
+2019,Kyle Ford,WR,34,4,96.5253038803179,65.0,4.0,6.0,"Orange, CA",Orange Lutheran,CA,76595,industry_comparison
+2019,Dominick Blaylock,WR,35,4,96.47934782608696,55.0,4.0,6.0,"Marietta, GA",Walton,GA,37580,industry_comparison
+2019,Jordan Whittington,WR,38,4,96.23478260869565,33.0,4.0,6.0,"Cuero, TX",Cuero,TX,66198,industry_comparison
+2019,Joseph Ngata,WR,40,4,96.13252688172042,27.0,5.0,6.1,"Folsom, CA",Folsom,CA,62353,industry_comparison
+2019,Zach Charbonnet,RB,42,4,96.01340579710147,60.0,4.0,6.0,"Westlake Village, CA",Oaks Christian,CA,122635,industry_comparison
+2019,Frank Ladson,WR,43,4,95.9358695652174,56.0,4.0,6.0,"Miami, FL",South Dade,FL,44049,industry_comparison
+2019,Trejan Bridges,WR,49,4,95.6909069658719,21.0,5.0,6.1,"Carrollton, TX",Hebron,TX,115162,industry_comparison
+2019,Jayden Daniels,QB,50,4,95.60253623188406,57.0,4.0,5.9,"San Bernardino, CA",Cajon,CA,58632,industry_comparison
+2019,Jake Smith,WR,53,4,95.50978260869564,48.0,4.0,6.0,"Scottsdale, AZ",Notre Dame Preparatory,AZ,53859,industry_comparison
+2019,Baylor Cupp,TE,55,4,95.41645628798503,134.0,4.0,5.9,"Brock, TX",Brock,TX,9443,industry_comparison
+2019,Graham Mertz,QB,57,4,95.33015427769986,42.0,4.0,6.0,"Mission, KS",Blue Valley North,KS,46366,industry_comparison
+2019,Wan'Dale Robinson,WR,59,4,95.22391304347826,61.0,4.0,6.0,"Frankfort, KY",Western Hills,KY,120148,industry_comparison
+2019,Ryan Hilinski,QB,61,4,95.1855072463768,45.0,4.0,6.0,"Orange, CA",Orange Lutheran,CA,103285,industry_comparison
+2019,Devyn Ford,RB,63,4,95.16630434782608,40.0,4.0,6.0,"Stafford, VA",North Stafford,VA,36657,industry_comparison
+2019,Jeremiah Payton,WR,75,4,94.78442028985506,76.0,4.0,5.9,"Neptune Beach, FL",Duncan U. Fletcher,FL,60180,industry_comparison
+2019,Dylan Wright,WR,82,4,94.52789855072464,88.0,4.0,5.9,"Mesquite, TX",West Mesquite,TX,40119,industry_comparison
+2019,Trey Palmer,WR,86,4,94.46241234221597,20.0,5.0,6.1,"Kentwood, LA",Kentwood,LA,116170,industry_comparison
+2019,Jameson Williams,WR,87,4,94.45,87.0,4.0,5.9,"Saint Louis, MO",Cardinal Ritter College Prep,MO,56104,industry_comparison
+2019,Elijah Higgins,WR,88,4,94.41920289855072,119.0,4.0,5.9,"Austin, TX",Bowie,TX,41219,industry_comparison
+2019,Sam Howell,QB,91,4,94.39202898550725,111.0,4.0,5.9,"Monroe, NC",Sun Valley,NC,142258,industry_comparison
+2019,Ramel Keyton,WR,94,4,94.28695652173911,164.0,4.0,5.9,"Marietta, GA",Marietta,GA,98142,industry_comparison
+2019,Keon Zipperer,TE,95,4,94.28079710144928,160.0,4.0,5.9,"Lakeland, FL",Lakeland,FL,73635,industry_comparison
+2019,Mark-Antony Richards,RB,97,4,94.21521739130435,99.0,4.0,5.9,"West Palm Beach, FL",Wellington,FL,83650,industry_comparison
+2019,Mycah Pittman,WR,98,4,94.20434782608696,113.0,4.0,5.9,"Calabasas, CA",Calabasas,CA,90569,industry_comparison
+2019,Treylon Burks,WR,105,4,94.10217391304349,146.0,4.0,5.9,"Warren, AR",Warren,AR,116324,industry_comparison
+2019,Noah Cain,RB,108,4,94.02971014492753,43.0,4.0,6.0,"Bradenton, FL",IMG Academy,FL,93549,industry_comparison
+2019,David Bell,WR,111,4,93.89166666666667,95.0,4.0,5.9,"Indianapolis, IN",Warren Central,IN,31468,industry_comparison
+2019,Puka Nacua,WR,115,4,93.6467391304348,152.0,4.0,5.9,"Orem, UT",Orem,UT,96993,industry_comparison
+2019,Isaiah Williams,ATH,117,4,93.61304347826086,64.0,4.0,6.0,"Saint Louis, MO",Trinity Catholic,MO,49864,industry_comparison
+2019,Tyrion Davis-Price,RB,119,4,93.58260869565218,144.0,4.0,5.9,"Baton Rouge, LA",Southern University Lab School,LA,118709,industry_comparison
+2019,Austin Jones,RB,121,4,93.55217391304346,107.0,4.0,5.9,"Oakland, CA",Bishop O'Dowd,CA,142931,industry_comparison
+2019,Isaiah Spiller,RB,131,4,93.3286231884058,153.0,4.0,5.9,"Spring, TX",Klein Collins,TX,49770,industry_comparison
+2019,John Dunmore,WR,133,4,93.30579710144927,92.0,4.0,5.9,"Hollywood, FL",Chaminade-Madonna Prep,FL,63129,industry_comparison
+2019,Austin Stogner,TE,143,4,93.10398550724638,,4.0,5.8,"Plano, TX",Prestonwood Christian,TX,8741,industry_comparison
+2019,Hudson Henry,TE,144,4,92.97463768115941,,4.0,5.8,"Little Rock, AR",Pulaski Academy,AR,48309,industry_comparison
+2019,Lance Wilhoite,WR,146,4,92.95,71.0,4.0,6.0,"Nashville, TN",Franklin Road Academy,TN,77913,industry_comparison
+2019,Jaden Payoute,WR,148,4,92.79746376811595,237.0,4.0,5.8,"Chesterfield, VA",Lloyd C. Bird,VA,52671,industry_comparison
+2019,Devonta Lee,WR,152,4,92.71485507246379,126.0,4.0,5.9,"Amite, LA",Amite,LA,36520,industry_comparison
+2019,Brayden Liebrock,TE,154,4,92.69492753623189,77.0,4.0,5.9,"Chandler, AZ",Chandler,AZ,13547,industry_comparison
+2019,Marcus Washington,WR,161,4,92.59855072463768,105.0,4.0,5.9,"Saint Louis, MO",Trinity Catholic,MO,83077,industry_comparison
+2019,Dannis Jackson,WR,164,4,92.55108695652174,184.0,4.0,5.8,"Sumrall, MS",Sumrall,MS,142658,industry_comparison
+2019,Sean Dollars,RB,166,4,92.41811594202899,74.0,4.0,5.9,"Santa Ana, CA",Mater Dei,CA,105393,industry_comparison
+2019,Eric Gray,RB,173,4,92.21847826086957,,4.0,5.8,"Memphis, TN",Lausanne Collegiate School,TN,42130,industry_comparison
+2019,Cornelius Johnson,WR,182,4,92.06630434782609,171.0,4.0,5.8,"Greenwich, CT",Brunswick School,CT,142313,industry_comparison
+2019,Dylan Morris,QB,184,4,91.9518115942029,177.0,4.0,5.8,"Graham, WA",Graham-Kapowsin,WA,39984,industry_comparison
+2019,Sampson James,RB,186,4,91.94057971014493,185.0,4.0,5.8,"Avon, IN",Avon,IN,142994,industry_comparison
+2019,Milton Wright,WR,188,4,91.89963768115942,223.0,4.0,5.8,"Louisville, KY",Christian Academy of Louisville,KY,89808,industry_comparison
+2019,Taulia Tagovailoa,QB,189,4,91.8891304347826,,4.0,5.8,"Alabaster, AL",Thompson,AL,110451,industry_comparison
+2019,Kenny McIntosh,RB,194,4,91.7286231884058,115.0,4.0,5.9,"Fort Lauderdale, FL",NSU University School,FL,73336,industry_comparison
+2019,Jalen Curry,WR,195,4,91.70326086956523,151.0,4.0,5.9,"Houston, TX",St Pius X,TX,54227,industry_comparison
+2019,Josh Delgado,WR,197,4,91.66594202898551,201.0,4.0,5.8,"Bradenton, FL",IMG Academy,FL,67015,industry_comparison
+2019,Steele Chambers,RB,202,4,91.58079710144928,,3.0,5.7,"Roswell, GA",Blessed Trinity Catholic,GA,108250,industry_comparison
+2019,Grayson Boomer,TE,204,4,91.56557971014492,,4.0,5.8,"Collinsville, OK",Collinsville,OK,46650,industry_comparison
+2019,Max Duggan,QB,207,4,91.5,,4.0,5.8,"Council Bluffs, IA",Lewis Central,IA,86594,industry_comparison
+2019,Jude Wolfe,TE,209,4,91.4927536231884,239.0,4.0,5.8,"Bellflower, CA",St. John Bosco,CA,68515,industry_comparison
+2019,Patrick Herbert,TE,210,4,91.47101449275362,240.0,4.0,5.8,"Eugene, OR",Sheldon,OR,95409,industry_comparison
+2019,Jonathan Mingo,WR,213,4,91.443115942029,150.0,4.0,5.9,"Brandon, MS",Brandon,MS,64808,industry_comparison
+2019,Ryland Goede,TE,214,4,91.44166666666666,,3.0,5.7,"Acworth, GA",Kennesaw Mountain,GA,103987,industry_comparison
+2019,Khafre Brown,WR,216,4,91.3355072463768,226.0,4.0,5.8,"Charlotte, NC",West Mecklenburg,NC,74771,industry_comparison
+2019,Darren Jones,WR,218,4,91.30615942028986,162.0,4.0,5.9,"San Bernardino, CA",Cajon,CA,143210,industry_comparison
+2019,Taisun Phommachanh,QB,220,4,91.24057971014493,168.0,4.0,5.9,"Bridgeport, CT",Avon Old Farms,CT,109833,industry_comparison
+2019,Deondrick Glass,RB,226,4,91.19347826086955,250.0,4.0,5.8,"Katy, TX",Katy,TX,34474,industry_comparison
+2019,Donavon Greene,WR,229,4,91.15942028985506,,3.0,5.7,"Mount Airy, NC",Mount Airy,NC,37984,industry_comparison
+2019,Daimarqua Foster,RB,230,4,91.13949275362319,,3.0,5.7,"Wichita Falls, TX",Hirschi,TX,27918,industry_comparison
+2019,Trey Knox,WR,232,4,91.10978260869565,128.0,4.0,5.9,"Murfreesboro, TN",Blackman,TN,116088,industry_comparison
+2019,Giles Jackson,WR,233,4,91.10507246376811,233.0,4.0,5.8,"Oakley, CA",Freedom,CA,143314,industry_comparison
+2019,Drake London,WR,235,4,91.04094202898551,229.0,4.0,5.8,"Moorpark, CA",Moorpark,CA,38806,industry_comparison
+2019,Derrian Brown,RB,236,4,91.02391304347826,238.0,4.0,5.8,"Buford, GA",Buford,GA,34983,industry_comparison
+2019,Colby Bowman,WR,242,4,90.99384057971015,,3.0,5.7,"Bellflower, CA",St. John Bosco,CA,24503,industry_comparison
+2019,Kam Brown,WR,243,4,90.97789855072465,204.0,4.0,5.8,"Colleyville, TX",Colleyville Heritage,TX,70865,industry_comparison
+2019,Isaiah Hazel,WR,246,4,90.92355072463768,,4.0,5.8,"Upper Marlboro, MD",Dr. Henry Wise,MD,49541,industry_comparison
+2019,Makiya Tongue,WR,247,4,90.91739130434782,,4.0,5.8,"Baton Rouge, LA",University Lab,LA,81393,industry_comparison
+2019,Langston Anderson,WR,253,4,90.8376811594203,,3.0,5.7,"Midlothian, TX",Heritage,TX,78103,industry_comparison
+2019,Hank Bachmeier,QB,255,4,90.79275362318842,194.0,4.0,5.8,"Murrieta, CA",Murrieta Valley,CA,47427,industry_comparison
+2019,Chez Mellusi,RB,259,4,90.6644927536232,,3.0,5.7,"Naples, FL",Naples,FL,21128,industry_comparison
+2019,Jaelyn Lay,TE,260,4,90.64855072463769,157.0,4.0,5.9,"Riverdale, GA",Riverdale,GA,52856,industry_comparison
+2019,Peyton Powell,QB,262,4,90.61630434782609,236.0,4.0,5.8,"Odessa, TX",Permian,TX,96321,industry_comparison
+2019,Roschon Johnson,RB,265,4,90.5695652173913,,3.0,5.7,"Port Neches, TX",Port Neches-Groves,TX,142411,industry_comparison
+2019,Jirehl Brock,RB,269,4,90.55507246376811,209.0,4.0,5.8,"Quincy, IL",Quincy,IL,61857,industry_comparison
+2019,Jordan Wilmore,RB,274,4,90.48550724637681,,3.0,5.7,"Lawndale, CA",Lawndale,CA,66234,industry_comparison
+2019,Ja'Varrius Johnson,WR,275,4,90.48369565217392,,3.0,5.7,"Trussville, AL",Hewitt-Trussville,AL,143378,industry_comparison
+2019,Cade McNamara,QB,277,4,90.44130434782609,,4.0,5.8,"Reno, NV",Damonte Ranch,NV,16629,industry_comparison
+2019,Nay'Quan Wright,RB,278,4,90.41123188405797,173.0,4.0,5.8,"Opa Locka, FL",Miami Carol City,FL,91804,industry_comparison
+2019,Keilan Robinson,RB,279,4,90.40434782608696,,4.0,5.8,"Washington, DC",St. John's College,DC,71944,industry_comparison
+2019,John Metchie,WR,281,4,90.38586956521739,187.0,4.0,5.8,"Hightstown, NJ",Peddie School,NJ,63424,industry_comparison
+2019,Cameron Davis,RB,285,4,90.34963768115941,207.0,4.0,5.8,"Upland, CA",Upland,CA,17748,industry_comparison
+2019,Luke McCaffrey,QB,288,4,90.32753623188405,,3.0,5.7,"Littleton, CO",Valor Christian,CO,80783,industry_comparison
+2019,Jahleel Billingsley,TE,289,4,90.32608695652173,220.0,4.0,5.8,"Chicago, IL",Phillips Academy,IL,52965,industry_comparison
+2019,Garrett Shrader,QB,291,4,90.32028985507246,,4.0,5.8,"Charlotte, NC",Charlotte Christian,NC,45063,industry_comparison
+2019,Jashawn Sheffield,WR,293,4,90.28768115942029,,4.0,5.8,"Saint Simons Island, GA",Frederica Academy,GA,57355,industry_comparison
+2019,KJ Jefferson,QB,294,4,90.27355072463769,249.0,4.0,5.8,"Sardis, MS",North Panola,MS,142146,industry_comparison
+2019,Marcus Major,RB,303,4,90.11702898550725,,4.0,5.8,"Oklahoma City, OK",Millwood,OK,82817,industry_comparison
+2019,D.J. Williams,RB,304,4,90.10253623188406,,3.0,5.7,"Sebring, FL",Sebring,FL,27703,industry_comparison
+2019,Ta'Quan Roberson,QB,306,4,90.04565217391304,,4.0,5.8,"Wayne, NJ",DePaul Catholic,NJ,109629,industry_comparison
+2019,Jalon Jones,QB,307,4,90.04021739130435,,3.0,5.7,"Richmond, VA",Henrico,VA,142281,industry_comparison
+2019,D'Wan Mathis,QB,308,4,90.03985507246377,125.0,4.0,5.9,"Belleville, MI",Oak Park,MI,27481,industry_comparison
+2019,Lance LeGendre,QB,309,4,90.03115942028987,,4.0,5.8,"New Orleans, LA",Warren Easton,LA,77857,industry_comparison
+2019,Jaylin Simpson,ATH,311,4,90.0,,4.0,5.8,"Saint Simons Island, GA",Frederica Academy,GA,59045,industry_comparison
+2019,Kyren Williams,RB,312,4,90.0,,3.0,5.7,"Saint Louis, MO",St. John Vianney,MO,77242,industry_comparison
+2019,Peter Parrish,QB,326,4,89.91630434782608,,3.0,5.7,"Phenix City, AL",Central,AL,96212,industry_comparison
+2019,Paul Tyson,QB,328,4,89.85688405797102,,4.0,5.8,"Trussville, AL",Hewitt-Trussville,AL,95858,industry_comparison
+2019,Tyler Fromm,TE,331,4,89.83043478260869,,3.0,5.7,"Warner Robins, GA",Warner Robins,GA,117585,industry_comparison
+2019,John Rhys Plumlee,QB,334,4,89.76014492753625,,3.0,5.7,"Hattiesburg, MS",Oak Grove,MS,63807,industry_comparison
+2019,Jackson Lowe,TE,342,4,89.67427536231885,,3.0,5.7,"Cartersville, GA",Cartersville,GA,51616,industry_comparison
+2019,Jacob Zeno,QB,343,4,89.66811594202899,,4.0,5.8,"San Antonio, TX",John Jay,TX,52318,industry_comparison
+2019,Grant Tisdale,QB,344,4,89.66666666666667,,4.0,5.8,"Allen, TX",Allen,TX,46606,industry_comparison
+2019,Jalen Wydermyer,TE,347,4,89.66666666666667,,4.0,5.8,"Dickinson, TX",Dickinson,TX,54620,industry_comparison
+2019,Keshawn King,RB,349,4,89.66666666666667,,4.0,5.8,"Orange Park, FL",Oakleaf,FL,73800,industry_comparison
+2019,Demariyon Houston,WR,351,4,89.66666666666667,,3.0,5.7,"Oklahoma City, OK",Millwood,OK,142917,industry_comparison
+2019,Jalen Moreno-Cropper,ATH,352,4,89.66666666666667,,3.0,5.7,"Clovis, CA",Buchanan,CA,54222,industry_comparison
+2019,Kenan Christon,RB,354,4,89.66666666666667,,3.0,5.7,"San Diego, CA",Madison,CA,72673,industry_comparison
+2019,Nolan Groulx,WR,357,4,89.64492753623189,228.0,4.0,5.8,"Cornelius, NC",William Amos Hough,NC,93873,industry_comparison
+2019,Breece Hall,RB,359,4,89.61340579710144,,3.0,5.7,"Wichita, KS",Northwest,KS,13658,industry_comparison
+2019,Jacob Conover,QB,362,4,89.56050724637682,,3.0,5.7,"Chandler, AZ",Chandler,AZ,51862,industry_comparison
+2019,Joey Yellen,QB,363,4,89.48550724637681,,3.0,5.7,"Mission Viejo, CA",Mission Viejo,CA,62899,industry_comparison
+2019,Jacoby Pinckney,WR,365,4,89.43949275362318,,3.0,5.7,"Roebuck, SC",Dorman,SC,52381,industry_comparison
+2019,Keveon Mullins,WR,367,4,89.41557971014494,189.0,4.0,5.8,"Memphis, TN",Whitehaven,TN,73862,industry_comparison
+2019,Jam Griffin,RB,371,4,89.36666666666666,,4.0,5.8,"Rome, GA",Rome,GA,56247,industry_comparison
+2019,Erick All,TE,375,4,89.36666666666666,,4.0,5.8,"Fairfield, OH",Fairfield,OH,42544,industry_comparison
+2019,Cale Millen,QB,376,4,89.36666666666666,,3.0,5.7,"Snoqualmie, WA",Mount Si,WA,16865,industry_comparison
+2019,Grant Gunnell,QB,382,4,89.33333333333333,,3.0,5.7,"Houston, TX",St Pius X,TX,46482,industry_comparison
+2019,Chris Hickman,WR,388,4,89.33333333333333,,3.0,5.7,"Omaha, NE",Burke,NE,21907,industry_comparison
+2019,Jadon Jackson,WR,389,4,89.33333333333333,,3.0,5.7,"Centerton, AR",Bentonville West,AR,142937,industry_comparison
+2019,Patrick Garwo,RB,390,4,89.33333333333333,,4.0,5.8,"Fairless Hills, PA",Conwell Egan Catholic,PA,95381,industry_comparison
+2019,Traevon Kenion,TE,391,4,89.33333333333333,,3.0,5.7,"Monroe, NC",Wake Forest,NC,114350,industry_comparison
+2019,Darien Chase,WR,395,4,89.29565217391304,,3.0,5.7,"Vancouver, WA",Union,WA,30040,industry_comparison
+2019,Brenton Strange,TE,398,4,89.09094202898552,221.0,4.0,5.8,"Parkersburg, WV",Parkersburg,WV,14025,industry_comparison
+2019,Marcus Crowley,RB,400,4,89.06666666666666,,4.0,5.8,"Jacksonville, FL",Trinity Christian Academy,FL,82592,industry_comparison
+2019,Zonovan Knight,RB,402,3,89.06666666666666,,4.0,5.8,"Bailey, NC",Southern Nash,NC,123904,industry_comparison
+2019,Connor Bazelak,QB,403,3,89.06195652173913,,3.0,5.7,"Dayton, OH",Archbishop Alter,OH,25480,industry_comparison
+2019,Michael Johnson Jr.,QB,404,3,89.04746376811595,,3.0,5.7,"Eugene, OR",Sheldon,OR,142107,industry_comparison
+2019,TQ Jackson,WR,406,3,89.03333333333333,,4.0,5.8,"Jefferson, TX",Jefferson,TX,142892,industry_comparison
+2019,Shamar Nash,WR,407,3,89.03333333333333,,4.0,5.8,"Bradenton, FL",IMG Academy,FL,106299,industry_comparison
+2019,Jayvaun Wilson,RB,411,3,89.03333333333333,,3.0,5.7,"Valencia, CA",Valencia,CA,59260,industry_comparison
+2019,Kenyon Jackson,WR,414,3,89.0072463768116,212.0,4.0,5.8,"Loganville, GA",Grayson,GA,142761,industry_comparison
+2019,Rahmir Johnson,RB,415,3,89.0,,4.0,5.8,"Oradell, NJ",Bergen Catholic,NJ,142295,industry_comparison
+2019,Ethan Rae,TE,421,3,89.0,,4.0,5.8,"Orange, CA",Orange Lutheran,CA,43017,industry_comparison
+2019,Ronald Thompkins,RB,422,3,89.0,,3.0,5.7,"Loganville, GA",Grayson,GA,102222,industry_comparison
+2019,Brian Maurer,QB,423,3,89.0,,3.0,5.7,"Ocala, FL",West Port,FL,14624,industry_comparison
+2019,Zach Calzada,QB,430,3,89.0,,3.0,5.7,"Buford, GA",Lanier,GA,122623,industry_comparison
+2019,Dionte Marks,WR,431,3,89.0,,3.0,5.7,"Deland, FL",Deland,FL,37188,industry_comparison
+2019,Tayvion Robinson,WR,436,3,88.80833333333334,193.0,4.0,5.8,"Virginia Beach, VA",Frank W. Cox,VA,110980,industry_comparison
+2019,Logan Lee,TE,444,3,88.73333333333333,,3.0,5.7,"Orion, IL",Orion,IL,79783,industry_comparison
+2019,Michael Martinez,TE,446,3,88.73333333333333,,4.0,5.8,"Santa Ana, CA",Mater Dei,CA,87991,industry_comparison
+2019,Jaylen Ellis,WR,448,3,88.73333333333333,,3.0,5.7,"Round Rock, TX",Cedar Ridge,TX,58856,industry_comparison
+2019,Bradley Archer,TE,450,3,88.73333333333333,,3.0,5.7,"Livermore, CA",Livermore,CA,11749,industry_comparison
+2019,Manuel Allen,WR,451,3,88.70688405797101,,3.0,5.7,"Moreno Valley, CA",Rancho Verde,CA,82211,industry_comparison
+2019,Ty Evans,QB,453,3,88.7,,3.0,5.7,"Monument, CO",Palmer Ridge,CO,116980,industry_comparison
+2019,Cameron Coleman,WR,458,3,88.66666666666667,,3.0,5.7,"Saint Louis, MO",Cardinal Ritter College Prep,MO,17723,industry_comparison
+2019,Braedin Huffman-Dixon,WR,461,3,88.66666666666667,,3.0,5.7,"Santa Ana, CA",Mater Dei,CA,142915,industry_comparison
+2019,CJ Boone,WR,462,3,88.66666666666667,,3.0,5.7,"Saint Louis, MO",Parkway North,MO,23563,industry_comparison
+2019,Tamauzia Brown,WR,469,3,88.6,,4.0,5.8,"Newton, TX",Newton,TX,109985,industry_comparison
+2019,Brieon Fuller,WR,470,3,88.5,,3.0,5.7,"Miami, FL",Miami Jackson,FL,14916,industry_comparison
+2019,Jaren Mangham,RB,471,3,88.5,,,,"Detroit, MI",Cass Technical,MI,56902,industry_comparison
+2019,Genson Hooper-Price,WR,472,3,88.493115942029,,3.0,5.6,"Houston, TX",St. John's,TX,45560,industry_comparison
+2019,La'Vontae Shenault,WR,473,3,88.43442028985507,197.0,4.0,5.8,"DeSoto, TX",DeSoto,TX,77385,industry_comparison
+2019,Darwin Barlow,RB,475,3,88.43333333333334,,4.0,5.8,"Newton, TX",Newton,TX,31133,industry_comparison
+2019,Charles Njoku,WR,477,3,88.43333333333334,,4.0,5.8,"Wayne, NJ",Wayne Hills,NJ,20238,industry_comparison
+2019,Neil Nunn,ATH,478,3,88.43333333333334,,3.0,5.7,"Miami, FL",Miami Palmetto,FL,91935,industry_comparison
+2019,Jamie Nance,WR,479,3,88.43333333333334,,4.0,5.8,"Blanchard, OK",Blanchard,OK,56159,industry_comparison
+2019,Maurice Goolsby,WR,482,3,88.4,,4.0,5.8,"Dunnellon, FL",Dunnellon,FL,86376,industry_comparison
+2019,Cameron Jones,QB,487,3,88.4,,4.0,5.8,"Lexington, KY",Frederick Douglass,KY,143413,industry_comparison
+2019,Jacob Clark,QB,492,3,88.4,,4.0,5.8,"Rockwall, TX",Rockwall,TX,51853,industry_comparison
+2019,Brendon Clark,QB,495,3,88.36666666666666,,3.0,5.7,"Midlothian, VA",Manchester,VA,13813,industry_comparison
+2019,Brannon Spector,WR,499,3,88.36666666666666,,3.0,5.7,"Calhoun, GA",Calhoun,GA,13416,industry_comparison
+2019,Hayden Rucci,TE,500,3,88.36666666666666,,4.0,5.8,"Lititz, PA",Warwick,PA,47834,industry_comparison
+2019,Taj Davis,WR,501,3,88.36666666666666,,3.0,5.7,"Upland, CA",Upland,CA,109853,industry_comparison
+2019,Larry Hodges,TE,507,3,88.33333333333333,,3.0,5.7,"Tampa, FL",Jesuit,FL,78291,industry_comparison
+2019,TJ Jones,WR,508,3,88.33333333333333,,3.0,5.7,"Lake City, FL",Columbia,FL,143593,industry_comparison
+2019,Bryce Kirtz,WR,512,3,88.16666666666667,,3.0,5.6,"Brownsburg, IN",Brownsburg,IN,15823,industry_comparison
+2019,George Holani,RB,514,3,88.16666666666667,,3.0,5.6,"Bellflower, CA",St. John Bosco,CA,45703,industry_comparison
+2019,Tre'Von Morgan,WR,524,3,88.1,,4.0,5.8,"Massillon, OH",Washington,OH,115140,industry_comparison
+2019,Mershawn Rice,ATH,527,3,88.06666666666666,,4.0,5.8,"Reynoldsburg, OH",Reynoldsburg,OH,87083,industry_comparison
+2019,Qualan Jones,RB,530,3,88.06666666666666,,4.0,5.8,"Cedar Hill, TX",Trinity Leadership,TX,142666,industry_comparison
+2019,Nick Jackson,WR,533,3,88.06666666666666,,3.0,5.7,"Atlanta, GA",Lovett,GA,142970,industry_comparison
+2019,Julius Davis,RB,534,3,88.06666666666666,,3.0,5.7,"Menomonee Falls, WI",Menomonee Falls,WI,68760,industry_comparison
+2019,King Doerue,RB,540,3,88.03333333333333,,3.0,5.7,"Amarillo, TX",Tascosa,TX,75237,industry_comparison
+2019,Munir McClain,WR,541,3,88.03333333333333,,3.0,5.7,"San Juan Capistrano, CA",JSerra Catholic,CA,90534,industry_comparison
+2019,Ja'markis Weston,WR,542,3,88.03333333333333,,3.0,5.7,"Clewiston, FL",Clewiston,FL,50650,industry_comparison
+2019,JR Waters,WR,551,3,87.83333333333333,,3.0,5.6,"Oxnard, CA",Oxnard Union,CA,68371,industry_comparison
+2019,Spencer Brasch,QB,553,3,87.8,,3.0,5.7,"Gilbert, AZ",Higley,AZ,107929,industry_comparison
+2019,Tre Mosley,WR,560,3,87.76666666666667,,3.0,5.7,"West Bloomfield, MI",West Bloomfield,MI,115010,industry_comparison
+2019,Brendan Costello,QB,563,3,87.76666666666667,,3.0,5.7,"San Clemente, CA",San Clemente,CA,13695,industry_comparison
+2019,Maurice Massey,WR,568,3,87.73333333333333,,3.0,5.7,"Saint Louis, MO",Kirkwood,MO,86420,industry_comparison
+2019,Daniel Carter,RB,576,3,87.7,,3.0,5.7,"Fort Lauderdale, FL",St. Thomas Aquinas,FL,29136,industry_comparison
+2019,Aaron Young,RB,577,3,87.7,,3.0,5.7,"Coatesville, PA",Coatesville,PA,869,industry_comparison
+2019,Keenan Garber,WR,580,3,87.68115942028984,,3.0,5.6,"Lawrence, KS",Lawrence Free State,KS,71856,industry_comparison
+2019,Kedon Slovis,QB,581,3,87.66666666666667,,3.0,5.7,"Scottsdale, AZ",Desert Mountain,AZ,71735,industry_comparison
+2019,Kyle Bilodeau,TE,583,3,87.56666666666666,,3.0,5.6,"Woodberry Forest, VA",Woodberry Forest,VA,76418,industry_comparison
+2019,Emery Simmons,WR,586,3,87.53333333333333,,3.0,5.6,"Hope Mills, NC",South View,NC,41686,industry_comparison
+2019,Kendall Abdur-Rahman,WR,587,3,87.53333333333333,,3.0,5.6,"Edwardsville, IL",Edwardsville,IL,72701,industry_comparison
+2019,TJ Sheffield,WR,589,3,87.5,,3.0,5.6,"Thompson's Station, TN",Independence,TN,113149,industry_comparison
+2019,Mike Sainristil,WR,591,3,87.5,,3.0,5.6,"Everett, MA",Everett,MA,89339,industry_comparison
+2019,Tyler Foster,TE,594,3,87.5,,3.0,5.7,"Pickerington, OH",Pickerington North,OH,117578,industry_comparison
+2019,Davis Beville,QB,595,3,87.46666666666667,,4.0,5.8,"Greenville, SC",Greenville,SC,32352,industry_comparison
+2019,Taron Madison,RB,601,3,87.43333333333334,,3.0,5.7,"Banning, CA",Banning,CA,110351,industry_comparison
+2019,Jordan Houston,RB,606,3,87.4,,3.0,5.7,"Oakton, VA",Flint Hill School,VA,141909,industry_comparison
+2019,Ahmarean Brown,WR,608,3,87.4,,3.0,5.7,"Tampa, FL",Jefferson,FL,1916,industry_comparison
+2019,Kalani Norris,WR,609,3,87.4,,3.0,5.7,"Miami, FL",Columbus,FL,70642,industry_comparison
+2019,Elijah Bowick,WR,610,3,87.4,,3.0,5.7,"Charlotte, NC",Myers Park,NC,41089,industry_comparison
+2019,Kennedy Lewis,WR,613,3,87.4,,3.0,5.7,"Melissa, TX",Melissa,TX,73037,industry_comparison
+2019,Josh Henderson,RB,615,3,87.4,,4.0,5.8,"Princeton, NJ",Hun School,NJ,67200,industry_comparison
+2019,Travis Tisdale,RB,619,3,87.3659420289855,,3.0,5.6,"Valdosta, GA",Lowndes,GA,114741,industry_comparison
+2019,Chase Lane,WR,625,3,87.19420289855071,,3.0,5.6,"Houston, TX",St Pius X,TX,20731,industry_comparison
+2019,Cormontae Hamilton,TE,629,3,87.16666666666667,,4.0,5.8,"Memphis, TN",Whitehaven,TN,26429,industry_comparison
+2019,Quinton Torbor,WR,630,3,87.16666666666667,,3.0,5.6,"Destrehan, LA",Destrehan,LA,97725,industry_comparison
+2019,Nnamdi Adim-Madumere,WR,631,3,87.16666666666667,,3.0,5.6,"Fort Worth, TX",Southwest,TX,93483,industry_comparison
+2019,Jaden Johnson,QB,632,3,87.16666666666667,,3.0,5.6,"Memphis, TN",Kirby,TN,143052,industry_comparison
+2019,Jared Wiley,TE,647,3,87.1,,3.0,5.7,"Temple, TX",Temple,TX,56832,industry_comparison
+2019,Tae Tae Crumes,WR,648,3,87.1,,3.0,5.7,"Louisville, KY",Butler Traditional,KY,34107,industry_comparison
+2019,Kevin Harris,RB,649,3,87.1,,3.0,5.7,"Hinesville, GA",Bradwell Institute,GA,74146,industry_comparison
+2019,Glover Cook,RB,651,3,87.06666666666666,,3.0,5.7,"Ocala, FL",Vanguard,FL,46271,industry_comparison
+2019,Ty McCullouch,WR,655,3,87.0,,3.0,5.7,"Moreno Valley, CA",Rancho Verde,CA,117044,industry_comparison
+2019,Eli Pancol,WR,657,3,86.93333333333334,,3.0,5.6,"Pendleton, IN",Pendleton Heights,IN,40976,industry_comparison
+2019,Craig Young,ATH,661,3,86.9,,3.0,5.6,"Fort Wayne, IN",Wayne,IN,26955,industry_comparison
+2019,Sam Johnson,QB,669,3,86.8427536231884,,3.0,5.6,"Walled Lake, MI",Walled Lake Western,MI,141405,industry_comparison
+2019,Luke Deal,TE,676,3,86.83333333333333,,3.0,5.6,"Greenwood, SC",Emerald,SC,80606,industry_comparison
+2019,Kenny Logan,ATH,677,3,86.83333333333333,,3.0,5.6,"Saint Augustine, FL",Pedro Menendez,FL,73327,industry_comparison
+2019,Logan Compton,TE,678,3,86.8,,3.0,5.7,"Tomball, TX",Tomball,TX,79683,industry_comparison
+2019,Dillon Gabriel,QB,680,3,86.8,,3.0,5.7,"Mililani, HI",Mililani,HI,37002,industry_comparison
+2019,A'Montae Spivey,RB,683,3,86.76666666666667,,3.0,5.7,"Phenix City, AL",Central,AL,16,industry_comparison
+2019,Donte Banton,WR,687,3,86.73333333333333,,3.0,5.7,"Fort Lauderdale, FL",Deerfield Beach,FL,38390,industry_comparison
+2019,Maverick McIvor,QB,688,3,86.73333333333333,,3.0,5.7,"San Angelo, TX",Central,TX,86529,industry_comparison
+2019,Jase Bowen,WR,692,3,86.6,,3.0,5.6,"Toledo, OH",Central Catholic,OH,57321,industry_comparison
+2019,Nathaniel Peat,RB,697,3,86.56666666666666,,3.0,5.6,"Columbia, MO",Rock Bridge,MO,91754,industry_comparison
+2019,Thomas Gordon,TE,698,3,86.56666666666666,,3.0,5.6,"Houston, TX",Strake Jesuit,TX,112327,industry_comparison
+2019,Tyler Goodson,RB,700,3,86.56666666666666,,3.0,5.6,"Suwanee, GA",North Gwinnett,GA,117613,industry_comparison
+2019,Da'Shaun Brown,WR,702,3,86.56666666666666,,3.0,5.7,"Racine, WI",St. Catherine's,WI,27762,industry_comparison
+2019,Jordan Jernigan,WR,707,3,86.53333333333333,,3.0,5.6,"Tupelo, MS",Tupelo,MS,142444,industry_comparison
+2019,Keke Burns,WR,708,3,86.53333333333333,,3.0,5.6,"Pittsburg, TX",Pittsburg,TX,72286,industry_comparison
+2019,Seneca Milledge,RB,709,3,86.53333333333333,,3.0,5.6,"Fort Myers, FL",Dunbar,FL,105904,industry_comparison
+2019,Keshawn Toney,TE,711,3,86.53333333333333,,3.0,5.6,"Williston, SC",Williston Elko,SC,73809,industry_comparison
+2019,Nolan Matthews-Harris,TE,713,3,86.53333333333333,,3.0,5.6,"Frisco, TX",Reedy,TX,93886,industry_comparison
+2019,Khyheem Waleed,WR,714,3,86.53333333333333,,3.0,5.6,"Queen Creek, AZ",Casteel,AZ,75077,industry_comparison
+2019,Jordan Yates,QB,716,3,86.5,,4.0,5.8,"Alpharetta, GA",Milton,GA,66260,industry_comparison
+2019,Trent Whittemore,WR,717,3,86.5,,3.0,5.6,"Gainesville, FL",F. W. Buchholz,FL,115372,industry_comparison
+2019,Sam Snyder,TE,723,3,86.36666666666666,,3.0,5.7,"Orange Park, FL",Fleming Island,FL,104525,industry_comparison
+2019,Darien Porter,WR,731,3,86.26666666666667,,3.0,5.6,"Bettendorf, IA",Bettendorf,IA,30050,industry_comparison
+2019,Noah Henderson,WR,732,3,86.25,,3.0,5.6,"Nashville, TN",Christ Presbyterian Academy,TN,93631,industry_comparison
+2019,Kyziah Pruitt,WR,735,3,86.23333333333333,,3.0,5.6,"Macon, MS",Noxubee County,MS,77298,industry_comparison
+2019,Nik Ognenovic,TE,743,3,86.23333333333333,,3.0,5.6,"Fort Lauderdale, FL",Cardinal Gibbons,FL,93429,industry_comparison
+2019,Justin Stephens,TE,746,3,86.23333333333333,,3.0,5.6,"Dayton, OH",Trotwood-Madison,OH,69839,industry_comparison
+2019,Damarius Good,RB,749,3,86.23333333333333,,3.0,5.6,"Altamonte Springs, FL",Lake Brantley,FL,28450,industry_comparison
+2019,Lee Witherspoon,RB,751,3,86.23333333333333,,3.0,5.6,"Stevenson, AL",North Jackson,AL,78847,industry_comparison
+2019,Vincent Davis,RB,756,3,86.16666666666667,,3.0,5.7,"Fort Lauderdale, FL",Cardinal Gibbons,FL,119723,industry_comparison
+2019,Xavier Legette,WR,763,3,86.03333333333333,,3.0,5.6,"Mullins, SC",Mullins,SC,122059,industry_comparison
+2019,Kay'Ron Lynch-Adams,RB,765,3,86.0,,3.0,5.6,"Warren, OH",Warren G Harding,OH,71524,industry_comparison
+2019,Brett Seither,TE,766,3,86.0,,3.0,5.6,"Clearwater, FL",Clearwater Central Catholic,FL,14214,industry_comparison
+2019,Ethan Long,QB,767,3,85.96702898550724,,3.0,5.5,"West Linn, OR",West Linn,OR,42977,industry_comparison
+2019,Ainias Smith,RB,770,3,85.93333333333334,,3.0,5.6,"Sugar Land, TX",Dulles,TX,2095,industry_comparison
+2019,Nick Gallo,TE,772,3,85.93333333333334,,3.0,5.6,"Southampton, PA",Council Rock South,PA,92543,industry_comparison
+2019,Calvin Wiggins,WR,778,3,85.93333333333334,,3.0,5.6,"Trophy Club, TX",Byron Nelson,TX,17423,industry_comparison
+2019,Anthony Williams Jr.,RB,780,3,85.9,,3.0,5.6,"Chicago, IL",Bolingbrook,IL,6709,industry_comparison
+2019,Davis Allen,TE,781,3,85.9,,3.0,5.6,"Calhoun, GA",Calhoun,GA,32346,industry_comparison
+2019,Sean Brown,TE,783,3,85.9,,3.0,5.6,"Rome, GA",Coosa,GA,105342,industry_comparison
+2019,Tahj Gary,RB,784,3,85.9,,3.0,5.6,"Atlanta, GA",Woodward Academy,GA,109760,industry_comparison
+2019,Terrance Gipson,QB,789,3,85.9,,3.0,5.6,"Houston, TX",Westfield,TX,111353,industry_comparison
+2019,DeCarlos Brooks,RB,796,3,85.8,,3.0,5.7,"Chandler, AZ",Chandler,AZ,33201,industry_comparison
+2019,Cameron Phillips,WR,798,3,85.75,,3.0,5.6,"Bradenton, FL",IMG Academy,FL,18022,industry_comparison
+2019,Edward Gipson,WR,799,3,85.75,,3.0,5.6,"Pelham, AL",Pelham,AL,40689,industry_comparison
+2019,Tarik Luckett,WR,800,3,85.73333333333333,,3.0,5.5,"San Juan Capistrano, CA",JSerra Catholic,CA,110293,industry_comparison
+2019,Luke Musgrave,TE,801,3,85.73333333333333,,3.0,5.6,"Bend, OR",Bend Senior,OR,80810,industry_comparison
+2019,Dontayvion Wicks,WR,802,3,85.73333333333333,,3.0,5.5,"Plaquemine, LA",Plaquemine,LA,38385,industry_comparison
+2019,Jamaal Bell,RB,805,3,85.7,,3.0,5.5,"Lancaster, CA",Antelope Valley,CA,54726,industry_comparison
+2019,Mike Hollins,RB,809,3,85.63333333333334,,3.0,5.6,"Baton Rouge, LA",University Lab,LA,89050,industry_comparison
+2019,Velton Gardner,ATH,812,3,85.63333333333334,,3.0,5.6,"Dallas, TX",Skyline,TX,119385,industry_comparison
+2019,Charvis Thornton,ATH,814,3,85.63333333333334,,3.0,5.6,"Baton Rouge, LA",Southern University Lab School,LA,20551,industry_comparison
+2019,Rashee Rice,WR,815,3,85.63333333333334,,3.0,5.6,"North Richland Hills, TX",Richland,TX,98686,industry_comparison
+2019,Khali Saunders,WR,816,3,85.63333333333334,,3.0,5.6,"Elmhurst, IL",Immaculate Conception,IL,74801,industry_comparison
+2019,Brandon Wright,RB,820,3,85.63333333333334,,3.0,5.6,"Euclid, OH",Euclid,OH,13361,industry_comparison
+2019,Malik Washington,WR,823,3,85.6,,3.0,5.6,"Lilburn, GA",Parkview,GA,82038,industry_comparison
+2019,Winston Wright,WR,828,3,85.6,,3.0,5.6,"Savannah, GA",Memorial Day School,GA,121702,industry_comparison
+2019,Kendrell Flowers,RB,832,3,85.6,,3.0,5.6,"Irmo, SC",Irmo,SC,72869,industry_comparison
+2019,George Johnson III,WR,838,3,85.56666666666666,,3.0,5.6,"Stuart, FL",Martin County,FL,142153,industry_comparison
+2019,Fabian McCray,WR,844,3,85.56666666666666,,3.0,5.7,"Chicago, IL",Phillips Academy,IL,43633,industry_comparison
+2019,Nathaniel Beal III,WR,846,3,85.56666666666666,,3.0,5.6,"Houston, TX",Strake Jesuit,TX,91720,industry_comparison
+2019,Yusuf Terry,WR,848,3,85.53333333333333,,3.0,5.6,"Philadelphia, PA",Imhotep Institute,PA,122422,industry_comparison
+2019,Joachim Bangda,RB,849,3,85.46666666666667,,3.0,5.7,"Washington, DC",St. Frances Academy,DC,61935,industry_comparison
+2019,Connor Foster,TE,850,3,85.43333333333334,,3.0,5.5,"Milford, OH",Milford,OH,25555,industry_comparison
+2019,Jerjuan Newton,WR,857,3,85.4,,3.0,5.6,"Clearwater, FL",Clearwater Central Catholic,FL,157892,industry_comparison
+2019,Darrell Harding,WR,859,3,85.36666666666666,,3.0,5.5,"Winter Garden, FL",West Orange,FL,30643,industry_comparison
+2019,Devin Boddie Jr.,WR,869,3,85.3,,3.0,5.6,"Memphis, TN",Whitehaven,TN,35919,industry_comparison
+2019,Dean Engram,WR,873,3,85.26666666666667,,3.0,5.6,"Washington, DC",Gonzaga,DC,32899,industry_comparison
+2019,John Bivens,RB,881,3,85.25,,3.0,5.6,"Dayton, OH",Archbishop Alter,OH,62965,industry_comparison
+2019,DK Blaylock,WR,885,3,85.23333333333333,,3.0,5.6,"New Deal, TX",New Deal,TX,37378,industry_comparison
+2019,Cameron Wynn,ATH,895,3,85.03333333333333,,3.0,5.5,"Chattanooga, TN",Notre Dame,TN,18200,industry_comparison
+2019,Jason Collier,TE,899,3,85.03333333333333,,3.0,5.5,"Westville, NJ",West Deptford,NJ,57474,industry_comparison
+2019,Stanley King,WR,900,3,85.0,,3.0,5.6,"Camden, NJ",Woodrow Wilson,NJ,108192,industry_comparison
+2019,Tony Mathis,RB,904,3,85.0,,3.0,5.6,"Cedartown, GA",Cedartown,GA,113910,industry_comparison
+2019,Tye Edwards,RB,907,3,85.0,,3.0,5.5,"Saint Augustine, FL",Pedro Menendez,FL,117191,industry_comparison
+2019,JD Martin,ATH,908,3,85.0,,3.0,5.6,"Wetumpka, AL",Wetumpka,AL,59339,industry_comparison
+2019,Kamari Morales,TE,920,3,84.93333333333334,,3.0,5.6,"Tallahassee, FL",Lincoln,FL,70946,industry_comparison
+2019,Lexington Joseph,RB,922,3,84.93333333333334,,3.0,5.6,"Miami, FL",Miami Central,FL,143501,industry_comparison
+2019,Will Gipson,WR,927,3,84.9,,3.0,5.6,"Aliquippa, PA",Aliquippa,PA,120823,industry_comparison
+2019,Jason Williamson,RB,930,3,84.83333333333333,,3.0,5.5,"Owatonna, MN",Owatonna,MN,57879,industry_comparison
+2019,Gunner Cruz,QB,931,3,84.76666666666667,,3.0,5.5,"Queen Creek, AZ",Casteel,AZ,47230,industry_comparison
+2019,David Ellis,RB,932,3,84.76666666666667,,3.0,5.5,"Clinton Township, MI",Chippewa Valley,MI,31640,industry_comparison
+2019,Micah Bernard,RB,933,3,84.76666666666667,,3.0,5.5,"Cerritos, CA",Gahr,CA,87131,industry_comparison
+2019,LaKenith Thompson,RB,935,3,84.75,,3.0,5.6,"Jackson, MS",Callaway,MS,77572,industry_comparison
+2019,McKel Broussard,ATH,938,3,84.75,,3.0,5.6,"Sherman Oaks, CA",Notre Dame,CA,86882,industry_comparison
+2019,Quintel Kent,WR,940,3,84.73333333333333,,3.0,5.6,"Lakewood, OH",St. Edward,OH,97562,industry_comparison
+2019,Easton Dean,QB,941,3,84.73333333333333,,3.0,5.5,"Altamont, KS",Labette County,KS,40352,industry_comparison
+2019,Blair Conwright,WR,942,3,84.73333333333333,,3.0,5.5,"Lubbock, TX",Coronado,TX,10679,industry_comparison
+2019,Amauri Pesek-Hickson,RB,945,3,84.73333333333333,,3.0,5.5,"Leawood, KS",Blue Valley North,KS,4245,industry_comparison
+2019,Zach Owens,WR,946,3,84.7,,3.0,5.5,"Marietta, GA",Pope,GA,122952,industry_comparison
+2019,Aidan Robbins,RB,948,3,84.7,,3.0,5.5,"Louisville, KY",Dupont Manual,KY,2042,industry_comparison
+2019,Kyron Cumby,RB,949,3,84.7,,3.0,5.5,"Plano, TX",Plano,TX,77265,industry_comparison
+2019,Paul Piferi,QB,953,3,84.7,,3.0,5.5,"Villa Park, CA",Villa Park,CA,95802,industry_comparison
+2019,Snoop Conner,RB,955,3,84.7,,3.0,5.6,"Hattiesburg, MS",Hattiesburg,MS,107773,industry_comparison
+2019,Tyreese Jackson,RB,959,3,84.66666666666667,,3.0,5.6,"New Iberia, LA",Westgate,LA,142897,industry_comparison
+2019,Tony Amerson,RB,963,3,84.63333333333334,,3.0,5.6,"Montgomery, AL",Saint James School,AL,113760,industry_comparison
+2019,Trey Potts,RB,964,3,84.63333333333334,,3.0,5.6,"Williamsport, PA",Williamsport Area,PA,116329,industry_comparison
+2019,Jalen Mitchell,RB,966,3,84.63333333333334,,3.0,5.6,"Southwest Brevard Cnty, FL",Rockledge,FL,54408,industry_comparison
+2019,Jamil Muhammad,QB,967,3,84.63333333333334,,3.0,5.6,"Madison, AL",James Clemens,AL,56216,industry_comparison
+2019,Hayden Wolff,QB,969,3,84.63333333333334,,3.0,5.6,"Venice, FL",Venice,FL,47859,industry_comparison
+2019,Micah Kelly,RB,979,3,84.46666666666667,,3.0,5.5,"Pascagoula, MS",Ocean Springs,MS,87169,industry_comparison
+2019,Jayden Harrison,WR,981,3,84.43333333333334,,3.0,5.5,"Nashville, TN",Pearl-Cohn,TN,58654,industry_comparison
+2019,Michel Dukes,RB,982,3,84.43333333333334,,3.0,5.5,"Charleston, SC",First Baptist Church School,SC,88628,industry_comparison
+2019,Bryce Sebastian,ATH,984,3,84.43333333333334,,3.0,5.5,"Cheshire, CT",Cheshire Academy,CT,15920,industry_comparison
+2019,Josiah Miamen,TE,987,3,84.43333333333334,,3.0,5.5,"Dunlap, IL",Dunlap,IL,68199,industry_comparison
+2019,Deion Hankins,RB,991,3,84.4,,3.0,5.5,"El Paso, TX",Parkland,TX,33353,industry_comparison
+2019,Garrett Miller,TE,993,3,84.4,,3.0,5.5,"Round Rock, TX",Round Rock,TX,45018,industry_comparison
+2019,Ivory Winters,RB,995,3,84.4,,3.0,5.5,"Hayti, MO",Hayti,MO,50175,industry_comparison
+2019,Isaiah Washington,WR,998,3,84.36666666666666,,3.0,5.6,"Jacksonville, FL",Trinity Christian Academy,FL,49836,industry_comparison
+2019,Terence Doston,ATH,999,3,84.36666666666666,,3.0,5.5,"Tampa, FL",Hillsborough,FL,111227,industry_comparison
+2019,Ali Jennings,WR,1003,3,84.36666666666666,,3.0,5.6,"Highland Springs, VA",Highland Springs,VA,143867,industry_comparison
+2019,Joel DeCoursey,TE,1005,3,84.33333333333333,,3.0,5.6,"Zionsville, IN",Zionsville,IN,62622,industry_comparison
+2019,Donovan Ollie,WR,1007,3,84.33333333333333,,3.0,5.6,"Wylie, TX",Wylie,TX,38220,industry_comparison
+2019,Lew Nichols III,RB,1008,3,84.33333333333333,,3.0,5.6,"Southfield, MI",Cass Technical,MI,79371,industry_comparison
+2019,Devin Ellison,RB,1009,3,84.33333333333333,,3.0,5.6,"Jacksonville, FL",Bartram Trail,FL,35994,industry_comparison
+2019,Simon Gonzalez,TE,1014,3,84.33333333333333,,3.0,5.6,"Magnolia, TX",Magnolia West,TX,107518,industry_comparison
+2019,Kinkead Dent,QB,1020,3,84.26666666666667,,3.0,5.6,"Flowood, MS",Jackson Academy,MS,75274,industry_comparison
+2019,Trevor Solomon-Wilson,WR,1023,3,84.25,,3.0,5.6,"Tallahassee, FL",Amos P. Godby,FL,115842,industry_comparison
+2019,Jalen McGaughy,ATH,1025,3,84.25,,3.0,5.6,"Detroit, MI",Martin Luther King Jr.,MI,54392,industry_comparison
+2019,Konner Fox,TE,1033,3,84.13333333333334,,3.0,5.5,"San Antonio, TX",Reagan,TX,75806,industry_comparison
+2019,Jouvensly Bazile,RB,1041,3,84.1,,3.0,5.5,"Naples, FL",Golden Gate,FL,68279,industry_comparison
+2019,Justin Dinka,RB,1042,3,84.1,,3.0,5.5,"Flower Mound, TX",Marcus,TX,69257,industry_comparison
+2019,Clay Cundiff,TE,1046,3,84.1,,3.0,5.6,"Wichita, KS",Bishop Carroll,KS,23829,industry_comparison
+2019,Jahquez Evans,WR,1049,3,84.1,,3.0,5.5,"Atlanta, GA",Mays,GA,53048,industry_comparison
+2019,Stone Norton,QB,1051,3,84.06666666666666,,3.0,5.6,"Nashville, TN",Davidson Academy,TN,109191,industry_comparison
+2019,David Baldwin-Griffin,QB,1059,3,84.03333333333333,,3.0,5.5,"Bradenton, FL",IMG Academy,FL,31445,industry_comparison
+2019,David Summers,QB,1060,3,84.03333333333333,,3.0,5.5,"Trumbull, CT",St. Joseph,CT,32138,industry_comparison
+2019,Zay Flowers,WR,1064,3,84.0,,3.0,5.6,"Fort Lauderdale, FL",NSU University School,FL,123655,industry_comparison
+2019,Malik Tolbert,WR,1065,3,84.0,,3.0,5.5,"Winter Park, FL",Wekiva,FL,82028,industry_comparison
+2019,Chris'Seon Stringer,WR,1066,3,83.98181818181818,,2.0,5.4,"Cincinnati, OH",Taft,OH,22716,industry_comparison
+2019,Nik Scalzo,QB,1069,3,83.95238095238095,,3.0,5.7,"Fort Lauderdale, FL",Cardinal Gibbons,FL,93342,industry_comparison
+2019,Deonte Simpson,WR,1070,3,83.94848484848485,,2.0,5.4,"Beaumont, TX",West Brook,TX,34543,industry_comparison
+2019,Michael Kern,QB,1071,3,83.91515151515152,,2.0,5.4,"Orlando, FL",Lake Nona,FL,87877,industry_comparison
+2019,TJ McDaniel,RB,1079,3,83.8,,3.0,5.5,"Southlake, TX",Southlake Carroll,TX,113122,industry_comparison
+2019,Cole Kramer,QB,1080,3,83.8,,3.0,5.5,"Eden Prairie, MN",Eden Prairie,MN,24741,industry_comparison
+2019,Chris Toudle,WR,1084,3,83.8,,3.0,5.5,"Wilmington, NC",Hoggard,NC,22583,industry_comparison
+2019,Brandon Legendre,ATH,1086,3,83.8,,3.0,5.5,"Thibodaux, LA",E D White Catholic,LA,12700,industry_comparison
+2019,Cameron Wiley,RB,1092,3,83.76666666666667,,3.0,5.5,"Las Vegas, NV",Desert Pines,NV,18179,industry_comparison
+2019,Skylar Loving-Black,TE,1093,3,83.76666666666667,,3.0,5.5,"San Jose, CA",Valley Christian,CA,107691,industry_comparison
+2019,Jordan Kerley,WR,1097,3,83.76666666666667,,3.0,5.5,"Austin, TX",McNeil,TX,65622,industry_comparison
+2019,Evan Hull,RB,1098,3,83.76363636363637,,2.0,5.3,"Osseo, MN",Maple Grove,MN,143652,industry_comparison
+2019,Jeremiah Pruitte,WR,1101,3,83.75,,3.0,5.6,"Marietta, GA",Wheeler,GA,60190,industry_comparison
+2019,Jashon Watkins,ATH,1103,3,83.73333333333333,,3.0,5.5,"Nashville, TN",East Nashville Magnet School,TN,57365,industry_comparison
+2019,Dreke Clark,RB,1104,3,83.73333333333333,,3.0,5.5,"Starkville, MS",Starkville,MS,101810,industry_comparison
+2019,Billy Pospisil III,WR,1105,3,83.73333333333333,,3.0,5.6,"Arvada, CO",Pomona,CO,10520,industry_comparison
+2019,John Gelotte,TE,1108,3,83.73333333333333,,3.0,5.5,"Roebuck, SC",Dorman,SC,63202,industry_comparison
+2019,Stephan Bracey,WR,1113,3,83.7,,3.0,5.5,"Grand Rapids, MI",East Kentwood,MI,108313,industry_comparison
+2019,Dequan Finn,QB,1115,3,83.68181818181819,,2.0,5.4,"Detroit, MI",Martin Luther King Jr.,MI,34584,industry_comparison
+2019,Travis Mumphrey,QB,1117,3,83.66666666666667,,3.0,5.6,"Marrero, LA",John Ehret,LA,114662,industry_comparison
+2019,Dino Tomlin,WR,1119,3,83.64848484848486,,2.0,5.4,"Pittsburgh, PA",Shady Side Academy,PA,37119,industry_comparison
+2019,Ezeriah Anderson,WR,1121,3,83.61515151515152,,2.0,5.4,"Seffner, FL",Armwood,FL,43579,industry_comparison
+2019,Niko Hea,TE,1123,3,83.56666666666666,,3.0,5.5,"Saint Louis, MO",Christian Brothers College,MO,93386,industry_comparison
+2019,Courtney Jackson,ATH,1124,3,83.54848484848485,,2.0,5.4,"Monroeville, PA",Gateway,PA,143494,industry_comparison
+2019,Payton Thorne,QB,1126,3,83.53333333333333,,3.0,5.5,"Naperville, IL",Naperville Central,IL,95972,industry_comparison
+2019,Kendre' Gant,WR,1128,3,83.53333333333333,,3.0,5.5,"Port Saint Joe, FL",Port St. Joe,FL,72863,industry_comparison
+2019,Jojo Hawkins,WR,1130,3,83.5,,3.0,5.5,"Buena Park, CA",Orange Lutheran,CA,64156,industry_comparison
+2019,Jake Bailey,ATH,1132,3,83.5,,3.0,5.5,"Bellflower, CA",St. John Bosco,CA,143365,industry_comparison
+2019,Elijah Mojarro,TE,1134,3,83.5,,3.0,5.5,"Orange, CA",Orange Lutheran,CA,41287,industry_comparison
+2019,Mike Brown-Stephens,WR,1135,3,83.5,,3.0,5.5,"Springfield, OH",Springfield,OH,88804,industry_comparison
+2019,Luke Baker,WR,1139,3,83.46666666666667,,3.0,5.5,"Naples, FL",Gulf Coast,FL,80543,industry_comparison
+2019,Raykwon Anderson,WR,1142,3,83.46666666666667,,3.0,5.5,"Folkston, GA",Charlton County,GA,98940,industry_comparison
+2019,Alex Padilla,QB,1150,3,83.46666666666667,,3.0,5.5,"Englewood, CO",Cherry Creek,CO,3291,industry_comparison
+2019,Thomas Grayson,RB,1151,3,83.46666666666667,,3.0,5.5,"Tulsa, OK",Booker T. Washington,OK,112332,industry_comparison
+2019,Jordan Waters,RB,1156,3,83.43333333333334,,3.0,5.5,"Fairmont, NC",Fairmont,NC,66168,industry_comparison
+2019,Knowledge McDaniel,RB,1157,3,83.43333333333334,,3.0,5.5,"Bradenton, FL",Braden River,FL,75495,industry_comparison
+2019,Jalen Johnson,WR,1158,3,83.43333333333334,,3.0,5.5,"Corona, CA",Roosevelt,CA,143466,industry_comparison
+2019,Jordan Jakes,WR,1162,3,83.43333333333334,,3.0,5.5,"McDonough, GA",St. Frances Academy,GA,143675,industry_comparison
+2019,Keyon Lesane,WR,1163,3,83.43333333333334,,3.0,5.5,"Matthews, NC",Butler,NC,74675,industry_comparison
+2019,Brandon Sanders,WR,1165,3,83.40217391304348,,3.0,5.5,"Montgomery, AL",JAG,AL,13049,industry_comparison
+2019,Gary Cooper,WR,1166,3,83.4,,3.0,5.5,"Miami, FL",Columbus,FL,45199,industry_comparison
+2019,Jeff Foreman,ATH,1168,3,83.4,,3.0,5.6,"Oklahoma City, OK",Del City,OK,59513,industry_comparison
+2019,Kash Foley,WR,1171,3,83.39945652173913,,3.0,5.5,"Reserve, LA",Riverside Academy,LA,71421,industry_comparison
+2019,Kevin Barnett,WR,1172,3,83.39673913043478,,3.0,5.5,"Hattiesburg, MS",Oak Grove,MS,73895,industry_comparison
+2019,Nazir Burnett,WR,1177,3,83.34848484848486,,2.0,5.4,"Harrisburg, PA",Bishop McDevitt,PA,91829,industry_comparison
+2019,Dylan Deveney,TE,1180,3,83.31515151515151,,2.0,5.4,"Princeton, NJ",Hun School,NJ,39853,industry_comparison
+2019,Shae Suiaunoa,QB,1182,3,83.28181818181818,,2.0,5.4,"Houston, TX",Clear Lake,TX,106188,industry_comparison
+2019,Jaymason Willingham,ATH,1185,3,83.28181818181818,,2.0,5.4,"Steilacoom, WA",Steilacoom,WA,59181,industry_comparison
+2019,Cameron Hite,WR,1186,3,83.28181818181818,,2.0,5.4,"Greeneville, TN",Greeneville,TN,17867,industry_comparison
+2019,Charles Mincy Jr.,RB,1188,3,83.25,,3.0,5.6,"Charlotte, NC",Mallard Creek,NC,20222,industry_comparison
+2019,Jonathan Sewell,RB,1189,3,83.25,,3.0,5.6,"Athens, GA",Clarke Central,GA,64907,industry_comparison
+2019,Jaylen Hearst,WR,1193,3,83.24848484848485,,2.0,5.4,"Keller, TX",Fossil Ridge,TX,58890,industry_comparison
+2019,John Branham Jr,RB,1197,3,83.2,,3.0,5.5,"Columbus, OH",Northland,OH,62990,industry_comparison
+2019,Brett Gabbert,QB,1198,3,83.2,,3.0,5.5,"Saint Louis, MO",Christian Brothers College,MO,14117,industry_comparison
+2019,Jha'Quan Jackson,ATH,1200,3,83.2,,3.0,5.5,"Boutte, LA",Hahnville,LA,143782,industry_comparison
+2019,Sam LaPorta,WR,1201,3,83.2,,3.0,5.5,"Highland, IL",Highland,IL,104359,industry_comparison
+2019,Jalon Calhoun,WR,1202,3,83.2,,3.0,5.5,"Greenville, SC",Southside,SC,54677,industry_comparison
+2019,Chase Roberts,WR,1205,3,83.19696969696969,,2.0,5.3,"American Fork, UT",American Fork,UT,20811,industry_comparison
+2019,Ke'Andre Street,WR,1206,3,83.16666666666667,,3.0,5.5,"Tyler, TX",John Tyler,TX,71600,industry_comparison
+2019,Amani Gilmore,QB,1207,3,83.16666666666667,,3.0,5.5,"Amite, LA",Amite,LA,4147,industry_comparison
+2019,Desmond Hutson,WR,1210,3,83.16666666666667,,3.0,5.5,"Kansas City, MO",Raytown,MO,143594,industry_comparison
+2019,Levi Williams,QB,1212,3,83.16666666666667,,3.0,5.5,"Spring Branch, TX",Smithson Valley,TX,79344,industry_comparison
+2019,Larry McCammon,RB,1221,3,83.13333333333334,,3.0,5.5,"Hoover, AL",Hoover,AL,78311,industry_comparison
+2019,Rashean Lynn,WR,1222,3,83.13333333333334,,3.0,5.5,"Cocoa, FL",Cocoa,FL,98683,industry_comparison
+2019,Kaiden Bennett,QB,1223,3,83.13333333333334,,3.0,5.5,"Folsom, CA",Folsom,CA,70564,industry_comparison
+2019,Joseph Hocker,TE,1225,3,83.13333333333334,,3.0,5.5,"Cincinnati, OH",Deer Park,OH,66566,industry_comparison
+2019,Chase Griffin,QB,1228,3,83.1,,3.0,5.5,"Hutto, TX",Hutto,TX,20689,industry_comparison
+2019,Ricky Pearsall,WR,1232,3,83.1,,3.0,5.5,"Tempe, AZ",Corona Del Sol,AZ,100323,industry_comparison
+2019,Isaiah Azubuike,RB,1234,3,83.06666666666666,,3.0,5.6,"Saint Louis, MO",Lutheran North,MO,49346,industry_comparison
+2019,Kam Walker,TE,1235,3,83.06666666666666,,3.0,5.6,"Canton, NC",Pisgah,NC,70893,industry_comparison
+2019,Marshawn Foster,WR,1236,3,83.06666666666666,,3.0,5.6,"Chicago, IL",Al Raby School,IL,84392,industry_comparison
+2019,Kelvin Dean,ATH,1242,3,83.01515151515152,,2.0,5.4,"Tallahassee, FL",James Rickards,FL,72504,industry_comparison
+2019,Quan Easterling,RB,1245,3,83.01515151515152,,2.0,5.4,"Akron, OH",Archbishop Hoban,OH,97082,industry_comparison
+2019,Braylen Weems,WR,1246,3,83.0,,3.0,5.5,"Lawrenceville, GA",Archer,GA,13603,industry_comparison
+2019,Tate Hallock,ATH,1249,3,83.0,,3.0,5.5,"Grand Rapids, MI",Forest Hills Central,MI,110412,industry_comparison
+2019,AJ Woods,ATH,1250,3,83.0,,3.0,5.5,"Germantown, MD",Northwest,MD,2257,industry_comparison
+2019,Jonah White,RB,1253,3,82.98181818181818,,2.0,5.4,"Merkel, TX",Merkel,TX,64477,industry_comparison
+2019,Jacobby Dinwiddie,WR,1255,3,82.96195652173913,,3.0,5.5,"Mesa, AZ",Mountain View,AZ,52322,industry_comparison
+2019,Joshua Youngblood,WR,1257,3,82.94848484848485,,2.0,5.4,"Tampa, FL",Berkeley Prep,FL,67790,industry_comparison
+2019,Da'Shawn Owens,TE,1258,3,82.9429347826087,,3.0,5.5,"Dothan, AL",Dothan,AL,27770,industry_comparison
+2019,Michael Lindauer,QB,1264,3,82.88181818181819,,2.0,5.4,"Evansville, IN",Reitz Memorial,IN,87935,industry_comparison
+2019,Chandler Fields,QB,1265,3,82.86666666666666,,3.0,5.5,"Metairie, LA",Archbishop Rummel,LA,19892,industry_comparison
+2019,Kyle Maxwell,WR,1267,3,82.86666666666666,,3.0,5.5,"Amite, LA",Amite,LA,76767,industry_comparison
+2019,Khiry Morrison,WR,1271,3,82.86666666666666,,3.0,5.5,"Saint Francisville, LA",West Feliciana,LA,75035,industry_comparison
+2019,Jahmon McClendon,RB,1272,3,82.86666666666666,,3.0,5.5,"Spring Valley, CA",Monte Vista,CA,53034,industry_comparison
+2019,Thomas Harper,ATH,1273,3,82.86363636363636,,2.0,5.3,"Knoxville, TN",Karns,TN,112336,industry_comparison
+2019,Bryan Gagg,TE,1274,3,82.83333333333333,,3.0,5.5,"Bradenton, FL",Braden River,FL,15446,industry_comparison
+2019,Shea Whiting,WR,1275,3,82.83333333333333,,3.0,5.5,"Houston, TX",Alief Taylor,TX,107067,industry_comparison
+2019,Joshia Davis,RB,1276,3,82.83333333333333,,3.0,5.5,"Littleton, CO",Valor Christian,CO,67792,industry_comparison
+2019,Ethon Williams,WR,1278,3,82.83333333333333,,3.0,5.5,"Annapolis, MD",Broadneck,MD,43099,industry_comparison
+2019,Demetrius Knight,QB,1288,3,82.83333333333333,,3.0,5.5,"Locust Grove, GA",Strong Rock Christian,GA,33971,industry_comparison
+2019,Raymond Pauwels,TE,1290,3,82.81870882740448,,2.0,5.3,"Glendale, AZ",Millennium,AZ,99015,industry_comparison
+2019,Chase Jones,ATH,1292,3,82.8,,3.0,5.5,"Jersey City, NJ",St. Peter's Prep,NJ,143002,industry_comparison
+2019,Asher Alberding,TE,1293,3,82.8,,3.0,5.5,"Houston, TX",Clear Lake,TX,7821,industry_comparison
+2019,Blake Freeland,ATH,1295,3,82.8,,3.0,5.5,"Herriman, UT",Herriman,UT,10844,industry_comparison
+2019,Da'Joun Hewitt,RB,1296,3,82.8,,3.0,5.5,"Nashville, TN",Davidson Academy,TN,27735,industry_comparison
+2019,Wayne Dennis,WR,1298,3,82.8,,3.0,5.5,"Seffner, FL",Armwood,FL,120251,industry_comparison
+2019,Levi Williams,ATH,1302,3,82.7969696969697,,2.0,5.3,"Valrico, FL",Bloomingdale,FL,79345,industry_comparison
+2019,Ife Adeyi,WR,1303,3,82.77272727272728,,2.0,5.4,"Mansfield, TX",Mansfield Legacy,TX,48921,industry_comparison
+2019,Amari Johnson,WR,1307,3,82.76363636363637,,2.0,5.3,"Hallandale, FL",Miami Carol City,FL,143729,industry_comparison
+2019,Khymani Martin,WR,1308,3,82.75,,3.0,5.6,"Miami, FL",Archbishop McCarthy,FL,75083,industry_comparison
+2019,Zach Ranson,ATH,1311,3,82.71515151515152,,2.0,5.4,"Atlanta, GA",St. Pius X,GA,122983,industry_comparison
+2019,Peter Hayes-Patrick,RB,1313,3,82.68181818181819,,2.0,5.4,"Orlando, FL",Timber Creek,FL,96177,industry_comparison
+2019,Tyler Smith,WR,1318,3,82.68181818181819,,2.0,5.4,"Conyers, GA",Salem,GA,118092,industry_comparison
+2019,Makai Polk,WR,1325,3,82.6,,3.0,5.5,"El Cerrito, CA",El Cerrito,CA,81346,industry_comparison
+2019,Kennique Bonner-Steward,QB,1333,3,82.56666666666666,,3.0,5.5,"Cornelius, NC",William Amos Hough,NC,73211,industry_comparison
+2019,Brionne Penny,ATH,1334,3,82.56666666666666,,3.0,5.5,"Harbor City, CA",Narbonne,CA,14943,industry_comparison
+2019,Sheldon Layman,QB,1336,3,82.53333333333333,,3.0,5.5,"Mobile, AL",McGill-Toolen Catholic,AL,107104,industry_comparison
+2019,Tre Tucker,WR,1342,3,82.53333333333333,,3.0,5.5,"Cuyahoga Falls, OH",Cuyahoga Valley Christian Academy,OH,115060,industry_comparison
+2019,Thomas Nance,TE,1345,3,82.53333333333333,,3.0,5.5,"Eagle Lake, FL",Lake Region,FL,112403,industry_comparison
+2019,Malik Bradford,WR,1346,3,82.52173913043478,,3.0,5.5,"Long Beach, CA",Millikan,CA,81744,industry_comparison
+2019,Jamario Holley,WR,1347,3,82.5,,3.0,5.5,"Rock Hill, SC",Northwestern,SC,55162,industry_comparison
+2019,Treshaun Ward,RB,1348,3,82.5,,3.0,5.5,"Tampa, FL",Tampa Bay Tech,FL,115452,industry_comparison
+2019,Jarius Thomas,TE,1349,3,82.5,,3.0,5.5,"Columbus, GA",Carver,GA,56953,industry_comparison
+2019,D'Shayne James,WR,1351,3,82.5,,3.0,5.5,"Gilbert, AZ",Perry,AZ,142855,industry_comparison
+2019,Henry Ikahihifo,TE,1352,3,82.5,,3.0,5.5,"Lancaster, CA",Paraclete,CA,142945,industry_comparison
+2019,Kingsley Grissett,WR,1356,3,82.5,,3.0,5.5,"Pompano Beach, FL",Piper,FL,75259,industry_comparison
+2019,Damari Roberson,WR,1357,3,82.5,,3.0,5.5,"Muskegon, MI",Mona Shores,MI,28432,industry_comparison
+2019,Ahmad Antoine,RB,1365,3,82.5,,3.0,5.5,"New Orleans, LA",Edna Karr,LA,1842,industry_comparison
+2019,Zach Larrier,ATH,1369,3,82.5,,3.0,5.5,"Elk Grove, CA",Monterey Trail,CA,122839,industry_comparison
+2019,Kenney Solomon,WR,1371,3,82.5,,3.0,5.5,"Myrtle Beach, SC",Socastee,SC,73208,industry_comparison
+2019,Tyjae Spears,RB,1372,3,82.5,,3.0,5.5,"Ponchatoula, LA",Ponchatoula,LA,117232,industry_comparison
+2019,De'Mitri Monroe,RB,1373,3,82.5,,3.0,5.5,"Van Vleck, TX",Van Vleck,TX,32808,industry_comparison
+2019,Rahmon Hart,WR,1375,3,82.46666666666667,,3.0,5.5,"Pittsburgh, PA",Imani Christian Academy,PA,98007,industry_comparison
+2019,Josh Calvin,QB,1378,3,82.46363636363635,,2.0,5.3,"Bellflower, CA",Mayfair,CA,66925,industry_comparison
+2019,AJ Williams,ATH,1380,3,82.44848484848485,,2.0,5.4,"Bamberg, SC",Bamberg-Ehrhardt,SC,2252,industry_comparison
+2019,Oscar Adaway,ATH,1385,3,82.38181818181819,,2.0,5.4,"North Little Rock, AR",North Little Rock,AR,94639,industry_comparison
+2019,Aubrey Scott,ATH,1387,3,82.38181818181819,,2.0,5.4,"Stonewall, LA",North DeSoto,LA,8032,industry_comparison
+2019,Garrison Johnson,RB,1390,3,82.34848484848486,,2.0,5.4,"Manvel, TX",Manvel,TX,142597,industry_comparison
+2019,Anthony Gould,WR,1391,3,82.34848484848486,,2.0,5.4,"Salem, OR",West Salem,OR,6154,industry_comparison
+2019,Luke Wentz,QB,1393,3,82.34848484848486,,2.0,5.4,Troisdorf,Paderborn Dolphins,,80956,industry_comparison
+2019,Justin Olson,WR,1394,3,82.31515151515151,,2.0,5.4,"Huntersville, NC",North Mecklenburg,NC,69652,industry_comparison
+2019,D.J. Oats,RB,1397,3,82.28181818181818,,2.0,5.4,"Arlington, TX",Grace Preparatory Academy,TX,27624,industry_comparison
+2019,Jacob Bernard,WR,1400,3,82.27272727272728,,2.0,5.4,"Mandeville, LA",Lakeshore,LA,51798,industry_comparison
+2019,Terrel Ferrell,WR,1401,3,82.27272727272728,,2.0,5.4,"Valrico, FL",Bloomingdale,FL,111462,industry_comparison
+2019,Sam Saxton,QB,1402,3,82.27272727272728,,2.0,5.4,"Austin, TX",St. Michael's Catholic Academy,TX,104491,industry_comparison
+2019,Antavious Willis,ATH,1403,3,82.27272727272728,,2.0,5.4,"Camden, MS",Velma Jackson,MS,5797,industry_comparison
+2019,Shadrick Byrd,RB,1410,3,82.23333333333333,,3.0,5.5,"Alabaster, AL",Thompson,AL,106181,industry_comparison
+2019,Alex Cherry,WR,1413,3,82.20750988142294,,2.0,5.4,"Norwood, MA",St. Sebastian's School,MA,2905,industry_comparison
+2019,Austin Robinson,WR,1422,3,82.2,,3.0,5.5,"Cornelius, NC",William Amos Hough,NC,8667,industry_comparison
+2019,Drew Martin,TE,1423,3,82.2,,3.0,5.5,"North Little Rock, AR",North Little Rock,AR,39091,industry_comparison
+2019,Kain Medrano,WR,1427,3,82.2,,3.0,5.5,"Pueblo, CO",East,CO,70593,industry_comparison
+2019,Michael Wiley,RB,1429,3,82.16666666666667,,3.0,5.5,"Houston, TX",Strake Jesuit,TX,88539,industry_comparison
+2019,Andre Johnson,WR,1430,3,82.16666666666667,,3.0,5.5,"Tolleson, AZ",Tolleson Union,AZ,144069,industry_comparison
+2019,Dorien Goddard,WR,1431,3,82.16666666666667,,3.0,5.5,"Greeneville, TN",Greeneville,TN,38605,industry_comparison
+2019,Trey Cleveland,WR,1436,3,82.16666666666667,,3.0,5.5,"Arlington, TX",Arlington,TX,115958,industry_comparison
+2019,Jared Wayne,WR,1437,3,82.16666666666667,,3.0,5.5,"Clearwater, FL",Clearwater Academy International,FL,56823,industry_comparison
+2019,C.J. Johnson,WR,1439,3,82.16666666666667,,3.0,5.5,"Greenville, NC",D H Conley,NC,142798,industry_comparison
+2019,Coltin Clack,QB,1440,3,82.13333333333334,,3.0,5.5,"Texarkana, TX",Texas High,TX,25284,industry_comparison
+2019,Deland McCullough II,ATH,1441,3,82.1190476190476,,3.0,5.6,"Leawood, KS",Junipero Serra,KS,33505,industry_comparison
+2019,Nick Manson,WR,1444,3,82.1,,3.0,5.5,"Jonesboro, GA",Mundy's Mill,GA,92713,industry_comparison
+2019,Ulysses Bentley IV,RB,1445,3,82.1,,3.0,5.6,"Houston, TX",C.E. King,TX,119180,industry_comparison
+2019,Peyton Matocha,QB,1446,3,82.08181818181819,,2.0,5.4,"Houston, TX",St. Thomas,TX,96309,industry_comparison
+2019,Khatib Lyles,WR,1447,3,82.08181818181819,,2.0,5.4,"El Paso, TX",Parkland,TX,75008,industry_comparison
+2019,Matt Smith,TE,1450,3,82.08181818181819,,2.0,5.4,"Needham, MA",Needham,MA,85793,industry_comparison
+2019,Jacquez Stuart,RB,1451,3,82.04848484848485,,2.0,5.4,"Miami, FL",Northwestern,FL,52502,industry_comparison
+2019,Shamar Johnson,WR,1454,3,82.04848484848485,,2.0,5.4,"North Richland Hills, TX",Richland,TX,143506,industry_comparison
+2019,Nick Fedanzo,RB,1460,3,82.04848484848485,,2.0,5.4,"Lombard, IL",Montini Catholic,IL,92503,industry_comparison
+2019,Casey Washington,WR,1467,3,82.01515151515152,,2.0,5.4,"Pflugerville, TX",Pflugerville,TX,19130,industry_comparison
+2019,Jacardia Wright,RB,1469,3,82.0,,3.0,5.5,"Decatur, IL",St Teresa,IL,50859,industry_comparison
+2019,Gyasi Mattison,ATH,1470,3,82.0,,3.0,5.5,"Nashville, TN",Hillsboro,TN,47300,industry_comparison
+2019,Cornelious Brown,QB,1478,3,82.0,,3.0,5.5,"Calera, AL",Calera,AL,26435,industry_comparison
+2019,DeMarcus Harris,WR,1482,3,81.97878787878788,,2.0,5.2,"Vero Beach, FL",Vero Beach,FL,33712,industry_comparison
+2019,Raquon Hartley,WR,1483,3,81.96363636363635,,2.0,5.3,"Saluda, SC",Saluda,SC,98442,industry_comparison
+2019,Jsi Hatfield,WR,1487,3,81.93030303030302,,2.0,5.3,"Graham, NC",Southern Alamance,NC,68378,industry_comparison
+2019,Sean Tyler,RB,1488,3,81.93030303030302,,2.0,5.3,"Olympia Fields, IL",Rich Central Campus,IL,105688,industry_comparison
+2019,Cameron Cantrell,WR,1489,3,81.91515151515152,,2.0,5.4,"Whitehouse, TX",Whitehouse,TX,17686,industry_comparison
+2019,Jaylen Coleman,RB,1494,3,81.89696969696969,,2.0,5.3,"Indian Trail, NC",Porter Ridge,NC,58840,industry_comparison
+2019,Jakson Thomson,QB,1496,3,81.86666666666666,,3.0,5.5,"Dallas, TX",Lake Highlands,TX,54056,industry_comparison
+2019,Logan Berryhill,WR,1503,3,81.86666666666666,,3.0,5.5,"Kingsland, GA",Camden County,GA,79640,industry_comparison
+2019,Valerian Agbaw,ATH,1507,3,81.83333333333333,,3.0,5.5,"Powder Springs, GA",McEachern,GA,119275,industry_comparison
+2019,Colin O'Brien,TE,1508,3,81.83073122529645,,2.0,5.4,"Mission Viejo, CA",Mission Viejo,CA,25063,industry_comparison
+2019,RJ Harvey,QB,1512,3,81.8,,3.0,5.5,"Orlando, FL",Edgewater,FL,100666,industry_comparison
+2019,Deavyn Woullard,WR,1513,3,81.79990118577076,,2.0,5.4,"Mission Viejo, CA",Mission Viejo,CA,33183,industry_comparison
+2019,Elijah Downing,WR,1515,3,81.78359683794467,,2.0,5.4,"Louisville, KY",Ballard,KY,41160,industry_comparison
+2019,Marcus Barthell,RB,1517,3,81.77272727272728,,2.0,5.4,"Miami, FL",Booker T. Washington,FL,82492,industry_comparison
+2019,Kiaeem Green,WR,1526,3,81.76185770750989,,2.0,5.4,"New Orleans, LA",Warren Easton,LA,75097,industry_comparison
+2019,Marcus Graham,ATH,1529,3,81.74848484848485,,2.0,5.4,"Mount Holly, NC",Mountain Island Charter,NC,82701,industry_comparison
+2019,Quendarius Jefferson,WR,1535,3,81.72109683794467,,2.0,5.4,"Simpsonville, SC",Hillcrest Sr Hi,SC,142973,industry_comparison
+2019,Cameron Ross,WR,1536,3,81.71566205533598,,2.0,5.4,"Washington, DC",St. John's College,DC,18051,industry_comparison
+2019,Nate Jefferson,WR,1540,3,81.71515151515152,,2.0,5.4,"Longwood, FL",Lyman,FL,143668,industry_comparison
+2019,Jamontez Woods,RB,1541,3,81.71515151515152,,2.0,5.4,"Gadsden, AL",Gadsden City,AL,56333,industry_comparison
+2019,Quintlan Cobb,TE,1547,3,81.63030303030303,,2.0,5.3,"Kaplan, LA",Kaplan,LA,97625,industry_comparison
+2019,Jaden Warren,WR,1549,3,81.61212121212121,,2.0,5.2,"Oneonta, AL",Oneonta,AL,52717,industry_comparison
+2019,Knox Kadum,QB,1550,3,81.6,,3.0,5.5,"Rome, GA",Rome,GA,141893,industry_comparison
+2019,Kealon Jackson,WR,1552,3,81.6,,3.0,5.5,"Pearland, TX",Shadow Creek,TX,142665,industry_comparison
+2019,Damon Ward,WR,1554,3,81.6,,3.0,5.5,"Beaumont, TX",West Brook,TX,28735,industry_comparison
+2019,Ja'Quan Sheppard,WR,1556,3,81.56666666666666,,3.0,5.5,"Zephyrhills, FL",Zephyrhills,FL,50667,industry_comparison
+2019,TQ Newsome,QB,1562,3,81.56666666666666,,3.0,5.5,"Gulfport, MS",Gulfport,MS,114229,industry_comparison
+2019,Kaleb Chatmon,WR,1567,3,81.5570652173913,,3.0,5.5,"Cartersville, GA",Cartersville,GA,70679,industry_comparison
+2019,Chris Scruggs Jr.,WR,1568,3,81.53333333333333,,3.0,5.5,"Clearwater, FL",Superior Collegiate Academy,FL,22440,industry_comparison
+2019,Kwesi Evans,WR,1570,3,81.53333333333333,,3.0,5.5,"Baltimore, MD",St. Frances Academy,MD,76289,industry_comparison
+2019,Sincere McCormick,RB,1573,3,81.5,,3.0,5.5,"Converse, TX",Judson,TX,107545,industry_comparison
+2019,Alphonzo Andrews Jr,RB,1576,3,81.5,,3.0,5.5,"Saint Louis, MO",Trinity Catholic,MO,4010,industry_comparison
+2019,Kyle Helbig,TE,1581,3,81.5,,3.0,5.5,"Broomfield, CO",Holy Family,CO,76657,industry_comparison
+2019,Xavier Roberts,WR,1582,3,81.5,,3.0,5.5,"Rome, GA",Rome,GA,122141,industry_comparison
+2019,Ronnie Jackson,RB,1583,3,81.5,,3.0,5.5,"New Orleans, LA",Edna Karr,LA,143634,industry_comparison
+2019,Mohamed Toure,WR,1585,3,81.5,,3.0,5.5,"Irvington, NJ",Irvington,NJ,90114,industry_comparison
+2019,Weston Eget,QB,1587,3,81.5,,3.0,5.5,"Stevenson Ranch, CA",West Ranch,CA,120538,industry_comparison
+2019,Jamari Thrash,WR,1588,3,81.5,,3.0,5.5,"LaGrange, GA",Troup County,GA,55144,industry_comparison
+2019,Dajon Richard,RB,1589,3,81.5,,3.0,5.5,"Patterson, LA",Patterson,LA,27979,industry_comparison
+2019,Kyle Patterson,TE,1590,3,81.5,,3.0,5.5,"Gilbert, AZ",Perry,AZ,76852,industry_comparison
+2019,Kris Mitchell,WR,1592,3,81.4969696969697,,2.0,5.3,"Jacksonville, FL",Mandarin,FL,76044,industry_comparison
+2019,Kelley Joiner Jr.,RB,1593,3,81.4969696969697,,2.0,5.3,"Groveland, FL",South Lake,FL,143669,industry_comparison
+2019,Blake Thorpe,WR,1594,3,81.48295454545455,,2.0,5.3,"Walnut Creek, CA",Las Lomas,CA,11053,industry_comparison
+2019,Jaren Lewis,QB,1599,3,81.44848484848485,,2.0,5.4,"Columbia, MO",Battle,MO,56901,industry_comparison
+2019,Xavier Gipson,WR,1600,3,81.43333333333334,,3.0,5.5,"Dallas, TX",Woodrow Wilson,TX,122008,industry_comparison
+2019,DJ Smith,RB,1602,3,81.41515151515152,,2.0,5.4,"Frisco, TX",Lone Star,TX,37337,industry_comparison
+2019,Dre'Von Lindsay,WR,1611,3,81.4,,,,"Euclid, OH",Euclid,OH,38886,industry_comparison
+2019,Taylor Morin,ATH,1618,3,81.37878787878788,,2.0,5.2,"Chantilly, VA",Westfield,VA,110845,industry_comparison
+2019,Austin Kirksey,QB,1625,3,81.3,,3.0,5.5,"Marietta, GA",Walton,GA,8486,industry_comparison
+2019,Melquan Stovall,WR,1628,3,81.27272727272728,,2.0,5.4,"Gardena, CA",Junipero Serra,CA,86988,industry_comparison
+2019,Jackson Walker,QB,1630,3,81.27272727272728,,2.0,5.4,"Memphis, TN",Briarcrest Christian,TN,51730,industry_comparison
+2019,Gio Richardson,QB,1631,3,81.27272727272728,,2.0,5.4,"Palm Beach Gardens, FL",Dwyer,FL,46135,industry_comparison
+2019,Charlie Dean,QB,1632,3,81.27272727272728,,2.0,5.4,"Tampa, FL",Hillsborough,FL,20413,industry_comparison
+2019,Jaden Gibbs,WR,1633,3,81.27272727272728,,2.0,5.4,"Knoxville, TN",Farragut,TN,52605,industry_comparison
+2019,Zykamren Robinson,RB,1636,3,81.27272727272728,,2.0,5.4,"Spartanburg, SC",Spartanburg,SC,123939,industry_comparison
+2019,Ben Castellano,TE,1641,3,81.27272727272728,,2.0,5.4,"Purcellville, VA",Woodgrove,VA,9663,industry_comparison
+2019,Sean Harlston,ATH,1643,3,81.27272727272728,,2.0,5.4,"Compton, CA",Compton Dominguez,CA,105454,industry_comparison
+2019,Walter Wilbon III,RB,1647,3,81.27272727272728,,2.0,5.4,"Tampa, FL",Plant,FL,120140,industry_comparison
+2019,Jordan Kirkbride,TE,1648,3,81.27272727272728,,2.0,5.4,"Columbus, OH",Bishop Hartley,OH,65628,industry_comparison
+2019,Christian Grubb,RB,1660,3,81.27272727272728,,2.0,5.4,"Sherman Oaks, CA",Notre Dame,CA,22920,industry_comparison
+2019,Peter Udoibok,WR,1661,3,81.27272727272728,,2.0,5.4,"Saint Paul, MN",Cretin-Derham Hall,MN,96241,industry_comparison
+2019,Quinton Williams,TE,1662,3,81.27272727272728,,2.0,5.4,"Houston, TX",Clear Lake,TX,97734,industry_comparison
+2019,Jamal Speaks,ATH,1664,3,81.27272727272728,,2.0,5.4,"Upper Marlboro, MD",Ballou,MD,54956,industry_comparison
+2019,Sterling White,WR,1668,3,81.27000988142294,,2.0,5.4,"Hilton Head Island, SC",Hilton Head,SC,108654,industry_comparison
+2019,Da'Ren Zeno,WR,1671,3,81.25914031620555,,2.0,5.4,"Welsh, LA",Welsh,LA,27756,industry_comparison
+2019,Kyron McKinnie-Harper,ATH,1675,3,81.2,,3.0,5.5,"Detroit, MI",Cass Technical,MI,77270,industry_comparison
+2019,JR Tran-Reno,RB,1677,3,81.2,,3.0,5.5,"Birmingham, AL",Briarwood Christian,AL,68370,industry_comparison
+2019,Jalen Burbage,ATH,1680,3,81.19762845849802,,2.0,5.3,"Lexington, KY",Bryan Station,KY,54173,industry_comparison
+2019,Kendall Collins,RB,1681,3,81.18577075098815,,2.0,5.4,"New Orleans, LA",De La Salle,LA,72726,industry_comparison
+2019,Dominick Mazotti,TE,1682,3,81.18181818181819,,2.0,5.4,"Pleasanton, CA",Amador Valley,CA,37603,industry_comparison
+2019,Gerron Duhon,RB,1686,3,81.15958498023716,,2.0,5.3,"Lake Charles, LA",Washington-Marion,LA,46017,industry_comparison
+2019,Jamal Glaspie,WR,1688,3,81.14848484848486,,2.0,5.4,"Culver City, CA",Culver City,CA,54861,industry_comparison
+2019,Clifton McDowell,QB,1693,3,81.11515151515152,,2.0,5.4,"Spring, TX",Spring,TX,24077,industry_comparison
+2019,Luke Benson,TE,1694,3,81.11515151515152,,2.0,5.4,"Doylestown, PA",Central Bucks West,PA,80550,industry_comparison
+2019,Caden Kolesar,ATH,1699,3,81.09881422924902,,2.0,5.4,"Lakewood, OH",St. Edward,OH,16731,industry_comparison
+2019,Tyler Devera,TE,1702,3,81.08181818181819,,2.0,5.4,"Wayne, NJ",Bergen Catholic,NJ,117506,industry_comparison
+2019,Griffin Moore,TE,1704,3,81.08181818181819,,2.0,5.4,"Bloomington, IL",Bloomington,IL,47156,industry_comparison
+2019,Cooper Legas,QB,1706,3,81.08181818181819,,2.0,5.4,"Orem, UT",Orem,UT,25873,industry_comparison
+2019,Cam Lampkin,WR,1707,3,81.08181818181819,,2.0,5.4,"Mesquite, TX",Poteet,TX,17475,industry_comparison
+2019,Justin Ball,TE,1708,3,81.08181818181819,,2.0,5.4,"Washington, DC",Gonzaga,DC,69039,industry_comparison
+2019,Tahj Washington,WR,1709,3,81.08181818181819,,2.0,5.4,"Marshall, TX",Marshall,TX,109773,industry_comparison
+2019,Romain Mungin,ATH,1715,3,81.04848484848485,,2.0,5.4,"Tampa, FL",Plant,FL,101923,industry_comparison
+2019,De'Corian Clark,WR,1716,3,81.04848484848485,,2.0,5.4,"Fort Worth, TX",O. D. Wyatt,TX,32789,industry_comparison
+2019,Ray Davis,RB,1717,3,81.04848484848485,,2.0,5.4,"Blairstown, NJ",Blair Academy,NJ,99114,industry_comparison
+2019,Dalvin Smith,WR,1718,3,81.04545454545455,,2.0,5.3,"Glasgow, KY",Glasgow,KY,28374,industry_comparison
+2019,Logan Wolf,WR,1720,3,81.04545454545455,,2.0,5.3,"Cedar Falls, IA",Cedar Falls,IA,79935,industry_comparison
+2019,Jaaron Hayek,ATH,1727,3,81.0,,3.0,5.5,"Wayne, NJ",Wayne Hills,NJ,50731,industry_comparison
+2019,Nathan Lamb,QB,1728,3,81.0,,3.0,5.5,"Tulare, CA",Tulare Union,CA,91573,industry_comparison
+2019,Maurice Wilmer,ATH,1730,3,81.0,,3.0,5.5,"Mountain View, CA",St. Francis,CA,86507,industry_comparison
+2019,Dez Melton,TE,1731,3,81.0,,3.0,5.5,"Glendale, AZ",Deer Valley,AZ,36797,industry_comparison
+2019,Dylan Jantz,WR,1732,3,81.0,,3.0,5.5,"Gunter, TX",Gunter,TX,143434,industry_comparison
+2019,Matt Drayton,WR,1733,3,81.0,,3.0,5.5,"Jacksonville, FL",Raines,FL,85230,industry_comparison
+2019,Nick Kargman,QB,1734,3,81.0,,3.0,5.5,"Camden, NJ",Woodrow Wilson,NJ,143499,industry_comparison
+2019,Terrell Brown,RB,1749,3,80.96666666666667,,3.0,5.5,"Harvey, LA",Helen Cox,LA,111489,industry_comparison
+2019,Cole Snyder,QB,1750,3,80.96666666666667,,3.0,5.5,"Jamestown, NY",Southwestern Senior,NY,24864,industry_comparison
+2019,Trevor Bycznski,QB,1751,3,80.96363636363635,,2.0,5.3,"Berea, OH",Midpark,OH,115680,industry_comparison
+2019,Willie Gaines,ATH,1755,3,80.93333333333334,,3.0,5.5,"Cocoa, FL",Cocoa,FL,121490,industry_comparison
+2019,Drelyn Ford,TE,1757,3,80.93333333333334,,3.0,5.5,"Franklin, VA",Franklin,VA,38898,industry_comparison
+2019,Daeshawn Davis,ATH,1758,3,80.93030303030302,,2.0,5.3,"Cleveland, OH",Shaw,OH,27863,industry_comparison
+2019,Bryson Lucero,QB,1760,3,80.89696969696969,,2.0,5.3,"Bradenton, FL",IMG Academy,FL,16097,industry_comparison
+2019,Chandler Rogers,QB,1761,3,80.89696969696969,,2.0,5.3,"Mansfield, TX",Lake Ridge,TX,19936,industry_comparison
+2019,Marlyn Johnson,WR,1762,3,80.84881422924902,,2.0,5.4,"Ambler, PA",Peddie School,PA,143059,industry_comparison
+2019,Isaiah McKissic,WR,1764,3,80.81892292490119,,2.0,5.4,"Opelika, AL",Beauregard,AL,49633,industry_comparison
+2019,Daron Finkley,WR,1766,3,80.7971837944664,,2.0,5.4,"Myrtle Beach, SC",Myrtle Beach,SC,30569,industry_comparison
+2019,Xavier Mason,WR,1767,3,80.79644268774705,,2.0,5.2,"Tacoma, WA",Stadium,WA,122082,industry_comparison
+2019,Maurice Underwood,QB,1769,3,80.78181818181818,,2.0,5.4,"Miami, FL",Miami Central,FL,86490,industry_comparison
+2019,Peter LeBlanc,WR,1772,3,80.78181818181818,,2.0,5.4,"New Iberia, LA",Catholic,LA,96189,industry_comparison
+2019,Josh McKenzie,ATH,1775,3,80.77272727272728,,2.0,5.4,"Oradell, NJ",Bergen Catholic,NJ,67343,industry_comparison
+2019,Nate Martens,QB,1779,3,80.77272727272728,,2.0,5.4,"Saint Louis, MO",De Smet,MO,91276,industry_comparison
+2019,Darius Boone,RB,1780,3,80.77272727272728,,2.0,5.4,"Tulsa, OK",Union,OK,30172,industry_comparison
+2019,Joseph Hutchinson,QB,1781,3,80.77272727272728,,2.0,5.4,"Meridian, MS",Lamar School,MS,143435,industry_comparison
+2019,Corey Williams,WR,1782,3,80.77272727272728,,2.0,5.4,"Bellaire, TX",Episcopal,TX,26386,industry_comparison
+2019,Jack Coldiron,ATH,1788,3,80.77272727272728,,2.0,5.4,"Alexandria, KY",Covington Catholic,KY,51004,industry_comparison
+2019,Peyton Dixon,RB,1789,3,80.77272727272728,,2.0,5.4,"Reno, NV",Bishop Manogue,NV,96283,industry_comparison
+2019,Jelani Machen,ATH,1790,3,80.77272727272728,,2.0,5.4,"Bethesda, MD",Landon School,MD,59878,industry_comparison
+2019,Jawan King,RB,1792,3,80.77272727272728,,2.0,5.4,"Atlanta, TX",Atlanta,TX,58263,industry_comparison
+2019,Christian Singleton,RB,1794,3,80.77272727272728,,2.0,5.4,"Kennesaw, GA",North Cobb,GA,23169,industry_comparison
+2019,Tyrone Broden,WR,1795,3,80.77272727272728,,2.0,5.4,"West Bloomfield, MI",West Bloomfield,MI,118774,industry_comparison
+2019,Cedrick Wilcox,RB,1801,3,80.77272727272728,,2.0,5.4,"Port Saint Lucie, FL",St. Lucie West Centennial,FL,19439,industry_comparison
+2019,Cameron Hutchinson,RB,1804,3,80.77000988142294,,2.0,5.4,"Havelock, NC",Havelock,NC,143260,industry_comparison
+2019,Tyreke Brown,RB,1805,3,80.76457509881423,,2.0,5.4,"Penns Grove, NJ",Penns Grove,NJ,118523,industry_comparison
+2019,Will Kuehne,QB,1807,3,80.74848484848485,,2.0,5.4,"Owasso, OK",Owasso,OK,120883,industry_comparison
+2019,Jaden Jenkins,QB,1808,3,80.74848484848485,,2.0,5.4,"Louisville, GA",Jefferson County,GA,143623,industry_comparison
+2019,Marquel Tinsley,WR,1811,3,80.74545454545455,,2.0,5.2,"Owensboro, KY",Daviess County,KY,83954,industry_comparison
+2019,Neal Johnson,TE,1813,3,80.71515151515152,,2.0,5.4,"Mesquite, TX",West Mesquite,TX,144104,industry_comparison
+2019,Josh Berry,RB,1815,3,80.71515151515152,,2.0,5.4,"Davenport, FL",Ridge Community,FL,66849,industry_comparison
+2019,Jailen Nias,ATH,1818,3,80.68033596837945,,2.0,5.4,"Bronx, NY",Dewitt Clinton,NY,53151,industry_comparison
+2019,Jimmy Ciarlo,WR,1819,3,80.68033596837945,,2.0,5.4,"Montvale, NJ",U.S. Military Academy Prep,NJ,61697,industry_comparison
+2019,Dante Wright,WR,1823,3,80.66363636363637,,2.0,5.3,"Navarre, FL",Navarre,FL,29842,industry_comparison
+2019,Clyde Price,RB,1824,3,80.66363636363637,,2.0,5.3,"Kansas City, MO",North Kansas City,MO,24167,industry_comparison
+2019,Grant Wells,QB,1825,3,80.64848484848486,,2.0,5.4,"Charleston, WV",George Washington,WV,46623,industry_comparison
+2019,Evan Conley,QB,1827,3,80.63333333333334,,3.0,5.5,"Marietta, GA",Kell,GA,43222,industry_comparison
+2019,Dariyan Wiley,WR,1829,3,80.62327075098815,,2.0,5.4,"Douglasville, GA",Douglas County,GA,30479,industry_comparison
+2019,TJ Goodwin,QB,1831,3,80.6,,3.0,5.5,"Houston, TX",Cy Falls,TX,113101,industry_comparison
+2019,Jeremy Smith,RB,1833,3,80.6,,3.0,5.5,"Savannah, GA",Jenkins,GA,60581,industry_comparison
+2019,Bub Means,WR,1840,3,80.56666666666666,,3.0,5.5,"Hampton, GA",Lovejoy,GA,61069,industry_comparison
+2019,Xavier Malone,QB,1841,3,80.54545454545455,,2.0,5.3,"Knoxville, TN",Fulton,TN,122073,industry_comparison
+2019,Dontae McMillan,ATH,1844,3,80.54545454545455,,2.0,5.3,"Seattle, WA",Sealth,WA,38332,industry_comparison
+2019,Simon Dellinger,TE,1845,3,80.54545454545455,,2.0,5.3,"Fort Wayne, IN",Snider,IN,107515,industry_comparison
+2019,Rahmod Smith,TE,1847,3,80.54545454545455,,2.0,5.3,"Homestead, FL",Homestead,FL,98005,industry_comparison
+2019,Anthony Adkins,ATH,1849,3,80.54545454545455,,2.0,5.3,"Hodgenville, KY",Larue County,KY,5825,industry_comparison
+2019,Ontario Russell,RB,1850,3,80.54545454545455,,2.0,5.3,"Lee's Summit, MO",Lee's Summit North,MO,94517,industry_comparison
+2019,Beau Johnson,TE,1852,3,80.5,,3.0,5.5,"Fort Lauderdale, FL",American Heritage School Broward,FL,142800,industry_comparison
+2019,Keshon Williams,TE,1854,3,80.5,,3.0,5.5,"Longview, TX",Pine Tree,TX,73822,industry_comparison
+2019,Corey Jones,ATH,1855,3,80.5,,3.0,5.5,"Chatsworth, CA",Sierra Canyon,CA,143512,industry_comparison
+2019,Ajani Carter,WR,1859,3,80.5,,3.0,5.5,"Houston, TX",North Shore,TX,2266,industry_comparison
+2019,Xavier Weaver,WR,1862,3,80.48181818181818,,2.0,5.4,"Orlando, FL",Orlando Christian Prep,FL,122205,industry_comparison
+2019,Jaquerrious Williams,RB,1864,3,80.48181818181818,,2.0,5.4,"Tupelo, MS",Tupelo,MS,56472,industry_comparison
+2019,Eric Phillips,TE,1866,3,80.44848484848485,,2.0,5.4,"Cincinnati, OH",Colerain,OH,42329,industry_comparison
+2019,Zane Knipe,WR,1869,3,80.41515151515152,,2.0,5.4,"Houston, TX",Lamar,TX,123574,industry_comparison
+2019,Dadrion Taylor-Demerson,RB,1875,3,80.41515151515152,,2.0,5.4,"Oklahoma City, OK",Carl Albert,OK,27817,industry_comparison
+2019,Steve Lubischer,QB,1881,3,80.38181818181819,,2.0,5.4,"Red Bank, NJ",Red Bank Catholic,NJ,108756,industry_comparison
+2019,Taj Jones,WR,1883,3,80.36511857707511,,2.0,5.4,"Paterson, NJ",Pope John XXIII,NJ,142986,industry_comparison
+2019,LaQuez Cain,WR,1886,3,80.34066205533598,,2.0,5.4,"Montgomery, AL",Park Crossing,AL,78146,industry_comparison
+2019,Jamahd Monroe,WR,1887,3,80.33720355731226,,2.0,5.2,"San Diego, CA",Lincoln,CA,54788,industry_comparison
+2019,Jake Low,RB,1889,3,80.32979249011858,,2.0,5.4,"Virginia Beach, VA",Catholic,VA,53624,industry_comparison
+2019,Jourdan Townsend,WR,1890,3,80.32707509881423,,2.0,5.4,"Farrell, PA",Farrell,PA,68274,industry_comparison
+2019,Lincoln Victor,WR,1892,3,80.31818181818181,,2.0,5.2,"Vancouver, WA",Union,WA,79501,industry_comparison
+2019,Jax Dineen,RB,1898,3,80.3,,3.0,5.5,"Lawrence, KS",Lawrence Free State,KS,58305,industry_comparison
+2019,Michael Love,WR,1904,3,80.27272727272728,,2.0,5.4,"La Grange Park, IL",Nazareth Academy,IL,87949,industry_comparison
+2019,Kadyn Roach,RB,1905,3,80.27272727272728,,2.0,5.4,"Magnolia, AR",Magnolia,AR,70430,industry_comparison
+2019,Samy Johnson,RB,1907,3,80.27272727272728,,2.0,5.4,"Little Rock, AR",Little Rock Catholic,AR,142841,industry_comparison
+2019,Shakobe Harper,RB,1910,3,80.27272727272728,,2.0,5.4,"Santa Ana, CA",Mater Dei,CA,106258,industry_comparison
+2019,Korey King,WR,1911,3,80.27272727272728,,2.0,5.4,"Missouri City, TX",Fort Bend Marshall,TX,75867,industry_comparison
+2019,Charles Ross,WR,1912,3,80.27272727272728,,2.0,5.4,"Culver City, CA",Culver City,CA,20281,industry_comparison
+2019,Trent Tompkins,QB,1914,3,80.27272727272728,,2.0,5.4,"Fresno, CA",Central East,CA,115358,industry_comparison
+2019,Derrick Rose,WR,1921,3,80.27272727272728,,2.0,5.4,"Sachse, TX",Sachse,TX,35184,industry_comparison
+2019,Corey Crooms,WR,1929,3,80.27272727272728,,2.0,5.4,"Country Club Hills, IL",Hillcrest,IL,26103,industry_comparison
+2019,Reese White,RB,1930,3,80.27272727272728,,2.0,5.4,"Atlanta, GA",Riverwood,GA,99246,industry_comparison
+2019,Tyrek Presley,WR,1932,3,80.27272727272728,,2.0,5.4,"Riverdale, GA",Charles Drew,GA,118518,industry_comparison
+2019,Steve Jenkins,WR,1933,3,80.27272727272728,,2.0,5.4,"Harbor City, CA",Narbonne,CA,143881,industry_comparison
+2019,Avery Reece,TE,1940,3,80.27272727272728,,2.0,5.4,"Honea Path, SC",Belton-Honea Path,SC,8934,industry_comparison
+2019,Kamareon Williams,TE,1941,3,80.27272727272728,,2.0,5.4,"Delray Beach, FL",Atlantic,FL,70939,industry_comparison
+2019,Evan Miller,ATH,1950,3,80.22924901185772,,2.0,5.4,"Franklin, TN",Centennial,TN,43344,industry_comparison
+2019,Cade Ballard,ATH,1951,3,80.22381422924902,,2.0,5.4,"Greeneville, TN",Greeneville,TN,16551,industry_comparison
+2019,Freddie Mango,ATH,1952,3,80.21566205533598,,2.0,5.4,"Ferriday, LA",Delta Charter,LA,44335,industry_comparison
+2019,Collin Schlee,QB,1954,3,80.21212121212122,,2.0,5.2,"Ijamsville, MD",Oakdale,MD,25206,industry_comparison
+2019,Mariano Valenti,QB,1956,3,80.18181818181819,,2.0,5.4,"Fort Lauderdale, FL",St. Thomas Aquinas,FL,83155,industry_comparison
+2019,Titus Swen,RB,1957,3,80.18181818181819,,2.0,5.4,"Haslet, TX",Eaton,TX,113054,industry_comparison
+2019,Joe Ervin,RB,1961,3,80.13030303030303,,2.0,5.3,"Rock Hill, SC",South Pointe,SC,62139,industry_comparison
+2019,Suddin Sapien,QB,1963,3,80.11515151515152,,2.0,5.4,"Midland, TX",Midland,TX,109251,industry_comparison
+2019,George Udo,WR,1967,3,80.11212121212121,,2.0,5.2,"Walnut Creek, CA",Berean Christian,CA,45787,industry_comparison
+2019,Corbin Walker,ATH,1968,3,80.0899209486166,,2.0,5.2,"Renton, WA",Oliver M. Hazen,WA,25962,industry_comparison
+2019,Malik Jackson,TE,1969,3,80.08181818181819,,2.0,5.4,"Fort George G Meade, MD",Meade Senior,MD,143889,industry_comparison
+2019,Javon Gantt,WR,1981,3,80.04545454545455,,2.0,5.3,"Jacksonville, FL",Westside,FL,58133,industry_comparison
+2019,Kenneth Walker III,RB,1986,3,80.01515151515152,,2.0,5.4,"Arlington, TN",Arlington,TN,73195,industry_comparison
+2019,Dedrick Wilson,WR,1988,3,80.0,,3.0,5.5,"Kenedy, TX",Kenedy ,TX,33262,industry_comparison
+2019,Maliek Stallings,QB,1989,3,80.0,,3.0,5.5,"Macon, MS",Noxubee County,MS,81705,industry_comparison
+2019,Aidan Wells,TE,1991,3,80.0,,3.0,5.5,"Cleveland, OH",St. Ignatius,OH,2058,industry_comparison
+2019,Jack Bradley,TE,1994,3,80.0,,3.0,5.5,"Dallas, TX",Bishop Lynch,TX,50972,industry_comparison
+2019,John Gordon McKernan,QB,1995,3,80.0,,3.0,5.5,"Baton Rouge, LA",University Lab,LA,63782,industry_comparison
+2019,Josh Kelly,WR,1998,3,79.96363636363635,,2.0,5.3,"Fresno, CA",San Joaquin Memorial,CA,67958,industry_comparison
+2019,Gaudie Campbell,WR,2006,3,79.90044466403162,,2.0,5.4,"Antioch, CA",Antioch,CA,45333,industry_comparison
+2019,Willie Matthews,RB,2008,3,79.88957509881423,,2.0,5.4,"Montclair, NJ",Montclair,NJ,121530,industry_comparison
+2019,Taron Beauford,RB,2009,3,79.88685770750989,,2.0,5.4,"Durham, NC",Southern,NC,110345,industry_comparison
+2019,Noelly Miller,WR,2010,3,79.87327075098814,,2.0,5.4,"Rockville, MD",Thomas S. Wootton,MD,93832,industry_comparison
+2019,Christian Webb,WR,2011,3,79.8705533596838,,2.0,5.4,"Sandy Spring, MD",Sherwood,MD,23234,industry_comparison
+2019,Julius Elders,RB,2012,3,79.86783596837945,,2.0,5.4,"Madison, TN",Goodpasture Christian School,TN,68763,industry_comparison
+2019,Caleb Nelson,WR,2013,3,79.86437747035573,,2.0,5.2,"Folsom, CA",Folsom,CA,17116,industry_comparison
+2019,Deandre Caldwell,WR,2014,3,79.86240118577076,,2.0,5.4,"Smyrna, TN",Smyrna,TN,32958,industry_comparison
+2019,Jake Woods,WR,2015,3,79.85696640316206,,2.0,5.4,"Santa Rosa, CA",Cardinal Newman,CA,53964,industry_comparison
+2019,Ricky Kofoed,TE,2017,3,79.84848484848486,,2.0,5.4,"Charlotte, NC",Charlotte Christian,NC,100284,industry_comparison
+2019,Brett Nabors,WR,2019,3,79.84337944664031,,2.0,5.4,"Nashville, TN",Christ Presbyterian Academy,TN,14185,industry_comparison
+2019,Tyler Hudson,WR,2023,3,79.81818181818181,,2.0,5.2,"Spring, TX",Klein Oak,TX,142938,industry_comparison
+2019,Jonny Barrett,WR,2024,3,79.81818181818181,,2.0,5.2,"Snoqualmie, WA",Mount Si,WA,65059,industry_comparison
+2019,Shemar Thompson,RB,2025,3,79.81818181818181,,2.0,5.2,"Burlington, NC",Walter M Williams,NC,107179,industry_comparison
+2019,Eyin Cole,WR,2034,3,79.81515151515151,,2.0,5.4,"Niceville, FL",Niceville,FL,43536,industry_comparison
+2019,Christian Wells,WR,2035,3,79.81515151515151,,2.0,5.4,"Fort Lauderdale, FL",NSU University School,FL,23235,industry_comparison
+2019,Markel McLaurin,ATH,2036,3,79.81515151515151,,2.0,5.4,"Collins, MS",Collins,MS,83690,industry_comparison
+2019,Blake Watkins,ATH,2037,3,79.81077075098814,,2.0,5.4,"Smyrna, TN",Smyrna,TN,11069,industry_comparison
+2019,Tre' Ross,ATH,2042,3,79.78181818181818,,2.0,5.4,"Tuscaloosa, AL",Hillcrest,AL,115102,industry_comparison
+2019,Zach Gibson,QB,2044,3,79.77272727272728,,2.0,5.4,"Alpharetta, GA",Johns Creek,GA,122734,industry_comparison
+2019,TyQuan Brown,RB,2046,3,79.77272727272728,,2.0,5.4,"Woodbridge, VA",Freedom,VA,118338,industry_comparison
+2019,Deyvon Wright,RB,2047,3,79.77272727272728,,2.0,5.4,"Huntington Station, NY",Half Hollow Hills West,NY,36790,industry_comparison
+2019,Brysen McKinney,QB,2051,3,79.77272727272728,,2.0,5.4,"Arlington, TX",Mansfield Summit,TX,16041,industry_comparison
+2019,Rayshawn James,RB,2052,3,79.77272727272728,,2.0,5.4,"Houston, TX",Westfield,TX,142704,industry_comparison
+2019,Martin Keeley,ATH,2054,3,79.77272727272728,,2.0,5.4,"Corona, CA",Centennial,CA,84499,industry_comparison
+2019,Jamal Cooney,WR,2055,3,79.77272727272728,,2.0,5.4,"Fort Lauderdale, FL",St. Thomas Aquinas,FL,54835,industry_comparison
+2019,Jabari Khepera,WR,2057,3,79.77272727272728,,2.0,5.4,"Dallas, TX",Bishop Dunne,TX,50766,industry_comparison
+2019,Jayce Medlock,TE,2058,3,79.77272727272728,,2.0,5.4,"DeSoto, TX",DeSoto,TX,58576,industry_comparison
+2019,Zakhayas Lee,RB,2061,3,79.77272727272728,,2.0,5.4,"Oregon City, OR",Oregon City,OR,123523,industry_comparison
+2019,C.J. Yarbrough,WR,2062,3,79.77272727272728,,2.0,5.4,"Athens, AL",East Limestone,AL,16530,industry_comparison
+2019,Jaden Smith,WR,2063,3,79.77272727272728,,2.0,5.4,"Kennedale, TX",Kennedale,TX,52702,industry_comparison
+2019,Malikhi Miller,WR,2068,3,79.77272727272728,,2.0,5.4,"El Cerrito, CA",El Cerrito,CA,82072,industry_comparison
+2019,James Tarver,ATH,2074,3,79.77272727272728,,2.0,5.4,"Jacksonville, FL",Raines,FL,55949,industry_comparison
+2019,Milton Jackson,WR,2075,3,79.77272727272728,,2.0,5.4,"Douglas, GA",Coffee,GA,143710,industry_comparison
+2019,De'Von Fox,WR,2077,3,79.77272727272728,,2.0,5.4,"Cleveland, OH",Maple Heights,OH,32862,industry_comparison
+2019,Isiah Grant,ATH,2081,3,79.77272727272728,,2.0,5.4,"Dallas, GA",North Paudling,GA,49966,industry_comparison
+2019,Jordan Medley,ATH,2083,3,79.77272727272728,,2.0,5.4,"Kannapolis, NC",A L Brown,NC,65749,industry_comparison
+2019,Chris Green,WR,2088,3,79.77272727272728,,2.0,5.4,"Lancaster, TX",Lancaster,TX,21799,industry_comparison
+2019,Seth Hayes,WR,2092,3,79.77272727272728,,2.0,5.4,"Magnolia, TX",Magnolia West,TX,106026,industry_comparison
+2019,Kiland Harrison,WR,2094,3,79.77272727272728,,2.0,5.4,"Madison, MS",Saint Joseph Catholic,MS,75186,industry_comparison
+2019,Noah Tumblin,QB,2095,3,79.77272727272728,,2.0,5.4,"San Diego, CA",Mira Mesa,CA,93784,industry_comparison
+2019,Steven Fiso,ATH,2096,3,79.77272727272728,,2.0,5.4,,Faga'itua,,108944,industry_comparison
+2019,Kevin Brown,RB,2102,3,79.7094861660079,,2.0,5.2,"Mattapan, MA",Everett,MA,73937,industry_comparison
+2019,Dee Baker,RB,2105,3,79.66666666666667,,3.0,5.5,"Flowood, MS",Northwest Rankin,MS,33269,industry_comparison
+2019,Mason Fairchild,TE,2107,3,79.66363636363637,,2.0,5.3,"Andale, KS",Andale,KS,84745,industry_comparison
+2019,Grant Gremel,QB,2109,3,79.66032608695652,,3.0,5.5,"Noblesville, IN",Noblesville,IN,46480,industry_comparison
+2019,Edward Saydee,RB,2114,3,79.63030303030303,,2.0,5.3,"Philadelphia, PA",William Penn Charter,PA,40718,industry_comparison
+2019,Marcus Grissett,WR,2115,3,79.61882411067194,,2.0,5.3,"Myrtle Beach, SC",Myrtle Beach,SC,82714,industry_comparison
+2019,Tiy Reed,WR,2116,3,79.6161067193676,,2.0,5.3,"Franklin, TN",Battle Ground Academy,TN,113063,industry_comparison
+2019,Justin Jones,RB,2121,3,79.56447628458498,,2.0,5.3,"Hueytown, AL",Bessemer Academy,AL,144226,industry_comparison
+2019,Adi Anderson,RB,2126,3,79.54545454545455,,2.0,5.3,"Oakland, CA",McClymonds,CA,1528,industry_comparison
+2019,Darius Bowers,QB,2128,3,79.54545454545455,,2.0,5.3,"Fayetteville, AR",Fayetteville,AR,30175,industry_comparison
+2019,Casey Clanton,TE,2130,3,79.54545454545455,,2.0,5.3,"Phoenix, AZ",Central,AZ,19035,industry_comparison
+2019,Montavious Brini,ATH,2144,3,79.5,,3.0,5.5,"Bradenton, FL",IMG Academy,FL,90200,industry_comparison
+2019,Daniel Richardson,QB,2145,3,79.5,,3.0,5.5,"Hollywood, FL",Miami Carol City,FL,29423,industry_comparison
+2019,Dashaun Davis,ATH,2148,3,79.5,,3.0,5.5,"Deerfield Beach, FL",Deerfield Beach,FL,31224,industry_comparison
+2019,Curt Casteel,QB,2149,3,79.5,,3.0,5.5,"Fort Lauderdale, FL",St. Thomas Aquinas,FL,27069,industry_comparison
+2019,Alex Brown,WR,2152,3,79.5,,3.0,5.5,"Spring, TX",Klein Collins,TX,2868,industry_comparison
+2019,Cole Motes,TE,2160,3,79.44545454545455,,2.0,5.2,"Thatcher, AZ",Thatcher,AZ,24790,industry_comparison
+2019,Isaiah Gibbs,RB,2161,3,79.4439229249012,,2.0,5.4,"Knoxville, TN",Farragut,TN,49499,industry_comparison
+2019,Quincy Watson,WR,2163,3,79.41131422924902,,2.0,5.4,"Malvern, PA",Malvern Prep,PA,97442,industry_comparison
+2019,Tamatoa Falatea,WR,2164,3,79.4024209486166,,2.0,5.2,"Honolulu, HI",Punahou,HI,109980,industry_comparison
+2019,Carter Wheat,TE,2169,3,79.33030303030304,,2.0,5.3,"Mesa, AZ",Red Mountain,AZ,18961,industry_comparison
+2019,Tyler Grim,RB,2173,3,79.31818181818181,,2.0,5.2,"Horn Lake, MS",Horn Lake,MS,117631,industry_comparison
+2019,Jamar Simpson,WR,2179,3,79.31818181818181,,2.0,5.2,"Moreno Valley, CA",Rancho Verde,CA,55052,industry_comparison
+2019,Boone Abbott,QB,2183,3,79.31818181818181,,2.0,5.2,"American Fork, UT",American Fork,UT,11447,industry_comparison
+2019,Ethan Erickson,TE,2186,3,79.31601731601731,,2.0,5.3,"Kahuku, HI",Kahuku,HI,42923,industry_comparison
+2019,Juwaun Price,RB,2187,3,79.31274703557312,,2.0,5.2,"Peoria, AZ",Peoria,AZ,70136,industry_comparison
+2019,Lucas Wright,RB,2189,3,79.30187747035573,,2.0,5.2,"Mesa, AZ",Desert Ridge,AZ,80408,industry_comparison
+2019,Alec Trujillo,QB,2190,3,79.2969696969697,,2.0,5.3,"Fresno, CA",San Joaquin Memorial,CA,2697,industry_comparison
+2019,Calvin Hill,RB,2191,3,79.27272727272728,,2.0,5.4,"Baytown, TX",Ross S. Sterling,TX,17354,industry_comparison
+2019,Syheam McQueen,RB,2197,3,79.27272727272728,,2.0,5.4,"Laurinburg, NC",Scotland County,NC,109320,industry_comparison
+2019,Noah Smith,WR,2198,3,79.27272727272728,,2.0,5.4,"Houston, TX",Cypress Ridge,TX,93746,industry_comparison
+2019,Dayton Wade,ATH,2200,3,79.27272727272728,,2.0,5.4,"Hampton, GA",Lovejoy,GA,32707,industry_comparison
+2019,Ross Malmgren,QB,2203,3,79.27272727272728,,2.0,5.4,"Dallas, GA",North Paudling,GA,102508,industry_comparison
+2019,Joey Carroll,TE,2204,3,79.27272727272728,,2.0,5.4,"Toledo, OH",St. Francis de Sales,OH,62746,industry_comparison
+2019,AJ Toney,WR,2208,3,79.27272727272728,,2.0,5.4,"Birmingham, AL",Jackson-Olin,AL,2240,industry_comparison
+2019,Kamron Love,ATH,2213,3,79.27272727272728,,2.0,5.4,"Edmond, OK",Santa Fe,OK,71111,industry_comparison
+2019,Deon Fountain,WR,2216,3,79.27272727272728,,2.0,5.4,"Quitman, GA",Brooks County,GA,34389,industry_comparison
+2019,Dylan Fromm,QB,2217,3,79.27272727272728,,2.0,5.4,"Warner Robins, GA",Warner Robins,GA,39892,industry_comparison
+2019,Levelle Bailey,ATH,2219,3,79.27272727272728,,2.0,5.4,"Sacramento, CA",Luther Burbank,CA,143840,industry_comparison
+2019,Rhett Williams,TE,2220,3,79.27272727272728,,2.0,5.4,"Carmel, IN",Carmel,IN,99791,industry_comparison
+2019,Devontez Walker,WR,2226,3,79.27272727272728,,2.0,5.4,"Charlotte, NC",West Charlotte,NC,36630,industry_comparison
+2019,Peyton Sobosle,TE,2231,3,79.27272727272728,,2.0,5.4,"The Woodlands, TX",College Park,TX,96335,industry_comparison
+2019,Spencer Witter,TE,2234,3,79.27272727272728,,2.0,5.4,"West Hartford, CT",Choate Rosemary Hall,CT,108100,industry_comparison
+2019,Kendrick Brown,WR,2236,3,79.27272727272728,,2.0,5.4,"Meridian, MS",Meridian,MS,72896,industry_comparison
+2019,Malik Dixon,ATH,2239,3,79.27272727272728,,2.0,5.4,"Apopka, FL",Wekiva,FL,81808,industry_comparison
+2019,Jonathan Collins,ATH,2245,3,79.2040513833992,,2.0,5.2,"Williamstown, NJ",Williamstown,NJ,64590,industry_comparison
+2019,Kurtis Rourke,QB,2247,3,79.18181818181819,,2.0,5.4,"Ottawa, ON",Holy Trinity,ON,76230,industry_comparison
+2019,Kane Everson,ATH,2248,3,79.17687747035573,,2.0,5.2,"Harrisburg, PA",Harrisburg,PA,71146,industry_comparison
+2019,Dayron Johnson,WR,2249,3,79.17588932806323,,2.0,5.3,"Springfield, TN",Springfield,TN,143419,industry_comparison
+2019,Jarrett Guest,QB,2252,3,79.14848484848486,,2.0,5.4,"Acworth, GA",Kennesaw Mountain,GA,57128,industry_comparison
+2019,Jordan Hull,WR,2253,3,79.11067193675889,,2.0,5.3,"Zionsville, IN",Zionsville,IN,143012,industry_comparison
+2019,Joseph Carter,WR,2259,3,79.04545454545455,,2.0,5.3,"Plano, TX",Plano East,TX,66495,industry_comparison
+2019,Tiquest Terry,WR,2262,3,79.04545454545455,,2.0,5.3,"Blacksburg, VA",Blacksburg,VA,113006,industry_comparison
+2019,Braxton Collins,WR,2264,3,79.04545454545455,,2.0,5.3,"Greer, SC",Greer,SC,13472,industry_comparison
+2019,Wyatt Draeger,TE,2270,3,79.04545454545455,,2.0,5.3,"Reno, NV",Reno,NV,121776,industry_comparison
+2019,Chandler Whitfield,WR,2272,3,79.04545454545455,,2.0,5.3,"Zachary, LA",Zachary,LA,19950,industry_comparison
+2019,Kendel Taylor,RB,2278,3,79.04545454545455,,2.0,5.3,"Madison Heights, MI",Bishop Foley,MI,72839,industry_comparison
+2019,Anthony Summey,RB,2281,3,79.03087944664031,,2.0,5.4,"Jersey City, NJ",St. Peter's Prep,NJ,6602,industry_comparison
+2019,David Clayton,WR,2282,3,79.03030303030303,,2.0,5.3,"Grapevine, TX",Grapevine,TX,31543,industry_comparison
+2019,Jonathan Fells,RB,2284,3,79.02816205533598,,2.0,5.4,"Ozark, AL",Carroll,AL,64640,industry_comparison
+2019,Latrele Palmer,RB,2285,3,79.01457509881423,,2.0,5.4,"Olney, MD",Our Lady Good Counsel HS,MD,78463,industry_comparison
+2019,Cameron Baker,WR,2288,3,79.0,,3.0,5.5,"Germantown, TN",Germantown,TN,17618,industry_comparison
+2019,DeAnthony Ball,WR,2290,3,79.0,,3.0,5.5,"Atlanta, GA",Carver,GA,33139,industry_comparison
+2019,Zach Daniel,QB,2296,3,78.95238095238095,,3.0,5.5,"Houston, TX",The Kinkaid School,TX,122667,industry_comparison
+2019,Gavin Screws,QB,2301,3,78.87878787878788,,2.0,5.2,"Jacksonville, FL",Baldwin,FL,45452,industry_comparison
+2019,Larenz Redd,RB,2302,3,78.87878787878788,,2.0,5.2,"Salt Lake City, UT",East,UT,78173,industry_comparison
+2019,Alex Flinn,QB,2304,3,78.87878787878788,,2.0,5.2,"Asheville, NC",AC Reynolds,NC,3003,industry_comparison
+2019,Nick Ostmo,RB,2306,3,78.85350790513834,,2.0,5.2,"Portland, OR",Lincoln,OR,92835,industry_comparison
+2019,Zion Hatley,RB,2312,3,78.84807312252966,,2.0,5.2,"Arkadelphia, AR",Arkadelphia,AR,123851,industry_comparison
+2019,Jojo Siofele,RB,2315,3,78.81818181818181,,2.0,5.2,"Camas, WA",Union,WA,64170,industry_comparison
+2019,Mekel Ealy,WR,2316,3,78.81818181818181,,2.0,5.2,"Oakley, CA",Freedom,CA,86937,industry_comparison
+2019,Jamari Ferrell,RB,2317,3,78.81818181818181,,2.0,5.2,"Mission Viejo, CA",Mission Viejo,CA,55117,industry_comparison
+2019,Hendrix Johnson,ATH,2322,3,78.81818181818181,,2.0,5.2,"Phoenix, AZ",Boulder Creek,AZ,143823,industry_comparison
+2019,Jaden Voisin,ATH,2324,3,78.81818181818181,,2.0,5.2,"Crestview, FL",Crestview,FL,52712,industry_comparison
+2019,Brandon Coleman,RB,2327,3,78.81818181818181,,2.0,5.2,"Columbia Station, OH",Columbia,OH,12339,industry_comparison
+2019,Marvae Myers-Glover,ATH,2331,3,78.81818181818181,,2.0,5.2,"Orlando, FL",Oak Ridge,FL,84566,industry_comparison
+2019,Ailym Ford,RB,2332,3,78.81818181818181,,2.0,5.2,"Florence, SC",West Florence,SC,2094,industry_comparison
+2019,Kale Edwards,QB,2333,3,78.81818181818181,,2.0,5.2,"Coeur D Alene, ID",Coeur D'Alene,ID,70650,industry_comparison
+2019,Justin Lockhart,WR,2338,3,78.81818181818181,,2.0,5.2,"Gardena, CA",La Salle,CA,69511,industry_comparison
+2019,Javon Ivory,WR,2340,3,78.81515151515151,,2.0,5.4,"Grove Hill, AL",Clarke County,AL,143853,industry_comparison
+2019,Emil Smith,WR,2348,3,78.77272727272728,,2.0,5.4,"Attalla, AL",Etowah,AL,41692,industry_comparison
+2019,DJ Hart,WR,2350,3,78.77272727272728,,2.0,5.4,"New London, TX",West Rusk,TX,37299,industry_comparison
+2019,Sean Simms,ATH,2351,3,78.77272727272728,,2.0,5.4,"Dallas, TX",South Oak Cliff,TX,105640,industry_comparison
+2019,Dante Cephas,WR,2354,3,78.77272727272728,,2.0,5.4,"Pittsburgh, PA",Penn Hills,PA,29765,industry_comparison
+2019,Griffin Helm,ATH,2357,3,78.77272727272728,,2.0,5.4,"Jacksonville, FL",Bartram Trail,FL,47139,industry_comparison
+2019,Jaquarion Turner,RB,2360,3,78.77272727272728,,2.0,5.4,"Garland, TX",South Garland,TX,56442,industry_comparison
+2019,Joshua Simon,WR,2361,3,78.77272727272728,,2.0,5.4,"Sumter, SC",Crestwood,SC,68090,industry_comparison
+2019,Caden Blum,TE,2363,3,78.77272727272728,,2.0,5.4,"Baraboo, WI",Baraboo,WI,16696,industry_comparison
+2019,Dekendrick Bender,WR,2365,3,78.77272727272728,,2.0,5.4,"Marshall, TX",Marshall,TX,33483,industry_comparison
+2019,Blaise Bentsen,QB,2377,3,78.77272727272728,,2.0,5.4,"Sherman, TX",Sherman,TX,10702,industry_comparison
+2019,Darrell Wyatt,WR,2387,3,78.77272727272728,,2.0,5.4,"Detroit, MI",Martin Luther King Jr.,MI,30708,industry_comparison
+2019,Oscar Cardenas,TE,2390,3,78.77272727272728,,2.0,5.4,"San Antonio, TX",Brandeis,TX,94647,industry_comparison
+2019,Javien Cuff,WR,2393,3,78.77272727272728,,2.0,5.4,"Vero Beach, FL",Vero Beach,FL,58035,industry_comparison
+2019,Blake Muntz,TE,2395,3,78.77272727272728,,2.0,5.4,"Richmond, KY",Madison Central,KY,10963,industry_comparison
+2019,Tyler Stephens,TE,2396,3,78.77272727272728,,2.0,5.4,"Leavittsburg, OH",Labrae,OH,118125,industry_comparison
+2019,Golden Eke,WR,2398,3,78.77272727272728,,2.0,5.4,"Houston, TX",Langham Creek,TX,156171,industry_comparison
+2019,Calvin Jackson,WR,2404,3,78.68675889328063,,2.0,5.3,"Chattanooga, TN",Red Bank,TN,143748,industry_comparison
+2019,Garrett Dennis,ATH,2407,3,78.63241106719369,,2.0,5.3,"Louisville, KY",Louisville Male,KY,44926,industry_comparison
+2019,Michael Lewis,WR,2408,3,78.63096306887456,,2.0,5.4,"Concord, NC",Cox Mill,NC,87932,industry_comparison
+2019,Sone Ntoh,RB,2409,3,78.62327075098814,,2.0,5.4,"Emmaus, PA",Emmaus,PA,107871,industry_comparison
+2019,Micaleous Elder,WR,2411,3,78.5969696969697,,2.0,5.3,"Murfreesboro, TN",Blackman,TN,87261,industry_comparison
+2019,Bryce McCormick,TE,2413,3,78.54545454545455,,2.0,5.3,"Nashville, TN",Christ Presbyterian Academy,TN,15850,industry_comparison
+2019,Billy Lucas,RB,2415,3,78.54545454545455,,2.0,5.3,"Erie, PA",Cathedral Prep,PA,10494,industry_comparison
+2019,Greyson Tackett,QB,2417,3,78.54545454545455,,2.0,5.3,"Little Rock, AR",Joe T. Robinson,AR,47102,industry_comparison
+2019,Cedric Case,QB,2419,3,78.54545454545455,,2.0,5.3,"Lincoln, NE",Lincoln High,NE,19297,industry_comparison
+2019,Kyle Davis,RB,2420,3,78.54545454545455,,2.0,5.3,"Chicago, IL",Mount Carmel,IL,76533,industry_comparison
+2019,Gerald Green,RB,2421,3,78.54545454545455,,2.0,5.3,"Sharpsburg, GA",East Coweta,GA,45851,industry_comparison
+2019,Sir Oliver Everett,ATH,2427,3,78.54545454545455,,2.0,5.3,"Las Vegas, NV",Faith Lutheran,NV,107628,industry_comparison
+2019,James Maye,WR,2428,3,78.54545454545455,,2.0,5.3,"Charlotte, NC",Rocky River,NC,55715,industry_comparison
+2019,Cole Mueller,RB,2430,3,78.54545454545455,,2.0,5.3,"Wentzville, MO",Holt,MO,24791,industry_comparison
+2019,Jacquez Norman,RB,2434,3,78.54545454545455,,2.0,5.3,"Antioch, TN",Cane Ridge,TN,52494,industry_comparison
+2019,Conner Richardson,TE,2438,3,78.54545454545455,,2.0,5.3,"Germantown, TN",Germantown,TN,25448,industry_comparison
+2019,La'Darrion Florez,WR,2442,3,78.54545454545455,,2.0,5.3,"Friendswood, TX",Clear Brook,TX,77371,industry_comparison
+2019,Keiran Grant,RB,2447,3,78.5,,3.0,5.5,"Cuero, TX",Cuero,TX,71990,industry_comparison
+2019,DJ Chisolm,ATH,2449,3,78.5,,3.0,5.5,"Moncks Corner, SC",Berkeley,SC,37271,industry_comparison
+2019,Amir McDaniel,WR,2456,3,78.46753246753248,,2.0,5.4,"Pensacola, FL",West Florida,FL,4318,industry_comparison
+2019,Donovan Curry,WR,2457,3,78.46753246753248,,2.0,5.4,"Mount Airy, GA",Habersham Central,GA,38152,industry_comparison
+2019,Jaelin Benefield,WR,2463,3,78.41329051383399,,2.0,5.2,"Pearland, TX",Pearland,TX,52832,industry_comparison
+2019,Devon Starling,RB,2466,3,78.41057312252966,,2.0,5.2,"Antioch, TN",Cane Ridge,TN,36468,industry_comparison
+2019,Cartez Campbell,WR,2467,3,78.39970355731226,,2.0,5.2,"Knoxville, TN",Hardin Valley Academy,TN,18967,industry_comparison
+2019,Joe Green,QB,2470,3,78.31818181818181,,2.0,5.2,"Sammamish, WA",Skyline,WA,62187,industry_comparison
+2019,Preston Helwege,TE,2474,3,78.31818181818181,,2.0,5.2,"Seattle, WA",O'Dea,WA,96841,industry_comparison
+2019,Devin Voisin,WR,2477,3,78.31818181818181,,2.0,5.2,"Crestview, FL",Crestview,FL,36251,industry_comparison
+2019,Joey Elwell,TE,2480,3,78.31818181818181,,2.0,5.2,"Meridian, ID",Mountain View,ID,62767,industry_comparison
+2019,Malik Richardson,ATH,2484,3,78.31818181818181,,2.0,5.2,"Sumter, SC",Lakewood,SC,81973,industry_comparison
+2019,Keanu Hill,WR,2489,3,78.31601731601731,,2.0,5.3,"Euless, TX",Trinity,TX,71649,industry_comparison
+2019,Eddie Schott,QB,2490,3,78.31601731601731,,2.0,5.3,"Indianapolis, IN",Southport,IN,40543,industry_comparison
+2019,Kendarius Fant-Miles,WR,2491,3,78.28752964908782,,2.0,5.3,"Anderson, SC",Westside,SC,72834,industry_comparison
+2019,Cameron Cloud,WR,2492,3,78.27272727272728,,2.0,5.4,"Greensboro, NC",Northwest Guilford,NC,17713,industry_comparison
+2019,Jaiden Howard,QB,2493,3,78.27272727272728,,2.0,5.4,"Crosby, TX",Crosby,TX,142562,industry_comparison
+2019,Zakhari Franklin,WR,2494,3,78.27272727272728,,2.0,5.4,"Cedar Hill, TX",Cedar Hill,TX,123521,industry_comparison
+2019,Chris Lovick,RB,2498,3,78.27272727272728,,2.0,5.4,"Tomball, TX",Memorial,TX,22040,industry_comparison
+2019,Kai Rojas,QB,2499,3,78.27272727272728,,2.0,5.4,"Ventura, CA",St. Bonaventure,CA,70554,industry_comparison
+2019,Chad Alexander,RB,2500,3,78.27272727272728,,2.0,5.4,"New Orleans, LA",L.B. Landry,LA,19507,industry_comparison
+2019,Xavier Shepherd,QB,2501,3,78.27272727272728,,2.0,5.4,"Nashville, TN",Pearl-Cohn,TN,122157,industry_comparison
+2019,Maasai Maynor,QB,2502,3,78.27272727272728,,2.0,5.4,"Jersey City, NJ",St. Peter's Prep,NJ,81113,industry_comparison
+2019,Alex Meredith,QB,2504,3,78.27272727272728,,2.0,5.4,"Anderson, SC",U.S. Military Academy Prep,SC,3209,industry_comparison
+2019,Jakyrus Williams,WR,2505,3,78.27272727272728,,2.0,5.4,"Saraland, AL",Saraland,AL,54065,industry_comparison
+2019,Darius Lewis,ATH,2509,3,78.27272727272728,,2.0,5.4,"Jacksonville, FL",First Coast,FL,30291,industry_comparison
+2019,Robbie Williams,WR,2510,3,78.27272727272728,,2.0,5.4,"Tyler, TX",Chapel Hill,TX,100868,industry_comparison
+2019,Jacob Wallace,WR,2511,3,78.27272727272728,,2.0,5.4,"Marion, TX",Marion,TX,52289,industry_comparison
+2019,Prince-Dru Bey,QB,2512,3,78.27272727272728,,2.0,5.4,"Atco, NJ",Winslow Township,NJ,96955,industry_comparison
+2019,Korey Mcleod,TE,2522,3,78.27272727272728,,2.0,5.4,"Laurel, MD",St. Vincent Pallotti,MD,75873,industry_comparison
+2019,Jake Willcox,QB,2523,3,78.27272727272728,,2.0,5.4,"Everett, MA",Milton Academy,MA,53954,industry_comparison
+2019,Ja'Marvin Hartfield,RB,2529,3,78.27272727272728,,2.0,5.4,"Cedar Hill, TX",Trinity Leadership,TX,50652,industry_comparison
+2019,Mark Nondorf,QB,2533,3,78.26363636363637,,2.0,5.3,"Indianapolis, IN",Bishop Chatard,IN,83494,industry_comparison
+2019,Abdul-Fatai Ibrahim,WR,2537,3,78.23919886502185,,2.0,5.4,"Fort Lauderdale, FL",Miramar,FL,142872,industry_comparison
+2019,Zack Hillstock,RB,2539,3,78.2149209486166,,2.0,5.2,"Roebuck, SC",Dorman,SC,123345,industry_comparison
+2019,James Meeks,RB,2542,3,78.17878787878789,,2.0,5.2,"Palm Beach Gardens, FL",Dwyer,FL,55742,industry_comparison
+2019,Zach Hartsfield,TE,2544,3,78.13419913419914,,2.0,5.4,"Bakersfield, CA",Centennial,CA,122787,industry_comparison
+2019,Larry Robbins,ATH,2551,3,78.04545454545455,,2.0,5.3,"Miami, FL",Northwestern,FL,78342,industry_comparison
+2019,Sean Morris,TE,2553,3,78.04545454545455,,2.0,5.3,"Barnegat, NJ",Barnegat,NJ,105550,industry_comparison
+2019,Jeremiah Josephs,ATH,2556,3,78.04545454545455,,2.0,5.3,"Monroeville, PA",Gateway,PA,143708,industry_comparison
+2019,Syncere Jones,WR,2557,3,78.04545454545455,,2.0,5.3,"Cincinnati, OH",Colerain,OH,143727,industry_comparison
+2019,Bryan Bradford,RB,2558,3,78.04545454545455,,2.0,5.3,"Saint Louis, MO",Christian Brothers College,MO,15400,industry_comparison
+2019,Dante Heaggans,WR,2559,3,78.04545454545455,,2.0,5.3,"San Antonio, TX",Madison,TX,29790,industry_comparison
+2019,Michael Vice,TE,2563,3,78.04545454545455,,2.0,5.3,"Birmingham, AL",Vestavia Hills,AL,88493,industry_comparison
+2019,Eric Wenzel,QB,2568,3,78.04545454545455,,2.0,5.3,"Kalamazoo, MI",Msgr John R Hackett Catholic Central,MI,42487,industry_comparison
+2019,Trey Collier,ATH,2571,3,78.04545454545455,,2.0,5.3,"Kaufman, TX",Kaufman,TX,115963,industry_comparison
+2019,Keegan Freid,QB,2573,3,78.04545454545455,,2.0,5.3,"Peoria, AZ",Sunrise Mountain,AZ,71774,industry_comparison
+2019,Hayden Junker,TE,2575,3,78.04545454545455,,2.0,5.3,"Massillon, OH",Jackson,OH,144140,industry_comparison
+2019,Parker Christensen,ATH,2576,3,78.04545454545455,,2.0,5.3,"Sheridan, WY",Sheridan,WY,95003,industry_comparison
+2019,Jaden Gragg,WR,2579,3,78.04545454545455,,2.0,5.3,"Melbourne, FL",Eau Gallie,FL,52609,industry_comparison
+2019,Terrell McDonald,QB,2584,3,78.0,,3.0,5.5,"Muscle Shoals, AL",Muscle Shoals,AL,111564,industry_comparison
+2019,Fred Orr,RB,2585,3,77.99209486166008,,2.0,5.2,"Clarksville, TN",Rossview,TN,44250,industry_comparison
+2019,Xavier Myers,RB,2586,3,77.98666007905138,,2.0,5.2,"Murfreesboro, TN",Oakland,TN,122102,industry_comparison
+2019,Richard Kinley II,ATH,2587,3,77.98268398268398,,2.0,5.3,"Memphis, TN",Lausanne Collegiate School,TN,99974,industry_comparison
+2019,Josh Watch,ATH,2591,3,77.94046442687748,,2.0,5.2,"Clarksville, TN",Clarksville,TN,67726,industry_comparison
+2019,Bryce Peterson,WR,2592,3,77.93982897741127,,2.0,5.2,"Modesto, CA",Thomas Downey,CA,15895,industry_comparison
+2019,Traveon Latimore,WR,2593,3,77.93921936999844,,2.0,5.2,"Danielsville, GA",Madison County,GA,114454,industry_comparison
+2019,Jacquez Allen,RB,2594,3,77.89328063241106,,2.0,5.3,"Montgomery, AL",JAG,AL,52486,industry_comparison
+2019,Najeh Baker,WR,2596,3,77.84848484848486,,2.0,5.4,"Homestead, FL",South Dade,FL,90952,industry_comparison
+2019,Tomario Pleasant,RB,2599,3,77.81818181818181,,2.0,5.2,"Brentwood, TN",Brentwood Academy,TN,113487,industry_comparison
+2019,Duncan Smith,TE,2606,3,77.81818181818181,,2.0,5.2,"Burbank, CA",Burbank,CA,39368,industry_comparison
+2019,Esaias Taylor,RB,2608,3,77.81818181818181,,2.0,5.2,"Mesquite, TX",Horn,TX,42827,industry_comparison
+2019,LaDarius Owens,RB,2609,3,77.81818181818181,,2.0,5.2,"Manvel, TX",Manvel,TX,77467,industry_comparison
+2019,Treyton Welch,WR,2610,3,77.81818181818181,,2.0,5.2,"Buffalo, MN",Buffalo Senior,MN,116332,industry_comparison
+2019,Dawson Ingram,TE,2611,3,77.81818181818181,,2.0,5.2,"Camas, WA",Camas,WA,143697,industry_comparison
+2019,Caden Bell,QB,2612,3,77.81818181818181,,2.0,5.2,"Anaheim, CA",JSerra Catholic,CA,16695,industry_comparison
+2019,Dawson McPeak,QB,2613,3,77.81818181818181,,2.0,5.2,"Yuba City, CA",River Valley,CA,32573,industry_comparison
+2019,Javion Posey,ATH,2615,3,77.81818181818181,,2.0,5.2,"Greenville, AL",Greenville,AL,58089,industry_comparison
+2019,Jayden Wickware,ATH,2617,3,77.81818181818181,,2.0,5.2,"San Diego, CA",San Diego HS,CA,58720,industry_comparison
+2019,Daniel To’oto’o Jr.,ATH,2619,3,77.81818181818181,,2.0,5.2,"Mesa, AZ",Skyline,AZ,29496,industry_comparison
+2019,Johnny Williams,RB,2622,3,77.81818181818181,,2.0,5.2,"Calabasas, CA",Calabasas,CA,64107,industry_comparison
+2019,Isaiah Holiness,WR,2624,3,77.81818181818181,,2.0,5.2,"Redlands, CA",Redlands East Valley,CA,49559,industry_comparison
+2019,Micaiah Overton,TE,2626,3,77.81818181818181,,2.0,5.2,"Tuscaloosa, AL",Bessemer Academy,AL,87257,industry_comparison
+2019,Tre' Goode,ATH,2630,3,77.81818181818181,,2.0,5.2,"Jamestown, NC",Lucy Ragsdale,NC,114948,industry_comparison
+2019,Micah Hilts,WR,2632,3,77.81818181818181,,2.0,5.2,"Colorado Springs, CO",Vista Ridge,CO,87167,industry_comparison
+2019,Damean Bivins,RB,2633,3,77.81818181818181,,2.0,5.2,"Milton, FL",Pace,FL,28466,industry_comparison
+2019,Jaylan Williams,TE,2634,3,77.81818181818181,,2.0,5.2,"Acworth, GA",Allatoona,GA,58788,industry_comparison
+2019,Benjamin Williams,ATH,2635,3,77.81818181818181,,2.0,5.2,"Charlotte, NC",Charlotte Christian,NC,10169,industry_comparison
+2019,Drew Leszczynski,QB,2637,3,77.81818181818181,,2.0,5.2,"Brookfield, WI",Brookfield Central,WI,39079,industry_comparison
+2019,Taj Gregory,QB,2642,3,77.77272727272728,,2.0,5.4,"Coppell, TX",Coppell,TX,109858,industry_comparison
+2019,Johnathan Bennett,QB,2643,3,77.77272727272728,,2.0,5.4,"Summerville, SC",Summerville,SC,63836,industry_comparison
+2019,Shayne Lawrence,QB,2649,3,77.77272727272728,,2.0,5.4,"Cedar Hill, TX",Cedar Hill,TX,107039,industry_comparison
+2019,Justin Bray,TE,2653,3,77.77272727272728,,2.0,5.4,"Collierville, TN",St. George's Independent School,TN,69109,industry_comparison
+2019,Eli Nordhorn,TE,2660,3,77.77272727272728,,2.0,5.4,"Knoxville, TN",Grace Christian Academy,TN,40973,industry_comparison
+2019,Bryon Hanspard,WR,2662,3,77.77272727272728,,2.0,5.4,"DeSoto, TX",DeSoto,TX,16029,industry_comparison
+2019,Jaylin Hastings,RB,2663,3,77.77272727272728,,2.0,5.4,"San Antonio, TX",John Jay,TX,59024,industry_comparison
+2019,Ryan Eledge,QB,2666,3,77.77272727272728,,2.0,5.4,"Nashville, TN",Christ Presbyterian Academy,TN,103126,industry_comparison
+2019,Jaylin Smith,ATH,2667,3,77.77272727272728,,2.0,5.4,"Forney, TX",North Forney,TX,59048,industry_comparison
+2019,Grayson McCall,QB,2670,3,77.77272727272728,,2.0,5.4,"Indian Trail, NC",Porter Ridge,NC,46678,industry_comparison
+2019,Joshua Cephus,WR,2672,3,77.77272727272728,,2.0,5.4,"Houston, TX",Dekaney,TX,67871,industry_comparison
+2019,Jeremiah Fails,WR,2683,3,77.77272727272728,,2.0,5.4,"Ocoee, FL",Ocoee,FL,60095,industry_comparison
+2019,Corey Wilson,RB,2684,3,77.77272727272728,,2.0,5.4,"Vicksburg, MS",Warren Central,MS,26390,industry_comparison
+2019,Caleb Gerber,RB,2685,3,77.77272727272728,,2.0,5.4,"El Paso, TX",Pebble Hills,TX,16996,industry_comparison
+2019,Quintavius Workman,WR,2689,3,77.77272727272728,,2.0,5.4,"El Paso, TX",Chapin,TX,97558,industry_comparison
+2019,Jermaine Brown,WR,2692,3,77.77272727272728,,2.0,5.4,"Mobile, AL",St. Luke's Episcopal,AL,60692,industry_comparison
+2019,Kevin Walls,WR,2693,3,77.77272727272728,,2.0,5.4,"Westlake, OH",Westlake,OH,74499,industry_comparison
+2019,Jaevon Gillespie,RB,2698,3,77.5844861660079,,2.0,5.2,"Greeneville, TN",Greeneville,TN,52866,industry_comparison
+2019,Dashaun McKinney,WR,2700,3,77.5605617255215,,2.0,5.2,"Knoxville, TN",Fulton,TN,31227,industry_comparison
+2019,Avery Williams,WR,2701,3,77.5584280995766,,2.0,5.2,"Brentwood, TN",Brentwood,TN,8963,industry_comparison
+2019,Connor Holmes,WR,2702,3,77.55690408104454,,2.0,5.2,"Parlin, NJ",Sayreville,NJ,25590,industry_comparison
+2019,Jermaine Givens,QB,2708,3,77.54545454545455,,2.0,5.3,"Mesquite, TX",Horn,TX,60720,industry_comparison
+2019,Hunter Bullock,TE,2709,3,77.54545454545455,,2.0,5.3,"Gaffney, SC",Gaffney,SC,48402,industry_comparison
+2019,Courtney Reese,RB,2711,3,77.54545454545455,,2.0,5.3,"Miami, FL",Miami Southridge,FL,26794,industry_comparison
+2019,Malik Wesley,WR,2713,3,77.54545454545455,,2.0,5.3,"Columbia, SC",Spring Valley,SC,82046,industry_comparison
+2019,Marshun Douglas,RB,2717,3,77.54545454545455,,2.0,5.3,"Memphis, TN",Kirby,TN,84407,industry_comparison
+2019,Davis Koskie,TE,2721,3,77.54545454545455,,2.0,5.3,"Houston, TX",Memorial,TX,32382,industry_comparison
+2019,Caleb Leake,QB,2723,3,77.54545454545455,,2.0,5.3,"Fort Worth, TX",North Crowley,TX,17066,industry_comparison
+2019,Marcus Whitaker,TE,2728,3,77.54545454545455,,2.0,5.3,"West Memphis, AR",West Memphis,AR,83090,industry_comparison
+2019,Rod Hawkins,RB,2730,3,77.54545454545455,,2.0,5.3,"Tyler, TX",John Tyler,TX,101522,industry_comparison
+2019,Keshawn Wicks,RB,2733,3,77.54545454545455,,2.0,5.3,"Moncks Corner, SC",Berkeley,SC,73812,industry_comparison
+2019,Isaiah Neyor,WR,2740,3,77.54545454545455,,2.0,5.3,"Arlington, TX",Lamar,TX,49666,industry_comparison
+2019,Raynoch Thompson,ATH,2744,3,77.51926877470356,,2.0,5.2,"Knoxville, TN",Knoxville Catholic,TN,99053,industry_comparison
+2019,Julian Bass,ATH,2745,3,77.51383399209486,,2.0,5.2,"Springfield, MA",Springfield Central,MA,68553,industry_comparison
+2019,Michael Monios,WR,2746,3,77.50047660215913,,2.0,5.4,"Wallingford, CT",Choate Rosemary Hall,CT,88076,industry_comparison
+2019,Rahsul Faison,RB,2755,3,77.31818181818181,,2.0,5.2,"Pottstown, PA",Pottsgrove,PA,98019,industry_comparison
+2019,Will Bowers,QB,2757,3,77.31818181818181,,2.0,5.2,"Southlake, TX",Southlake Carroll,TX,120669,industry_comparison
+2019,Miles Hastings,QB,2758,3,77.31818181818181,,2.0,5.2,"San Marcos, CA",San Marcos,CA,89682,industry_comparison
+2019,Treon Sibley,WR,2761,3,77.31818181818181,,2.0,5.2,"Akron, OH",Coventry,OH,115436,industry_comparison
+2019,Sagan Gronauer,QB,2768,3,77.31818181818181,,2.0,5.2,"Las Vegas, NV",Faith Lutheran,NV,104073,industry_comparison
+2019,Connor McIntee,TE,2770,3,77.31818181818181,,2.0,5.2,"Carmichael, CA",Jesuit,CA,25631,industry_comparison
+2019,Natano Woods,QB,2772,3,77.31818181818181,,2.0,5.2,"Kent, WA",Kentridge,WA,91091,industry_comparison
+2019,Tye Moore,ATH,2774,3,77.31818181818181,,2.0,5.2,"Las Vegas, NV",Desert Pines,NV,117200,industry_comparison
+2019,Christopher Kaminski,QB,2777,3,77.31818181818181,,2.0,5.2,"South Lyon, MI",South Lyon,MI,144514,industry_comparison
+2019,Ryan Johnson,QB,2779,3,77.27272727272728,,2.0,5.4,"Prescott, AR",Prescott,AR,142414,industry_comparison
+2019,Bruno Forestieri,RB,2780,3,77.27272727272728,,2.0,5.4,"Houston, TX",St Pius X,TX,15365,industry_comparison
+2019,Josh Williams,RB,2783,3,77.27272727272728,,2.0,5.4,"Houston, TX",The Kinkaid School,TX,67759,industry_comparison
+2019,Austin Landry,WR,2789,3,77.27272727272728,,2.0,5.4,"Pearland, TX",Pearland,TX,8496,industry_comparison
+2019,Frederik Antoine,ATH,2791,3,77.27272727272728,,2.0,5.4,"Montreal, QC",Canada,QC,44398,industry_comparison
+2019,Ben Brittain,ATH,2793,3,77.27272727272728,,2.0,5.4,"Waco, TX",Reicher Catholic,TX,9643,industry_comparison
+2019,Tanner Corum,WR,2796,3,77.17672241803551,,2.0,5.2,"Knoxville, TN",Farragut,TN,110074,industry_comparison
+2019,Parker Driggers,ATH,2798,3,77.11981225296444,,2.0,5.2,"Brantley, AL",Brantley,AL,95021,industry_comparison
+2019,Carson Welch,QB,2800,3,77.04545454545455,,2.0,5.3,"Arlington, TX",The Oakridge School,TX,18836,industry_comparison
+2019,Messiah Travis,WR,2804,3,77.04545454545455,,2.0,5.3,"Chicago, IL",Solorio Academy,IL,87100,industry_comparison
+2019,Parker Alford,WR,2813,3,77.04545454545455,,2.0,5.3,"Dripping Springs, TX",Dripping Springs,TX,94979,industry_comparison
+2019,Zackary Martin,RB,2814,3,77.04545454545455,,2.0,5.3,"Woodville, TX",Woodville,TX,123432,industry_comparison
+2019,Karch Gardiner,WR,2815,3,77.04545454545455,,2.0,5.3,"El Paso, TX",Del Valle,TX,71215,industry_comparison
+2019,Isaac Abel,TE,2821,3,77.04545454545455,,2.0,5.3,"Mechanicsville, VA",Atlee,VA,49118,industry_comparison
+2019,Dewuan McCullum,WR,2822,3,77.04545454545455,,2.0,5.3,"Fort Mill, SC",Nation Ford,SC,36707,industry_comparison
+2019,Adam Cousins,WR,2825,3,77.04545454545455,,2.0,5.3,"Pflugerville, TX",Hendrickson,TX,1103,industry_comparison
+2019,Beau Lombardi,QB,2831,3,76.81818181818181,,2.0,5.2,"West Des Moines, IA",U.S. Military Academy Prep,IA,9522,industry_comparison
+2019,Michael Mathison,WR,2833,3,76.81818181818181,,2.0,5.2,"Covington, GA",Newton,GA,87999,industry_comparison
+2019,Kyle Bryant,RB,2834,3,76.81818181818181,,2.0,5.2,"San Fernando, CA",San Fernando Senior,CA,76453,industry_comparison
+2019,Tanner McGee,QB,2836,3,76.81818181818181,,2.0,5.2,"Randleman, NC",Randleman,NC,110147,industry_comparison
+2019,Cadarrius Thompson,WR,2840,3,76.81818181818181,,2.0,5.2,"Florence, AL",Florence,AL,16543,industry_comparison
+2019,Javon Harvey,ATH,2841,3,76.81818181818181,,2.0,5.2,"Norfolk, VA",Lake Taylor,VA,58143,industry_comparison
+2019,Dallas Gamble,ATH,2842,3,76.81818181818181,,2.0,5.2,"Booneville, MS",Booneville,MS,28187,industry_comparison
+2019,Terrell Jennings,RB,2843,3,76.81818181818181,,2.0,5.2,"Jacksonville, FL",Mandarin,FL,144037,industry_comparison
+2019,Mateo Sudipo,ATH,2848,3,76.81818181818181,,2.0,5.2,"Wake Forest, NC",Wake Forest,NC,84990,industry_comparison
+2019,Jordan Murry,RB,2851,3,76.81818181818181,,2.0,5.2,"Murrieta, CA",Murrieta Valley,CA,65816,industry_comparison
+2019,Chase Hancock,TE,2859,3,76.81818181818181,,2.0,5.2,"Glen Saint Mary, FL",Baker County Senior,FL,20696,industry_comparison
+2019,Zach Fryar,TE,2864,3,76.81818181818181,,2.0,5.2,"Roswell, NM",Venice,NM,122726,industry_comparison
+2019,Stone Hollenbach,QB,2866,3,76.77272727272728,,2.0,5.4,"Catawissa, PA",Southern Columbia Area,PA,109185,industry_comparison
+2019,Khristion Little,RB,2869,3,76.77272727272728,,2.0,5.4,"Tyler, TX",Chapel Hill,TX,75067,industry_comparison
+2019,Zion Andrus,WR,2870,3,76.77272727272728,,2.0,5.4,"Houston, TX",Westfield,TX,123821,industry_comparison
+2019,Taylor Eggers,QB,2872,3,76.77272727272728,,2.0,5.4,"Richmond, VA",Trinity Episcopal School,VA,110760,industry_comparison
+2019,Jamarian George,QB,2876,3,76.54545454545455,,2.0,5.3,"Pearland, TX",Shadow Creek,TX,55150,industry_comparison
+2019,Aaron Bedgood,WR,2877,3,76.54545454545455,,2.0,5.3,"Richmond Hill, GA",Richmond Hill,GA,330,industry_comparison
+2019,Devin Jennings,WR,2884,3,76.54545454545455,,2.0,5.3,"Channelview, TX",Channelview,TX,143974,industry_comparison
+2019,Quinton Patten,WR,2892,3,76.54545454545455,,2.0,5.3,"Blythewood, SC",Blythewood,SC,97697,industry_comparison
+2019,Brennan Spiess,ATH,2893,3,76.54545454545455,,2.0,5.3,"London, OH",London,OH,13881,industry_comparison
+2019,Jalen Joseph,RB,2895,3,76.54545454545455,,2.0,5.3,"El Paso, TX",Andress,TX,144495,industry_comparison
+2019,Carson Collins,QB,2898,3,76.31818181818181,,2.0,5.2,"Lucas, TX",Lovejoy,TX,18735,industry_comparison
+2019,Luc Andrada,QB,2900,3,76.31818181818181,,2.0,5.2,"Pueblo, CO",East,CO,80288,industry_comparison
+2019,Kaleb Ducros,WR,2901,3,76.31818181818181,,2.0,5.2,"Houston, TX",St Pius X,TX,70691,industry_comparison
+2019,Orlando Ornelas,WR,2906,3,76.31818181818181,,2.0,5.2,"Temecula, CA",Chaparral,CA,94591,industry_comparison
+2019,Nino Mastromatteo,WR,2909,3,76.31818181818181,,2.0,5.2,"Clarkston, MI",Everest Collegiate,MI,93461,industry_comparison
+2019,Brandon Crum,TE,2910,3,76.31818181818181,,2.0,5.2,"Auburn, AL",Auburn,AL,12375,industry_comparison
+2019,Kenny Frazier Jr.,ATH,2915,3,76.31818181818181,,2.0,5.2,"Opelousas, LA",Opelousas,LA,73284,industry_comparison
+2019,Thomas Vi,TE,2917,3,76.31818181818181,,2.0,5.2,"Brentwood, CA",Liberty,CA,112489,industry_comparison
+2019,Christian Hunter,RB,2922,3,76.31818181818181,,2.0,5.2,"Fontana, CA",Kaiser,CA,144271,industry_comparison
+2019,Christian Sims,TE,2925,3,76.31818181818181,,2.0,5.2,"Norcross, GA",Norcross,GA,23167,industry_comparison
+2019,Noah Cameron,WR,2930,3,76.31818181818181,,2.0,5.2,"Kokomo, IN",Kokomo,IN,93551,industry_comparison
+2019,Jacob Cowing,WR,2931,3,76.31818181818181,,2.0,5.2,"Maricopa, AZ",Maricopa,AZ,51868,industry_comparison
+2019,Tyler Knoop,QB,2940,3,76.04545454545455,,2.0,5.3,"North Richland Hills, TX",Fort Worth Christian,TX,117733,industry_comparison
+2019,Dorian Manuel,RB,2941,3,76.04545454545455,,2.0,5.3,"Houston, TX",North Shore,TX,38572,industry_comparison
+2019,Luke Ellenberger,WR,2953,3,75.81818181818181,,2.0,5.2,"Brevard, NC",Brevard,NC,80628,industry_comparison
+2019,Garrett Dzuro,QB,2954,3,75.81818181818181,,2.0,5.2,"Lakewood, OH",St. Edward,OH,44934,industry_comparison
+2019,Xavier Ugorji,RB,2956,3,75.81818181818181,,2.0,5.2,"Redlands, CA",Redlands East Valley,CA,122193,industry_comparison
+2019,Austin Hill,TE,2957,3,75.81818181818181,,2.0,5.2,"Houston, TX",The Village School,TX,8454,industry_comparison
+2019,Daryon Triche,RB,2959,3,75.81818181818181,,2.0,5.2,"Cedar Hill, TX",Cedar Hill,TX,31197,industry_comparison
+2019,Payton Bunch,TE,2963,3,75.81818181818181,,2.0,5.2,"Pendleton, SC",Pendleton,SC,95933,industry_comparison
+2019,Jett Kinsch,RB,2965,3,75.81818181818181,,2.0,5.2,"Globe, AZ",Liberty,AZ,61419,industry_comparison
+2019,Branden Walker,ATH,2971,3,75.59263833992095,,2.0,5.2,"Sulphur, LA",Sulphur,LA,12065,industry_comparison
+2019,T'Mar White,ATH,2974,3,75.54545454545455,,2.0,5.3,"Cedar Hill, TX",Cedar Hill,TX,109383,industry_comparison
+2019,Heath Williams,QB,2976,3,75.31818181818181,,2.0,5.2,"Clarksville, TN",Northeast,TN,47899,industry_comparison
+2019,Grayson Vaughn,QB,2977,3,75.31818181818181,,2.0,5.2,"Knoxville, TN",Hardin Valley Academy,TN,46695,industry_comparison
+2019,Skyler Newsome,WR,2983,3,75.31818181818181,,2.0,5.2,"Wolfforth, TX",Frenship,TX,107725,industry_comparison
+2019,Julian Lopez,TE,2989,3,75.31818181818181,,2.0,5.2,"El Paso, TX",Chapin,TX,68626,industry_comparison
+2019,Mitch Anderson,WR,3001,3,74.31818181818181,,2.0,5.2,"La Habra, CA",La Habra,CA,89839,industry_comparison
+2019,James Mott,QB,3004,3,73.81818181818181,,2.0,5.2,"San Juan Capistrano, CA",St. Margaret's Episcopal School,CA,55769,industry_comparison
+2019,Tanner Boston,TE,3007,3,73.81818181818181,,2.0,5.2,"Cypress, TX",Cy Ranch,TX,110058,industry_comparison
+2019,Kevin Yeager,QB,3012,3,72.81818181818181,,2.0,5.2,"De Leon, TX",De Leon,TX,74554,industry_comparison
+2019,Liam Capobianco,WR,3013,3,72.81818181818181,,2.0,5.2,"San Antonio, TX",Churchill,TX,79425,industry_comparison

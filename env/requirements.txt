@@ -1,0 +1,10 @@
+# Compatible with Python 3.11–3.14 (no pyarrow/polars/nflreadpy wheels required).
+# Data is loaded from nflverse GitHub release CSVs via pandas.
+numpy>=1.26,<3
+pandas>=2.1,<3
+openpyxl>=3.1,<4
+requests>=2.31,<3
+python-dotenv>=1.0,<2
+rapidfuzz>=3.0,<4
+scikit-learn>=1.4,<2
+tqdm>=4.66,<5

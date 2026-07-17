@@ -1,0 +1,898 @@
+gsis_id,player_name,position,college,draft_year,draft_round,draft_pick,draft_overall,draft_team
+00-0030564,DeAndre Hopkins,WR,Clemson,2013,1,27,27,HOU
+00-0030521,Justin Hunter,WR,Tennessee,2013,2,34,34,TEN
+00-0030456,Giovani Bernard,RB,North Carolina,2013,2,37,37,CIN
+00-0030431,Robert Woods,WR,USC,2013,2,41,41,BUF
+00-0030496,Le'Veon Bell,RB,Michigan St.,2013,2,48,48,PIT
+00-0030279,Keenan Allen,WR,California,2013,3,76,76,SDG
+00-0030550,Ace Sanders,WR,South Carolina,2013,4,101,101,JAX
+00-0030474,Josh Boyce,WR,TCU,2013,4,102,102,NWE
+00-0030497,Marcus Lattimore,RB,South Carolina,2013,4,131,131,SFO
+00-0030085,Kenny Stills,WR,Oklahoma,2013,5,144,144,NOR
+00-0030388,Joseph Randle,RB,Oklahoma St.,2013,5,151,151,DAL
+00-0030414,Spencer Ware,RB,LSU,2013,6,194,194,SEA
+00-0030415,Jawan Jamison,RB,Rutgers,2013,7,228,228,WAS
+00-0030047,Marquess Wilson,WR,Washington St.,2013,7,236,236,CHI
+00-0031407,Blake Bortles,QB,Central Florida,2014,1,3,3,JAX
+00-0031325,Sammy Watkins,WR,Clemson,2014,1,4,4,BUF
+00-0031408,Mike Evans,WR,Texas A&M,2014,1,7,7,TAM
+00-0031387,Eric Ebron,TE,North Carolina,2014,1,10,10,DET
+00-0031235,Odell Beckham Jr.,WR,LSU,2014,1,12,12,NYG
+00-0031236,Brandin Cooks,WR,Oregon St.,2014,1,20,20,NOR
+00-0031409,Johnny Manziel,QB,Texas A&M,2014,1,22,22,CLE
+00-0031359,Kelvin Benjamin,WR,Florida St.,2014,1,28,28,CAR
+00-0031237,Teddy Bridgewater,QB,Louisville,2014,1,32,32,MIN
+00-0031418,Austin Seferian-Jenkins,TE,Washington,2014,2,38,38,TAM
+00-0031431,Marqise Lee,WR,USC,2014,2,39,39,JAX
+00-0031299,Jordan Matthews,WR,Vanderbilt,2014,2,42,42,PHI
+00-0031257,Paul Richardson,WR,Colorado,2014,2,45,45,SEA
+00-0031042,Jace Amaro,TE,Texas Tech,2014,2,49,49,NYJ
+00-0031044,Troy Niklas,TE,Notre Dame,2014,2,52,52,ARI
+00-0031381,Davante Adams,WR,Fresno St.,2014,2,53,53,GNB
+00-0031413,Bishop Sankey,RB,Washington,2014,2,54,54,TEN
+00-0031301,Jeremy Hill,RB,LSU,2014,2,55,55,CIN
+00-0031344,Cody Latimer,WR,Indiana,2014,2,56,56,DEN
+00-0031428,Allen Robinson,WR,Penn St.,2014,2,61,61,JAX
+00-0031382,Jarvis Landry,WR,LSU,2014,2,63,63,MIA
+00-0031302,C.J. Fiedorowicz,TE,Iowa,2014,3,65,65,HOU
+00-0031391,Tre Mason,RB,Auburn,2014,3,75,75,STL
+00-0030990,Josh Huff,WR,Oregon,2014,3,86,86,PHI
+00-0031339,Donte Moncrief,WR,Mississippi,2014,3,90,90,IND
+00-0031376,Jerick McKinnon,RB,Georgia Southern,2014,3,96,96,MIN
+00-0031384,Richard Rodgers,TE,California,2014,3,98,98,GNB
+00-0031285,Devonta Freeman,RB,Florida St.,2014,4,103,103,ATL
+00-0031053,Jalen Saunders,WR,Oklahoma,2014,4,104,104,NYJ
+00-0031055,Andre Williams,RB,Boston Col.,2014,4,113,113,NYG
+00-0031057,Ka'Deem Carey,RB,Arizona,2014,4,117,117,CHI
+00-0031060,De'Anthony Thomas,RB,Oregon,2014,4,124,124,KAN
+00-0031062,James White,RB,Wisconsin,2014,4,130,130,NWE
+00-0031075,Alfred Blue,RB,LSU,2014,6,181,181,HOU
+00-0031187,Robert Herron,WR,Wyoming,2014,6,185,185,TAM
+00-0031078,Lache Seastrunk,RB,Baylor,2014,6,186,186,WAS
+00-0031189,T.J. Jones,WR,Notre Dame,2014,6,189,189,DET
+00-0031315,Matt Hazel,WR,Coastal Carolina,2014,6,190,190,MIA
+00-0031023,Quincy Enunwa,WR,Nebraska,2014,6,209,209,NYJ
+00-0031085,Jay Prosch,RB,Auburn,2014,6,211,211,HOU
+00-0031243,Storm Johnson,RB,Central Florida,2014,7,222,222,JAX
+00-0031291,James Wright,WR,LSU,2014,7,239,239,CIN
+00-0031271,Trey Millard,RB,Oklahoma,2014,7,245,245,SFO
+00-0031503,Jameis Winston,QB,Florida St.,2015,1,1,1,TAM
+00-0032268,Marcus Mariota,QB,Oregon,2015,1,2,2,TEN
+00-0031544,Amari Cooper,WR,Alabama,2015,1,4,4,OAK
+00-0031545,Kevin White,WR,West Virginia,2015,1,7,7,CHI
+00-0032241,Todd Gurley,RB,Georgia,2015,1,10,10,STL
+00-0031547,DeVante Parker,WR,Louisville,2015,1,14,14,MIA
+00-0032144,Melvin Gordon,RB,Wisconsin,2015,1,15,15,SDG
+00-0031549,Nelson Agholor,WR,USC,2015,1,20,20,PHI
+00-0032054,Breshad Perriman,WR,Central Florida,2015,1,26,26,BAL
+00-0032208,Phillip Dorsett,WR,Miami (FL),2015,1,29,29,IND
+00-0032209,T.J. Yeldon,RB,Alabama,2015,2,36,36,JAX
+00-0031934,Devin Smith,WR,Ohio St.,2015,2,37,37,NYJ
+00-0032218,Dorial Green-Beckham,WR,Oklahoma,2015,2,40,40,TEN
+00-0032055,Devin Funchess,WR,Michigan,2015,2,41,41,CAR
+00-0032104,Ameer Abdullah,RB,Nebraska,2015,2,54,54,DET
+00-0031558,Maxx Williams,TE,Minnesota,2015,2,55,55,BAL
+00-0032211,Tyler Lockett,WR,Kansas St.,2015,3,69,69,SEA
+00-0031560,Jaelen Strong,WR,Arizona St.,2015,3,70,70,HOU
+00-0032058,Tevin Coleman,RB,Indiana,2015,3,73,73,ATL
+00-0032128,Chris Conley,WR,Georgia,2015,3,76,76,KAN
+00-0032257,Duke Johnson,RB,Miami (FL),2015,3,77,77,CLE
+00-0032214,Tyler Kroft,TE,Rutgers,2015,3,85,85,CIN
+00-0032166,Sammie Coates,WR,Auburn,2015,3,87,87,PIT
+00-0032245,Sean Mannion,QB,Oregon St.,2015,3,89,89,STL
+00-0032227,Jeff Heuerman,TE,Ohio St.,2015,3,92,92,DEN
+00-0032200,Ty Montgomery,WR,Stanford,2015,3,94,94,GNB
+00-0031939,Matt Jones,RB,Florida,2015,3,95,95,WAS
+00-0031941,Jamison Crowder,WR,Duke,2015,4,105,105,WAS
+00-0031569,Jeremy Langford,RB,Michigan St.,2015,4,106,106,CHI
+00-0032130,Jalston Fowler,RB,Alabama,2015,4,108,108,TEN
+00-0032062,Blake Bell,TE,Oklahoma,2015,4,117,117,SFO
+00-0031577,Javorius Allen,RB,USC,2015,4,125,125,BAL
+00-0032063,Mike Davis,RB,South Carolina,2015,4,126,126,SFO
+00-0032133,David Cobb,RB,Minnesota,2015,5,138,138,TEN
+00-0032170,Rashad Greene,WR,Florida St.,2015,5,139,139,JAX
+00-0031585,MyCole Pruitt,TE,Southern Illinois,2015,5,143,143,MIN
+00-0031588,Stefon Diggs,WR,Maryland,2015,5,146,146,MIN
+00-0031589,Brett Hundley,QB,UCLA,2015,5,147,147,GNB
+00-0031590,Jay Ajayi,RB,Boise St.,2015,5,149,149,MIA
+00-0032152,Karlos Williams,RB,Florida St.,2015,5,155,155,BUF
+00-0031594,Tony Lippett,WR,Michigan St.,2015,5,156,156,MIA
+00-0032134,C.J. Uzomah,TE,Auburn,2015,5,157,157,CIN
+00-0032112,JJ Nelson,WR,Ala-Birmingham,2015,5,159,159,ARI
+00-0032135,Jesse James,TE,Penn St.,2015,5,160,160,PIT
+00-0032113,Kenny Bell,WR,Nebraska,2015,5,162,162,TAM
+00-0031595,Michael Burton,RB,Rutgers,2015,5,168,168,DET
+00-0031598,Nick Boyle,TE,Delaware,2015,5,171,171,BAL
+00-0031951,James O'Shaughnessy,TE,Illinois St.,2015,5,173,173,KAN
+00-0031600,Keith Mumphery,WR,Michigan St.,2015,5,175,175,HOU
+00-0032115,Kaelin Clay,WR,Utah,2015,6,184,184,TAM
+00-0031953,Geremy Davis,WR,Connecticut,2015,6,186,186,NYG
+00-0031954,Evan Spencer,WR,Ohio St.,2015,6,187,187,WAS
+00-0032117,Nick O'Leary,TE,Florida St.,2015,6,194,194,BUF
+00-0032068,Malcolm Johnson,TE,Mississippi St.,2015,6,195,195,CLE
+00-0031533,Randall Telfer,TE,USC,2015,6,198,198,CLE
+,Bud Sasser,WR,Missouri,2015,6,201,201,STL
+00-0031610,Darren Waller,WR,Georgia Tech,2015,6,204,204,BAL
+00-0031611,Josh Robinson,RB,Mississippi St.,2015,6,205,205,IND
+00-0031612,Aaron Ripkowski,RB,Oklahoma,2015,6,206,206,GNB
+00-0031617,Kennard Backman,TE,Ala-Birmingham,2015,6,213,213,GNB
+00-0032120,Neal Sterling,WR,Monmouth,2015,7,220,220,JAX
+00-0032139,Ben Koyack,TE,Notre Dame,2015,7,229,229,JAX
+00-0031959,Marcus Murphy,RB,Missouri,2015,7,230,230,NOR
+00-0032070,Dezmin Lewis,WR,Central Arkansas,2015,7,234,234,BUF
+00-0031625,Kenny Hilliard,RB,LSU,2015,7,235,235,HOU
+00-0031962,Mario Alford,WR,West Virginia,2015,7,238,238,CIN
+00-0032123,Tre McBride,WR,William & Mary,2015,7,245,245,TEN
+00-0032141,Geoff Swaim,TE,Texas,2015,7,246,246,DAL
+00-0032156,Trevor Siemian,QB,Northwestern,2015,7,250,250,DEN
+00-0032072,Rory Anderson,TE,South Carolina,2015,7,254,254,SFO
+00-0032190,Gerald Christian,TE,Louisville,2015,7,256,256,ARI
+00-0033106,Jared Goff,QB,California,2016,1,1,1,LAR
+00-0032950,Carson Wentz,QB,North Dakota St.,2016,1,2,2,PHI
+00-0033045,Ezekiel Elliott,RB,Ohio St.,2016,1,4,4,DAL
+00-0032966,Corey Coleman,WR,Baylor,2016,1,15,15,CLE
+00-0033127,Will Fuller,WR,Notre Dame,2016,1,21,21,HOU
+00-0032760,Josh Doctson,WR,TCU,2016,1,22,22,WAS
+00-0032951,Laquon Treadwell,WR,Mississippi,2016,1,23,23,MIN
+00-0033108,Paxton Lynch,QB,Memphis,2016,1,26,26,DEN
+00-0033090,Hunter Henry,TE,Arkansas,2016,2,35,35,SDG
+00-0032385,Sterling Shepard,WR,Oklahoma,2016,2,40,40,NYG
+00-0032764,Derrick Henry,RB,Alabama,2016,2,45,45,TEN
+00-0032765,Michael Thomas,WR,Ohio St.,2016,2,47,47,NOR
+00-0032953,Christian Hackenberg,QB,Penn St.,2016,2,51,51,NYJ
+00-0033009,Tyler Boyd,WR,Pittsburgh,2016,2,55,55,CIN
+00-0033118,Kenyan Drake,RB,Alabama,2016,3,73,73,MIA
+00-0032392,Austin Hooper,TE,Stanford,2016,3,81,81,ATL
+00-0033069,Braxton Miller,WR,Ohio St.,2016,3,85,85,HOU
+00-0033060,Leonte Carroo,WR,Rutgers,2016,3,86,86,MIA
+00-0032393,C.J. Prosise,RB,Notre Dame,2016,3,90,90,SEA
+00-0033119,Jacoby Brissett,QB,North Carolina St.,2016,3,91,91,NWE
+00-0033104,Cody Kessler,QB,USC,2016,3,93,93,CLE
+00-0032394,Nick Vannett,TE,Ohio St.,2016,3,94,94,SEA
+00-0032893,Connor Cook,QB,Michigan St.,2016,4,100,100,OAK
+00-0032398,Chris Moore,WR,Cincinnati,2016,4,107,107,BAL
+00-0033110,Tyler Higbee,TE,Western Kentucky,2016,4,110,110,LAR
+00-0032400,Malcolm Mitchell,WR,Georgia,2016,4,112,112,NWE
+00-0033079,Ricardo Louis,WR,Auburn,2016,4,114,114,CLE
+00-0033111,Pharoh Cooper,WR,South Carolina,2016,4,117,117,LAR
+00-0032404,Tyler Ervin,RB,San Jose St.,2016,4,119,119,HOU
+00-0032775,Demarcus Robinson,WR,Florida,2016,4,126,126,KAN
+00-0032411,Kenneth Dixon,RB,Louisiana Tech,2016,4,134,134,BAL
+00-0033077,Dak Prescott,QB,Mississippi St.,2016,4,135,135,DAL
+00-0032972,Devontae Booker,RB,Utah,2016,4,136,136,DEN
+00-0033080,Seth Devalve,TE,Princeton,2016,4,138,138,CLE
+00-0033098,Cardale Jones,QB,Ohio St.,2016,4,139,139,BUF
+00-0032778,Tajae Sharpe,WR,Massachusetts,2016,5,140,140,TEN
+00-0032940,DeAndre Washington,RB,Texas Tech,2016,5,143,143,OAK
+00-0032417,Paul Perkins,RB,UCLA,2016,5,149,149,NYG
+00-0032780,Jordan Howard,RB,Indiana,2016,5,150,150,CHI
+00-0032782,Wendell Smallwood,RB,West Virginia,2016,5,153,153,PHI
+00-0032974,Jordan Payton,WR,UCLA,2016,5,154,154,CLE
+00-0032975,Jonathan Williams,RB,Arkansas,2016,5,156,156,BUF
+00-0032784,Kevin Hogan,QB,Stanford,2016,5,162,162,KAN
+00-0032423,Trevor Davis,WR,California,2016,5,163,163,GNB
+00-0033040,Tyreek Hill,WR,West Alabama,2016,5,165,165,KAN
+00-0032426,Alex Collins,RB,Arkansas,2016,5,171,171,SEA
+00-0032977,Rashard Higgins,WR,Colorado St.,2016,5,172,172,CLE
+00-0032956,Andy Janovich,RB,Nebraska,2016,6,176,176,DEN
+00-0033112,Temarrick Hemingway,TE,South Carolina St.,2016,6,177,177,LAR
+00-0032341,Moritz Boehringer,WR,,2016,6,180,180,MIN
+00-0033078,Keenan Reynolds,RB,Navy,2016,6,182,182,BAL
+00-0032429,Jerell Adams,TE,South Carolina,2016,6,184,184,NYG
+00-0032791,Jakeem Grant,WR,Texas Tech,2016,6,186,186,MIA
+00-0032792,Nate Sudfeld,QB,Indiana,2016,6,187,187,WAS
+00-0032430,David Morgan,TE,Texas-San Antonio,2016,6,188,188,MIN
+00-0032431,Jake Rudock,QB,Michigan,2016,6,191,191,DET
+00-0032957,Kolby Listenbee,WR,TCU,2016,6,192,192,BUF
+00-0032794,Danny Vitale,RB,Northwestern,2016,6,197,197,TAM
+00-0032897,Derek Watt,RB,Wisconsin,2016,6,198,198,SDG
+00-0032795,Cody Core,WR,Mississippi,2016,6,199,199,CIN
+00-0032434,Brandon Allen,QB,Arkansas,2016,6,201,201,JAX
+00-0033114,Mike Thomas,WR,Southern Miss,2016,6,206,206,LAR
+00-0032436,Jeff Driskel,QB,Louisiana Tech,2016,6,207,207,SFO
+00-0032440,Kelvin Taylor,RB,Florida,2016,6,211,211,SFO
+00-0032441,Aaron Burbridge,WR,Michigan St.,2016,6,213,213,SFO
+00-0033049,Darius Jackson,RB,Eastern Michigan,2016,6,216,216,DAL
+00-0033054,Rico Gathers,TE,Baylor,2016,6,217,217,DAL
+00-0032446,Brandon Doughty,QB,Western Kentucky,2016,7,223,223,MIA
+00-0032447,Devin Lucien,WR,Arizona St.,2016,7,225,225,NWE
+00-0032365,Demarcus Ayers,WR,Houston,2016,7,229,229,PIT
+00-0032801,Daniel Braverman,WR,Western Michigan,2016,7,230,230,CHI
+00-0033061,Thomas Duarte,TE,UCLA,2016,7,231,231,MIA
+00-0032450,Dwayne Washington,RB,Washington,2016,7,236,236,DET
+00-0032804,Daniel Lasco,RB,California,2016,7,237,237,NOR
+00-0032451,Devin Fuller,WR,UCLA,2016,7,238,238,ATL
+00-0032959,Charone Peake,WR,Clemson,2016,7,241,241,NYJ
+00-0032806,Keith Marshall,RB,Georgia,2016,7,242,242,WAS
+00-0032453,Kenny Lawler,WR,California,2016,7,243,243,SEA
+00-0032808,Zac Brooks,RB,Clemson,2016,7,247,247,SEA
+00-0032900,Beau Sandland,TE,Montana St.,2016,7,252,252,CAR
+00-0033869,Mitchell Trubisky,QB,North Carolina,2017,1,2,2,CHI
+00-0033856,Leonard Fournette,RB,LSU,2017,1,4,4,JAX
+00-0033871,Corey Davis,WR,Western Michigan,2017,1,5,5,TEN
+00-0033536,Mike Williams,WR,Clemson,2017,1,7,7,LAC
+00-0033280,Christian McCaffrey,RB,Stanford,2017,1,8,8,CAR
+00-0033460,John Ross,WR,Washington,2017,1,9,9,CIN
+00-0033873,Patrick Mahomes,QB,Texas Tech,2017,1,10,10,KAN
+00-0033537,Deshaun Watson,QB,Clemson,2017,1,12,12,HOU
+00-0033879,O.J. Howard,TE,Alabama,2017,1,19,19,TAM
+00-0033881,Evan Engram,TE,Mississippi,2017,1,23,23,NYG
+00-0033885,David Njoku,TE,Miami (FL),2017,1,29,29,CLE
+00-0033891,Zay Jones,WR,East Carolina,2017,2,37,37,BUF
+00-0033282,Curtis Samuel,WR,Ohio St.,2017,2,40,40,CAR
+00-0033893,Dalvin Cook,RB,Florida St.,2017,2,41,41,MIN
+00-0033895,Gerald Everett,TE,South Alabama,2017,2,44,44,LAR
+00-0033896,Adam Shaheen,TE,Ashland,2017,2,45,45,CHI
+00-0033897,Joe Mixon,RB,Oklahoma,2017,2,48,48,CIN
+00-0033899,DeShone Kizer,QB,Notre Dame,2017,2,52,52,CLE
+00-0033857,JuJu Smith-Schuster,WR,USC,2017,2,62,62,PIT
+00-0033906,Alvin Kamara,RB,Tennessee,2017,3,67,67,NOR
+00-0033908,Cooper Kupp,WR,Eastern Washington,2017,3,69,69,LAR
+00-0033911,Taywan Taylor,WR,Western Kentucky,2017,3,72,72,TEN
+00-0033916,ArDarius Stewart,WR,Alabama,2017,3,79,79,NYJ
+00-0033919,Carlos Henderson,WR,Louisiana Tech,2017,3,82,82,DEN
+00-0033921,Chris Godwin,WR,Penn St.,2017,3,84,84,TAM
+00-0033923,Kareem Hunt,RB,Toledo,2017,3,86,86,KAN
+00-0033550,Davis Webb,QB,California,2017,3,87,87,NYG
+00-0033925,D'Onta Foreman,RB,Texas,2017,3,89,89,HOU
+00-0033932,Kenny Golladay,WR,Northern Illinois,2017,3,96,96,DET
+00-0033933,Chad Williams,WR,Grambling St.,2017,3,98,98,ARI
+00-0033858,Jonnu Smith,TE,Florida International,2017,3,100,100,TEN
+00-0033936,C.J. Beathard,QB,Iowa,2017,3,104,104,SFO
+00-0033553,James Conner,RB,Pittsburgh,2017,3,105,105,PIT
+00-0033937,Amara Darboh,WR,Michigan,2017,3,106,106,SEA
+00-0033839,Dede Westbrook,WR,Oklahoma,2017,4,110,110,JAX
+00-0033526,Samaje Perine,RB,Oklahoma,2017,4,114,114,WAS
+00-0033943,Josh Reynolds,WR,Texas A&M,2017,4,117,117,LAR
+00-0033555,Mack Hollins,WR,North Carolina,2017,4,118,118,PHI
+00-0033556,Tarik Cohen,RB,North Carolina A&T,2017,4,119,119,CHI
+00-0033286,Joe Williams,RB,Utah,2017,4,121,121,SFO
+00-0033559,Michael Roberts,TE,Toledo,2017,4,127,127,DET
+00-0033859,Josh Malone,WR,Tennessee,2017,4,128,128,CIN
+00-0033561,Donnel Pumphrey,RB,San Diego St.,2017,4,132,132,PHI
+00-0033562,Ryan Switzer,WR,North Carolina,2017,4,133,133,DAL
+00-0033948,Jamaal Williams,RB,BYU,2017,4,134,134,GNB
+00-0033949,Joshua Dobbs,QB,Tennessee,2017,4,135,135,PIT
+00-0033464,Jehu Chesson,WR,Michigan,2017,4,139,139,KAN
+00-0033950,Wayne Gallman,RB,Clemson,2017,4,140,140,NYG
+00-0033840,Chad Hansen,WR,California,2017,4,141,141,NYJ
+00-0033951,Marlon Mack,RB,South Florida,2017,4,143,143,IND
+00-0033564,Jake Butt,TE,Michigan,2017,5,145,145,DEN
+00-0033288,George Kittle,TE,Iowa,2017,5,146,146,SFO
+00-0033953,Jordan Leggett,TE,Clemson,2017,5,150,150,NYJ
+00-0033528,Jeremy Sprinkle,TE,Arkansas,2017,5,154,154,WAS
+00-0033567,Brian Hill,RB,Wyoming,2017,5,156,156,ATL
+00-0033955,Jeremy McNichols,RB,Boise St.,2017,5,162,162,TAM
+00-0033573,Shelton Gibson,WR,West Virginia,2017,5,166,166,PHI
+00-0033957,Rodney Adams,WR,South Florida,2017,5,170,170,MIN
+00-0033958,Nathan Peterman,QB,Pittsburgh,2017,5,171,171,BUF
+00-0033466,Isaiah McKenzie,WR,Georgia,2017,5,172,172,DEN
+00-0033576,Eric Saubert,TE,Drake,2017,5,174,174,ATL
+00-0033291,DeAngelo Yancey,WR,Purdue,2017,5,175,175,GNB
+00-0033292,Trent Taylor,WR,Louisiana Tech,2017,5,177,177,SFO
+00-0033789,T.J. Logan,RB,North Carolina,2017,5,179,179,ARI
+00-0033293,Aaron Jones,RB,Texas-El Paso,2017,5,182,182,GNB
+00-0033295,Elijah McGuire,RB,Louisiana,2017,6,188,188,NYJ
+00-0033296,Alex Armah,RB,West Georgia,2017,6,192,192,CAR
+00-0033966,Bucky Hodges,TE,Virginia Tech,2017,6,201,201,MIN
+00-0033581,De'Angelo Henderson,RB,Coastal Carolina,2017,6,203,203,DEN
+00-0033967,Sam Rogers,RB,Virginia Tech,2017,6,206,206,LAR
+00-0033791,Brandon Wilson,RB,Houston,2017,6,207,207,CIN
+00-0033530,Robert Davis,WR,Georgia St.,2017,6,209,209,WAS
+00-0033585,Brad Kaaya,QB,Miami (FL),2017,6,215,215,DET
+00-0033968,Stacy Coley,WR,Miami (FL),2017,7,219,219,MIN
+00-0033589,David Moore,WR,East Central (OK),2017,7,226,226,SEA
+00-0033471,Isaiah Ford,WR,Virginia Tech,2017,7,237,237,MIA
+00-0033304,Devante Mays,RB,Utah St.,2017,7,238,238,GNB
+00-0033591,Noah Brown,WR,Ohio St.,2017,7,239,239,DAL
+00-0033796,Marquez Williams,RB,Miami (FL),2017,7,240,240,JAX
+00-0033797,Khalfani Muhammad,RB,California,2017,7,241,241,TEN
+00-0033975,Elijah Hood,RB,North Carolina,2017,7,242,242,OAK
+00-0033305,Malachi Dupre,WR,LSU,2017,7,247,247,GNB
+00-0033594,Chris Carson,RB,Oklahoma St.,2017,7,249,249,SEA
+00-0033798,Mason Schreck,TE,Buffalo,2017,7,251,251,CIN
+00-0033596,Matthew Dayes,RB,North Carolina St.,2017,7,252,252,CLE
+00-0033597,Chad Kelly,QB,Mississippi,2017,7,253,253,DEN
+00-0034855,Baker Mayfield,QB,Oklahoma,2018,1,1,1,CLE
+00-0034844,Saquon Barkley,RB,Penn St.,2018,1,2,2,NYG
+00-0034869,Sam Darnold,QB,USC,2018,1,3,3,NYJ
+00-0034857,Josh Allen,QB,Wyoming,2018,1,7,7,BUF
+00-0034343,Josh Rosen,QB,UCLA,2018,1,10,10,ARI
+00-0034827,D.J. Moore,WR,Maryland,2018,1,24,24,CAR
+00-0034830,Hayden Hurst,TE,South Carolina,2018,1,25,25,BAL
+00-0034837,Calvin Ridley,WR,Alabama,2018,1,26,26,ATL
+00-0034750,Rashaad Penny,RB,San Diego St.,2018,1,27,27,SEA
+00-0034845,Sony Michel,RB,Georgia,2018,1,31,31,NWE
+00-0034796,Lamar Jackson,QB,Louisville,2018,1,32,32,BAL
+00-0034791,Nick Chubb,RB,Georgia,2018,2,35,35,CLE
+00-0034816,Ronald Jones II,RB,USC,2018,2,38,38,TAM
+00-0034348,Courtland Sutton,WR,SMU,2018,2,40,40,DEN
+00-0034829,Mike Gesicki,TE,Penn St.,2018,2,42,42,MIA
+00-0034349,Kerryon Johnson,RB,Auburn,2018,2,43,43,DET
+00-0034860,Dante Pettis,WR,Washington,2018,2,44,44,SFO
+00-0034775,Christian Kirk,WR,Texas A&M,2018,2,47,47,ARI
+00-0034351,Dallas Goedert,TE,South Dakota St.,2018,2,49,49,PHI
+00-0034353,Anthony Miller,WR,Memphis,2018,2,51,51,CHI
+00-0034358,Derrius Guice,RB,LSU,2018,2,59,59,WAS
+00-0034676,James Washington,WR,Oklahoma St.,2018,2,60,60,PIT
+00-0034777,DJ Chark,WR,LSU,2018,2,61,61,JAX
+00-0034838,Royce Freeman,RB,Oregon,2018,3,71,71,DEN
+00-0034771,Mason Rudolph,QB,Oklahoma St.,2018,3,76,76,PIT
+00-0034764,Michael Gallup,WR,Colorado St.,2018,3,81,81,DAL
+00-0034753,Mark Andrews,TE,Oklahoma,2018,3,86,86,BAL
+00-0034765,Tre'Quan Smith,WR,Central Florida,2018,3,91,91,NOR
+00-0034364,Jordan Akins,TE,Central Florida,2018,3,98,98,HOU
+00-0034365,Ian Thomas,TE,Indiana,2018,4,101,101,CAR
+00-0034366,Keke Coutee,WR,Texas Tech,2018,4,103,103,HOU
+00-0034367,Nyheim Hines,RB,North Carolina St.,2018,4,104,104,IND
+00-0034772,Antonio Callaway,WR,Florida,2018,4,105,105,CLE
+00-0034766,Chris Herndon,TE,Miami (FL),2018,4,107,107,NYJ
+00-0034369,Kyle Lauletta,QB,Richmond,2018,4,108,108,NYG
+00-0034679,Mark Walton,RB,Miami (FL),2018,4,112,112,CIN
+00-0034370,DaeSean Hamilton,WR,Penn St.,2018,4,113,113,DEN
+00-0034159,Will Dissly,TE,Washington,2018,4,120,120,SEA
+00-0034798,Durham Smythe,TE,Notre Dame,2018,4,123,123,MIA
+00-0034378,Ito Smith,RB,Southern Miss,2018,4,126,126,ATL
+00-0034799,Kalen Ballage,RB,Arizona St.,2018,4,131,131,MIA
+00-0034267,Jaleel Scott,WR,New Mexico St.,2018,4,132,132,BAL
+00-0034268,J'Mon Moore,WR,Missouri,2018,4,133,133,GNB
+00-0034681,Chase Edmonds,RB,Fordham,2018,4,134,134,ARI
+00-0034383,Dalton Schultz,TE,Stanford,2018,4,137,137,DAL
+00-0034386,Justin Watson,WR,Pennsylvania,2018,5,144,144,TAM
+00-0034393,Troy Fumagalli,TE,Wisconsin,2018,5,156,156,DEN
+00-0034270,Tyler Conklin,TE,Central Michigan,2018,5,157,157,MIN
+00-0034395,Daurice Fountain,WR,Northern Iowa,2018,5,159,159,IND
+00-0034271,Jordan Lasley,WR,UCLA,2018,5,162,162,BAL
+00-0034331,Jaylen Samuels,TE,North Carolina St.,2018,5,165,165,PIT
+00-0034400,Jordan Wilkins,RB,Mississippi,2018,5,169,169,IND
+00-0034401,Mike White,QB,Western Kentucky,2018,5,171,171,DAL
+00-0034272,Marquez Valdes-Scantling,WR,South Florida,2018,5,174,174,GNB
+00-0034273,Damion Ratley,WR,Texas A&M,2018,6,175,175,CLE
+00-0034808,John Kelly,RB,Tennessee,2018,6,176,176,LAR
+00-0034406,Deon Cain,WR,Clemson,2018,6,185,185,IND
+00-0034407,Ray-Ray McCloud,WR,Clemson,2018,6,187,187,BUF
+00-0034409,Dylan Cantrell,WR,Texas Tech,2018,6,191,191,LAC
+00-0034411,Russell Gage,WR,LSU,2018,6,194,194,ATL
+00-0034278,Tremon Smith,WR,Central Arkansas,2018,6,196,196,KAN
+00-0034412,Luke Falk,QB,Washington St.,2018,6,199,199,TEN
+00-0034414,Boston Scott,RB,Louisiana Tech,2018,6,201,201,NOR
+00-0034416,Tanner Lee,QB,Nebraska,2018,6,203,203,JAX
+00-0034164,Trenton Cannon,RB,Virginia St.,2018,6,204,204,NYJ
+00-0034279,Equanimeous St. Brown,WR,Notre Dame,2018,6,207,207,GNB
+00-0034418,Cedrick Wilson Jr.,WR,Boise St.,2018,6,208,208,DAL
+00-0034419,Braxton Berrios,WR,Miami (FL),2018,6,210,210,NWE
+00-0034420,Jordan Thomas,TE,Mississippi St.,2018,6,211,211,HOU
+00-0034423,Danny Etling,QB,LSU,2018,7,219,219,NWE
+00-0034732,Alex McGough,QB,Florida International,2018,7,220,220,SEA
+00-0034426,Javon Wims,WR,Georgia,2018,7,224,224,CHI
+00-0034427,David Williams,RB,Arkansas,2018,7,226,226,DEN
+00-0034747,Marcell Ateman,WR,Oklahoma St.,2018,7,228,228,OAK
+00-0034432,Bo Scarbrough,RB,Alabama,2018,7,236,236,DAL
+00-0034433,Nick Bawden,RB,San Diego St.,2018,7,237,237,DET
+00-0034286,Richie James,WR,Middle Tenn. St.,2018,7,240,240,SFO
+00-0034438,Logan Woodside,QB,Toledo,2018,7,249,249,CIN
+00-0034439,Ryan Izzo,TE,Florida St.,2018,7,250,250,NWE
+00-0034440,Justin Jackson,RB,Northwestern,2018,7,251,251,LAC
+00-0034686,Auden Tate,WR,Florida St.,2018,7,253,253,CIN
+00-0034442,Austin Proehl,WR,North Carolina,2018,7,255,255,BUF
+00-0034339,Trey Quinn,WR,SMU,2018,7,256,256,WAS
+00-0035228,Kyler Murray,QB,Oklahoma,2019,1,1,1,ARI
+00-0035710,Daniel Jones,QB,Duke,2019,1,6,6,NYG
+00-0035229,T.J. Hockenson,TE,Iowa,2019,1,8,8,DET
+00-0035232,Dwayne Haskins,QB,Ohio St.,2019,1,15,15,WAS
+00-0035644,Noah Fant,TE,Iowa,2019,1,20,20,DEN
+00-0035700,Josh Jacobs,RB,Alabama,2019,1,24,24,OAK
+00-0035662,Marquise Brown,WR,Oklahoma,2019,1,25,25,BAL
+00-0035624,N'Keal Harry,WR,Arizona St.,2019,1,32,32,NWE
+00-0035719,Deebo Samuel,WR,South Carolina,2019,2,36,36,SFO
+00-0035704,Drew Lock,QB,Missouri,2019,2,42,42,DEN
+00-0034970,Irv Smith Jr.,TE,Alabama,2019,2,50,50,MIN
+00-0035676,A.J. Brown,WR,Mississippi,2019,2,51,51,TEN
+00-0035631,Drew Sample,TE,Washington,2019,2,52,52,CIN
+00-0035243,Miles Sanders,RB,Penn St.,2019,2,53,53,PHI
+00-0035140,Mecole Hardman,WR,Georgia,2019,2,56,56,KAN
+00-0035246,JJ Arcega-Whiteside,WR,Stanford,2019,2,57,57,PHI
+00-0035639,Parris Campbell,WR,Ohio St.,2019,2,59,59,IND
+00-0035527,Andy Isabella,WR,Massachusetts,2019,2,62,62,ARI
+00-0035640,D.K. Metcalf,WR,Mississippi,2019,2,64,64,SEA
+00-0035216,Diontae Johnson,WR,Toledo,2019,3,66,66,PIT
+00-0034971,Jalen Hurd,WR,Baylor,2019,3,67,67,SFO
+00-0035249,Josh Oliver,TE,San Jose St.,2019,3,69,69,JAX
+00-0035664,Darrell Henderson,RB,Memphis,2019,3,70,70,LAR
+00-0035685,David Montgomery,RB,Iowa St.,2019,3,73,73,CHI
+00-0035250,Devin Singletary,RB,Florida Atlantic,2019,3,74,74,BUF
+00-0035671,Jace Sternberger,TE,Texas A&M,2019,3,75,75,GNB
+00-0035659,Terry McLaurin,WR,Ohio St.,2019,3,76,76,WAS
+00-0035660,Kahale Warring,TE,San Diego St.,2019,3,86,86,HOU
+00-0035657,Damien Harris,RB,Alabama,2019,3,87,87,NWE
+00-0035703,Miles Boykin,WR,Notre Dame,2019,3,93,93,BAL
+00-0035689,Dawson Knox,TE,Mississippi,2019,3,96,96,BUF
+00-0035251,Will Grier,QB,West Virginia,2019,3,100,100,CAR
+00-0034972,Alexander Mattison,RB,Boise St.,2019,3,102,102,MIN
+00-0035529,Hakeem Butler,WR,Iowa St.,2019,4,103,103,ARI
+00-0035652,Ryan Finley,QB,North Carolina St.,2019,4,104,104,CIN
+00-0035256,Bryce Love,RB,Stanford,2019,4,112,112,WAS
+00-0034975,Justice Hill,RB,Oklahoma St.,2019,4,113,113,BAL
+00-0035589,Gary Jennings Jr,WR,West Virginia,2019,4,120,120,SEA
+00-0035259,Trevon Wesco,TE,West Virginia,2019,4,121,121,NYJ
+00-0035217,Benny Snell Jr.,RB,Kentucky,2019,4,122,122,PIT
+00-0035590,Riley Ridley,WR,Georgia,2019,4,126,126,CHI
+00-0035261,Tony Pollard,RB,Memphis,2019,4,128,128,DAL
+00-0035264,Jarrett Stidham,QB,Auburn,2019,4,133,133,NWE
+00-0034981,Foster Moreau,TE,LSU,2019,4,137,137,OAK
+00-0035268,Ryquell Armstead,RB,Temple,2019,5,140,140,JAX
+00-0035222,Zach Gentry,TE,Michigan,2019,5,141,141,PIT
+00-0034983,Hunter Renfrow,WR,Clemson,2019,5,149,149,OAK
+00-0035273,Qadree Ollison,RB,Pittsburgh,2019,5,152,152,ATL
+00-0035275,Jordan Scarlett,RB,Florida,2019,5,154,154,CAR
+00-0035282,Easton Stick,QB,North Dakota St.,2019,5,166,166,LAC
+00-0035283,Clayton Thorson,QB,Northwestern,2019,5,167,167,PHI
+00-0035535,Darius Slayton,WR,Auburn,2019,5,171,171,NYG
+00-0035287,KeeSean Johnson,WR,Fresno St.,2019,6,174,174,ARI
+00-0034988,Kaden Smith,TE,Stanford,2019,6,176,176,SFO
+00-0035289,Gardner Minshew II,QB,Washington St.,2019,6,178,178,JAX
+00-0035291,Trayveon Williams,RB,Texas A&M,2019,6,182,182,CIN
+00-0035592,Travis Fulgham,WR,Old Dominion,2019,6,184,184,DET
+00-0035537,Ty Johnson,RB,Maryland,2019,6,186,186,DET
+00-0035593,Juwann Winfree,WR,Colorado,2019,6,187,187,DEN
+00-0034995,Dexter Williams,RB,Notre Dame,2019,6,194,194,GNB
+00-0035146,Trace McSorley,QB,Penn St.,2019,6,197,197,BAL
+00-0035296,Marcus Green,WR,La-Monroe,2019,6,203,203,ATL
+00-0035594,Travis Homer,RB,Miami (FL),2019,6,204,204,SEA
+00-0035297,Kelvin Harmon,WR,North Carolina St.,2019,6,206,206,WAS
+00-0035298,Scott Miller,WR,Bowling Green,2019,6,208,208,TAM
+00-0035299,Rodney Anderson,RB,Oklahoma,2019,6,211,211,CIN
+00-0035148,Darwin Thompson,RB,Utah St.,2019,6,214,214,KAN
+00-0035303,Mike Weber,RB,Ohio St.,2019,7,218,218,DAL
+00-0035304,Cullen Gillaspia,RB,Texas A&M,2019,7,220,220,HOU
+00-0035596,Kerrith Whyte Jr,RB,Florida Atlantic,2019,7,222,222,CHI
+00-0035539,Isaac Nauta,TE,Georgia,2019,7,224,224,DET
+00-0035308,Tommy Sweeney,TE,Boston Col.,2019,7,228,228,BUF
+00-0035309,Alizé Mack,TE,Notre Dame,2019,7,231,231,NOR
+00-0035310,Chandler Cox,RB,Auburn,2019,7,233,233,MIA
+00-0035311,Myles Gaskin,RB,Washington,2019,7,234,234,MIA
+00-0035597,John Ursua,WR,Hawaii,2019,7,236,236,SEA
+00-0035313,Terry Godwin,WR,Georgia,2019,7,237,237,CAR
+00-0035002,Dillon Mitchell,WR,Oregon,2019,7,239,239,MIN
+00-0035006,Olabisi Johnson,WR,Colorado St.,2019,7,247,247,MIN
+00-0035320,Caleb Wilson,TE,UCLA,2019,7,254,254,ARI
+00-0036442,Joe Burrow,QB,LSU,2020,1,1,1,CIN
+00-0036212,Tua Tagovailoa,QB,Alabama,2020,1,5,5,MIA
+00-0036355,Justin Herbert,QB,Oregon,2020,1,6,6,LAC
+00-0036357,Henry Ruggs III,WR,Alabama,2020,1,12,12,LVR
+00-0036407,Jerry Jeudy,WR,Alabama,2020,1,15,15,DEN
+00-0036358,CeeDee Lamb,WR,Oklahoma,2020,1,17,17,DAL
+00-0036387,Jalen Reagor,WR,TCU,2020,1,21,21,PHI
+00-0036322,Justin Jefferson,WR,LSU,2020,1,22,22,MIN
+00-0036261,Brandon Aiyuk,WR,Arizona St.,2020,1,25,25,SFO
+00-0036264,Jordan Love,QB,Utah St.,2020,1,26,26,GNB
+00-0036360,Clyde Edwards-Helaire,RB,LSU,2020,1,32,32,KAN
+00-0036410,Tee Higgins,WR,Clemson,2020,2,33,33,CIN
+00-0036252,Michael Pittman Jr.,WR,USC,2020,2,34,34,IND
+00-0036275,D'Andre Swift,RB,Georgia,2020,2,35,35,DET
+00-0036223,Jonathan Taylor,RB,Wisconsin,2020,2,41,41,IND
+00-0036268,Laviska Shenault Jr.,WR,Colorado,2020,2,42,42,JAX
+00-0036290,Cole Kmet,TE,Notre Dame,2020,2,43,43,CHI
+00-0036412,KJ Hamler,WR,Penn St.,2020,2,46,46,DEN
+00-0036326,Chase Claypool,WR,Notre Dame,2020,2,49,49,PIT
+00-0036414,Cam Akers,RB,Florida St.,2020,2,52,52,LAR
+00-0036389,Jalen Hurts,QB,Oklahoma,2020,2,53,53,PHI
+00-0036158,J.K. Dobbins,RB,Ohio St.,2020,2,55,55,BAL
+00-0036415,Van Jefferson,WR,Florida,2020,2,57,57,LAR
+00-0036255,Denzel Mims,WR,Baylor,2020,2,59,59,NYJ
+00-0036265,AJ Dillon,RB,Boston Col.,2020,2,62,62,GNB
+00-0036328,Antonio Gibson,RB,Memphis,2020,3,66,66,WAS
+00-0036450,Ke'Shawn Vaughn,RB,Illinois,2020,3,76,76,TAM
+00-0036364,Lynn Bowden Jr.,WR,Kentucky,2020,3,80,80,LVR
+00-0036365,Bryan Edwards,WR,South Carolina,2020,3,81,81,LVR
+00-0036251,Zack Moss,RB,Utah,2020,3,86,86,BUF
+00-0036194,Devin Asiasi,TE,UCLA,2020,3,91,91,NWE
+00-0036331,Devin Duvernay,WR,Texas,2020,3,92,92,BAL
+00-0036297,Darrynton Evans,RB,Appalachian St.,2020,3,93,93,TEN
+00-0036332,Josiah Deguara,TE,Cincinnati,2020,3,94,94,GNB
+00-0036225,Dalton Keene,TE,Virginia Tech,2020,3,101,101,NWE
+00-0036422,Adam Trautman,TE,Dayton,2020,3,105,105,NOR
+00-0036370,Joshua Kelley,RB,UCLA,2020,4,112,112,LAC
+00-0036232,Harrison Bryant,TE,Florida Atlantic,2020,4,115,115,CLE
+00-0036423,Albert Okwuegbunam,TE,Missouri,2020,4,118,118,DEN
+00-0036269,La'Mical Perine,RB,Florida,2020,4,120,120,NYJ
+00-0036226,Jacob Eason,QB,Washington,2020,4,122,122,IND
+00-0036336,Anthony McFarland Jr.,RB,Maryland,2020,4,124,124,PIT
+00-0036301,James Morgan,QB,Florida International,2020,4,125,125,NYJ
+00-0036196,Gabe Davis,WR,Central Florida,2020,4,128,128,BUF
+00-0036244,Colby Parkinson,TE,Stanford,2020,4,133,133,SEA
+00-0036424,Brycen Hopkins,TE,Purdue,2020,4,136,136,LAR
+00-0036340,Antonio Gandy-Golden,WR,Liberty,2020,4,142,142,WAS
+00-0036425,DeeJay Dallas,RB,Miami (FL),2020,4,144,144,SEA
+00-0036377,Joe Reed,WR,Virginia,2020,5,151,151,LAC
+00-0036427,Tyler Johnson,WR,Minnesota,2020,5,161,161,TAM
+00-0036254,Collin Johnson,WR,Texas,2020,5,165,165,JAX
+00-0036277,Quintez Cephus,WR,Wisconsin,2020,5,166,166,DET
+00-0036197,Jake Fromm,QB,Georgia,2020,5,167,167,BUF
+00-0036398,John Hightower,WR,Boise St.,2020,5,168,168,PHI
+00-0036308,Isaiah Coulter,WR,Rhode Island,2020,5,171,171,HOU
+00-0036278,Jason Huntley,RB,New Mexico St.,2020,5,172,172,DET
+00-0036309,Darnell Mooney,WR,Tulane,2020,5,173,173,CHI
+00-0036345,K.J. Osborn,WR,Miami (FL),2020,5,176,176,MIN
+00-0036233,Donovan Peoples-Jones,WR,Michigan,2020,6,187,187,CLE
+00-0036312,Jake Luton,QB,Oregon St.,2020,6,189,189,JAX
+00-0036429,Charlie Woerner,TE,Georgia,2020,6,190,190,SFO
+00-0036271,Quez Watkins,WR,Southern Miss,2020,6,200,200,PHI
+00-0036133,James Proche,WR,SMU,2020,6,201,201,BAL
+00-0036250,Tyler Davis,TE,Georgia Tech,2020,6,206,206,JAX
+00-0036165,Isaiah Hodgins,WR,Oregon St.,2020,6,207,207,BUF
+00-0036228,Dezmon Patmon,WR,Washington St.,2020,6,212,212,IND
+00-0036247,Freddie Swain,WR,Florida,2020,6,214,214,SEA
+00-0036259,Jauan Jennings,WR,Tennessee,2020,7,217,217,SFO
+00-0036382,K.J. Hill,WR,Ohio St.,2020,7,220,220,LAC
+00-0036383,Eno Benjamin,RB,Arizona St.,2020,7,222,222,ARI
+,Cole McDonald,QB,Hawaii,2020,7,224,224,TEN
+00-0036384,Ben DiNucci,QB,James Madison,2020,7,231,231,DAL
+00-0036433,Tommy Stevens,QB,Mississippi St.,2020,7,240,240,NOR
+00-0036279,Nate Stanley,QB,Iowa,2020,7,244,244,MIN
+00-0036435,Raymond Calais,RB,Louisiana,2020,7,245,245,TAM
+00-0036245,Malcolm Perry,RB,Navy,2020,7,246,246,MIA
+00-0036438,Stephen Sullivan,TE,LSU,2020,7,251,251,SEA
+00-0036439,Tyrie Cleveland,WR,Florida,2020,7,252,252,DEN
+00-0036971,Trevor Lawrence,QB,Clemson,2021,1,1,1,JAX
+00-0037013,Zach Wilson,QB,BYU,2021,1,2,2,NYJ
+00-0037012,Trey Lance,QB,North Dakota St.,2021,1,3,3,SFO
+00-0036970,Kyle Pitts,TE,Florida,2021,1,4,4,ATL
+00-0036900,Ja'Marr Chase,WR,LSU,2021,1,5,5,CIN
+00-0036613,Jaylen Waddle,WR,Alabama,2021,1,6,6,MIA
+00-0036912,DeVonta Smith,WR,Alabama,2021,1,10,10,PHI
+00-0036945,Justin Fields,QB,Ohio St.,2021,1,11,11,CHI
+00-0036972,Mac Jones,QB,Alabama,2021,1,15,15,NWE
+00-0036913,Kadarius Toney,WR,Florida,2021,1,20,20,NYG
+00-0036893,Najee Harris,RB,Alabama,2021,1,24,24,PIT
+00-0036973,Travis Etienne,RB,Clemson,2021,1,25,25,JAX
+00-0036550,Rashod Bateman,WR,Minnesota,2021,1,27,27,BAL
+00-0036980,Elijah Moore,WR,Mississippi,2021,2,34,34,NYJ
+00-0036997,Javonte Williams,RB,North Carolina,2021,2,35,35,DEN
+00-0036936,Rondale Moore,WR,Purdue,2021,2,49,49,ARI
+00-0036894,Pat Freiermuth,TE,Penn St.,2021,2,55,55,PIT
+00-0036620,D'Wayne Eskridge,WR,Western Michigan,2021,2,56,56,SEA
+00-0036849,Tutu Atwell,WR,Louisville,2021,2,57,57,LAR
+00-0036955,Terrace Marshall Jr.,WR,LSU,2021,2,59,59,CAR
+00-0036928,Kyle Trask,QB,Florida,2021,2,64,64,TAM
+00-0036946,Kellen Mond,QB,Texas A&M,2021,3,66,66,MIN
+00-0036898,Davis Mills,QB,Stanford,2021,3,67,67,HOU
+00-0036988,Josh Palmer,WR,Tennessee,2021,3,77,77,LAC
+00-0037004,Hunter Long,TE,Boston Col.,2021,3,81,81,MIA
+00-0036626,Dyami Brown,WR,North Carolina,2021,3,82,82,WAS
+00-0037005,Tommy Tremble,TE,Notre Dame,2021,3,83,83,CAR
+00-0036991,Amari Rodgers,WR,Clemson,2021,3,85,85,GNB
+00-0036984,Trey Sermon,RB,Ohio St.,2021,3,88,88,SFO
+00-0036554,Nico Collins,WR,Michigan,2021,3,89,89,HOU
+00-0036999,Anthony Schwartz,WR,Auburn,2021,3,91,91,CLE
+00-0037011,Tre' McKitty,TE,Georgia,2021,3,97,97,LAC
+00-0036924,Michael Carter,RB,North Carolina,2021,4,107,107,NYJ
+00-0036627,Dez Fitzpatrick,WR,Louisville,2021,4,109,109,TEN
+00-0036963,Amon-Ra St. Brown,WR,USC,2021,4,112,112,DET
+00-0036842,Kene Nwangwu,RB,Iowa St.,2021,4,119,119,MIN
+00-0036875,Rhamondre Stevenson,RB,Oklahoma,2021,4,120,120,NWE
+00-0036628,John Bates,TE,Boise St.,2021,4,124,124,WAS
+00-0036555,Chuba Hubbard,RB,Oklahoma St.,2021,4,126,126,CAR
+00-0036876,Kylen Granson,TE,SMU,2021,4,127,127,IND
+00-0036877,Jaelon Darden,WR,North Texas,2021,4,129,129,TAM
+00-0036630,Tylan Wallace,WR,Oklahoma St.,2021,4,131,131,BAL
+00-0036929,Ian Book,QB,Notre Dame,2021,4,133,133,NOR
+00-0036918,Jacob Harris,WR,Central Florida,2021,4,141,141,LAR
+00-0036887,Luke Farrell,TE,Ohio St.,2021,5,145,145,JAX
+00-0036556,Brevin Jordan,TE,Miami (FL),2021,5,147,147,HOU
+00-0036919,Kenneth Gainwell,RB,Memphis,2021,5,150,150,PHI
+00-0036635,Ihmir Smith-Marsette,WR,Iowa,2021,5,157,157,MIN
+00-0036637,Noah Gray,TE,Duke,2021,5,162,162,KAN
+00-0036640,Zach Davidson,TE,Central Missouri St.,2021,5,168,168,MIN
+00-0036646,Simi Fehoko,WR,Stanford,2021,5,179,179,DAL
+00-0036647,Cornell Powell,WR,Clemson,2021,5,181,181,KAN
+00-0036565,Ben Mason,RB,Michigan,2021,5,184,184,BAL
+00-0036951,Frank Darby,WR,Arizona St.,2021,6,187,187,ATL
+00-0036567,Elijah Mitchell,RB,Louisiana,2021,6,194,194,SFO
+00-0036569,Gary Brightwell,RB,Arizona,2021,6,196,196,NYG
+00-0036650,Larry Rountree,RB,Missouri,2021,6,198,198,LAC
+00-0036857,Chris Evans,RB,Michigan,2021,6,202,202,CIN
+00-0036571,Marquez Stevenson,WR,Houston,2021,6,203,203,BUF
+00-0036572,Shi Smith,WR,South Carolina,2021,6,204,204,CAR
+00-0036652,Racey McMath,WR,LSU,2021,6,205,205,TEN
+00-0036858,Jalen Camp,WR,Georgia Tech,2021,6,209,209,JAX
+00-0036654,Demetric Felton,RB,UCLA,2021,6,211,211,CLE
+00-0036906,Khalil Herbert,RB,Virginia Tech,2021,6,217,217,CHI
+00-0036879,Sam Ehlinger,QB,Texas,2021,6,218,218,IND
+00-0036657,Seth Williams,WR,Auburn,2021,6,219,219,DEN
+00-0036907,Dazz Newsome,WR,North Carolina,2021,6,221,221,CHI
+00-0036482,Mike Strachan,WR,Charleston (WV),2021,7,229,229,IND
+00-0036860,Jake Funk,RB,Maryland,2021,7,233,233,LAR
+00-0036536,Tre Nixon,WR,Central Florida,2021,7,242,242,NWE
+00-0036578,Gerrid Doaks,RB,Cincinnati,2021,7,244,244,MIA
+00-0036862,Ben Skowronek,WR,Notre Dame,2021,7,249,249,LAR
+00-0036939,Kawaan Baker,WR,South Alabama,2021,7,255,255,NOR
+00-0036669,Kylin Hill,RB,Mississippi St.,2021,7,256,256,GNB
+00-0036670,Jermar Jefferson,RB,Oregon St.,2021,7,257,257,DET
+00-0036671,Dax Milne,WR,BYU,2021,7,258,258,WAS
+00-0037238,Drake London,WR,USC,2022,1,8,8,ATL
+00-0037740,Garrett Wilson,WR,Ohio St.,2022,1,10,10,NYJ
+00-0037239,Chris Olave,WR,Ohio St.,2022,1,11,11,NOR
+00-0037240,Jameson Williams,WR,Alabama,2022,1,12,12,DET
+00-0037741,Jahan Dotson,WR,Penn St.,2022,1,16,16,WAS
+00-0037742,Treylon Burks,WR,Arkansas,2022,1,18,18,TEN
+00-0038102,Kenny Pickett,QB,Pittsburgh,2022,1,20,20,PIT
+00-0038124,Christian Watson,WR,North Dakota St.,2022,2,34,34,GNB
+00-0038120,Breece Hall,RB,Iowa St.,2022,2,36,36,NYJ
+00-0038134,Kenneth Walker III,RB,Michigan St.,2022,2,41,41,SEA
+00-0038117,Wan'Dale Robinson,WR,Kentucky,2022,2,43,43,NYG
+00-0037614,John Metchie,WR,Alabama,2022,2,44,44,HOU
+00-0038104,Tyquan Thornton,WR,Baylor,2022,2,50,50,NWE
+00-0037247,George Pickens,WR,Georgia,2022,2,52,52,PIT
+00-0037664,Alec Pierce,WR,Cincinnati,2022,2,53,53,IND
+00-0038090,Skyy Moore,WR,Western Michigan,2022,2,54,54,KAN
+00-0037744,Trey McBride,TE,Colorado St.,2022,2,55,55,ARI
+00-0037248,James Cook,RB,Georgia,2022,2,63,63,BUF
+00-0037745,Velus Jones Jr.,WR,Tennessee,2022,3,71,71,CHI
+00-0037755,Jelani Woods,TE,Virginia,2022,3,73,73,IND
+00-0038122,Desmond Ridder,QB,Cincinnati,2022,3,74,74,ATL
+00-0037252,Greg Dulcich,TE,UCLA,2022,3,80,80,DEN
+00-0038128,Malik Willis,QB,Liberty,2022,3,86,86,TEN
+00-0037666,Jalen Tolbert,WR,South Alabama,2022,3,88,88,DAL
+00-0037256,Rachaad White,RB,Arizona St.,2022,3,91,91,TAM
+00-0037827,Tyrion Davis-Price,RB,LSU,2022,3,93,93,SFO
+00-0038132,Matt Corral,QB,Mississippi,2022,3,94,94,CAR
+00-0037746,Brian Robinson Jr.,RB,Alabama,2022,3,98,98,WAS
+00-0037257,David Bell,WR,Purdue,2022,3,99,99,CLE
+00-0037805,Jeremy Ruckert,TE,Ohio St.,2022,3,101,101,NYJ
+00-0037828,Danny Gray,WR,SMU,2022,3,105,105,SFO
+00-0038129,Cade Otton,TE,Washington,2022,4,106,106,TAM
+00-0037258,Dameon Pierce,RB,Florida,2022,4,107,107,HOU
+00-0038115,Daniel Bellinger,TE,San Diego St.,2022,4,112,112,NYG
+00-0038040,Zamir White,RB,Georgia,2022,4,122,122,LVR
+00-0038045,Isaiah Spiller,RB,Texas A&M,2022,4,123,123,LAC
+00-0038092,Erik Ezukanma,WR,Texas Tech,2022,4,125,125,MIA
+00-0038098,Pierre Strong,RB,South Dakota St.,2022,4,127,127,NWE
+00-0038046,Charlie Kolar,TE,Iowa St.,2022,4,128,128,BAL
+00-0038041,Jake Ferguson,TE,Wisconsin,2022,4,129,129,DAL
+00-0037617,Hassan Haskins,RB,Michigan,2022,4,131,131,TEN
+00-0037816,Romeo Doubs,WR,Nevada,2022,4,132,132,GNB
+00-0038108,Bailey Zappe,QB,Western Kentucky,2022,4,137,137,NWE
+00-0037837,Calvin Austin III,WR,Memphis,2022,4,138,138,PIT
+00-0037838,Isaiah Likely,TE,Coastal Carolina,2022,4,139,139,BAL
+00-0037809,Chig Okonkwo,TE,Maryland,2022,4,143,143,TEN
+00-0037077,Sam Howell,QB,North Carolina,2022,5,144,144,WAS
+00-0037261,Khalil Shakir,WR,Boise St.,2022,5,148,148,BUF
+00-0037078,Cole Turner,TE,Nevada,2022,5,149,149,WAS
+00-0037263,Tyler Allgeier,RB,BYU,2022,5,151,151,ATL
+00-0037265,Snoop Conner,RB,Mississippi,2022,5,154,154,JAX
+00-0037267,Jerome Ford,RB,Cincinnati,2022,5,156,156,CLE
+00-0037272,Montrell Washington,WR,Samford,2022,5,162,162,DEN
+00-0037273,Kyle Philips,WR,UCLA,2022,5,163,163,TEN
+00-0037840,Kyren Williams,RB,Notre Dame,2022,5,164,164,LAR
+00-0037276,Ty Chandler,RB,North Carolina,2022,5,169,169,MIN
+00-0037277,Teagan Quitoriano,TE,Oregon St.,2022,5,170,170,HOU
+00-0037282,James Mitchell,TE,Virginia Tech,2022,5,177,177,DET
+00-0037286,Kevin Harris,RB,South Carolina,2022,6,183,183,NWE
+00-0037291,Jalen Nailor,WR,Michigan St.,2022,6,191,191,MIN
+00-0037292,Andrew Ogletree,TE,Youngstown St.,2022,6,192,192,IND
+00-0037085,Tyler Badie,RB,Missouri,2022,6,196,196,BAL
+00-0037086,Grant Calcaterra,TE,SMU,2022,6,198,198,PHI
+00-0037299,Keaontay Ingram,RB,USC,2022,6,201,201,ARI
+00-0037300,Michael Woods II,WR,Oklahoma,2022,6,202,202,CLE
+00-0037087,Trestan Ebner,RB,Baylor,2022,6,203,203,CHI
+00-0037304,Connor Heyward,TE,Michigan St.,2022,6,208,208,PIT
+00-0037306,John FitzPatrick,TE,Georgia,2022,6,213,213,ATL
+00-0037311,Ko Kieft,TE,Minnesota,2022,6,218,218,TAM
+00-0037317,Nick Muse,TE,South Carolina,2022,7,227,227,MIN
+00-0037091,Bo Melton,WR,Rutgers,2022,7,229,229,SEA
+00-0037093,Dareke Young,WR,Lenoir-Rhyne,2022,7,233,233,SEA
+00-0037324,Chris Oladokun,QB,South Dakota St.,2022,7,241,241,PIT
+00-0037327,Skylar Thompson,QB,Kansas St.,2022,7,247,247,MIA
+00-0037329,Brittain Brown,RB,UCLA,2022,7,250,250,LVR
+00-0037197,Isiah Pacheco,RB,Rutgers,2022,7,251,251,KAN
+00-0037098,Samori Toure,WR,Nebraska,2022,7,258,258,GNB
+00-0037331,Zander Horvath,RB,Purdue,2022,7,260,260,LAC
+00-0037834,Brock Purdy,QB,Iowa St.,2022,7,262,262,SFO
+00-0039150,Bryce Young,QB,Alabama,2023,1,1,1,CAR
+00-0039163,C.J. Stroud,QB,Ohio St.,2023,1,2,2,HOU
+00-0039164,Anthony Richardson,QB,Florida,2023,1,4,4,IND
+00-0038542,Bijan Robinson,RB,Texas,2023,1,8,8,ATL
+00-0039139,Jahmyr Gibbs,RB,Alabama,2023,1,12,12,DET
+00-0038543,Jaxon Smith-Njigba,WR,Ohio St.,2023,1,20,20,SEA
+00-0038544,Quentin Johnston,WR,TCU,2023,1,21,21,LAC
+00-0039064,Zay Flowers,WR,Boston Col.,2023,1,22,22,BAL
+00-0038994,Jordan Addison,WR,USC,2023,1,23,23,MIN
+00-0038933,Dalton Kincaid,TE,Utah,2023,1,25,25,BUF
+00-0039152,Will Levis,QB,Kentucky,2023,2,33,33,TEN
+00-0039065,Sam LaPorta,TE,Iowa,2023,2,34,34,DET
+00-0039066,Michael Mayer,TE,Notre Dame,2023,2,35,35,LVR
+00-0039062,Jonathan Mingo,WR,Mississippi,2023,2,39,39,CAR
+00-0039144,Luke Musgrave,TE,Oregon St.,2023,2,42,42,GNB
+00-0039146,Jayden Reed,WR,Michigan St.,2023,2,50,50,GNB
+00-0039165,Zach Charbonnet,RB,UCLA,2023,2,52,52,SEA
+00-0039067,Rashee Rice,WR,SMU,2023,2,55,55,KAN
+00-0038547,Luke Schoonmaker,TE,Michigan,2023,2,58,58,DAL
+00-0038935,Brenton Strange,TE,Penn St.,2023,2,61,61,JAX
+00-0038976,Marvin Mims,WR,Oklahoma,2023,2,63,63,DEN
+00-0038550,Hendon Hooker,QB,Tennessee,2023,3,68,68,DET
+00-0038977,Tank Dell,WR,Houston,2023,3,69,69,HOU
+00-0038551,Kendre Miller,RB,TCU,2023,3,71,71,NOR
+00-0038938,Jalin Hyatt,WR,Tennessee,2023,3,73,73,NYG
+00-0038979,Cedric Tillman,WR,Tennessee,2023,3,74,74,CLE
+00-0038996,Tucker Kraft,TE,South Dakota St.,2023,3,78,78,GNB
+00-0038997,Josh Downs,WR,North Carolina,2023,3,79,79,IND
+00-0039032,Tyjae Spears,RB,Tulane,2023,3,81,81,TEN
+00-0039040,De'Von Achane,RB,Texas A&M,2023,3,84,84,MIA
+00-0038555,Tank Bigsby,RB,Auburn,2023,3,88,88,JAX
+00-0038558,Darnell Washington,TE,Georgia,2023,3,93,93,PIT
+00-0038559,Michael Wilson,WR,Stanford,2023,3,94,94,ARI
+00-0038563,Tre Tucker,WR,Cincinnati,2023,3,100,100,LVR
+00-0038564,Cameron Latu,TE,Alabama,2023,3,101,101,SFO
+00-0039021,Roschon Johnson,RB,Texas,2023,4,115,115,CHI
+00-0038573,Derius Davis,WR,TCU,2023,4,125,125,LAC
+00-0038998,Jake Haener,QB,Fresno St.,2023,4,127,127,NOR
+00-0039107,Stetson Bennett,QB,Georgia,2023,4,128,128,LAR
+00-0038576,Charlie Jones,WR,Purdue,2023,4,131,131,CIN
+00-0038941,Tyler Scott,WR,Cincinnati,2023,4,133,133,CHI
+00-0038579,Aidan O'Connell,QB,Purdue,2023,4,135,135,LVR
+00-0038582,Clayton Tune,QB,Houston,2023,5,139,139,ARI
+00-0038583,Dorian Thompson-Robinson,QB,UCLA,2023,5,140,140,CLE
+00-0038389,Israel Abanikanda,RB,Pittsburgh,2023,5,143,143,NYJ
+00-0038589,Josh Whyle,TE,Cincinnati,2023,5,147,147,TEN
+00-0038391,Sean Clifford,QB,Penn St.,2023,5,149,149,GNB
+00-0038590,Justin Shorter,WR,Florida,2023,5,150,150,BUF
+00-0038393,Dontayvion Wicks,WR,Virginia,2023,5,159,159,GNB
+00-0038394,Will Mallory,TE,Miami (FL),2023,5,162,162,IND
+00-0038597,Chase Brown,RB,Illinois,2023,5,163,163,CIN
+00-0038598,Jaren Hall,QB,BYU,2023,5,164,164,MIN
+00-0039050,Payne Durham,TE,Purdue,2023,5,171,171,TAM
+00-0038396,Eric Gray,RB,Oklahoma,2023,5,172,172,NYG
+00-0039074,Davis Allen,TE,Clemson,2023,5,175,175,LAR
+00-0038397,Evan Hull,RB,Northwestern,2023,5,176,176,IND
+00-0039075,Puka Nacua,WR,BYU,2023,5,177,177,LAR
+00-0038606,Parker Washington,WR,Penn St.,2023,6,185,185,JAX
+00-0038608,Kayshon Boutte,WR,LSU,2023,6,187,187,NWE
+00-0038400,Tanner McKee,QB,Stanford,2023,6,188,188,PHI
+00-0039052,Trey Palmer,WR,Nebraska,2023,6,191,191,TAM
+00-0038611,Chris Rodriguez,RB,Kentucky,2023,6,193,193,WAS
+00-0038612,A.T. Perry,WR,Wake Forest,2023,6,195,195,NOR
+00-0039041,Elijah Higgins,WR,Stanford,2023,6,197,197,MIA
+00-0038618,Xavier Hutchinson,WR,Iowa St.,2023,6,205,205,HOU
+00-0038619,Andrei Iosivas,WR,Princeton,2023,6,206,206,CIN
+00-0038621,DeMario Douglas,WR,Liberty,2023,6,210,210,NWE
+00-0038622,Deuce Vaughn,RB,Kansas St.,2023,6,212,212,DAL
+00-0039136,Zach Evans,RB,Mississippi,2023,6,215,215,LAR
+00-0038627,Antoine Green,WR,North Carolina,2023,7,219,219,DET
+00-0038406,Zack Kuntz,TE,Old Dominion,2023,7,220,220,NYJ
+00-0039046,DeWayne McBride,RB,Ala-Birmingham,2023,7,222,222,MIN
+00-0038632,Colton Dowell,WR,UT Martin,2023,7,228,228,TEN
+00-0038409,Lew Nichols,RB,Central Michigan,2023,7,235,235,GNB
+00-0038636,Kenny McIntosh,RB,Georgia,2023,7,237,237,SEA
+00-0038637,Max Duggan,QB,TCU,2023,7,239,239,LAC
+00-0038640,Jalen Brooks,WR,South Carolina,2023,7,244,244,DAL
+00-0038643,Brayden Willis,TE,Oklahoma,2023,7,247,247,SFO
+00-0038647,Ronnie Bell,WR,Michigan,2023,7,253,253,SFO
+00-0038507,Grant Dubose,WR,Charlotte,2023,7,256,256,GNB
+00-0039918,Caleb Williams,QB,USC,2024,1,1,1,CHI
+00-0039910,Jayden Daniels,QB,LSU,2024,1,2,2,WAS
+00-0039851,Drake Maye,QB,North Carolina,2024,1,3,3,NWE
+00-0039849,Marvin Harrison Jr.,WR,Ohio St.,2024,1,4,4,ARI
+00-0039917,Michael Penix,QB,Washington,2024,1,8,8,ATL
+00-0039919,Rome Odunze,WR,Washington,2024,1,9,9,CHI
+00-0039732,Bo Nix,QB,Oregon,2024,1,12,12,DEN
+00-0039338,Brock Bowers,TE,Georgia,2024,1,13,13,LVR
+00-0039893,Brian Thomas,WR,LSU,2024,1,23,23,JAX
+00-0039916,Ricky Pearsall,WR,Florida,2024,1,31,31,SFO
+00-0039342,Xavier Legette,WR,South Carolina,2024,1,32,32,CAR
+00-0039915,Ladd McConkey,WR,Georgia,2024,2,34,34,LAC
+00-0039907,Ja'Lynn Polk,WR,Washington,2024,2,37,37,NWE
+00-0039890,Adonai Mitchell,WR,Texas,2024,2,52,52,IND
+00-0039912,Ben Sinnott,TE,Kansas St.,2024,2,53,53,WAS
+00-0039920,Malachi Corley,WR,Western Kentucky,2024,3,65,65,NYJ
+00-0039921,Trey Benson,RB,Florida St.,2024,3,66,66,ARI
+00-0039810,Jermaine Burton,WR,Alabama,2024,3,80,80,CIN
+00-0039737,Tip Reiman,TE,Illinois,2024,3,82,82,ARI
+00-0039738,Blake Corum,RB,Michigan,2024,3,83,83,LAR
+00-0039739,Roman Wilson,WR,Michigan,2024,3,84,84,PIT
+00-0039811,MarShawn Lloyd,RB,USC,2024,3,88,88,GNB
+00-0039855,Jalen McMillan,WR,Washington,2024,3,92,92,TAM
+00-0039355,Luke McCaffrey,WR,Rice,2024,3,100,100,WAS
+00-0039847,Theo Johnson,TE,Penn St.,2024,4,107,107,NYG
+00-0039853,Javon Baker,WR,Central Florida,2024,4,110,110,NWE
+00-0039792,Devontez Walker,WR,North Carolina,2024,4,113,113,BAL
+00-0039814,Erick All,TE,Iowa,2024,4,115,115,CIN
+00-0039793,AJ Barner,TE,Michigan,2024,4,121,121,SEA
+00-0039359,Cade Stover,TE,Ohio St.,2024,4,123,123,HOU
+00-0039361,Bucky Irving,RB,Oregon,2024,4,125,125,TAM
+00-0039746,Will Shipley,RB,Clemson,2024,4,127,127,PHI
+00-0039875,Ray Davis,RB,Kentucky,2024,4,128,128,BUF
+00-0039363,Isaac Guerendo,RB,Louisville,2024,4,129,129,SFO
+00-0039824,Jared Wiley,TE,TCU,2024,4,131,131,KAN
+00-0039365,Jacob Cowing,WR,Arizona,2024,4,135,135,SFO
+00-0039816,Anthony Gould,WR,Oregon St.,2024,5,142,142,IND
+00-0039376,Spencer Rattler,QB,South Carolina,2024,5,150,150,NOR
+00-0039747,Ainias Smith,WR,Texas A&M,2024,5,152,152,PHI
+00-0039379,Jamari Thrash,WR,Louisville,2024,5,156,156,CLE
+00-0039796,Rasheen Ali,RB,Marshall,2024,5,165,165,BAL
+00-0039384,Tyrone Tracy Jr.,RB,Purdue,2024,5,166,166,NYG
+00-0039385,Keilan Robinson,RB,Texas,2024,5,167,167,JAX
+00-0039386,Bub Means,WR,Pittsburgh,2024,5,170,170,NOR
+00-0039797,Jordan Travis,QB,Florida St.,2024,5,171,171,NYJ
+00-0039798,Isaiah Davis,RB,South Dakota St.,2024,5,173,173,NYJ
+00-0039391,Kimani Vidal,RB,Troy,2024,6,181,181,LAC
+00-0039392,Jha'Quan Jackson,WR,Tulane,2024,6,182,182,TEN
+00-0039880,Malik Washington,WR,Virginia,2024,6,184,184,MIA
+00-0039236,Johnny Wilson,WR,Florida St.,2024,6,185,185,PHI
+00-0039393,Jase McClellan,RB,Alabama,2024,6,186,186,ATL
+00-0039394,Casey Washington,WR,Illinois,2024,6,187,187,ATL
+00-0039397,Tejhaun Palmer,WR,Ala-Birmingham,2024,6,191,191,ARI
+00-0039398,Joe Milton,QB,Tennessee,2024,6,193,193,NWE
+00-0039399,Tanner McLachlan,TE,Arizona,2024,6,194,194,CIN
+00-0039405,Jawhar Jordan,RB,Louisville,2024,6,205,205,HOU
+00-0039407,Dylan Laube,RB,New Hampshire,2024,6,208,208,LVR
+00-0039751,Jordan Whittington,WR,Texas,2024,6,213,213,LAR
+00-0039410,Ryan Flournoy,WR,SE Missouri St.,2024,6,216,216,DAL
+00-0039801,Devin Leary,QB,Kentucky,2024,6,218,218,BAL
+00-0039415,Brenden Rice,WR,USC,2024,7,225,225,LAC
+00-0039420,Jaheim Bell,TE,Florida St.,2024,7,231,231,NWE
+00-0039424,Devaughn Vele,WR,Utah,2024,7,235,235,DEN
+00-0039884,Tahj Washington,WR,USC,2024,7,241,241,MIA
+00-0039238,Michael Pratt,QB,Tulane,2024,7,245,245,GNB
+00-0039754,Devin Culp,TE,Washington,2024,7,246,246,TAM
+00-0039437,Cornelius Johnson,WR,Michigan,2024,7,253,253,LAC
+00-0040676,Cam Ward,QB,Miami (FL),2025,1,1,1,TEN
+00-0040128,Tyler Warren,TE,Penn St.,2025,1,14,14,IND
+00-0040129,Emeka Egbuka,WR,Ohio St.,2025,1,19,19,TAM
+00-0040130,Jayden Higgins,WR,Iowa St.,2025,2,34,34,HOU
+00-0040734,TreVeyon Henderson,RB,Ohio St.,2025,2,38,38,NWE
+00-0040743,Tyler Shough,QB,Louisville,2025,2,40,40,NOR
+00-0040727,Tre Harris,WR,Mississippi,2025,2,55,55,LAC
+00-0040729,Jack Bech,WR,TCU,2025,2,58,58,LVR
+00-0040730,RJ Harvey,RB,Central Florida,2025,2,60,60,DEN
+00-0040131,Kyle Williams,WR,Washington St.,2025,3,69,69,NWE
+00-0040669,Isaac TeSlaa,WR,Arkansas,2025,3,70,70,DET
+00-0040134,Pat Bryant,WR,Illinois,2025,3,74,74,DEN
+00-0040138,Jaylin Noel,WR,Iowa St.,2025,3,79,79,HOU
+00-0040009,Savion Williams,WR,TCU,2025,3,87,87,GNB
+00-0040673,Jalen Milroe,QB,Alabama,2025,3,92,92,SEA
+00-0040704,Dillon Gabriel,QB,Oregon,2025,3,94,94,CLE
+00-0040705,Chimere Dike,WR,Florida,2025,4,103,103,TEN
+00-0040719,Bhayshul Tuten,RB,Virginia Tech,2025,4,104,104,JAX
+00-0040715,Cam Skattebo,RB,Arizona St.,2025,4,105,105,NYG
+00-0040581,Dont'e Thornton,WR,Tennessee,2025,4,108,108,LVR
+00-0040582,Arian Smith,WR,Georgia,2025,4,110,110,NYJ
+00-0040583,Woody Marks,RB,USC,2025,4,116,116,HOU
+00-0040692,Jarquez Hunter,RB,Auburn,2025,4,117,117,LAR
+00-0040584,Gunnar Helm,TE,Texas,2025,4,120,120,TEN
+00-0040164,Jaylin Lane,WR,Virginia Tech,2025,4,128,128,WAS
+00-0040172,Jordan Watkins,WR,Mississippi,2025,4,138,138,SFO
+00-0040668,Shedeur Sanders,QB,Colorado,2025,5,144,144,CLE
+00-0040184,KeAndre Lambert-Smith,WR,Auburn,2025,5,158,158,LAC
+00-0040648,Tory Horton,WR,Colorado St.,2025,5,166,166,SEA
+00-0040194,Jackson Hawes,TE,Georgia Tech,2025,5,173,173,BUF
+00-0040649,Robbie Ouzts,TE,Alabama,2025,5,175,175,SEA
+00-0040014,Kyle McCord,QB,Syracuse,2025,6,181,181,PHI
+00-0040203,Will Howard,QB,Ohio St.,2025,6,185,185,PIT
+00-0040205,Kalel Mullings,RB,Michigan,2025,6,188,188,TEN
+00-0040206,Riley Leonard,QB,Notre Dame,2025,6,189,189,IND
+00-0040208,Tahj Brooks,RB,Texas Tech,2025,6,193,193,CIN
+00-0040211,Graham Mertz,QB,Florida,2025,6,197,197,HOU
+00-0040075,LaJohntay Wester,WR,Colorado,2025,6,203,203,BAL
+00-0040218,Jimmy Horn,WR,Colorado,2025,6,208,208,CAR
+00-0040220,Tommy Mellott,QB,Montana St.,2025,6,213,213,LVR
+00-0040222,Cam Miller,QB,North Dakota St.,2025,6,215,215,LVR
+00-0040225,Thomas Fidone,TE,Nebraska,2025,7,219,219,NYG
+00-0040589,Kurtis Rourke,QB,Indiana,2025,7,227,227,SFO
+00-0040236,Kyle Monangai,RB,Rutgers,2025,7,233,233,CHI
+00-0040237,Tez Johnson,WR,Oregon,2025,7,235,235,TAM
+00-0040653,Ricky White,WR,UNLV,2025,7,238,238,SEA
+00-0040021,Phil Mafah,RB,Clemson,2025,7,239,239,DAL
+00-0040240,Caleb Lohner,TE,Utah,2025,7,241,241,DEN
+00-0040590,Konata Mumpfield,WR,Pittsburgh,2025,7,242,242,LAR
+00-0040241,Dominic Lovett,WR,Georgia,2025,7,244,244,DET
+00-0040242,Jacory Croskey-Merritt,RB,Arizona,2025,7,245,245,WAS
+00-0040247,Junior Bergen,WR,Montana,2025,7,252,252,SFO
+00-0040250,Luke Lachey,TE,Iowa,2025,7,255,255,HOU
+,Carson Beck,QB,Miami (FL),2026,3,65,65,ARI
+BLA097235,Kaelon Black,RB,Indiana,2026,3,90,90,SFO
+HIB564972,Matthew Hibner,TE,SMU,2026,4,133,133,BAL
+,Joe Royer,TE,Cincinnati,2026,5,170,170,CLE
+DAN490797,CJ Daniels,WR,Miami (FL),2026,6,197,197,LAR
+SMI038569,Anthony Smith,WR,East Carolina,2026,7,218,218,DAL
+MCG547540,Seth McGowan,RB,Kentucky,2026,7,237,237,IND

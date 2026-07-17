@@ -1,0 +1,882 @@
+hs_class,player_name,position,industry_composite_rank,industry_composite_stars,industry_composite_rating,rivals_rank,rivals_stars,rivals_rating,hometown,high_school,state,on3_person_key,source_page
+2012,Dorial Green-Beckham,WR,2,5,98.53387096774193,1.0,5.0,6.1,"Springfield, MO",Hillcrest,MO,38523,industry_comparison
+2012,Johnathan Gray,RB,3,5,98.16559139784947,5.0,5.0,6.1,"Aledo, TX",Aledo,TX,63858,industry_comparison
+2012,Stefon Diggs,WR,9,5,97.68655913978495,8.0,5.0,6.1,"Olney, MD",Good Counsel,MD,108299,industry_comparison
+2012,Jameis Winston,QB,13,5,97.05215053763442,10.0,5.0,6.1,"Hueytown, AL",Hueytown,AL,55253,industry_comparison
+2012,T.J. Yeldon,RB,15,5,96.91559139784947,12.0,5.0,6.1,"Daphne, AL",Daphne,AL,109610,industry_comparison
+2012,Keith Marshall,RB,16,5,96.80031556802244,48.0,4.0,6.0,"Raleigh, NC",Millbrook,NC,72137,industry_comparison
+2012,Gunner Kiel,QB,19,5,96.61484338475924,20.0,5.0,6.1,"Columbus, IN",Columbus East,IN,47237,industry_comparison
+2012,Trey Williams,RB,21,5,96.53474754558205,15.0,5.0,6.1,"Houston, TX",Dekaney,TX,150914,industry_comparison
+2012,Nelson Agholor,WR,24,5,96.37927769985976,18.0,5.0,6.1,"Tampa, FL",Berkeley Prep,FL,91959,industry_comparison
+2012,Duke Johnson,RB,29,5,96.15370500233755,30.0,5.0,6.1,"Miami, FL",Norland,FL,135643,industry_comparison
+2012,Chris Black,WR,31,5,96.01354604955586,58.0,4.0,6.0,"Jacksonville, FL",First Coast,FL,21333,industry_comparison
+2012,Devin Fuller,WR,32,5,95.82463768115943,37.0,4.0,6.0,"Westwood, NJ",Old Tappan,NJ,36012,industry_comparison
+2012,Zach Kline,QB,33,4,95.81739130434784,44.0,4.0,6.0,"Danville, CA",San Ramon Valley,CA,122828,industry_comparison
+2012,Rushel Shell,RB,36,4,95.71486676016829,55.0,4.0,6.0,"Aliquippa, PA",Hopewell ,PA,102753,industry_comparison
+2012,Deontay Greenberry,WR,37,4,95.66579008882657,49.0,4.0,6.0,"Fresno, CA",Washington Union,CA,34506,industry_comparison
+2012,Mario Pender,RB,40,4,95.57536231884059,38.0,4.0,6.0,"Cape Coral, FL",Island Coast,FL,83238,industry_comparison
+2012,Thomas Johnson,WR,41,4,95.57282608695654,34.0,4.0,6.0,"Dallas, TX",Skyline,TX,135615,industry_comparison
+2012,Amari Cooper,WR,44,4,95.50398550724637,45.0,4.0,6.0,"Miami, FL",Northwestern,FL,4192,industry_comparison
+2012,Shaq Roland,WR,61,4,94.6036231884058,66.0,4.0,5.9,"Lexington, SC",Lexington,SC,106621,industry_comparison
+2012,Cayleb Jones,WR,62,4,94.60144927536231,41.0,4.0,6.0,"Austin, TX",Austin,TX,136035,industry_comparison
+2012,Kent Taylor,TE,63,4,94.5960144927536,54.0,4.0,6.0,"Land O Lakes, FL",Land O' Lakes,FL,73475,industry_comparison
+2012,Todd Gurley,RB,66,4,94.52173913043478,42.0,4.0,6.0,"Tarboro, NC",Tarboro,NC,113299,industry_comparison
+2012,Cyler Miles,QB,68,4,94.5018115942029,35.0,4.0,6.0,"Denver, CO",Mullen,CO,27243,industry_comparison
+2012,Kendall Sanders,WR,71,4,94.21739130434781,39.0,4.0,6.0,"Athens, TX",Athens,TX,72796,industry_comparison
+2012,Tanner Mangum,QB,72,4,94.18659420289855,59.0,4.0,6.0,"Eagle, ID",Eagle,ID,110141,industry_comparison
+2012,Mike Davis,RB,74,4,94.09710144927537,,4.0,5.9,"Stone Mountain, GA",Stephenson,GA,88883,industry_comparison
+2012,Germone Hopper,WR,78,4,93.98659420289856,75.0,4.0,5.9,"Charlotte, NC",Phillip O. Berry Academy,NC,45969,industry_comparison
+2012,Durron Neal,WR,82,4,93.71847826086957,62.0,4.0,5.9,"Saint Louis, MO",De Smet,MO,39431,industry_comparison
+2012,Alex Ross,RB,85,4,93.65144927536234,144.0,4.0,5.8,"Jenks, OK",Jenks,OK,3357,industry_comparison
+2012,Joel Caleb,WR,86,4,93.63152173913045,84.0,4.0,5.9,"Midlothian, VA",Clover Hill,VA,62614,industry_comparison
+2012,Bryce Treggs,WR,94,4,93.22463768115941,81.0,4.0,5.9,"Bellflower, CA",St. John Bosco,CA,15947,industry_comparison
+2012,JaQuay Savage,WR,95,4,93.21557971014494,90.0,4.0,5.9,"Tyrone, GA",Fork Union Military Academy,GA,56459,industry_comparison
+2012,Anthony Alford,QB,99,4,93.06884057971014,157.0,4.0,5.8,"Petal, MS",Petal,MS,5830,industry_comparison
+2012,Sterling Shepard,WR,100,4,93.0554347826087,131.0,4.0,5.8,"Oklahoma City, OK",Heritage Hall,OK,108642,industry_comparison
+2012,Chad Kelly,QB,103,4,92.99202898550725,150.0,4.0,5.8,"Buffalo, NY",St. Joseph School,NY,19587,industry_comparison
+2012,Barry J. Sanders,RB,104,4,92.97572463768117,134.0,4.0,5.8,"Oklahoma City, OK",Heritage Hall,OK,9392,industry_comparison
+2012,D.J. Foster,RB,108,4,92.90036231884059,71.0,4.0,5.9,"Scottsdale, AZ",Saguaro,AZ,27560,industry_comparison
+2012,Marvin Bracy,WR,110,4,92.87246376811595,235.0,4.0,5.8,"Orlando, FL",Boone,FL,84588,industry_comparison
+2012,Bralon Addison,WR,113,4,92.82246376811595,112.0,4.0,5.8,"Missouri City, TX",Hightower,TX,12010,industry_comparison
+2012,Darius Powe,WR,114,4,92.81630434782609,226.0,4.0,5.8,"Lakewood, CA",Lakewood,CA,30360,industry_comparison
+2012,Dominique Wheeler,ATH,116,4,92.80471014492754,171.0,4.0,5.8,"Crockett, TX",Crockett,TX,37788,industry_comparison
+2012,Byron Marshall,RB,117,4,92.80253623188406,114.0,4.0,5.8,"San Jose, CA",Valley Christian,CA,16289,industry_comparison
+2012,Jalen Cope-Fitzpatrick,TE,118,4,92.76992753623188,156.0,4.0,5.8,"Rocklin, CA",Whitney,CA,54219,industry_comparison
+2012,Ricardo Louis,WR,119,4,92.70551659654045,183.0,4.0,5.8,"Miami Beach, FL",Miami Beach Senior,FL,99836,industry_comparison
+2012,Aaron Burbridge,WR,125,4,92.60036231884058,103.0,4.0,5.9,"Farmington, MI",Harrison,MI,379,industry_comparison
+2012,Darreus Rogers,WR,130,4,92.48731884057972,198.0,4.0,5.8,"Carson, CA",Carson,CA,30821,industry_comparison
+2012,Matt Davis,QB,131,4,92.44565217391305,119.0,4.0,5.8,"Houston, TX",Klein Forest,TX,85206,industry_comparison
+2012,Colin Thompson,TE,136,4,92.28985507246377,187.0,4.0,5.8,"Warminster, PA",Archbishop Wood,PA,25101,industry_comparison
+2012,Angelo Jean-Louis,WR,139,4,92.27228260869565,116.0,4.0,5.8,"West Palm Beach, FL",Fork Union Military Academy,FL,135628,industry_comparison
+2012,Jordan Payton,WR,141,4,92.22644927536233,93.0,4.0,5.9,"Thousand Oaks, CA",Oaks Christian,CA,65871,industry_comparison
+2012,Bri'onte Dunn,RB,142,4,92.21014492753623,138.0,4.0,5.8,"Canton, OH",GlenOak,OH,14296,industry_comparison
+2012,Pig Howard,WR,143,4,92.20833333333333,,4.0,5.8,"Orlando, FL",Edgewater,FL,136282,industry_comparison
+2012,Kenyan Drake,RB,144,4,92.20471014492753,185.0,4.0,5.8,"Powder Springs, GA",Hillgrove,GA,73539,industry_comparison
+2012,Sean Price,TE,146,4,92.17572463768114,158.0,4.0,5.8,"Citra, FL",North Marion,FL,105599,industry_comparison
+2012,Drae Bowles,WR,147,4,92.125,130.0,4.0,5.8,"Jackson, TN",Jackson Christian,TN,38764,industry_comparison
+2012,Geno Lewis,WR,148,4,92.125,141.0,4.0,5.9,"Plymouth, PA",Wyoming Valley West ,PA,45550,industry_comparison
+2012,Justin Thomas,QB,150,4,92.07065217391305,233.0,4.0,5.8,"Prattville, AL",Prattville,AL,69877,industry_comparison
+2012,Corey Coleman,WR,151,4,92.06521739130434,232.0,4.0,5.8,"Richardson, TX",Pearce,TX,26095,industry_comparison
+2012,Gabe Marks,WR,154,4,91.96340579710146,87.0,4.0,5.9,"Los Angeles, CA",Venice,CA,44541,industry_comparison
+2012,Connor Brewer,QB,156,4,91.93478260869566,,4.0,5.8,"Paradise Valley, AZ",Chaparral,AZ,25490,industry_comparison
+2012,Drew Harris,RB,163,4,91.74818840579711,,4.0,5.8,"Exton, PA",Downingtown East,PA,39049,industry_comparison
+2012,Jody Fuller,WR,166,4,91.68659420289855,230.0,4.0,5.8,"Monroe, NC",Sun Valley,NC,61984,industry_comparison
+2012,Brian Kimbrow,RB,168,4,91.57608695652173,160.0,4.0,5.8,"Memphis, TN",Memphis East,TN,14571,industry_comparison
+2012,Matt Jones,RB,172,4,91.50543478260869,190.0,4.0,5.8,"Seffner, FL",Armwood,FL,135657,industry_comparison
+2012,Derrick Woods,WR,174,4,91.47644927536231,216.0,4.0,5.8,"Inglewood, CA",Inglewood,CA,35249,industry_comparison
+2012,Ford Childress,QB,185,4,91.25905797101449,,3.0,5.7,"Houston, TX",The Kinkaid School,TX,43886,industry_comparison
+2012,Jaydon Mickens,WR,186,4,91.22898550724638,142.0,4.0,5.8,"Los Angeles, CA",Dorsey,CA,58748,industry_comparison
+2012,Malcolm Lewis,WR,190,4,91.18297101449276,186.0,4.0,5.8,"Hollywood, FL",Miramar,FL,81582,industry_comparison
+2012,Taylor McNamara,TE,191,4,91.17101449275363,189.0,4.0,5.8,"San Diego, CA",Westview,CA,110836,industry_comparison
+2012,Daje Johnson,WR,192,4,91.14673913043478,210.0,4.0,5.8,"Pflugerville, TX",Hendrickson,TX,135774,industry_comparison
+2012,J.C. Coleman,RB,195,4,91.11666666666666,101.0,4.0,5.9,"Chesapeake, VA",Oscar Smith,VA,50300,industry_comparison
+2012,Jason Croom,TE,200,4,91.04782608695652,246.0,4.0,5.8,"Norcross, GA",Norcross,GA,57487,industry_comparison
+2012,Reginald Davis,WR,201,4,91.0373188405797,237.0,4.0,5.8,"Tenaha, TX",Tenaha,TX,99473,industry_comparison
+2012,Avery Peterson,WR,202,4,90.94384057971014,247.0,4.0,5.8,"Chatham, VA",Hargrave Military Academy,VA,8930,industry_comparison
+2012,Deon-Tay McManus,WR,205,4,90.87463768115941,169.0,4.0,5.8,"Baltimore, MD",Atlanta Sports Academy,MD,34434,industry_comparison
+2012,Wes Brown,RB,206,4,90.86557971014491,188.0,4.0,5.8,"Olney, MD",Good Counsel,MD,120351,industry_comparison
+2012,Jonathan Williams,RB,210,4,90.8177536231884,195.0,4.0,5.8,"Allen, TX",Allen,TX,65001,industry_comparison
+2012,Travis Wilson,QB,211,4,90.81666666666666,,3.0,5.7,"San Clemente, CA",San Clemente,CA,114778,industry_comparison
+2012,Latroy Pittman,WR,219,4,90.66304347826086,218.0,4.0,5.8,"Citra, FL",North Marion,FL,78489,industry_comparison
+2012,Christo Kourtzidis,TE,223,4,90.5177536231884,194.0,4.0,5.8,"Orange, CA",Orange Lutheran,CA,23282,industry_comparison
+2012,Amara Darboh,WR,225,4,90.51594202898549,215.0,4.0,5.8,"West Des Moines, IA",Dowling Catholic,IA,4171,industry_comparison
+2012,Quinshad Davis,WR,227,4,90.49166666666666,223.0,4.0,5.8,"Gaffney, SC",Gaffney,SC,97543,industry_comparison
+2012,Edward Pope,WR,229,4,90.47971014492755,213.0,4.0,5.8,"Carthage, TX",Carthage,TX,40706,industry_comparison
+2012,Pharaoh Brown,TE,230,4,90.47898550724638,154.0,4.0,5.8,"Cleveland, OH",Brush,OH,96362,industry_comparison
+2012,Kwinton Smith,WR,240,4,90.33333333333333,,3.0,5.7,"Dillon, SC",Dillon,SC,76298,industry_comparison
+2012,Bart Houston,QB,241,4,90.33333333333333,,3.0,5.7,"Concord, CA",De La Salle,CA,136063,industry_comparison
+2012,Warren Ball,RB,250,4,90.23514492753623,193.0,4.0,5.8,"Columbus, OH",St. Francis DeSales,OH,120160,industry_comparison
+2012,Kiante' Griffin,WR,258,4,90.16014492753622,,3.0,5.7,"Carrollton, TX",Hebron,TX,75115,industry_comparison
+2012,Trevor Knight,QB,261,4,90.10036231884058,179.0,4.0,5.8,"San Antonio, TX",Reagan,TX,115757,industry_comparison
+2012,Jake Rodrigues,QB,263,4,90.09239130434781,165.0,4.0,5.8,"Rocklin, CA",Whitney,CA,53794,industry_comparison
+2012,Justin Ferguson,WR,266,4,90.07898550724637,,3.0,5.7,"Hollywood, FL",Charles W Flanagan,FL,69306,industry_comparison
+2012,Chad Voytik,QB,267,4,90.06884057971016,109.0,4.0,5.9,"Cleveland, TN",Cleveland,TN,19688,industry_comparison
+2012,Zac Brooks,RB,268,4,90.05869565217392,202.0,4.0,5.8,"Jonesboro, AR",Jonesboro,AR,122454,industry_comparison
+2012,Evan Baylis,TE,273,4,90.03333333333333,,4.0,5.8,"Aurora, CO",Grandview,CO,43186,industry_comparison
+2012,Leonte Carroo,WR,279,4,89.98043478260871,166.0,4.0,5.8,"Ramsey, NJ",Don Bosco Prep,NJ,79142,industry_comparison
+2012,Dennis Norfleet,WR,281,4,89.8822463768116,236.0,4.0,5.8,"Detroit, MI",Martin Luther King Jr.,MI,34242,industry_comparison
+2012,I'Tavius Mathers,RB,283,4,89.86086956521739,,4.0,5.8,"Murfreesboro, TN",Blackman,TN,48713,industry_comparison
+2012,Canaan Severin,WR,284,4,89.85,,4.0,5.8,"Worcester, MA",Worcester Academy,MA,18272,industry_comparison
+2012,Dwayne Stanford,WR,288,4,89.76086956521739,164.0,4.0,5.8,"Cincinnati, OH",Taft,OH,39666,industry_comparison
+2012,Vonte Jackson,RB,289,4,89.7,,4.0,5.8,"Kenosha, WI",Bradford,WI,135679,industry_comparison
+2012,Brent Wilkerson,TE,292,4,89.7,,3.0,5.7,"Hyattsville, MD",DeMatha Catholic,MD,13999,industry_comparison
+2012,Monty Madaris,WR,296,4,89.66666666666667,,3.0,5.7,"Cincinnati, OH",Archbishop Moeller,OH,90338,industry_comparison
+2012,Devin Funchess,WR,297,4,89.66666666666667,,3.0,5.7,"Farmington, MI",Harrison,MI,36013,industry_comparison
+2012,Keon Hatcher,WR,298,4,89.66666666666667,,3.0,5.7,"Owasso, OK",Owasso,OK,73610,industry_comparison
+2012,Sheldon Dawson,WR,299,4,89.64130434782608,,3.0,5.7,"Memphis, TN",Ridgeway,TN,107098,industry_comparison
+2012,D'vario Montgomery,WR,302,4,89.5394927536232,139.0,4.0,5.8,"Winter Park, FL",Winter Park,FL,27462,industry_comparison
+2012,Tyler Matthews,QB,308,4,89.4427536231884,174.0,4.0,5.8,"Mcpherson, KS",McPherson,KS,117825,industry_comparison
+2012,Travin Dural,WR,309,4,89.4,,4.0,5.8,"Breaux Bridge, LA",Breaux Bridge,LA,114467,industry_comparison
+2012,Trey Edmunds,RB,312,4,89.3981884057971,217.0,4.0,5.8,"Ringgold, VA",Dan River ,VA,116000,industry_comparison
+2012,Jordan Westerkamp,WR,318,4,89.36666666666666,,4.0,5.8,"Lombard, IL",Montini Catholic,IL,66183,industry_comparison
+2012,Patrick Towles,QB,323,4,89.36666666666666,,4.0,5.8,"Fort Thomas, KY",Highlands,KY,95596,industry_comparison
+2012,Raymond Ford,WR,331,4,89.24710144927536,,3.0,5.7,"Gardena, CA",Junipero Serra,CA,98990,industry_comparison
+2012,Davante Bourque,RB,334,4,89.15434782608696,196.0,4.0,5.8,"Crowley, LA",Crowley,LA,31295,industry_comparison
+2012,Greyson Lambert,QB,336,4,89.06666666666666,,3.0,5.7,"Jesup, GA",Wayne County,GA,47098,industry_comparison
+2012,Herb Waters,WR,338,4,89.06666666666666,,3.0,5.7,"Homestead, FL",Homestead,FL,48068,industry_comparison
+2012,Marcus Johnson,WR,340,4,89.06666666666666,,3.0,5.7,"League City, TX",Clear Springs,TX,136139,industry_comparison
+2012,Wes Lunt,QB,341,4,89.06666666666666,,4.0,5.8,"Rochester, IL",Rochester,IL,120377,industry_comparison
+2012,James Summers,RB,343,4,89.05,,4.0,5.8,"Greensboro, NC",Hargrave Military Academy,NC,55942,industry_comparison
+2012,Alex De La Torre,TE,344,4,89.03333333333333,,3.0,5.7,"Denton, TX",Ryan,TX,2948,industry_comparison
+2012,Bennie Coney,QB,345,4,89.03333333333333,,3.0,5.7,"Plant City, FL",Plant City,FL,10221,industry_comparison
+2012,Nathan Peterman,QB,346,4,89.03333333333333,,4.0,5.8,"Jacksonville, FL",Bartram Trail,FL,91632,industry_comparison
+2012,Griffin Gilbert,WR,353,4,89.0,,4.0,5.8,"Austin, TX",Lake Travis,TX,47131,industry_comparison
+2012,Andre McDonald,WR,354,4,89.0,,3.0,5.7,"Hopkins, MN",Hopkins,MN,4615,industry_comparison
+2012,Demitrious Davis,RB,355,4,89.0,,3.0,5.7,"Youngstown, OH",Fitch,OH,34066,industry_comparison
+2012,D'Arthur Cowan,WR,356,4,89.0,,3.0,5.7,"Olive Branch, MS",Olive Branch,MS,27375,industry_comparison
+2012,Darrion Hutcherson,TE,358,4,88.81666666666666,,3.0,5.7,"Dadeville, AL",Dadeville,AL,136370,industry_comparison
+2012,Will Mahone,RB,362,4,88.73442028985507,197.0,4.0,5.8,"Youngstown, OH",Fitch,OH,120910,industry_comparison
+2012,C.J. Curry,WR,363,4,88.73333333333333,,4.0,5.8,"Gainesville, GA",Flowery Branch,GA,16392,industry_comparison
+2012,Alonzo Moore,WR,366,4,88.73333333333333,,4.0,5.8,"Winnfield, LA",Winnfield Senior,LA,3964,industry_comparison
+2012,Kenny Lawler,WR,377,4,88.68913043478261,222.0,4.0,5.8,"Upland, CA",Upland,CA,73323,industry_comparison
+2012,Maty Mauk,QB,381,4,88.66666666666667,,3.0,5.7,"Kenton, OH",Kenton,OH,86311,industry_comparison
+2012,Jeff Lindquist,QB,384,4,88.60507246376811,250.0,4.0,5.8,"Mercer Island, WA",Mercer Island,WA,59567,industry_comparison
+2012,Jalen Cobb,WR,385,4,88.6,,4.0,5.8,"Warren, AR",Warren,AR,54206,industry_comparison
+2012,Ricquan Southward,WR,386,4,88.55,,3.0,5.7,"Lakeland, FL",Lakeland,FL,100433,industry_comparison
+2012,Ty Flournoy-Smith,TE,388,4,88.55,,3.0,5.7,"Moultrie, GA",Colquitt County,GA,116983,industry_comparison
+2012,Cedric Dozier,ATH,393,4,88.51594202898552,152.0,4.0,5.8,"Lakewood, WA",Lakes,WA,19310,industry_comparison
+2012,Akeel Lynch,RB,394,4,88.5,,3.0,5.7,"Toronto, ON",St. Francis,ON,2292,industry_comparison
+2012,Travares Copeland,WR,397,4,88.43333333333334,,3.0,5.7,"Port Saint Lucie, FL",Treasure Coast,FL,114435,industry_comparison
+2012,Tyler O'Connor,QB,398,4,88.43333333333334,,3.0,5.7,"Lima, OH",Lima Central Catholic,OH,117911,industry_comparison
+2012,Quayvon Hicks,RB,402,3,88.4,,3.0,5.7,"Blackshear, GA",Pierce County,GA,97196,industry_comparison
+2012,Malik Gilmore,WR,404,3,88.4,,3.0,5.7,"Lakewood, CA",Lakewood,CA,81846,industry_comparison
+2012,Chris Brown,WR,405,3,88.4,,3.0,5.7,"Charleston, SC",Hanahan,SC,21400,industry_comparison
+2012,Laith Harlow,TE,406,3,88.4,,3.0,5.7,"Tallahassee, FL",Amos P. Godby,FL,77542,industry_comparison
+2012,Frank Epitropoulos,WR,407,3,88.4,,3.0,5.7,"Columbus, OH",Upper Arlington,OH,44030,industry_comparison
+2012,Blake Tibbs,WR,408,3,88.4,,3.0,5.7,"Lithonia, GA",Martin Luther King Jr.,GA,11054,industry_comparison
+2012,Javon Williams,WR,410,3,88.3800724637681,227.0,4.0,5.8,"Chandler, AZ",Chandler,AZ,58191,industry_comparison
+2012,Faton Bauta,QB,418,3,88.36666666666666,,3.0,5.7,"Palm Beach Gardens, FL",Dwyer,FL,43705,industry_comparison
+2012,Casey Cochran,QB,421,3,88.1427536231884,,3.0,5.7,"Monroe, CT",Masuk,CT,19037,industry_comparison
+2012,Ti'on Green,RB,427,3,88.1,,3.0,5.7,"Altamonte Springs, FL",Lake Brantley,FL,112568,industry_comparison
+2012,Jabril Solomon,WR,428,3,88.1,,3.0,5.7,"Hemingway, SC",Hemingway,SC,50851,industry_comparison
+2012,T.J. Millweard,QB,436,3,88.05978260869566,,3.0,5.6,"Fort Worth, TX",All Saints,TX,109519,industry_comparison
+2012,Clayton Nicholas,QB,438,3,88.03333333333333,,3.0,5.7,"Abilene, TX",Cooper,TX,23948,industry_comparison
+2012,Chris Brown,RB,439,3,88.03333333333333,,3.0,5.7,"Fresno, CA",San Joaquin Memorial,CA,21408,industry_comparison
+2012,Imani Cross,RB,440,3,88.03333333333333,,3.0,5.7,"Gainesville, GA",North Hall,GA,49013,industry_comparison
+2012,Richard Smith,WR,442,3,88.03333333333333,,3.0,5.7,"Long Beach, CA",Long Beach Poly,CA,100056,industry_comparison
+2012,Donovan Roberts,RB,443,3,88.03333333333333,,3.0,5.7,"Norman, OK",Norman,OK,38239,industry_comparison
+2012,Roger Lewis,WR,448,3,87.90271739130434,,,,"Pickerington, OH",Jireh Prep,OH,101845,industry_comparison
+2012,Ryan McDaniel,RB,451,3,87.83333333333333,,3.0,5.7,"Torrance, CA",North,CA,103435,industry_comparison
+2012,Kevin Davis,WR,452,3,87.76666666666667,,3.0,5.7,"Indianapolis, IN",Warren Central,IN,74018,industry_comparison
+2012,Kodi Whitfield,WR,453,3,87.76666666666667,,4.0,5.8,"Los Angeles, CA",Loyola,CA,75649,industry_comparison
+2012,Shane Dillon,QB,454,3,87.76666666666667,,3.0,5.7,"El Cajon, CA",Christian,CA,106415,industry_comparison
+2012,Morgan Steward,RB,455,3,87.76666666666667,,3.0,5.7,"Kansas City, MO",Staley,MO,90396,industry_comparison
+2012,Nicky Baratti,ATH,456,3,87.76666666666667,,3.0,5.7,"Spring, TX",Klein Oak,TX,93166,industry_comparison
+2012,Shaquille Powell,RB,457,3,87.75471014492753,241.0,4.0,5.8,"Las Vegas, NV",Bishop Gorman,NV,106675,industry_comparison
+2012,Corey Jones,WR,462,3,87.73333333333333,,3.0,5.7,"Pittsburgh, PA",Penn Hills,PA,136161,industry_comparison
+2012,Josiah Price,TE,464,3,87.73333333333333,,3.0,5.7,"Greentown, IN",Eastern Jr & Sr,IN,68210,industry_comparison
+2012,Dillon Gordon,TE,466,3,87.73333333333333,,3.0,5.7,"New Orleans, LA",John Curtis,LA,37006,industry_comparison
+2012,Kurt Freitag,TE,472,3,87.7,,3.0,5.7,"Buford, GA",Buford,GA,76187,industry_comparison
+2012,Cameron Wilson,WR,476,3,87.7,,3.0,5.7,"Dublin, OH",Dublin Jerome,OH,18191,industry_comparison
+2012,Caleb Bluiett,TE,484,3,87.53333333333333,,3.0,5.6,"Beaumont, TX",West Brook,TX,16894,industry_comparison
+2012,Justin Taylor,RB,487,3,87.5,,3.0,5.7,"Atlanta, GA",Washington,GA,69867,industry_comparison
+2012,Nate Sudfeld,QB,488,3,87.5,,3.0,5.6,"Modesto, CA",Modesto Christian,CA,91395,industry_comparison
+2012,Jaime Wilson,WR,491,3,87.43333333333334,,3.0,5.7,"Belle Glade, FL",Glades Central,FL,53168,industry_comparison
+2012,Jela Duncan,RB,494,3,87.43333333333334,,3.0,5.7,"Charlotte, NC",Mallard Creek,NC,59862,industry_comparison
+2012,Chris Harper,WR,496,3,87.43333333333334,,3.0,5.7,"Encino, CA",Crespi,CA,21842,industry_comparison
+2012,B.J. Catalon,RB,498,3,87.43333333333334,,3.0,5.7,"Houston, TX",Westside,TX,9105,industry_comparison
+2012,Kolby Listenbee,WR,504,3,87.4,,3.0,5.7,"Arlington, TX",Bowie,TX,75735,industry_comparison
+2012,Robert Lewis,WR,510,3,87.33333333333333,,3.0,5.7,"South Gate, CA",South East,CA,101149,industry_comparison
+2012,LaDarius Anthony,RB,512,3,87.23333333333333,,3.0,5.6,"Kilgore, TX",Kilgore,TX,77438,industry_comparison
+2012,Jehu Chesson,WR,516,3,87.2,,3.0,5.6,"Saint Louis, MO",Ladue Horton Watkins,MO,59847,industry_comparison
+2012,Tyvis Powell,ATH,517,3,87.2,,3.0,5.7,"Bedford, OH",Bedford,OH,119109,industry_comparison
+2012,Jamel Harbison,WR,518,3,87.16666666666667,,3.0,5.6,"Charlotte, NC",Mallard Creek,NC,55266,industry_comparison
+2012,Tommy Armstrong,QB,521,3,87.1,,3.0,5.7,"Schertz, TX",Steele,TX,113537,industry_comparison
+2012,AJ Williams,TE,524,3,87.1,,3.0,5.7,"Cincinnati, OH",Sycamore,OH,2253,industry_comparison
+2012,Blake Thomas,TE,525,3,87.1,,3.0,5.7,"Cleveland, OH",St. Ignatius,OH,11049,industry_comparison
+2012,Colby Cyburt,TE,527,3,87.1,,3.0,5.7,"Mission Viejo, CA",Mission Viejo,CA,24518,industry_comparison
+2012,Tyler Cameron,QB,528,3,87.06666666666666,,3.0,5.7,"Jupiter, FL",Jupiter,FL,117423,industry_comparison
+2012,Josh Weeks,TE,529,3,87.06666666666666,,3.0,5.7,"Show Low, AZ",Show Low,AZ,67735,industry_comparison
+2012,Tion Green,RB,530,3,87.06666666666666,,3.0,5.7,"Altamonte Springs, FL",Lake Brantley,FL,112998,industry_comparison
+2012,Dami Ayoola,RB,533,3,87.06666666666666,,3.0,5.7,"Fort Lauderdale, FL",St. Thomas Aquinas,FL,28498,industry_comparison
+2012,Will Gross,QB,537,3,87.03333333333333,,3.0,5.7,"Memphis, TN",Melrose,TN,120831,industry_comparison
+2012,Jalen Overstreet,RB,539,3,86.9,,3.0,5.6,"Tatum, TX",Tatum,TX,54443,industry_comparison
+2012,Jaylen Walton,RB,548,3,86.83333333333333,,3.0,5.7,"Memphis, TN",Ridgeway,TN,58994,industry_comparison
+2012,Will Johnson,TE,549,3,86.83333333333333,,3.0,5.7,"Osseo, MN",Osseo,MN,136392,industry_comparison
+2012,Chris Mangus,RB,551,3,86.8,,3.0,5.7,"Raleigh, NC",Broughton,NC,22055,industry_comparison
+2012,Kenneth Walker III,WR,553,3,86.8,,3.0,5.7,"Richmond, CA",Richmond,CA,73196,industry_comparison
+2012,MacGarrett Kings,WR,555,3,86.76666666666667,,3.0,5.7,"Fort Lauderdale, FL",NSU University School,FL,81160,industry_comparison
+2012,Devonte Robinson,WR,561,3,86.73333333333333,,3.0,5.7,"Delray Beach, FL",Village Academy,FL,36613,industry_comparison
+2012,LaMontiez Ivy,QB,567,3,86.61075268817204,,3.0,5.6,"East St. Louis, IL",East St. Louis,IL,136286,industry_comparison
+2012,Damein Lawry,ATH,568,3,86.6,,3.0,5.6,"Dallas, TX",A Maceo Smith,TX,28469,industry_comparison
+2012,Davien Payne,RB,569,3,86.6,,3.0,5.6,"Perris, CA",Citrus Hill,CA,32250,industry_comparison
+2012,Nathan Holmes,RB,570,3,86.56666666666666,,3.0,5.6,"Port Arthur, TX",Memorial,TX,91563,industry_comparison
+2012,Brendan Nosovitch,TE,571,3,86.56666666666666,,3.0,5.6,"Allentown, PA",Central Catholic,PA,13749,industry_comparison
+2012,Brandon Sheperd,WR,574,3,86.56666666666666,,3.0,5.6,"Chesterfield, MO",Parkway Central,MO,13086,industry_comparison
+2012,Malin Jones,RB,577,3,86.53333333333333,,3.0,5.7,"Joliet, IL",Joliet Catholic Academy,IL,136075,industry_comparison
+2012,Patton Robinette,QB,578,3,86.53333333333333,,3.0,5.6,"Maryville, TN",Maryville,TN,95633,industry_comparison
+2012,Chaz Anderson,WR,580,3,86.53333333333333,,3.0,5.7,"Los Angeles, CA",Loyola,CA,20984,industry_comparison
+2012,Deante Gray,WR,581,3,86.53333333333333,,3.0,5.6,"Houston, TX",Westside,TX,33130,industry_comparison
+2012,Deionte Buckley,RB,585,3,86.5,,3.0,5.7,"Indianapolis, IN",Warren Central,IN,33389,industry_comparison
+2012,Jahleel Pinner,RB,586,3,86.5,,3.0,5.7,"Mission Viejo, CA",Mission Viejo,CA,52967,industry_comparison
+2012,David Smith,RB,587,3,86.5,,3.0,5.7,"Midlothian, IL",Bremen,IL,32106,industry_comparison
+2012,Tevin Coleman,RB,588,3,86.5,,3.0,5.7,"Oak Forest, IL",Oak Forest,IL,111969,industry_comparison
+2012,Quan West,WR,598,3,86.43333333333334,,3.0,5.7,"Willis, TX",Willis,TX,97097,industry_comparison
+2012,Devonte Mathis,WR,601,3,86.4,,3.0,5.7,"Hollywood, FL",Miramar,FL,36598,industry_comparison
+2012,Kendyl Taylor,ATH,602,3,86.4,,3.0,5.7,"Chandler, AZ",Hamilton,AZ,72981,industry_comparison
+2012,Justin Meredith,TE,606,3,86.33333333333333,,3.0,5.7,"Anderson, SC",TL Hanna,SC,69584,industry_comparison
+2012,Casey Gladney,WR,607,3,86.33333333333333,,3.0,5.5,"Columbia, SC",Columbia,SC,19056,industry_comparison
+2012,Trey Griffey,WR,609,3,86.3,,3.0,5.6,"Orlando, FL",Dr. Phillips,FL,116043,industry_comparison
+2012,Russell Hansbrough,RB,610,3,86.26666666666667,,3.0,5.6,"Arlington, TX",Bowie,TX,102799,industry_comparison
+2012,P.J. Harris,WR,611,3,86.26666666666667,,3.0,5.6,"Groveland, FL",South Lake,FL,94871,industry_comparison
+2012,Alec Morris,QB,619,3,86.23333333333333,,3.0,5.6,"Allen, TX",Allen,TX,2671,industry_comparison
+2012,D'Mauri Jones,WR,628,3,86.2,,3.0,5.6,"Leesburg, FL",Leesburg,FL,136497,industry_comparison
+2012,Preston Dewey,QB,634,3,86.16666666666667,,3.0,5.6,"Austin, TX",St Andrew's Episcopal School,TX,96826,industry_comparison
+2012,Trent Sewell,WR,636,3,86.13333333333334,,3.0,5.7,"Bothell, WA",Bothell,WA,115335,industry_comparison
+2012,Thomas Sirk,QB,641,3,86.1,,3.0,5.7,"Glen Saint Mary, FL",Baker County Senior,FL,112462,industry_comparison
+2012,Caleb Smith,TE,642,3,86.06666666666666,,4.0,5.8,"Kent, WA",Kentridge,WA,17188,industry_comparison
+2012,De'Andre Jasper,WR,645,3,85.93333333333334,,3.0,5.6,"Miami, FL",Miami Jackson,FL,135642,industry_comparison
+2012,Brent Vanderveen,QB,647,3,85.93333333333334,,3.0,5.7,"Arroyo Grande, CA",Arroyo Grande,CA,13996,industry_comparison
+2012,Dakota Jackson,TE,649,3,85.9,,3.0,5.6,"Roanoke, VA",Northside,VA,135735,industry_comparison
+2012,Alonzo Williams,TE,653,3,85.9,,3.0,5.6,"Long Beach, CA",Long Beach Poly,CA,3977,industry_comparison
+2012,Kenno Loyal,RB,660,3,85.86666666666666,,3.0,5.6,"Decatur, GA",Columbia,GA,73213,industry_comparison
+2012,Brandon Snell,WR,662,3,85.85,,3.0,5.6,"Miami, FL",Norland,FL,13126,industry_comparison
+2012,Nick Tompkins,RB,664,3,85.83333333333333,,3.0,5.7,"Snellville, GA",Brookwood,GA,93050,industry_comparison
+2012,Torry Clayton,RB,667,3,85.8,,3.0,5.7,"Homestead, FL",South Dade,FL,114188,industry_comparison
+2012,James Brooks,WR,670,3,85.75,,3.0,5.6,"Groveland, FL",South Lake,FL,55382,industry_comparison
+2012,Evan Jones,TE,671,3,85.75,,3.0,5.6,"West Lafayette, OH",Ridgewood,OH,136393,industry_comparison
+2012,Terrence Taylor,RB,673,3,85.75,,3.0,5.6,"Diboll, TX",Diboll,TX,111732,industry_comparison
+2012,C.J. Prosise,RB,674,3,85.7,,3.0,5.5,"Woodberry Forest, VA",Woodberry Forest,VA,16482,industry_comparison
+2012,Bilal Marshall,WR,677,3,85.6,,3.0,5.6,"Hialeah, FL",Dade Christian School,FL,10368,industry_comparison
+2012,Nate Cole,WR,678,3,85.6,,,,"Memphis, TN",Mitchell,TN,91161,industry_comparison
+2012,Mekale McKay,WR,680,3,85.58152173913044,,3.0,5.5,"Louisville, KY",Moore Traditional School,KY,86936,industry_comparison
+2012,J.P. Holtz,TE,682,3,85.56666666666666,,3.0,5.6,"Pittsburgh, PA",Shaler Area,PA,50460,industry_comparison
+2012,Jevon Tyree,ATH,684,3,85.56666666666666,,3.0,5.6,"Monmouth Junction, NJ",South Brunswick,NJ,61471,industry_comparison
+2012,Jontavious Carter,WR,693,3,85.53333333333333,,3.0,5.6,"Cordele, GA",Crisp County,GA,65092,industry_comparison
+2012,C.J. Beathard,QB,694,3,85.53333333333333,,3.0,5.6,"Franklin, TN",Battle Ground Academy,TN,16365,industry_comparison
+2012,Sean Culkin,TE,697,3,85.53333333333333,,3.0,5.7,"Largo, FL",Indian Rocks Christian School,FL,105382,industry_comparison
+2012,Matt Morin,TE,700,3,85.53333333333333,,3.0,5.6,"Temecula, CA",Chaparral,CA,85581,industry_comparison
+2012,LaMarlin Wiggins,WR,701,3,85.5,,3.0,5.7,"Plant City, FL",Plant City,FL,77692,industry_comparison
+2012,Carlton Agudosi,WR,702,3,85.46666666666667,,3.0,5.7,"Somerset, NJ",Franklin Twp,NJ,18592,industry_comparison
+2012,DeShawn Dowdy,TE,704,3,85.46666666666667,,3.0,5.7,"Akron, OH",Akron North,OH,35391,industry_comparison
+2012,Jamie Gilmore,RB,706,3,85.4,,3.0,5.7,"Citra, FL",North Marion,FL,56140,industry_comparison
+2012,Marcus Allen,RB,707,3,85.4,,3.0,5.7,"Hilliard, FL",Hilliard,FL,82468,industry_comparison
+2012,Dalen Jones,WR,714,3,85.35054347826086,,3.0,5.6,"Woodland, CA",Woodland,CA,136408,industry_comparison
+2012,Ian Taubler,TE,715,3,85.33333333333333,,3.0,5.6,"Fresno, CA",Bullard,CA,48854,industry_comparison
+2012,Mario Nixon,WR,716,3,85.33333333333333,,3.0,5.6,"Norfolk, VA",Norfolk Christian,VA,83231,industry_comparison
+2012,Shadrach Thornton,RB,723,3,85.26666666666667,,3.0,5.6,"Hinesville, GA",Liberty County,GA,106180,industry_comparison
+2012,TJ Daniel,ATH,724,3,85.26666666666667,,3.0,5.6,"Oakland, CA",Bishop O'Dowd,CA,113085,industry_comparison
+2012,Justin Chandler,TE,725,3,85.25,,,,"Humble, TX",Kingwood Park,TX,69183,industry_comparison
+2012,Todd Mays,QB,726,3,85.23369565217392,,3.0,5.5,"Olive Branch, MS",Olive Branch,MS,113318,industry_comparison
+2012,Jesse James,TE,731,3,85.23333333333333,,3.0,5.6,"McKeesport, PA",South Allegheny,PA,136259,industry_comparison
+2012,Clay Norgard,RB,732,3,85.23333333333333,,3.0,5.6,"Littleton, CO",Mountain Vista,CO,23867,industry_comparison
+2012,Albert Reid,RB,734,3,85.2,,3.0,5.6,"Washington, DC",Friendship Academy,DC,2564,industry_comparison
+2012,Dontonio Jordan,WR,743,3,85.03333333333333,,3.0,5.6,"Lake Dallas, TX",Lake Dallas,TX,135658,industry_comparison
+2012,Paul Perkins,RB,745,3,85.03333333333333,,3.0,5.6,"Chandler, AZ",Chandler,AZ,95795,industry_comparison
+2012,Roshard Burney,RB,747,3,85.0,,3.0,5.6,"Palm Beach Gardens, FL",Palm Beach Gardens,FL,102456,industry_comparison
+2012,Jonathan Wallace,WR,749,3,84.96666666666667,,3.0,5.6,"Phenix City, AL",Central,AL,64979,industry_comparison
+2012,Grant Rohach,QB,750,3,84.96666666666667,,3.0,5.6,"Moorpark, CA",Moorpark,CA,46574,industry_comparison
+2012,Brandon Holloway,RB,756,3,84.93333333333334,,3.0,5.6,"Tampa, FL",Alonso,FL,12643,industry_comparison
+2012,Kendric Salley,RB,759,3,84.9,,3.0,5.6,"Williston, SC",Williston Elko,SC,72889,industry_comparison
+2012,Josiah Blandin,WR,761,3,84.9,,3.0,5.6,"Long Beach, CA",Long Beach Poly,CA,68178,industry_comparison
+2012,Dan Beilinson,TE,763,3,84.9,,3.0,5.6,"Cary, NC",Panther Creek,NC,28790,industry_comparison
+2012,Terrance Knox,TE,764,3,84.9,,3.0,5.6,"Concord, NC",Concord,NC,111377,industry_comparison
+2012,Philip Nelson,QB,769,3,84.86666666666666,,3.0,5.7,"Mankato, MN",Mankato West,MN,96452,industry_comparison
+2012,Chris Solomon,RB,773,3,84.85,,,,"West Covina, CA",West Covina,CA,22500,industry_comparison
+2012,Steven Lakalaka,RB,774,3,84.83333333333333,,3.0,5.7,"Honolulu, HI",Punahou,HI,108996,industry_comparison
+2012,Ryan Morris,TE,776,3,84.8,,3.0,5.5,"Barnegat, NJ",Barnegat,NJ,103487,industry_comparison
+2012,Jeremy Sprinkle,TE,778,3,84.76666666666667,,3.0,5.5,"White Hall, AR",White Hall,AR,60595,industry_comparison
+2012,Tre'Von Armstead,TE,779,3,84.76666666666667,,3.0,5.5,"Port Arthur, TX",Memorial,TX,115135,industry_comparison
+2012,Josh Kern,TE,783,3,84.73333333333333,,3.0,5.5,"San Antonio, TX",Clark,TX,67233,industry_comparison
+2012,Gray Crow,QB,788,3,84.66666666666667,,3.0,5.6,"Clearwater, FL",Countryside,FL,46637,industry_comparison
+2012,Trenton Norvell,QB,791,3,84.66666666666667,,3.0,5.6,"Daytona Beach, FL",Seabreeze,FL,115416,industry_comparison
+2012,Anthony Wales,RB,792,3,84.66666666666667,,3.0,5.6,"Louisville, KY",Central,KY,6659,industry_comparison
+2012,Jeff Thomas,WR,801,3,84.6,,3.0,5.6,"Duncanville, TX",Duncanville,TX,59675,industry_comparison
+2012,Zac Veatch,TE,805,3,84.6,,3.0,5.6,"Broken Arrow, OK",Broken Arrow,OK,122519,industry_comparison
+2012,Ronald Thompson,TE,806,3,84.58181818181819,,2.0,5.4,"Southfield, MI",Southfield,MI,102223,industry_comparison
+2012,Vegas Harley,ATH,807,3,84.56666666666666,,3.0,5.6,"Mount Dora, FL",Mt. Dora,FL,119380,industry_comparison
+2012,Shelton Cole,WR,812,3,84.56358695652175,,,,"Meridian, MS",Meridian,MS,107135,industry_comparison
+2012,Justin Johnson,WR,816,3,84.51902173913044,,3.0,5.6,"Bellflower, CA",St. John Bosco,CA,136409,industry_comparison
+2012,Quincy Jones,WR,817,3,84.5,,3.0,5.7,"Lakewood, OH",St. Edward,OH,136428,industry_comparison
+2012,D.J. Abnar,ATH,819,3,84.5,,3.0,5.6,"Tallahassee, FL",Lincoln,FL,27495,industry_comparison
+2012,Kendrick Singleton,TE,820,3,84.43333333333334,,3.0,5.6,"Glen Saint Mary, FL",Baker County Senior,FL,72964,industry_comparison
+2012,Adarrius Perkins,WR,821,3,84.4,,3.0,5.6,"Brooklyn, MS",Forrest County Agricultural,MS,1449,industry_comparison
+2012,Daniel Taylor,RB,824,3,84.36666666666666,,3.0,5.6,"Lutcher, LA",Lutcher,LA,29479,industry_comparison
+2012,Skyler Mornhinweg,QB,827,3,84.33333333333333,,3.0,5.5,"Philadelphia, PA",St. Joseph's Prep School,PA,107723,industry_comparison
+2012,Chance Allen,WR,828,3,84.33333333333333,,3.0,5.6,"Missouri City, TX",Elkins,TX,19740,industry_comparison
+2012,Neal Burcham,QB,830,3,84.33333333333333,,3.0,5.5,"Greenbrier, AR",Greenbrier,AR,91851,industry_comparison
+2012,Brooks Haack,QB,835,3,84.3,,3.0,5.6,"Katy, TX",Katy,TX,15271,industry_comparison
+2012,Nate Iese,TE,837,3,84.3,,3.0,5.6,"Sacramento, CA",Sheldon,CA,136669,industry_comparison
+2012,Quenshaun Watson,RB,842,3,84.26666666666667,,3.0,5.6,"Athens, GA",Clarke Central,GA,97214,industry_comparison
+2012,Brandon Hamilton,RB,844,3,84.25,,3.0,5.6,"Copperas Cove, TX",Copperas Cove,TX,12566,industry_comparison
+2012,Will Gardner,QB,846,3,84.2,,3.0,5.6,"Douglas, GA",Coffee,GA,120812,industry_comparison
+2012,Gehrig Dieter,WR,850,3,84.13333333333334,,3.0,5.6,"South Bend, IN",Washington,IN,45506,industry_comparison
+2012,Caleb Rowe,QB,851,3,84.13333333333334,,3.0,5.6,"Greer, SC",Blue Ridge,SC,17163,industry_comparison
+2012,Brenden Motley,QB,853,3,84.13333333333334,,3.0,5.5,"Christiansburg, VA",Christiansburg,VA,13798,industry_comparison
+2012,Jalen Whitlow,QB,854,3,84.13333333333334,,3.0,5.5,"Montgomery, AL",Prattville,AL,54592,industry_comparison
+2012,Austin Aune,QB,856,3,84.1,,3.0,5.5,"Argyle, TX",Argyle,TX,8157,industry_comparison
+2012,Desmon Peoples,RB,858,3,84.1,,3.0,5.5,"Warminster, PA",Archbishop Wood,PA,35519,industry_comparison
+2012,D.J. Thompson,WR,861,3,84.1,,3.0,5.5,"Pearl, MS",Pearl,MS,27682,industry_comparison
+2012,Vincent Hobbs,TE,863,3,84.06666666666666,,3.0,5.6,"Mesquite, TX",Horn,TX,119752,industry_comparison
+2012,Jay Jay McCullough,TE,866,3,84.06666666666666,,3.0,5.5,"Fort Mill, SC",Nation Ford,SC,58554,industry_comparison
+2012,P.J. Gallo,TE,867,3,84.06666666666666,,3.0,5.5,"Southampton, PA",Council Rock South,PA,94863,industry_comparison
+2012,Shane Williams-Rhodes,ATH,870,3,84.06666666666666,,3.0,5.6,"Spring, TX",Klein Collins,TX,106551,industry_comparison
+2012,Delshawn McClellon,WR,871,3,84.06666666666666,,3.0,5.5,"Cerritos, CA",Richard Gahr,CA,33594,industry_comparison
+2012,Jeff Lockie,QB,872,3,84.03333333333333,,3.0,5.6,"Cupertino, CA",Monte Vista,CA,59572,industry_comparison
+2012,Ian Fisher,QB,874,3,84.02717391304348,,,,"Brunswick, MD",Brunswick,MD,48769,industry_comparison
+2012,George Morris,RB,875,3,84.0,,3.0,5.6,"Lawrenceville, GA",Central Gwinnett,GA,45733,industry_comparison
+2012,A.J. Legree,WR,879,3,84.0,,3.0,5.6,"Fort White, FL",Fort White,FL,146,industry_comparison
+2012,Mike Summers,WR,888,3,83.96666666666667,,3.0,5.6,"Statesboro, GA",Statesboro,GA,89400,industry_comparison
+2012,Michael Giacone,TE,889,3,83.93333333333334,,3.0,5.6,"Jersey City, NJ",St. Peter's Prep,NJ,87751,industry_comparison
+2012,Nick Patti,QB,890,3,83.93333333333334,,3.0,5.7,"Orlando, FL",Dr. Phillips,FL,92848,industry_comparison
+2012,Tay Bender,QB,893,3,83.93333333333334,,3.0,5.6,"Lincoln, NE",Southwest,NE,110650,industry_comparison
+2012,Danny Dillard,RB,895,3,83.9,,3.0,5.7,"Venice, FL",Venice,FL,29590,industry_comparison
+2012,Brandon Radcliff,RB,896,3,83.9,,3.0,5.6,"Miami, FL",Columbus,FL,12974,industry_comparison
+2012,Dennis Andrews,RB,897,3,83.9,,3.0,5.6,"Tallahassee, FL",Amos P. Godby,FL,34196,industry_comparison
+2012,Jonathan Curry,TE,898,3,83.9,,3.0,5.6,"Phenix City, AL",Central,AL,64605,industry_comparison
+2012,Romond Deloatch,TE,899,3,83.86666666666666,,3.0,5.5,"Hampton, VA",Phoebus,VA,102052,industry_comparison
+2012,Brandon Watkins,ATH,901,3,83.83695652173913,,,,"Southfield, MI",Southfield,MI,13273,industry_comparison
+2012,Kameron Davis,TE,903,3,83.83333333333333,,3.0,5.7,"Fort Lauderdale, FL",Northeast,FL,71006,industry_comparison
+2012,Gerald Thomas,WR,904,3,83.83333333333333,,3.0,5.5,"The Colony, TX",The Colony,TX,45894,industry_comparison
+2012,Austin Appleby,QB,906,3,83.83333333333333,,3.0,5.5,"Canton, OH",Hoover,OH,8148,industry_comparison
+2012,Kenneth Dixon,RB,908,3,83.8,,3.0,5.5,"Strong, AR",Strong,AR,73085,industry_comparison
+2012,Gerren Ballard,TE,911,3,83.8,,3.0,5.5,"Whitewright, TX",Whitewright,TX,45996,industry_comparison
+2012,Kyle Kerrick,WR,915,3,83.76666666666667,,3.0,5.5,"Coatesville, PA",Coatesville,PA,76686,industry_comparison
+2012,Jarvis Leverett,RB,920,3,83.76666666666667,,3.0,5.5,"Katy, TX",Cy Lakes,TX,57270,industry_comparison
+2012,Drake Johnson,RB,921,3,83.76666666666667,,3.0,5.6,"Ann Arbor, MI",Pioneer,MI,136704,industry_comparison
+2012,Conner Crane,WR,925,3,83.73333333333333,,3.0,5.6,"Denton, TX",Guyer,TX,25406,industry_comparison
+2012,Vernon Vaughn,WR,927,3,83.73333333333333,,3.0,5.5,"Kansas City, KS",Sumner Academy Of Arts & Science,KS,119447,industry_comparison
+2012,Seth Russell,QB,928,3,83.73333333333333,,3.0,5.5,"Garland, TX",Garland,TX,106085,industry_comparison
+2012,Artimas Samuel,TE,933,3,83.73333333333333,,3.0,5.7,"Columbus, GA",Hargrave Military Academy,GA,7741,industry_comparison
+2012,Zach Gordon,TE,935,3,83.7,,3.0,5.6,"Carrollton, GA",Carrollton,GA,122742,industry_comparison
+2012,Alden Hill,RB,937,3,83.7,,3.0,5.6,"Alliance, OH",Marlington,OH,2587,industry_comparison
+2012,Dyshawn Mobley,RB,938,3,83.7,,3.0,5.6,"Powell, TN",Powell,TN,40163,industry_comparison
+2012,Terrance Brown,WR,939,3,83.7,,3.0,5.6,"Los Alamitos, CA",Los Alamitos,CA,111306,industry_comparison
+2012,Tevaun Smith,WR,940,3,83.6989247311828,26.0,3.0,5.5,"Kent, CT",Kent School,CT,111949,industry_comparison
+2012,Christian Powell,RB,942,3,83.66666666666667,,3.0,5.6,"Upland, CA",Upland,CA,23113,industry_comparison
+2012,Quinton White,RB,943,3,83.66666666666667,,3.0,5.6,"College Station, TX",A&M Consolidated,TX,97732,industry_comparison
+2012,Vernon Davis,WR,947,3,83.63333333333334,,3.0,5.6,"Miami, FL",Coral Reef,FL,119422,industry_comparison
+2012,Troy Green,ATH,952,3,83.6,,,,"Brenham, TX",Brenham,TX,116642,industry_comparison
+2012,Dustin Stanton,TE,956,3,83.6,,3.0,5.6,"Langley, WA",Lakewood,WA,39521,industry_comparison
+2012,Keithon Redding,WR,962,3,83.54848484848485,,2.0,5.4,"Decatur, GA",Columbia,GA,72258,industry_comparison
+2012,Lynx Hawthorne,WR,969,3,83.46666666666667,,3.0,5.5,"Refugio, TX",Weimar,TX,81061,industry_comparison
+2012,Jordan Shelley-Smith,TE,974,3,83.43333333333334,,3.0,5.5,"Waco, TX",Reicher Catholic,TX,66029,industry_comparison
+2012,Sabian Holmes,WR,975,3,83.43333333333334,,3.0,5.5,"Southlake, TX",Southlake Carroll,TX,104043,industry_comparison
+2012,Devon Breaux,WR,977,3,83.43030303030302,,2.0,5.3,"Donaldsonville, LA",Donaldsonville,LA,36341,industry_comparison
+2012,Devon Johnson,RB,978,3,83.4,,,,"Richlands, VA",Richlands,VA,135816,industry_comparison
+2012,DeMarcus Sweat,WR,981,3,83.4,,3.0,5.5,"Stone Mountain, GA",Stephenson,GA,33750,industry_comparison
+2012,Gunnar Holcombe,QB,984,3,83.36666666666666,,3.0,5.6,"Fort Lauderdale, FL",NSU University School,FL,47210,industry_comparison
+2012,Raph Andrades,WR,989,3,83.33333333333333,,3.0,5.6,"Tallahassee, FL",Lincoln,FL,98405,industry_comparison
+2012,James Harrington,WR,997,3,83.27898550724638,,3.0,5.5,"Cedar Falls, IA",Cedar Falls,IA,55609,industry_comparison
+2012,Shock Linwood,RB,999,3,83.26666666666667,,3.0,5.5,"Linden, TX",Linden-Kildare,TX,107280,industry_comparison
+2012,Tairen Owens,RB,1001,3,83.25,,3.0,5.6,"Pasadena, CA",John Muir,CA,109828,industry_comparison
+2012,Kerwin Harrison,TE,1003,3,83.23333333333333,,3.0,5.6,"Lakeland, FL",Kathleen,FL,73758,industry_comparison
+2012,Tajae Sharpe,WR,1005,3,83.223814229249,,2.0,5.4,"Piscataway, NJ",Piscataway,NJ,109879,industry_comparison
+2012,Rodrick Williams Jr.,RB,1006,3,83.2,,3.0,5.5,"Lewisville, TX",Lewisville,TX,101802,industry_comparison
+2012,Nigel Jones,RB,1007,3,83.18254281949933,,2.0,5.4,"Absecon, NJ",Holy Spirit,NJ,136323,industry_comparison
+2012,Chad Chalich,QB,1008,3,83.18225806451613,,,,"Coeur D Alene, ID",Coeur D'Alene,ID,19535,industry_comparison
+2012,Matt Johns,QB,1011,3,83.16666666666667,,3.0,5.5,"Warrington, PA",Central Bucks South,PA,136487,industry_comparison
+2012,Jeremy Graves,WR,1014,3,83.15,,,,"Cleveland, OH",Garfield Heights,OH,60405,industry_comparison
+2012,Anthony Autry,WR,1018,3,83.15,,3.0,5.5,"Norcross, GA",Norcross,GA,5861,industry_comparison
+2012,Jerome Wright,RB,1019,3,83.15,,3.0,5.5,"Highland Springs, VA",Fork Union Military Academy,VA,60950,industry_comparison
+2012,Cameron Countryman,WR,1021,3,83.14993412384717,,2.0,5.4,"Beverly Hills, CA",Beverly Hills,CA,17736,industry_comparison
+2012,Amba Etta-Tawo,WR,1022,3,83.13333333333334,,3.0,5.5,"Powder Springs, GA",McEachern,GA,4246,industry_comparison
+2012,Perry Hills,QB,1024,3,83.13333333333334,,3.0,5.5,"Pittsburgh, PA",Central Catholic,PA,96058,industry_comparison
+2012,Devan Demas,RB,1025,3,83.13333333333334,,3.0,5.5,"Houston, TX",Cy Creek,TX,35760,industry_comparison
+2012,Quataye Smyre,WR,1027,3,83.1,,3.0,5.5,"Statesville, NC",South Iredell,NC,97162,industry_comparison
+2012,Michael Gordon,RB,1028,3,83.1,,3.0,5.5,"Camden, MS",Velma Jackson,MS,87770,industry_comparison
+2012,Mark Irick,WR,1033,3,83.06666666666666,,3.0,5.5,"Saint Matthews, SC",Calhoun County,SC,135765,industry_comparison
+2012,Dane Evans,QB,1038,3,83.06666666666666,,3.0,5.5,"Sanger, TX",Sanger,TX,29006,industry_comparison
+2012,Bobby Wolford,RB,1039,3,83.06666666666666,,3.0,5.5,"Jacksonville, FL",Bishop Kenny,FL,11400,industry_comparison
+2012,Austin Ray,TE,1041,3,83.06666666666666,,3.0,5.5,"Columbia, MO",Rock Bridge,MO,8645,industry_comparison
+2012,Aloyis Gray,WR,1042,3,83.03333333333333,,3.0,5.6,"Indianapolis, IN",Pike,IN,3982,industry_comparison
+2012,Devin Church,RB,1044,3,83.03333333333333,,3.0,5.6,"Bloomfield Hills, MI",Brother Rice,MI,35951,industry_comparison
+2012,Dennis Smith,ATH,1048,3,83.0,,3.0,5.5,"Wimberley, TX",Wimberley,TX,34262,industry_comparison
+2012,Eric Hawkins,WR,1049,3,83.0,,3.0,5.5,"Longview, TX",Longview,TX,42154,industry_comparison
+2012,Brandon Brooks,WR,1050,3,83.0,,3.0,5.6,"Jacksonville, FL",First Coast,FL,12247,industry_comparison
+2012,Kenny Goins,RB,1053,3,82.97109683794469,,2.0,5.4,"Baltimore, MD",Gilman,MD,73292,industry_comparison
+2012,Malcolm Culmer,WR,1059,3,82.91515151515152,,2.0,5.4,"Willingboro, NJ",Willingboro,NJ,81532,industry_comparison
+2012,Charlie Hegedus,WR,1062,3,82.9,,3.0,5.5,"Marietta, GA",Lassiter,GA,20440,industry_comparison
+2012,Michael Malloy,RB,1066,3,82.87572463768115,,3.0,5.5,"Sioux City, IA",Bishop Heelan Catholic,IA,87971,industry_comparison
+2012,Orlando David,TE,1067,3,82.86666666666666,,3.0,5.6,"Hollywood, FL",Chaminade-Madonna Prep,FL,94574,industry_comparison
+2012,Fred Brown,WR,1076,3,82.83333333333333,,3.0,5.5,"Jackson, MS",Jim Hill,MS,44189,industry_comparison
+2012,Juwan Lewis,RB,1080,3,82.8,,,,"Muskegon, MI",Muskegon,MI,70114,industry_comparison
+2012,Marcus McGill,WR,1081,3,82.8,,,,"Rochester, NY",Gates-chili,NY,82856,industry_comparison
+2012,Walker Van Hooser,QB,1082,3,82.8,,3.0,5.5,"Montgomery, AL",Trinity Presbyterian School,AL,120029,industry_comparison
+2012,Tyler Stewart,QB,1085,3,82.8,,3.0,5.5,"Chatsworth, CA",Sierra Canyon,CA,118131,industry_comparison
+2012,Austin Aikens,WR,1103,3,82.7,,3.0,5.6,"Tampa, FL",Plant,FL,8125,industry_comparison
+2012,King Frazier,RB,1105,3,82.7,,3.0,5.5,"Lee's Summit, MO",Lee's Summit,MO,75241,industry_comparison
+2012,Ramsey Hamilton,QB,1106,3,82.7,,3.0,5.5,"Beggs, OK",Beggs,OK,98208,industry_comparison
+2012,Darrack Harger,QB,1107,3,82.7,,3.0,5.5,"Sand Springs, OK",Charles Page,OK,30591,industry_comparison
+2012,Lynn Griffin,ATH,1109,3,82.7,,3.0,5.6,"Jacksonville, FL",Providence,FL,81052,industry_comparison
+2012,Tyre Bracken,RB,1112,3,82.68181818181819,,2.0,5.4,"White Castle, LA",White Castle,LA,118377,industry_comparison
+2012,Brandon Neverdon,RB,1116,3,82.6570652173913,,,,"Towson, MD",Calvert Hall College,MD,12883,industry_comparison
+2012,Dede Westbrook,WR,1117,3,82.65,,,,"Cameron, TX",Cameron Yoe,TX,33232,industry_comparison
+2012,Jared Crump,WR,1121,3,82.63333333333334,,3.0,5.6,"Jacksonville, FL",Bartram Trail,FL,56598,industry_comparison
+2012,Peyton Williams,WR,1124,3,82.63333333333334,,3.0,5.6,"Southlake, TX",Southlake Carroll,TX,96347,industry_comparison
+2012,Alex Johnson,RB,1130,3,82.57164031620556,,2.0,5.4,"Carencro, LA",Centerville,LA,136792,industry_comparison
+2012,Jaylen Coleman,RB,1131,3,82.56666666666666,,3.0,5.6,"Pittsburgh, PA",Peabody,PA,58839,industry_comparison
+2012,Barkley Hill,RB,1132,3,82.56666666666666,,3.0,5.5,"Cedar Falls, IA",Cedar Falls,IA,9303,industry_comparison
+2012,Jamil Golden,QB,1133,3,82.56666666666666,,3.0,5.6,"Memphis, TN",Ridgeway,TN,56210,industry_comparison
+2012,Maxx Williams,TE,1143,3,82.5,,3.0,5.5,"Waconia, MN",Waconia Senior,MN,86838,industry_comparison
+2012,Adam Kranda,TE,1147,3,82.5,,3.0,5.5,"New Castle, IN",New Castle High School,IN,1217,industry_comparison
+2012,Miles Jones,RB,1149,3,82.5,,3.0,5.5,"Acworth, GA",Allatoona,GA,136579,industry_comparison
+2012,Travis Gardner,WR,1150,3,82.4969696969697,,2.0,5.3,"Chula Vista, CA",Eastlake,CA,114583,industry_comparison
+2012,Steven Bench,QB,1154,3,82.46666666666667,,3.0,5.5,"Camilla, GA",Cairo,GA,108881,industry_comparison
+2012,Xavier Griffin,WR,1162,3,82.42272727272729,,2.0,5.4,"Newark, DE",Fork Union Military Academy,DE,122019,industry_comparison
+2012,Anthony Rook,TE,1170,3,82.4,,3.0,5.5,"Greenville, NC",J.H. Rose,NC,6508,industry_comparison
+2012,Randy Uzoma,WR,1172,3,82.4,,3.0,5.6,"Canoga Park, CA",Canoga Park,CA,98385,industry_comparison
+2012,Kanler Coker,QB,1173,3,82.4,,3.0,5.6,"Flowery Branch, GA",Flowery Branch,GA,71177,industry_comparison
+2012,David Grinnage,TE,1175,3,82.38181818181819,,2.0,5.4,"Newark, DE",Newark,DE,31718,industry_comparison
+2012,J.T. Washington,RB,1176,3,82.36666666666666,,3.0,5.6,"Satellite Beach, FL",Satellite,FL,50566,industry_comparison
+2012,Javelle Allen,QB,1178,3,82.36666666666666,,3.0,5.5,"Prosper, TX",Prosper,TX,58007,industry_comparison
+2012,Joshua Stanford,WR,1179,3,82.36666666666666,,3.0,5.5,"Lithonia, GA",Martin Luther King Jr.,GA,68105,industry_comparison
+2012,Jeremiah Valoaga,TE,1181,3,82.35,,,,"Oxnard, CA",Channel Islands,CA,60229,industry_comparison
+2012,Kyle Dockins,WR,1183,3,82.34848484848486,,2.0,5.4,"Virginia Beach, VA",Landstown,VA,76548,industry_comparison
+2012,Andrew Long,RB,1189,3,82.30942028985507,,3.0,5.5,"Moore, OK",Southmoore,OK,5167,industry_comparison
+2012,Danny Larkins,WR,1190,3,82.3,,,,"Madison Heights, MI",Madison,MI,29625,industry_comparison
+2012,Blake Webb,WR,1196,3,82.26666666666667,,3.0,5.5,"The Woodlands, TX",The Woodlands,TX,11073,industry_comparison
+2012,A.J. Doyle,TE,1197,3,82.25422427035329,,3.0,5.5,"Lakeville, MA",Catholic Memorial,MA,82,industry_comparison
+2012,Chris Murray,WR,1199,3,82.25,,3.0,5.6,"Tampa, FL",C. Leon King,FL,22202,industry_comparison
+2012,Colin Lagasse,ATH,1203,3,82.23333333333333,,3.0,5.5,"Austin, TX",Lake Travis,TX,25033,industry_comparison
+2012,Kendrick Daniels,RB,1206,3,82.21075268817205,,3.0,5.5,"Sulphur Springs, TX",Sulphur Springs,TX,72904,industry_comparison
+2012,Sione Houma,RB,1210,3,82.2,,3.0,5.5,"Salt Lake City, UT",Highland,UT,136546,industry_comparison
+2012,Joshua Wilhite,RB,1211,3,82.2,,3.0,5.5,"Missouri City, TX",Hightower,TX,68157,industry_comparison
+2012,Jack Fields,RB,1212,3,82.16666666666667,,3.0,5.5,"El Paso, TX",Americas,TX,51078,industry_comparison
+2012,Sean Irwin,TE,1220,3,82.16666666666667,,3.0,5.5,"Cypress, TX",Cy-Fair,TX,136532,industry_comparison
+2012,Shakim Alonzo,WR,1221,3,82.16363636363636,,2.0,5.3,"Pittsburgh, PA",Woodland Hills,PA,106250,industry_comparison
+2012,Ty Law,RB,1222,3,82.13333333333334,,3.0,5.5,"Orlando, FL",Lake Highland Prep,FL,117025,industry_comparison
+2012,Jarrell Bennett,WR,1223,3,82.13333333333334,,3.0,5.5,"New Orleans, LA",Edna Karr,LA,57058,industry_comparison
+2012,Sam Cotton,TE,1226,3,82.13333333333334,,3.0,5.5,"Lincoln, NE",Lincoln Southeast,NE,104246,industry_comparison
+2012,Matt Dobson,QB,1229,3,82.1,,3.0,5.5,"Tallahassee, FL",North Florida Christian,FL,85219,industry_comparison
+2012,B.J. Knauf,WR,1232,3,82.1,,3.0,5.6,"Lakeland, FL",Santa Fe Catholic,FL,9135,industry_comparison
+2012,Taylor Lagace,RB,1233,3,82.1,,3.0,5.5,"Arcadia, CA",Arcadia,CA,110813,industry_comparison
+2012,Jalynn McCain,RB,1234,3,82.1,,3.0,5.5,"Richmond, TX",Fort Bend Bush,TX,54716,industry_comparison
+2012,Reggie Love,WR,1235,3,82.1,,3.0,5.6,"Boca Raton, FL",Spanish River,FL,99363,industry_comparison
+2012,Hasaan Henderson,WR,1236,3,82.06666666666666,,3.0,5.5,"Las Vegas, NV",Las Vegas,NV,47694,industry_comparison
+2012,Jaydrick DeClouet,WR,1238,3,82.06666666666666,,3.0,5.5,"Patterson, LA",Patterson,LA,58752,industry_comparison
+2012,Danny Anthrop,WR,1239,3,82.06666666666666,,3.0,5.6,"Lafayette, IN",Lafayette Central Catholic,IN,29562,industry_comparison
+2012,Anthony Nash,WR,1240,3,82.04848484848485,,2.0,5.4,"West Chester, PA",West Chester Bayard Rustin,PA,6386,industry_comparison
+2012,Demetrius Frazier,ATH,1243,3,82.03333333333333,,3.0,5.6,"Brunswick, GA",Brunswick,GA,33953,industry_comparison
+2012,Cody Blanc,WR,1247,3,82.01515151515152,,2.0,5.4,"Knoxville, TN",Knoxville Central,TN,24237,industry_comparison
+2012,Ryan Jackson,ATH,1249,3,82.0,,3.0,5.5,"Angleton, TX",Angleton,TX,135724,industry_comparison
+2012,Devin Parks,ATH,1250,3,82.0,,3.0,5.5,"Brownsville, TX",Edna,TX,36151,industry_comparison
+2012,Steve Donatell,TE,1259,3,81.96666666666667,,3.0,5.6,"Littleton, CO",Highlands Ranch,CO,108711,industry_comparison
+2012,Donte Fox,ATH,1260,3,81.95415019762845,,2.0,5.2,"Canton, MI",Plymouth,MI,38405,industry_comparison
+2012,Tysean Holloway,RB,1261,3,81.94848484848485,,2.0,5.4,"Asheville, NC",Asheville,NC,118938,industry_comparison
+2012,Jason Robertson,WR,1262,3,81.94848484848485,,2.0,5.4,"Frankfort, IL",Lincoln-Way East,IL,57738,industry_comparison
+2012,Connor Jessop,QB,1264,3,81.94782608695652,,,,"Ashburn, VA",Broad Run,VA,136810,industry_comparison
+2012,Andrej Suttles,WR,1267,3,81.9330533596838,,2.0,5.4,"Dallas, GA",East Paulding,GA,4797,industry_comparison
+2012,Kolby Gray,WR,1269,3,81.91515151515152,,2.0,5.4,"Fort Lauderdale, FL",Fort Lauderdale,FL,75731,industry_comparison
+2012,Brian Blackburn,QB,1273,3,81.86666666666666,,3.0,5.5,"Detroit, MI",Crockett ,MI,14344,industry_comparison
+2012,Devin Chafin,RB,1276,3,81.86666666666666,,3.0,5.5,"Burkburnett, TX",Burkburnett,TX,35948,industry_comparison
+2012,Benjamin Lawler,QB,1282,3,81.83315217391306,,,,"Georgetown, KY",Scott County,KY,10133,industry_comparison
+2012,Hayden Northern,QB,1283,3,81.82771739130435,,,,"Martinsville, IN",Martinsville,IN,47823,industry_comparison
+2012,Alex Taylor,WR,1284,3,81.81521739130434,,3.0,5.5,"Lester, AL",West Limestone,AL,3432,industry_comparison
+2012,Dekeathan Williams,RB,1285,3,81.81189064558629,,2.0,5.4,"West Helena, AR",Helena-West Helena Central,AR,28020,industry_comparison
+2012,Travon Travis,RB,1286,3,81.8072463768116,,3.0,5.5,"Gulfport, MS",Gulfport,MS,114816,industry_comparison
+2012,Josh Parris,TE,1287,3,81.8,,3.0,5.5,"Stone Mountain, GA",Stephenson,GA,67442,industry_comparison
+2012,Dan Crimmins,TE,1289,3,81.8,,3.0,5.5,"Hoboken, NJ",A.J. Demarest Alternative,NJ,28810,industry_comparison
+2012,Jalen Randolph,RB,1291,3,81.8,,3.0,5.5,"Folsom, PA",Ridley,PA,54469,industry_comparison
+2012,Gus Walley,TE,1294,3,81.76666666666667,,3.0,5.5,"Leakesville, MS",Greene County,MS,47276,industry_comparison
+2012,Terrence Crowder,RB,1296,3,81.74545454545455,,2.0,5.2,"Galena Park, TX",Galena Park,TX,111659,industry_comparison
+2012,D.J. Goodman,RB,1299,3,81.7304347826087,,,,"Greenwood, SC",Greenwood,SC,27568,industry_comparison
+2012,Tanner Kearns,TE,1301,3,81.71515151515152,,2.0,5.4,"Mansfield, OH",Lexington,OH,110122,industry_comparison
+2012,A.J. King,WR,1303,3,81.71212121212122,,2.0,5.2,"Seffner, FL",Armwood,FL,138,industry_comparison
+2012,Trevor Stevens,TE,1304,3,81.68181818181819,,2.0,5.4,"Friendswood, TX",Friendswood,TX,115848,industry_comparison
+2012,Trey Mohair,ATH,1306,3,81.68181818181819,,2.0,5.4,"Denton, TX",Ryan,TX,116146,industry_comparison
+2012,Jerico Richardson,WR,1307,3,81.68181818181819,,2.0,5.4,"Mission Hills, CA",Bishop Alemany,CA,60654,industry_comparison
+2012,Lawrence Brown,TE,1313,3,81.6413043478261,,3.0,5.5,"Columbus, MS",New Hope,MS,78597,industry_comparison
+2012,Darreal Joyner,WR,1314,3,81.63333333333334,,3.0,5.6,"Miami, FL",Miami Central,FL,136555,industry_comparison
+2012,Dareen Owi,WR,1315,3,81.63333333333334,,3.0,5.5,"Miami, FL",Norland,FL,29931,industry_comparison
+2012,Jamaal Williams,RB,1318,3,81.6,,3.0,5.5,"Fontana, CA",Summit,CA,54778,industry_comparison
+2012,Matt Kuivinen,QB,1322,3,81.56195652173913,,,,"Franklin, TN",Franklin,TN,85425,industry_comparison
+2012,Elliot Faerber,WR,1323,3,81.53333333333333,,3.0,5.5,"Prairie Village, KS",Shawnee Mission East,KS,41500,industry_comparison
+2012,Lakeith Walls,ATH,1326,3,81.53333333333333,,3.0,5.5,"Cleveland, OH",James Ford Rhodes,OH,77561,industry_comparison
+2012,Jordan Woods,WR,1327,3,81.53333333333333,,3.0,5.5,"Ann Arbor, MI",Skyline,MI,66246,industry_comparison
+2012,Reid Mitchell,TE,1328,3,81.53333333333333,,3.0,5.5,"Pflugerville, TX",Hendrickson,TX,99540,industry_comparison
+2012,Derek Keaton,RB,1331,3,81.52272727272728,,2.0,5.4,"Camden, AR",Camden Fairview,AR,34729,industry_comparison
+2012,Brett Bartolone,WR,1332,3,81.52272727272728,,2.0,5.4,"La Habra, CA",La Habra,CA,14072,industry_comparison
+2012,Andre Scott,QB,1337,3,81.5,,3.0,5.5,"Orlando, FL",Oak Ridge,FL,4682,industry_comparison
+2012,Derek Brown,ATH,1338,3,81.5,,3.0,5.5,"Brownsville, TX",Bay City,TX,34649,industry_comparison
+2012,Thomas Smith,WR,1339,3,81.5,,3.0,5.5,"Williamsburg, VA",Lafayette,VA,112464,industry_comparison
+2012,Jonathan Williams,WR,1340,3,81.5,,3.0,5.5,"Atlanta, GA",Mays,GA,64999,industry_comparison
+2012,Daijuan Stewart,WR,1348,3,81.43333333333334,,3.0,5.5,"Baldwin, LA",West St. Mary,LA,27908,industry_comparison
+2012,Neally Cunningham,WR,1353,3,81.41032608695652,,3.0,5.5,"Palm Bay, FL",Bayside,FL,91869,industry_comparison
+2012,Joshua Atkinson,WR,1357,3,81.4,,3.0,5.5,"Arlington, TX",The Oakridge School,TX,67816,industry_comparison
+2012,Chaz Whittaker,WR,1360,3,81.38181818181819,,2.0,5.4,"Pittsburgh, PA",Penn Hills,PA,21030,industry_comparison
+2012,Rashad Jackson,ATH,1361,3,81.38181818181819,,2.0,5.4,"Missouri City, TX",Fort Bend Marshall,TX,136380,industry_comparison
+2012,Mitch Leidner,QB,1362,3,81.38181818181819,,2.0,5.4,"Lakeville, MN",Lakeville South,MN,89873,industry_comparison
+2012,Devante McFarlane,RB,1366,3,81.35,,3.0,5.5,"Huntington Station, NY",Half Hollow Hills West,NY,35802,industry_comparison
+2012,Travin Henry,WR,1373,3,81.3,,3.0,5.5,"Adel, GA",Cook County,GA,114468,industry_comparison
+2012,Johnathon Johnson,WR,1381,3,81.26666666666667,,3.0,5.5,"Friendswood, TX",Friendswood,TX,135732,industry_comparison
+2012,James Ward,RB,1384,3,81.23333333333333,,3.0,5.5,"Deland, FL",Deland,FL,56007,industry_comparison
+2012,Anthony Maddie,QB,1386,3,81.2,,3.0,5.5,"Aurora, IL",Aurora Christian Schools,IL,6290,industry_comparison
+2012,Tre' Parmalee,WR,1387,3,81.2,,3.0,5.5,"Mission, KS",Bishop Miege,KS,115100,industry_comparison
+2012,Matt Hadley,RB,1389,3,81.2,,3.0,5.5,"Connell, WA",Connell,WA,85348,industry_comparison
+2012,Andre Allen,RB,1391,3,81.2,,3.0,5.5,"Panama City Beach, FL",Arnold,FL,4452,industry_comparison
+2012,Michael Roberts,TE,1392,3,81.2,,3.0,5.5,"Cleveland, OH",Benedictine,OH,88280,industry_comparison
+2012,James Flanders,RB,1393,3,81.2,,3.0,5.5,"Oklahoma City, OK",Midwest City,OK,55545,industry_comparison
+2012,Dondre Daley,WR,1397,3,81.16666666666667,,3.0,5.5,"Tarpon Springs, FL",Tarpon Springs,FL,37999,industry_comparison
+2012,Hayden Jones,WR,1400,3,81.13957509881423,,2.0,5.4,"Orlando, FL",Lake Highland Prep,FL,136274,industry_comparison
+2012,John Green,WR,1401,3,81.13685770750989,,2.0,5.4,"Miami, FL",Felix Varela Senior,FL,63235,industry_comparison
+2012,Elijah Norris,TE,1402,3,81.12638339920949,,2.0,5.4,"Washington, DC",Archbishop Carroll,DC,41301,industry_comparison
+2012,Kyle Sloter,QB,1403,3,81.11515151515152,,2.0,5.4,"Alpharetta, GA",Mount Pisgah Christian School,GA,76960,industry_comparison
+2012,Jake O'Donnell,TE,1404,3,81.1,,3.0,5.5,"Doylestown, PA",Central Bucks East,PA,53709,industry_comparison
+2012,Lincoln Plsek,TE,1405,3,81.1,,3.0,5.5,"Waco, TX",Reicher Catholic,TX,79494,industry_comparison
+2012,Terry Grigsby,WR,1413,3,81.06892292490119,,2.0,5.4,"Omaha, NE",Omaha North,NE,111840,industry_comparison
+2012,Dwayne Washington,RB,1415,3,81.06666666666666,,3.0,5.5,"Cerritos, CA",Richard Gahr,CA,39676,industry_comparison
+2012,David Thompson,QB,1418,3,81.03333333333333,,3.0,5.6,"Miami, FL",Westminster Christian School,FL,32153,industry_comparison
+2012,James Knapke,QB,1423,3,81.01212121212122,,2.0,5.2,"Fort Wayne, IN",Bishop Luers,IN,55661,industry_comparison
+2012,Luke Turner,ATH,1425,3,81.0,,3.0,5.5,"Gilmer, TX",Gilmer,TX,80933,industry_comparison
+2012,Quanterio Heath,TE,1428,3,81.0,,3.0,5.5,"Rison, AR",Rison,AR,97128,industry_comparison
+2012,Jamarcus Walker,RB,1429,3,81.0,,3.0,5.5,"Lufkin, TX",Lufkin,TX,55093,industry_comparison
+2012,Cody Small,TE,1430,3,81.0,,3.0,5.5,"Cypress, TX",Cy Woods,TX,24422,industry_comparison
+2012,Jamall Brown,WR,1431,3,80.98181818181818,,2.0,5.4,"Hampton, VA",Hampton,VA,54990,industry_comparison
+2012,Favian Upshaw,ATH,1434,3,80.96666666666667,,3.0,5.5,"Titusville, FL",Astronaut,FL,43715,industry_comparison
+2012,Cole Gautsche,QB,1435,3,80.96666666666667,,3.0,5.6,"Rio Rancho, NM",Cleveland,NM,24697,industry_comparison
+2012,Jack Willenbrock,TE,1437,3,80.94848484848485,,2.0,5.4,"Exton, PA",Downingtown East,PA,51430,industry_comparison
+2012,Jordan Woods,RB,1438,3,80.94565217391305,,3.0,5.5,"Hattiesburg, MS",Oak Grove,MS,66245,industry_comparison
+2012,Toneo Gulley,RB,1444,3,80.86666666666666,,3.0,5.5,"Kenosha, WI",Tremper,WI,113728,industry_comparison
+2012,Mark Lewis,RB,1448,3,80.86363636363636,,2.0,5.3,"Livonia, LA",Livonia,LA,83449,industry_comparison
+2012,Jeremy Smith,WR,1449,3,80.85714285714285,,,,"Hollywood, FL",Charles W Flanagan,FL,60588,industry_comparison
+2012,Manny Stocker,WR,1452,3,80.83333333333333,,3.0,5.5,"Coatesville, PA",Coatesville,PA,82189,industry_comparison
+2012,Bill Albert,TE,1458,3,80.81870882740448,,2.0,5.3,"Brighton, MI",Brighton,MI,10374,industry_comparison
+2012,Nick Schuessler,QB,1459,3,80.81515151515151,,2.0,5.4,"Loganville, GA",Grayson,GA,92952,industry_comparison
+2012,Nick Wargo,QB,1461,3,80.79545454545455,,2.0,5.3,"Stow, OH",Walsh Jesuit,OH,93097,industry_comparison
+2012,Brandon Holifield,TE,1468,3,80.76666666666667,,3.0,5.5,"Tallahassee, FL",Amos P. Godby,FL,12639,industry_comparison
+2012,Levi Copelin,WR,1470,3,80.73809523809523,,3.0,5.6,"Broken Arrow, OK",Broken Arrow,OK,79303,industry_comparison
+2012,Darien Barrett,TE,1471,3,80.73333333333333,,3.0,5.6,"Inglewood, CA",Inglewood,CA,30032,industry_comparison
+2012,Greg Windham,QB,1473,3,80.71515151515152,,2.0,5.4,"Tampa, FL",C. Leon King,FL,47035,industry_comparison
+2012,Rokeem Williams,WR,1477,3,80.68181818181819,,2.0,5.4,"Williston, SC",Williston Elko,SC,101883,industry_comparison
+2012,Trayvon Watson,ATH,1481,3,80.68181818181819,,2.0,5.4,"Los Angeles, CA",West Adams Prep,CA,114888,industry_comparison
+2012,Jordan Thompson,WR,1482,3,80.68181818181819,,2.0,5.4,"Katy, TX",Katy,TX,66100,industry_comparison
+2012,Paul Kyles,TE,1484,3,80.64848484848486,,2.0,5.4,"Mobile, AL",Vigor,AL,95740,industry_comparison
+2012,Ricky Jones,WR,1486,3,80.64848484848486,,2.0,5.4,"Sarasota, FL",Booker,FL,136554,industry_comparison
+2012,David Greene,ATH,1493,3,80.6,,3.0,5.5,"Dallas, TX",Skyline,TX,31713,industry_comparison
+2012,Andrew Scanlan,WR,1497,3,80.5969696969697,,2.0,5.3,"Royersford, PA",Spring-Ford,PA,5372,industry_comparison
+2012,Al Thompson,WR,1499,3,80.54076086956522,,3.0,5.5,"Brentwood, TN",Brentwood Academy,TN,2408,industry_comparison
+2012,Fred Nixon,QB,1500,3,80.53333333333333,,3.0,5.5,"Willis, TX",Willis,TX,44245,industry_comparison
+2012,Michael Rector,WR,1501,3,80.53333333333333,,3.0,5.5,"Tacoma, WA",Bellarmine Prep,WA,88250,industry_comparison
+2012,C.J. Bates,WR,1503,3,80.53333333333333,,3.0,5.5,"Louisville, MS",Louisville,MS,16364,industry_comparison
+2012,Cody Tuttle,WR,1510,3,80.5,,3.0,5.5,"Thousand Oaks, CA",Westlake,CA,24443,industry_comparison
+2012,Lloyd Mills,WR,1512,3,80.46753246753248,,2.0,5.4,"Chandler, AZ",Chandler,AZ,79598,industry_comparison
+2012,Jordan Williams,WR,1514,3,80.45,,,,"Indianapolis, IN",North Central,IN,66222,industry_comparison
+2012,Eric Lemke,TE,1519,3,80.44262187088273,,2.0,5.3,"Issaquah, WA",Issaquah,WA,42206,industry_comparison
+2012,Clark Eyers,TE,1520,3,80.43400621118013,,,,"Dunn, NC",Midway,NC,23766,industry_comparison
+2012,Tyler Wilson,WR,1522,3,80.43333333333334,,3.0,5.5,"Ponca City, OK",Ponca City,OK,118267,industry_comparison
+2012,Jaylen Prater,RB,1524,3,80.41515151515152,,2.0,5.4,"Wellston, OH",Wellston,OH,58952,industry_comparison
+2012,Jalen Richard,RB,1525,3,80.41515151515152,,2.0,5.4,"Alexandria, LA",Peabody Magnet,LA,54477,industry_comparison
+2012,Nick England,RB,1531,3,80.38181818181819,,2.0,5.4,"Suwanee, GA",Collins Hill,GA,92490,industry_comparison
+2012,Trae Armstrong,RB,1533,3,80.38030303030303,,2.0,5.3,"Glendale, AZ",Deer Valley,AZ,114311,industry_comparison
+2012,Jamire Westbrook,RB,1534,3,80.37878787878788,,2.0,5.2,"Kings Mills, OH",Kings,OH,56271,industry_comparison
+2012,Elgin Hilliard,QB,1537,3,80.35,,,,"Miami, FL",Northwestern,FL,40907,industry_comparison
+2012,Caleb Cornett,WR,1541,3,80.33333333333333,,3.0,5.5,"Indianapolis, IN",Ben Davis,IN,16942,industry_comparison
+2012,Ryan Higgins,QB,1542,3,80.33333333333333,,3.0,5.5,"Hutto, TX",Hutto,TX,103284,industry_comparison
+2012,Matt Doneth,TE,1543,3,80.33078063241106,,2.0,5.3,"Novi, MI",Detroit Catholic Central,MI,85222,industry_comparison
+2012,Efe Scott-Emuakpor,WR,1545,3,80.3,,,,"East Lansing, MI",East Lansing,MI,40789,industry_comparison
+2012,Prescott Line,RB,1546,3,80.3,,3.0,5.5,"Oxford, MI",Oxford,MI,96793,industry_comparison
+2012,Quandarius Crump,ATH,1547,3,80.3,,3.0,5.5,"Lexington, NC",Lexington Senior,NC,97102,industry_comparison
+2012,Jordon Vaden,WR,1559,3,80.26363636363637,,2.0,5.3,"New Raymer, CO",Prairie Junior-senior,CO,66314,industry_comparison
+2012,Donta Abron,RB,1561,3,80.24848484848485,,2.0,5.4,"Upland, CA",Upland,CA,38297,industry_comparison
+2012,Chad Ward,WR,1563,3,80.2455533596838,,2.0,5.4,"Delray Beach, FL",Atlantic,FL,19690,industry_comparison
+2012,Austin Apodaca,QB,1567,3,80.23030303030303,,2.0,5.3,"Longmont, CO",Silver Creek,CO,8146,industry_comparison
+2012,Lazedrick Thompson,RB,1569,3,80.2,,3.0,5.5,"La Place, LA",St. Charles Catholic,LA,78737,industry_comparison
+2012,Jack Schwaba,TE,1573,3,80.16666666666667,,3.0,5.5,"Pittsburgh, PA",Upper Saint Clair,PA,51322,industry_comparison
+2012,Dylan Collie,WR,1575,3,80.16666666666667,,3.0,5.6,"El Dorado Hills, CA",Oak Ridge,CA,39833,industry_comparison
+2012,Deante Burton,WR,1576,3,80.16666666666667,,3.0,5.5,"Manhattan, KS",Manhattan,KS,33126,industry_comparison
+2012,Jordan Floyd,WR,1578,3,80.1600790513834,,2.0,5.4,"Towson, MD",Loyola Blakefield,MD,65466,industry_comparison
+2012,KJ Maye,WR,1579,3,80.13333333333334,,3.0,5.5,"Mobile, AL",Murphy,AL,75448,industry_comparison
+2012,D.J. Dean,WR,1581,3,80.08181818181819,,2.0,5.4,"Eagle, ID",Eagle,ID,27544,industry_comparison
+2012,Martez Walker,RB,1582,3,80.07878787878788,,2.0,5.2,"Oak Lawn, IL",Brother Rice,IL,84472,industry_comparison
+2012,Joe Riddle,RB,1585,3,80.04848484848485,,2.0,5.4,"Frederick, MD",Linganore,MD,62404,industry_comparison
+2012,Cody Core,WR,1587,3,80.04848484848485,,2.0,5.4,"Auburn, AL",Auburn,AL,24284,industry_comparison
+2012,Jontrey Tillman,ATH,1588,3,80.04848484848485,,2.0,5.4,"Baldwin, LA",West St. Mary,LA,65114,industry_comparison
+2012,Jonathan Warner,WR,1589,3,80.04848484848485,,2.0,5.4,"Camas, WA",Camas,WA,136806,industry_comparison
+2012,Tyler Stehling,QB,1596,3,80.0,,3.0,5.5,"Spring, TX",Klein Collins,TX,118123,industry_comparison
+2012,Roderick Lancaster,WR,1597,3,80.0,,3.0,5.5,"Dallas, TX",Life Oak Cliff,TX,101600,industry_comparison
+2012,Tommey Morris,ATH,1600,3,79.98181818181818,,2.0,5.4,"Odessa, TX",Permian,TX,113513,industry_comparison
+2012,Hunter Bowles,TE,1604,3,79.96666666666667,,3.0,5.5,"Glasgow, KY",Glasgow,KY,48383,industry_comparison
+2012,Autrey Golden,RB,1605,3,79.96666666666667,,3.0,5.5,"Willis, TX",Willis,TX,8857,industry_comparison
+2012,Sequan Gooding,WR,1610,3,79.93947628458498,,2.0,5.3,"Chesapeake, VA",Oscar Smith,VA,105917,industry_comparison
+2012,Nick Schrapps,WR,1612,3,79.93333333333334,,3.0,5.5,"Beaumont, TX",Monsignor Kelly Catholic,TX,92951,industry_comparison
+2012,Cameron Posey,WR,1615,3,79.90476190476191,,3.0,5.5,"Delray Beach, FL",American Heritage School Palm Beach,FL,18031,industry_comparison
+2012,Armani Miller,WR,1616,3,79.90476190476191,,3.0,5.7,"Dayton, OH",Wayne,OH,7527,industry_comparison
+2012,Brandon Silvers,QB,1621,3,79.88181818181819,,2.0,5.4,"Leroy, AL",Gulf Shores Sch,AL,13092,industry_comparison
+2012,Taylor Barton,ATH,1622,3,79.86666666666666,,3.0,5.5,"Orlando, FL",Lake Highland Prep,FL,110701,industry_comparison
+2012,Austin Grammer,QB,1624,3,79.86666666666666,,3.0,5.5,"Tuscaloosa, AL",American Christian,AL,8404,industry_comparison
+2012,Nyiakki Height,WR,1627,3,79.86666666666666,,3.0,5.5,"Marietta, GA",Osborne,GA,94038,industry_comparison
+2012,Jocorey Robins,RB,1630,3,79.84708498023716,,2.0,5.3,"Norfolk, VA",Norfolk Christian,VA,61969,industry_comparison
+2012,Chase Murdock,ATH,1634,3,79.81515151515151,,2.0,5.4,"Barrington, IL",Barrington,IL,20775,industry_comparison
+2012,David Fontenette,WR,1635,3,79.8080533596838,,2.0,5.4,"Spanaway, WA",Bethel,WA,31666,industry_comparison
+2012,Elston Lane,WR,1636,3,79.80533596837945,,2.0,5.4,"Miami, FL",Northwestern,FL,41583,industry_comparison
+2012,Damon Gladney,WR,1640,3,79.79990118577076,,2.0,5.4,"Haughton, LA",Haughton,LA,28687,industry_comparison
+2012,Lamarq Caldwell,RB,1641,3,79.78181818181818,,2.0,5.4,"Tampa, FL",Tampa Bay Tech,FL,77693,industry_comparison
+2012,Darrion Pollard,ATH,1643,3,79.77272727272728,,2.0,5.4,"Gilmer, TX",Gilmer,TX,30915,industry_comparison
+2012,Jordan Dennis,WR,1647,3,79.77272727272728,,2.0,5.4,"Fayetteville, AR",Fayetteville,AR,65393,industry_comparison
+2012,Armand Nance,TE,1650,3,79.74848484848485,,2.0,5.4,"Houston, TX",Dekaney,TX,7497,industry_comparison
+2012,Chadd Dansby,TE,1652,3,79.74848484848485,,2.0,5.4,"Pittsburg, TX",Carlisle,TX,19706,industry_comparison
+2012,Alex Howard,RB,1653,3,79.74848484848485,,2.0,5.4,"Williams, AZ",Williams,AZ,136612,industry_comparison
+2012,Michael Thomas,WR,1656,3,79.71515151515152,,2.0,5.4,"Elk Grove, CA",Cosumnes Oaks,CA,88448,industry_comparison
+2012,Vincent Miller,ATH,1657,3,79.68181818181819,,2.0,5.4,"Lexington, KY",Henry Clay,KY,119763,industry_comparison
+2012,Ben Craft,QB,1658,3,79.68181818181819,,2.0,5.4,"Birmingham, AL",Briarwood Christian,AL,9685,industry_comparison
+2012,Caleb Saulo,ATH,1662,3,79.68181818181819,,2.0,5.4,"Seattle, WA",Mount Rainier,WA,17170,industry_comparison
+2012,Charlie Miller,WR,1664,3,79.66666666666667,,3.0,5.6,"Vero Beach, FL",Vero Beach,FL,20463,industry_comparison
+2012,Garrett Hope,RB,1666,3,79.61904761904762,,3.0,5.5,"The Woodlands, TX",The Woodlands,TX,44984,industry_comparison
+2012,Grant Childress,WR,1670,3,79.58181818181819,,2.0,5.4,"Tyler, TX",Grace Community,TX,46421,industry_comparison
+2012,De'Ante Lawrence,ATH,1672,3,79.56666666666666,,3.0,5.5,"Prattville, AL",Prattville,AL,32769,industry_comparison
+2012,Daniel Hurd,WR,1673,3,79.56666666666666,,3.0,5.5,"Memphis, TN",Wooddale,TN,136613,industry_comparison
+2012,T.J. Mutcherson,ATH,1677,3,79.54545454545455,,2.0,5.3,"Tampa, FL",Freedom,FL,109525,industry_comparison
+2012,Taylor Oldham,WR,1678,3,79.53333333333333,,3.0,5.5,"Daytona Beach, FL",Warner Christian Academy,FL,110853,industry_comparison
+2012,Larry McDuffey,RB,1682,3,79.53030303030303,,2.0,5.3,"Houston, TX",North Shore,TX,78315,industry_comparison
+2012,Dennis Parks,WR,1684,3,79.5,,3.0,5.5,"Converse, TX",Judson,TX,34245,industry_comparison
+2012,Craig Runyan,TE,1685,3,79.5,,3.0,5.5,"Marysville, OH",Marysville,OH,26926,industry_comparison
+2012,E.J. Junior,RB,1688,3,79.5,,3.0,5.5,"Middletown, OH",Middletown,OH,136591,industry_comparison
+2012,Eric Belew,WR,1694,3,79.49617918313571,,2.0,5.2,"Columbia, TN",Columbia Central,TN,41966,industry_comparison
+2012,Tony Annese,ATH,1695,3,79.48181818181818,,2.0,5.4,"Rochester, MI",Adams,MI,113765,industry_comparison
+2012,D'Shaie Landor,QB,1699,3,79.46363636363635,,2.0,5.3,"Lafayette, LA",Teurlings Catholic,LA,27448,industry_comparison
+2012,Fredi Knighten,QB,1703,3,79.44848484848485,,2.0,5.4,"Little Rock, AR",Pulaski Academy,AR,44400,industry_comparison
+2012,Max Ward,QB,1709,3,79.44545454545454,,2.0,5.3,"Harrisburg, PA",Steelton-Highspire,PA,86759,industry_comparison
+2012,Jarvon Anderson,RB,1712,3,79.41991341991343,,2.0,5.4,"Miami, FL",G. Holmes Braddock Senior,FL,57313,industry_comparison
+2012,Michael Henry,WR,1713,3,79.41991341991343,,2.0,5.4,"Flint, MI",Northwestern Commencement Academy,MI,87842,industry_comparison
+2012,Khalif Herbin,WR,1714,3,79.41991341991343,,2.0,5.4,"Montclair, NJ",Montclair,NJ,74842,industry_comparison
+2012,Harrison Jackson,WR,1715,3,79.41515151515152,,2.0,5.4,"Purcellville, VA",Loudoun Valley,VA,136516,industry_comparison
+2012,Braelon Roberts,WR,1718,3,79.4047619047619,,3.0,5.6,"Dallas, TX",Bishop Dunne,TX,11987,industry_comparison
+2012,Jeremy Glinton,WR,1720,3,79.38181818181819,,2.0,5.4,"Fort Lauderdale, FL",Northeast,FL,60400,industry_comparison
+2012,John Tanner,TE,1721,3,79.38181818181819,,2.0,5.4,"Cincinnati, OH",Archbishop Moeller,OH,63655,industry_comparison
+2012,Kody Kohl,TE,1722,3,79.38181818181819,,2.0,5.4,"Gilbert, AZ",Mesquite,AZ,75662,industry_comparison
+2012,Samad Hinds,WR,1726,3,79.36783596837945,,2.0,5.4,"Miami, FL",Miami Central,FL,104626,industry_comparison
+2012,Tip McKenzie,WR,1727,3,79.36666666666666,,3.0,5.6,"Natchez, MS",Trinity Episcopal Day School,MS,113001,industry_comparison
+2012,Byran Attaway,TE,1730,3,79.33333333333333,,3.0,5.5,"Kingsland, GA",Camden County,GA,16248,industry_comparison
+2012,C.J. Brathwaite,RB,1736,3,79.2969696969697,,2.0,5.3,"West Bloomfield, MI",West Bloomfield,MI,16371,industry_comparison
+2012,Eric Judge,WR,1744,3,79.27272727272728,,2.0,5.4,"San Diego, CA",San Diego Scpa,CA,136710,industry_comparison
+2012,Mike Bullard,WR,1746,3,79.27272727272728,,2.0,5.4,"West Palm Beach, FL",Forest Hill Community,FL,88808,industry_comparison
+2012,Marquis Bundy,WR,1748,3,79.27272727272728,,2.0,5.4,"Phoenix, AZ",Boulder Creek,AZ,84121,industry_comparison
+2012,Alex Matthews,QB,1749,3,79.27272727272728,,2.0,5.4,"Lake Oswego, OR",Lake Oswego,OR,3188,industry_comparison
+2012,Jake Kiley,WR,1750,3,79.26363636363637,,2.0,5.3,"New Hampton, NH",New Hampton School,NH,53568,industry_comparison
+2012,Michael Ebert,TE,1751,3,79.25,,,,"Sandusky, OH",Perkins,OH,87653,industry_comparison
+2012,Robert Wagner,TE,1752,3,79.24999999999999,,3.0,5.6,"Ontario, CA",Colony,CA,101363,industry_comparison
+2012,Xavier Amerson,WR,1753,3,79.24999999999999,,3.0,5.6,"Winter Park, FL",Winter Park,FL,121916,industry_comparison
+2012,Justin Carter,ATH,1756,3,79.23030303030303,,2.0,5.3,"Birmingham, AL",Spain Park,AL,69169,industry_comparison
+2012,Brandon Shippen,WR,1757,3,79.23030303030303,,2.0,5.3,"Norristown, PA",Norristown Area,PA,13087,industry_comparison
+2012,Kevis Jones,WR,1758,3,79.2,,3.0,5.5,"Fort Lauderdale, FL",Northeast,FL,136201,industry_comparison
+2012,Jason O'Bryan,WR,1761,3,79.18181818181819,,2.0,5.4,"Groveport, OH",Groveport Madison,OH,57687,industry_comparison
+2012,Blake Davis,TE,1766,3,79.16666666666667,,3.0,5.5,"Delray Beach, FL",American Heritage School Palm Beach,FL,10814,industry_comparison
+2012,Brandon Burks,RB,1770,3,79.11515151515152,,2.0,5.4,"Daleville, AL",Daleville,AL,12272,industry_comparison
+2012,Bobby Walker,WR,1771,3,79.1,,3.0,5.5,"Jacksonville, FL",Bartram Trail,FL,11390,industry_comparison
+2012,Coy Brown,RB,1773,3,79.08181818181819,,2.0,5.4,"Nappanee, IN",NorthWood,IN,26829,industry_comparison
+2012,Travis Elliot,RB,1779,3,79.04848484848485,,2.0,5.4,"Union, KY",Ryle,KY,114561,industry_comparison
+2012,Alvin Cornelius,WR,1782,3,79.04848484848485,,2.0,5.4,"Staten Island, NY",Tottenville,NY,4076,industry_comparison
+2012,DJ May,ATH,1787,3,79.04545454545455,,2.0,5.3,"Federal Way, WA",Federal Way,WA,37313,industry_comparison
+2012,Zach Jones,TE,1788,3,79.02989130434783,,,,"Littleton, CO",ThunderRidge,CO,136804,industry_comparison
+2012,Ozzie Mann,QB,1791,3,79.01212121212122,,2.0,5.2,"Muncie, IN",Delta,IN,94848,industry_comparison
+2012,Adrian Jenkins,WR,1795,3,79.0,,3.0,5.5,"Tampa, FL",Jefferson,FL,136374,industry_comparison
+2012,Raymond Jackson,WR,1799,3,79.0,,3.0,5.5,"New Orleans, LA",O Perry Walker ,LA,136793,industry_comparison
+2012,Kam Summers,ATH,1801,3,78.98563664596273,,,,"Statesville, NC",West Iredell,NC,70892,industry_comparison
+2012,George Kittle,TE,1803,3,78.95238095238095,,3.0,5.5,"Norman, OK",Norman,OK,45708,industry_comparison
+2012,Kyle Crum,TE,1805,3,78.94848484848485,,2.0,5.4,"Minerva, OH",Minerva,OH,76523,industry_comparison
+2012,Rayshawn Jackson,WR,1808,3,78.91131422924902,,2.0,5.4,"Orlando, FL",Oak Ridge,FL,136799,industry_comparison
+2012,Daniel Braverman,WR,1809,3,78.90476190476191,,3.0,5.5,"Fort Lauderdale, FL",NSU University School,FL,29098,industry_comparison
+2012,Ken Mouton,QB,1815,3,78.88784584980237,,2.0,5.3,"Naples, FL",Golden Gate,FL,72633,industry_comparison
+2012,Dezmond Stegall,QB,1816,3,78.86666666666666,,3.0,5.5,"Searcy, AR",Searcy,AR,36824,industry_comparison
+2012,Daniel Nwosu,TE,1822,3,78.85,,,,"Lanham, MD",Duval,MD,29376,industry_comparison
+2012,Shaun Wick,RB,1823,3,78.85,,,,"Ventura, CA",St. Bonaventure,CA,106812,industry_comparison
+2012,Julian Durden,RB,1826,3,78.83333333333333,,3.0,5.5,"McKees Rocks, PA",Montour,PA,68591,industry_comparison
+2012,Marcus Remy,RB,1829,3,78.8,,,,"North Olmsted, OH",North Olmsted,OH,82948,industry_comparison
+2012,Cooper Rush,QB,1834,3,78.77272727272728,,2.0,5.4,"Lansing, MI",Lansing Catholic,MI,25899,industry_comparison
+2012,Scotty Hosch,QB,1837,3,78.77272727272728,,2.0,5.4,"Suwanee, GA",North Gwinnett,GA,136593,industry_comparison
+2012,Dalyn Williams,QB,1840,3,78.77272727272728,,2.0,5.4,"Lake Dallas, TX",Lake Dallas,TX,28383,industry_comparison
+2012,Jordan Parker,RB,1841,3,78.77272727272728,,2.0,5.4,"Suwanee, GA",Collins Hill,GA,65861,industry_comparison
+2012,Ridge Jones,WR,1842,3,78.77272727272728,,2.0,5.4,"DeSoto, TX",DeSoto,TX,136825,industry_comparison
+2012,Jhajuan Seales,WR,1843,3,78.77272727272728,,2.0,5.4,"Port Arthur, TX",Memorial,TX,61495,industry_comparison
+2012,Derek McGinnis,QB,1854,3,78.71818181818182,,2.0,5.2,"Crete, NE",Crete,NE,34764,industry_comparison
+2012,Steven Richards,TE,1855,3,78.71515151515152,,2.0,5.4,"Sandy, UT",Alta,UT,109062,industry_comparison
+2012,Junior Espitia,RB,1867,3,78.57142857142857,,3.0,5.5,"Salem, OR",South Salem,OR,68848,industry_comparison
+2012,Demetrius Fairley,RB,1872,3,78.5570652173913,,3.0,5.5,"Garner, NC",Garner,NC,33950,industry_comparison
+2012,Devin Rushing,RB,1873,3,78.54545454545455,,2.0,5.3,"DeSoto, TX",DeSoto,TX,36196,industry_comparison
+2012,Gary Holmes,RB,1876,3,78.5,,3.0,5.5,"Loxahatchee, FL",Seminole Ridge,FL,45232,industry_comparison
+2012,Eric Williams,QB,1879,3,78.5,,3.0,5.5,"Cleveland, OH",St. Ignatius,OH,42502,industry_comparison
+2012,Paxton Lynch,QB,1882,3,78.5,,3.0,5.5,"Deltona, FL",Trinity Christian Academy,FL,95909,industry_comparison
+2012,Paul Franklin,RB,1884,3,78.5,,3.0,5.5,"Dallas, TX",South Oak Cliff,TX,95708,industry_comparison
+2012,Terrell Davis,RB,1887,3,78.44848484848485,,2.0,5.4,"Benson, AZ",Mount Douglas,AZ,111521,industry_comparison
+2012,Zach Conque,QB,1889,3,78.44545454545455,,2.0,5.2,"Little Rock, AR",Little Rock Christian Academy,AR,122647,industry_comparison
+2012,Danny Vitale,RB,1893,3,78.41991341991343,,2.0,5.4,"Wheaton, IL",Wheaton Warrenville South,IL,29715,industry_comparison
+2012,Austin Gearing,ATH,1900,3,78.4121212121212,,2.0,5.2,"Franklin, OH",Bishop Fenwick,OH,8392,industry_comparison
+2012,Quintavius Burdette,WR,1901,3,78.4121212121212,,2.0,5.2,"Senatobia, MS",Senatobia,MS,97556,industry_comparison
+2012,Billy Freeman,TE,1907,3,78.34848484848486,,2.0,5.4,"Mesa, AZ",Red Mountain,AZ,10469,industry_comparison
+2012,Sam Pearce,TE,1908,3,78.34545454545454,,2.0,5.2,"Noblesville, IN",Noblesville,IN,104449,industry_comparison
+2012,Max McCaffrey,WR,1909,3,78.33030303030304,,2.0,5.3,"Littleton, CO",Valor Christian,CO,86663,industry_comparison
+2012,Fred McRae,WR,1910,3,78.31515151515151,,2.0,5.4,"Hollywood, FL",Chaminade-Madonna Prep,FL,44239,industry_comparison
+2012,Ajalen Holley,WR,1911,3,78.2969696969697,,2.0,5.3,"Hot Springs National Park, AR",Lakeside,AR,2263,industry_comparison
+2012,Jordan Armstrong,ATH,1914,3,78.27272727272728,,2.0,5.4,"Miami, FL",Felix Varela Senior,FL,65158,industry_comparison
+2012,Connor Cella,TE,1918,3,78.27272727272728,,2.0,5.4,"Katy, TX",Taylor,TX,25503,industry_comparison
+2012,Carl Marc,WR,1928,3,78.21665019762845,,2.0,5.3,"Hialeah, FL",Hialeah,FL,18378,industry_comparison
+2012,Collin Michael,QB,1931,3,78.16666666666667,,3.0,5.5,"Mansfield, OH",Lexington,OH,25180,industry_comparison
+2012,La'Derick Black,WR,1933,3,78.14848484848486,,2.0,5.4,"Pensacola, FL",Pensacola,FL,77372,industry_comparison
+2012,Nyck Young,WR,1936,3,78.14848484848486,,2.0,5.4,"Birmingham, AL",Homewood,AL,94023,industry_comparison
+2012,Ben Lewis,WR,1938,3,78.0865800865801,,2.0,5.4,"Middletown, MD",Middletown,MD,9838,industry_comparison
+2012,Jarred Gipson,TE,1942,3,78.08181818181819,,2.0,5.4,"Houston, TX",Cy Creek,TX,57037,industry_comparison
+2012,Jordan Thiel,TE,1944,3,78.08181818181819,,2.0,5.4,"Simi Valley, CA",Simi Valley,CA,66093,industry_comparison
+2012,Saylor Lavallii,RB,1946,3,78.07878787878788,,2.0,5.2,"Mason, MI",Mason,MI,105008,industry_comparison
+2012,Alex Zmolik,TE,1949,3,78.04848484848485,,2.0,5.4,"Port Huron, MI",Port Huron,MI,3532,industry_comparison
+2012,Jake Jackson,TE,1950,3,78.04848484848485,,2.0,5.4,"Encinitas, CA",La Costa Canyon,CA,136631,industry_comparison
+2012,James White,WR,1951,3,78.04545454545455,,2.0,5.3,"Detroit, MI",Crockett ,MI,56035,industry_comparison
+2012,Kevonn Mabon,WR,1954,3,78.04545454545455,,2.0,5.3,"Saint Louis, MO",De Smet,MO,74605,industry_comparison
+2012,Carlos Wiggins,ATH,1957,3,78.04545454545455,,2.0,5.3,"Plano, TX",Plano West,TX,18580,industry_comparison
+2012,Jeffrey Coprich,WR,1962,3,78.0,,3.0,5.5,"Stevenson Ranch, CA",West Ranch,CA,59770,industry_comparison
+2012,Johnnie Durante,ATH,1963,3,78.0,,3.0,5.5,"Miami, FL",Dr. Michael M. Krop,FL,63934,industry_comparison
+2012,Iman Smith,ATH,1964,3,77.98181818181818,,2.0,5.4,"Largo, FL",Pinellas Park,FL,49011,industry_comparison
+2012,Christian Menet,TE,1970,3,77.86363636363636,,2.0,5.3,"Reading, PA",Reading,PA,23048,industry_comparison
+2012,Samuel Shisso,WR,1974,3,77.78354978354977,,2.0,5.2,"Charlotte, NC",East Mecklenburg,NC,104812,industry_comparison
+2012,Andre Anderson,ATH,1975,3,77.78181818181818,,2.0,5.4,"Chatfield, TX",Cedar Hill,TX,4456,industry_comparison
+2012,Grant Flessner,QB,1977,3,77.78181818181818,,2.0,5.4,"Venice, FL",Venice,FL,46458,industry_comparison
+2012,Denzell Hayden,ATH,1983,3,77.77272727272728,,2.0,5.4,"Ponte Vedra Beach, FL",Nease,FL,34359,industry_comparison
+2012,T.J. Moon,RB,1984,3,77.77272727272728,,2.0,5.4,"Stone Mountain, GA",Stephenson,GA,109522,industry_comparison
+2012,Darik Dillard,RB,1986,3,77.77272727272728,,2.0,5.4,"San Antonio, TX",MacArthur,TX,30065,industry_comparison
+2012,Carnell Boyd,WR,1987,3,77.77272727272728,,2.0,5.4,"Atlanta, GA",Westlake,GA,18658,industry_comparison
+2012,Cameron Broadnax,WR,1991,3,77.77272727272728,,2.0,5.4,"Hueytown, AL",Hueytown,AL,17664,industry_comparison
+2012,Hakeem Lawrence,RB,1992,3,77.77272727272728,,2.0,5.4,"Hialeah, FL",Hialeah-Miami Lakes,FL,47351,industry_comparison
+2012,Devin Powell,QB,1995,3,77.77272727272728,,2.0,5.4,"New Orleans, LA",O Perry Walker ,LA,36172,industry_comparison
+2012,Michael Raby,TE,2000,3,77.74545454545455,,2.0,5.2,"Indianapolis, IN",North Central,IN,88235,industry_comparison
+2012,Desroy Maxwell,TE,2001,3,77.74545454545455,,2.0,5.2,"Chicago, IL",Amundsen,IL,35664,industry_comparison
+2012,John Jacob,RB,2004,3,77.71515151515152,,2.0,5.4,"Cypress, TX",Cy-Fair,TX,136605,industry_comparison
+2012,Steve Pickren,TE,2005,3,77.71515151515152,,2.0,5.4,"Pell City, AL",Pell City,AL,108795,industry_comparison
+2012,Nicholas Rothstein,ATH,2006,3,77.71428571428572,,3.0,5.5,"Portland, OR",Jesuit,OR,92188,industry_comparison
+2012,Samuel Benjamin,WR,2007,3,77.7056277056277,,2.0,5.4,"Baltimore, MD",Mount Saint Joseph,MD,104748,industry_comparison
+2012,Stephen Buckley,ATH,2008,3,77.7056277056277,,2.0,5.4,"Forney, TX",Forney,TX,108364,industry_comparison
+2012,Justice Jones,QB,2013,3,77.63030303030303,,2.0,5.3,"Patterson, LA",Patterson,LA,136794,industry_comparison
+2012,Reggie Mackey,RB,2015,3,77.56561583577712,,2.0,5.3,"Deming, NM",Deming,NM,99365,industry_comparison
+2012,Brian Cleary,QB,2016,3,77.55533596837945,,2.0,5.4,"Detroit, MI",University Of Detroit Jesuit HS,MI,14415,industry_comparison
+2012,Zach Terrell,QB,2017,3,77.55411255411255,,2.0,5.3,"Fort Wayne, IN",Homestead,IN,123101,industry_comparison
+2012,Dontez Ford,ATH,2020,3,77.54545454545455,,2.0,5.3,"McKees Rocks, PA",Sto-Rox,PA,38474,industry_comparison
+2012,Marcus Holliday,RB,2024,3,77.5,,3.0,5.5,"Memphis, TN",Frayser Middle/,TN,82754,industry_comparison
+2012,John Ursua,WR,2031,3,77.45,,,,"Saratoga Springs, UT",Cedar City,UT,63693,industry_comparison
+2012,Karson Roberts,ATH,2032,3,77.45,,,,"Houston, TX",Clear Lake,TX,71378,industry_comparison
+2012,Kevin Porche,WR,2038,3,77.4014328063241,,2.0,5.3,"Culver City, CA",Culver City,CA,74361,industry_comparison
+2012,Tay Hicklin,ATH,2040,3,77.35,,,,"Rock Hill, SC",South Pointe,SC,110659,industry_comparison
+2012,Shane Barron,WR,2041,3,77.33522727272728,,2.0,5.4,"Flint, MI",Carman-Ainsworth,MI,106375,industry_comparison
+2012,Niko Kittrell,TE,2044,3,77.31818181818181,,2.0,5.2,"Tucson, AZ",Sahuaro,AZ,93387,industry_comparison
+2012,DaSean Daniels,RB,2045,3,77.30904150197628,,2.0,5.3,"Norcross, GA",Greater Atlanta Christian School,GA,31205,industry_comparison
+2012,Jake Ganus,ATH,2046,3,77.3,,3.0,5.5,"Chelsea, AL",Chelsea,AL,146375,industry_comparison
+2012,DeAndre Liggins,WR,2047,3,77.2969696969697,,2.0,5.3,"Cypress, TX",Cy Ranch,TX,33009,industry_comparison
+2012,Zach Hammond,QB,2050,3,77.27272727272728,,2.0,5.4,"Punta Gorda, FL",Charlotte,FL,122774,industry_comparison
+2012,Isaac Fruechte,WR,2051,3,77.27272727272728,,2.0,5.4,"Caledonia, MN",Rochester Off-campus Charter,MN,49164,industry_comparison
+2012,Andrew Price,TE,2057,3,77.27272727272728,,2.0,5.4,"Blaine, WA",Blaine,WA,5323,industry_comparison
+2012,Josh Greer,QB,2062,3,77.27272727272728,,2.0,5.4,"Arlington, TX",Arlington,TX,67144,industry_comparison
+2012,Nick Reed,RB,2064,3,77.26363636363637,,2.0,5.3,"Texarkana, TX",Pleasant Grove,TX,92895,industry_comparison
+2012,George Craan,RB,2068,3,77.24675324675326,,2.0,5.2,"Concord, MA",Concord Carlisle,MA,45661,industry_comparison
+2012,Taylor Reynolds,ATH,2069,3,77.24675324675326,,2.0,5.2,"Newark, DE",Newark,DE,110875,industry_comparison
+2012,Garrett Simpson,QB,2077,3,77.08181818181819,,2.0,5.4,"The Colony, TX",The Colony,TX,45066,industry_comparison
+2012,Nick Jones,TE,2080,3,77.08181818181819,,2.0,5.4,"Brownsboro, TX",Brownsboro,TX,136821,industry_comparison
+2012,Joshua Rounds,RB,2085,3,77.04545454545455,,2.0,5.3,"New Orleans, LA",Eleanor McMain,LA,68070,industry_comparison
+2012,Warren Leapheart,WR,2086,3,77.04545454545455,,2.0,5.3,"Morrilton, AR",Morrilton,AR,120181,industry_comparison
+2012,Daz Patterson,RB,2095,3,76.9969696969697,,2.0,5.3,"Plant City, FL",Plant City,FL,32723,industry_comparison
+2012,Craig Leonard,QB,2099,3,76.92857142857143,,,,"Fort Collins, CO",Fossil Ridge,CO,26889,industry_comparison
+2012,Colin Reardon,QB,2100,3,76.9,,,,"Youngstown, OH",Poland Seminary,OH,25073,industry_comparison
+2012,Duke Anyanwu,TE,2108,3,76.80952380952381,,3.0,5.5,"Minneapolis, MN",Blaine,MN,39322,industry_comparison
+2012,Leon Allen,RB,2116,3,76.77272727272728,,2.0,5.4,"Bradenton, FL",Manatee,FL,79014,industry_comparison
+2012,Jason Thompson,QB,2118,3,76.77272727272728,,2.0,5.4,"Burien, WA",Kennedy Catholic,WA,57826,industry_comparison
+2012,Michael Lindsey,ATH,2127,3,76.7056277056277,,2.0,5.4,"Elba, AL",Elba,AL,87936,industry_comparison
+2012,Damion Jones-Moore,RB,2129,3,76.66363636363637,,2.0,5.3,"Pittsburgh, PA",Central Catholic,PA,136676,industry_comparison
+2012,Troy Hawthorne,ATH,2130,3,76.64935064935065,,2.0,5.3,"Peoria, AZ",Centennial,AZ,116649,industry_comparison
+2012,Steven Long,RB,2131,3,76.59770845096932,,2.0,5.4,"Lake Oswego, OR",Lake Oswego,OR,109005,industry_comparison
+2012,Benjamin ONett,QB,2137,3,76.52380952380952,,3.0,5.5,"Washington, DC",St. John's College,DC,10147,industry_comparison
+2012,Adrian McDonald,ATH,2138,3,76.52380952380952,,3.0,5.5,"Lawton, OK",Eisenhower,OK,1700,industry_comparison
+2012,Anthony Rice,WR,2141,3,76.45021645021644,,2.0,5.2,"Mishawaka, IN",Marian,IN,6486,industry_comparison
+2012,Lamar Atkins,RB,2144,3,76.44545454545455,,2.0,5.2,"Miami, FL",Norland,FL,77589,industry_comparison
+2012,Wes Burnside,RB,2145,3,76.36437747035573,,2.0,5.2,"La Porte City, IA",Union,IA,120352,industry_comparison
+2012,MItchell Dawkins,WR,2146,3,76.36363636363636,,2.0,5.3,"Winter Park, FL",Lake Howell,FL,89953,industry_comparison
+2012,Miles Milner,ATH,2149,3,76.31818181818181,,2.0,5.2,"San Marcos, CA",Mission Hills,CA,89703,industry_comparison
+2012,Cole Gardner,TE,2150,3,76.31818181818181,,2.0,5.2,"Batavia, IL",Batavia,IL,24694,industry_comparison
+2012,Christian Rebhun,TE,2151,3,76.31818181818181,,2.0,5.2,"Englewood, CO",Cherry Creek,CO,23122,industry_comparison
+2012,Ronnie Gillespie,WR,2152,3,76.31601731601731,,2.0,5.3,"Pennsburg, PA",Upper Perkiomen,PA,102311,industry_comparison
+2012,Malcolm Robinson,WR,2154,3,76.31601731601731,,2.0,5.3,"Canton, OH",McKinley,OH,81615,industry_comparison
+2012,Kyle Hughes,RB,2155,3,76.31147656691135,,2.0,5.4,"Minneapolis, MN",Washburn,MN,136571,industry_comparison
+2012,Isaac White,WR,2159,3,76.27705627705627,,2.0,5.4,"Portsmouth, VA",I.C. Norcom,VA,49303,industry_comparison
+2012,Rex Rollins,RB,2163,3,76.27272727272728,,2.0,5.4,"Tyler, TX",Chapel Hill,TX,99723,industry_comparison
+2012,Evan Jennings,WR,2164,3,76.27272727272728,,2.0,5.4,"Tampa, FL",Hillsborough,FL,136711,industry_comparison
+2012,Kyle Faunce,QB,2179,3,76.10350790513834,,2.0,5.2,"Indianapolis, IN",Warren Central,IN,76578,industry_comparison
+2012,Anthony Scarcelli,WR,2181,3,76.04545454545455,,2.0,5.3,"Marine City, MI",Marine City,MI,6531,industry_comparison
+2012,Matt Williams,QB,2187,3,76.0,,3.0,5.5,"Geneva, IL",Geneva Community,IL,85908,industry_comparison
+2012,Damiere Shaw,WR,2195,3,75.98268398268398,,2.0,5.3,"Chester, PA",Cardinal O'Hara,PA,28618,industry_comparison
+2012,Dae'Shaun Hurley,QB,2200,3,75.81818181818181,,2.0,5.2,"Chicago, IL",Morgan Park,IL,136547,industry_comparison
+2012,Steven Franco,QB,2201,3,75.81818181818181,,2.0,5.2,"Tyrone, PA",Tyrone Area,PA,108951,industry_comparison
+2012,Devin Campbell,ATH,2205,3,75.81818181818181,,2.0,5.2,"Youngstown, OH",Boardman,OH,35943,industry_comparison
+2012,Montres Kitchens,ATH,2207,3,75.81818181818181,,2.0,5.2,"Waynesboro, GA",Burke County,GA,90326,industry_comparison
+2012,Mason Schreck,QB,2211,3,75.78354978354977,,2.0,5.2,"Medina, OH",Medina,OH,84874,industry_comparison
+2012,Brice Fackler,WR,2212,3,75.77272727272728,,2.0,5.4,"Kenton, OH",Kenton,OH,14883,industry_comparison
+2012,Joel Zoungrana,WR,2216,3,75.77272727272728,,2.0,5.4,"Boston, MA",Champlain-Lennoxville,MA,62706,industry_comparison
+2012,Alec Osborne,TE,2219,3,75.77272727272728,,2.0,5.4,"Geismar, LA",Dutchtown,LA,2677,industry_comparison
+2012,Zach Camp,WR,2222,3,75.54545454545455,,2.0,5.3,"Yulee, FL",Yulee,FL,122626,industry_comparison
+2012,LeMarcus Allen,WR,2225,3,75.54545454545455,,2.0,5.3,"New Iberia, LA",New Iberia,LA,78925,industry_comparison
+2012,Matt Johnson,QB,2226,3,75.54545454545455,,2.0,5.2,"Maiden, NC",Maiden,NC,136641,industry_comparison
+2012,Kedrick Banks,WR,2229,3,75.54545454545455,,2.0,5.3,"New Orleans, LA",McDonogh 35,LA,71746,industry_comparison
+2012,Jake Larson,QB,2230,3,75.54545454545455,,2.0,5.3,"Coppell, TX",Coppell,TX,53600,industry_comparison
+2012,David Jones,RB,2233,3,75.5,,,,"Pomfret, MD",Maurice J. McDonough,MD,136815,industry_comparison
+2012,Austin Grebe,QB,2235,3,75.45,,,,"Stafford, VA",North Stafford,VA,8410,industry_comparison
+2012,David Dudeck,WR,2237,3,75.41991341991343,,2.0,5.4,"Princeton, NJ",Hun School,NJ,31624,industry_comparison
+2012,Marquan Ellison,ATH,2246,3,75.31818181818181,,2.0,5.2,"Milwaukee, WI",Bradley Technology,WI,83915,industry_comparison
+2012,Austin Decoud,QB,2247,3,75.27272727272728,,2.0,5.4,"Redlands, CA",Redlands East Valley,CA,8324,industry_comparison
+2012,Caleb Muncrief,ATH,2249,3,75.27272727272728,,2.0,5.4,"Madill, OK",Madill,OK,17110,industry_comparison
+2012,Grant Davis,TE,2250,3,75.27272727272728,,2.0,5.4,"Humble, TX",Kingwood,TX,46433,industry_comparison
+2012,Adam Boyd,ATH,2255,3,75.26839826839827,,2.0,5.3,"Mcalester, OK",McAlester,OK,1071,industry_comparison
+2012,Conor Hundley,RB,2261,3,75.04545454545455,,2.0,5.3,"Cincinnati, OH",St. Xavier,OH,136057,industry_comparison
+2012,King Davis,QB,2263,3,75.04545454545455,,2.0,5.3,"Mesquite, TX",North Mesquite,TX,75236,industry_comparison
+2012,Brett Jordan,TE,2269,3,75.0,,3.0,5.5,"Bellaire, TX",Bellaire,TX,136451,industry_comparison
+2012,Clive Georges,WR,2270,3,75.0,,3.0,5.5,"Key West, FL",Key West,FL,24151,industry_comparison
+2012,Andrew Rodriguez,WR,2271,3,75.0,,3.0,5.5,"Allen, TX",Allen,TX,5350,industry_comparison
+2012,Judah Jones,WR,2272,3,75.0,,3.0,5.5,"Shreveport, LA",Evangel Christian Academy,LA,136830,industry_comparison
+2012,Anthony Russell,TE,2273,3,75.0,,3.0,5.5,"Daytona Beach, FL",Mainland,FL,6516,industry_comparison
+2012,Xavier Maxwell,WR,2275,3,75.0,,3.0,5.5,"Humble, TX",Humble,TX,122083,industry_comparison
+2012,Wade Edwards,RB,2278,3,74.93506493506493,,2.0,5.3,"Seffner, FL",Armwood,FL,119954,industry_comparison
+2012,Kyle Woolbright,WR,2279,3,74.92857142857143,,,,"Rancho Santa Margarita, CA",Tesoro,CA,77099,industry_comparison
+2012,Daryan Martin,TE,2284,3,74.81818181818181,,2.0,5.2,"Cincinnati, OH",Princeton,OH,31143,industry_comparison
+2012,Chris Hale,TE,2286,3,74.81818181818181,,2.0,5.2,"Atlanta, GA",Dunwoody,GA,21822,industry_comparison
+2012,Cameron Oliver,WR,2287,3,74.81818181818181,,2.0,5.2,"Richardson, TX",Canyon Creek Christian Academy,TX,18001,industry_comparison
+2012,Leon Hayes,RB,2289,3,74.7922077922078,,2.0,5.3,"Las Vegas, NV",Desert Pines,NV,79038,industry_comparison
+2012,Kyle Copeland,QB,2297,3,74.77272727272728,,2.0,5.4,"Arp, TX",Arp,TX,76508,industry_comparison
+2012,John Knight,ATH,2298,3,74.77272727272728,,2.0,5.4,"Thomasville, AL",Thomasville,AL,63315,industry_comparison
+2012,Anfornee Stewart,ATH,2300,3,74.77272727272728,,2.0,5.4,"Duluth, GA",Duluth,GA,5671,industry_comparison
+2012,Ethan Watanabe,TE,2301,3,74.77272727272728,,2.0,5.4,"San Antonio, TX",William J. Brennan,TX,43075,industry_comparison
+2012,Tony Cook,WR,2304,3,74.54545454545455,,2.0,5.3,"DeSoto, TX",DeSoto,TX,113817,industry_comparison
+2012,Daniel Montiel,TE,2306,3,74.54545454545455,,2.0,5.3,"Arlington, TX",Arlington,TX,29354,industry_comparison
+2012,Jesse Vester,ATH,2310,3,74.45021645021644,,2.0,5.2,"Stillwater, OK",Stillwater,OK,61331,industry_comparison
+2012,Jordan Gray,TE,2312,3,74.38961038961038,,2.0,5.2,"Fort Worth, TX",Trimble Technical,TX,146373,industry_comparison
+2012,C.J. Williams,RB,2313,3,74.31818181818181,,2.0,5.2,"Towson, MD",Calvert Hall College,MD,16518,industry_comparison
+2012,Bryan Green,RB,2314,3,74.31818181818181,,2.0,5.2,"Farmington, MI",Farmington,MI,15454,industry_comparison
+2012,Spencer McInnis,ATH,2318,3,74.31818181818181,,2.0,5.2,"West Bloomfield, MI",St. Mary's,MI,108012,industry_comparison
+2012,Rex Dausin,QB,2319,3,74.27272727272728,,2.0,5.4,"San Antonio, TX",Warren,TX,99711,industry_comparison
+2012,Imani Davis,RB,2320,3,74.27272727272728,,2.0,5.4,"Miami, FL",Belen Jesuit Prep,FL,49014,industry_comparison
+2012,Drew Hare,QB,2324,3,74.27272727272728,,2.0,5.4,"O'Fallon, MO",Ft. Zumwalt West,MO,39046,industry_comparison
+2012,Jody Webb,RB,2325,3,74.27272727272728,,2.0,5.4,"Toledo, OH",Whitmer,OH,61987,industry_comparison
+2012,Charles Jones,RB,2328,3,74.27272727272728,,2.0,5.4,"Mandeville, LA",Mandeville,LA,136835,industry_comparison
+2012,Chris Gilchrist,WR,2342,3,74.27272727272728,,2.0,5.4,"Covina, CA",Charter Oak,CA,21773,industry_comparison
+2012,Steven Braddy,RB,2344,3,74.04545454545455,,2.0,5.3,"Miami, FL",John A. Ferguson Senior,FL,108893,industry_comparison
+2012,Tom Thornton,QB,2352,3,73.85714285714285,,,,"Tempe, AZ",Marcos De Niza,AZ,113475,industry_comparison
+2012,Ben Arnold,TE,2357,3,73.81818181818181,,2.0,5.2,"Saint Louis, MO",Webster Groves,MO,9586,industry_comparison
+2012,Derek McCartney,TE,2359,3,73.81818181818181,,2.0,5.2,"Arvada, CO",Faith Christian Academy,CO,34762,industry_comparison
+2012,Cal Bloom,TE,2360,3,73.81818181818181,,2.0,5.2,"Osseo, MN",Osseo,MN,16829,industry_comparison
+2012,Eric Nzeocha,ATH,2361,3,73.78571428571428,,,,Neusitz,FOS Ansbach,,42301,industry_comparison
+2012,Brian Grove,RB,2365,3,73.54545454545455,,2.0,5.3,"West Palm Beach, FL",The King's Academy,FL,14529,industry_comparison
+2012,Jimmy Threat,RB,2366,3,73.54545454545455,,2.0,5.3,"Pensacola, FL",Pensacola,FL,61814,industry_comparison
+2012,Marcus Davis,WR,2367,3,73.54545454545455,,2.0,5.3,"Dublin, OH",Dublin Coffman,OH,82606,industry_comparison
+2012,Jared Joyner,RB,2380,3,73.54545454545455,,2.0,5.3,"Pompano Beach, FL",Coral Springs,FL,136837,industry_comparison
+2012,Josh Orsino,ATH,2382,3,73.54545454545455,,2.0,5.3,"Fort Lauderdale, FL",Westminster Academy,FL,67431,industry_comparison
+2012,Davon Henry,ATH,2388,3,73.54545454545455,,2.0,5.3,"Austin, TX",Hyde Park Baptist School,TX,32445,industry_comparison
+2012,Cory Callicutt,WR,2389,3,73.54545454545455,,2.0,5.3,"Dallas, TX",South Oak Cliff,TX,26595,industry_comparison
+2012,Michael Parrotta,ATH,2390,3,73.54545454545455,,2.0,5.3,"Ponte Vedra Beach, FL",Ponte Vedra,FL,88179,industry_comparison
+2012,Malik Rodriguez,WR,2393,3,73.31818181818181,,2.0,5.2,"Brooklyn, NY",Brooklyn Preparatory,NY,81981,industry_comparison
+2012,Jordan Reid,WR,2399,3,73.31818181818181,,2.0,5.2,"Lilburn, GA",Parkview,GA,65936,industry_comparison
+2012,Austin Smaha,RB,2400,3,73.31818181818181,,2.0,5.2,"Belvidere, IL",Belvidere North,IL,8715,industry_comparison
+2012,Harold Moleni,TE,2404,3,73.28138528138528,,,4.9,"Salt Lake City, UT",Mormon Mission,UT,47525,industry_comparison
+2012,Josh Smith,WR,2409,3,72.81818181818181,,2.0,5.2,"Cincinnati, OH",Western Hills,OH,67608,industry_comparison
+2012,Jared Johnson,WR,2416,3,72.81818181818181,,2.0,5.2,"Mooringsport, LA",Minden,LA,136643,industry_comparison
+2012,Clayton Glasper,WR,2417,3,72.81818181818181,,2.0,5.2,"Peoria, IL",Richwoods,IL,23920,industry_comparison
+2012,Jordan Johnson,RB,2420,3,72.81818181818181,,2.0,5.2,"Buffalo, NY",Sweet Home Senior,NY,136775,industry_comparison
+2012,Ahmaad Harris,WR,2422,3,72.81818181818181,,2.0,5.2,"Suwanee, GA",Peachtree Ridge,GA,1836,industry_comparison
+2012,Kaleb Moore,WR,2427,3,72.81818181818181,,2.0,5.2,"Cypress, TX",Cy-Fair,TX,70727,industry_comparison
+2012,Jarell Aaron,WR,2434,3,72.81818181818181,,2.0,5.2,"Poplarville, MS",Poplarville,MS,56873,industry_comparison
+2012,Christian Allen,RB,2445,3,72.81818181818181,,2.0,5.2,"Morgantown, WV",Morgantown,WV,22746,industry_comparison
+2012,Andrew Pratt,WR,2446,3,72.81818181818181,,2.0,5.2,"Hinckley, OH",Green,OH,5318,industry_comparison
+2012,Terry Pettis,TE,2457,3,72.81818181818181,,2.0,5.2,"Los Angeles, CA",New Langston-hughes Academy,CA,111878,industry_comparison
+2012,Cody Quon,TE,2461,3,72.81818181818181,,2.0,5.2,"Cordova, TN",St. Benedict at Auburndale,TN,24396,industry_comparison
+2012,Lincoln Howard,TE,2464,3,72.81818181818181,,2.0,5.2,"Osceola, WI",Osceola,WI,136841,industry_comparison
+2012,Brandon Moss,WR,2476,3,72.81818181818181,,2.0,5.2,"El Paso, TX",Chapin,TX,12868,industry_comparison
+2012,Jamarcus Jarvis,RB,2478,3,72.81818181818181,,2.0,5.2,"Gonzales, LA",East Ascension,LA,136843,industry_comparison
+2012,Carlos Harris,WR,2479,3,72.81818181818181,,2.0,5.2,"Frisco, TX",Frisco,TX,18522,industry_comparison
+2012,Charles Chandler,WR,2485,3,72.81818181818181,,2.0,5.2,"Columbus, OH",St. Francis DeSales,OH,20071,industry_comparison
+2012,Chris Edling,TE,2488,3,72.81818181818181,,2.0,5.2,"Corsicana, TX",Corsicana,TX,21671,industry_comparison
+2012,Jack Snowball,RB,2490,3,72.81818181818181,,2.0,5.2,"Wadsworth, OH",Wadsworth,OH,51343,industry_comparison
+2012,Jeremy Gaskins,RB,2498,3,71.7922077922078,,2.0,5.3,"Delray Beach, FL",American Heritage School Palm Beach,FL,60389,industry_comparison
+2012,Kire' Worley,QB,2499,3,71.57142857142857,,,,"Richmond, VA",Hermitage,VA,75323,industry_comparison
+2012,Chris Jenkins,ATH,2500,3,71.5,,,,"Santee, SC",Lake Marion,SC,136299,industry_comparison

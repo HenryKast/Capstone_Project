@@ -1,0 +1,4 @@
+from rookie_ppr.compile import main
+
+if __name__ == "__main__":
+    raise SystemExit(main())
