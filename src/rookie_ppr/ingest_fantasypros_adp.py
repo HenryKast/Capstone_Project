@@ -121,7 +121,6 @@ def attach_rookie_adp(players: pd.DataFrame, adp: pd.DataFrame) -> pd.DataFrame:
     (ADP file year == draft_year).
     """
     base = players[["gsis_id", "player_name", "player_name_norm", "position", "draft_year"]].copy()
-    base["ff_ecr"] = pd.NA
     base["ff_adp"] = pd.NA
     base["ff_adp_rank"] = pd.NA
     base["ff_rankings_note"] = "No FantasyPros ADP matched for rookie season."
@@ -152,7 +151,6 @@ def attach_rookie_adp(players: pd.DataFrame, adp: pd.DataFrame) -> pd.DataFrame:
         if best and best[1] >= 90:
             hit = search_pool[search_pool["player_name_norm"] == best[0]].iloc[0]
             d = row.to_dict()
-            d["ff_ecr"] = hit.get("overall_rank")
             d["ff_adp"] = hit.get("adp_avg")
             d["ff_adp_rank"] = hit.get("overall_rank")
             d["ff_rankings_note"] = (

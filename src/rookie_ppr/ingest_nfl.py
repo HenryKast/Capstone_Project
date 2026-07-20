@@ -49,14 +49,12 @@ def load_draft_picks() -> pd.DataFrame:
     keep = {
         "season": "draft_year",
         "round": "draft_round",
-        "pick": "draft_pick",
         "overall": "draft_overall",
         "team": "draft_team",
         "gsis_id": "gsis_id",
         "pfr_player_id": "pfr_player_id",
         "cfb_id": "cfb_id",
         "college": "college",
-        "category": "draft_category",
         "side": "draft_side",
         "hof": "hof",
     }
@@ -166,7 +164,6 @@ def build_rookie_fantasy(draft: pd.DataFrame, stats: pd.DataFrame, rosters: pd.D
     roster_id = next((c for c in ("gsis_id", "player_id") if c in rosters.columns), None)
 
     draft = draft.copy()
-    draft["rookie_season"] = draft["draft_year"]
 
     if not rosters.empty and roster_id and "gsis_id" in draft.columns:
         r = rosters.copy()

@@ -1,0 +1,40 @@
+# Virtual environments
+.venv/
+venv/
+env/.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Secrets / local env
+.env
+.env.*
+!.env.example
+
+# Downloaded caches (regenerable)
+data/raw/nflverse_cache/
+data/raw/cfbd_cache/
+
+# Large model artifacts (later phase)
+data/output/models/
+
+# Keep output structure, ignore generated data dumps if desired:
+# Uncomment the next two lines if you do not want compiled outputs in git:
+# data/output/*.xlsx
+# data/output/csv/

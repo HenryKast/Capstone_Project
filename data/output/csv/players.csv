@@ -1,898 +1,1002 @@
-gsis_id,pfr_player_id,player_name,player_name_norm,position,hs_class,hs_class_estimated,birth_date,draft_year,college,draft_team
-00-0030564,HopkDe00,DeAndre Hopkins,deandre hopkins,WR,2010,2010.0,1992-06-06,2013,Clemson,HOU
-00-0030521,HuntJu00,Justin Hunter,justin hunter,WR,2010,2009.0,1991-05-20,2013,Tennessee,TEN
-00-0030456,BernGi00,Giovani Bernard,giovani bernard,RB,2010,2009.0,1991-11-22,2013,North Carolina,CIN
-00-0030431,WoodRo02,Robert Woods,robert woods,WR,2010,2010.0,1992-04-10,2013,USC,BUF
-00-0030496,BellLe00,Le'Veon Bell,le veon bell,RB,2010,2010.0,1992-02-18,2013,Michigan St.,PIT
-00-0030279,AlleKe00,Keenan Allen,keenan allen,WR,2010,2010.0,1992-04-27,2013,California,SDG
-00-0030550,SandAc00,Ace Sanders,ace sanders,WR,2010,2009.0,1991-11-11,2013,South Carolina,JAX
-00-0030474,BoycJo00,Josh Boyce,josh boyce,WR,2011,2009.0,1991-05-06,2013,TCU,NWE
-00-0030497,LattMa00,Marcus Lattimore,marcus lattimore,RB,2010,,,2013,South Carolina,SFO
-00-0030085,StilKe00,Kenny Stills,kenny stills,WR,2010,2010.0,1992-04-22,2013,Oklahoma,NOR
-00-0030388,RandJo01,Joseph Randle,joseph randle,RB,2010,2009.0,1991-12-29,2013,Oklahoma St.,DAL
-00-0030414,WareSp00,Spencer Ware,spencer ware,RB,2010,2009.0,1991-11-23,2013,LSU,SEA
-00-0030415,JamiJa00,Jawan Jamison,jawan jamison,RB,2010,2009.0,1991-11-23,2013,Rutgers,WAS
-00-0030047,WilsMa02,Marquess Wilson,marquess wilson,WR,2010,2010.0,1992-09-14,2013,Washington St.,CHI
-00-0031407,BortBl00,Blake Bortles,blake bortles,QB,2010,2010.0,1992-04-28,2014,Central Florida,JAX
-00-0031325,WatkSa00,Sammy Watkins,sammy watkins,WR,2011,2011.0,1993-06-14,2014,Clemson,BUF
-00-0031408,EvanMi00,Mike Evans,mike evans,WR,2011,2011.0,1993-08-21,2014,Texas A&M,TAM
-00-0031387,EbroEr00,Eric Ebron,eric ebron,TE,2011,2011.0,1993-04-10,2014,North Carolina,DET
-00-0031235,BeckOd00,Odell Beckham Jr.,odell beckham,WR,2011,2010.0,1992-11-05,2014,LSU,NYG
-00-0031236,CookBr00,Brandin Cooks,brandin cooks,WR,2011,2011.0,1993-09-25,2014,Oregon St.,NOR
-00-0031409,ManzJo00,Johnny Manziel,johnny manziel,QB,2011,2010.0,1992-12-06,2014,Texas A&M,CLE
-00-0031359,BenjKe00,Kelvin Benjamin,kelvin benjamin,WR,2011,2009.0,1991-02-05,2014,Florida St.,CAR
-00-0031237,BridTe00,Teddy Bridgewater,teddy bridgewater,QB,2011,2010.0,1992-11-10,2014,Louisville,MIN
-00-0031418,SefeAu00,Austin Seferian-Jenkins,austin seferian jenkins,TE,2011,2010.0,1992-09-29,2014,Washington,TAM
-00-0031431,LeexMa00,Marqise Lee,marqise lee,WR,2011,2009.0,1991-11-25,2014,USC,JAX
-00-0031299,MattJo00,Jordan Matthews,jordan matthews,WR,2010,2010.0,1992-07-16,2014,Vanderbilt,PHI
-00-0031257,RichPa01,Paul Richardson,paul richardson,WR,2010,2010.0,1992-04-13,2014,Colorado,SEA
-00-0031042,AmarJa00,Jace Amaro,jace amaro,TE,2011,2010.0,1992-06-26,2014,Texas Tech,NYJ
-00-0031044,NiklTr00,Troy Niklas,troy niklas,TE,2011,2010.0,1992-09-18,2014,Notre Dame,ARI
-00-0031381,AdamDa01,Davante Adams,davante adams,WR,2011,2010.0,1992-12-24,2014,Fresno St.,GNB
-00-0031413,SankBi00,Bishop Sankey,bishop sankey,RB,2011,2010.0,1992-09-15,2014,Washington,TEN
-00-0031301,HillJe01,Jeremy Hill,jeremy hill,RB,2011,2010.0,1992-10-20,2014,LSU,CIN
-00-0031344,LatiCo00,Cody Latimer,cody latimer,WR,2011,2010.0,1992-10-10,2014,Indiana,DEN
-00-0031428,RobiAl02,Allen Robinson,allen robinson,WR,2011,2011.0,1993-08-24,2014,Penn St.,JAX
-00-0031382,LandJa00,Jarvis Landry,jarvis landry,WR,2011,2010.0,1992-11-28,2014,LSU,MIA
-00-0031302,FiedC.00,C.J. Fiedorowicz,c j fiedorowicz,TE,2010,2009.0,1991-10-22,2014,Iowa,HOU
-00-0031391,MasoTr00,Tre Mason,tre mason,RB,2011,2011.0,1993-08-06,2014,Auburn,STL
-00-0030990,HuffJo00,Josh Huff,josh huff,WR,2010,2009.0,1991-10-14,2014,Oregon,PHI
-00-0031339,MoncDo00,Donte Moncrief,donte moncrief,WR,2011,2011.0,1993-08-06,2014,Mississippi,IND
-00-0031376,McKiJe00,Jerick McKinnon,jerick mckinnon,RB,2010,2010.0,1992-05-03,2014,Georgia Southern,MIN
-00-0031384,RodgRi00,Richard Rodgers,richard rodgers,TE,2011,2010.0,1992-01-22,2014,California,GNB
-00-0031285,FreeDe00,Devonta Freeman,devonta freeman,RB,2011,2010.0,1992-03-15,2014,Florida St.,ATL
-00-0031053,SaunJa00,Jalen Saunders,jalen saunders,WR,2010,2010.0,1992-09-30,2014,Oklahoma,NYJ
-00-0031055,WillAn00,Andre Williams,andre williams,RB,2010,2010.0,1992-08-28,2014,Boston Col.,NYG
-00-0031057,CareKa00,Ka'Deem Carey,ka deem carey,RB,2011,2010.0,1992-10-30,2014,Arizona,CHI
-00-0031060,ThomDe05,De'Anthony Thomas,de anthony thomas,RB,2011,2011.0,1993-01-05,2014,Oregon,KAN
-00-0031062,WhitJa02,James White,james white,RB,2010,2010.0,1992-02-03,2014,Wisconsin,NWE
-00-0031075,BlueAl00,Alfred Blue,alfred blue,RB,2010,2009.0,1991-04-27,2014,LSU,HOU
-00-0031187,HerrRo00,Robert Herron,robert herron,WR,2010,2010.0,1992-06-02,2014,Wyoming,TAM
-00-0031078,SeasLa00,Lache Seastrunk,lache seastrunk,RB,2010,,,2014,Baylor,WAS
-00-0031189,JoneT.00,T.J. Jones,t j jones,WR,2010,2010.0,1992-07-19,2014,Notre Dame,DET
-00-0031315,HazeMa01,Matt Hazel,matt hazel,WR,2010,2010.0,1992-01-23,2014,Coastal Carolina,MIA
-00-0031023,EnunQu00,Quincy Enunwa,quincy enunwa,WR,2010,2010.0,1992-05-31,2014,Nebraska,NYJ
-00-0031085,ProsJa00,Jay Prosch,jay prosch,RB,2010,2010.0,1992-08-21,2014,Auburn,HOU
-00-0031243,JohnSt03,Storm Johnson,storm johnson,RB,2010,2010.0,1992-07-10,2014,Central Florida,JAX
-00-0031291,WrigJa03,James Wright,james wright,WR,2010,2009.0,1991-12-31,2014,LSU,CIN
-00-0031271,MillTr00,Trey Millard,trey millard,RB,2010,2009.0,1991-07-21,2014,Oklahoma,SFO
-00-0031503,WinsJa00,Jameis Winston,jameis winston,QB,2012,2012.0,1994-01-06,2015,Florida St.,TAM
-00-0032268,MariMa01,Marcus Mariota,marcus mariota,QB,2011,2011.0,1993-10-30,2015,Oregon,TEN
-00-0031544,CoopAm00,Amari Cooper,amari cooper,WR,2012,2012.0,1994-06-17,2015,Alabama,OAK
-00-0031545,WhitKe00,Kevin White,kevin white,WR,2011,2010.0,1992-06-25,2015,West Virginia,CHI
-00-0032241,GurlTo01,Todd Gurley,todd gurley,RB,2012,2012.0,1994-08-03,2015,Georgia,STL
-00-0031547,ParkDe01,DeVante Parker,devante parker,WR,2011,2011.0,1993-01-20,2015,Louisville,MIA
-00-0032144,GordMe00,Melvin Gordon,melvin gordon,RB,2011,2011.0,1993-04-13,2015,Wisconsin,SDG
-00-0031549,AghoNe00,Nelson Agholor,nelson agholor,WR,2012,2011.0,1993-05-24,2015,USC,PHI
-00-0032054,PerrBr02,Breshad Perriman,breshad perriman,WR,2011,2011.0,1993-09-10,2015,Central Florida,BAL
-00-0032208,DorsPh00,Phillip Dorsett,phillip dorsett,WR,2011,2011.0,1993-01-05,2015,Miami (FL),IND
-00-0032209,YeldT.00,T.J. Yeldon,t j yeldon,RB,2012,2011.0,1993-10-02,2015,Alabama,JAX
-00-0031934,SmitDe04,Devin Smith,devin smith,WR,2011,2010.0,1992-03-03,2015,Ohio St.,NYJ
-00-0032218,GreeDo00,Dorial Green-Beckham,dorial green beckham,WR,2012,2011.0,1993-04-12,2015,Oklahoma,TEN
-00-0032055,FuncDe00,Devin Funchess,devin funchess,WR,2012,2012.0,1994-05-21,2015,Michigan,CAR
-00-0032104,AbduAm00,Ameer Abdullah,ameer abdullah,RB,2011,2011.0,1993-06-13,2015,Nebraska,DET
-00-0031558,WillMa04,Maxx Williams,maxx williams,TE,2012,2012.0,1994-04-12,2015,Minnesota,BAL
-00-0032211,LockTy00,Tyler Lockett,tyler lockett,WR,2011,2010.0,1992-09-28,2015,Kansas St.,SEA
-00-0031560,StroJa01,Jaelen Strong,jaelen strong,WR,2012,2012.0,1994-01-25,2015,Arizona St.,HOU
-00-0032058,ColeTe01,Tevin Coleman,tevin coleman,RB,2012,2011.0,1993-04-16,2015,Indiana,ATL
-00-0032128,ConlCh00,Chris Conley,chris conley,WR,2011,2010.0,1992-10-25,2015,Georgia,KAN
-00-0032257,JohnDu00,Duke Johnson,duke johnson,RB,2012,2011.0,1993-09-23,2015,Miami (FL),CLE
-00-0032214,KrofTy00,Tyler Kroft,tyler kroft,TE,2011,2010.0,1992-10-15,2015,Rutgers,CIN
-00-0032166,CoatSa00,Sammie Coates,sammie coates,WR,2011,2011.0,1993-03-31,2015,Auburn,PIT
-00-0032245,MannSe00,Sean Mannion,sean mannion,QB,2010,2010.0,1992-04-25,2015,Oregon St.,STL
-00-0032227,HeueJe00,Jeff Heuerman,jeff heuerman,TE,2011,2010.0,1992-11-24,2015,Ohio St.,DEN
-00-0032200,MontTy01,Ty Montgomery,ty montgomery,WR,2011,2011.0,1993-01-22,2015,Stanford,GNB
-00-0031939,JoneMa04,Matt Jones,matt jones,RB,2012,2011.0,1993-03-07,2015,Florida,WAS
-00-0031941,CrowJa00,Jamison Crowder,jamison crowder,WR,2011,2011.0,1993-06-17,2015,Duke,WAS
-00-0031569,LangJe00,Jeremy Langford,jeremy langford,RB,2010,2009.0,1991-12-06,2015,Michigan St.,CHI
-00-0032130,FowlJa00,Jalston Fowler,jalston fowler,RB,2010,2008.0,1990-07-26,2015,Alabama,TEN
-00-0032062,BellBl00,Blake Bell,blake bell,TE,2010,2009.0,1991-08-07,2015,Oklahoma,SFO
-00-0031577,AlleJa01,Javorius Allen,javorius allen,RB,2011,2009.0,1991-08-27,2015,USC,BAL
-00-0032063,DaviMi01,Mike Davis,mike davis,RB,2012,2011.0,1993-02-19,2015,South Carolina,SFO
-00-0032133,CobbDa00,David Cobb,david cobb,RB,2011,2011.0,1993-06-03,2015,Minnesota,TEN
-00-0032170,GreeRa00,Rashad Greene,rashad greene,WR,2011,2010.0,1992-09-23,2015,Florida St.,JAX
-00-0031585,PruiMy00,MyCole Pruitt,mycole pruitt,TE,2010,2010.0,1992-03-24,2015,Southern Illinois,MIN
-00-0031588,DiggSt00,Stefon Diggs,stefon diggs,WR,2012,2011.0,1993-11-29,2015,Maryland,MIN
-00-0031589,HundBr00,Brett Hundley,brett hundley,QB,2011,2011.0,1993-06-15,2015,UCLA,GNB
-00-0031590,AjayJa00,Jay Ajayi,jay ajayi,RB,2011,2011.0,1993-06-15,2015,Boise St.,MIA
-00-0032152,WillKa01,Karlos Williams,karlos williams,RB,2011,2011.0,1993-05-04,2015,Florida St.,BUF
-00-0031594,LippTo00,Tony Lippett,tony lippett,WR,2010,2010.0,1992-07-02,2015,Michigan St.,MIA
-00-0032134,UzomC.00,C.J. Uzomah,c j uzomah,TE,2011,2011.0,1993-01-14,2015,Auburn,CIN
-00-0032112,NelsJJ00,JJ Nelson,jj nelson,WR,2010,2010.0,1992-04-24,2015,Ala-Birmingham,ARI
-00-0032135,JameJe00,Jesse James,jesse james,TE,2012,2012.0,1994-06-04,2015,Penn St.,PIT
-00-0032113,BellKe02,Kenny Bell,kenny bell,WR,2010,2010.0,1992-02-25,2015,Nebraska,TAM
-00-0031595,BurtMi00,Michael Burton,michael burton,RB,2010,2010.0,1992-02-01,2015,Rutgers,DET
-00-0031598,BoylNi00,Nick Boyle,nick boyle,TE,2011,2011.0,1993-02-17,2015,Delaware,BAL
-00-0031951,O'ShJa00,James O'Shaughnessy,james o shaughnessy,TE,2010,2010.0,1992-01-14,2015,Illinois St.,KAN
-00-0031600,MumpKe00,Keith Mumphery,keith mumphery,WR,2010,2010.0,1992-06-05,2015,Michigan St.,HOU
-00-0032115,ClayKa00,Kaelin Clay,kaelin clay,WR,2010,2010.0,1992-01-02,2015,Utah,TAM
-00-0031953,DaviGe00,Geremy Davis,geremy davis,WR,2010,2010.0,1992-01-10,2015,Connecticut,NYG
-00-0031954,SpenEv00,Evan Spencer,evan spencer,WR,2011,2011.0,1993-05-26,2015,Ohio St.,WAS
-00-0032117,OLeaNi00,Nick O'Leary,nick o leary,TE,2011,2010.0,1992-08-31,2015,Florida St.,BUF
-00-0032068,JohnMa06,Malcolm Johnson,malcolm johnson,TE,2010,2010.0,1992-08-11,2015,Mississippi St.,CLE
-00-0031533,TelfRa00,Randall Telfer,randall telfer,TE,2010,2010.0,1992-05-16,2015,USC,CLE
-,SassBu00,Bud Sasser,bud sasser,WR,2010,,,2015,Missouri,STL
-00-0031610,WallDa01,Darren Waller,darren waller,WR,2011,2010.0,1992-09-13,2015,Georgia Tech,BAL
-00-0031611,RobiJo02,Josh Robinson,josh robinson,RB,2011,2010.0,1992-08-24,2015,Mississippi St.,IND
-00-0031612,RipkAa00,Aaron Ripkowski,aaron ripkowski,RB,2010,2010.0,1992-12-20,2015,Oklahoma,GNB
-00-0031617,BackKe00,Kennard Backman,kennard backman,TE,2011,2011.0,1993-02-26,2015,Ala-Birmingham,GNB
-00-0032120,SterNe00,Neal Sterling,neal sterling,WR,2010,2010.0,1992-01-14,2015,Monmouth,JAX
-00-0032139,KoyaBe00,Ben Koyack,ben koyack,TE,2011,2011.0,1993-04-09,2015,Notre Dame,JAX
-00-0031959,MurpMa03,Marcus Murphy,marcus murphy,RB,2010,2009.0,1991-10-03,2015,Missouri,NOR
-00-0032070,LewiDe02,Dezmin Lewis,dezmin lewis,WR,2010,2010.0,1992-12-05,2015,Central Arkansas,BUF
-00-0031625,HillKe01,Kenny Hilliard,kenny hilliard,RB,2011,2009.0,1991-10-03,2015,LSU,HOU
-00-0031962,AlfoMa00,Mario Alford,mario alford,WR,2010,2010.0,1992-02-25,2015,West Virginia,CIN
-00-0032123,McBrTr00,Tre McBride,tre mcbride,WR,2010,2010.0,1992-12-01,2015,William & Mary,TEN
-00-0032141,SwaiGe00,Geoff Swaim,geoff swaim,TE,2011,2011.0,1993-09-16,2015,Texas,DAL
-00-0032156,SiemTr00,Trevor Siemian,trevor siemian,QB,2010,2009.0,1991-12-26,2015,Northwestern,DEN
-00-0032072,AndeRo01,Rory Anderson,rory anderson,TE,2011,,,2015,South Carolina,SFO
-00-0032190,ChriGe00,Gerald Christian,gerald christian,TE,2010,2009.0,1991-08-26,2015,Louisville,ARI
-00-0033106,GoffJa00,Jared Goff,jared goff,QB,2013,2012.0,1994-10-14,2016,California,LAR
-00-0032950,WentCa00,Carson Wentz,carson wentz,QB,2010,2010.0,1992-12-30,2016,North Dakota St.,PHI
-00-0033045,ElliEz00,Ezekiel Elliott,ezekiel elliott,RB,2013,2013.0,1995-07-22,2016,Ohio St.,DAL
-00-0032966,ColeCo00,Corey Coleman,corey coleman,WR,2012,2012.0,1994-07-06,2016,Baylor,CLE
-00-0033127,FullWi01,Will Fuller,will fuller,WR,2013,2012.0,1994-04-16,2016,Notre Dame,HOU
-00-0032760,DoctJo00,Josh Doctson,josh doctson,WR,2010,2010.0,1992-12-03,2016,TCU,WAS
-00-0032951,TreaLa00,Laquon Treadwell,laquon treadwell,WR,2013,2013.0,1995-06-14,2016,Mississippi,MIN
-00-0033108,LyncPa00,Paxton Lynch,paxton lynch,QB,2012,2012.0,1994-02-12,2016,Memphis,DEN
-00-0033090,HenrHu00,Hunter Henry,hunter henry,TE,2013,2012.0,1994-12-07,2016,Arkansas,SDG
-00-0032385,ShepSt00,Sterling Shepard,sterling shepard,WR,2012,2011.0,1993-02-10,2016,Oklahoma,NYG
-00-0032764,HenrDe00,Derrick Henry,derrick henry,RB,2013,2012.0,1994-01-04,2016,Alabama,TEN
-00-0032765,ThomMi05,Michael Thomas,michael thomas,WR,2011,2011.0,1993-03-03,2016,Ohio St.,NOR
-00-0032953,HackCh01,Christian Hackenberg,christian hackenberg,QB,2013,2013.0,1995-02-14,2016,Penn St.,NYJ
-00-0033009,BoydTy00,Tyler Boyd,tyler boyd,WR,2013,2012.0,1994-11-15,2016,Pittsburgh,CIN
-00-0033118,DrakKe00,Kenyan Drake,kenyan drake,RB,2012,2012.0,1994-01-26,2016,Alabama,MIA
-00-0032392,HoopAu00,Austin Hooper,austin hooper,TE,2013,2012.0,1994-10-29,2016,Stanford,ATL
-00-0033069,MillBr03,Braxton Miller,braxton miller,WR,2011,2010.0,1992-11-30,2016,Ohio St.,HOU
-00-0033060,CarrLe00,Leonte Carroo,leonte carroo,WR,2012,2012.0,1994-01-24,2016,Rutgers,MIA
-00-0032393,ProsC.00,C.J. Prosise,c j prosise,RB,2012,2012.0,1994-05-20,2016,Notre Dame,SEA
-00-0033119,BrisJa00,Jacoby Brissett,jacoby brissett,QB,2011,2010.0,1992-12-11,2016,North Carolina St.,NWE
-00-0033104,KessCo00,Cody Kessler,cody kessler,QB,2011,2011.0,1993-05-11,2016,USC,CLE
-00-0032394,VannNi00,Nick Vannett,nick vannett,TE,2011,2011.0,1993-03-06,2016,Ohio St.,SEA
-00-0032893,CookCo00,Connor Cook,connor cook,QB,2011,2011.0,1993-01-29,2016,Michigan St.,OAK
-00-0032398,MoorCh00,Chris Moore,chris moore,WR,2011,2011.0,1993-06-16,2016,Cincinnati,BAL
-00-0033110,HigbTy00,Tyler Higbee,tyler higbee,TE,2011,2011.0,1993-01-01,2016,Western Kentucky,LAR
-00-0032400,MitcMa01,Malcolm Mitchell,malcolm mitchell,WR,2011,2010.0,1992-07-20,2016,Georgia,NWE
-00-0033079,LouiRi00,Ricardo Louis,ricardo louis,WR,2012,2012.0,1994-03-23,2016,Auburn,CLE
-00-0033111,CoopPh00,Pharoh Cooper,pharoh cooper,WR,2013,2013.0,1995-03-07,2016,South Carolina,LAR
-00-0032404,ErviTy00,Tyler Ervin,tyler ervin,RB,2011,2011.0,1993-10-07,2016,San Jose St.,HOU
-00-0032775,RobiDe01,Demarcus Robinson,demarcus robinson,WR,2013,2012.0,1994-09-21,2016,Florida,KAN
-00-0032411,DixoKe00,Kenneth Dixon,kenneth dixon,RB,2012,2012.0,1994-01-21,2016,Louisiana Tech,BAL
-00-0033077,PresDa01,Dak Prescott,dak prescott,QB,2011,2011.0,1993-07-29,2016,Mississippi St.,DAL
-00-0032972,BookDe00,Devontae Booker,devontae booker,RB,2010,2010.0,1992-05-27,2016,Utah,DEN
-00-0033080,DevaSe00,Seth Devalve,seth devalve,TE,2011,2011.0,1993-01-29,2016,Princeton,CLE
-00-0033098,JoneCa01,Cardale Jones,cardale jones,QB,2011,2010.0,1992-09-29,2016,Ohio St.,BUF
-00-0032778,SharTa00,Tajae Sharpe,tajae sharpe,WR,2012,2012.0,1994-12-23,2016,Massachusetts,TEN
-00-0032940,WashDe00,DeAndre Washington,deandre washington,RB,2011,2011.0,1993-02-22,2016,Texas Tech,OAK
-00-0032417,PerkPa00,Paul Perkins,paul perkins,RB,2012,2012.0,1994-11-16,2016,UCLA,NYG
-00-0032780,HowaJo00,Jordan Howard,jordan howard,RB,2013,2012.0,1994-11-02,2016,Indiana,CHI
-00-0032782,SmalWe00,Wendell Smallwood,wendell smallwood,RB,2013,2012.0,1994-01-20,2016,West Virginia,PHI
-00-0032974,PaytJo00,Jordan Payton,jordan payton,WR,2012,2011.0,1993-09-01,2016,UCLA,CLE
-00-0032975,WillJo07,Jonathan Williams,jonathan williams,RB,2012,2012.0,1994-02-02,2016,Arkansas,BUF
-00-0032784,HogaKe00,Kevin Hogan,kevin hogan,QB,2011,2010.0,1992-10-20,2016,Stanford,KAN
-00-0032423,DaviTr03,Trevor Davis,trevor davis,WR,2011,2011.0,1993-07-04,2016,California,GNB
-00-0033040,HillTy00,Tyreek Hill,tyreek hill,WR,2012,2012.0,1994-03-01,2016,West Alabama,KAN
-00-0032426,CollAl00,Alex Collins,alex collins,RB,2013,2012.0,1994-08-26,2016,Arkansas,SEA
-00-0032977,HiggRa00,Rashard Higgins,rashard higgins,WR,2013,2012.0,1994-10-07,2016,Colorado St.,CLE
-00-0032956,JanoAn00,Andy Janovich,andy janovich,RB,2011,2011.0,1993-05-23,2016,Nebraska,DEN
-00-0033112,HemiTe00,Temarrick Hemingway,temarrick hemingway,TE,2011,2011.0,1993-07-30,2016,South Carolina St.,LAR
-00-0032341,BoehMo00,Moritz Boehringer,moritz boehringer,WR,2011,2011.0,1993-10-16,2016,,MIN
-00-0033078,ReynKe00,Keenan Reynolds,keenan reynolds,RB,2011,2011.0,1993-12-13,2016,Navy,BAL
-00-0032429,AdamJe01,Jerell Adams,jerell adams,TE,2011,2010.0,1992-12-31,2016,South Carolina,NYG
-00-0032791,GranJa00,Jakeem Grant,jakeem grant,WR,2011,2010.0,1992-10-30,2016,Texas Tech,MIA
-00-0032792,SudfNa00,Nate Sudfeld,nate sudfeld,QB,2012,2011.0,1993-10-07,2016,Indiana,WAS
-00-0032430,MorgDa01,David Morgan,david morgan,TE,2011,2011.0,1993-05-19,2016,Texas-San Antonio,MIN
-00-0032431,RudoJa00,Jake Rudock,jake rudock,QB,2011,2011.0,1993-01-21,2016,Michigan,DET
-00-0032957,ListKo00,Kolby Listenbee,kolby listenbee,WR,2012,2012.0,1994-01-25,2016,TCU,BUF
-00-0032794,VitaDa00,Danny Vitale,danny vitale,RB,2012,2011.0,1993-10-26,2016,Northwestern,TAM
-00-0032897,WattDe00,Derek Watt,derek watt,RB,2011,2010.0,1992-11-07,2016,Wisconsin,SDG
-00-0032795,CoreCo00,Cody Core,cody core,WR,2012,2012.0,1994-04-17,2016,Mississippi,CIN
-00-0032434,AlleBr00,Brandon Allen,brandon allen,QB,2011,2010.0,1992-09-05,2016,Arkansas,JAX
-00-0033114,ThomMi04,Mike Thomas,mike thomas,WR,2012,2012.0,1994-08-16,2016,Southern Miss,LAR
-00-0032436,DrisJe00,Jeff Driskel,jeff driskel,QB,2011,2011.0,1993-04-23,2016,Louisiana Tech,SFO
-00-0032440,TaylKe01,Kelvin Taylor,kelvin taylor,RB,2013,2011.0,1993-09-28,2016,Florida,SFO
-00-0032441,BurbAa00,Aaron Burbridge,aaron burbridge,WR,2012,2011.0,1993-12-23,2016,Michigan St.,SFO
-00-0033049,JackDa01,Darius Jackson,darius jackson,RB,2011,2011.0,1993-12-01,2016,Eastern Michigan,DAL
-00-0033054,GathRi00,Rico Gathers,rico gathers,TE,2012,2012.0,1994-01-07,2016,Baylor,DAL
-00-0032446,DougBr00,Brandon Doughty,brandon doughty,QB,2010,2009.0,1991-10-06,2016,Western Kentucky,MIA
-00-0032447,LuciDe00,Devin Lucien,devin lucien,WR,2011,2011.0,1993-06-26,2016,Arizona St.,NWE
-00-0032365,AyerDe00,Demarcus Ayers,demarcus ayers,WR,2012,2012.0,1994-07-07,2016,Houston,PIT
-00-0032801,BravDa00,Daniel Braverman,daniel braverman,WR,2012,2011.0,1993-09-28,2016,Western Michigan,CHI
-00-0033061,DuarTh00,Thomas Duarte,thomas duarte,TE,2013,2013.0,1995-03-30,2016,UCLA,MIA
-00-0032450,WashDw00,Dwayne Washington,dwayne washington,RB,2012,2012.0,1994-04-24,2016,Washington,DET
-00-0032804,LascDa00,Daniel Lasco,daniel lasco,RB,2011,2010.0,1992-10-09,2016,California,NOR
-00-0032451,FullDe00,Devin Fuller,devin fuller,WR,2012,2012.0,1994-01-29,2016,UCLA,ATL
-00-0032959,PeakCh00,Charone Peake,charone peake,WR,2011,2010.0,1992-10-16,2016,Clemson,NYJ
-00-0032806,MarsKe00,Keith Marshall,keith marshall,RB,2012,2012.0,1994-02-16,2016,Georgia,WAS
-00-0032453,LawlKe00,Kenny Lawler,kenny lawler,WR,2012,2012.0,1994-06-25,2016,California,SEA
-00-0032808,BrooZa00,Zac Brooks,zac brooks,RB,2012,2011.0,1993-02-01,2016,Clemson,SEA
-00-0032900,SandBe00,Beau Sandland,beau sandland,TE,2011,2011.0,1993-02-23,2016,Montana St.,CAR
-00-0033869,TrubMi00,Mitchell Trubisky,mitchell trubisky,QB,2013,2012.0,1994-08-20,2017,North Carolina,CHI
-00-0033856,FourLe00,Leonard Fournette,leonard fournette,RB,2014,2013.0,1995-01-18,2017,LSU,JAX
-00-0033871,DaviCo03,Corey Davis,corey davis,WR,2013,2013.0,1995-01-11,2017,Western Michigan,TEN
-00-0033536,WillMi07,Mike Williams,mike williams,WR,2013,2012.0,1994-10-04,2017,Clemson,LAC
-00-0033280,McCaCh01,Christian McCaffrey,christian mccaffrey,RB,2014,2014.0,1996-06-07,2017,Stanford,CAR
-00-0033460,RossJo00,John Ross,john ross,WR,2013,2013.0,1995-11-27,2017,Washington,CIN
-00-0033873,MahoPa00,Patrick Mahomes,patrick mahomes,QB,2014,2013.0,1995-09-17,2017,Texas Tech,KAN
-00-0033537,WatsDe00,Deshaun Watson,deshaun watson,QB,2014,2013.0,1995-09-14,2017,Clemson,HOU
-00-0033879,HowaO.00,O.J. Howard,o j howard,TE,2013,2012.0,1994-11-18,2017,Alabama,TAM
-00-0033881,EngrEv00,Evan Engram,evan engram,TE,2013,2012.0,1994-09-02,2017,Mississippi,NYG
-00-0033885,NjokDa00,David Njoku,david njoku,TE,2014,2014.0,1996-07-10,2017,Miami (FL),CLE
-00-0033891,JoneZa00,Zay Jones,zay jones,WR,2013,2013.0,1995-03-30,2017,East Carolina,BUF
-00-0033282,SamuCu00,Curtis Samuel,curtis samuel,WR,2014,2014.0,1996-08-11,2017,Ohio St.,CAR
-00-0033893,CookDa01,Dalvin Cook,dalvin cook,RB,2014,2013.0,1995-08-10,2017,Florida St.,MIN
-00-0033895,EverGe00,Gerald Everett,gerald everett,TE,2012,2012.0,1994-06-25,2017,South Alabama,LAR
-00-0033896,ShahAd00,Adam Shaheen,adam shaheen,TE,2012,2012.0,1994-10-24,2017,Ashland,CHI
-00-0033897,MixoJo00,Joe Mixon,joe mixon,RB,2014,2014.0,1996-07-24,2017,Oklahoma,CIN
-00-0033899,KizeDe00,DeShone Kizer,deshone kizer,QB,2014,2014.0,1996-01-03,2017,Notre Dame,CLE
-00-0033857,SmitJu00,JuJu Smith-Schuster,juju smith schuster,WR,2014,2014.0,1996-11-22,2017,USC,PIT
-00-0033906,KamaAl00,Alvin Kamara,alvin kamara,RB,2013,2013.0,1995-07-25,2017,Tennessee,NOR
-00-0033908,KuppCo00,Cooper Kupp,cooper kupp,WR,2011,2011.0,1993-06-15,2017,Eastern Washington,LAR
-00-0033911,TaylTa00,Taywan Taylor,taywan taylor,WR,2013,2013.0,1995-03-02,2017,Western Kentucky,TEN
-00-0033916,StewAr00,ArDarius Stewart,ardarius stewart,WR,2013,2011.0,1993-12-08,2017,Alabama,NYJ
-00-0033919,HendCa01,Carlos Henderson,carlos henderson,WR,2013,2012.0,1994-12-19,2017,Louisiana Tech,DEN
-00-0033921,GodwCh00,Chris Godwin,chris godwin,WR,2014,2014.0,1996-02-27,2017,Penn St.,TAM
-00-0033923,HuntKa00,Kareem Hunt,kareem hunt,RB,2013,2013.0,1995-08-06,2017,Toledo,KAN
-00-0033550,WebbDa00,Davis Webb,davis webb,QB,2013,2013.0,1995-01-22,2017,California,NYG
-00-0033925,ForeDO00,D'Onta Foreman,d onta foreman,RB,2014,2014.0,1996-04-24,2017,Texas,HOU
-00-0033932,GollKe00,Kenny Golladay,kenny golladay,WR,2011,2011.0,1993-11-03,2017,Northern Illinois,DET
-00-0033933,WillCh05,Chad Williams,chad williams,WR,2012,2012.0,1994-10-19,2017,Grambling St.,ARI
-00-0033858,SmitJo01,Jonnu Smith,jonnu smith,TE,2013,2013.0,1995-08-22,2017,Florida International,TEN
-00-0033936,BeatC.00,C.J. Beathard,c j beathard,QB,2012,2011.0,1993-11-16,2017,Iowa,SFO
-00-0033553,ConnJa00,James Conner,james conner,RB,2013,2013.0,1995-05-05,2017,Pittsburgh,PIT
-00-0033937,DarbAm00,Amara Darboh,amara darboh,WR,2012,2012.0,1994-02-01,2017,Michigan,SEA
-00-0033839,WestDe00,Dede Westbrook,dede westbrook,WR,2012,2011.0,1993-11-21,2017,Oklahoma,JAX
-00-0033526,PeriSa00,Samaje Perine,samaje perine,RB,2014,2013.0,1995-09-16,2017,Oklahoma,WAS
-00-0033943,ReynJo00,Josh Reynolds,josh reynolds,WR,2013,2013.0,1995-02-16,2017,Texas A&M,LAR
-00-0033555,HollMa00,Mack Hollins,mack hollins,WR,2011,2011.0,1993-09-16,2017,North Carolina,PHI
-00-0033556,CoheTa00,Tarik Cohen,tarik cohen,RB,2013,2013.0,1995-07-26,2017,North Carolina A&T,CHI
-00-0033286,WillJo12,Joe Williams,joe williams,RB,2011,2011.0,1993-09-04,2017,Utah,SFO
-00-0033559,RobeMi01,Michael Roberts,michael roberts,TE,2012,2012.0,1994-05-07,2017,Toledo,DET
-00-0033859,MaloJo00,Josh Malone,josh malone,WR,2014,2014.0,1996-03-21,2017,Tennessee,CIN
-00-0033561,PumpDo00,Donnel Pumphrey,donnel pumphrey,RB,2013,2012.0,1994-12-06,2017,San Diego St.,PHI
-00-0033562,SwitRy00,Ryan Switzer,ryan switzer,WR,2013,2012.0,1994-11-04,2017,North Carolina,DAL
-00-0033948,WillJa06,Jamaal Williams,jamaal williams,RB,2012,2013.0,1995-04-03,2017,BYU,GNB
-00-0033949,DobbJo00,Joshua Dobbs,joshua dobbs,QB,2013,2013.0,1995-01-26,2017,Tennessee,PIT
-00-0033464,ChesJe00,Jehu Chesson,jehu chesson,WR,2012,2011.0,1993-12-20,2017,Michigan,KAN
-00-0033950,GallWa00,Wayne Gallman,wayne gallman,RB,2013,2012.0,1994-10-01,2017,Clemson,NYG
-00-0033840,HansCh00,Chad Hansen,chad hansen,WR,2013,2013.0,1995-01-18,2017,California,NYJ
-00-0033951,MackMa00,Marlon Mack,marlon mack,RB,2014,2014.0,1996-03-07,2017,South Florida,IND
-00-0033564,ButtJa00,Jake Butt,jake butt,TE,2013,2013.0,1995-07-11,2017,Michigan,DEN
-00-0033288,KittGe00,George Kittle,george kittle,TE,2012,2011.0,1993-10-09,2017,Iowa,SFO
-00-0033953,LeggJo00,Jordan Leggett,jordan leggett,TE,2013,2013.0,1995-01-31,2017,Clemson,NYJ
-00-0033528,SpriJe00,Jeremy Sprinkle,jeremy sprinkle,TE,2012,2012.0,1994-08-10,2017,Arkansas,WAS
-00-0033567,HillBr02,Brian Hill,brian hill,RB,2014,2013.0,1995-11-09,2017,Wyoming,ATL
-00-0033955,McNiJe00,Jeremy McNichols,jeremy mcnichols,RB,2014,2013.0,1995-12-26,2017,Boise St.,TAM
-00-0033573,GibsSh00,Shelton Gibson,shelton gibson,WR,2013,2013.0,1995-03-20,2017,West Virginia,PHI
-00-0033957,AdamRo01,Rodney Adams,rodney adams,WR,2013,2012.0,1994-09-15,2017,South Florida,MIN
-00-0033958,PeteNa00,Nathan Peterman,nathan peterman,QB,2012,2012.0,1994-05-04,2017,Pittsburgh,BUF
-00-0033466,McKeIs00,Isaiah McKenzie,isaiah mckenzie,WR,2014,2013.0,1995-04-09,2017,Georgia,DEN
-00-0033576,SaubEr00,Eric Saubert,eric saubert,TE,2012,2012.0,1994-05-09,2017,Drake,ATL
-00-0033291,YancDe00,DeAngelo Yancey,deangelo yancey,WR,2013,2012.0,1994-11-18,2017,Purdue,GNB
-00-0033292,TaylTr02,Trent Taylor,trent taylor,WR,2013,2012.0,1994-04-30,2017,Louisiana Tech,SFO
-00-0033789,LogaT.00,T.J. Logan,t j logan,RB,2013,2012.0,1994-09-03,2017,North Carolina,ARI
-00-0033293,JoneAa00,Aaron Jones,aaron jones,RB,2013,2012.0,1994-12-02,2017,Texas-El Paso,GNB
-00-0033295,McGuEl00,Elijah McGuire,elijah mcguire,RB,2013,2012.0,1994-06-01,2017,Louisiana,NYJ
-00-0033296,ArmaAl00,Alex Armah,alex armah,RB,2012,2012.0,1994-05-17,2017,West Georgia,CAR
-00-0033966,HodgBu00,Bucky Hodges,bucky hodges,TE,2013,2013.0,1995-08-08,2017,Virginia Tech,MIN
-00-0033581,HendDe01,De'Angelo Henderson,de angelo henderson,RB,2010,2010.0,1992-11-24,2017,Coastal Carolina,DEN
-00-0033967,RogeSa00,Sam Rogers,sam rogers,RB,2011,2013.0,1995-04-12,2017,Virginia Tech,LAR
-00-0033791,WilsBr01,Brandon Wilson,brandon wilson,RB,2012,2012.0,1994-07-27,2017,Houston,CIN
-00-0033530,DaviRo00,Robert Davis,robert davis,WR,2013,2013.0,1995-04-02,2017,Georgia St.,WAS
-00-0033585,KaayBr00,Brad Kaaya,brad kaaya,QB,2014,2013.0,1995-09-03,2017,Miami (FL),DET
-00-0033968,ColeSt00,Stacy Coley,stacy coley,WR,2013,2012.0,1994-05-13,2017,Miami (FL),MIN
-00-0033589,MoorDa03,David Moore,david moore,WR,2013,2013.0,1995-01-15,2017,East Central (OK),SEA
-00-0033471,FordIs00,Isaiah Ford,isaiah ford,WR,2014,2014.0,1996-02-09,2017,Virginia Tech,MIA
-00-0033304,MaysDe00,Devante Mays,devante mays,RB,2012,2012.0,1994-05-26,2017,Utah St.,GNB
-00-0033591,BrowNo00,Noah Brown,noah brown,WR,2014,2014.0,1996-01-06,2017,Ohio St.,DAL
-00-0033796,WillMa09,Marquez Williams,marquez williams,RB,2012,2012.0,1994-07-16,2017,Miami (FL),JAX
-00-0033797,MuhaKh00,Khalfani Muhammad,khalfani muhammad,RB,2013,2012.0,1994-09-26,2017,California,TEN
-00-0033975,HoodEl00,Elijah Hood,elijah hood,RB,2014,2014.0,1996-04-22,2017,North Carolina,OAK
-00-0033305,DuprMa01,Malachi Dupre,malachi dupre,WR,2014,2013.0,1995-10-12,2017,LSU,GNB
-00-0033594,CarsCh00,Chris Carson,chris carson,RB,2013,2012.0,1994-09-16,2017,Oklahoma St.,SEA
-00-0033798,SchrMa00,Mason Schreck,mason schreck,TE,2012,2011.0,1993-11-04,2017,Buffalo,CIN
-00-0033596,DayeMa00,Matthew Dayes,matthew dayes,RB,2013,2012.0,1994-09-03,2017,North Carolina St.,CLE
-00-0033597,KellCh00,Chad Kelly,chad kelly,QB,2012,2012.0,1994-03-26,2017,Mississippi,DEN
-00-0034855,MayfBa00,Baker Mayfield,baker mayfield,QB,2013,2013.0,1995-04-14,2018,Oklahoma,CLE
-00-0034844,BarkSa00,Saquon Barkley,saquon barkley,RB,2015,2015.0,1997-02-09,2018,Penn St.,NYG
-00-0034869,DarnSa00,Sam Darnold,sam darnold,QB,2015,2015.0,1997-06-05,2018,USC,NYJ
-00-0034857,AlleJo02,Josh Allen,josh allen,QB,2014,2014.0,1996-05-21,2018,Wyoming,BUF
-00-0034343,RoseJo01,Josh Rosen,josh rosen,QB,2015,2015.0,1997-02-10,2018,UCLA,ARI
-00-0034827,MoorD.00,D.J. Moore,d j moore,WR,2015,2015.0,1997-04-14,2018,Maryland,CAR
-00-0034830,HursHa00,Hayden Hurst,hayden hurst,TE,2011,2011.0,1993-08-24,2018,South Carolina,BAL
-00-0034837,RidlCa00,Calvin Ridley,calvin ridley,WR,2015,2012.0,1994-12-20,2018,Alabama,ATL
-00-0034750,PennRa00,Rashaad Penny,rashaad penny,RB,2014,2014.0,1996-02-02,2018,San Diego St.,SEA
-00-0034845,MichSo00,Sony Michel,sony michel,RB,2014,2013.0,1995-02-17,2018,Georgia,NWE
-00-0034796,JackLa00,Lamar Jackson,lamar jackson,QB,2015,2015.0,1997-01-07,2018,Louisville,BAL
-00-0034791,ChubNi00,Nick Chubb,nick chubb,RB,2014,2013.0,1995-12-27,2018,Georgia,CLE
-00-0034816,JoneRo01,Ronald Jones II,ronald jones,RB,2015,2015.0,1997-08-03,2018,USC,TAM
-00-0034348,SuttCo00,Courtland Sutton,courtland sutton,WR,2014,2013.0,1995-10-10,2018,SMU,DEN
-00-0034829,GesiMi00,Mike Gesicki,mike gesicki,TE,2014,2013.0,1995-10-03,2018,Penn St.,MIA
-00-0034349,JohnKe06,Kerryon Johnson,kerryon johnson,RB,2015,2015.0,1997-06-30,2018,Auburn,DET
-00-0034860,PettDa00,Dante Pettis,dante pettis,WR,2014,2013.0,1995-10-23,2018,Washington,SFO
-00-0034775,KirkCh01,Christian Kirk,christian kirk,WR,2015,2014.0,1996-11-18,2018,Texas A&M,ARI
-00-0034351,GoedDa00,Dallas Goedert,dallas goedert,TE,2013,2013.0,1995-01-03,2018,South Dakota St.,PHI
-00-0034353,MillAn02,Anthony Miller,anthony miller,WR,2012,2012.0,1994-10-09,2018,Memphis,CHI
-00-0034358,GuicDe00,Derrius Guice,derrius guice,RB,2015,2015.0,1997-06-21,2018,LSU,WAS
-00-0034676,WashJa00,James Washington,james washington,WR,2014,2014.0,1996-04-02,2018,Oklahoma St.,PIT
-00-0034777,CharDJ00,DJ Chark,dj chark,WR,2014,2014.0,1996-09-23,2018,LSU,JAX
-00-0034838,FreeRo00,Royce Freeman,royce freeman,RB,2014,2014.0,1996-02-24,2018,Oregon,DEN
-00-0034771,RudoMa00,Mason Rudolph,mason rudolph,QB,2014,2013.0,1995-06-17,2018,Oklahoma St.,PIT
-00-0034764,GallMi00,Michael Gallup,michael gallup,WR,2014,2014.0,1996-03-04,2018,Colorado St.,DAL
-00-0034753,AndrMa00,Mark Andrews,mark andrews,TE,2014,2013.0,1995-09-06,2018,Oklahoma,BAL
-00-0034765,SmitTr03,Tre'Quan Smith,tre quan smith,WR,2014,2014.0,1996-01-07,2018,Central Florida,NOR
-00-0034364,AkinJo00,Jordan Akins,jordan akins,TE,2010,2010.0,1992-04-19,2018,Central Florida,HOU
-00-0034365,ThomIa00,Ian Thomas,ian thomas,TE,2016,2014.0,1996-06-06,2018,Indiana,CAR
-00-0034366,CoutKe00,Keke Coutee,keke coutee,WR,2015,2015.0,1997-01-14,2018,Texas Tech,HOU
-00-0034367,HineNy00,Nyheim Hines,nyheim hines,RB,2015,2014.0,1996-11-12,2018,North Carolina St.,IND
-00-0034772,CallAn00,Antonio Callaway,antonio callaway,WR,2015,2015.0,1997-01-09,2018,Florida,CLE
-00-0034766,HernCh00,Chris Herndon,chris herndon,TE,2014,2014.0,1996-02-23,2018,Miami (FL),NYJ
-00-0034369,LaulKy00,Kyle Lauletta,kyle lauletta,QB,2013,2013.0,1995-03-17,2018,Richmond,NYG
-00-0034679,WaltMa00,Mark Walton,mark walton,RB,2015,2015.0,1997-03-29,2018,Miami (FL),CIN
-00-0034370,HamiDa01,DaeSean Hamilton,daesean hamilton,WR,2013,2013.0,1995-03-10,2018,Penn St.,DEN
-00-0034159,DissWi00,Will Dissly,will dissly,TE,2014,2014.0,1996-07-08,2018,Washington,SEA
-00-0034798,SmytDu00,Durham Smythe,durham smythe,TE,2013,2013.0,1995-08-09,2018,Notre Dame,MIA
-00-0034378,SmitIt00,Ito Smith,ito smith,RB,2014,2013.0,1995-09-11,2018,Southern Miss,ATL
-00-0034799,BallKa00,Kalen Ballage,kalen ballage,RB,2014,2013.0,1995-12-22,2018,Arizona St.,MIA
-00-0034267,ScotJa02,Jaleel Scott,jaleel scott,WR,2013,2013.0,1995-02-23,2018,New Mexico St.,BAL
-00-0034268,MoorJM00,J'Mon Moore,j mon moore,WR,2013,2013.0,1995-05-23,2018,Missouri,GNB
-00-0034681,EdmoCh00,Chase Edmonds,chase edmonds,RB,2014,2014.0,1996-04-13,2018,Fordham,ARI
-00-0034383,SchuDa00,Dalton Schultz,dalton schultz,TE,2014,2014.0,1996-07-11,2018,Stanford,DAL
-00-0034386,WatsJu01,Justin Watson,justin watson,WR,2014,2014.0,1996-04-04,2018,Pennsylvania,TAM
-00-0034393,FumaTr00,Troy Fumagalli,troy fumagalli,TE,2013,2013.0,1995-02-17,2018,Wisconsin,DEN
-00-0034270,ConkTy00,Tyler Conklin,tyler conklin,TE,2013,2013.0,1995-07-30,2018,Central Michigan,MIN
-00-0034395,FounDa00,Daurice Fountain,daurice fountain,WR,2014,2013.0,1995-12-22,2018,Northern Iowa,IND
-00-0034271,LaslJo00,Jordan Lasley,jordan lasley,WR,2014,2014.0,1996-11-13,2018,UCLA,BAL
-00-0034331,SamuJa00,Jaylen Samuels,jaylen samuels,TE,2014,2014.0,1996-07-20,2018,North Carolina St.,PIT
-00-0034400,WilkJo01,Jordan Wilkins,jordan wilkins,RB,2013,2012.0,1994-07-18,2018,Mississippi,IND
-00-0034401,WhitMi01,Mike White,mike white,QB,2013,2013.0,1995-03-25,2018,Western Kentucky,DAL
-00-0034272,ValdMa00,Marquez Valdes-Scantling,marquez valdes scantling,WR,2013,2012.0,1994-10-10,2018,South Florida,GNB
-00-0034273,RatlDa00,Damion Ratley,damion ratley,WR,2013,2013.0,1995-04-16,2018,Texas A&M,CLE
-00-0034808,KellJo00,John Kelly,john kelly,RB,2015,2014.0,1996-10-04,2018,Tennessee,LAR
-00-0034406,CainDe00,Deon Cain,deon cain,WR,2015,2014.0,1996-08-09,2018,Clemson,IND
-00-0034407,McClRa00,Ray-Ray McCloud,ray ray mccloud,WR,2015,2014.0,1996-10-15,2018,Clemson,BUF
-00-0034409,CantDy00,Dylan Cantrell,dylan cantrell,WR,2013,2012.0,1994-06-29,2018,Texas Tech,LAC
-00-0034411,GageRu00,Russell Gage,russell gage,WR,2014,2014.0,1996-01-22,2018,LSU,ATL
-00-0034278,SmitTr04,Tremon Smith,tremon smith,WR,2014,2014.0,1996-07-20,2018,Central Arkansas,KAN
-00-0034412,FalkLu00,Luke Falk,luke falk,QB,2012,2012.0,1994-12-28,2018,Washington St.,TEN
-00-0034414,ScotBo02,Boston Scott,boston scott,RB,2013,2013.0,1995-04-27,2018,Louisiana Tech,NOR
-00-0034416,LeexTa00,Tanner Lee,tanner lee,QB,2013,2013.0,1995-02-14,2018,Nebraska,JAX
-00-0034164,CannTr00,Trenton Cannon,trenton cannon,RB,2012,2012.0,1994-07-23,2018,Virginia St.,NYJ
-00-0034279,St.BEq00,Equanimeous St. Brown,equanimeous st brown,WR,2015,2014.0,1996-09-30,2018,Notre Dame,GNB
-00-0034418,WilsCe01,Cedrick Wilson Jr.,cedrick wilson,WR,2013,2013.0,1995-11-20,2018,Boise St.,DAL
-00-0034419,BerrBr00,Braxton Berrios,braxton berrios,WR,2014,2013.0,1995-10-06,2018,Miami (FL),NWE
-00-0034420,ThomJo05,Jordan Thomas,jordan thomas,TE,2015,2014.0,1996-08-02,2018,Mississippi St.,HOU
-00-0034423,EtliDa00,Danny Etling,danny etling,QB,2013,2012.0,1994-07-22,2018,LSU,NWE
-00-0034732,McGoAl00,Alex McGough,alex mcgough,QB,2014,2013.0,1995-11-19,2018,Florida International,SEA
-00-0034426,WimsJa00,Javon Wims,javon wims,WR,2013,2012.0,1994-09-11,2018,Georgia,CHI
-00-0034427,WillDa011,David Williams,david williams,RB,2013,2012.0,1994-06-17,2018,Arkansas,DEN
-00-0034747,AtemMa00,Marcell Ateman,marcell ateman,WR,2013,2012.0,1994-09-16,2018,Oklahoma St.,OAK
-00-0034432,ScarBo01,Bo Scarbrough,bo scarbrough,RB,2014,2014.0,1996-09-29,2018,Alabama,DAL
-00-0034433,BawdNi00,Nick Bawden,nick bawden,RB,2014,2014.0,1996-06-22,2018,San Diego St.,DET
-00-0034286,JameRi00,Richie James,richie james,WR,2014,2013.0,1995-09-05,2018,Middle Tenn. St.,SFO
-00-0034438,WoodLo00,Logan Woodside,logan woodside,QB,2013,2013.0,1995-01-27,2018,Toledo,CIN
-00-0034439,IzzoRy00,Ryan Izzo,ryan izzo,TE,2014,2013.0,1995-12-21,2018,Florida St.,NWE
-00-0034440,JackJu01,Justin Jackson,justin jackson,RB,2014,2014.0,1996-04-22,2018,Northwestern,LAC
-00-0034686,TateAu00,Auden Tate,auden tate,WR,2015,2015.0,1997-02-03,2018,Florida St.,CIN
-00-0034442,ProeAu00,Austin Proehl,austin proehl,WR,2014,2013.0,1995-10-11,2018,North Carolina,BUF
-00-0034339,QuinTr00,Trey Quinn,trey quinn,WR,2014,2013.0,1995-12-07,2018,SMU,WAS
-00-0035228,MurrKy00,Kyler Murray,kyler murray,QB,2015,2015.0,1997-08-07,2019,Oklahoma,ARI
-00-0035710,JoneDa05,Daniel Jones,daniel jones,QB,2015,2015.0,1997-05-27,2019,Duke,NYG
-00-0035229,HockTJ00,T.J. Hockenson,t j hockenson,TE,2016,2015.0,1997-07-03,2019,Iowa,DET
-00-0035232,HaskDw00,Dwayne Haskins,dwayne haskins,QB,2016,2015.0,1997-05-03,2019,Ohio St.,WAS
-00-0035644,FantNo00,Noah Fant,noah fant,TE,2016,2015.0,1997-11-20,2019,Iowa,DEN
-00-0035700,JacoJo01,Josh Jacobs,josh jacobs,RB,2016,2016.0,1998-02-11,2019,Alabama,OAK
-00-0035662,BrowMa04,Marquise Brown,marquise brown,WR,2015,2015.0,1997-06-04,2019,Oklahoma,BAL
-00-0035624,HarrNK00,N'Keal Harry,n keal harry,WR,2016,2015.0,1997-12-17,2019,Arizona St.,NWE
-00-0035719,SamuDe00,Deebo Samuel,deebo samuel,WR,2014,2014.0,1996-01-15,2019,South Carolina,SFO
-00-0035704,LockDr00,Drew Lock,drew lock,QB,2015,2014.0,1996-11-10,2019,Missouri,DEN
-00-0034970,SmitIr01,Irv Smith Jr.,irv smith,TE,2016,2016.0,1998-08-09,2019,Alabama,MIN
-00-0035676,BrowAJ00,A.J. Brown,a j brown,WR,2016,2015.0,1997-06-30,2019,Mississippi,TEN
-00-0035631,SampDr00,Drew Sample,drew sample,TE,2014,2014.0,1996-04-16,2019,Washington,CIN
-00-0035243,SandMi01,Miles Sanders,miles sanders,RB,2016,2015.0,1997-05-01,2019,Penn St.,PHI
-00-0035140,HardMe00,Mecole Hardman,mecole hardman,WR,2016,2016.0,1998-03-12,2019,Georgia,KAN
-00-0035246,ArceJJ00,JJ Arcega-Whiteside,jj arcega whiteside,WR,2015,2014.0,1996-12-31,2019,Stanford,PHI
-00-0035639,CampPa00,Parris Campbell,parris campbell,WR,2014,2015.0,1997-07-16,2019,Ohio St.,IND
-00-0035527,IsabAn00,Andy Isabella,andy isabella,WR,2014,2014.0,1996-11-18,2019,Massachusetts,ARI
-00-0035640,MetcDK00,D.K. Metcalf,d k metcalf,WR,2016,2015.0,1997-12-14,2019,Mississippi,SEA
-00-0035216,JohnDi01,Diontae Johnson,diontae johnson,WR,2014,2014.0,1996-07-05,2019,Toledo,PIT
-00-0034971,HurdJa00,Jalen Hurd,jalen hurd,WR,2014,2014.0,1996-01-23,2019,Baylor,SFO
-00-0035249,OlivJo00,Josh Oliver,josh oliver,TE,2015,2015.0,1997-03-21,2019,San Jose St.,JAX
-00-0035664,HendDa00,Darrell Henderson,darrell henderson,RB,2015,2015.0,1997-08-19,2019,Memphis,LAR
-00-0035685,MontDa01,David Montgomery,david montgomery,RB,2016,2015.0,1997-06-07,2019,Iowa St.,CHI
-00-0035250,SingDe00,Devin Singletary,devin singletary,RB,2016,2015.0,1997-09-03,2019,Florida Atlantic,BUF
-00-0035671,SterJa00,Jace Sternberger,jace sternberger,TE,2015,2014.0,1996-06-26,2019,Texas A&M,GNB
-00-0035659,McLaTe00,Terry McLaurin,terry mclaurin,WR,2014,2013.0,1995-09-15,2019,Ohio St.,WAS
-00-0035660,WarrKa00,Kahale Warring,kahale warring,TE,2015,2015.0,1997-03-23,2019,San Diego St.,HOU
-00-0035657,HarrDa06,Damien Harris,damien harris,RB,2015,2015.0,1997-02-11,2019,Alabama,NWE
-00-0035703,BoykMi00,Miles Boykin,miles boykin,WR,2015,2014.0,1996-10-12,2019,Notre Dame,BAL
-00-0035689,KnoxDa00,Dawson Knox,dawson knox,TE,2014,2014.0,1996-11-14,2019,Mississippi,BUF
-00-0035251,GrieWi00,Will Grier,will grier,QB,2014,2013.0,1995-04-03,2019,West Virginia,CAR
-00-0034972,MattAl01,Alexander Mattison,alexander mattison,RB,2016,2016.0,1998-06-19,2019,Boise St.,MIN
-00-0035529,ButlHa00,Hakeem Butler,hakeem butler,WR,2015,2014.0,1996-05-16,2019,Iowa St.,ARI
-00-0035652,FinlRy00,Ryan Finley,ryan finley,QB,2013,2012.0,1994-12-26,2019,North Carolina St.,CIN
-00-0035256,LoveBr00,Bryce Love,bryce love,RB,2015,2015.0,1997-07-08,2019,Stanford,WAS
-00-0034975,HillJu00,Justice Hill,justice hill,RB,2016,2015.0,1997-11-14,2019,Oklahoma St.,BAL
-00-0035589,JennGa00,Gary Jennings Jr,gary jennings,WR,2015,2015.0,1997-03-07,2019,West Virginia,SEA
-00-0035259,WescTr00,Trevon Wesco,trevon wesco,TE,2014,2013.0,1995-09-12,2019,West Virginia,NYJ
-00-0035217,SnelBe00,Benny Snell Jr.,benny snell,RB,2016,2016.0,1998-02-27,2019,Kentucky,PIT
-00-0035590,RidlRi00,Riley Ridley,riley ridley,WR,2016,2014.0,1996-07-21,2019,Georgia,CHI
-00-0035261,PollTo00,Tony Pollard,tony pollard,RB,2015,2015.0,1997-04-30,2019,Memphis,DAL
-00-0035264,StidJa00,Jarrett Stidham,jarrett stidham,QB,2015,2014.0,1996-08-08,2019,Auburn,NWE
-00-0034981,MoreFo00,Foster Moreau,foster moreau,TE,2015,2015.0,1997-05-06,2019,LSU,OAK
-00-0035268,ArmsRy00,Ryquell Armstead,ryquell armstead,RB,2015,2014.0,1996-10-30,2019,Temple,JAX
-00-0035222,GentZa00,Zach Gentry,zach gentry,TE,2015,2014.0,1996-09-10,2019,Michigan,PIT
-00-0034983,RenfHu00,Hunter Renfrow,hunter renfrow,WR,2013,2013.0,1995-12-21,2019,Clemson,OAK
-00-0035273,OlliQa00,Qadree Ollison,qadree ollison,RB,2014,2014.0,1996-09-08,2019,Pittsburgh,ATL
-00-0035275,ScarJo00,Jordan Scarlett,jordan scarlett,RB,2015,2013.0,1995-07-08,2019,Florida,CAR
-00-0035282,SticEa00,Easton Stick,easton stick,QB,2014,2013.0,1995-09-15,2019,North Dakota St.,LAC
-00-0035283,ThorCl00,Clayton Thorson,clayton thorson,QB,2014,2013.0,1995-06-15,2019,Northwestern,PHI
-00-0035535,SlayDa01,Darius Slayton,darius slayton,WR,2015,2015.0,1997-01-12,2019,Auburn,NYG
-00-0035287,JohnKe07,KeeSean Johnson,keesean johnson,WR,2014,2014.0,1996-10-09,2019,Fresno St.,ARI
-00-0034988,SmitKa00,Kaden Smith,kaden smith,TE,2016,2015.0,1997-04-24,2019,Stanford,SFO
-00-0035289,MinsGa00,Gardner Minshew II,gardner minshew,QB,2015,2014.0,1996-05-16,2019,Washington St.,JAX
-00-0035291,WillTr06,Trayveon Williams,trayveon williams,RB,2016,2015.0,1997-10-18,2019,Texas A&M,CIN
-00-0035592,FulgTr00,Travis Fulgham,travis fulgham,WR,2013,2013.0,1995-09-13,2019,Old Dominion,DET
-00-0035537,JohnTy02,Ty Johnson,ty johnson,RB,2015,2015.0,1997-09-17,2019,Maryland,DET
-00-0035593,WinfJu00,Juwann Winfree,juwann winfree,WR,2014,2014.0,1996-09-04,2019,Colorado,DEN
-00-0034995,WillDe07,Dexter Williams,dexter williams,RB,2015,2015.0,1997-01-06,2019,Notre Dame,GNB
-00-0035146,McSoTr00,Trace McSorley,trace mcsorley,QB,2014,2013.0,1995-08-23,2019,Penn St.,BAL
-00-0035296,GreeMa02,Marcus Green,marcus green,WR,2014,2014.0,1996-08-13,2019,La-Monroe,ATL
-00-0035594,HomeTr00,Travis Homer,travis homer,RB,2016,2016.0,1998-08-07,2019,Miami (FL),SEA
-00-0035297,HarmKe00,Kelvin Harmon,kelvin harmon,WR,2016,2014.0,1996-12-15,2019,North Carolina St.,WAS
-00-0035298,MillSc01,Scott Miller,scott miller,WR,2015,2015.0,1997-07-31,2019,Bowling Green,TAM
-00-0035299,AndeRo02,Rodney Anderson,rodney anderson,RB,2015,2014.0,1996-09-12,2019,Oklahoma,CIN
-00-0035148,ThomDa06,Darwin Thompson,darwin thompson,RB,2015,2015.0,1997-02-12,2019,Utah St.,KAN
-00-0035303,WebeMi00,Mike Weber,mike weber,RB,2015,2015.0,1997-08-27,2019,Ohio St.,DAL
-00-0035304,GillCu00,Cullen Gillaspia,cullen gillaspia,RB,2013,2013.0,1995-05-12,2019,Texas A&M,HOU
-00-0035596,WhytKe00,Kerrith Whyte Jr,kerrith whyte,RB,2015,2014.0,1996-10-31,2019,Florida Atlantic,CHI
-00-0035539,NautIs00,Isaac Nauta,isaac nauta,TE,2016,2015.0,1997-05-21,2019,Georgia,DET
-00-0035308,SweeTo00,Tommy Sweeney,tommy sweeney,TE,2014,2013.0,1995-07-01,2019,Boston Col.,BUF
-00-0035309,MackAl00,Alizé Mack,aliz mack,TE,2015,2015.0,1997-03-29,2019,Notre Dame,NOR
-00-0035310,CoxxCh01,Chandler Cox,chandler cox,RB,2015,2014.0,1996-07-29,2019,Auburn,MIA
-00-0035311,GaskMy00,Myles Gaskin,myles gaskin,RB,2015,2015.0,1997-02-15,2019,Washington,MIA
-00-0035597,UrsuJo00,John Ursua,john ursua,WR,2012,2012.0,1994-01-17,2019,Hawaii,SEA
-00-0035313,GodwTe00,Terry Godwin,terry godwin,WR,2015,2014.0,1996-10-23,2019,Georgia,CAR
-00-0035002,MitcDi00,Dillon Mitchell,dillon mitchell,WR,2016,2015.0,1997-05-16,2019,Oregon,MIN
-00-0035006,JohnOl00,Olabisi Johnson,olabisi johnson,WR,2015,2015.0,1997-03-17,2019,Colorado St.,MIN
-00-0035320,WilsCa00,Caleb Wilson,caleb wilson,TE,2014,2014.0,1996-07-15,2019,UCLA,ARI
-00-0036442,BurrJo01,Joe Burrow,joe burrow,QB,2015,2014.0,1996-12-10,2020,LSU,CIN
-00-0036212,TagoTu00,Tua Tagovailoa,tua tagovailoa,QB,2017,2016.0,1998-03-02,2020,Alabama,MIA
-00-0036355,HerbJu00,Justin Herbert,justin herbert,QB,2016,2016.0,1998-03-10,2020,Oregon,LAC
-00-0036357,RuggHe00,Henry Ruggs III,henry ruggs,WR,2017,2017.0,1999-01-24,2020,Alabama,LVR
-00-0036407,JeudJe00,Jerry Jeudy,jerry jeudy,WR,2017,2017.0,1999-04-24,2020,Alabama,DEN
-00-0036358,LambCe00,CeeDee Lamb,ceedee lamb,WR,2017,2017.0,1999-04-08,2020,Oklahoma,DAL
-00-0036387,ReagJa00,Jalen Reagor,jalen reagor,WR,2017,2017.0,1999-01-02,2020,TCU,PHI
-00-0036322,JeffJu00,Justin Jefferson,justin jefferson,WR,2017,2017.0,1999-06-16,2020,LSU,MIN
-00-0036261,AiyuBr00,Brandon Aiyuk,brandon aiyuk,WR,2016,2016.0,1998-03-17,2020,Arizona St.,SFO
-00-0036264,LoveJo03,Jordan Love,jordan love,QB,2016,2016.0,1998-11-02,2020,Utah St.,GNB
-00-0036360,EdwaCl00,Clyde Edwards-Helaire,clyde edwards helaire,RB,2017,2017.0,1999-04-11,2020,LSU,KAN
-00-0036410,HiggTe00,Tee Higgins,tee higgins,WR,2017,2017.0,1999-01-18,2020,Clemson,CIN
-00-0036252,PittMi01,Michael Pittman Jr.,michael pittman,WR,2016,2015.0,1997-10-05,2020,USC,IND
-00-0036275,SwifDA00,D'Andre Swift,d andre swift,RB,2017,2017.0,1999-01-14,2020,Georgia,DET
-00-0036223,TaylJo02,Jonathan Taylor,jonathan taylor,RB,2017,2017.0,1999-01-19,2020,Wisconsin,IND
-00-0036268,ShenLa00,Laviska Shenault Jr.,laviska shenault,WR,2017,2016.0,1998-10-05,2020,Colorado,JAX
-00-0036290,KmetCo00,Cole Kmet,cole kmet,TE,2017,2017.0,1999-03-10,2020,Notre Dame,CHI
-00-0036412,HamlKJ00,KJ Hamler,kj hamler,WR,2017,2017.0,1999-07-08,2020,Penn St.,DEN
-00-0036326,ClayCh01,Chase Claypool,chase claypool,WR,2016,2016.0,1998-07-07,2020,Notre Dame,PIT
-00-0036414,AkerCa00,Cam Akers,cam akers,RB,2017,2017.0,1999-06-22,2020,Florida St.,LAR
-00-0036389,HurtJa00,Jalen Hurts,jalen hurts,QB,2016,2016.0,1998-08-07,2020,Oklahoma,PHI
-00-0036158,DobbJK00,J.K. Dobbins,j k dobbins,RB,2017,2016.0,1998-12-17,2020,Ohio St.,BAL
-00-0036415,JeffVa00,Van Jefferson,van jefferson,WR,2015,2014.0,1996-07-26,2020,Florida,LAR
-00-0036255,MimsDe00,Denzel Mims,denzel mims,WR,2016,2015.0,1997-10-10,2020,Baylor,NYJ
-00-0036265,DillAJ00,AJ Dillon,aj dillon,RB,2017,2016.0,1998-05-02,2020,Boston Col.,GNB
-00-0036328,GibsAn00,Antonio Gibson,antonio gibson,RB,2016,2016.0,1998-06-23,2020,Memphis,WAS
-00-0036450,VaugKe00,Ke'Shawn Vaughn,ke shawn vaughn,RB,2015,2015.0,1997-05-04,2020,Illinois,TAM
-00-0036364,BowdLy00,Lynn Bowden Jr.,lynn bowden,WR,2017,2015.0,1997-10-14,2020,Kentucky,LVR
-00-0036365,EdwaBr01,Bryan Edwards,bryan edwards,WR,2016,2016.0,1998-11-13,2020,South Carolina,LVR
-00-0036251,MossZa00,Zack Moss,zack moss,RB,2016,2015.0,1997-12-15,2020,Utah,BUF
-00-0036194,AsiaDe00,Devin Asiasi,devin asiasi,TE,2016,2015.0,1997-08-14,2020,UCLA,NWE
-00-0036331,DuveDe00,Devin Duvernay,devin duvernay,WR,2016,2015.0,1997-09-12,2020,Texas,BAL
-00-0036297,EvanDa02,Darrynton Evans,darrynton evans,RB,2016,2016.0,1998-07-09,2020,Appalachian St.,TEN
-00-0036332,DeguJo00,Josiah Deguara,josiah deguara,TE,2015,2015.0,1997-02-14,2020,Cincinnati,GNB
-00-0036225,KeenDa00,Dalton Keene,dalton keene,TE,2017,2017.0,1999-04-14,2020,Virginia Tech,NWE
-00-0036422,TrauAd00,Adam Trautman,adam trautman,TE,2015,2015.0,1997-02-05,2020,Dayton,NOR
-00-0036370,KellJo01,Joshua Kelley,joshua kelley,RB,2015,2015.0,1997-11-20,2020,UCLA,LAC
-00-0036232,BryaHa00,Harrison Bryant,harrison bryant,TE,2016,2016.0,1998-04-23,2020,Florida Atlantic,CLE
-00-0036423,OkwuAl00,Albert Okwuegbunam,albert okwuegbunam,TE,2016,2016.0,1998-04-25,2020,Missouri,DEN
-00-0036269,PeriLa00,La'Mical Perine,la mical perine,RB,2016,2016.0,1998-01-30,2020,Florida,NYJ
-00-0036226,EasoJa00,Jacob Eason,jacob eason,QB,2016,2015.0,1997-11-17,2020,Washington,IND
-00-0036336,McFaAn00,Anthony McFarland Jr.,anthony mcfarland,RB,2017,2017.0,1999-03-04,2020,Maryland,PIT
-00-0036301,MorgJa00,James Morgan,james morgan,QB,2015,2015.0,1997-02-28,2020,Florida International,NYJ
-00-0036196,DaviGa01,Gabe Davis,gabe davis,WR,2017,2017.0,1999-03-01,2020,Central Florida,BUF
-00-0036244,ParkCo02,Colby Parkinson,colby parkinson,TE,2017,2017.0,1999-01-07,2020,Stanford,SEA
-00-0036424,HopkBr01,Brycen Hopkins,brycen hopkins,TE,2015,2015.0,1997-03-27,2020,Purdue,LAR
-00-0036340,GandAn00,Antonio Gandy-Golden,antonio gandy golden,WR,2016,2016.0,1998-04-11,2020,Liberty,WAS
-00-0036425,DallDe00,DeeJay Dallas,deejay dallas,RB,2017,2016.0,1998-09-16,2020,Miami (FL),SEA
-00-0036377,ReedJo03,Joe Reed,joe reed,WR,2016,2016.0,1998-01-04,2020,Virginia,LAC
-00-0036427,JohnTy00,Tyler Johnson,tyler johnson,WR,2016,2016.0,1998-08-25,2020,Minnesota,TAM
-00-0036254,JohnCo01,Collin Johnson,collin johnson,WR,2016,2015.0,1997-09-23,2020,Texas,JAX
-00-0036277,CephQu00,Quintez Cephus,quintez cephus,WR,2016,2016.0,1998-04-01,2020,Wisconsin,DET
-00-0036197,FromJa00,Jake Fromm,jake fromm,QB,2017,2016.0,1998-07-30,2020,Georgia,BUF
-00-0036398,HighJo00,John Hightower,john hightower,WR,2014,2014.0,1996-05-31,2020,Boise St.,PHI
-00-0036308,CoulIs00,Isaiah Coulter,isaiah coulter,WR,2016,2016.0,1998-09-18,2020,Rhode Island,HOU
-00-0036278,HuntJa01,Jason Huntley,jason huntley,RB,2016,2016.0,1998-04-20,2020,New Mexico St.,DET
-00-0036309,MoonDa00,Darnell Mooney,darnell mooney,WR,2016,2015.0,1997-10-29,2020,Tulane,CHI
-00-0036345,OsboKJ00,K.J. Osborn,k j osborn,WR,2015,2015.0,1997-06-10,2020,Miami (FL),MIN
-00-0036233,PeopDo00,Donovan Peoples-Jones,donovan peoples jones,WR,2017,2017.0,1999-02-19,2020,Michigan,CLE
-00-0036312,LutoJa00,Jake Luton,jake luton,QB,2014,2014.0,1996-04-11,2020,Oregon St.,JAX
-00-0036429,WoerCh00,Charlie Woerner,charlie woerner,TE,2016,2015.0,1997-10-16,2020,Georgia,SFO
-00-0036271,WatkQu00,Quez Watkins,quez watkins,WR,2016,2016.0,1998-06-09,2020,Southern Miss,PHI
-00-0036133,ProcJa00,James Proche,james proche,WR,2015,2014.0,1996-09-20,2020,SMU,BAL
-00-0036250,DaviTy02,Tyler Davis,tyler davis,TE,2015,2015.0,1997-04-02,2020,Georgia Tech,JAX
-00-0036165,HodgIs00,Isaiah Hodgins,isaiah hodgins,WR,2017,2016.0,1998-10-21,2020,Oregon St.,BUF
-00-0036228,PatmDe00,Dezmon Patmon,dezmon patmon,WR,2016,2016.0,1998-08-06,2020,Washington St.,IND
-00-0036247,SwaiFr00,Freddie Swain,freddie swain,WR,2016,2016.0,1998-08-04,2020,Florida,SEA
-00-0036259,JennJa00,Jauan Jennings,jauan jennings,WR,2015,2015.0,1997-07-10,2020,Tennessee,SFO
-00-0036382,HillKJ00,K.J. Hill,k j hill,WR,2015,2015.0,1997-09-15,2020,Ohio St.,LAC
-00-0036383,BenjEn00,Eno Benjamin,eno benjamin,RB,2017,2017.0,1999-04-13,2020,Arizona St.,ARI
-,McDoCo00,Cole McDonald,cole mcdonald,QB,2016,,,2020,Hawaii,TEN
-00-0036384,DiNuBe00,Ben DiNucci,ben dinucci,QB,2015,2014.0,1996-11-24,2020,James Madison,DAL
-00-0036433,StevTo01,Tommy Stevens,tommy stevens,QB,2015,2014.0,1996-12-15,2020,Mississippi St.,NOR
-00-0036279,StanNa00,Nate Stanley,nate stanley,QB,2016,2015.0,1997-08-26,2020,Iowa,MIN
-00-0036435,CalaRa00,Raymond Calais,raymond calais,RB,2016,2016.0,1998-04-02,2020,Louisiana,TAM
-00-0036245,PerrMa00,Malcolm Perry,malcolm perry,RB,2015,2015.0,1997-04-19,2020,Navy,MIA
-00-0036438,SullSt00,Stephen Sullivan,stephen sullivan,TE,2016,2014.0,1996-11-28,2020,LSU,SEA
-00-0036439,ClevTy00,Tyrie Cleveland,tyrie cleveland,WR,2016,2015.0,1997-09-20,2020,Florida,DEN
-00-0036971,LawrTr00,Trevor Lawrence,trevor lawrence,QB,2018,2017.0,1999-10-06,2021,Clemson,JAX
-00-0037013,WilsZa00,Zach Wilson,zach wilson,QB,2018,2017.0,1999-08-03,2021,BYU,NYJ
-00-0037012,LancTr00,Trey Lance,trey lance,QB,2018,2018.0,2000-05-09,2021,North Dakota St.,SFO
-00-0036970,PittKy00,Kyle Pitts,kyle pitts,TE,2018,2018.0,2000-10-06,2021,Florida,ATL
-00-0036900,ChasJa00,Ja'Marr Chase,ja marr chase,WR,2018,2018.0,2000-03-01,2021,LSU,CIN
-00-0036613,WaddJa00,Jaylen Waddle,jaylen waddle,WR,2018,2016.0,1998-11-25,2021,Alabama,MIA
-00-0036912,SmitDe07,DeVonta Smith,devonta smith,WR,2017,2016.0,1998-11-14,2021,Alabama,PHI
-00-0036945,FielJu00,Justin Fields,justin fields,QB,2018,2017.0,1999-03-05,2021,Ohio St.,CHI
-00-0036972,JoneMa05,Mac Jones,mac jones,QB,2017,2016.0,1998-09-05,2021,Alabama,NWE
-00-0036913,ToneKa00,Kadarius Toney,kadarius toney,WR,2017,2017.0,1999-01-27,2021,Florida,NYG
-00-0036893,HarrNa00,Najee Harris,najee harris,RB,2017,2016.0,1998-03-09,2021,Alabama,PIT
-00-0036973,EtieTr00,Travis Etienne,travis etienne,RB,2017,2017.0,1999-01-26,2021,Clemson,JAX
-00-0036550,BateRa00,Rashod Bateman,rashod bateman,WR,2018,2017.0,1999-11-29,2021,Minnesota,BAL
-00-0036980,MoorEl00,Elijah Moore,elijah moore,WR,2018,2018.0,2000-03-27,2021,Mississippi,NYJ
-00-0036997,WillJa10,Javonte Williams,javonte williams,RB,2018,2018.0,2000-04-25,2021,North Carolina,DEN
-00-0036936,MoorRo02,Rondale Moore,rondale moore,WR,2018,2018.0,2000-06-09,2021,Purdue,ARI
-00-0036894,FreiPa00,Pat Freiermuth,pat freiermuth,TE,2018,2016.0,1998-10-25,2021,Penn St.,PIT
-00-0036620,EskrDW00,D'Wayne Eskridge,d wayne eskridge,WR,2016,2015.0,1997-03-23,2021,Western Michigan,SEA
-00-0036849,AtweTu00,Tutu Atwell,tutu atwell,WR,2018,2017.0,1999-10-07,2021,Louisville,LAR
-00-0036955,MarsTe00,Terrace Marshall Jr.,terrace marshall,WR,2018,2018.0,2000-06-09,2021,LSU,CAR
-00-0036928,TrasKy00,Kyle Trask,kyle trask,QB,2016,2016.0,1998-03-06,2021,Florida,TAM
-00-0036946,MondKe00,Kellen Mond,kellen mond,QB,2017,2017.0,1999-06-22,2021,Texas A&M,MIN
-00-0036898,MillDa02,Davis Mills,davis mills,QB,2017,2016.0,1998-10-21,2021,Stanford,HOU
-00-0036988,PalmJo00,Josh Palmer,josh palmer,WR,2017,2017.0,1999-09-22,2021,Tennessee,LAC
-00-0037004,LongHu00,Hunter Long,hunter long,TE,2017,2016.0,1998-08-19,2021,Boston Col.,MIA
-00-0036626,BrowDy00,Dyami Brown,dyami brown,WR,2018,2017.0,1999-11-01,2021,North Carolina,WAS
-00-0037005,TremTo00,Tommy Tremble,tommy tremble,TE,2018,2018.0,2000-06-02,2021,Notre Dame,CAR
-00-0036991,RodgAm00,Amari Rodgers,amari rodgers,WR,2017,2017.0,1999-09-23,2021,Clemson,GNB
-00-0036984,SermTr00,Trey Sermon,trey sermon,RB,2017,2017.0,1999-01-30,2021,Ohio St.,SFO
-00-0036554,CollNi00,Nico Collins,nico collins,WR,2017,2017.0,1999-03-19,2021,Michigan,HOU
-00-0036999,SchwAn00,Anthony Schwartz,anthony schwartz,WR,2018,2018.0,2000-09-05,2021,Auburn,CLE
-00-0037011,McKiTr00,Tre' McKitty,tre mckitty,TE,2017,2017.0,1999-01-12,2021,Georgia,LAC
-00-0036924,CartMi03,Michael Carter,michael carter,RB,2017,2017.0,1999-05-07,2021,North Carolina,NYJ
-00-0036627,FitzDe00,Dez Fitzpatrick,dez fitzpatrick,WR,2016,2015.0,1997-12-17,2021,Louisville,TEN
-00-0036963,StxxAm00,Amon-Ra St. Brown,amon ra st brown,WR,2018,2017.0,1999-10-24,2021,USC,DET
-00-0036842,NwanKe00,Kene Nwangwu,kene nwangwu,RB,2016,2016.0,1998-02-09,2021,Iowa St.,MIN
-00-0036875,StevRh00,Rhamondre Stevenson,rhamondre stevenson,RB,2016,2016.0,1998-02-23,2021,Oklahoma,NWE
-00-0036628,BateJo00,John Bates,john bates,TE,2016,2015.0,1997-11-06,2021,Boise St.,WAS
-00-0036555,HubbCh01,Chuba Hubbard,chuba hubbard,RB,2017,2017.0,1999-06-11,2021,Oklahoma St.,CAR
-00-0036876,GranKy00,Kylen Granson,kylen granson,TE,2016,2016.0,1998-03-27,2021,SMU,IND
-00-0036877,DardJa00,Jaelon Darden,jaelon darden,WR,2017,2017.0,1999-01-14,2021,North Texas,TAM
-00-0036630,WallTy00,Tylan Wallace,tylan wallace,WR,2017,2017.0,1999-05-13,2021,Oklahoma St.,BAL
-00-0036929,BookIa00,Ian Book,ian book,QB,2016,2016.0,1998-03-30,2021,Notre Dame,NOR
-00-0036918,HarrJa03,Jacob Harris,jacob harris,WR,2015,2015.0,1997-04-16,2021,Central Florida,LAR
-00-0036887,FarrLu00,Luke Farrell,luke farrell,TE,2016,2015.0,1997-10-14,2021,Ohio St.,JAX
-00-0036556,JordBr00,Brevin Jordan,brevin jordan,TE,2018,2018.0,2000-07-16,2021,Miami (FL),HOU
-00-0036919,GainKe00,Kenneth Gainwell,kenneth gainwell,RB,2018,2017.0,1999-03-14,2021,Memphis,PHI
-00-0036635,SmitIh00,Ihmir Smith-Marsette,ihmir smith marsette,WR,2017,2017.0,1999-08-29,2021,Iowa,MIN
-00-0036637,GrayNo00,Noah Gray,noah gray,TE,2017,2017.0,1999-04-30,2021,Duke,KAN
-00-0036640,DaviZa00,Zach Davidson,zach davidson,TE,2016,2016.0,1998-07-15,2021,Central Missouri St.,MIN
-00-0036646,FehoSi00,Simi Fehoko,simi fehoko,WR,2016,2015.0,1997-11-05,2021,Stanford,DAL
-00-0036647,PoweCo00,Cornell Powell,cornell powell,WR,2016,2015.0,1997-10-30,2021,Clemson,KAN
-00-0036565,MasoBe00,Ben Mason,ben mason,RB,2017,2017.0,1999-05-25,2021,Michigan,BAL
-00-0036951,DarbFr00,Frank Darby,frank darby,WR,2016,2015.0,1997-09-08,2021,Arizona St.,ATL
-00-0036567,MitcEl00,Elijah Mitchell,elijah mitchell,RB,2017,2016.0,1998-05-02,2021,Louisiana,SFO
-00-0036569,BrigGa00,Gary Brightwell,gary brightwell,RB,2017,2016.0,1998-02-28,2021,Arizona,NYG
-00-0036650,RounLa00,Larry Rountree,larry rountree,RB,2017,2017.0,1999-02-13,2021,Missouri,LAC
-00-0036857,EvanCh02,Chris Evans,chris evans,RB,2016,2015.0,1997-10-05,2021,Michigan,CIN
-00-0036571,StevMa00,Marquez Stevenson,marquez stevenson,WR,2016,2016.0,1998-03-26,2021,Houston,BUF
-00-0036572,SmitSh03,Shi Smith,shi smith,WR,2017,2016.0,1998-10-26,2021,South Carolina,CAR
-00-0036652,McMaRa00,Racey McMath,racey mcmath,WR,2017,2017.0,1999-06-14,2021,LSU,TEN
-00-0036858,CampJa03,Jalen Camp,jalen camp,WR,2016,2016.0,1998-07-10,2021,Georgia Tech,JAX
-00-0036654,FeltDe00,Demetric Felton,demetric felton,RB,2016,2016.0,1998-07-16,2021,UCLA,CLE
-00-0036906,HerbKh00,Khalil Herbert,khalil herbert,RB,2016,2016.0,1998-04-21,2021,Virginia Tech,CHI
-00-0036879,EhliSa00,Sam Ehlinger,sam ehlinger,QB,2017,2016.0,1998-09-30,2021,Texas,IND
-00-0036657,WillSe00,Seth Williams,seth williams,WR,2018,2018.0,2000-04-10,2021,Auburn,DEN
-00-0036907,NewsDa00,Dazz Newsome,dazz newsome,WR,2017,2017.0,1999-05-15,2021,North Carolina,CHI
-00-0036482,StraMi03,Mike Strachan,mike strachan,WR,2015,2015.0,1997-08-13,2021,Charleston (WV),IND
-00-0036860,FunkJa00,Jake Funk,jake funk,RB,2016,2016.0,1998-01-11,2021,Maryland,LAR
-00-0036536,NixoTr01,Tre Nixon,tre nixon,WR,2016,2016.0,1998-01-26,2021,Central Florida,NWE
-00-0036578,DoakGe00,Gerrid Doaks,gerrid doaks,RB,2016,2016.0,1998-06-09,2021,Cincinnati,MIA
-00-0036862,SkowBe00,Ben Skowronek,ben skowronek,WR,2016,2015.0,1997-06-27,2021,Notre Dame,LAR
-00-0036939,BakeKa00,Kawaan Baker,kawaan baker,WR,2016,2016.0,1998-08-24,2021,South Alabama,NOR
-00-0036669,HillKy00,Kylin Hill,kylin hill,RB,2017,2016.0,1998-08-18,2021,Mississippi St.,GNB
-00-0036670,JeffJe00,Jermar Jefferson,jermar jefferson,RB,2018,2018.0,2000-04-15,2021,Oregon St.,DET
-00-0036671,MilnDa00,Dax Milne,dax milne,WR,2017,2017.0,1999-06-23,2021,BYU,WAS
-00-0037238,LondDr00,Drake London,drake london,WR,2019,2019.0,2001-07-24,2022,USC,ATL
-00-0037740,WilsGa00,Garrett Wilson,garrett wilson,WR,2019,2018.0,2000-07-22,2022,Ohio St.,NYJ
-00-0037239,OlavCh00,Chris Olave,chris olave,WR,2018,2018.0,2000-06-27,2022,Ohio St.,NOR
-00-0037240,WillJa11,Jameson Williams,jameson williams,WR,2019,2019.0,2001-03-26,2022,Alabama,DET
-00-0037741,DotsJa00,Jahan Dotson,jahan dotson,WR,2018,2018.0,2000-03-22,2022,Penn St.,WAS
-00-0037742,BurkTr00,Treylon Burks,treylon burks,WR,2019,2018.0,2000-03-23,2022,Arkansas,TEN
-00-0038102,PickKe00,Kenny Pickett,kenny pickett,QB,2017,2016.0,1998-06-06,2022,Pittsburgh,PIT
-00-0038124,WatsCh00,Christian Watson,christian watson,WR,2017,2017.0,1999-05-12,2022,North Dakota St.,GNB
-00-0038120,HallBr03,Breece Hall,breece hall,RB,2019,2019.0,2001-05-31,2022,Iowa St.,NYJ
-00-0038134,WalkKe00,Kenneth Walker III,kenneth walker,RB,2019,2018.0,2000-10-20,2022,Michigan St.,SEA
-00-0038117,RobiWa01,Wan'Dale Robinson,wan dale robinson,WR,2019,2019.0,2001-01-05,2022,Kentucky,NYG
-00-0037614,MetcJo00,John Metchie,john metchie,WR,2019,2018.0,2000-07-18,2022,Alabama,HOU
-00-0038104,ThorTy00,Tyquan Thornton,tyquan thornton,WR,2018,2018.0,2000-08-07,2022,Baylor,NWE
-00-0037247,PickGe00,George Pickens,george pickens,WR,2019,2019.0,2001-03-04,2022,Georgia,PIT
-00-0037664,PierAl00,Alec Pierce,alec pierce,WR,2018,2018.0,2000-05-02,2022,Cincinnati,IND
-00-0038090,MoorSk01,Skyy Moore,skyy moore,WR,2018,2018.0,2000-09-10,2022,Western Michigan,KAN
-00-0037744,McBrTr01,Trey McBride,trey mcbride,TE,2018,2017.0,1999-11-22,2022,Colorado St.,ARI
-00-0037248,CookJa01,James Cook,james cook,RB,2018,2017.0,1999-09-25,2022,Georgia,BUF
-00-0037745,JoneVe00,Velus Jones Jr.,velus jones,WR,2016,2015.0,1997-05-11,2022,Tennessee,CHI
-00-0037755,WoodJe01,Jelani Woods,jelani woods,TE,2017,2016.0,1998-10-09,2022,Virginia,IND
-00-0038122,RiddDe00,Desmond Ridder,desmond ridder,QB,2017,2017.0,1999-08-31,2022,Cincinnati,ATL
-00-0037252,DulcGr00,Greg Dulcich,greg dulcich,TE,2018,2018.0,2000-03-26,2022,UCLA,DEN
-00-0038128,WillMa12,Malik Willis,malik willis,QB,2017,2017.0,1999-05-25,2022,Liberty,TEN
-00-0037666,TolbJa00,Jalen Tolbert,jalen tolbert,WR,2017,2017.0,1999-02-27,2022,South Alabama,DAL
-00-0037256,WhitRa01,Rachaad White,rachaad white,RB,2017,2017.0,1999-01-12,2022,Arizona St.,TAM
-00-0037827,DaviTy03,Tyrion Davis-Price,tyrion davis price,RB,2019,2018.0,2000-10-23,2022,LSU,SFO
-00-0038132,CorrMa00,Matt Corral,matt corral,QB,2018,2017.0,1999-01-31,2022,Mississippi,CAR
-00-0037746,RobiBr01,Brian Robinson Jr.,brian robinson,RB,2017,2017.0,1999-03-22,2022,Alabama,WAS
-00-0037257,BellDa02,David Bell,david bell,WR,2019,2018.0,2000-12-14,2022,Purdue,CLE
-00-0037805,RuckJe00,Jeremy Ruckert,jeremy ruckert,TE,2018,2018.0,2000-08-11,2022,Ohio St.,NYJ
-00-0037828,GrayDa02,Danny Gray,danny gray,WR,2018,2017.0,1999-04-01,2022,SMU,SFO
-00-0038129,OttoCa00,Cade Otton,cade otton,TE,2017,2017.0,1999-04-15,2022,Washington,TAM
-00-0037258,PierDa01,Dameon Pierce,dameon pierce,RB,2018,2018.0,2000-02-19,2022,Florida,HOU
-00-0038115,BellDa00,Daniel Bellinger,daniel bellinger,TE,2018,2018.0,2000-09-22,2022,San Diego St.,NYG
-00-0038040,WhitZa01,Zamir White,zamir white,RB,2018,2017.0,1999-09-18,2022,Georgia,LVR
-00-0038045,SpilIs00,Isaiah Spiller,isaiah spiller,RB,2019,2019.0,2001-08-09,2022,Texas A&M,LAC
-00-0038092,EzukEr00,Erik Ezukanma,erik ezukanma,WR,2018,2018.0,2000-01-25,2022,Texas Tech,MIA
-00-0038098,StroPi00,Pierre Strong,pierre strong,RB,2016,2016.0,1998-12-10,2022,South Dakota St.,NWE
-00-0038046,KolaCh00,Charlie Kolar,charlie kolar,TE,2017,2017.0,1999-02-10,2022,Iowa St.,BAL
-00-0038041,FergJa00,Jake Ferguson,jake ferguson,TE,2017,2017.0,1999-01-18,2022,Wisconsin,DAL
-00-0037617,HaskHa00,Hassan Haskins,hassan haskins,RB,2018,2017.0,1999-11-26,2022,Michigan,TEN
-00-0037816,DoubRo00,Romeo Doubs,romeo doubs,WR,2018,2018.0,2000-04-13,2022,Nevada,GNB
-00-0038108,ZappBa00,Bailey Zappe,bailey zappe,QB,2017,2017.0,1999-04-26,2022,Western Kentucky,NWE
-00-0037837,AustCa00,Calvin Austin III,calvin austin,WR,2017,2017.0,1999-03-24,2022,Memphis,PIT
-00-0037838,LikeIs00,Isaiah Likely,isaiah likely,TE,2018,2018.0,2000-04-18,2022,Coastal Carolina,BAL
-00-0037809,OkonCh00,Chig Okonkwo,chig okonkwo,TE,2017,2017.0,1999-09-08,2022,Maryland,TEN
-00-0037077,HoweSa00,Sam Howell,sam howell,QB,2019,2018.0,2000-11-16,2022,North Carolina,WAS
-00-0037261,ShakKh00,Khalil Shakir,khalil shakir,WR,2018,2018.0,2000-02-03,2022,Boise St.,BUF
-00-0037078,TurnCo00,Cole Turner,cole turner,TE,2018,2018.0,2000-03-16,2022,Nevada,WAS
-00-0037263,AllgTy00,Tyler Allgeier,tyler allgeier,RB,2018,2018.0,2000-04-15,2022,BYU,ATL
-00-0037265,ConnSn00,Snoop Conner,snoop conner,RB,2019,2018.0,2000-08-01,2022,Mississippi,JAX
-00-0037267,FordJe00,Jerome Ford,jerome ford,RB,2018,2017.0,1999-09-12,2022,Cincinnati,CLE
-00-0037272,WashMo00,Montrell Washington,montrell washington,WR,2017,2017.0,1999-03-14,2022,Samford,DEN
-00-0037273,PhilKy01,Kyle Philips,kyle philips,WR,2018,2017.0,1999-06-17,2022,UCLA,TEN
-00-0037840,WillKy02,Kyren Williams,kyren williams,RB,2019,2018.0,2000-08-26,2022,Notre Dame,LAR
-00-0037276,ChanTy01,Ty Chandler,ty chandler,RB,2017,2016.0,1998-05-12,2022,North Carolina,MIN
-00-0037277,QuitTe00,Teagan Quitoriano,teagan quitoriano,TE,2018,2018.0,2000-03-15,2022,Oregon St.,HOU
-00-0037282,MitcJa00,James Mitchell,james mitchell,TE,2018,2017.0,1999-08-11,2022,Virginia Tech,DET
-00-0037286,HarrKe01,Kevin Harris,kevin harris,RB,2019,2018.0,2000-11-17,2022,South Carolina,NWE
-00-0037291,NailJa00,Jalen Nailor,jalen nailor,WR,2018,2017.0,1999-03-02,2022,Michigan St.,MIN
-00-0037292,OgleAn00,Andrew Ogletree,andrew ogletree,TE,2016,2016.0,1998-07-28,2022,Youngstown St.,IND
-00-0037085,BadiTy00,Tyler Badie,tyler badie,RB,2018,2017.0,1999-02-07,2022,Missouri,BAL
-00-0037086,CalcGr00,Grant Calcaterra,grant calcaterra,TE,2017,2016.0,1998-12-04,2022,SMU,PHI
-00-0037299,IngrKe01,Keaontay Ingram,keaontay ingram,RB,2018,2017.0,1999-10-26,2022,USC,ARI
-00-0037300,WoodMi00,Michael Woods II,michael woods,WR,2018,2018.0,2000-03-19,2022,Oklahoma,CLE
-00-0037087,EbneTr00,Trestan Ebner,trestan ebner,RB,2017,2017.0,1999-01-02,2022,Baylor,CHI
-00-0037304,HeywCo00,Connor Heyward,connor heyward,TE,2017,2017.0,1999-01-22,2022,Michigan St.,PIT
-00-0037306,FitzJo00,John FitzPatrick,john fitzpatrick,TE,2018,2018.0,2000-03-09,2022,Georgia,ATL
-00-0037311,KiefKo00,Ko Kieft,ko kieft,TE,2016,2016.0,1998-01-20,2022,Minnesota,TAM
-00-0037317,MuseNi00,Nick Muse,nick muse,TE,2016,2016.0,1998-11-25,2022,South Carolina,MIN
-00-0037091,MeltBo00,Bo Melton,bo melton,WR,2017,2017.0,1999-05-18,2022,Rutgers,SEA
-00-0037093,YounDa02,Dareke Young,dareke young,WR,2017,2017.0,1999-06-04,2022,Lenoir-Rhyne,SEA
-00-0037324,OladCh00,Chris Oladokun,chris oladokun,QB,2016,2015.0,1997-09-03,2022,South Dakota St.,PIT
-00-0037327,ThomSk00,Skylar Thompson,skylar thompson,QB,2016,2015.0,1997-06-04,2022,Kansas St.,MIA
-00-0037329,BrowBr06,Brittain Brown,brittain brown,RB,2016,2015.0,1997-10-10,2022,UCLA,LVR
-00-0037197,PachIs00,Isiah Pacheco,isiah pacheco,RB,2018,2017.0,1999-03-02,2022,Rutgers,KAN
-00-0037098,TourSa00,Samori Toure,samori toure,WR,2016,2016.0,1998-03-24,2022,Nebraska,GNB
-00-0037331,HorvZa00,Zander Horvath,zander horvath,RB,2016,2016.0,1998-12-10,2022,Purdue,LAC
-00-0037834,PurdBr00,Brock Purdy,brock purdy,QB,2018,2017.0,1999-12-27,2022,Iowa St.,SFO
-00-0039150,YounBr01,Bryce Young,bryce young,QB,2020,2019.0,2001-07-25,2023,Alabama,CAR
-00-0039163,StroCJ00,C.J. Stroud,c j stroud,QB,2020,2019.0,2001-10-03,2023,Ohio St.,HOU
-00-0039164,RichAn03,Anthony Richardson,anthony richardson,QB,2020,2020.0,2002-05-22,2023,Florida,IND
-00-0038542,RobiBi01,Bijan Robinson,bijan robinson,RB,2020,2020.0,2002-01-30,2023,Texas,ATL
-00-0039139,GibbJa01,Jahmyr Gibbs,jahmyr gibbs,RB,2020,2020.0,2002-03-20,2023,Alabama,DET
-00-0038543,SmitJa06,Jaxon Smith-Njigba,jaxon smith njigba,WR,2020,2020.0,2002-02-14,2023,Ohio St.,SEA
-00-0038544,JohnQu02,Quentin Johnston,quentin johnston,WR,2020,2019.0,2001-09-06,2023,TCU,LAC
-00-0039064,FlowZa00,Zay Flowers,zay flowers,WR,2019,2018.0,2000-09-11,2023,Boston Col.,BAL
-00-0038994,AddiJo00,Jordan Addison,jordan addison,WR,2020,2020.0,2002-01-27,2023,USC,MIN
-00-0038933,KincDa00,Dalton Kincaid,dalton kincaid,TE,2017,2017.0,1999-10-18,2023,Utah,BUF
-00-0039152,LeviWi00,Will Levis,will levis,QB,2018,2017.0,1999-06-27,2023,Kentucky,TEN
-00-0039065,LaPoSa01,Sam LaPorta,sam laporta,TE,2019,2019.0,2001-01-12,2023,Iowa,DET
-00-0039066,MayeMi00,Michael Mayer,michael mayer,TE,2020,2019.0,2001-07-06,2023,Notre Dame,LVR
-00-0039062,MingJo00,Jonathan Mingo,jonathan mingo,WR,2019,2019.0,2001-04-20,2023,Mississippi,CAR
-00-0039144,MusgLu00,Luke Musgrave,luke musgrave,TE,2019,2018.0,2000-09-02,2023,Oregon St.,GNB
-00-0039146,ReedJa03,Jayden Reed,jayden reed,WR,2018,2018.0,2000-04-28,2023,Michigan St.,GNB
-00-0039165,CharZa00,Zach Charbonnet,zach charbonnet,RB,2019,2019.0,2001-01-08,2023,UCLA,SEA
-00-0039067,RiceRa01,Rashee Rice,rashee rice,WR,2019,2018.0,2000-04-22,2023,SMU,KAN
-00-0038547,SchoLu00,Luke Schoonmaker,luke schoonmaker,TE,2018,2016.0,1998-09-28,2023,Michigan,DAL
-00-0038935,StraBr00,Brenton Strange,brenton strange,TE,2019,2018.0,2000-12-27,2023,Penn St.,JAX
-00-0038976,MimsMa00,Marvin Mims,marvin mims,WR,2020,2020.0,2002-03-19,2023,Oklahoma,DEN
-00-0038550,HookHe00,Hendon Hooker,hendon hooker,QB,2017,2016.0,1998-01-13,2023,Tennessee,DET
-00-0038977,DellNa00,Tank Dell,tank dell,WR,2017,2017.0,1999-10-29,2023,Houston,HOU
-00-0038551,MillKe01,Kendre Miller,kendre miller,RB,2020,2020.0,2002-06-11,2023,TCU,NOR
-00-0038938,HyatJa00,Jalin Hyatt,jalin hyatt,WR,2020,2019.0,2001-09-25,2023,Tennessee,NYG
-00-0038979,TillCe01,Cedric Tillman,cedric tillman,WR,2018,2018.0,2000-04-19,2023,Tennessee,CLE
-00-0038996,KrafTu00,Tucker Kraft,tucker kraft,TE,2018,2018.0,2000-11-03,2023,South Dakota St.,GNB
-00-0038997,DownJo00,Josh Downs,josh downs,WR,2020,2019.0,2001-08-12,2023,North Carolina,IND
-00-0039032,SpeaTy00,Tyjae Spears,tyjae spears,RB,2019,2019.0,2001-06-15,2023,Tulane,TEN
-00-0039040,AchaDe00,De'Von Achane,de von achane,RB,2020,2019.0,2001-10-13,2023,Texas A&M,MIA
-00-0038555,BigsTa00,Tank Bigsby,tank bigsby,RB,2020,2019.0,2001-08-30,2023,Auburn,JAX
-00-0038558,WashDa03,Darnell Washington,darnell washington,TE,2020,2019.0,2001-08-17,2023,Georgia,PIT
-00-0038559,WilsMi02,Michael Wilson,michael wilson,WR,2018,2018.0,2000-02-23,2023,Stanford,ARI
-00-0038563,TuckTr00,Tre Tucker,tre tucker,WR,2019,2019.0,2001-03-08,2023,Cincinnati,LVR
-00-0038564,LatuCa01,Cameron Latu,cameron latu,TE,2018,2018.0,2000-02-24,2023,Alabama,SFO
-00-0039021,JohnRo07,Roschon Johnson,roschon johnson,RB,2019,2019.0,2001-01-31,2023,Texas,CHI
-00-0038573,DaviDe02,Derius Davis,derius davis,WR,2018,2018.0,2000-09-11,2023,TCU,LAC
-00-0038998,HaenJa00,Jake Haener,jake haener,QB,2017,2017.0,1999-03-10,2023,Fresno St.,NOR
-00-0039107,BennSt00,Stetson Bennett,stetson bennett,QB,2015,2015.0,1997-10-28,2023,Georgia,LAR
-00-0038576,JoneCh11,Charlie Jones,charlie jones,WR,2017,2016.0,1998-10-29,2023,Purdue,CIN
-00-0038941,ScotTy00,Tyler Scott,tyler scott,WR,2020,2019.0,2001-10-12,2023,Cincinnati,CHI
-00-0038579,OConAi00,Aidan O'Connell,aidan o connell,QB,2016,2016.0,1998-09-01,2023,Purdue,LVR
-00-0038582,TuneCl00,Clayton Tune,clayton tune,QB,2018,2017.0,1999-03-23,2023,Houston,ARI
-00-0038583,ThomDo02,Dorian Thompson-Robinson,dorian thompson robinson,QB,2018,2017.0,1999-11-14,2023,UCLA,CLE
-00-0038389,AbanIs00,Israel Abanikanda,israel abanikanda,RB,2020,2020.0,2002-10-05,2023,Pittsburgh,NYJ
-00-0038589,WhylJo01,Josh Whyle,josh whyle,TE,2018,2017.0,1999-09-08,2023,Cincinnati,TEN
-00-0038391,ClifSe00,Sean Clifford,sean clifford,QB,2017,2016.0,1998-07-14,2023,Penn St.,GNB
-00-0038590,ShorJu00,Justin Shorter,justin shorter,WR,2018,2018.0,2000-04-17,2023,Florida,BUF
-00-0038393,WickDo00,Dontayvion Wicks,dontayvion wicks,WR,2019,2019.0,2001-06-16,2023,Virginia,GNB
-00-0038394,MallWi00,Will Mallory,will mallory,TE,2018,2017.0,1999-06-22,2023,Miami (FL),IND
-00-0038597,BrowCh10,Chase Brown,chase brown,RB,2018,2018.0,2000-03-21,2023,Illinois,CIN
-00-0038598,HallJa00,Jaren Hall,jaren hall,QB,2016,2016.0,1998-03-24,2023,BYU,MIN
-00-0039050,DurhPa00,Payne Durham,payne durham,TE,2018,2018.0,2000-06-15,2023,Purdue,TAM
-00-0038396,GrayEr01,Eric Gray,eric gray,RB,2019,2017.0,1999-11-04,2023,Oklahoma,NYG
-00-0039074,AlleDa02,Davis Allen,davis allen,TE,2019,2019.0,2001-02-03,2023,Clemson,LAR
-00-0038397,HullEv00,Evan Hull,evan hull,RB,2019,2018.0,2000-10-26,2023,Northwestern,IND
-00-0039075,NacuPu00,Puka Nacua,puka nacua,WR,2019,2019.0,2001-05-29,2023,BYU,LAR
-00-0038606,WashPa01,Parker Washington,parker washington,WR,2020,2020.0,2002-03-21,2023,Penn St.,JAX
-00-0038608,BoutKa00,Kayshon Boutte,kayshon boutte,WR,2020,2020.0,2002-05-07,2023,LSU,NWE
-00-0038400,McKeTa01,Tanner McKee,tanner mckee,QB,2018,2018.0,2000-04-27,2023,Stanford,PHI
-00-0039052,PalmTr00,Trey Palmer,trey palmer,WR,2019,2019.0,2001-04-02,2023,Nebraska,TAM
-00-0038611,RodrCh00,Chris Rodriguez,chris rodriguez,RB,2018,2017.0,1999-09-26,2023,Kentucky,WAS
-00-0038612,PerrAT00,A.T. Perry,a t perry,WR,2018,2017.0,1999-10-26,2023,Wake Forest,NOR
-00-0039041,HiggEl00,Elijah Higgins,elijah higgins,WR,2019,2018.0,2000-10-27,2023,Stanford,MIA
-00-0038618,HutcXa00,Xavier Hutchinson,xavier hutchinson,WR,2018,2018.0,2000-06-01,2023,Iowa St.,HOU
-00-0038619,IosiAn00,Andrei Iosivas,andrei iosivas,WR,2017,2017.0,1999-10-15,2023,Princeton,CIN
-00-0038621,DougDe00,DeMario Douglas,demario douglas,WR,2018,2018.0,2000-12-08,2023,Liberty,NWE
-00-0038622,VaugDe00,Deuce Vaughn,deuce vaughn,RB,2020,2019.0,2001-11-02,2023,Kansas St.,DAL
-00-0039136,EvanZa00,Zach Evans,zach evans,RB,2020,2019.0,2001-05-30,2023,Mississippi,LAR
-00-0038627,GreeAn00,Antoine Green,antoine green,WR,2018,2017.0,1999-11-15,2023,North Carolina,DET
-00-0038406,KuntZa00,Zack Kuntz,zack kuntz,TE,2018,2017.0,1999-06-09,2023,Old Dominion,NYJ
-00-0039046,McBrDe00,DeWayne McBride,dewayne mcbride,RB,2020,2019.0,2001-07-08,2023,Ala-Birmingham,MIN
-00-0038632,DoweCo00,Colton Dowell,colton dowell,WR,2017,2017.0,1999-04-19,2023,UT Martin,TEN
-00-0038409,NichLe00,Lew Nichols,lew nichols,RB,2019,2019.0,2001-08-16,2023,Central Michigan,GNB
-00-0038636,McInKe00,Kenny McIntosh,kenny mcintosh,RB,2019,2018.0,2000-03-03,2023,Georgia,SEA
-00-0038637,DuggMa00,Max Duggan,max duggan,QB,2019,2019.0,2001-03-12,2023,TCU,LAC
-00-0038640,BrooJa03,Jalen Brooks,jalen brooks,WR,2018,2018.0,2000-05-07,2023,South Carolina,DAL
-00-0038643,WillBr06,Brayden Willis,brayden willis,TE,2018,2017.0,1999-11-11,2023,Oklahoma,SFO
-00-0038647,BellRo01,Ronnie Bell,ronnie bell,WR,2018,2018.0,2000-01-28,2023,Michigan,SFO
-00-0038507,DuboGr00,Grant Dubose,grant dubose,WR,2019,2019.0,2001-06-20,2023,Charlotte,GNB
-00-0039918,WillCa03,Caleb Williams,caleb williams,QB,2019,2019.0,2001-11-18,2024,USC,CHI
-00-0039910,DaniJa02,Jayden Daniels,jayden daniels,QB,2019,2018.0,2000-12-18,2024,LSU,WAS
-00-0039851,MayeDr00,Drake Maye,drake maye,QB,2020,2020.0,2002-08-30,2024,North Carolina,NWE
-00-0039849,HarrMa09,Marvin Harrison Jr.,marvin harrison,WR,2020,2020.0,2002-08-11,2024,Ohio St.,ARI
-00-0039917,PeniMi00,Michael Penix,michael penix,QB,2018,2018.0,2000-05-08,2024,Washington,ATL
-00-0039919,OdunRo00,Rome Odunze,rome odunze,WR,2020,2020.0,2002-04-03,2024,Washington,CHI
-00-0039732,NixxBo00,Bo Nix,bo nix,QB,2019,2018.0,2000-02-25,2024,Oregon,DEN
-00-0039338,BoweBr01,Brock Bowers,brock bowers,TE,2020,2020.0,2002-12-13,2024,Georgia,LVR
-00-0039893,ThomBr06,Brian Thomas,brian thomas,WR,2020,2020.0,2002-10-08,2024,LSU,JAX
-00-0039916,PearRi00,Ricky Pearsall,ricky pearsall,WR,2019,2018.0,2000-09-09,2024,Florida,SFO
-00-0039342,LegeXa00,Xavier Legette,xavier legette,WR,2019,2019.0,2001-01-29,2024,South Carolina,CAR
-00-0039915,McCoLa00,Ladd McConkey,ladd mcconkey,WR,2020,2019.0,2001-11-11,2024,Georgia,LAC
-00-0039907,PolkJa00,Ja'Lynn Polk,ja lynn polk,WR,2020,2019.0,2001-04-11,2024,Washington,NWE
-00-0039890,MitcAd00,Adonai Mitchell,adonai mitchell,WR,2020,2020.0,2002-10-08,2024,Texas,IND
-00-0039912,SinnBe00,Ben Sinnott,ben sinnott,TE,2020,2020.0,2002-06-14,2024,Kansas St.,WAS
-00-0039920,CorlMa00,Malachi Corley,malachi corley,WR,2020,2020.0,2002-03-21,2024,Western Kentucky,NYJ
-00-0039921,BensTr01,Trey Benson,trey benson,RB,2020,2020.0,2002-07-23,2024,Florida St.,ARI
-00-0039810,BurtJe01,Jermaine Burton,jermaine burton,WR,2020,2019.0,2001-06-28,2024,Alabama,CIN
-00-0039737,ReimTi00,Tip Reiman,tip reiman,TE,2019,2019.0,2001-09-17,2024,Illinois,ARI
-00-0039738,CoruBl00,Blake Corum,blake corum,RB,2020,2018.0,2000-11-25,2024,Michigan,LAR
-00-0039739,WilsRo02,Roman Wilson,roman wilson,WR,2020,2019.0,2001-06-19,2024,Michigan,PIT
-00-0039811,LloyMa00,MarShawn Lloyd,marshawn lloyd,RB,2020,2019.0,2001-01-05,2024,USC,GNB
-00-0039855,McMiJa01,Jalen McMillan,jalen mcmillan,WR,2020,2019.0,2001-12-07,2024,Washington,TAM
-00-0039355,McCaLu00,Luke McCaffrey,luke mccaffrey,WR,2019,2019.0,2001-04-02,2024,Rice,WAS
-00-0039847,JohnTh00,Theo Johnson,theo johnson,TE,2020,2019.0,2001-02-26,2024,Penn St.,NYG
-00-0039853,BakeJa00,Javon Baker,javon baker,WR,2020,2020.0,2002-02-18,2024,Central Florida,NWE
-00-0039792,WalkDe01,Devontez Walker,devontez walker,WR,2019,2019.0,2001-06-19,2024,North Carolina,BAL
-00-0039814,AllxEr00,Erick All,erick all,TE,2019,2018.0,2000-09-13,2024,Iowa,CIN
-00-0039793,BarnAJ00,AJ Barner,aj barner,TE,2020,2020.0,2002-05-03,2024,Michigan,SEA
-00-0039359,StovCa00,Cade Stover,cade stover,TE,2018,2018.0,2000-06-12,2024,Ohio St.,HOU
-00-0039361,IrviBu00,Bucky Irving,bucky irving,RB,2020,2020.0,2002-08-19,2024,Oregon,TAM
-00-0039746,ShipWi00,Will Shipley,will shipley,RB,2020,2020.0,2002-08-29,2024,Clemson,PHI
-00-0039875,DaviRa04,Ray Davis,ray davis,RB,2019,2017.0,1999-11-20,2024,Kentucky,BUF
-00-0039363,GuerIs00,Isaac Guerendo,isaac guerendo,RB,2018,2018.0,2000-06-28,2024,Louisville,SFO
-00-0039824,WileJa00,Jared Wiley,jared wiley,TE,2019,2018.0,2000-11-02,2024,TCU,KAN
-00-0039365,CowiJa00,Jacob Cowing,jacob cowing,WR,2019,2019.0,2001-02-04,2024,Arizona,SFO
-00-0039816,GoulAn00,Anthony Gould,anthony gould,WR,2019,2019.0,2001-04-06,2024,Oregon St.,IND
-00-0039376,RattSp00,Spencer Rattler,spencer rattler,QB,2019,2018.0,2000-09-28,2024,South Carolina,NOR
-00-0039747,SmitAi00,Ainias Smith,ainias smith,WR,2019,2019.0,2001-05-31,2024,Texas A&M,PHI
-00-0039379,ThraJa01,Jamari Thrash,jamari thrash,WR,2019,2018.0,2000-12-19,2024,Louisville,CLE
-00-0039796,AlixRa00,Rasheen Ali,rasheen ali,RB,2019,2019.0,2001-02-16,2024,Marshall,BAL
-00-0039384,TracTy00,Tyrone Tracy Jr.,tyrone tracy,RB,2018,2017.0,1999-11-23,2024,Purdue,NYG
-00-0039385,RobiKe03,Keilan Robinson,keilan robinson,RB,2019,2018.0,2000-02-16,2024,Texas,JAX
-00-0039386,MeanBu00,Bub Means,bub means,WR,2019,2019.0,2001-01-10,2024,Pittsburgh,NOR
-00-0039797,TravJo00,Jordan Travis,jordan travis,QB,2018,2018.0,2000-05-02,2024,Florida St.,NYJ
-00-0039798,DaviIs00,Isaiah Davis,isaiah davis,RB,2020,2020.0,2002-02-21,2024,South Dakota St.,NYJ
-00-0039391,VidaKi00,Kimani Vidal,kimani vidal,RB,2020,2019.0,2001-08-28,2024,Troy,LAC
-00-0039392,JackJh00,Jha'Quan Jackson,jha quan jackson,WR,2019,2018.0,2000-05-15,2024,Tulane,TEN
-00-0039880,WashMa00,Malik Washington,malik washington,WR,2019,2018.0,2000-10-20,2024,Virginia,MIA
-00-0039236,WilsJo03,Johnny Wilson,johnny wilson,WR,2020,2019.0,2001-04-03,2024,Florida St.,PHI
-00-0039393,McClJa05,Jase McClellan,jase mcclellan,RB,2020,2020.0,2002-06-25,2024,Alabama,ATL
-00-0039394,WashCa01,Casey Washington,casey washington,WR,2019,2019.0,2001-03-06,2024,Illinois,ATL
-00-0039397,PalmTe00,Tejhaun Palmer,tejhaun palmer,WR,2018,2018.0,2000-05-19,2024,Ala-Birmingham,ARI
-00-0039398,MiltJo00,Joe Milton,joe milton,QB,2018,2018.0,2000-03-06,2024,Tennessee,NWE
-00-0039399,McLaTa00,Tanner McLachlan,tanner mclachlan,TE,2017,2017.0,1999-03-15,2024,Arizona,CIN
-00-0039405,JordJa00,Jawhar Jordan,jawhar jordan,RB,2018,2017.0,1999-08-18,2024,Louisville,HOU
-00-0039407,LaubDy00,Dylan Laube,dylan laube,RB,2017,2017.0,1999-12-14,2024,New Hampshire,LVR
-00-0039751,WhitJo04,Jordan Whittington,jordan whittington,WR,2019,2018.0,2000-10-01,2024,Texas,LAR
-00-0039410,FlouRy00,Ryan Flournoy,ryan flournoy,WR,2017,2017.0,1999-10-27,2024,SE Missouri St.,DAL
-00-0039801,LearDe00,Devin Leary,devin leary,QB,2018,2017.0,1999-09-10,2024,Kentucky,BAL
-00-0039415,RiceBr00,Brenden Rice,brenden rice,WR,2020,2020.0,2002-03-18,2024,USC,LAC
-00-0039420,BellJa00,Jaheim Bell,jaheim bell,TE,2020,2019.0,2001-06-14,2024,Florida St.,NWE
-00-0039424,VeleDe00,Devaughn Vele,devaughn vele,WR,2015,2015.0,1997-12-12,2024,Utah,DEN
-00-0039884,WashTa00,Tahj Washington,tahj washington,WR,2019,2019.0,2001-05-16,2024,USC,MIA
-00-0039238,PratMi00,Michael Pratt,michael pratt,QB,2020,2019.0,2001-09-30,2024,Tulane,GNB
-00-0039754,CulpDe00,Devin Culp,devin culp,TE,2018,2018.0,2000-02-02,2024,Washington,TAM
-00-0039437,JohnCo02,Cornelius Johnson,cornelius johnson,WR,2019,2018.0,2000-11-29,2024,Michigan,LAC
-00-0040676,WardCa00,Cam Ward,cam ward,QB,2020,2020.0,2002-05-25,2025,Miami (FL),TEN
-00-0040128,WarrTy00,Tyler Warren,tyler warren,TE,2020,2020.0,2002-05-24,2025,Penn St.,IND
-00-0040129,EgbuEm01,Emeka Egbuka,emeka egbuka,WR,2020,2020.0,2002-10-14,2025,Ohio St.,TAM
-00-0040130,HiggJa00,Jayden Higgins,jayden higgins,WR,2020,2020.0,2002-12-15,2025,Iowa St.,HOU
-00-0040734,HendTr02,TreVeyon Henderson,treveyon henderson,RB,2020,2020.0,2002-10-22,2025,Ohio St.,NWE
-00-0040743,ShouTy00,Tyler Shough,tyler shough,QB,2017,2017.0,1999-09-28,2025,Louisville,NOR
-00-0040727,HarrTr03,Tre Harris,tre harris,WR,2020,2020.0,2002-02-28,2025,Mississippi,LAC
-00-0040729,BechJa00,Jack Bech,jack bech,WR,2020,2020.0,2002-12-18,2025,TCU,LVR
-00-0040730,HarvRJ00,RJ Harvey,rj harvey,RB,2019,2019.0,2001-02-04,2025,Central Florida,DEN
-00-0040131,WillKy03,Kyle Williams,kyle williams,WR,2020,2020.0,2002-11-13,2025,Washington St.,NWE
-00-0040669,TeSlIs00,Isaac TeSlaa,isaac teslaa,WR,2020,2020.0,2002-02-20,2025,Arkansas,DET
-00-0040134,BryaPa00,Pat Bryant,pat bryant,WR,2020,2020.0,2002-12-10,2025,Illinois,DEN
-00-0040138,NoelJa00,Jaylin Noel,jaylin noel,WR,2020,2020.0,2002-09-04,2025,Iowa St.,HOU
-00-0040009,WillSa01,Savion Williams,savion williams,WR,2020,2019.0,2001-11-22,2025,TCU,GNB
-00-0040673,MilrJa00,Jalen Milroe,jalen milroe,QB,2020,2020.0,2002-12-13,2025,Alabama,SEA
-00-0040704,GabrDi00,Dillon Gabriel,dillon gabriel,QB,2019,2018.0,2000-12-28,2025,Oregon,CLE
-00-0040705,DikeCh00,Chimere Dike,chimere dike,WR,2020,2019.0,2001-12-14,2025,Florida,TEN
-00-0040719,TuteBh00,Bhayshul Tuten,bhayshul tuten,RB,2020,2020.0,2002-02-14,2025,Virginia Tech,JAX
-00-0040715,SkatCa00,Cam Skattebo,cam skattebo,RB,2020,2020.0,2002-02-05,2025,Arizona St.,NYG
-00-0040581,ThorDo00,Dont'e Thornton,dont e thornton,WR,2020,2020.0,2002-11-30,2025,Tennessee,LVR
-00-0040582,SmitAr01,Arian Smith,arian smith,WR,2020,2019.0,2001-10-11,2025,Georgia,NYJ
-00-0040583,MarkWo00,Woody Marks,woody marks,RB,2020,2018.0,2000-12-29,2025,USC,HOU
-00-0040692,HuntJa03,Jarquez Hunter,jarquez hunter,RB,2020,2020.0,2002-12-29,2025,Auburn,LAR
-00-0040584,HelmGu00,Gunnar Helm,gunnar helm,TE,2020,2020.0,2002-09-06,2025,Texas,TEN
-00-0040164,LaneJa00,Jaylin Lane,jaylin lane,WR,2020,2020.0,2002-05-01,2025,Virginia Tech,WAS
-00-0040172,WatkJo00,Jordan Watkins,jordan watkins,WR,2020,2020.0,2002-02-15,2025,Mississippi,SFO
-00-0040668,SandSh00,Shedeur Sanders,shedeur sanders,QB,2020,2020.0,2002-02-07,2025,Colorado,CLE
-00-0040184,LambKe01,KeAndre Lambert-Smith,keandre lambert smith,WR,2020,2019.0,2001-10-16,2025,Auburn,LAC
-00-0040648,HortTo00,Tory Horton,tory horton,WR,2020,2020.0,2002-11-29,2025,Colorado St.,SEA
-00-0040194,HaweJa00,Jackson Hawes,jackson hawes,TE,2018,2018.0,2000-12-06,2025,Georgia Tech,BUF
-00-0040649,OuztRo00,Robbie Ouzts,robbie ouzts,TE,2020,2020.0,2002-09-06,2025,Alabama,SEA
-00-0040014,McCoKy00,Kyle McCord,kyle mccord,QB,2020,2020.0,2002-09-19,2025,Syracuse,PHI
-00-0040203,HowaWi01,Will Howard,will howard,QB,2020,2019.0,2001-09-24,2025,Ohio St.,PIT
-00-0040205,MullKa00,Kalel Mullings,kalel mullings,RB,2020,2020.0,2002-10-04,2025,Michigan,TEN
-00-0040206,LeonRi02,Riley Leonard,riley leonard,QB,2020,2020.0,2002-09-13,2025,Notre Dame,IND
-00-0040208,BrooTa00,Tahj Brooks,tahj brooks,RB,2020,2020.0,2002-05-13,2025,Texas Tech,CIN
-00-0040211,MertGr00,Graham Mertz,graham mertz,QB,2019,2018.0,2000-12-06,2025,Florida,HOU
-00-0040075,WestLa01,LaJohntay Wester,lajohntay wester,WR,2020,2020.0,2002-03-29,2025,Colorado,BAL
-00-0040218,HornJi00,Jimmy Horn,jimmy horn,WR,2020,2020.0,2002-09-12,2025,Colorado,CAR
-00-0040220,MellTo00,Tommy Mellott,tommy mellott,QB,2020,2019.0,2001-10-16,2025,Montana St.,LVR
-00-0040222,MillCa00,Cam Miller,cam miller,QB,2019,2019.0,2001-06-18,2025,North Dakota St.,LVR
-00-0040225,FidoTh00,Thomas Fidone,thomas fidone,TE,2020,2020.0,2002-09-20,2025,Nebraska,NYG
-00-0040589,RourKu01,Kurtis Rourke,kurtis rourke,QB,2019,2018.0,2000-10-25,2025,Indiana,SFO
-00-0040236,MonaKy00,Kyle Monangai,kyle monangai,RB,2020,2020.0,2002-06-06,2025,Rutgers,CHI
-00-0040237,JohnTe03,Tez Johnson,tez johnson,WR,2020,2020.0,2002-05-18,2025,Oregon,TAM
-00-0040653,WhitRi01,Ricky White,ricky white,WR,2020,2020.0,2002-02-06,2025,UNLV,SEA
-00-0040021,MafaPh00,Phil Mafah,phil mafah,RB,2020,2020.0,2002-10-24,2025,Clemson,DAL
-00-0040240,LohnCa00,Caleb Lohner,caleb lohner,TE,2019,2019.0,2001-10-01,2025,Utah,DEN
-00-0040590,MumpKo00,Konata Mumpfield,konata mumpfield,WR,2020,2020.0,2002-10-24,2025,Pittsburgh,LAR
-00-0040241,LoveDo00,Dominic Lovett,dominic lovett,WR,2020,2020.0,2002-11-08,2025,Georgia,DET
-00-0040242,CrosJa00,Jacory Croskey-Merritt,jacory croskey merritt,RB,2019,2019.0,2001-04-12,2025,Arizona,WAS
-00-0040247,BergJu00,Junior Bergen,junior bergen,WR,2020,2020.0,2002-10-23,2025,Montana,SFO
-00-0040250,LachLu00,Luke Lachey,luke lachey,TE,2020,2019.0,2001-06-29,2025,Iowa,HOU
-,BeckCa01,Carson Beck,carson beck,QB,2020,,,2026,Miami (FL),ARI
-BLA097235,BlacKa00,Kaelon Black,kaelon black,RB,2020,,,2026,Indiana,SFO
-HIB564972,HibnMa00,Matthew Hibner,matthew hibner,TE,2020,,,2026,SMU,BAL
-,RoyeJo01,Joe Royer,joe royer,TE,2020,,,2026,Cincinnati,CLE
-DAN490797,DaniCJ00,CJ Daniels,cj daniels,WR,2020,,,2026,Miami (FL),LAR
-SMI038569,SmitAn05,Anthony Smith,anthony smith,WR,2020,,,2026,East Carolina,DAL
-MCG547540,McGoSe01,Seth McGowan,seth mcgowan,RB,2020,,,2026,Kentucky,IND
+gsis_id,pfr_player_id,player_name,player_name_norm,position,hs_class,birth_date,draft_year,college,draft_team
+00-0030564,HopkDe00,DeAndre Hopkins,deandre hopkins,WR,2010,1992-06-06,2013,Clemson,HOU
+00-0030521,HuntJu00,Justin Hunter,justin hunter,WR,2010,1991-05-20,2013,Tennessee,TEN
+00-0030456,BernGi00,Giovani Bernard,giovani bernard,RB,2010,1991-11-22,2013,North Carolina,CIN
+00-0030431,WoodRo02,Robert Woods,robert woods,WR,2010,1992-04-10,2013,USC,BUF
+00-0030496,BellLe00,Le'Veon Bell,le veon bell,RB,2010,1992-02-18,2013,Michigan St.,PIT
+00-0030279,AlleKe00,Keenan Allen,keenan allen,WR,2010,1992-04-27,2013,California,SDG
+00-0030550,SandAc00,Ace Sanders,ace sanders,WR,2010,1991-11-11,2013,South Carolina,JAX
+00-0030474,BoycJo00,Josh Boyce,josh boyce,WR,2011,1991-05-06,2013,TCU,NWE
+00-0030497,LattMa00,Marcus Lattimore,marcus lattimore,RB,2010,,2013,South Carolina,SFO
+00-0030085,StilKe00,Kenny Stills,kenny stills,WR,2010,1992-04-22,2013,Oklahoma,NOR
+00-0030388,RandJo01,Joseph Randle,joseph randle,RB,2010,1991-12-29,2013,Oklahoma St.,DAL
+00-0030414,WareSp00,Spencer Ware,spencer ware,RB,2010,1991-11-23,2013,LSU,SEA
+00-0030415,JamiJa00,Jawan Jamison,jawan jamison,RB,2010,1991-11-23,2013,Rutgers,WAS
+00-0030047,WilsMa02,Marquess Wilson,marquess wilson,WR,2010,1992-09-14,2013,Washington St.,CHI
+00-0031407,BortBl00,Blake Bortles,blake bortles,QB,2010,1992-04-28,2014,Central Florida,JAX
+00-0031325,WatkSa00,Sammy Watkins,sammy watkins,WR,2011,1993-06-14,2014,Clemson,BUF
+00-0031408,EvanMi00,Mike Evans,mike evans,WR,2011,1993-08-21,2014,Texas A&M,TAM
+00-0031387,EbroEr00,Eric Ebron,eric ebron,TE,2011,1993-04-10,2014,North Carolina,DET
+00-0031235,BeckOd00,Odell Beckham Jr.,odell beckham,WR,2011,1992-11-05,2014,LSU,NYG
+00-0031236,CookBr00,Brandin Cooks,brandin cooks,WR,2011,1993-09-25,2014,Oregon St.,NOR
+00-0031409,ManzJo00,Johnny Manziel,johnny manziel,QB,2011,1992-12-06,2014,Texas A&M,CLE
+00-0031359,BenjKe00,Kelvin Benjamin,kelvin benjamin,WR,2011,1991-02-05,2014,Florida St.,CAR
+00-0031237,BridTe00,Teddy Bridgewater,teddy bridgewater,QB,2011,1992-11-10,2014,Louisville,MIN
+00-0031418,SefeAu00,Austin Seferian-Jenkins,austin seferian jenkins,TE,2011,1992-09-29,2014,Washington,TAM
+00-0031431,LeexMa00,Marqise Lee,marqise lee,WR,2011,1991-11-25,2014,USC,JAX
+00-0031299,MattJo00,Jordan Matthews,jordan matthews,WR,2010,1992-07-16,2014,Vanderbilt,PHI
+00-0031257,RichPa01,Paul Richardson,paul richardson,WR,2010,1992-04-13,2014,Colorado,SEA
+00-0031042,AmarJa00,Jace Amaro,jace amaro,TE,2011,1992-06-26,2014,Texas Tech,NYJ
+00-0031044,NiklTr00,Troy Niklas,troy niklas,TE,2011,1992-09-18,2014,Notre Dame,ARI
+00-0031381,AdamDa01,Davante Adams,davante adams,WR,2011,1992-12-24,2014,Fresno St.,GNB
+00-0031413,SankBi00,Bishop Sankey,bishop sankey,RB,2011,1992-09-15,2014,Washington,TEN
+00-0031301,HillJe01,Jeremy Hill,jeremy hill,RB,2011,1992-10-20,2014,LSU,CIN
+00-0031344,LatiCo00,Cody Latimer,cody latimer,WR,2011,1992-10-10,2014,Indiana,DEN
+00-0031428,RobiAl02,Allen Robinson,allen robinson,WR,2011,1993-08-24,2014,Penn St.,JAX
+00-0031382,LandJa00,Jarvis Landry,jarvis landry,WR,2011,1992-11-28,2014,LSU,MIA
+00-0031302,FiedC.00,C.J. Fiedorowicz,c j fiedorowicz,TE,2010,1991-10-22,2014,Iowa,HOU
+00-0031391,MasoTr00,Tre Mason,tre mason,RB,2011,1993-08-06,2014,Auburn,STL
+00-0030990,HuffJo00,Josh Huff,josh huff,WR,2010,1991-10-14,2014,Oregon,PHI
+00-0031339,MoncDo00,Donte Moncrief,donte moncrief,WR,2011,1993-08-06,2014,Mississippi,IND
+00-0031376,McKiJe00,Jerick McKinnon,jerick mckinnon,RB,2010,1992-05-03,2014,Georgia Southern,MIN
+00-0031384,RodgRi00,Richard Rodgers,richard rodgers,TE,2011,1992-01-22,2014,California,GNB
+00-0031285,FreeDe00,Devonta Freeman,devonta freeman,RB,2011,1992-03-15,2014,Florida St.,ATL
+00-0031053,SaunJa00,Jalen Saunders,jalen saunders,WR,2010,1992-09-30,2014,Oklahoma,NYJ
+00-0031055,WillAn00,Andre Williams,andre williams,RB,2010,1992-08-28,2014,Boston Col.,NYG
+00-0031057,CareKa00,Ka'Deem Carey,ka deem carey,RB,2011,1992-10-30,2014,Arizona,CHI
+00-0031060,ThomDe05,De'Anthony Thomas,de anthony thomas,RB,2011,1993-01-05,2014,Oregon,KAN
+00-0031062,WhitJa02,James White,james white,RB,2010,1992-02-03,2014,Wisconsin,NWE
+00-0031075,BlueAl00,Alfred Blue,alfred blue,RB,2010,1991-04-27,2014,LSU,HOU
+00-0031187,HerrRo00,Robert Herron,robert herron,WR,2010,1992-06-02,2014,Wyoming,TAM
+00-0031078,SeasLa00,Lache Seastrunk,lache seastrunk,RB,2010,,2014,Baylor,WAS
+00-0031189,JoneT.00,T.J. Jones,t j jones,WR,2010,1992-07-19,2014,Notre Dame,DET
+00-0031315,HazeMa01,Matt Hazel,matt hazel,WR,2010,1992-01-23,2014,Coastal Carolina,MIA
+00-0031023,EnunQu00,Quincy Enunwa,quincy enunwa,WR,2010,1992-05-31,2014,Nebraska,NYJ
+00-0031085,ProsJa00,Jay Prosch,jay prosch,RB,2010,1992-08-21,2014,Auburn,HOU
+00-0031243,JohnSt03,Storm Johnson,storm johnson,RB,2010,1992-07-10,2014,Central Florida,JAX
+00-0031291,WrigJa03,James Wright,james wright,WR,2010,1991-12-31,2014,LSU,CIN
+00-0031271,MillTr00,Trey Millard,trey millard,RB,2010,1991-07-21,2014,Oklahoma,SFO
+00-0031503,WinsJa00,Jameis Winston,jameis winston,QB,2012,1994-01-06,2015,Florida St.,TAM
+00-0032268,MariMa01,Marcus Mariota,marcus mariota,QB,2011,1993-10-30,2015,Oregon,TEN
+00-0031544,CoopAm00,Amari Cooper,amari cooper,WR,2012,1994-06-17,2015,Alabama,OAK
+00-0031545,WhitKe00,Kevin White,kevin white,WR,2011,1992-06-25,2015,West Virginia,CHI
+00-0032241,GurlTo01,Todd Gurley,todd gurley,RB,2012,1994-08-03,2015,Georgia,STL
+00-0031547,ParkDe01,DeVante Parker,devante parker,WR,2011,1993-01-20,2015,Louisville,MIA
+00-0032144,GordMe00,Melvin Gordon,melvin gordon,RB,2011,1993-04-13,2015,Wisconsin,SDG
+00-0031549,AghoNe00,Nelson Agholor,nelson agholor,WR,2012,1993-05-24,2015,USC,PHI
+00-0032054,PerrBr02,Breshad Perriman,breshad perriman,WR,2011,1993-09-10,2015,Central Florida,BAL
+00-0032208,DorsPh00,Phillip Dorsett,phillip dorsett,WR,2011,1993-01-05,2015,Miami (FL),IND
+00-0032209,YeldT.00,T.J. Yeldon,t j yeldon,RB,2012,1993-10-02,2015,Alabama,JAX
+00-0031934,SmitDe04,Devin Smith,devin smith,WR,2011,1992-03-03,2015,Ohio St.,NYJ
+00-0032218,GreeDo00,Dorial Green-Beckham,dorial green beckham,WR,2012,1993-04-12,2015,Oklahoma,TEN
+00-0032055,FuncDe00,Devin Funchess,devin funchess,WR,2012,1994-05-21,2015,Michigan,CAR
+00-0032104,AbduAm00,Ameer Abdullah,ameer abdullah,RB,2011,1993-06-13,2015,Nebraska,DET
+00-0031558,WillMa04,Maxx Williams,maxx williams,TE,2012,1994-04-12,2015,Minnesota,BAL
+00-0032211,LockTy00,Tyler Lockett,tyler lockett,WR,2011,1992-09-28,2015,Kansas St.,SEA
+00-0031560,StroJa01,Jaelen Strong,jaelen strong,WR,2012,1994-01-25,2015,Arizona St.,HOU
+00-0032058,ColeTe01,Tevin Coleman,tevin coleman,RB,2012,1993-04-16,2015,Indiana,ATL
+00-0032128,ConlCh00,Chris Conley,chris conley,WR,2011,1992-10-25,2015,Georgia,KAN
+00-0032257,JohnDu00,Duke Johnson,duke johnson,RB,2012,1993-09-23,2015,Miami (FL),CLE
+00-0032214,KrofTy00,Tyler Kroft,tyler kroft,TE,2011,1992-10-15,2015,Rutgers,CIN
+00-0032166,CoatSa00,Sammie Coates,sammie coates,WR,2011,1993-03-31,2015,Auburn,PIT
+00-0032245,MannSe00,Sean Mannion,sean mannion,QB,2010,1992-04-25,2015,Oregon St.,STL
+00-0032227,HeueJe00,Jeff Heuerman,jeff heuerman,TE,2011,1992-11-24,2015,Ohio St.,DEN
+00-0032200,MontTy01,Ty Montgomery,ty montgomery,WR,2011,1993-01-22,2015,Stanford,GNB
+00-0031939,JoneMa04,Matt Jones,matt jones,RB,2012,1993-03-07,2015,Florida,WAS
+00-0031941,CrowJa00,Jamison Crowder,jamison crowder,WR,2011,1993-06-17,2015,Duke,WAS
+00-0031569,LangJe00,Jeremy Langford,jeremy langford,RB,2010,1991-12-06,2015,Michigan St.,CHI
+00-0032130,FowlJa00,Jalston Fowler,jalston fowler,RB,2010,1990-07-26,2015,Alabama,TEN
+00-0032062,BellBl00,Blake Bell,blake bell,TE,2010,1991-08-07,2015,Oklahoma,SFO
+00-0031577,AlleJa01,Javorius Allen,javorius allen,RB,2011,1991-08-27,2015,USC,BAL
+00-0032063,DaviMi01,Mike Davis,mike davis,RB,2012,1993-02-19,2015,South Carolina,SFO
+00-0032133,CobbDa00,David Cobb,david cobb,RB,2011,1993-06-03,2015,Minnesota,TEN
+00-0032170,GreeRa00,Rashad Greene,rashad greene,WR,2011,1992-09-23,2015,Florida St.,JAX
+00-0031585,PruiMy00,MyCole Pruitt,mycole pruitt,TE,2010,1992-03-24,2015,Southern Illinois,MIN
+00-0031588,DiggSt00,Stefon Diggs,stefon diggs,WR,2012,1993-11-29,2015,Maryland,MIN
+00-0031589,HundBr00,Brett Hundley,brett hundley,QB,2011,1993-06-15,2015,UCLA,GNB
+00-0031590,AjayJa00,Jay Ajayi,jay ajayi,RB,2011,1993-06-15,2015,Boise St.,MIA
+00-0032152,WillKa01,Karlos Williams,karlos williams,RB,2011,1993-05-04,2015,Florida St.,BUF
+00-0031594,LippTo00,Tony Lippett,tony lippett,WR,2010,1992-07-02,2015,Michigan St.,MIA
+00-0032134,UzomC.00,C.J. Uzomah,c j uzomah,TE,2011,1993-01-14,2015,Auburn,CIN
+00-0032112,NelsJJ00,JJ Nelson,jj nelson,WR,2010,1992-04-24,2015,Ala-Birmingham,ARI
+00-0032135,JameJe00,Jesse James,jesse james,TE,2012,1994-06-04,2015,Penn St.,PIT
+00-0032113,BellKe02,Kenny Bell,kenny bell,WR,2010,1992-02-25,2015,Nebraska,TAM
+00-0031595,BurtMi00,Michael Burton,michael burton,RB,2010,1992-02-01,2015,Rutgers,DET
+00-0031598,BoylNi00,Nick Boyle,nick boyle,TE,2011,1993-02-17,2015,Delaware,BAL
+00-0031951,O'ShJa00,James O'Shaughnessy,james o shaughnessy,TE,2010,1992-01-14,2015,Illinois St.,KAN
+00-0031600,MumpKe00,Keith Mumphery,keith mumphery,WR,2010,1992-06-05,2015,Michigan St.,HOU
+00-0032115,ClayKa00,Kaelin Clay,kaelin clay,WR,2010,1992-01-02,2015,Utah,TAM
+00-0031953,DaviGe00,Geremy Davis,geremy davis,WR,2010,1992-01-10,2015,Connecticut,NYG
+00-0031954,SpenEv00,Evan Spencer,evan spencer,WR,2011,1993-05-26,2015,Ohio St.,WAS
+00-0032117,OLeaNi00,Nick O'Leary,nick o leary,TE,2011,1992-08-31,2015,Florida St.,BUF
+00-0032068,JohnMa06,Malcolm Johnson,malcolm johnson,TE,2010,1992-08-11,2015,Mississippi St.,CLE
+00-0031533,TelfRa00,Randall Telfer,randall telfer,TE,2010,1992-05-16,2015,USC,CLE
+,SassBu00,Bud Sasser,bud sasser,WR,2010,,2015,Missouri,STL
+00-0031610,WallDa01,Darren Waller,darren waller,WR,2011,1992-09-13,2015,Georgia Tech,BAL
+00-0031611,RobiJo02,Josh Robinson,josh robinson,RB,2011,1992-08-24,2015,Mississippi St.,IND
+00-0031612,RipkAa00,Aaron Ripkowski,aaron ripkowski,RB,2010,1992-12-20,2015,Oklahoma,GNB
+00-0031617,BackKe00,Kennard Backman,kennard backman,TE,2011,1993-02-26,2015,Ala-Birmingham,GNB
+00-0032120,SterNe00,Neal Sterling,neal sterling,WR,2010,1992-01-14,2015,Monmouth,JAX
+00-0032139,KoyaBe00,Ben Koyack,ben koyack,TE,2011,1993-04-09,2015,Notre Dame,JAX
+00-0031959,MurpMa03,Marcus Murphy,marcus murphy,RB,2010,1991-10-03,2015,Missouri,NOR
+00-0032070,LewiDe02,Dezmin Lewis,dezmin lewis,WR,2010,1992-12-05,2015,Central Arkansas,BUF
+00-0031625,HillKe01,Kenny Hilliard,kenny hilliard,RB,2011,1991-10-03,2015,LSU,HOU
+00-0031962,AlfoMa00,Mario Alford,mario alford,WR,2010,1992-02-25,2015,West Virginia,CIN
+00-0032123,McBrTr00,Tre McBride,tre mcbride,WR,2010,1992-12-01,2015,William & Mary,TEN
+00-0032141,SwaiGe00,Geoff Swaim,geoff swaim,TE,2011,1993-09-16,2015,Texas,DAL
+00-0032156,SiemTr00,Trevor Siemian,trevor siemian,QB,2010,1991-12-26,2015,Northwestern,DEN
+00-0032072,AndeRo01,Rory Anderson,rory anderson,TE,2011,,2015,South Carolina,SFO
+00-0032190,ChriGe00,Gerald Christian,gerald christian,TE,2010,1991-08-26,2015,Louisville,ARI
+00-0033106,GoffJa00,Jared Goff,jared goff,QB,2013,1994-10-14,2016,California,LAR
+00-0032950,WentCa00,Carson Wentz,carson wentz,QB,2010,1992-12-30,2016,North Dakota St.,PHI
+00-0033045,ElliEz00,Ezekiel Elliott,ezekiel elliott,RB,2013,1995-07-22,2016,Ohio St.,DAL
+00-0032966,ColeCo00,Corey Coleman,corey coleman,WR,2012,1994-07-06,2016,Baylor,CLE
+00-0033127,FullWi01,Will Fuller,will fuller,WR,2013,1994-04-16,2016,Notre Dame,HOU
+00-0032760,DoctJo00,Josh Doctson,josh doctson,WR,2010,1992-12-03,2016,TCU,WAS
+00-0032951,TreaLa00,Laquon Treadwell,laquon treadwell,WR,2013,1995-06-14,2016,Mississippi,MIN
+00-0033108,LyncPa00,Paxton Lynch,paxton lynch,QB,2012,1994-02-12,2016,Memphis,DEN
+00-0033090,HenrHu00,Hunter Henry,hunter henry,TE,2013,1994-12-07,2016,Arkansas,SDG
+00-0032385,ShepSt00,Sterling Shepard,sterling shepard,WR,2012,1993-02-10,2016,Oklahoma,NYG
+00-0032764,HenrDe00,Derrick Henry,derrick henry,RB,2013,1994-01-04,2016,Alabama,TEN
+00-0032765,ThomMi05,Michael Thomas,michael thomas,WR,2011,1993-03-03,2016,Ohio St.,NOR
+00-0032953,HackCh01,Christian Hackenberg,christian hackenberg,QB,2013,1995-02-14,2016,Penn St.,NYJ
+00-0033009,BoydTy00,Tyler Boyd,tyler boyd,WR,2013,1994-11-15,2016,Pittsburgh,CIN
+00-0033118,DrakKe00,Kenyan Drake,kenyan drake,RB,2012,1994-01-26,2016,Alabama,MIA
+00-0032392,HoopAu00,Austin Hooper,austin hooper,TE,2013,1994-10-29,2016,Stanford,ATL
+00-0033069,MillBr03,Braxton Miller,braxton miller,WR,2011,1992-11-30,2016,Ohio St.,HOU
+00-0033060,CarrLe00,Leonte Carroo,leonte carroo,WR,2012,1994-01-24,2016,Rutgers,MIA
+00-0032393,ProsC.00,C.J. Prosise,c j prosise,RB,2012,1994-05-20,2016,Notre Dame,SEA
+00-0033119,BrisJa00,Jacoby Brissett,jacoby brissett,QB,2011,1992-12-11,2016,North Carolina St.,NWE
+00-0033104,KessCo00,Cody Kessler,cody kessler,QB,2011,1993-05-11,2016,USC,CLE
+00-0032394,VannNi00,Nick Vannett,nick vannett,TE,2011,1993-03-06,2016,Ohio St.,SEA
+00-0032893,CookCo00,Connor Cook,connor cook,QB,2011,1993-01-29,2016,Michigan St.,OAK
+00-0032398,MoorCh00,Chris Moore,chris moore,WR,2011,1993-06-16,2016,Cincinnati,BAL
+00-0033110,HigbTy00,Tyler Higbee,tyler higbee,TE,2011,1993-01-01,2016,Western Kentucky,LAR
+00-0032400,MitcMa01,Malcolm Mitchell,malcolm mitchell,WR,2011,1992-07-20,2016,Georgia,NWE
+00-0033079,LouiRi00,Ricardo Louis,ricardo louis,WR,2012,1994-03-23,2016,Auburn,CLE
+00-0033111,CoopPh00,Pharoh Cooper,pharoh cooper,WR,2013,1995-03-07,2016,South Carolina,LAR
+00-0032404,ErviTy00,Tyler Ervin,tyler ervin,RB,2011,1993-10-07,2016,San Jose St.,HOU
+00-0032775,RobiDe01,Demarcus Robinson,demarcus robinson,WR,2013,1994-09-21,2016,Florida,KAN
+00-0032411,DixoKe00,Kenneth Dixon,kenneth dixon,RB,2012,1994-01-21,2016,Louisiana Tech,BAL
+00-0033077,PresDa01,Dak Prescott,dak prescott,QB,2011,1993-07-29,2016,Mississippi St.,DAL
+00-0032972,BookDe00,Devontae Booker,devontae booker,RB,2010,1992-05-27,2016,Utah,DEN
+00-0033080,DevaSe00,Seth Devalve,seth devalve,TE,2011,1993-01-29,2016,Princeton,CLE
+00-0033098,JoneCa01,Cardale Jones,cardale jones,QB,2011,1992-09-29,2016,Ohio St.,BUF
+00-0032778,SharTa00,Tajae Sharpe,tajae sharpe,WR,2012,1994-12-23,2016,Massachusetts,TEN
+00-0032940,WashDe00,DeAndre Washington,deandre washington,RB,2011,1993-02-22,2016,Texas Tech,OAK
+00-0032417,PerkPa00,Paul Perkins,paul perkins,RB,2012,1994-11-16,2016,UCLA,NYG
+00-0032780,HowaJo00,Jordan Howard,jordan howard,RB,2013,1994-11-02,2016,Indiana,CHI
+00-0032782,SmalWe00,Wendell Smallwood,wendell smallwood,RB,2013,1994-01-20,2016,West Virginia,PHI
+00-0032974,PaytJo00,Jordan Payton,jordan payton,WR,2012,1993-09-01,2016,UCLA,CLE
+00-0032975,WillJo07,Jonathan Williams,jonathan williams,RB,2012,1994-02-02,2016,Arkansas,BUF
+00-0032784,HogaKe00,Kevin Hogan,kevin hogan,QB,2011,1992-10-20,2016,Stanford,KAN
+00-0032423,DaviTr03,Trevor Davis,trevor davis,WR,2011,1993-07-04,2016,California,GNB
+00-0033040,HillTy00,Tyreek Hill,tyreek hill,WR,2012,1994-03-01,2016,West Alabama,KAN
+00-0032426,CollAl00,Alex Collins,alex collins,RB,2013,1994-08-26,2016,Arkansas,SEA
+00-0032977,HiggRa00,Rashard Higgins,rashard higgins,WR,2013,1994-10-07,2016,Colorado St.,CLE
+00-0032956,JanoAn00,Andy Janovich,andy janovich,RB,2011,1993-05-23,2016,Nebraska,DEN
+00-0033112,HemiTe00,Temarrick Hemingway,temarrick hemingway,TE,2011,1993-07-30,2016,South Carolina St.,LAR
+00-0032341,BoehMo00,Moritz Boehringer,moritz boehringer,WR,2011,1993-10-16,2016,,MIN
+00-0033078,ReynKe00,Keenan Reynolds,keenan reynolds,RB,2011,1993-12-13,2016,Navy,BAL
+00-0032429,AdamJe01,Jerell Adams,jerell adams,TE,2011,1992-12-31,2016,South Carolina,NYG
+00-0032791,GranJa00,Jakeem Grant,jakeem grant,WR,2011,1992-10-30,2016,Texas Tech,MIA
+00-0032792,SudfNa00,Nate Sudfeld,nate sudfeld,QB,2012,1993-10-07,2016,Indiana,WAS
+00-0032430,MorgDa01,David Morgan,david morgan,TE,2011,1993-05-19,2016,Texas-San Antonio,MIN
+00-0032431,RudoJa00,Jake Rudock,jake rudock,QB,2011,1993-01-21,2016,Michigan,DET
+00-0032957,ListKo00,Kolby Listenbee,kolby listenbee,WR,2012,1994-01-25,2016,TCU,BUF
+00-0032794,VitaDa00,Danny Vitale,danny vitale,RB,2012,1993-10-26,2016,Northwestern,TAM
+00-0032897,WattDe00,Derek Watt,derek watt,RB,2011,1992-11-07,2016,Wisconsin,SDG
+00-0032795,CoreCo00,Cody Core,cody core,WR,2012,1994-04-17,2016,Mississippi,CIN
+00-0032434,AlleBr00,Brandon Allen,brandon allen,QB,2011,1992-09-05,2016,Arkansas,JAX
+00-0033114,ThomMi04,Mike Thomas,mike thomas,WR,2012,1994-08-16,2016,Southern Miss,LAR
+00-0032436,DrisJe00,Jeff Driskel,jeff driskel,QB,2011,1993-04-23,2016,Louisiana Tech,SFO
+00-0032440,TaylKe01,Kelvin Taylor,kelvin taylor,RB,2013,1993-09-28,2016,Florida,SFO
+00-0032441,BurbAa00,Aaron Burbridge,aaron burbridge,WR,2012,1993-12-23,2016,Michigan St.,SFO
+00-0033049,JackDa01,Darius Jackson,darius jackson,RB,2011,1993-12-01,2016,Eastern Michigan,DAL
+00-0033054,GathRi00,Rico Gathers,rico gathers,TE,2012,1994-01-07,2016,Baylor,DAL
+00-0032446,DougBr00,Brandon Doughty,brandon doughty,QB,2010,1991-10-06,2016,Western Kentucky,MIA
+00-0032447,LuciDe00,Devin Lucien,devin lucien,WR,2011,1993-06-26,2016,Arizona St.,NWE
+00-0032365,AyerDe00,Demarcus Ayers,demarcus ayers,WR,2012,1994-07-07,2016,Houston,PIT
+00-0032801,BravDa00,Daniel Braverman,daniel braverman,WR,2012,1993-09-28,2016,Western Michigan,CHI
+00-0033061,DuarTh00,Thomas Duarte,thomas duarte,TE,2013,1995-03-30,2016,UCLA,MIA
+00-0032450,WashDw00,Dwayne Washington,dwayne washington,RB,2012,1994-04-24,2016,Washington,DET
+00-0032804,LascDa00,Daniel Lasco,daniel lasco,RB,2011,1992-10-09,2016,California,NOR
+00-0032451,FullDe00,Devin Fuller,devin fuller,WR,2012,1994-01-29,2016,UCLA,ATL
+00-0032959,PeakCh00,Charone Peake,charone peake,WR,2011,1992-10-16,2016,Clemson,NYJ
+00-0032806,MarsKe00,Keith Marshall,keith marshall,RB,2012,1994-02-16,2016,Georgia,WAS
+00-0032453,LawlKe00,Kenny Lawler,kenny lawler,WR,2012,1994-06-25,2016,California,SEA
+00-0032808,BrooZa00,Zac Brooks,zac brooks,RB,2012,1993-02-01,2016,Clemson,SEA
+00-0032900,SandBe00,Beau Sandland,beau sandland,TE,2011,1993-02-23,2016,Montana St.,CAR
+00-0033869,TrubMi00,Mitchell Trubisky,mitchell trubisky,QB,2013,1994-08-20,2017,North Carolina,CHI
+00-0033856,FourLe00,Leonard Fournette,leonard fournette,RB,2014,1995-01-18,2017,LSU,JAX
+00-0033871,DaviCo03,Corey Davis,corey davis,WR,2013,1995-01-11,2017,Western Michigan,TEN
+00-0033536,WillMi07,Mike Williams,mike williams,WR,2013,1994-10-04,2017,Clemson,LAC
+00-0033280,McCaCh01,Christian McCaffrey,christian mccaffrey,RB,2014,1996-06-07,2017,Stanford,CAR
+00-0033460,RossJo00,John Ross,john ross,WR,2013,1995-11-27,2017,Washington,CIN
+00-0033873,MahoPa00,Patrick Mahomes,patrick mahomes,QB,2014,1995-09-17,2017,Texas Tech,KAN
+00-0033537,WatsDe00,Deshaun Watson,deshaun watson,QB,2014,1995-09-14,2017,Clemson,HOU
+00-0033879,HowaO.00,O.J. Howard,o j howard,TE,2013,1994-11-18,2017,Alabama,TAM
+00-0033881,EngrEv00,Evan Engram,evan engram,TE,2013,1994-09-02,2017,Mississippi,NYG
+00-0033885,NjokDa00,David Njoku,david njoku,TE,2014,1996-07-10,2017,Miami (FL),CLE
+00-0033891,JoneZa00,Zay Jones,zay jones,WR,2013,1995-03-30,2017,East Carolina,BUF
+00-0033282,SamuCu00,Curtis Samuel,curtis samuel,WR,2014,1996-08-11,2017,Ohio St.,CAR
+00-0033893,CookDa01,Dalvin Cook,dalvin cook,RB,2014,1995-08-10,2017,Florida St.,MIN
+00-0033895,EverGe00,Gerald Everett,gerald everett,TE,2012,1994-06-25,2017,South Alabama,LAR
+00-0033896,ShahAd00,Adam Shaheen,adam shaheen,TE,2012,1994-10-24,2017,Ashland,CHI
+00-0033897,MixoJo00,Joe Mixon,joe mixon,RB,2014,1996-07-24,2017,Oklahoma,CIN
+00-0033899,KizeDe00,DeShone Kizer,deshone kizer,QB,2014,1996-01-03,2017,Notre Dame,CLE
+00-0033857,SmitJu00,JuJu Smith-Schuster,juju smith schuster,WR,2014,1996-11-22,2017,USC,PIT
+00-0033906,KamaAl00,Alvin Kamara,alvin kamara,RB,2013,1995-07-25,2017,Tennessee,NOR
+00-0033908,KuppCo00,Cooper Kupp,cooper kupp,WR,2011,1993-06-15,2017,Eastern Washington,LAR
+00-0033911,TaylTa00,Taywan Taylor,taywan taylor,WR,2013,1995-03-02,2017,Western Kentucky,TEN
+00-0033916,StewAr00,ArDarius Stewart,ardarius stewart,WR,2013,1993-12-08,2017,Alabama,NYJ
+00-0033919,HendCa01,Carlos Henderson,carlos henderson,WR,2013,1994-12-19,2017,Louisiana Tech,DEN
+00-0033921,GodwCh00,Chris Godwin,chris godwin,WR,2014,1996-02-27,2017,Penn St.,TAM
+00-0033923,HuntKa00,Kareem Hunt,kareem hunt,RB,2013,1995-08-06,2017,Toledo,KAN
+00-0033550,WebbDa00,Davis Webb,davis webb,QB,2013,1995-01-22,2017,California,NYG
+00-0033925,ForeDO00,D'Onta Foreman,d onta foreman,RB,2014,1996-04-24,2017,Texas,HOU
+00-0033932,GollKe00,Kenny Golladay,kenny golladay,WR,2011,1993-11-03,2017,Northern Illinois,DET
+00-0033933,WillCh05,Chad Williams,chad williams,WR,2012,1994-10-19,2017,Grambling St.,ARI
+00-0033858,SmitJo01,Jonnu Smith,jonnu smith,TE,2013,1995-08-22,2017,Florida International,TEN
+00-0033936,BeatC.00,C.J. Beathard,c j beathard,QB,2012,1993-11-16,2017,Iowa,SFO
+00-0033553,ConnJa00,James Conner,james conner,RB,2013,1995-05-05,2017,Pittsburgh,PIT
+00-0033937,DarbAm00,Amara Darboh,amara darboh,WR,2012,1994-02-01,2017,Michigan,SEA
+00-0033839,WestDe00,Dede Westbrook,dede westbrook,WR,2012,1993-11-21,2017,Oklahoma,JAX
+00-0033526,PeriSa00,Samaje Perine,samaje perine,RB,2014,1995-09-16,2017,Oklahoma,WAS
+00-0033943,ReynJo00,Josh Reynolds,josh reynolds,WR,2013,1995-02-16,2017,Texas A&M,LAR
+00-0033555,HollMa00,Mack Hollins,mack hollins,WR,2011,1993-09-16,2017,North Carolina,PHI
+00-0033556,CoheTa00,Tarik Cohen,tarik cohen,RB,2013,1995-07-26,2017,North Carolina A&T,CHI
+00-0033286,WillJo12,Joe Williams,joe williams,RB,2011,1993-09-04,2017,Utah,SFO
+00-0033559,RobeMi01,Michael Roberts,michael roberts,TE,2012,1994-05-07,2017,Toledo,DET
+00-0033859,MaloJo00,Josh Malone,josh malone,WR,2014,1996-03-21,2017,Tennessee,CIN
+00-0033561,PumpDo00,Donnel Pumphrey,donnel pumphrey,RB,2013,1994-12-06,2017,San Diego St.,PHI
+00-0033562,SwitRy00,Ryan Switzer,ryan switzer,WR,2013,1994-11-04,2017,North Carolina,DAL
+00-0033948,WillJa06,Jamaal Williams,jamaal williams,RB,2012,1995-04-03,2017,BYU,GNB
+00-0033949,DobbJo00,Joshua Dobbs,joshua dobbs,QB,2013,1995-01-26,2017,Tennessee,PIT
+00-0033464,ChesJe00,Jehu Chesson,jehu chesson,WR,2012,1993-12-20,2017,Michigan,KAN
+00-0033950,GallWa00,Wayne Gallman,wayne gallman,RB,2013,1994-10-01,2017,Clemson,NYG
+00-0033840,HansCh00,Chad Hansen,chad hansen,WR,2013,1995-01-18,2017,California,NYJ
+00-0033951,MackMa00,Marlon Mack,marlon mack,RB,2014,1996-03-07,2017,South Florida,IND
+00-0033564,ButtJa00,Jake Butt,jake butt,TE,2013,1995-07-11,2017,Michigan,DEN
+00-0033288,KittGe00,George Kittle,george kittle,TE,2012,1993-10-09,2017,Iowa,SFO
+00-0033953,LeggJo00,Jordan Leggett,jordan leggett,TE,2013,1995-01-31,2017,Clemson,NYJ
+00-0033528,SpriJe00,Jeremy Sprinkle,jeremy sprinkle,TE,2012,1994-08-10,2017,Arkansas,WAS
+00-0033567,HillBr02,Brian Hill,brian hill,RB,2014,1995-11-09,2017,Wyoming,ATL
+00-0033955,McNiJe00,Jeremy McNichols,jeremy mcnichols,RB,2014,1995-12-26,2017,Boise St.,TAM
+00-0033573,GibsSh00,Shelton Gibson,shelton gibson,WR,2013,1995-03-20,2017,West Virginia,PHI
+00-0033957,AdamRo01,Rodney Adams,rodney adams,WR,2013,1994-09-15,2017,South Florida,MIN
+00-0033958,PeteNa00,Nathan Peterman,nathan peterman,QB,2012,1994-05-04,2017,Pittsburgh,BUF
+00-0033466,McKeIs00,Isaiah McKenzie,isaiah mckenzie,WR,2014,1995-04-09,2017,Georgia,DEN
+00-0033576,SaubEr00,Eric Saubert,eric saubert,TE,2012,1994-05-09,2017,Drake,ATL
+00-0033291,YancDe00,DeAngelo Yancey,deangelo yancey,WR,2013,1994-11-18,2017,Purdue,GNB
+00-0033292,TaylTr02,Trent Taylor,trent taylor,WR,2013,1994-04-30,2017,Louisiana Tech,SFO
+00-0033789,LogaT.00,T.J. Logan,t j logan,RB,2013,1994-09-03,2017,North Carolina,ARI
+00-0033293,JoneAa00,Aaron Jones,aaron jones,RB,2013,1994-12-02,2017,Texas-El Paso,GNB
+00-0033295,McGuEl00,Elijah McGuire,elijah mcguire,RB,2013,1994-06-01,2017,Louisiana,NYJ
+00-0033296,ArmaAl00,Alex Armah,alex armah,RB,2012,1994-05-17,2017,West Georgia,CAR
+00-0033966,HodgBu00,Bucky Hodges,bucky hodges,TE,2013,1995-08-08,2017,Virginia Tech,MIN
+00-0033581,HendDe01,De'Angelo Henderson,de angelo henderson,RB,2010,1992-11-24,2017,Coastal Carolina,DEN
+00-0033967,RogeSa00,Sam Rogers,sam rogers,RB,2011,1995-04-12,2017,Virginia Tech,LAR
+00-0033791,WilsBr01,Brandon Wilson,brandon wilson,RB,2012,1994-07-27,2017,Houston,CIN
+00-0033530,DaviRo00,Robert Davis,robert davis,WR,2013,1995-04-02,2017,Georgia St.,WAS
+00-0033585,KaayBr00,Brad Kaaya,brad kaaya,QB,2014,1995-09-03,2017,Miami (FL),DET
+00-0033968,ColeSt00,Stacy Coley,stacy coley,WR,2013,1994-05-13,2017,Miami (FL),MIN
+00-0033589,MoorDa03,David Moore,david moore,WR,2013,1995-01-15,2017,East Central (OK),SEA
+00-0033471,FordIs00,Isaiah Ford,isaiah ford,WR,2014,1996-02-09,2017,Virginia Tech,MIA
+00-0033304,MaysDe00,Devante Mays,devante mays,RB,2012,1994-05-26,2017,Utah St.,GNB
+00-0033591,BrowNo00,Noah Brown,noah brown,WR,2014,1996-01-06,2017,Ohio St.,DAL
+00-0033796,WillMa09,Marquez Williams,marquez williams,RB,2012,1994-07-16,2017,Miami (FL),JAX
+00-0033797,MuhaKh00,Khalfani Muhammad,khalfani muhammad,RB,2013,1994-09-26,2017,California,TEN
+00-0033975,HoodEl00,Elijah Hood,elijah hood,RB,2014,1996-04-22,2017,North Carolina,OAK
+00-0033305,DuprMa01,Malachi Dupre,malachi dupre,WR,2014,1995-10-12,2017,LSU,GNB
+00-0033594,CarsCh00,Chris Carson,chris carson,RB,2013,1994-09-16,2017,Oklahoma St.,SEA
+00-0033798,SchrMa00,Mason Schreck,mason schreck,TE,2012,1993-11-04,2017,Buffalo,CIN
+00-0033596,DayeMa00,Matthew Dayes,matthew dayes,RB,2013,1994-09-03,2017,North Carolina St.,CLE
+00-0033597,KellCh00,Chad Kelly,chad kelly,QB,2012,1994-03-26,2017,Mississippi,DEN
+00-0034855,MayfBa00,Baker Mayfield,baker mayfield,QB,2013,1995-04-14,2018,Oklahoma,CLE
+00-0034844,BarkSa00,Saquon Barkley,saquon barkley,RB,2015,1997-02-09,2018,Penn St.,NYG
+00-0034869,DarnSa00,Sam Darnold,sam darnold,QB,2015,1997-06-05,2018,USC,NYJ
+00-0034857,AlleJo02,Josh Allen,josh allen,QB,2014,1996-05-21,2018,Wyoming,BUF
+00-0034343,RoseJo01,Josh Rosen,josh rosen,QB,2015,1997-02-10,2018,UCLA,ARI
+00-0034827,MoorD.00,D.J. Moore,d j moore,WR,2015,1997-04-14,2018,Maryland,CAR
+00-0034830,HursHa00,Hayden Hurst,hayden hurst,TE,2011,1993-08-24,2018,South Carolina,BAL
+00-0034837,RidlCa00,Calvin Ridley,calvin ridley,WR,2015,1994-12-20,2018,Alabama,ATL
+00-0034750,PennRa00,Rashaad Penny,rashaad penny,RB,2014,1996-02-02,2018,San Diego St.,SEA
+00-0034845,MichSo00,Sony Michel,sony michel,RB,2014,1995-02-17,2018,Georgia,NWE
+00-0034796,JackLa00,Lamar Jackson,lamar jackson,QB,2015,1997-01-07,2018,Louisville,BAL
+00-0034791,ChubNi00,Nick Chubb,nick chubb,RB,2014,1995-12-27,2018,Georgia,CLE
+00-0034816,JoneRo01,Ronald Jones II,ronald jones,RB,2015,1997-08-03,2018,USC,TAM
+00-0034348,SuttCo00,Courtland Sutton,courtland sutton,WR,2014,1995-10-10,2018,SMU,DEN
+00-0034829,GesiMi00,Mike Gesicki,mike gesicki,TE,2014,1995-10-03,2018,Penn St.,MIA
+00-0034349,JohnKe06,Kerryon Johnson,kerryon johnson,RB,2015,1997-06-30,2018,Auburn,DET
+00-0034860,PettDa00,Dante Pettis,dante pettis,WR,2014,1995-10-23,2018,Washington,SFO
+00-0034775,KirkCh01,Christian Kirk,christian kirk,WR,2015,1996-11-18,2018,Texas A&M,ARI
+00-0034351,GoedDa00,Dallas Goedert,dallas goedert,TE,2013,1995-01-03,2018,South Dakota St.,PHI
+00-0034353,MillAn02,Anthony Miller,anthony miller,WR,2012,1994-10-09,2018,Memphis,CHI
+00-0034358,GuicDe00,Derrius Guice,derrius guice,RB,2015,1997-06-21,2018,LSU,WAS
+00-0034676,WashJa00,James Washington,james washington,WR,2014,1996-04-02,2018,Oklahoma St.,PIT
+00-0034777,CharDJ00,DJ Chark,dj chark,WR,2014,1996-09-23,2018,LSU,JAX
+00-0034838,FreeRo00,Royce Freeman,royce freeman,RB,2014,1996-02-24,2018,Oregon,DEN
+00-0034771,RudoMa00,Mason Rudolph,mason rudolph,QB,2014,1995-06-17,2018,Oklahoma St.,PIT
+00-0034764,GallMi00,Michael Gallup,michael gallup,WR,2014,1996-03-04,2018,Colorado St.,DAL
+00-0034753,AndrMa00,Mark Andrews,mark andrews,TE,2014,1995-09-06,2018,Oklahoma,BAL
+00-0034765,SmitTr03,Tre'Quan Smith,tre quan smith,WR,2014,1996-01-07,2018,Central Florida,NOR
+00-0034364,AkinJo00,Jordan Akins,jordan akins,TE,2010,1992-04-19,2018,Central Florida,HOU
+00-0034365,ThomIa00,Ian Thomas,ian thomas,TE,2016,1996-06-06,2018,Indiana,CAR
+00-0034366,CoutKe00,Keke Coutee,keke coutee,WR,2015,1997-01-14,2018,Texas Tech,HOU
+00-0034367,HineNy00,Nyheim Hines,nyheim hines,RB,2015,1996-11-12,2018,North Carolina St.,IND
+00-0034772,CallAn00,Antonio Callaway,antonio callaway,WR,2015,1997-01-09,2018,Florida,CLE
+00-0034766,HernCh00,Chris Herndon,chris herndon,TE,2014,1996-02-23,2018,Miami (FL),NYJ
+00-0034369,LaulKy00,Kyle Lauletta,kyle lauletta,QB,2013,1995-03-17,2018,Richmond,NYG
+00-0034679,WaltMa00,Mark Walton,mark walton,RB,2015,1997-03-29,2018,Miami (FL),CIN
+00-0034370,HamiDa01,DaeSean Hamilton,daesean hamilton,WR,2013,1995-03-10,2018,Penn St.,DEN
+00-0034159,DissWi00,Will Dissly,will dissly,TE,2014,1996-07-08,2018,Washington,SEA
+00-0034798,SmytDu00,Durham Smythe,durham smythe,TE,2013,1995-08-09,2018,Notre Dame,MIA
+00-0034378,SmitIt00,Ito Smith,ito smith,RB,2014,1995-09-11,2018,Southern Miss,ATL
+00-0034799,BallKa00,Kalen Ballage,kalen ballage,RB,2014,1995-12-22,2018,Arizona St.,MIA
+00-0034267,ScotJa02,Jaleel Scott,jaleel scott,WR,2013,1995-02-23,2018,New Mexico St.,BAL
+00-0034268,MoorJM00,J'Mon Moore,j mon moore,WR,2013,1995-05-23,2018,Missouri,GNB
+00-0034681,EdmoCh00,Chase Edmonds,chase edmonds,RB,2014,1996-04-13,2018,Fordham,ARI
+00-0034383,SchuDa00,Dalton Schultz,dalton schultz,TE,2014,1996-07-11,2018,Stanford,DAL
+00-0034386,WatsJu01,Justin Watson,justin watson,WR,2014,1996-04-04,2018,Pennsylvania,TAM
+00-0034393,FumaTr00,Troy Fumagalli,troy fumagalli,TE,2013,1995-02-17,2018,Wisconsin,DEN
+00-0034270,ConkTy00,Tyler Conklin,tyler conklin,TE,2013,1995-07-30,2018,Central Michigan,MIN
+00-0034395,FounDa00,Daurice Fountain,daurice fountain,WR,2014,1995-12-22,2018,Northern Iowa,IND
+00-0034271,LaslJo00,Jordan Lasley,jordan lasley,WR,2014,1996-11-13,2018,UCLA,BAL
+00-0034331,SamuJa00,Jaylen Samuels,jaylen samuels,TE,2014,1996-07-20,2018,North Carolina St.,PIT
+00-0034400,WilkJo01,Jordan Wilkins,jordan wilkins,RB,2013,1994-07-18,2018,Mississippi,IND
+00-0034401,WhitMi01,Mike White,mike white,QB,2013,1995-03-25,2018,Western Kentucky,DAL
+00-0034272,ValdMa00,Marquez Valdes-Scantling,marquez valdes scantling,WR,2013,1994-10-10,2018,South Florida,GNB
+00-0034273,RatlDa00,Damion Ratley,damion ratley,WR,2013,1995-04-16,2018,Texas A&M,CLE
+00-0034808,KellJo00,John Kelly,john kelly,RB,2015,1996-10-04,2018,Tennessee,LAR
+00-0034406,CainDe00,Deon Cain,deon cain,WR,2015,1996-08-09,2018,Clemson,IND
+00-0034407,McClRa00,Ray-Ray McCloud,ray ray mccloud,WR,2015,1996-10-15,2018,Clemson,BUF
+00-0034409,CantDy00,Dylan Cantrell,dylan cantrell,WR,2013,1994-06-29,2018,Texas Tech,LAC
+00-0034411,GageRu00,Russell Gage,russell gage,WR,2014,1996-01-22,2018,LSU,ATL
+00-0034278,SmitTr04,Tremon Smith,tremon smith,WR,2014,1996-07-20,2018,Central Arkansas,KAN
+00-0034412,FalkLu00,Luke Falk,luke falk,QB,2012,1994-12-28,2018,Washington St.,TEN
+00-0034414,ScotBo02,Boston Scott,boston scott,RB,2013,1995-04-27,2018,Louisiana Tech,NOR
+00-0034416,LeexTa00,Tanner Lee,tanner lee,QB,2013,1995-02-14,2018,Nebraska,JAX
+00-0034164,CannTr00,Trenton Cannon,trenton cannon,RB,2012,1994-07-23,2018,Virginia St.,NYJ
+00-0034279,St.BEq00,Equanimeous St. Brown,equanimeous st brown,WR,2015,1996-09-30,2018,Notre Dame,GNB
+00-0034418,WilsCe01,Cedrick Wilson Jr.,cedrick wilson,WR,2013,1995-11-20,2018,Boise St.,DAL
+00-0034419,BerrBr00,Braxton Berrios,braxton berrios,WR,2014,1995-10-06,2018,Miami (FL),NWE
+00-0034420,ThomJo05,Jordan Thomas,jordan thomas,TE,2015,1996-08-02,2018,Mississippi St.,HOU
+00-0034423,EtliDa00,Danny Etling,danny etling,QB,2013,1994-07-22,2018,LSU,NWE
+00-0034732,McGoAl00,Alex McGough,alex mcgough,QB,2014,1995-11-19,2018,Florida International,SEA
+00-0034426,WimsJa00,Javon Wims,javon wims,WR,2013,1994-09-11,2018,Georgia,CHI
+00-0034427,WillDa011,David Williams,david williams,RB,2013,1994-06-17,2018,Arkansas,DEN
+00-0034747,AtemMa00,Marcell Ateman,marcell ateman,WR,2013,1994-09-16,2018,Oklahoma St.,OAK
+00-0034432,ScarBo01,Bo Scarbrough,bo scarbrough,RB,2014,1996-09-29,2018,Alabama,DAL
+00-0034433,BawdNi00,Nick Bawden,nick bawden,RB,2014,1996-06-22,2018,San Diego St.,DET
+00-0034286,JameRi00,Richie James,richie james,WR,2014,1995-09-05,2018,Middle Tenn. St.,SFO
+00-0034438,WoodLo00,Logan Woodside,logan woodside,QB,2013,1995-01-27,2018,Toledo,CIN
+00-0034439,IzzoRy00,Ryan Izzo,ryan izzo,TE,2014,1995-12-21,2018,Florida St.,NWE
+00-0034440,JackJu01,Justin Jackson,justin jackson,RB,2014,1996-04-22,2018,Northwestern,LAC
+00-0034686,TateAu00,Auden Tate,auden tate,WR,2015,1997-02-03,2018,Florida St.,CIN
+00-0034442,ProeAu00,Austin Proehl,austin proehl,WR,2014,1995-10-11,2018,North Carolina,BUF
+00-0034339,QuinTr00,Trey Quinn,trey quinn,WR,2014,1995-12-07,2018,SMU,WAS
+00-0035228,MurrKy00,Kyler Murray,kyler murray,QB,2015,1997-08-07,2019,Oklahoma,ARI
+00-0035710,JoneDa05,Daniel Jones,daniel jones,QB,2015,1997-05-27,2019,Duke,NYG
+00-0035229,HockTJ00,T.J. Hockenson,t j hockenson,TE,2016,1997-07-03,2019,Iowa,DET
+00-0035232,HaskDw00,Dwayne Haskins,dwayne haskins,QB,2016,1997-05-03,2019,Ohio St.,WAS
+00-0035644,FantNo00,Noah Fant,noah fant,TE,2016,1997-11-20,2019,Iowa,DEN
+00-0035700,JacoJo01,Josh Jacobs,josh jacobs,RB,2016,1998-02-11,2019,Alabama,OAK
+00-0035662,BrowMa04,Marquise Brown,marquise brown,WR,2015,1997-06-04,2019,Oklahoma,BAL
+00-0035624,HarrNK00,N'Keal Harry,n keal harry,WR,2016,1997-12-17,2019,Arizona St.,NWE
+00-0035719,SamuDe00,Deebo Samuel,deebo samuel,WR,2014,1996-01-15,2019,South Carolina,SFO
+00-0035704,LockDr00,Drew Lock,drew lock,QB,2015,1996-11-10,2019,Missouri,DEN
+00-0034970,SmitIr01,Irv Smith Jr.,irv smith,TE,2016,1998-08-09,2019,Alabama,MIN
+00-0035676,BrowAJ00,A.J. Brown,a j brown,WR,2016,1997-06-30,2019,Mississippi,TEN
+00-0035631,SampDr00,Drew Sample,drew sample,TE,2014,1996-04-16,2019,Washington,CIN
+00-0035243,SandMi01,Miles Sanders,miles sanders,RB,2016,1997-05-01,2019,Penn St.,PHI
+00-0035140,HardMe00,Mecole Hardman,mecole hardman,WR,2016,1998-03-12,2019,Georgia,KAN
+00-0035246,ArceJJ00,JJ Arcega-Whiteside,jj arcega whiteside,WR,2015,1996-12-31,2019,Stanford,PHI
+00-0035639,CampPa00,Parris Campbell,parris campbell,WR,2014,1997-07-16,2019,Ohio St.,IND
+00-0035527,IsabAn00,Andy Isabella,andy isabella,WR,2014,1996-11-18,2019,Massachusetts,ARI
+00-0035640,MetcDK00,D.K. Metcalf,d k metcalf,WR,2016,1997-12-14,2019,Mississippi,SEA
+00-0035216,JohnDi01,Diontae Johnson,diontae johnson,WR,2014,1996-07-05,2019,Toledo,PIT
+00-0034971,HurdJa00,Jalen Hurd,jalen hurd,WR,2014,1996-01-23,2019,Baylor,SFO
+00-0035249,OlivJo00,Josh Oliver,josh oliver,TE,2015,1997-03-21,2019,San Jose St.,JAX
+00-0035664,HendDa00,Darrell Henderson,darrell henderson,RB,2015,1997-08-19,2019,Memphis,LAR
+00-0035685,MontDa01,David Montgomery,david montgomery,RB,2016,1997-06-07,2019,Iowa St.,CHI
+00-0035250,SingDe00,Devin Singletary,devin singletary,RB,2016,1997-09-03,2019,Florida Atlantic,BUF
+00-0035671,SterJa00,Jace Sternberger,jace sternberger,TE,2015,1996-06-26,2019,Texas A&M,GNB
+00-0035659,McLaTe00,Terry McLaurin,terry mclaurin,WR,2014,1995-09-15,2019,Ohio St.,WAS
+00-0035660,WarrKa00,Kahale Warring,kahale warring,TE,2015,1997-03-23,2019,San Diego St.,HOU
+00-0035657,HarrDa06,Damien Harris,damien harris,RB,2015,1997-02-11,2019,Alabama,NWE
+00-0035703,BoykMi00,Miles Boykin,miles boykin,WR,2015,1996-10-12,2019,Notre Dame,BAL
+00-0035689,KnoxDa00,Dawson Knox,dawson knox,TE,2014,1996-11-14,2019,Mississippi,BUF
+00-0035251,GrieWi00,Will Grier,will grier,QB,2014,1995-04-03,2019,West Virginia,CAR
+00-0034972,MattAl01,Alexander Mattison,alexander mattison,RB,2016,1998-06-19,2019,Boise St.,MIN
+00-0035529,ButlHa00,Hakeem Butler,hakeem butler,WR,2015,1996-05-16,2019,Iowa St.,ARI
+00-0035652,FinlRy00,Ryan Finley,ryan finley,QB,2013,1994-12-26,2019,North Carolina St.,CIN
+00-0035256,LoveBr00,Bryce Love,bryce love,RB,2015,1997-07-08,2019,Stanford,WAS
+00-0034975,HillJu00,Justice Hill,justice hill,RB,2016,1997-11-14,2019,Oklahoma St.,BAL
+00-0035589,JennGa00,Gary Jennings Jr,gary jennings,WR,2015,1997-03-07,2019,West Virginia,SEA
+00-0035259,WescTr00,Trevon Wesco,trevon wesco,TE,2014,1995-09-12,2019,West Virginia,NYJ
+00-0035217,SnelBe00,Benny Snell Jr.,benny snell,RB,2016,1998-02-27,2019,Kentucky,PIT
+00-0035590,RidlRi00,Riley Ridley,riley ridley,WR,2016,1996-07-21,2019,Georgia,CHI
+00-0035261,PollTo00,Tony Pollard,tony pollard,RB,2015,1997-04-30,2019,Memphis,DAL
+00-0035264,StidJa00,Jarrett Stidham,jarrett stidham,QB,2015,1996-08-08,2019,Auburn,NWE
+00-0034981,MoreFo00,Foster Moreau,foster moreau,TE,2015,1997-05-06,2019,LSU,OAK
+00-0035268,ArmsRy00,Ryquell Armstead,ryquell armstead,RB,2015,1996-10-30,2019,Temple,JAX
+00-0035222,GentZa00,Zach Gentry,zach gentry,TE,2015,1996-09-10,2019,Michigan,PIT
+00-0034983,RenfHu00,Hunter Renfrow,hunter renfrow,WR,2013,1995-12-21,2019,Clemson,OAK
+00-0035273,OlliQa00,Qadree Ollison,qadree ollison,RB,2014,1996-09-08,2019,Pittsburgh,ATL
+00-0035275,ScarJo00,Jordan Scarlett,jordan scarlett,RB,2015,1995-07-08,2019,Florida,CAR
+00-0035282,SticEa00,Easton Stick,easton stick,QB,2014,1995-09-15,2019,North Dakota St.,LAC
+00-0035283,ThorCl00,Clayton Thorson,clayton thorson,QB,2014,1995-06-15,2019,Northwestern,PHI
+00-0035535,SlayDa01,Darius Slayton,darius slayton,WR,2015,1997-01-12,2019,Auburn,NYG
+00-0035287,JohnKe07,KeeSean Johnson,keesean johnson,WR,2014,1996-10-09,2019,Fresno St.,ARI
+00-0034988,SmitKa00,Kaden Smith,kaden smith,TE,2016,1997-04-24,2019,Stanford,SFO
+00-0035289,MinsGa00,Gardner Minshew II,gardner minshew,QB,2015,1996-05-16,2019,Washington St.,JAX
+00-0035291,WillTr06,Trayveon Williams,trayveon williams,RB,2016,1997-10-18,2019,Texas A&M,CIN
+00-0035592,FulgTr00,Travis Fulgham,travis fulgham,WR,2013,1995-09-13,2019,Old Dominion,DET
+00-0035537,JohnTy02,Ty Johnson,ty johnson,RB,2015,1997-09-17,2019,Maryland,DET
+00-0035593,WinfJu00,Juwann Winfree,juwann winfree,WR,2014,1996-09-04,2019,Colorado,DEN
+00-0034995,WillDe07,Dexter Williams,dexter williams,RB,2015,1997-01-06,2019,Notre Dame,GNB
+00-0035146,McSoTr00,Trace McSorley,trace mcsorley,QB,2014,1995-08-23,2019,Penn St.,BAL
+00-0035296,GreeMa02,Marcus Green,marcus green,WR,2014,1996-08-13,2019,La-Monroe,ATL
+00-0035594,HomeTr00,Travis Homer,travis homer,RB,2016,1998-08-07,2019,Miami (FL),SEA
+00-0035297,HarmKe00,Kelvin Harmon,kelvin harmon,WR,2016,1996-12-15,2019,North Carolina St.,WAS
+00-0035298,MillSc01,Scott Miller,scott miller,WR,2015,1997-07-31,2019,Bowling Green,TAM
+00-0035299,AndeRo02,Rodney Anderson,rodney anderson,RB,2015,1996-09-12,2019,Oklahoma,CIN
+00-0035148,ThomDa06,Darwin Thompson,darwin thompson,RB,2015,1997-02-12,2019,Utah St.,KAN
+00-0035303,WebeMi00,Mike Weber,mike weber,RB,2015,1997-08-27,2019,Ohio St.,DAL
+00-0035304,GillCu00,Cullen Gillaspia,cullen gillaspia,RB,2013,1995-05-12,2019,Texas A&M,HOU
+00-0035596,WhytKe00,Kerrith Whyte Jr,kerrith whyte,RB,2015,1996-10-31,2019,Florida Atlantic,CHI
+00-0035539,NautIs00,Isaac Nauta,isaac nauta,TE,2016,1997-05-21,2019,Georgia,DET
+00-0035308,SweeTo00,Tommy Sweeney,tommy sweeney,TE,2014,1995-07-01,2019,Boston Col.,BUF
+00-0035309,MackAl00,Alizé Mack,aliz mack,TE,2015,1997-03-29,2019,Notre Dame,NOR
+00-0035310,CoxxCh01,Chandler Cox,chandler cox,RB,2015,1996-07-29,2019,Auburn,MIA
+00-0035311,GaskMy00,Myles Gaskin,myles gaskin,RB,2015,1997-02-15,2019,Washington,MIA
+00-0035597,UrsuJo00,John Ursua,john ursua,WR,2012,1994-01-17,2019,Hawaii,SEA
+00-0035313,GodwTe00,Terry Godwin,terry godwin,WR,2015,1996-10-23,2019,Georgia,CAR
+00-0035002,MitcDi00,Dillon Mitchell,dillon mitchell,WR,2016,1997-05-16,2019,Oregon,MIN
+00-0035006,JohnOl00,Olabisi Johnson,olabisi johnson,WR,2015,1997-03-17,2019,Colorado St.,MIN
+00-0035320,WilsCa00,Caleb Wilson,caleb wilson,TE,2014,1996-07-15,2019,UCLA,ARI
+00-0036442,BurrJo01,Joe Burrow,joe burrow,QB,2015,1996-12-10,2020,LSU,CIN
+00-0036212,TagoTu00,Tua Tagovailoa,tua tagovailoa,QB,2017,1998-03-02,2020,Alabama,MIA
+00-0036355,HerbJu00,Justin Herbert,justin herbert,QB,2016,1998-03-10,2020,Oregon,LAC
+00-0036357,RuggHe00,Henry Ruggs III,henry ruggs,WR,2017,1999-01-24,2020,Alabama,LVR
+00-0036407,JeudJe00,Jerry Jeudy,jerry jeudy,WR,2017,1999-04-24,2020,Alabama,DEN
+00-0036358,LambCe00,CeeDee Lamb,ceedee lamb,WR,2017,1999-04-08,2020,Oklahoma,DAL
+00-0036387,ReagJa00,Jalen Reagor,jalen reagor,WR,2017,1999-01-02,2020,TCU,PHI
+00-0036322,JeffJu00,Justin Jefferson,justin jefferson,WR,2017,1999-06-16,2020,LSU,MIN
+00-0036261,AiyuBr00,Brandon Aiyuk,brandon aiyuk,WR,2016,1998-03-17,2020,Arizona St.,SFO
+00-0036264,LoveJo03,Jordan Love,jordan love,QB,2016,1998-11-02,2020,Utah St.,GNB
+00-0036360,EdwaCl00,Clyde Edwards-Helaire,clyde edwards helaire,RB,2017,1999-04-11,2020,LSU,KAN
+00-0036410,HiggTe00,Tee Higgins,tee higgins,WR,2017,1999-01-18,2020,Clemson,CIN
+00-0036252,PittMi01,Michael Pittman Jr.,michael pittman,WR,2016,1997-10-05,2020,USC,IND
+00-0036275,SwifDA00,D'Andre Swift,d andre swift,RB,2017,1999-01-14,2020,Georgia,DET
+00-0036223,TaylJo02,Jonathan Taylor,jonathan taylor,RB,2017,1999-01-19,2020,Wisconsin,IND
+00-0036268,ShenLa00,Laviska Shenault Jr.,laviska shenault,WR,2017,1998-10-05,2020,Colorado,JAX
+00-0036290,KmetCo00,Cole Kmet,cole kmet,TE,2017,1999-03-10,2020,Notre Dame,CHI
+00-0036412,HamlKJ00,KJ Hamler,kj hamler,WR,2017,1999-07-08,2020,Penn St.,DEN
+00-0036326,ClayCh01,Chase Claypool,chase claypool,WR,2016,1998-07-07,2020,Notre Dame,PIT
+00-0036414,AkerCa00,Cam Akers,cam akers,RB,2017,1999-06-22,2020,Florida St.,LAR
+00-0036389,HurtJa00,Jalen Hurts,jalen hurts,QB,2016,1998-08-07,2020,Oklahoma,PHI
+00-0036158,DobbJK00,J.K. Dobbins,j k dobbins,RB,2017,1998-12-17,2020,Ohio St.,BAL
+00-0036415,JeffVa00,Van Jefferson,van jefferson,WR,2015,1996-07-26,2020,Florida,LAR
+00-0036255,MimsDe00,Denzel Mims,denzel mims,WR,2016,1997-10-10,2020,Baylor,NYJ
+00-0036265,DillAJ00,AJ Dillon,aj dillon,RB,2017,1998-05-02,2020,Boston Col.,GNB
+00-0036328,GibsAn00,Antonio Gibson,antonio gibson,RB,2016,1998-06-23,2020,Memphis,WAS
+00-0036450,VaugKe00,Ke'Shawn Vaughn,ke shawn vaughn,RB,2015,1997-05-04,2020,Illinois,TAM
+00-0036364,BowdLy00,Lynn Bowden Jr.,lynn bowden,WR,2017,1997-10-14,2020,Kentucky,LVR
+00-0036365,EdwaBr01,Bryan Edwards,bryan edwards,WR,2016,1998-11-13,2020,South Carolina,LVR
+00-0036251,MossZa00,Zack Moss,zack moss,RB,2016,1997-12-15,2020,Utah,BUF
+00-0036194,AsiaDe00,Devin Asiasi,devin asiasi,TE,2016,1997-08-14,2020,UCLA,NWE
+00-0036331,DuveDe00,Devin Duvernay,devin duvernay,WR,2016,1997-09-12,2020,Texas,BAL
+00-0036297,EvanDa02,Darrynton Evans,darrynton evans,RB,2016,1998-07-09,2020,Appalachian St.,TEN
+00-0036332,DeguJo00,Josiah Deguara,josiah deguara,TE,2015,1997-02-14,2020,Cincinnati,GNB
+00-0036225,KeenDa00,Dalton Keene,dalton keene,TE,2017,1999-04-14,2020,Virginia Tech,NWE
+00-0036422,TrauAd00,Adam Trautman,adam trautman,TE,2015,1997-02-05,2020,Dayton,NOR
+00-0036370,KellJo01,Joshua Kelley,joshua kelley,RB,2015,1997-11-20,2020,UCLA,LAC
+00-0036232,BryaHa00,Harrison Bryant,harrison bryant,TE,2016,1998-04-23,2020,Florida Atlantic,CLE
+00-0036423,OkwuAl00,Albert Okwuegbunam,albert okwuegbunam,TE,2016,1998-04-25,2020,Missouri,DEN
+00-0036269,PeriLa00,La'Mical Perine,la mical perine,RB,2016,1998-01-30,2020,Florida,NYJ
+00-0036226,EasoJa00,Jacob Eason,jacob eason,QB,2016,1997-11-17,2020,Washington,IND
+00-0036336,McFaAn00,Anthony McFarland Jr.,anthony mcfarland,RB,2017,1999-03-04,2020,Maryland,PIT
+00-0036301,MorgJa00,James Morgan,james morgan,QB,2015,1997-02-28,2020,Florida International,NYJ
+00-0036196,DaviGa01,Gabe Davis,gabe davis,WR,2017,1999-03-01,2020,Central Florida,BUF
+00-0036244,ParkCo02,Colby Parkinson,colby parkinson,TE,2017,1999-01-07,2020,Stanford,SEA
+00-0036424,HopkBr01,Brycen Hopkins,brycen hopkins,TE,2015,1997-03-27,2020,Purdue,LAR
+00-0036340,GandAn00,Antonio Gandy-Golden,antonio gandy golden,WR,2016,1998-04-11,2020,Liberty,WAS
+00-0036425,DallDe00,DeeJay Dallas,deejay dallas,RB,2017,1998-09-16,2020,Miami (FL),SEA
+00-0036377,ReedJo03,Joe Reed,joe reed,WR,2016,1998-01-04,2020,Virginia,LAC
+00-0036427,JohnTy00,Tyler Johnson,tyler johnson,WR,2016,1998-08-25,2020,Minnesota,TAM
+00-0036254,JohnCo01,Collin Johnson,collin johnson,WR,2016,1997-09-23,2020,Texas,JAX
+00-0036277,CephQu00,Quintez Cephus,quintez cephus,WR,2016,1998-04-01,2020,Wisconsin,DET
+00-0036197,FromJa00,Jake Fromm,jake fromm,QB,2017,1998-07-30,2020,Georgia,BUF
+00-0036398,HighJo00,John Hightower,john hightower,WR,2014,1996-05-31,2020,Boise St.,PHI
+00-0036308,CoulIs00,Isaiah Coulter,isaiah coulter,WR,2016,1998-09-18,2020,Rhode Island,HOU
+00-0036278,HuntJa01,Jason Huntley,jason huntley,RB,2016,1998-04-20,2020,New Mexico St.,DET
+00-0036309,MoonDa00,Darnell Mooney,darnell mooney,WR,2016,1997-10-29,2020,Tulane,CHI
+00-0036345,OsboKJ00,K.J. Osborn,k j osborn,WR,2015,1997-06-10,2020,Miami (FL),MIN
+00-0036233,PeopDo00,Donovan Peoples-Jones,donovan peoples jones,WR,2017,1999-02-19,2020,Michigan,CLE
+00-0036312,LutoJa00,Jake Luton,jake luton,QB,2014,1996-04-11,2020,Oregon St.,JAX
+00-0036429,WoerCh00,Charlie Woerner,charlie woerner,TE,2016,1997-10-16,2020,Georgia,SFO
+00-0036271,WatkQu00,Quez Watkins,quez watkins,WR,2016,1998-06-09,2020,Southern Miss,PHI
+00-0036133,ProcJa00,James Proche,james proche,WR,2015,1996-09-20,2020,SMU,BAL
+00-0036250,DaviTy02,Tyler Davis,tyler davis,TE,2015,1997-04-02,2020,Georgia Tech,JAX
+00-0036165,HodgIs00,Isaiah Hodgins,isaiah hodgins,WR,2017,1998-10-21,2020,Oregon St.,BUF
+00-0036228,PatmDe00,Dezmon Patmon,dezmon patmon,WR,2016,1998-08-06,2020,Washington St.,IND
+00-0036247,SwaiFr00,Freddie Swain,freddie swain,WR,2016,1998-08-04,2020,Florida,SEA
+00-0036259,JennJa00,Jauan Jennings,jauan jennings,WR,2015,1997-07-10,2020,Tennessee,SFO
+00-0036382,HillKJ00,K.J. Hill,k j hill,WR,2015,1997-09-15,2020,Ohio St.,LAC
+00-0036383,BenjEn00,Eno Benjamin,eno benjamin,RB,2017,1999-04-13,2020,Arizona St.,ARI
+,McDoCo00,Cole McDonald,cole mcdonald,QB,2016,,2020,Hawaii,TEN
+00-0036384,DiNuBe00,Ben DiNucci,ben dinucci,QB,2015,1996-11-24,2020,James Madison,DAL
+00-0036433,StevTo01,Tommy Stevens,tommy stevens,QB,2015,1996-12-15,2020,Mississippi St.,NOR
+00-0036279,StanNa00,Nate Stanley,nate stanley,QB,2016,1997-08-26,2020,Iowa,MIN
+00-0036435,CalaRa00,Raymond Calais,raymond calais,RB,2016,1998-04-02,2020,Louisiana,TAM
+00-0036245,PerrMa00,Malcolm Perry,malcolm perry,RB,2015,1997-04-19,2020,Navy,MIA
+00-0036438,SullSt00,Stephen Sullivan,stephen sullivan,TE,2016,1996-11-28,2020,LSU,SEA
+00-0036439,ClevTy00,Tyrie Cleveland,tyrie cleveland,WR,2016,1997-09-20,2020,Florida,DEN
+00-0036971,LawrTr00,Trevor Lawrence,trevor lawrence,QB,2018,1999-10-06,2021,Clemson,JAX
+00-0037013,WilsZa00,Zach Wilson,zach wilson,QB,2018,1999-08-03,2021,BYU,NYJ
+00-0037012,LancTr00,Trey Lance,trey lance,QB,2018,2000-05-09,2021,North Dakota St.,SFO
+00-0036970,PittKy00,Kyle Pitts,kyle pitts,TE,2018,2000-10-06,2021,Florida,ATL
+00-0036900,ChasJa00,Ja'Marr Chase,ja marr chase,WR,2018,2000-03-01,2021,LSU,CIN
+00-0036613,WaddJa00,Jaylen Waddle,jaylen waddle,WR,2018,1998-11-25,2021,Alabama,MIA
+00-0036912,SmitDe07,DeVonta Smith,devonta smith,WR,2017,1998-11-14,2021,Alabama,PHI
+00-0036945,FielJu00,Justin Fields,justin fields,QB,2018,1999-03-05,2021,Ohio St.,CHI
+00-0036972,JoneMa05,Mac Jones,mac jones,QB,2017,1998-09-05,2021,Alabama,NWE
+00-0036913,ToneKa00,Kadarius Toney,kadarius toney,WR,2017,1999-01-27,2021,Florida,NYG
+00-0036893,HarrNa00,Najee Harris,najee harris,RB,2017,1998-03-09,2021,Alabama,PIT
+00-0036973,EtieTr00,Travis Etienne,travis etienne,RB,2017,1999-01-26,2021,Clemson,JAX
+00-0036550,BateRa00,Rashod Bateman,rashod bateman,WR,2018,1999-11-29,2021,Minnesota,BAL
+00-0036980,MoorEl00,Elijah Moore,elijah moore,WR,2018,2000-03-27,2021,Mississippi,NYJ
+00-0036997,WillJa10,Javonte Williams,javonte williams,RB,2018,2000-04-25,2021,North Carolina,DEN
+00-0036936,MoorRo02,Rondale Moore,rondale moore,WR,2018,2000-06-09,2021,Purdue,ARI
+00-0036894,FreiPa00,Pat Freiermuth,pat freiermuth,TE,2018,1998-10-25,2021,Penn St.,PIT
+00-0036620,EskrDW00,D'Wayne Eskridge,d wayne eskridge,WR,2016,1997-03-23,2021,Western Michigan,SEA
+00-0036849,AtweTu00,Tutu Atwell,tutu atwell,WR,2018,1999-10-07,2021,Louisville,LAR
+00-0036955,MarsTe00,Terrace Marshall Jr.,terrace marshall,WR,2018,2000-06-09,2021,LSU,CAR
+00-0036928,TrasKy00,Kyle Trask,kyle trask,QB,2016,1998-03-06,2021,Florida,TAM
+00-0036946,MondKe00,Kellen Mond,kellen mond,QB,2017,1999-06-22,2021,Texas A&M,MIN
+00-0036898,MillDa02,Davis Mills,davis mills,QB,2017,1998-10-21,2021,Stanford,HOU
+00-0036988,PalmJo00,Josh Palmer,josh palmer,WR,2017,1999-09-22,2021,Tennessee,LAC
+00-0037004,LongHu00,Hunter Long,hunter long,TE,2017,1998-08-19,2021,Boston Col.,MIA
+00-0036626,BrowDy00,Dyami Brown,dyami brown,WR,2018,1999-11-01,2021,North Carolina,WAS
+00-0037005,TremTo00,Tommy Tremble,tommy tremble,TE,2018,2000-06-02,2021,Notre Dame,CAR
+00-0036991,RodgAm00,Amari Rodgers,amari rodgers,WR,2017,1999-09-23,2021,Clemson,GNB
+00-0036984,SermTr00,Trey Sermon,trey sermon,RB,2017,1999-01-30,2021,Ohio St.,SFO
+00-0036554,CollNi00,Nico Collins,nico collins,WR,2017,1999-03-19,2021,Michigan,HOU
+00-0036999,SchwAn00,Anthony Schwartz,anthony schwartz,WR,2018,2000-09-05,2021,Auburn,CLE
+00-0037011,McKiTr00,Tre' McKitty,tre mckitty,TE,2017,1999-01-12,2021,Georgia,LAC
+00-0036924,CartMi03,Michael Carter,michael carter,RB,2017,1999-05-07,2021,North Carolina,NYJ
+00-0036627,FitzDe00,Dez Fitzpatrick,dez fitzpatrick,WR,2016,1997-12-17,2021,Louisville,TEN
+00-0036963,StxxAm00,Amon-Ra St. Brown,amon ra st brown,WR,2018,1999-10-24,2021,USC,DET
+00-0036842,NwanKe00,Kene Nwangwu,kene nwangwu,RB,2016,1998-02-09,2021,Iowa St.,MIN
+00-0036875,StevRh00,Rhamondre Stevenson,rhamondre stevenson,RB,2016,1998-02-23,2021,Oklahoma,NWE
+00-0036628,BateJo00,John Bates,john bates,TE,2016,1997-11-06,2021,Boise St.,WAS
+00-0036555,HubbCh01,Chuba Hubbard,chuba hubbard,RB,2017,1999-06-11,2021,Oklahoma St.,CAR
+00-0036876,GranKy00,Kylen Granson,kylen granson,TE,2016,1998-03-27,2021,SMU,IND
+00-0036877,DardJa00,Jaelon Darden,jaelon darden,WR,2017,1999-01-14,2021,North Texas,TAM
+00-0036630,WallTy00,Tylan Wallace,tylan wallace,WR,2017,1999-05-13,2021,Oklahoma St.,BAL
+00-0036929,BookIa00,Ian Book,ian book,QB,2016,1998-03-30,2021,Notre Dame,NOR
+00-0036918,HarrJa03,Jacob Harris,jacob harris,WR,2015,1997-04-16,2021,Central Florida,LAR
+00-0036887,FarrLu00,Luke Farrell,luke farrell,TE,2016,1997-10-14,2021,Ohio St.,JAX
+00-0036556,JordBr00,Brevin Jordan,brevin jordan,TE,2018,2000-07-16,2021,Miami (FL),HOU
+00-0036919,GainKe00,Kenneth Gainwell,kenneth gainwell,RB,2018,1999-03-14,2021,Memphis,PHI
+00-0036635,SmitIh00,Ihmir Smith-Marsette,ihmir smith marsette,WR,2017,1999-08-29,2021,Iowa,MIN
+00-0036637,GrayNo00,Noah Gray,noah gray,TE,2017,1999-04-30,2021,Duke,KAN
+00-0036640,DaviZa00,Zach Davidson,zach davidson,TE,2016,1998-07-15,2021,Central Missouri St.,MIN
+00-0036646,FehoSi00,Simi Fehoko,simi fehoko,WR,2016,1997-11-05,2021,Stanford,DAL
+00-0036647,PoweCo00,Cornell Powell,cornell powell,WR,2016,1997-10-30,2021,Clemson,KAN
+00-0036565,MasoBe00,Ben Mason,ben mason,RB,2017,1999-05-25,2021,Michigan,BAL
+00-0036951,DarbFr00,Frank Darby,frank darby,WR,2016,1997-09-08,2021,Arizona St.,ATL
+00-0036567,MitcEl00,Elijah Mitchell,elijah mitchell,RB,2017,1998-05-02,2021,Louisiana,SFO
+00-0036569,BrigGa00,Gary Brightwell,gary brightwell,RB,2017,1998-02-28,2021,Arizona,NYG
+00-0036650,RounLa00,Larry Rountree,larry rountree,RB,2017,1999-02-13,2021,Missouri,LAC
+00-0036857,EvanCh02,Chris Evans,chris evans,RB,2016,1997-10-05,2021,Michigan,CIN
+00-0036571,StevMa00,Marquez Stevenson,marquez stevenson,WR,2016,1998-03-26,2021,Houston,BUF
+00-0036572,SmitSh03,Shi Smith,shi smith,WR,2017,1998-10-26,2021,South Carolina,CAR
+00-0036652,McMaRa00,Racey McMath,racey mcmath,WR,2017,1999-06-14,2021,LSU,TEN
+00-0036858,CampJa03,Jalen Camp,jalen camp,WR,2016,1998-07-10,2021,Georgia Tech,JAX
+00-0036654,FeltDe00,Demetric Felton,demetric felton,RB,2016,1998-07-16,2021,UCLA,CLE
+00-0036906,HerbKh00,Khalil Herbert,khalil herbert,RB,2016,1998-04-21,2021,Virginia Tech,CHI
+00-0036879,EhliSa00,Sam Ehlinger,sam ehlinger,QB,2017,1998-09-30,2021,Texas,IND
+00-0036657,WillSe00,Seth Williams,seth williams,WR,2018,2000-04-10,2021,Auburn,DEN
+00-0036907,NewsDa00,Dazz Newsome,dazz newsome,WR,2017,1999-05-15,2021,North Carolina,CHI
+00-0036482,StraMi03,Mike Strachan,mike strachan,WR,2015,1997-08-13,2021,Charleston (WV),IND
+00-0036860,FunkJa00,Jake Funk,jake funk,RB,2016,1998-01-11,2021,Maryland,LAR
+00-0036536,NixoTr01,Tre Nixon,tre nixon,WR,2016,1998-01-26,2021,Central Florida,NWE
+00-0036578,DoakGe00,Gerrid Doaks,gerrid doaks,RB,2016,1998-06-09,2021,Cincinnati,MIA
+00-0036862,SkowBe00,Ben Skowronek,ben skowronek,WR,2016,1997-06-27,2021,Notre Dame,LAR
+00-0036939,BakeKa00,Kawaan Baker,kawaan baker,WR,2016,1998-08-24,2021,South Alabama,NOR
+00-0036669,HillKy00,Kylin Hill,kylin hill,RB,2017,1998-08-18,2021,Mississippi St.,GNB
+00-0036670,JeffJe00,Jermar Jefferson,jermar jefferson,RB,2018,2000-04-15,2021,Oregon St.,DET
+00-0036671,MilnDa00,Dax Milne,dax milne,WR,2017,1999-06-23,2021,BYU,WAS
+00-0037238,LondDr00,Drake London,drake london,WR,2019,2001-07-24,2022,USC,ATL
+00-0037740,WilsGa00,Garrett Wilson,garrett wilson,WR,2019,2000-07-22,2022,Ohio St.,NYJ
+00-0037239,OlavCh00,Chris Olave,chris olave,WR,2018,2000-06-27,2022,Ohio St.,NOR
+00-0037240,WillJa11,Jameson Williams,jameson williams,WR,2019,2001-03-26,2022,Alabama,DET
+00-0037741,DotsJa00,Jahan Dotson,jahan dotson,WR,2018,2000-03-22,2022,Penn St.,WAS
+00-0037742,BurkTr00,Treylon Burks,treylon burks,WR,2019,2000-03-23,2022,Arkansas,TEN
+00-0038102,PickKe00,Kenny Pickett,kenny pickett,QB,2017,1998-06-06,2022,Pittsburgh,PIT
+00-0038124,WatsCh00,Christian Watson,christian watson,WR,2017,1999-05-12,2022,North Dakota St.,GNB
+00-0038120,HallBr03,Breece Hall,breece hall,RB,2019,2001-05-31,2022,Iowa St.,NYJ
+00-0038134,WalkKe00,Kenneth Walker III,kenneth walker,RB,2019,2000-10-20,2022,Michigan St.,SEA
+00-0038117,RobiWa01,Wan'Dale Robinson,wan dale robinson,WR,2019,2001-01-05,2022,Kentucky,NYG
+00-0037614,MetcJo00,John Metchie,john metchie,WR,2019,2000-07-18,2022,Alabama,HOU
+00-0038104,ThorTy00,Tyquan Thornton,tyquan thornton,WR,2018,2000-08-07,2022,Baylor,NWE
+00-0037247,PickGe00,George Pickens,george pickens,WR,2019,2001-03-04,2022,Georgia,PIT
+00-0037664,PierAl00,Alec Pierce,alec pierce,WR,2018,2000-05-02,2022,Cincinnati,IND
+00-0038090,MoorSk01,Skyy Moore,skyy moore,WR,2018,2000-09-10,2022,Western Michigan,KAN
+00-0037744,McBrTr01,Trey McBride,trey mcbride,TE,2018,1999-11-22,2022,Colorado St.,ARI
+00-0037248,CookJa01,James Cook,james cook,RB,2018,1999-09-25,2022,Georgia,BUF
+00-0037745,JoneVe00,Velus Jones Jr.,velus jones,WR,2016,1997-05-11,2022,Tennessee,CHI
+00-0037755,WoodJe01,Jelani Woods,jelani woods,TE,2017,1998-10-09,2022,Virginia,IND
+00-0038122,RiddDe00,Desmond Ridder,desmond ridder,QB,2017,1999-08-31,2022,Cincinnati,ATL
+00-0037252,DulcGr00,Greg Dulcich,greg dulcich,TE,2018,2000-03-26,2022,UCLA,DEN
+00-0038128,WillMa12,Malik Willis,malik willis,QB,2017,1999-05-25,2022,Liberty,TEN
+00-0037666,TolbJa00,Jalen Tolbert,jalen tolbert,WR,2017,1999-02-27,2022,South Alabama,DAL
+00-0037256,WhitRa01,Rachaad White,rachaad white,RB,2017,1999-01-12,2022,Arizona St.,TAM
+00-0037827,DaviTy03,Tyrion Davis-Price,tyrion davis price,RB,2019,2000-10-23,2022,LSU,SFO
+00-0038132,CorrMa00,Matt Corral,matt corral,QB,2018,1999-01-31,2022,Mississippi,CAR
+00-0037746,RobiBr01,Brian Robinson Jr.,brian robinson,RB,2017,1999-03-22,2022,Alabama,WAS
+00-0037257,BellDa02,David Bell,david bell,WR,2019,2000-12-14,2022,Purdue,CLE
+00-0037805,RuckJe00,Jeremy Ruckert,jeremy ruckert,TE,2018,2000-08-11,2022,Ohio St.,NYJ
+00-0037828,GrayDa02,Danny Gray,danny gray,WR,2018,1999-04-01,2022,SMU,SFO
+00-0038129,OttoCa00,Cade Otton,cade otton,TE,2017,1999-04-15,2022,Washington,TAM
+00-0037258,PierDa01,Dameon Pierce,dameon pierce,RB,2018,2000-02-19,2022,Florida,HOU
+00-0038115,BellDa00,Daniel Bellinger,daniel bellinger,TE,2018,2000-09-22,2022,San Diego St.,NYG
+00-0038040,WhitZa01,Zamir White,zamir white,RB,2018,1999-09-18,2022,Georgia,LVR
+00-0038045,SpilIs00,Isaiah Spiller,isaiah spiller,RB,2019,2001-08-09,2022,Texas A&M,LAC
+00-0038092,EzukEr00,Erik Ezukanma,erik ezukanma,WR,2018,2000-01-25,2022,Texas Tech,MIA
+00-0038098,StroPi00,Pierre Strong,pierre strong,RB,2016,1998-12-10,2022,South Dakota St.,NWE
+00-0038046,KolaCh00,Charlie Kolar,charlie kolar,TE,2017,1999-02-10,2022,Iowa St.,BAL
+00-0038041,FergJa00,Jake Ferguson,jake ferguson,TE,2017,1999-01-18,2022,Wisconsin,DAL
+00-0037617,HaskHa00,Hassan Haskins,hassan haskins,RB,2018,1999-11-26,2022,Michigan,TEN
+00-0037816,DoubRo00,Romeo Doubs,romeo doubs,WR,2018,2000-04-13,2022,Nevada,GNB
+00-0038108,ZappBa00,Bailey Zappe,bailey zappe,QB,2017,1999-04-26,2022,Western Kentucky,NWE
+00-0037837,AustCa00,Calvin Austin III,calvin austin,WR,2017,1999-03-24,2022,Memphis,PIT
+00-0037838,LikeIs00,Isaiah Likely,isaiah likely,TE,2018,2000-04-18,2022,Coastal Carolina,BAL
+00-0037809,OkonCh00,Chig Okonkwo,chig okonkwo,TE,2017,1999-09-08,2022,Maryland,TEN
+00-0037077,HoweSa00,Sam Howell,sam howell,QB,2019,2000-11-16,2022,North Carolina,WAS
+00-0037261,ShakKh00,Khalil Shakir,khalil shakir,WR,2018,2000-02-03,2022,Boise St.,BUF
+00-0037078,TurnCo00,Cole Turner,cole turner,TE,2018,2000-03-16,2022,Nevada,WAS
+00-0037263,AllgTy00,Tyler Allgeier,tyler allgeier,RB,2018,2000-04-15,2022,BYU,ATL
+00-0037265,ConnSn00,Snoop Conner,snoop conner,RB,2019,2000-08-01,2022,Mississippi,JAX
+00-0037267,FordJe00,Jerome Ford,jerome ford,RB,2018,1999-09-12,2022,Cincinnati,CLE
+00-0037272,WashMo00,Montrell Washington,montrell washington,WR,2017,1999-03-14,2022,Samford,DEN
+00-0037273,PhilKy01,Kyle Philips,kyle philips,WR,2018,1999-06-17,2022,UCLA,TEN
+00-0037840,WillKy02,Kyren Williams,kyren williams,RB,2019,2000-08-26,2022,Notre Dame,LAR
+00-0037276,ChanTy01,Ty Chandler,ty chandler,RB,2017,1998-05-12,2022,North Carolina,MIN
+00-0037277,QuitTe00,Teagan Quitoriano,teagan quitoriano,TE,2018,2000-03-15,2022,Oregon St.,HOU
+00-0037282,MitcJa00,James Mitchell,james mitchell,TE,2018,1999-08-11,2022,Virginia Tech,DET
+00-0037286,HarrKe01,Kevin Harris,kevin harris,RB,2019,2000-11-17,2022,South Carolina,NWE
+00-0037291,NailJa00,Jalen Nailor,jalen nailor,WR,2018,1999-03-02,2022,Michigan St.,MIN
+00-0037292,OgleAn00,Andrew Ogletree,andrew ogletree,TE,2016,1998-07-28,2022,Youngstown St.,IND
+00-0037085,BadiTy00,Tyler Badie,tyler badie,RB,2018,1999-02-07,2022,Missouri,BAL
+00-0037086,CalcGr00,Grant Calcaterra,grant calcaterra,TE,2017,1998-12-04,2022,SMU,PHI
+00-0037299,IngrKe01,Keaontay Ingram,keaontay ingram,RB,2018,1999-10-26,2022,USC,ARI
+00-0037300,WoodMi00,Michael Woods II,michael woods,WR,2018,2000-03-19,2022,Oklahoma,CLE
+00-0037087,EbneTr00,Trestan Ebner,trestan ebner,RB,2017,1999-01-02,2022,Baylor,CHI
+00-0037304,HeywCo00,Connor Heyward,connor heyward,TE,2017,1999-01-22,2022,Michigan St.,PIT
+00-0037306,FitzJo00,John FitzPatrick,john fitzpatrick,TE,2018,2000-03-09,2022,Georgia,ATL
+00-0037311,KiefKo00,Ko Kieft,ko kieft,TE,2016,1998-01-20,2022,Minnesota,TAM
+00-0037317,MuseNi00,Nick Muse,nick muse,TE,2016,1998-11-25,2022,South Carolina,MIN
+00-0037091,MeltBo00,Bo Melton,bo melton,WR,2017,1999-05-18,2022,Rutgers,SEA
+00-0037093,YounDa02,Dareke Young,dareke young,WR,2017,1999-06-04,2022,Lenoir-Rhyne,SEA
+00-0037324,OladCh00,Chris Oladokun,chris oladokun,QB,2016,1997-09-03,2022,South Dakota St.,PIT
+00-0037327,ThomSk00,Skylar Thompson,skylar thompson,QB,2016,1997-06-04,2022,Kansas St.,MIA
+00-0037329,BrowBr06,Brittain Brown,brittain brown,RB,2016,1997-10-10,2022,UCLA,LVR
+00-0037197,PachIs00,Isiah Pacheco,isiah pacheco,RB,2018,1999-03-02,2022,Rutgers,KAN
+00-0037098,TourSa00,Samori Toure,samori toure,WR,2016,1998-03-24,2022,Nebraska,GNB
+00-0037331,HorvZa00,Zander Horvath,zander horvath,RB,2016,1998-12-10,2022,Purdue,LAC
+00-0037834,PurdBr00,Brock Purdy,brock purdy,QB,2018,1999-12-27,2022,Iowa St.,SFO
+00-0039150,YounBr01,Bryce Young,bryce young,QB,2020,2001-07-25,2023,Alabama,CAR
+00-0039163,StroCJ00,C.J. Stroud,c j stroud,QB,2020,2001-10-03,2023,Ohio St.,HOU
+00-0039164,RichAn03,Anthony Richardson,anthony richardson,QB,2020,2002-05-22,2023,Florida,IND
+00-0038542,RobiBi01,Bijan Robinson,bijan robinson,RB,2020,2002-01-30,2023,Texas,ATL
+00-0039139,GibbJa01,Jahmyr Gibbs,jahmyr gibbs,RB,2020,2002-03-20,2023,Alabama,DET
+00-0038543,SmitJa06,Jaxon Smith-Njigba,jaxon smith njigba,WR,2020,2002-02-14,2023,Ohio St.,SEA
+00-0038544,JohnQu02,Quentin Johnston,quentin johnston,WR,2020,2001-09-06,2023,TCU,LAC
+00-0039064,FlowZa00,Zay Flowers,zay flowers,WR,2019,2000-09-11,2023,Boston Col.,BAL
+00-0038994,AddiJo00,Jordan Addison,jordan addison,WR,2020,2002-01-27,2023,USC,MIN
+00-0038933,KincDa00,Dalton Kincaid,dalton kincaid,TE,2017,1999-10-18,2023,Utah,BUF
+00-0039152,LeviWi00,Will Levis,will levis,QB,2018,1999-06-27,2023,Kentucky,TEN
+00-0039065,LaPoSa01,Sam LaPorta,sam laporta,TE,2019,2001-01-12,2023,Iowa,DET
+00-0039066,MayeMi00,Michael Mayer,michael mayer,TE,2020,2001-07-06,2023,Notre Dame,LVR
+00-0039062,MingJo00,Jonathan Mingo,jonathan mingo,WR,2019,2001-04-20,2023,Mississippi,CAR
+00-0039144,MusgLu00,Luke Musgrave,luke musgrave,TE,2019,2000-09-02,2023,Oregon St.,GNB
+00-0039146,ReedJa03,Jayden Reed,jayden reed,WR,2018,2000-04-28,2023,Michigan St.,GNB
+00-0039165,CharZa00,Zach Charbonnet,zach charbonnet,RB,2019,2001-01-08,2023,UCLA,SEA
+00-0039067,RiceRa01,Rashee Rice,rashee rice,WR,2019,2000-04-22,2023,SMU,KAN
+00-0038547,SchoLu00,Luke Schoonmaker,luke schoonmaker,TE,2018,1998-09-28,2023,Michigan,DAL
+00-0038935,StraBr00,Brenton Strange,brenton strange,TE,2019,2000-12-27,2023,Penn St.,JAX
+00-0038976,MimsMa00,Marvin Mims,marvin mims,WR,2020,2002-03-19,2023,Oklahoma,DEN
+00-0038550,HookHe00,Hendon Hooker,hendon hooker,QB,2017,1998-01-13,2023,Tennessee,DET
+00-0038977,DellNa00,Tank Dell,tank dell,WR,2017,1999-10-29,2023,Houston,HOU
+00-0038551,MillKe01,Kendre Miller,kendre miller,RB,2020,2002-06-11,2023,TCU,NOR
+00-0038938,HyatJa00,Jalin Hyatt,jalin hyatt,WR,2020,2001-09-25,2023,Tennessee,NYG
+00-0038979,TillCe01,Cedric Tillman,cedric tillman,WR,2018,2000-04-19,2023,Tennessee,CLE
+00-0038996,KrafTu00,Tucker Kraft,tucker kraft,TE,2018,2000-11-03,2023,South Dakota St.,GNB
+00-0038997,DownJo00,Josh Downs,josh downs,WR,2020,2001-08-12,2023,North Carolina,IND
+00-0039032,SpeaTy00,Tyjae Spears,tyjae spears,RB,2019,2001-06-15,2023,Tulane,TEN
+00-0039040,AchaDe00,De'Von Achane,de von achane,RB,2020,2001-10-13,2023,Texas A&M,MIA
+00-0038555,BigsTa00,Tank Bigsby,tank bigsby,RB,2020,2001-08-30,2023,Auburn,JAX
+00-0038558,WashDa03,Darnell Washington,darnell washington,TE,2020,2001-08-17,2023,Georgia,PIT
+00-0038559,WilsMi02,Michael Wilson,michael wilson,WR,2018,2000-02-23,2023,Stanford,ARI
+00-0038563,TuckTr00,Tre Tucker,tre tucker,WR,2019,2001-03-08,2023,Cincinnati,LVR
+00-0038564,LatuCa01,Cameron Latu,cameron latu,TE,2018,2000-02-24,2023,Alabama,SFO
+00-0039021,JohnRo07,Roschon Johnson,roschon johnson,RB,2019,2001-01-31,2023,Texas,CHI
+00-0038573,DaviDe02,Derius Davis,derius davis,WR,2018,2000-09-11,2023,TCU,LAC
+00-0038998,HaenJa00,Jake Haener,jake haener,QB,2017,1999-03-10,2023,Fresno St.,NOR
+00-0039107,BennSt00,Stetson Bennett,stetson bennett,QB,2015,1997-10-28,2023,Georgia,LAR
+00-0038576,JoneCh11,Charlie Jones,charlie jones,WR,2017,1998-10-29,2023,Purdue,CIN
+00-0038941,ScotTy00,Tyler Scott,tyler scott,WR,2020,2001-10-12,2023,Cincinnati,CHI
+00-0038579,OConAi00,Aidan O'Connell,aidan o connell,QB,2016,1998-09-01,2023,Purdue,LVR
+00-0038582,TuneCl00,Clayton Tune,clayton tune,QB,2018,1999-03-23,2023,Houston,ARI
+00-0038583,ThomDo02,Dorian Thompson-Robinson,dorian thompson robinson,QB,2018,1999-11-14,2023,UCLA,CLE
+00-0038389,AbanIs00,Israel Abanikanda,israel abanikanda,RB,2020,2002-10-05,2023,Pittsburgh,NYJ
+00-0038589,WhylJo01,Josh Whyle,josh whyle,TE,2018,1999-09-08,2023,Cincinnati,TEN
+00-0038391,ClifSe00,Sean Clifford,sean clifford,QB,2017,1998-07-14,2023,Penn St.,GNB
+00-0038590,ShorJu00,Justin Shorter,justin shorter,WR,2018,2000-04-17,2023,Florida,BUF
+00-0038393,WickDo00,Dontayvion Wicks,dontayvion wicks,WR,2019,2001-06-16,2023,Virginia,GNB
+00-0038394,MallWi00,Will Mallory,will mallory,TE,2018,1999-06-22,2023,Miami (FL),IND
+00-0038597,BrowCh10,Chase Brown,chase brown,RB,2018,2000-03-21,2023,Illinois,CIN
+00-0038598,HallJa00,Jaren Hall,jaren hall,QB,2016,1998-03-24,2023,BYU,MIN
+00-0039050,DurhPa00,Payne Durham,payne durham,TE,2018,2000-06-15,2023,Purdue,TAM
+00-0038396,GrayEr01,Eric Gray,eric gray,RB,2019,1999-11-04,2023,Oklahoma,NYG
+00-0039074,AlleDa02,Davis Allen,davis allen,TE,2019,2001-02-03,2023,Clemson,LAR
+00-0038397,HullEv00,Evan Hull,evan hull,RB,2019,2000-10-26,2023,Northwestern,IND
+00-0039075,NacuPu00,Puka Nacua,puka nacua,WR,2019,2001-05-29,2023,BYU,LAR
+00-0038606,WashPa01,Parker Washington,parker washington,WR,2020,2002-03-21,2023,Penn St.,JAX
+00-0038608,BoutKa00,Kayshon Boutte,kayshon boutte,WR,2020,2002-05-07,2023,LSU,NWE
+00-0038400,McKeTa01,Tanner McKee,tanner mckee,QB,2018,2000-04-27,2023,Stanford,PHI
+00-0039052,PalmTr00,Trey Palmer,trey palmer,WR,2019,2001-04-02,2023,Nebraska,TAM
+00-0038611,RodrCh00,Chris Rodriguez,chris rodriguez,RB,2018,1999-09-26,2023,Kentucky,WAS
+00-0038612,PerrAT00,A.T. Perry,a t perry,WR,2018,1999-10-26,2023,Wake Forest,NOR
+00-0039041,HiggEl00,Elijah Higgins,elijah higgins,WR,2019,2000-10-27,2023,Stanford,MIA
+00-0038618,HutcXa00,Xavier Hutchinson,xavier hutchinson,WR,2018,2000-06-01,2023,Iowa St.,HOU
+00-0038619,IosiAn00,Andrei Iosivas,andrei iosivas,WR,2017,1999-10-15,2023,Princeton,CIN
+00-0038621,DougDe00,DeMario Douglas,demario douglas,WR,2018,2000-12-08,2023,Liberty,NWE
+00-0038622,VaugDe00,Deuce Vaughn,deuce vaughn,RB,2020,2001-11-02,2023,Kansas St.,DAL
+00-0039136,EvanZa00,Zach Evans,zach evans,RB,2020,2001-05-30,2023,Mississippi,LAR
+00-0038627,GreeAn00,Antoine Green,antoine green,WR,2018,1999-11-15,2023,North Carolina,DET
+00-0038406,KuntZa00,Zack Kuntz,zack kuntz,TE,2018,1999-06-09,2023,Old Dominion,NYJ
+00-0039046,McBrDe00,DeWayne McBride,dewayne mcbride,RB,2020,2001-07-08,2023,Ala-Birmingham,MIN
+00-0038632,DoweCo00,Colton Dowell,colton dowell,WR,2017,1999-04-19,2023,UT Martin,TEN
+00-0038409,NichLe00,Lew Nichols,lew nichols,RB,2019,2001-08-16,2023,Central Michigan,GNB
+00-0038636,McInKe00,Kenny McIntosh,kenny mcintosh,RB,2019,2000-03-03,2023,Georgia,SEA
+00-0038637,DuggMa00,Max Duggan,max duggan,QB,2019,2001-03-12,2023,TCU,LAC
+00-0038640,BrooJa03,Jalen Brooks,jalen brooks,WR,2018,2000-05-07,2023,South Carolina,DAL
+00-0038643,WillBr06,Brayden Willis,brayden willis,TE,2018,1999-11-11,2023,Oklahoma,SFO
+00-0038647,BellRo01,Ronnie Bell,ronnie bell,WR,2018,2000-01-28,2023,Michigan,SFO
+00-0038507,DuboGr00,Grant Dubose,grant dubose,WR,2019,2001-06-20,2023,Charlotte,GNB
+00-0039918,WillCa03,Caleb Williams,caleb williams,QB,2021,2001-11-18,2024,USC,CHI
+00-0039910,DaniJa02,Jayden Daniels,jayden daniels,QB,2019,2000-12-18,2024,LSU,WAS
+00-0039851,MayeDr00,Drake Maye,drake maye,QB,2021,2002-08-30,2024,North Carolina,NWE
+00-0039849,HarrMa09,Marvin Harrison Jr.,marvin harrison,WR,2021,2002-08-11,2024,Ohio St.,ARI
+00-0039337,NabeMa00,Malik Nabers,malik nabers,WR,2021,2003-07-28,2024,LSU,NYG
+00-0039917,PeniMi00,Michael Penix,michael penix,QB,2018,2000-05-08,2024,Washington,ATL
+00-0039919,OdunRo00,Rome Odunze,rome odunze,WR,2020,2002-04-03,2024,Washington,CHI
+00-0039923,McCaJJ00,J.J. McCarthy,j j mccarthy,QB,2021,2003-01-20,2024,Michigan,MIN
+00-0039732,NixxBo00,Bo Nix,bo nix,QB,2019,2000-02-25,2024,Oregon,DEN
+00-0039338,BoweBr01,Brock Bowers,brock bowers,TE,2021,2002-12-13,2024,Georgia,LVR
+00-0039893,ThomBr06,Brian Thomas,brian thomas,WR,2021,2002-10-08,2024,LSU,JAX
+00-0039894,WortXa00,Xavier Worthy,xavier worthy,WR,2021,2003-04-27,2024,Texas,KAN
+00-0039916,PearRi00,Ricky Pearsall,ricky pearsall,WR,2019,2000-09-09,2024,Florida,SFO
+00-0039342,LegeXa00,Xavier Legette,xavier legette,WR,2019,2001-01-29,2024,South Carolina,CAR
+00-0039901,ColeKe02,Keon Coleman,keon coleman,WR,2021,2003-05-17,2024,Florida St.,BUF
+00-0039915,McCoLa00,Ladd McConkey,ladd mcconkey,WR,2020,2001-11-11,2024,Georgia,LAC
+00-0039907,PolkJa00,Ja'Lynn Polk,ja lynn polk,WR,2020,2001-04-11,2024,Washington,NWE
+00-0039344,BrooJo02,Jonathon Brooks,jonathon brooks,RB,2021,2003-07-21,2024,Texas,CAR
+00-0039890,MitcAd00,Adonai Mitchell,adonai mitchell,WR,2020,2002-10-08,2024,Texas,IND
+00-0039912,SinnBe00,Ben Sinnott,ben sinnott,TE,2020,2002-06-14,2024,Kansas St.,WAS
+00-0039920,CorlMa00,Malachi Corley,malachi corley,WR,2020,2002-03-21,2024,Western Kentucky,NYJ
+00-0039921,BensTr01,Trey Benson,trey benson,RB,2020,2002-07-23,2024,Florida St.,ARI
+00-0039810,BurtJe01,Jermaine Burton,jermaine burton,WR,2020,2001-06-28,2024,Alabama,CIN
+00-0039737,ReimTi00,Tip Reiman,tip reiman,TE,2019,2001-09-17,2024,Illinois,ARI
+00-0039738,CoruBl00,Blake Corum,blake corum,RB,2020,2000-11-25,2024,Michigan,LAR
+00-0039739,WilsRo02,Roman Wilson,roman wilson,WR,2020,2001-06-19,2024,Michigan,PIT
+00-0039811,LloyMa00,MarShawn Lloyd,marshawn lloyd,RB,2020,2001-01-05,2024,USC,GNB
+00-0039855,McMiJa01,Jalen McMillan,jalen mcmillan,WR,2020,2001-12-07,2024,Washington,TAM
+00-0039355,McCaLu00,Luke McCaffrey,luke mccaffrey,WR,2019,2001-04-02,2024,Rice,WAS
+00-0039356,SandJa01,Ja'Tavion Sanders,ja tavion sanders,TE,2021,2003-03-27,2024,Texas,CAR
+00-0039868,FranTr00,Troy Franklin,troy franklin,WR,2021,2003-02-06,2024,Oregon,DEN
+00-0039847,JohnTh00,Theo Johnson,theo johnson,TE,2020,2001-02-26,2024,Penn St.,NYG
+00-0039853,BakeJa00,Javon Baker,javon baker,WR,2020,2002-02-18,2024,Central Florida,NWE
+00-0039792,WalkDe01,Devontez Walker,devontez walker,WR,2019,2001-06-19,2024,North Carolina,BAL
+00-0039814,AllxEr00,Erick All,erick all,TE,2019,2000-09-13,2024,Iowa,CIN
+00-0039874,WrigJa04,Jaylen Wright,jaylen wright,RB,2021,2003-04-01,2024,Tennessee,MIA
+00-0039793,BarnAJ00,AJ Barner,aj barner,TE,2020,2002-05-03,2024,Michigan,SEA
+00-0039359,StovCa00,Cade Stover,cade stover,TE,2018,2000-06-12,2024,Ohio St.,HOU
+00-0039361,IrviBu00,Bucky Irving,bucky irving,RB,2021,2002-08-19,2024,Oregon,TAM
+00-0039746,ShipWi00,Will Shipley,will shipley,RB,2021,2002-08-29,2024,Clemson,PHI
+00-0039875,DaviRa04,Ray Davis,ray davis,RB,2019,1999-11-20,2024,Kentucky,BUF
+00-0039363,GuerIs00,Isaac Guerendo,isaac guerendo,RB,2018,2000-06-28,2024,Louisville,SFO
+00-0039824,WileJa00,Jared Wiley,jared wiley,TE,2019,2000-11-02,2024,TCU,KAN
+00-0039794,AlleBr05,Braelon Allen,braelon allen,RB,2022,2004-01-20,2024,Wisconsin,NYJ
+00-0039365,CowiJa00,Jacob Cowing,jacob cowing,WR,2019,2001-02-04,2024,Arizona,SFO
+00-0039816,GoulAn00,Anthony Gould,anthony gould,WR,2019,2001-04-06,2024,Oregon St.,IND
+00-0039373,EstiAu00,Audric Estime,audric estime,RB,2021,2003-09-06,2024,Notre Dame,DEN
+00-0039376,RattSp00,Spencer Rattler,spencer rattler,QB,2019,2000-09-28,2024,South Carolina,NOR
+00-0039747,SmitAi00,Ainias Smith,ainias smith,WR,2019,2001-05-31,2024,Texas A&M,PHI
+00-0039379,ThraJa01,Jamari Thrash,jamari thrash,WR,2019,2000-12-19,2024,Louisville,CLE
+00-0039796,AlixRa00,Rasheen Ali,rasheen ali,RB,2019,2001-02-16,2024,Marshall,BAL
+00-0039384,TracTy00,Tyrone Tracy Jr.,tyrone tracy,RB,2018,1999-11-23,2024,Purdue,NYG
+00-0039385,RobiKe03,Keilan Robinson,keilan robinson,RB,2019,2000-02-16,2024,Texas,JAX
+00-0039386,MeanBu00,Bub Means,bub means,WR,2019,2001-01-10,2024,Pittsburgh,NOR
+00-0039797,TravJo00,Jordan Travis,jordan travis,QB,2018,2000-05-02,2024,Florida St.,NYJ
+00-0039798,DaviIs00,Isaiah Davis,isaiah davis,RB,2020,2002-02-21,2024,South Dakota St.,NYJ
+00-0039391,VidaKi00,Kimani Vidal,kimani vidal,RB,2020,2001-08-28,2024,Troy,LAC
+00-0039392,JackJh00,Jha'Quan Jackson,jha quan jackson,WR,2019,2000-05-15,2024,Tulane,TEN
+00-0039880,WashMa00,Malik Washington,malik washington,WR,2019,2000-10-20,2024,Virginia,MIA
+00-0039236,WilsJo03,Johnny Wilson,johnny wilson,WR,2020,2001-04-03,2024,Florida St.,PHI
+00-0039393,McClJa05,Jase McClellan,jase mcclellan,RB,2020,2002-06-25,2024,Alabama,ATL
+00-0039394,WashCa01,Casey Washington,casey washington,WR,2019,2001-03-06,2024,Illinois,ATL
+00-0039397,PalmTe00,Tejhaun Palmer,tejhaun palmer,WR,2018,2000-05-19,2024,Ala-Birmingham,ARI
+00-0039398,MiltJo00,Joe Milton,joe milton,QB,2018,2000-03-06,2024,Tennessee,NWE
+00-0039399,McLaTa00,Tanner McLachlan,tanner mclachlan,TE,2017,1999-03-15,2024,Arizona,CIN
+00-0039405,JordJa00,Jawhar Jordan,jawhar jordan,RB,2018,1999-08-18,2024,Louisville,HOU
+00-0039407,LaubDy00,Dylan Laube,dylan laube,RB,2017,1999-12-14,2024,New Hampshire,LVR
+00-0039751,WhitJo04,Jordan Whittington,jordan whittington,WR,2019,2000-10-01,2024,Texas,LAR
+00-0039410,FlouRy00,Ryan Flournoy,ryan flournoy,WR,2017,1999-10-27,2024,SE Missouri St.,DAL
+00-0039801,LearDe00,Devin Leary,devin leary,QB,2018,1999-09-10,2024,Kentucky,BAL
+00-0039415,RiceBr00,Brenden Rice,brenden rice,WR,2020,2002-03-18,2024,USC,LAC
+00-0039420,BellJa00,Jaheim Bell,jaheim bell,TE,2020,2001-06-14,2024,Florida St.,NWE
+00-0039424,VeleDe00,Devaughn Vele,devaughn vele,WR,2015,1997-12-12,2024,Utah,DEN
+00-0039884,WashTa00,Tahj Washington,tahj washington,WR,2019,2001-05-16,2024,USC,MIA
+00-0039238,PratMi00,Michael Pratt,michael pratt,QB,2020,2001-09-30,2024,Tulane,GNB
+00-0039754,CulpDe00,Devin Culp,devin culp,TE,2018,2000-02-02,2024,Washington,TAM
+00-0039437,JohnCo02,Cornelius Johnson,cornelius johnson,WR,2019,2000-11-29,2024,Michigan,LAC
+00-0040676,WardCa00,Cam Ward,cam ward,QB,2020,2002-05-25,2025,Miami (FL),TEN
+00-0040718,HuntTr00,Travis Hunter,travis hunter,WR,2022,2003-05-18,2025,Colorado,JAX
+00-0040122,JeanAs00,Ashton Jeanty,ashton jeanty,RB,2022,2003-12-02,2025,Boise St.,LVR
+00-0040124,McMiTe00,Tetairoa McMillan,tetairoa mcmillan,WR,2022,2003-04-05,2025,Arizona,CAR
+00-0040126,LoveCo00,Colston Loveland,colston loveland,TE,2022,2004-04-09,2025,Michigan,CHI
+00-0040128,WarrTy00,Tyler Warren,tyler warren,TE,2020,2002-05-24,2025,Penn St.,IND
+00-0040129,EgbuEm01,Emeka Egbuka,emeka egbuka,WR,2021,2002-10-14,2025,Ohio St.,TAM
+00-0040666,HampOm00,Omarion Hampton,omarion hampton,RB,2022,2003-03-16,2025,North Carolina,LAC
+00-0040667,GoldMa02,Matthew Golden,matthew golden,WR,2022,2003-08-01,2025,Texas,GNB
+00-0040691,DartJa00,Jaxson Dart,jaxson dart,QB,2021,2003-05-13,2025,Mississippi,NYG
+00-0040130,HiggJa00,Jayden Higgins,jayden higgins,WR,2020,2002-12-15,2025,Iowa St.,HOU
+00-0040784,JudkQu00,Quinshon Judkins,quinshon judkins,RB,2022,2003-10-29,2025,Ohio St.,CLE
+00-0040734,HendTr02,TreVeyon Henderson,treveyon henderson,RB,2021,2002-10-22,2025,Ohio St.,NWE
+00-0040735,BurdLu00,Luther Burden,luther burden,WR,2022,2003-12-12,2025,Missouri,CHI
+00-0040743,ShouTy00,Tyler Shough,tyler shough,QB,2017,1999-09-28,2025,Louisville,NOR
+00-0040736,TaylMa02,Mason Taylor,mason taylor,TE,2022,2004-05-08,2025,LSU,NYJ
+00-0040737,FergTe00,Terrance Ferguson,terrance ferguson,TE,2021,2003-03-07,2025,Oregon,LAR
+00-0040739,ArroEl00,Elijah Arroyo,elijah arroyo,TE,2021,2003-04-05,2025,Miami (FL),SEA
+00-0040727,HarrTr03,Tre Harris,tre harris,WR,2022,2002-02-28,2025,Mississippi,LAC
+00-0040729,BechJa00,Jack Bech,jack bech,WR,2021,2002-12-18,2025,TCU,LVR
+00-0040730,HarvRJ00,RJ Harvey,rj harvey,RB,2019,2001-02-04,2025,Central Florida,DEN
+00-0040663,FannHa00,Harold Fannin,harold fannin,TE,2022,2004-07-20,2025,Bowling Green,CLE
+00-0040131,WillKy03,Kyle Williams,kyle williams,WR,2020,2002-11-13,2025,Washington St.,NWE
+00-0040669,TeSlIs00,Isaac TeSlaa,isaac teslaa,WR,2020,2002-02-20,2025,Arkansas,DET
+00-0040134,BryaPa00,Pat Bryant,pat bryant,WR,2021,2002-12-10,2025,Illinois,DEN
+00-0040138,NoelJa00,Jaylin Noel,jaylin noel,WR,2021,2002-09-04,2025,Iowa St.,HOU
+00-0040142,JohnKa03,Kaleb Johnson,kaleb johnson,RB,2022,2003-08-14,2025,Iowa,PIT
+00-0040009,WillSa01,Savion Williams,savion williams,WR,2020,2001-11-22,2025,TCU,GNB
+00-0040673,MilrJa00,Jalen Milroe,jalen milroe,QB,2021,2002-12-13,2025,Alabama,SEA
+00-0040704,GabrDi00,Dillon Gabriel,dillon gabriel,QB,2019,2000-12-28,2025,Oregon,CLE
+00-0040154,FeltTa00,Tai Felton,tai felton,WR,2021,2003-03-15,2025,Maryland,MIN
+00-0040705,DikeCh00,Chimere Dike,chimere dike,WR,2020,2001-12-14,2025,Florida,TEN
+00-0040719,TuteBh00,Bhayshul Tuten,bhayshul tuten,RB,2020,2002-02-14,2025,Virginia Tech,JAX
+00-0040715,SkatCa00,Cam Skattebo,cam skattebo,RB,2020,2002-02-05,2025,Arizona St.,NYG
+00-0040581,ThorDo00,Dont'e Thornton,dont e thornton,WR,2021,2002-11-30,2025,Tennessee,LVR
+00-0040582,SmitAr01,Arian Smith,arian smith,WR,2020,2001-10-11,2025,Georgia,NYJ
+00-0040644,EtieTr01,Trevor Etienne,trevor etienne,RB,2022,2004-07-09,2025,Georgia,CAR
+00-0040583,MarkWo00,Woody Marks,woody marks,RB,2020,2000-12-29,2025,USC,HOU
+00-0040692,HuntJa03,Jarquez Hunter,jarquez hunter,RB,2021,2002-12-29,2025,Auburn,LAR
+00-0040584,HelmGu00,Gunnar Helm,gunnar helm,TE,2021,2002-09-06,2025,Texas,TEN
+00-0040162,SampDy00,Dylan Sampson,dylan sampson,RB,2022,2004-09-14,2025,Tennessee,CLE
+00-0040164,LaneJa00,Jaylin Lane,jaylin lane,WR,2020,2002-05-01,2025,Virginia Tech,WAS
+00-0040646,RoyaJa00,Jalen Royals,jalen royals,WR,2021,2003-02-18,2025,Utah St.,KAN
+00-0040170,AyomEl00,Elic Ayomanor,elic ayomanor,WR,2022,2003-06-03,2025,Stanford,TEN
+00-0040172,WatkJo00,Jordan Watkins,jordan watkins,WR,2020,2002-02-15,2025,Mississippi,SFO
+00-0040668,SandSh00,Shedeur Sanders,shedeur sanders,QB,2021,2002-02-07,2025,Colorado,CLE
+00-0040177,JameJo01,Jordan James,jordan james,RB,2022,2004-03-29,2025,Oregon,SFO
+00-0040586,BlueJa01,Jaydon Blue,jaydon blue,RB,2022,2004-01-08,2025,Texas,DAL
+00-0040179,GiddDJ00,DJ Giddens,dj giddens,RB,2021,2003-08-26,2025,Kansas St.,IND
+00-0040184,LambKe01,KeAndre Lambert-Smith,keandre lambert smith,WR,2020,2001-10-16,2025,Auburn,LAC
+00-0040187,EvanMi01,Mitchell Evans,mitchell evans,TE,2021,2003-03-18,2025,Notre Dame,CAR
+00-0040189,GadsOr01,Oronde Gadsden II,oronde gadsden,TE,2021,2003-06-25,2025,Syracuse,LAC
+00-0040648,HortTo00,Tory Horton,tory horton,WR,2020,2002-11-29,2025,Colorado St.,SEA
+00-0040194,HaweJa00,Jackson Hawes,jackson hawes,TE,2018,2000-12-06,2025,Georgia Tech,BUF
+00-0040649,OuztRo00,Robbie Ouzts,robbie ouzts,TE,2021,2002-09-06,2025,Alabama,SEA
+00-0040198,GordOl00,Ollie Gordon,ollie gordon,RB,2022,2004-01-15,2025,Oklahoma St.,MIA
+00-0040014,McCoKy00,Kyle McCord,kyle mccord,QB,2021,2002-09-19,2025,Syracuse,PHI
+00-0040202,NealDe00,Devin Neal,devin neal,RB,2021,2003-08-12,2025,Kansas,NOR
+00-0040203,HowaWi01,Will Howard,will howard,QB,2020,2001-09-24,2025,Ohio St.,PIT
+00-0040205,MullKa00,Kalel Mullings,kalel mullings,RB,2020,2002-10-04,2025,Michigan,TEN
+00-0040206,LeonRi02,Riley Leonard,riley leonard,QB,2021,2002-09-13,2025,Notre Dame,IND
+00-0040208,BrooTa00,Tahj Brooks,tahj brooks,RB,2020,2002-05-13,2025,Texas Tech,CIN
+00-0040211,MertGr00,Graham Mertz,graham mertz,QB,2019,2000-12-06,2025,Florida,HOU
+00-0040215,BartGa00,Gavin Bartholomew,gavin bartholomew,TE,2021,2003-04-30,2025,Pittsburgh,MIN
+00-0040075,WestLa01,LaJohntay Wester,lajohntay wester,WR,2020,2002-03-29,2025,Colorado,BAL
+00-0040218,HornJi00,Jimmy Horn,jimmy horn,WR,2021,2002-09-12,2025,Colorado,CAR
+00-0040220,MellTo00,Tommy Mellott,tommy mellott,QB,2020,2001-10-16,2025,Montana St.,LVR
+00-0040222,MillCa00,Cam Miller,cam miller,QB,2019,2001-06-18,2025,North Dakota St.,LVR
+00-0040225,FidoTh00,Thomas Fidone,thomas fidone,TE,2021,2002-09-20,2025,Nebraska,NYG
+00-0040651,MartDa02,Damien Martinez,damien martinez,RB,2022,2004-01-31,2025,Miami (FL),SEA
+00-0040589,RourKu01,Kurtis Rourke,kurtis rourke,QB,2019,2000-10-25,2025,Indiana,SFO
+00-0040078,SmitBr09,Brashard Smith,brashard smith,RB,2021,2003-04-11,2025,SMU,KAN
+00-0040234,EwerQu00,Quinn Ewers,quinn ewers,QB,2021,2003-03-15,2025,Texas,MIA
+00-0040236,MonaKy00,Kyle Monangai,kyle monangai,RB,2020,2002-06-06,2025,Rutgers,CHI
+00-0040237,JohnTe03,Tez Johnson,tez johnson,WR,2020,2002-05-18,2025,Oregon,TAM
+00-0040238,AlleLe01,LeQuint Allen,lequint allen,RB,2022,2004-08-05,2025,Syracuse,JAX
+00-0040653,WhitRi01,Ricky White,ricky white,WR,2020,2002-02-06,2025,UNLV,SEA
+00-0040021,MafaPh00,Phil Mafah,phil mafah,RB,2021,2002-10-24,2025,Clemson,DAL
+,PratKa00,Kaden Prather,kaden prather,WR,2021,,2025,Maryland,BUF
+00-0040240,LohnCa00,Caleb Lohner,caleb lohner,TE,2019,2001-10-01,2025,Utah,DEN
+00-0040590,MumpKo00,Konata Mumpfield,konata mumpfield,WR,2020,2002-10-24,2025,Pittsburgh,LAR
+00-0040241,LoveDo00,Dominic Lovett,dominic lovett,WR,2021,2002-11-08,2025,Georgia,DET
+00-0040242,CrosJa00,Jacory Croskey-Merritt,jacory croskey merritt,RB,2019,2001-04-12,2025,Arizona,WAS
+00-0040244,MataMo00,Moliki Matavao,moliki matavao,TE,2021,2003-03-17,2025,UCLA,NOR
+00-0040247,BergJu00,Junior Bergen,junior bergen,WR,2020,2002-10-23,2025,Montana,SFO
+00-0040250,LachLu00,Luke Lachey,luke lachey,TE,2020,2001-06-29,2025,Iowa,HOU
+MEN516487,MendFe00,Fernando Mendoza,fernando mendoza,QB,2022,,2026,Indiana,LVR
+LOV121782,LoveJe00,Jeremiyah Love,jeremiyah love,RB,2023,,2026,Notre Dame,ARI
+TAT143045,TateCa00,Carnell Tate,carnell tate,WR,2023,,2026,Ohio St.,TEN
+TYS405541,TysoJo00,Jordyn Tyson,jordyn tyson,WR,2022,,2026,Arizona St.,NOR
+SIM639376,SimpTy00,Ty Simpson,ty simpson,QB,2022,,2026,Alabama,LAR
+SAD482340,SadiKe00,Kenyon Sadiq,kenyon sadiq,TE,2023,,2026,Oregon,NYJ
+LEM694125,LemoMa00,Makai Lemon,makai lemon,WR,2023,,2026,USC,PHI
+CON046719,ConcKC00,KC Concepcion,kc concepcion,WR,2023,,2026,Texas A&M,CLE
+COO816508,CoopOm00,Omar Cooper Jr.,omar cooper,WR,2022,,2026,Indiana,NYJ
+PRI206342,PricJa02,Jadarian Price,jadarian price,RB,2022,,2026,Notre Dame,SEA
+,StriDe01,De'Zhaun Stribling,de zhaun stribling,WR,2021,,2026,Mississippi,SFO
+BOS677861,BostDe00,Denzel Boston,denzel boston,WR,2022,,2026,Washington,CLE
+BER218265,BernGe00,Germie Bernard,germie bernard,WR,2022,,2026,Alabama,PIT
+STO806346,StowEl00,Eli Stowers,eli stowers,TE,2021,,2026,Vanderbilt,PHI
+KLE258860,KleiMa00,Marlin Klein,marlin klein,TE,2022,,2026,Michigan,HOU
+KLA269938,KlarMa00,Max Klare,max klare,TE,2022,,2026,Ohio St.,LAR
+,BeckCa01,Carson Beck,carson beck,QB,2020,,2026,Miami (FL),ARI
+ROU550040,RousSa00,Sam Roush,sam roush,TE,2022,,2026,Stanford,CHI
+WIL143106,WillAn04,Antonio Williams,antonio williams,WR,2022,,2026,Clemson,WAS
+,DelpOs01,Oscar Delp,oscar delp,TE,2022,,2026,Georgia,NOR
+FIE775129,FielMa00,Malachi Fields,malachi fields,WR,2021,,2026,Notre Dame,NYG
+DOU210628,DougCa00,Caleb Douglas,caleb douglas,WR,2022,,2026,Texas Tech,MIA
+ALL015451,AllaDr00,Drew Allar,drew allar,QB,2022,,2026,Penn St.,PIT
+BRA531428,BranZa00,Zachariah Branch,zachariah branch,WR,2023,,2026,Georgia,ATL
+LAN311008,LaneJa01,Ja'Kobi Lane,ja kobi lane,WR,2023,,2026,USC,BAL
+BRA836631,BrazCh01,Chris Brazzell II,chris brazzell,WR,2022,,2026,Tennessee,CAR
+HUR541377,HursTe00,Ted Hurst,ted hurst,WR,,,2026,Georgia St.,TAM
+THO417520,ThomZa05,Zavion Thomas,zavion thomas,WR,2022,,2026,LSU,CHI
+BLA097235,BlacKa00,Kaelon Black,kaelon black,RB,2020,,2026,Indiana,SFO
+BEL267684,BellCh00,Chris Bell,chris bell,WR,2022,,2026,Louisville,MIA
+RAR148318,RariEl00,Eli Raridon,eli raridon,TE,2022,,2026,Notre Dame,NWE
+THO495568,ThomBr07,Brenen Thompson,brenen thompson,WR,2022,,2026,Mississippi St.,LAC
+COL293648,ColeJo00,Jonah Coleman,jonah coleman,RB,2022,,2026,Washington,DEN
+KLU066027,KlubCa00,Cade Klubnik,cade klubnik,QB,2022,,2026,Clemson,NYJ
+SAR527100,SarrEl00,Elijah Sarratt,elijah sarratt,WR,,,2026,Indiana,BAL
+WAS797326,WashMi00,Mike Washington Jr.,mike washington,RB,2021,,2026,Arkansas,LVR
+BEL597603,BellSk00,Skyler Bell,skyler bell,WR,2021,,2026,Connecticut,BUF
+HIB564972,HibnMa00,Matthew Hibner,matthew hibner,TE,2020,,2026,SMU,BAL
+LAN016345,LancBr00,Bryce Lance,bryce lance,WR,,,2026,North Dakota St.,NOR
+,YounCo01,Colbie Young,colbie young,WR,,,2026,Georgia,CIN
+VIR271235,VirgRe00,Reggie Virgil,reggie virgil,WR,2022,,2026,Texas Tech,ARI
+JOL735174,JolyJu00,Justin Joly,justin joly,TE,2022,,2026,North Carolina St.,DEN
+JOH224817,JohnEm01,Emmett Johnson,emmett johnson,RB,2022,,2026,Nebraska,KAN
+KOZ404039,KoziTa00,Tanner Koziol,tanner koziol,TE,2021,,2026,Houston,JAX
+,SingNi01,Nicholas Singleton,nicholas singleton,RB,,,2026,Penn St.,TEN
+LAW090280,LawxKe00,Kendrick Law,kendrick law,WR,2022,,2026,Kentucky,DET
+,RoyeJo01,Joe Royer,joe royer,TE,2020,,2026,Cincinnati,CLE
+RAN022436,RandAd00,Adam Randall,adam randall,RB,2022,,2026,Clemson,BAL
+ALL092954,AlleCy00,Cyrus Allen,cyrus allen,WR,2022,,2026,Cincinnati,KAN
+COL362413,ColeKe03,Kevin Coleman Jr.,kevin coleman,WR,2022,,2026,Missouri,MIA
+GRE361852,GreeTa00,Taylen Green,taylen green,QB,2021,,2026,Arkansas,CLE
+ALL532376,AlleKa01,Kaytron Allen,kaytron allen,RB,2022,,2026,Penn St.,WAS
+BRO268113,BrowBa02,Barion Brown,barion brown,WR,2022,,2026,LSU,NOR
+BEN601117,BensMa00,Malik Benson,malik benson,WR,,,2026,Oregon,LVR
+DAN490797,DaniCJ00,CJ Daniels,cj daniels,WR,2020,,2026,Miami (FL),LAR
+CLA041524,ClaiDe00,Demond Claiborne,demond claiborne,RB,2022,,2026,Wake Forest,MIN
+HEN199637,HendEm00,Emmanuel Henderson Jr.,emmanuel henderson,WR,2022,,2026,Kansas,SEA
+WIL189259,WillCJ00,CJ Williams,cj williams,WR,2022,,2026,Stanford,JAX
+BON235618,BondLe00,Lewis Bond,lewis bond,WR,2021,,2026,Boston Col.,HOU
+SMI038569,SmitAn05,Anthony Smith,anthony smith,WR,2020,,2026,East Carolina,DAL
+KAL252591,KaliAt00,Athan Kaliakmanis,athan kaliakmanis,QB,2021,,2026,Rutgers,WAS
+HEI114391,HeidEl00,Eli Heidenreich,eli heidenreich,RB,,,2026,Navy,PIT
+MOR767384,MortBe00,Behren Morton,behren morton,QB,2021,,2026,Texas Tech,NWE
+MCG547540,McGoSe01,Seth McGowan,seth mcgowan,RB,2020,,2026,Kentucky,IND
+MIL303300,MillJa03,Jam Miller,jam miller,RB,2022,,2026,Alabama,NWE
+RYA022232,RyanCa00,Carsen Ryan,carsen ryan,TE,2022,,2026,BYU,CLE
+NUS440041,NussGa00,Garrett Nussmeier,garrett nussmeier,QB,2021,,2026,LSU,KAN
+,BurkDe02,Deion Burks,deion burks,WR,2021,,2026,Oklahoma,IND

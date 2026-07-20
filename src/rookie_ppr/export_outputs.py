@@ -22,6 +22,13 @@ def export_workbook_and_csvs(tables: dict[str, pd.DataFrame], workbook_name: str
         "pre_draft_fantasy",
         "fantasy_rookie",
         "players_master",
+        "incoming_rookies_2026",
+        "group_averages",
+        "strongest_factors",
+        "feature_correlation",
+        "dataset_correlation",
+        "composite_correlation",
+        "ml_features",
         "data_dictionary",
     ]
     ordered = [k for k in preferred if k in tables] + [k for k in tables if k not in preferred]

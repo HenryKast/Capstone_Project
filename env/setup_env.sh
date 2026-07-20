@@ -54,4 +54,6 @@ Next steps:
   2. (Optional) Add On3 recruiting CSVs under data/raw/recruiting/
   3. Compile:    python -m rookie_ppr.compile
   4. Outputs:    data/output/rookie_ppr_master.xlsx and data/output/csv/
+  5. Scorer UI:  python -m rookie_ppr.ui
+     (or:        rookie-ppr-ui)
 EOF

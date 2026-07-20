@@ -3,7 +3,7 @@ from __future__ import annotations
 import pandas as pd
 from rapidfuzz import fuzz, process
 
-from rookie_ppr.config import HS_CLASS_MAX, HS_CLASS_MIN, MANUAL_DIR
+from rookie_ppr.config import HS_CLASS_MAX, HS_CLASS_MIN, INCOMING_DRAFT_YEAR, MANUAL_DIR
 
 
 def load_overrides() -> pd.DataFrame:
@@ -119,6 +119,33 @@ def _fuzzy_match_recruiting(players: pd.DataFrame, recruiting: pd.DataFrame) -> 
     return pd.DataFrame(matched_rows)
 
 
+def _on_season_adp(players: pd.DataFrame, ff_rankings: pd.DataFrame, season: int) -> pd.Series:
+    """True when a player fuzzy-matches FantasyPros Overall ADP for the given season."""
+    if players.empty or ff_rankings is None or ff_rankings.empty or "season" not in ff_rankings.columns:
+        return pd.Series(False, index=players.index)
+
+    pool = ff_rankings[ff_rankings["season"] == season].copy()
+    if pool.empty or "player_name_norm" not in pool.columns:
+        return pd.Series(False, index=players.index)
+
+    hits: list[bool] = []
+    for _, row in players.iterrows():
+        name = row.get("player_name_norm") or ""
+        pos = row.get("position")
+        if not name:
+            hits.append(False)
+            continue
+        same = pool[pool["position"] == pos] if "position" in pool.columns else pool.iloc[0:0]
+        search = same if not same.empty else pool
+        choices = search["player_name_norm"].dropna().astype(str).tolist()
+        if not choices:
+            hits.append(False)
+            continue
+        best = process.extractOne(name, choices, scorer=fuzz.token_sort_ratio)
+        hits.append(bool(best and best[1] >= 90))
+    return pd.Series(hits, index=players.index)
+
+
 def build_tables(
     fantasy: pd.DataFrame,
     recruiting: pd.DataFrame,
@@ -131,15 +158,21 @@ def build_tables(
 ) -> dict[str, pd.DataFrame]:
     players = _fuzzy_match_recruiting(fantasy, recruiting)
 
-    # Cohort filter: HS classes 2010-2020
-    # With recruiting matches, use matched hs_class. Without recruiting files, use birthdate estimate.
+    # Cohort filter: HS classes in configured window.
+    # Also keep incoming draft-year players who appear on that season's FantasyPros ADP
+    # (covers early declarers / missing birthdates that would otherwise drop).
     if recruiting.empty:
         est = pd.to_numeric(players.get("hs_class_estimated"), errors="coerce")
         players["hs_class"] = est
-        players = players[est.isna() | est.between(HS_CLASS_MIN, HS_CLASS_MAX)].copy()
+        in_cohort = est.isna() | est.between(HS_CLASS_MIN, HS_CLASS_MAX)
     else:
         hs = pd.to_numeric(players["hs_class"], errors="coerce")
-        players = players[hs.between(HS_CLASS_MIN, HS_CLASS_MAX)].copy()
+        in_cohort = hs.between(HS_CLASS_MIN, HS_CLASS_MAX)
+
+    draft_year_num = pd.to_numeric(players.get("draft_year"), errors="coerce")
+    incoming = draft_year_num == INCOMING_DRAFT_YEAR
+    on_adp = _on_season_adp(players, ff_rankings, INCOMING_DRAFT_YEAR)
+    players = players[in_cohort | (incoming & on_adp)].copy()
 
     players_sheet = players[
         [
@@ -151,7 +184,6 @@ def build_tables(
                 "player_name_norm",
                 "position",
                 "hs_class",
-                "hs_class_estimated",
                 "birth_date",
                 "draft_year",
                 "college",
@@ -188,7 +220,6 @@ def build_tables(
                 "college",
                 "draft_year",
                 "draft_round",
-                "draft_pick",
                 "draft_overall",
                 "draft_team",
             ]
@@ -299,7 +330,6 @@ def build_tables(
         pre_draft = attach_rookie_adp(players, ff_rankings)
     else:
         pre_draft = players[["gsis_id", "player_name", "player_name_norm", "position", "draft_year"]].copy()
-        pre_draft["ff_ecr"] = pd.NA
         pre_draft["ff_adp"] = pd.NA
         pre_draft["ff_adp_rank"] = pd.NA
         pre_draft["ff_rankings_note"] = "No FantasyPros ADP files found in data/manual/."
@@ -312,7 +342,6 @@ def build_tables(
                 "player_name",
                 "position",
                 "draft_year",
-                "rookie_season",
                 "first_stat_season",
                 "rookie_ppr",
                 "rookie_games",
@@ -343,6 +372,16 @@ def build_tables(
             continue
         master = master.merge(frame[key + add_cols].drop_duplicates(key), how="left", on=key)
 
+    drop_master_cols = [
+        "draft_pick",
+        "draft_category",
+        "rookie_season",
+        "hs_class_estimated",
+        "opportunity_proxy",
+        "prior_team_pos_ppr",
+    ]
+    master = master.drop(columns=[c for c in drop_master_cols if c in master.columns])
+
     data_dictionary = pd.DataFrame(
         [
             {"sheet": "players", "column": "hs_class", "description": "HS class year (recruiting match or estimate)", "source": "On3 ingest / birthdate estimate"},
@@ -352,14 +391,13 @@ def build_tables(
             {"sheet": "draft", "column": "draft_overall", "description": "Overall NFL draft pick", "source": "nflverse"},
             {"sheet": "draft", "column": "draft_team", "description": "Team that drafted the player", "source": "nflverse"},
             {"sheet": "team_context", "column": "sos_opp_win_pct", "description": "Rookie-season schedule SOS (avg opponent win%)", "source": "nflverse schedules"},
-            {"sheet": "team_context", "column": "opportunity_proxy", "description": "Prior-year team positional PPR (vacated usage proxy)", "source": "nflverse player stats"},
+            {"sheet": "team_context", "column": "team_opportunity_ppr", "description": "Prior-year team positional PPR (vacated usage proxy)", "source": "nflverse player stats"},
             {"sheet": "team_context", "column": "off_pass_rate_proxy", "description": "Team pass-rate proxy in draft/rookie year", "source": "nflverse team stats"},
             {"sheet": "combine", "column": "forty", "description": "40-yard dash", "source": "nflverse combine"},
             {"sheet": "college_production", "column": "cfb_*", "description": "Final CFB season production (requires CFBD_API_KEY)", "source": "CollegeFootballData"},
             {"sheet": "fantasy_rookie", "column": "rookie_ppr", "description": "PPR fantasy points in first NFL season", "source": "nflverse player stats"},
             {"sheet": "pre_draft_fantasy", "column": "ff_adp", "description": "FantasyPros overall ADP (AVG) in the player's rookie season only", "source": "data/manual/FantasyPros_*_Overall_ADP_Rankings.csv"},
             {"sheet": "pre_draft_fantasy", "column": "ff_adp_rank", "description": "FantasyPros overall rank in that same rookie-season ADP file", "source": "FantasyPros"},
-            {"sheet": "pre_draft_fantasy", "column": "ff_ecr", "description": "Same as overall ADP rank from FantasyPros file (Rank column)", "source": "FantasyPros"},
             {"sheet": "players_master", "column": "*", "description": "Wide joined modeling table", "source": "compiled"},
         ]
     )
