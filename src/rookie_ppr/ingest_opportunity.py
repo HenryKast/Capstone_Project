@@ -48,8 +48,7 @@ def build_landing_opportunity(stats: pd.DataFrame, draft: pd.DataFrame) -> pd.Da
         "draft_year",
         "draft_team",
         "position",
-        "prior_team_pos_ppr",
-        "opportunity_proxy",
+        "team_opportunity_ppr",
     ]
     if draft.empty or stats.empty:
         return pd.DataFrame(columns=cols)
@@ -74,7 +73,7 @@ def build_landing_opportunity(stats: pd.DataFrame, draft: pd.DataFrame) -> pd.Da
     team_pos = (
         s.groupby(["season", team_col, "position"], as_index=False)["ppr"]
         .sum()
-        .rename(columns={team_col: "draft_team", "ppr": "prior_team_pos_ppr"})
+        .rename(columns={team_col: "draft_team", "ppr": "team_opportunity_ppr"})
     )
     team_pos["season_next"] = team_pos["season"] + 1
 
@@ -85,5 +84,4 @@ def build_landing_opportunity(stats: pd.DataFrame, draft: pd.DataFrame) -> pd.Da
         left_on=["draft_year", "draft_team", "position"],
         right_on=["season_next", "draft_team", "position"],
     )
-    merged["opportunity_proxy"] = merged["prior_team_pos_ppr"]
-    return merged[["draft_year", "draft_team", "position", "prior_team_pos_ppr", "opportunity_proxy"]].drop_duplicates()
+    return merged[["draft_year", "draft_team", "position", "team_opportunity_ppr"]].drop_duplicates()

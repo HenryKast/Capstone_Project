@@ -15,3 +15,4 @@ where = ["src"]
 
 [project.scripts]
 rookie-ppr-compile = "rookie_ppr.compile:main"
+rookie-ppr-ui = "rookie_ppr.ui:main"

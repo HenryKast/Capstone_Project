@@ -1,0 +1,12 @@
+rank,composite,n_pairs,pearson_r,pearson_p,spearman_r,spearman_p,abs_corr_rookie_ppr,impact_0_100
+1,score_draft_capital,736,0.5626,0.0,0.5949,0.0,0.5626,100.0
+2,score_pre_draft_fantasy,511,0.5338,0.0,0.6129,0.0,0.5338,94.9
+3,score_timing,736,0.2628,0.0,0.2951,0.0,0.2628,46.7
+4,score_cfb_receiving,630,0.2267,0.0,0.2103,0.0,0.2267,40.3
+5,score_cfb_passing,176,0.1588,0.035325,0.2796,0.000171,0.1588,28.2
+6,score_cfb_rushing,502,0.1516,0.000657,0.1858,2.8e-05,0.1516,26.9
+7,score_recruiting,615,0.1421,0.000408,0.1044,0.009597,0.1421,25.3
+8,score_combine_speed,563,0.1273,0.002483,0.1405,0.00083,0.1273,22.6
+9,score_combine_explosion,543,0.1048,0.014561,0.1248,0.003595,0.1048,18.6
+10,score_team_context,565,0.0276,0.512855,0.0291,0.490507,0.0276,4.9
+11,score_combine_size,650,-0.0059,0.880241,-0.0074,0.850483,0.0059,1.0

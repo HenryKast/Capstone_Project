@@ -3,12 +3,16 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+import pandas as pd
+
 # Allow `python -m rookie_ppr.compile` from repo without editable install
 _SRC = Path(__file__).resolve().parents[1]
 if str(_SRC) not in sys.path:
     sys.path.insert(0, str(_SRC))
 
-from rookie_ppr.config import DRAFT_YEAR_MAX, DRAFT_YEAR_MIN, ensure_directories
+from rookie_ppr.analyze_correlation import run_correlation_analysis
+from rookie_ppr.analyze_groups import build_group_averages
+from rookie_ppr.config import DRAFT_YEAR_MAX, DRAFT_YEAR_MIN, INCOMING_DRAFT_YEAR, ensure_directories
 from rookie_ppr.export_outputs import export_workbook_and_csvs
 from rookie_ppr.features_sos import compute_team_sos
 from rookie_ppr.ingest_college import load_college_production
@@ -24,6 +28,7 @@ from rookie_ppr.ingest_nfl import (
 )
 from rookie_ppr.ingest_opportunity import build_landing_opportunity, build_team_offensive_environment
 from rookie_ppr.ingest_recruiting import load_recruiting, write_recruiting_template
+from rookie_ppr.incoming_rookies import build_incoming_rookies_sheet
 from rookie_ppr.join_players import build_tables
 
 
@@ -98,11 +103,71 @@ def main(fetch_on3: bool = False) -> int:
     master_n = len(tables.get("players_master", []))
     print(f"  players_master rows: {master_n}")
 
+    print("Running redraft correlation analysis ...")
+    master = tables.get("players_master", pd.DataFrame())
+    if not master.empty:
+        analysis = run_correlation_analysis(master)
+        tables.update(analysis)
+        tables["group_averages"] = build_group_averages(master)
+        # Extend data dictionary
+        dd = tables.get("data_dictionary", pd.DataFrame())
+        extra = pd.DataFrame(
+            [
+                {"sheet": "feature_correlation", "column": "*", "description": "Per-feature correlation vs rookie PPR", "source": "analyze_correlation"},
+                {"sheet": "strongest_factors", "column": "*", "description": "Factors ranked by impact on rookie PPR success", "source": "analyze_correlation"},
+                {"sheet": "dataset_correlation", "column": "*", "description": "Dataset-block correlation scores vs rookie PPR", "source": "analyze_correlation"},
+                {"sheet": "group_averages", "column": "*", "description": "Mean rookie PPR by position, round, recruiting band, etc.", "source": "analyze_groups"},
+            ]
+        )
+        tables["data_dictionary"] = pd.concat([dd, extra], ignore_index=True)
+        print(f"  strongest_factors rows: {len(tables.get('strongest_factors', []))}")
+
+        print("Training ML success scorer (composite features) ...")
+        from rookie_ppr.model_score import train_and_score
+
+        feature_corr = tables.get("feature_correlation", pd.DataFrame())
+        ml_features, composite_corr, metrics = train_and_score(master, feature_corr)
+        tables["ml_features"] = ml_features
+        tables["composite_correlation"] = composite_corr
+        if metrics:
+            holdout_r = metrics.get("holdout_pearson_r", "n/a")
+            print(
+                f"  ML train rows: {metrics.get('train_rows')}, "
+                f"holdout r: {holdout_r}, holdout MAE: {metrics.get('holdout_mae', 'n/a')}"
+            )
+        dd = tables.get("data_dictionary", pd.DataFrame())
+        ml_dd = pd.DataFrame(
+            [
+                {"sheet": "ml_features", "column": "*", "description": "Correlation-weighted composite scores + predicted PPR + success score", "source": "model_score"},
+                {"sheet": "composite_correlation", "column": "*", "description": "Composite score correlation vs rookie PPR", "source": "feature_composites"},
+            ]
+        )
+        tables["data_dictionary"] = pd.concat([dd, ml_dd], ignore_index=True)
+
+        incoming = build_incoming_rookies_sheet(master, ml_features)
+        tables[f"incoming_rookies_{INCOMING_DRAFT_YEAR}"] = incoming
+        print(f"  incoming_rookies_{INCOMING_DRAFT_YEAR} rows: {len(incoming)}")
+        dd = tables.get("data_dictionary", pd.DataFrame())
+        incoming_dd = pd.DataFrame(
+            [
+                {
+                    "sheet": f"incoming_rookies_{INCOMING_DRAFT_YEAR}",
+                    "column": "*",
+                    "description": (
+                        f"Pre-rookie inputs + ML predictions for {INCOMING_DRAFT_YEAR} draft class "
+                        f"({INCOMING_DRAFT_YEAR}-{INCOMING_DRAFT_YEAR + 1} NFL season); rookie PPR blank until season ends"
+                    ),
+                    "source": "compile + model_score",
+                },
+            ]
+        )
+        tables["data_dictionary"] = pd.concat([dd, incoming_dd], ignore_index=True)
+
     print("Exporting workbook + CSVs ...")
     xlsx_path = export_workbook_and_csvs(tables)
     print(f"Wrote {xlsx_path}")
     print("Wrote individual CSVs under data/output/csv/")
-    print("Done (compile + export only; analysis/ML scorer not run).")
+    print("Done (compile + correlation + ML scorer).")
     return 0
 
 
