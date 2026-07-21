@@ -26,7 +26,11 @@ from rookie_ppr.ingest_nfl import (
     load_schedules,
     load_team_season_stats,
 )
-from rookie_ppr.ingest_opportunity import build_landing_opportunity, build_team_offensive_environment
+from rookie_ppr.ingest_opportunity import (
+    build_incumbent_competition,
+    build_landing_opportunity,
+    build_team_offensive_environment,
+)
 from rookie_ppr.ingest_recruiting import load_recruiting, write_recruiting_template
 from rookie_ppr.incoming_rookies import build_incoming_rookies_sheet
 from rookie_ppr.join_players import build_tables
@@ -55,6 +59,22 @@ def main(fetch_on3: bool = False) -> int:
     stats = load_player_season_stats(seasons)
     print(f"  stat rows: {len(stats)}")
 
+    # nflverse often lags one season; fill gaps from NFL.com leaderboards (e.g. 2025 for 2026 drafts)
+    from rookie_ppr.ingest_nfl_com_stats import fill_missing_season_stats
+
+    prior_for_incoming = INCOMING_DRAFT_YEAR - 1
+    stats = fill_missing_season_stats(stats, rosters, seasons=[prior_for_incoming])
+    print(f"  stat rows after NFL.com fill: {len(stats)}")
+    if not stats.empty and "season" in stats.columns:
+        by_season = (
+            pd.to_numeric(stats["season"], errors="coerce")
+            .dropna()
+            .astype(int)
+            .value_counts()
+            .sort_index()
+        )
+        print(f"  seasons present: {dict(by_season.tail(6))}")
+
     print("Building rookie fantasy targets ...")
     fantasy = build_rookie_fantasy(draft, stats, rosters)
     print(f"  fantasy rows: {len(fantasy)}")
@@ -80,6 +100,18 @@ def main(fetch_on3: bool = False) -> int:
     print("Building landing-spot opportunity ...")
     opportunity = build_landing_opportunity(stats, draft)
     print(f"  opportunity rows: {len(opportunity)}")
+    print(
+        f"  opportunity fill {INCOMING_DRAFT_YEAR}: "
+        f"{opportunity.loc[opportunity['draft_year'] == INCOMING_DRAFT_YEAR, 'team_opportunity_ppr'].notna().mean():.0%}"
+    )
+
+    print("Building incumbent competition ...")
+    incumbent = build_incumbent_competition(stats, draft, rosters)
+    print(f"  incumbent rows: {len(incumbent)}")
+    print(
+        f"  incumbent fill {INCOMING_DRAFT_YEAR}: "
+        f"{incumbent.loc[incumbent['draft_year'] == INCOMING_DRAFT_YEAR, 'incumbent_pos_ppr'].notna().mean():.0%}"
+    )
 
     print("Loading college production (optional CFBD) ...")
     college = load_college_production(draft)
@@ -99,6 +131,7 @@ def main(fetch_on3: bool = False) -> int:
         opportunity=opportunity,
         college=college,
         ff_rankings=ff_rankings,
+        incumbent=incumbent,
     )
     master_n = len(tables.get("players_master", []))
     print(f"  players_master rows: {master_n}")
@@ -135,6 +168,27 @@ def main(fetch_on3: bool = False) -> int:
                 f"  ML train rows: {metrics.get('train_rows')}, "
                 f"holdout r: {holdout_r}, holdout MAE: {metrics.get('holdout_mae', 'n/a')}"
             )
+            cov = metrics.get("holdout_interval_coverage")
+            if cov is not None:
+                print(
+                    f"  CQR {100 * (1 - metrics.get('cqr_alpha', 0.2)):.0f}% interval "
+                    f"holdout coverage: {cov}, "
+                    f"mean width: {metrics.get('holdout_interval_width_mean', 'n/a')}"
+                )
+            adp_base = ((metrics.get("baselines") or {}).get("adp_only") or {})
+            cmp = adp_base.get("comparable") or {}
+            if cmp:
+                print(
+                    f"  ADP-only baseline (comparable n={cmp.get('n')}): "
+                    f"r={cmp.get('adp_r')} MAE={cmp.get('adp_mae')} | "
+                    f"full r={cmp.get('full_r')} MAE={cmp.get('full_mae')} | "
+                    f"lift r={cmp.get('lift_r')} MAE={cmp.get('lift_mae')}"
+                )
+            elif adp_base.get("holdout_pearson_r") is not None:
+                print(
+                    f"  ADP-only baseline holdout r: {adp_base.get('holdout_pearson_r')}, "
+                    f"MAE: {adp_base.get('holdout_mae')}"
+                )
         dd = tables.get("data_dictionary", pd.DataFrame())
         ml_dd = pd.DataFrame(
             [

@@ -62,4 +62,7 @@ def compute_team_sos(schedules: pd.DataFrame) -> pd.DataFrame:
         sos_opp_win_pct=("opp_win_pct", "mean"),
         games_scheduled=("opp_win_pct", "count"),
     )
-    return sos
+    from rookie_ppr.utils import normalize_team_abbr
+
+    sos["team"] = sos["team"].map(normalize_team_abbr)
+    return sos.drop_duplicates(subset=["season", "team"], keep="last")

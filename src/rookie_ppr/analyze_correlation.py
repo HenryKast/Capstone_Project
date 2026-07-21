@@ -12,6 +12,17 @@ FEATURE_BLOCKS: dict[str, list[str]] = {
         "team_context": [
         "sos_opp_win_pct",
         "team_opportunity_ppr",
+        "team_pos_touches",
+        "team_pos_carries",
+        "team_pos_targets",
+        "team_pos_receptions",
+        "incumbent_pos_ppr",
+        "incumbent_pos_ppr_sum",
+        "incumbent_pos_carries",
+        "incumbent_pos_targets",
+        "incumbent_pos_touches",
+        "vacated_touches",
+        "vacated_carries",
         "off_pass_rate_proxy",
         "off_pass_yards",
         "off_rush_yards",
@@ -70,6 +81,28 @@ def _add_derived_columns(df: pd.DataFrame) -> pd.DataFrame:
         out["ht_inches"] = out["ht"].map(_parse_ht_inches)
     else:
         out["ht_inches"] = pd.NA
+
+    # Vacated usage = prior team volume minus returning workhorse (opportunity depth)
+    touches = pd.to_numeric(out["team_pos_touches"], errors="coerce") if "team_pos_touches" in out.columns else None
+    inc_touches = (
+        pd.to_numeric(out["incumbent_pos_touches"], errors="coerce")
+        if "incumbent_pos_touches" in out.columns
+        else None
+    )
+    carries = pd.to_numeric(out["team_pos_carries"], errors="coerce") if "team_pos_carries" in out.columns else None
+    inc_carries = (
+        pd.to_numeric(out["incumbent_pos_carries"], errors="coerce")
+        if "incumbent_pos_carries" in out.columns
+        else None
+    )
+    if touches is not None and inc_touches is not None:
+        out["vacated_touches"] = touches - inc_touches.fillna(0)
+    else:
+        out["vacated_touches"] = pd.NA
+    if carries is not None and inc_carries is not None:
+        out["vacated_carries"] = carries - inc_carries.fillna(0)
+    else:
+        out["vacated_carries"] = pd.NA
 
     if TARGET in out.columns:
         out[TARGET_BINARY] = pd.NA

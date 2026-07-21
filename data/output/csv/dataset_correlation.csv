@@ -1,8 +1,8 @@
 rank,dataset_block,feature_count,mean_abs_corr,max_abs_corr,incremental_r2,dataset_correlation_score_0_100
-1,draft_capital,2,0.5664,0.5704,0.0,39.6
-2,pre_draft_fantasy,2,0.5202,0.5331,0.0285,37.3
-3,timing,2,0.173,0.2589,0.0037,12.2
-4,college_production,7,0.1518,0.2288,0.0083,10.9
-5,recruiting,2,0.1503,0.1769,0.0018,10.6
-6,combine,8,0.1063,0.1533,0.0041,7.6
-7,team_context,5,0.0155,0.0233,0.0041,1.2
+1,draft_capital,2,0.5716,0.5756,0.0,40.0
+2,pre_draft_fantasy,2,0.5329,0.5454,0.0308,38.2
+3,timing,2,0.1881,0.2409,0.0054,13.3
+4,recruiting,2,0.1495,0.1754,0.0021,10.5
+5,college_production,7,0.141,0.1895,0.0114,10.2
+6,combine,8,0.1063,0.1547,0.0047,7.6
+7,team_context,14,0.0393,0.1062,0.0274,3.6

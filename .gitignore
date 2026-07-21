@@ -30,6 +30,7 @@ Thumbs.db
 # Downloaded caches (regenerable)
 data/raw/nflverse_cache/
 data/raw/cfbd_cache/
+data/raw/nfl_com/
 
 # Large model artifacts (later phase)
 data/output/models/
