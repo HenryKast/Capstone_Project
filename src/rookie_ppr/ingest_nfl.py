@@ -120,7 +120,17 @@ def _aggregate_weekly_to_season(weekly: pd.DataFrame) -> pd.DataFrame:
         "fantasy_points_ppr": ("fantasy_points_ppr", "sum"),
         "games": ("week" if "week" in w.columns else "fantasy_points_ppr", "count"),
     }
-    for col in ("receptions", "rushing_yards", "receiving_yards", "passing_yards"):
+    for col in (
+        "receptions",
+        "targets",
+        "carries",
+        "rushing_yards",
+        "receiving_yards",
+        "passing_yards",
+        "rushing_tds",
+        "receiving_tds",
+        "passing_tds",
+    ):
         if col in w.columns:
             named_aggs[col] = (col, "sum")
 

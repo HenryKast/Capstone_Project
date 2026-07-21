@@ -155,6 +155,7 @@ def build_tables(
     opportunity: pd.DataFrame,
     college: pd.DataFrame,
     ff_rankings: pd.DataFrame,
+    incumbent: pd.DataFrame | None = None,
 ) -> dict[str, pd.DataFrame]:
     players = _fuzzy_match_recruiting(fantasy, recruiting)
 
@@ -274,31 +275,40 @@ def build_tables(
                 combine_sheet[new] = combine_sheet[old]
         combine_sheet = combine_sheet[[col for col in keep if col in combine_sheet.columns]].drop_duplicates()
 
-    # Team context: SOS + offense + opportunity at draft team / rookie season
+    # Team context: SOS + offense + opportunity + incumbent (with prior-season fallback)
+    from rookie_ppr.ingest_opportunity import attach_team_season_with_fallback
+    from rookie_ppr.utils import normalize_team_abbr
+
+    def _merge_team_pos_features(left: pd.DataFrame, right: pd.DataFrame) -> pd.DataFrame:
+        if right is None or right.empty:
+            return left
+        l = left.copy()
+        r = right.copy()
+        l["_team_key"] = l["draft_team"].map(normalize_team_abbr)
+        r["_team_key"] = r["draft_team"].map(normalize_team_abbr)
+        feature_cols = [c for c in r.columns if c not in {"draft_year", "draft_team", "position", "_team_key"}]
+        r = (
+            r[["draft_year", "_team_key", "position"] + feature_cols]
+            .drop_duplicates(subset=["draft_year", "_team_key", "position"])
+        )
+        out = l.merge(r, how="left", on=["draft_year", "_team_key", "position"])
+        return out.drop(columns=["_team_key"])
+
     team_context = players[["gsis_id", "player_name", "position", "draft_year", "draft_team"]].copy()
     if not sos.empty:
-        team_context = team_context.merge(
+        team_context = attach_team_season_with_fallback(
+            team_context,
             sos,
-            how="left",
-            left_on=["draft_year", "draft_team"],
-            right_on=["season", "team"],
+            ["sos_opp_win_pct", "games_scheduled"],
         )
-        team_context = team_context.drop(columns=[c for c in ("season", "team") if c in team_context.columns])
     if not offense_env.empty:
-        team_context = team_context.merge(
+        team_context = attach_team_season_with_fallback(
+            team_context,
             offense_env,
-            how="left",
-            left_on=["draft_year", "draft_team"],
-            right_on=["season", "team"],
-            suffixes=("", "_off"),
+            ["off_pass_yards", "off_rush_yards", "off_pass_rate_proxy"],
         )
-        team_context = team_context.drop(columns=[c for c in ("season", "team") if c in team_context.columns])
-    if not opportunity.empty:
-        team_context = team_context.merge(
-            opportunity,
-            how="left",
-            on=["draft_year", "draft_team", "position"],
-        )
+    team_context = _merge_team_pos_features(team_context, opportunity)
+    team_context = _merge_team_pos_features(team_context, incumbent)
 
     college_sheet = pd.DataFrame()
     if not college.empty:
@@ -390,9 +400,16 @@ def build_tables(
             {"sheet": "draft", "column": "college", "description": "College at time of NFL draft", "source": "nflverse draft picks"},
             {"sheet": "draft", "column": "draft_overall", "description": "Overall NFL draft pick", "source": "nflverse"},
             {"sheet": "draft", "column": "draft_team", "description": "Team that drafted the player", "source": "nflverse"},
-            {"sheet": "team_context", "column": "sos_opp_win_pct", "description": "Rookie-season schedule SOS (avg opponent win%)", "source": "nflverse schedules"},
-            {"sheet": "team_context", "column": "team_opportunity_ppr", "description": "Prior-year team positional PPR (vacated usage proxy)", "source": "nflverse player stats"},
-            {"sheet": "team_context", "column": "off_pass_rate_proxy", "description": "Team pass-rate proxy in draft/rookie year", "source": "nflverse team stats"},
+            {"sheet": "team_context", "column": "sos_opp_win_pct", "description": "Rookie-season schedule SOS (avg opponent win%); prior season if unavailable", "source": "nflverse schedules"},
+            {"sheet": "team_context", "column": "team_opportunity_ppr", "description": "Prior available season team positional fantasy points (vacated usage proxy)", "source": "nflverse / NFL.com player stats"},
+            {"sheet": "team_context", "column": "team_pos_touches", "description": "Prior season team position touches (carries + receptions)", "source": "nflverse / NFL.com"},
+            {"sheet": "team_context", "column": "team_pos_carries", "description": "Prior season team position carries", "source": "nflverse / NFL.com"},
+            {"sheet": "team_context", "column": "team_pos_targets", "description": "Prior season team position targets", "source": "nflverse / NFL.com"},
+            {"sheet": "team_context", "column": "incumbent_pos_ppr", "description": "Max prior-season fantasy points among returning same-team/position players", "source": "nflverse stats + rosters"},
+            {"sheet": "team_context", "column": "incumbent_pos_ppr_sum", "description": "Sum of prior-season fantasy points among returning same-team/position players", "source": "nflverse stats + rosters"},
+            {"sheet": "team_context", "column": "incumbent_pos_carries", "description": "Max prior-season carries among returning same-team/position players", "source": "nflverse stats + rosters"},
+            {"sheet": "team_context", "column": "incumbent_pos_touches", "description": "Max prior-season touches among returning same-team/position players", "source": "nflverse stats + rosters"},
+            {"sheet": "team_context", "column": "off_pass_rate_proxy", "description": "Team pass-rate proxy (latest available season before draft)", "source": "nflverse team stats"},
             {"sheet": "combine", "column": "forty", "description": "40-yard dash", "source": "nflverse combine"},
             {"sheet": "college_production", "column": "cfb_*", "description": "Final CFB season production (requires CFBD_API_KEY)", "source": "CollegeFootballData"},
             {"sheet": "fantasy_rookie", "column": "rookie_ppr", "description": "PPR fantasy points in first NFL season", "source": "nflverse player stats"},

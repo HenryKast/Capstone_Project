@@ -1,8 +1,11 @@
 from __future__ import annotations
 
+import math
 import tkinter as tk
 from tkinter import messagebox, ttk
 from typing import Callable
+
+import numpy as np
 
 from rookie_ppr.config import INCOMING_DRAFT_YEAR
 from rookie_ppr.score_runner import load_players_master, player_lookup_labels, row_from_player, score_player
@@ -17,9 +20,37 @@ ACCENT_BTN = "#1E5AA8"
 POPUP_BG = "#0A3580"
 CHECK_FILL = "#FFFFFF"
 CHECK_EMPTY = "#0B3D91"
+BOOM_COLOR = "#7CFFB2"
+BUST_COLOR = "#FF8A8A"
+MEDIAN_COLOR = "#FFE566"
+PRED_COLOR = "#FFFFFF"
+BOX_COLOR = "#4A90D9"
+
+# ESPN-style boom/bust gauge (light card on dark popup)
+GAUGE_CARD = "#FFFFFF"
+GAUGE_TRACK = "#E6E6E6"
+GAUGE_BUST = "#E31C3D"
+GAUGE_BOOM = "#0B3D91"
+GAUGE_MID = "#00C853"
+GAUGE_TEXT = "#1A1A1A"
+GAUGE_MUTED = "#6B6B6B"
 
 NAV_KEYS = frozenset({"Up", "Down", "Return", "Escape", "Tab"})
 
+# Compare side popups: up to 4 in a 2×2 grid beside the main picker
+MAX_COMPARE_WINDOWS = 4
+COMPARE_POPUP_WIDTH = 400
+COMPARE_POPUP_EST_HEIGHT = 320  # collapsed content ~315; drivers expand further
+COMPARE_GRID_GAP = 8
+COMPARE_POPUP_MIN_WIDTH = 280
+COMPARE_POPUP_MIN_HEIGHT = 160
+
+BOOM_BUST_LABELS = {
+    "boom": "Boom (>75 success score)",
+    "bust": "Bust (<25 success score)",
+    "neutral": "Neutral (25–75)",
+    "unknown": "—",
+}
 
 class FillCheckbox(tk.Frame):
     """Small checkbox: solid white fill when selected, empty box when unselected."""
@@ -353,16 +384,574 @@ class ScrollFrame(tk.Frame):
         canvas.bind("<Leave>", lambda _e: canvas.unbind_all("<MouseWheel>"))
 
 
+class BoxWhiskerPlot(tk.Canvas):
+    """Horizontal box-and-whisker with configurable zone labels."""
+
+    def __init__(
+        self,
+        master: tk.Misc,
+        dist: dict,
+        marker: float,
+        title: str = "",
+        low_label: str = "Bust",
+        mid_label: str = "IQR",
+        high_label: str = "Boom",
+        footer: str = "",
+        width: int = 300,
+        height: int = 110,
+        **kwargs,
+    ) -> None:
+        super().__init__(
+            master,
+            width=width,
+            height=height,
+            bg=POPUP_BG,
+            highlightthickness=0,
+            **kwargs,
+        )
+        self._dist = dist
+        self._marker = marker
+        self._title = title
+        self._low_label = low_label
+        self._mid_label = mid_label
+        self._high_label = high_label
+        self._footer = footer
+        self._width = width
+        self._height = height
+        self.bind("<Configure>", self._on_configure)
+        self.after_idle(self._draw)
+
+    def _on_configure(self, _event: tk.Event | None = None) -> None:
+        self._width = max(self.winfo_width(), 200)
+        self._draw()
+
+    def _x(self, value: float, lo: float, hi: float, left: int, right: int) -> float:
+        if hi <= lo:
+            return (left + right) / 2
+        return left + (value - lo) / (hi - lo) * (right - left)
+
+    def _draw(self) -> None:
+        self.delete("all")
+        dist = self._dist
+        marker = self._marker
+        vals = [dist.get(k) for k in ("min", "q1", "median", "q3", "max")]
+        if any(v is None or (isinstance(v, float) and np.isnan(v)) for v in vals):
+            self.create_text(
+                self._width // 2,
+                self._height // 2,
+                text="Not enough data for plot",
+                fill="#B8D4FF",
+                font=("Segoe UI", 9),
+            )
+            return
+
+        lo = float(dist["min"])
+        hi = float(dist["max"])
+        if not (isinstance(marker, float) and math.isnan(marker)):
+            lo = min(lo, float(marker))
+            hi = max(hi, float(marker))
+        pad = (hi - lo) * 0.05 if hi > lo else 1.0
+        lo -= pad
+        hi += pad
+
+        left, right = 36, self._width - 16
+        y = 48
+        box_h = 22
+
+        q1 = float(dist["q1"])
+        med = float(dist["median"])
+        q3 = float(dist["q3"])
+        dmin = float(dist["min"])
+        dmax = float(dist["max"])
+
+        x_min = self._x(dmin, lo, hi, left, right)
+        x_q1 = self._x(q1, lo, hi, left, right)
+        x_med = self._x(med, lo, hi, left, right)
+        x_q3 = self._x(q3, lo, hi, left, right)
+        x_max = self._x(dmax, lo, hi, left, right)
+
+        self.create_rectangle(x_min, y - box_h // 2, x_q1, y + box_h // 2, fill="#5A2030", outline="")
+        self.create_rectangle(x_q3, y - box_h // 2, x_max, y + box_h // 2, fill="#1E5A3A", outline="")
+
+        self.create_line(x_min, y, x_q1, y, fill=FG, width=2)
+        self.create_line(x_q3, y, x_max, y, fill=FG, width=2)
+        self.create_line(x_min, y - 8, x_min, y + 8, fill=FG, width=2)
+        self.create_line(x_max, y - 8, x_max, y + 8, fill=FG, width=2)
+
+        self.create_rectangle(
+            x_q1,
+            y - box_h // 2,
+            x_q3,
+            y + box_h // 2,
+            fill=BOX_COLOR,
+            outline=FG,
+            width=1,
+        )
+        self.create_line(x_med, y - box_h // 2, x_med, y + box_h // 2, fill=MEDIAN_COLOR, width=2)
+
+        if not (isinstance(marker, float) and math.isnan(marker)):
+            x_pred = self._x(float(marker), lo, hi, left, right)
+            self.create_line(x_pred, y - box_h // 2 - 10, x_pred, y + box_h // 2 + 10, fill=PRED_COLOR, width=2)
+            self.create_oval(x_pred - 5, y - 5, x_pred + 5, y + 5, fill=IMPORTANT_FG, outline=FG)
+
+        self.create_text(x_min, y + 28, text=self._low_label, fill=BUST_COLOR, font=("Segoe UI", 8, "bold"), anchor="n")
+        self.create_text(
+            (x_q1 + x_q3) / 2,
+            y + 28,
+            text=self._mid_label,
+            fill="#B8D4FF",
+            font=("Segoe UI", 8),
+            anchor="n",
+        )
+        self.create_text(
+            x_max,
+            y + 28,
+            text=self._high_label,
+            fill=BOOM_COLOR,
+            font=("Segoe UI", 8, "bold"),
+            anchor="n",
+        )
+        if self._title:
+            self.create_text(left, 12, text=self._title, fill="#B8D4FF", font=("Segoe UI", 8), anchor="w")
+        if self._footer:
+            self.create_text(
+                left,
+                self._height - 8,
+                text=self._footer,
+                fill="#B8D4FF",
+                font=("Segoe UI", 8),
+                anchor="sw",
+            )
+
+
+class BoomBustGauge(tk.Canvas):
+    """
+    Prediction-error boom/bust as a horizontal box-and-whisker
+    (same visual language as the historical peers plot).
+    """
+
+    def __init__(
+        self,
+        master: tk.Misc,
+        player_name: str,
+        predicted: float,
+        ppr_low: float,
+        ppr_high: float,
+        boom_chance_pct: float = 50.0,
+        bust_chance_pct: float = 50.0,
+        width: int = 350,
+        height: int = 130,
+        **kwargs,
+    ) -> None:
+        super().__init__(
+            master,
+            width=width,
+            height=height,
+            bg=POPUP_BG,
+            highlightthickness=0,
+            **kwargs,
+        )
+        self._name = player_name
+        self._predicted = float(predicted)
+        self._low = float(ppr_low)
+        self._high = float(ppr_high)
+        self._boom_pct = float(boom_chance_pct)
+        self._bust_pct = float(bust_chance_pct)
+        self._width = width
+        self._height = height
+        self.bind("<Configure>", self._on_configure)
+        self.after_idle(self._draw)
+
+    def _on_configure(self, _event: tk.Event | None = None) -> None:
+        self._width = max(self.winfo_width(), 200)
+        self._draw()
+
+    def _x(self, value: float, lo: float, hi: float, left: int, right: int) -> float:
+        if hi <= lo:
+            return (left + right) / 2
+        return left + (value - lo) / (hi - lo) * (right - left)
+
+    def _draw(self) -> None:
+        self.delete("all")
+        pred = self._predicted
+        q1 = min(self._low, self._high)
+        q3 = max(self._low, self._high)
+        bust_pct = max(0.0, min(100.0, self._bust_pct))
+        boom_pct = max(0.0, min(100.0, self._boom_pct))
+        iqr = max(q3 - q1, 1.0)
+        # Visual whiskers beyond predictive Q1/Q3 (error-model IQR wings)
+        dmin = q1 - 0.45 * iqr
+        dmax = q3 + 0.45 * iqr
+        dmin = min(dmin, pred)
+        dmax = max(dmax, pred)
+
+        pad = (dmax - dmin) * 0.05 if dmax > dmin else 1.0
+        lo, hi = dmin - pad, dmax + pad
+        left, right = 36, self._width - 16
+        y = 44
+        box_h = 22
+
+        x_min = self._x(dmin, lo, hi, left, right)
+        x_q1 = self._x(q1, lo, hi, left, right)
+        x_med = self._x(pred, lo, hi, left, right)
+        x_q3 = self._x(q3, lo, hi, left, right)
+        x_max = self._x(dmax, lo, hi, left, right)
+
+        # Bust / boom outer zones
+        self.create_rectangle(x_min, y - box_h // 2, x_q1, y + box_h // 2, fill="#5A2030", outline="")
+        self.create_rectangle(x_q3, y - box_h // 2, x_max, y + box_h // 2, fill="#1E5A3A", outline="")
+
+        # Whiskers
+        self.create_line(x_min, y, x_q1, y, fill=FG, width=2)
+        self.create_line(x_q3, y, x_max, y, fill=FG, width=2)
+        self.create_line(x_min, y - 8, x_min, y + 8, fill=FG, width=2)
+        self.create_line(x_max, y - 8, x_max, y + 8, fill=FG, width=2)
+
+        # IQR box
+        self.create_rectangle(
+            x_q1,
+            y - box_h // 2,
+            x_q3,
+            y + box_h // 2,
+            fill=BOX_COLOR,
+            outline=FG,
+            width=1,
+        )
+        # Median line = projected points
+        self.create_line(x_med, y - box_h // 2, x_med, y + box_h // 2, fill=MEDIAN_COLOR, width=2)
+        self.create_line(x_med, y - box_h // 2 - 10, x_med, y + box_h // 2 + 10, fill=PRED_COLOR, width=2)
+        self.create_oval(x_med - 5, y - 5, x_med + 5, y + 5, fill=IMPORTANT_FG, outline=FG)
+
+        self.create_text(
+            x_med,
+            y - box_h // 2 - 14,
+            text=f"Points {pred:.1f}",
+            fill=IMPORTANT_FG,
+            font=("Segoe UI", 9, "bold"),
+            anchor="s",
+        )
+
+        # Quartile threshold values under Q1 / Q3 lines
+        self.create_text(
+            x_q1,
+            y + 26,
+            text=f"{q1:.0f}",
+            fill=BUST_COLOR,
+            font=("Segoe UI", 9, "bold"),
+            anchor="n",
+        )
+        self.create_text(
+            x_q3,
+            y + 26,
+            text=f"{q3:.0f}",
+            fill=BOOM_COLOR,
+            font=("Segoe UI", 9, "bold"),
+            anchor="n",
+        )
+
+        self.create_text(
+            x_min,
+            y + 42,
+            text=f"Bust (~{bust_pct:.0f}%)",
+            fill=BUST_COLOR,
+            font=("Segoe UI", 8, "bold"),
+            anchor="n",
+        )
+        self.create_text(
+            (x_q1 + x_q3) / 2,
+            y + 42,
+            text="IQR",
+            fill="#B8D4FF",
+            font=("Segoe UI", 8),
+            anchor="n",
+        )
+        self.create_text(
+            x_max,
+            y + 42,
+            text=f"Boom (~{boom_pct:.0f}%)",
+            fill=BOOM_COLOR,
+            font=("Segoe UI", 8, "bold"),
+            anchor="n",
+        )
+
+        first = self._name.split()[0] if self._name.strip() else "This player"
+        footer = (
+            f"{first}: {bust_pct:.0f}% chance < {q1:.0f}, {boom_pct:.0f}% chance > {q3:.0f}"
+        )
+        self.create_text(
+            left,
+            self._height - 8,
+            text=footer,
+            fill="#B8D4FF",
+            font=("Segoe UI", 8),
+            anchor="sw",
+            width=self._width - left - 8,
+        )
+
+
+# Back-compat alias
+PredictionCenteredPlot = BoomBustGauge
+
+
+def _prediction_plot_args(result: dict) -> tuple[float, float, float, float, float]:
+    pred = float(result["predicted_rookie_ppr"])
+    conf = result.get("confidence") or {}
+    half = float(conf.get("half_width") or 0.0)
+    low = float(conf.get("ppr_low", pred - half))
+    high = float(conf.get("ppr_high", pred + half))
+    # Symmetric error model around the prediction → equal chance above/below
+    boom_pct = float(conf.get("boom_chance_pct", 50.0))
+    bust_pct = float(conf.get("bust_chance_pct", 50.0))
+    return pred, low, high, boom_pct, bust_pct
+
+
+def _popup_content_height(win: tk.Toplevel) -> int:
+    """Best-effort content height (reqheight, floored by mapped child bottoms)."""
+    win.update_idletasks()
+    content_h = int(win.winfo_reqheight())
+    for child in win.winfo_children():
+        try:
+            child.update_idletasks()
+            bottom = int(child.winfo_y()) + max(int(child.winfo_reqheight()), int(child.winfo_height()))
+            if bottom > content_h:
+                content_h = bottom
+        except tk.TclError:
+            pass
+    return content_h
+
+
+def _fit_popup_to_content(win: tk.Toplevel, width: int = 400, bottom_pad: int = 8) -> int:
+    """Shrink/grow a popup so the bottom sits just under the last widget.
+
+    Returns the applied client height. Always ends with update_idletasks so
+    subsequent winfo_height / geometry reads see the new size (important when
+    compare tiling runs in the same idle queue).
+    """
+    content_h = _popup_content_height(win)
+    h = max(content_h + bottom_pad, COMPARE_POPUP_MIN_HEIGHT)
+    try:
+        x, y = win.winfo_x(), win.winfo_y()
+        win.geometry(f"{width}x{h}+{x}+{y}")
+    except tk.TclError:
+        win.geometry(f"{width}x{h}")
+    win.update_idletasks()
+    # Reflow can change wrapping; grow once more if content still needs room.
+    content_h = _popup_content_height(win)
+    h2 = max(content_h + bottom_pad, COMPARE_POPUP_MIN_HEIGHT)
+    if h2 != h:
+        h = h2
+        try:
+            x, y = win.winfo_x(), win.winfo_y()
+            win.geometry(f"{width}x{h}+{x}+{y}")
+        except tk.TclError:
+            win.geometry(f"{width}x{h}")
+        win.update_idletasks()
+    return h
+
+
+class PredictionPopup(tk.Toplevel):
+    """Side popup: boom/bust box plot, optional historical points plot."""
+
+    def __init__(self, parent: tk.Misc, name: str, result: dict, x: int, y: int) -> None:
+        super().__init__(parent)
+        self.title(f"Prediction — {name}")
+        self.configure(bg=POPUP_BG)
+        self.minsize(360, 160)
+        self._result = result
+        self._ppr_plot_holder: tk.Frame | None = None
+        self._popup_x = x
+        self._popup_y = y
+
+        pred = result["predicted_rookie_ppr"]
+        score = result["success_score_0_100"]
+        conf = result.get("confidence") or {}
+        dist = result.get("ppr_distribution") or {}
+        p, low, high, boom_pct, bust_pct = _prediction_plot_args(result)
+
+        header = tk.Frame(self, bg=POPUP_BG, padx=12, pady=8)
+        header.pack(fill="x")
+        tk.Label(
+            header,
+            text=name,
+            bg=POPUP_BG,
+            fg=FG,
+            font=("Segoe UI", 12, "bold"),
+            wraplength=360,
+            justify="left",
+        ).pack(anchor="w")
+        tk.Label(
+            header,
+            text=f"Predicted points: {pred:.1f}",
+            bg=POPUP_BG,
+            fg=IMPORTANT_FG,
+            font=("Segoe UI", 12, "bold"),
+            justify="left",
+        ).pack(anchor="w", pady=(4, 0))
+        tk.Label(
+            header,
+            text=f"Peer success score: {score:.1f}",
+            bg=POPUP_BG,
+            fg="#B8D4FF",
+            font=("Segoe UI", 9),
+            justify="left",
+        ).pack(anchor="w", pady=(2, 0))
+        if conf:
+            method = conf.get("method")
+            if method == "predictive_quartile":
+                tk.Label(
+                    header,
+                    text=(
+                        f"Error-model quartiles: {conf.get('bust_chance_pct'):.0f}% chance "
+                        f"< {conf.get('ppr_low')}  ·  {conf.get('boom_chance_pct'):.0f}% chance "
+                        f"> {conf.get('ppr_high')}"
+                    ),
+                    bg=POPUP_BG,
+                    fg="#B8D4FF",
+                    font=("Segoe UI", 8),
+                    justify="left",
+                    wraplength=360,
+                ).pack(anchor="w", pady=(2, 0))
+                if conf.get("cqr_low") is not None:
+                    tk.Label(
+                        header,
+                        text=(
+                            f"Model 80% CQR band: {conf.get('cqr_low')} – {conf.get('cqr_high')}"
+                        ),
+                        bg=POPUP_BG,
+                        fg="#B8D4FF",
+                        font=("Segoe UI", 8),
+                        justify="left",
+                    ).pack(anchor="w", pady=(1, 0))
+            elif method == "peer_quartile":
+                tk.Label(
+                    header,
+                    text=(
+                        f"Bust = bottom quartile (≤Q1)  ·  Boom = top quartile (≥Q3)  ·  "
+                        f"~{conf.get('bust_chance_pct')}%/{conf.get('boom_chance_pct')}%"
+                    ),
+                    bg=POPUP_BG,
+                    fg="#B8D4FF",
+                    font=("Segoe UI", 8),
+                    justify="left",
+                    wraplength=360,
+                ).pack(anchor="w", pady=(2, 0))
+            elif method == "cqr":
+                cov = conf.get("nominal_coverage_pct", 80)
+                tk.Label(
+                    header,
+                    text=(
+                        f"{cov:.0f}% conformal interval (CQR)  ·  "
+                        f"bust/boom ~{conf.get('bust_chance_pct')}%/"
+                        f"{conf.get('boom_chance_pct')}% (asymmetric)"
+                    ),
+                    bg=POPUP_BG,
+                    fg="#B8D4FF",
+                    font=("Segoe UI", 8),
+                    justify="left",
+                    wraplength=360,
+                ).pack(anchor="w", pady=(2, 0))
+            else:
+                tk.Label(
+                    header,
+                    text=(
+                        f"Error band from holdout MAE × missing composites "
+                        f"(×{conf.get('multiplier', 1):.2f})"
+                    ),
+                    bg=POPUP_BG,
+                    fg="#B8D4FF",
+                    font=("Segoe UI", 8),
+                    justify="left",
+                    wraplength=360,
+                ).pack(anchor="w", pady=(2, 0))
+
+        plot_frame = tk.Frame(self, bg=POPUP_BG, padx=8, pady=2)
+        plot_frame.pack(fill="x")
+        BoomBustGauge(
+            plot_frame,
+            player_name=name,
+            predicted=p,
+            ppr_low=low,
+            ppr_high=high,
+            boom_chance_pct=boom_pct,
+            bust_chance_pct=bust_pct,
+            width=370,
+            height=130,
+        ).pack(fill="x")
+
+        self._show_ppr_var = tk.BooleanVar(value=False)
+        FillCheckbox(
+            self,
+            self._show_ppr_var,
+            text="Show historical points distribution",
+            command=self._toggle_ppr_plot,
+            bg=POPUP_BG,
+            fg=FG,
+        ).pack(anchor="w", padx=12, pady=(4, 0))
+
+        self._ppr_plot_holder = tk.Frame(self, bg=POPUP_BG, padx=8, pady=0)
+        self._ppr_plot_holder.pack(fill="x")
+        self._ppr_dist = dist
+        self._pred = pred
+
+        pop = len(result.get("composite_populated", []))
+        tk.Label(
+            self,
+            text=f"Composites used: {pop}/11",
+            bg=POPUP_BG,
+            fg="#B8D4FF",
+            font=("Segoe UI", 9),
+        ).pack(anchor="w", padx=12, pady=(4, 6))
+
+        self.geometry(f"400x200+{x}+{y}")
+        self.after_idle(lambda: _fit_popup_to_content(self, width=400, bottom_pad=6))
+
+    def _toggle_ppr_plot(self) -> None:
+        if self._ppr_plot_holder is None:
+            return
+        for child in self._ppr_plot_holder.winfo_children():
+            child.destroy()
+        if not self._show_ppr_var.get():
+            _fit_popup_to_content(self, width=400, bottom_pad=6)
+            return
+        BoxWhiskerPlot(
+            self._ppr_plot_holder,
+            self._ppr_dist,
+            float(self._pred),
+            title=f"Historical {self._result.get('position', '')} rookie points "
+            f"(n={self._ppr_dist.get('n', 0)})",
+            low_label="Low",
+            mid_label="IQR",
+            high_label="High",
+            footer=(
+                f"Q1 {self._ppr_dist.get('q1', float('nan')):.0f}   "
+                f"Med {self._ppr_dist.get('median', float('nan')):.0f}   "
+                f"Q3 {self._ppr_dist.get('q3', float('nan')):.0f}"
+            ),
+            width=370,
+            height=120,
+        ).pack(fill="x")
+        _fit_popup_to_content(self, width=400, bottom_pad=6)
+
+
 class ComparePlayerPopup(tk.Toplevel):
+    """Side popup matching Calculate score style; checkbox reveals score drivers."""
+
     def __init__(self, parent: tk.Misc, entry: dict, x: int, y: int) -> None:
         super().__init__(parent)
         self.title(f"Compare — {entry['name']}")
         self.configure(bg=POPUP_BG)
-        self.geometry(f"340x520+{x}+{y}")
-        self.minsize(300, 420)
+        self.minsize(360, 160)
+        self._result = entry["result"]
+        self._drivers_holder: tk.Frame | None = None
+        self._fitted_height = COMPARE_POPUP_EST_HEIGHT
 
         result = entry["result"]
-        header = tk.Frame(self, bg=POPUP_BG, padx=12, pady=10)
+        pred = result["predicted_rookie_ppr"]
+        score = result["success_score_0_100"]
+        conf = result.get("confidence") or {}
+        p, low, high, boom_pct, bust_pct = _prediction_plot_args(result)
+
+        header = tk.Frame(self, bg=POPUP_BG, padx=12, pady=8)
         header.pack(fill="x")
         tk.Label(
             header,
@@ -370,72 +959,193 @@ class ComparePlayerPopup(tk.Toplevel):
             bg=POPUP_BG,
             fg=FG,
             font=("Segoe UI", 12, "bold"),
-            wraplength=300,
+            wraplength=360,
             justify="left",
         ).pack(anchor="w")
         tk.Label(
             header,
-            text=(
-                f"Predicted PPR: {result['predicted_rookie_ppr']:.1f}\n"
-                f"Success score: {result['success_score_0_100']:.1f}"
-            ),
+            text=f"Predicted points: {pred:.1f}",
             bg=POPUP_BG,
             fg=IMPORTANT_FG,
-            font=("Segoe UI", 11, "bold"),
+            font=("Segoe UI", 12, "bold"),
             justify="left",
-        ).pack(anchor="w", pady=(6, 0))
-
-        body = tk.Frame(self, bg=POPUP_BG, padx=12, pady=4)
-        body.pack(fill="both", expand=True)
-
-        important_cols = {s.column for s in FIELD_SPECS if s.important}
-        shown = 0
-        for spec in FIELD_SPECS:
-            val = entry["row"].get(spec.column)
-            if val is None or str(val).strip() == "":
-                continue
-            shown += 1
-            row = tk.Frame(body, bg=POPUP_BG)
-            row.pack(fill="x", pady=2)
-            label = spec.label
-            if spec.column in important_cols:
-                label += " (Important)"
-            tk.Label(
-                row,
-                text=f"{label}:",
-                bg=POPUP_BG,
-                fg=IMPORTANT_FG if spec.column in important_cols else "#B8D4FF",
-                font=("Segoe UI", 8),
-                anchor="w",
-            ).pack(anchor="w")
-            tk.Label(
-                row,
-                text=str(val),
-                bg=POPUP_BG,
-                fg=FG,
-                font=("Segoe UI", 10),
-                anchor="w",
-            ).pack(anchor="w")
-
-        if shown == 0:
-            tk.Label(body, text="No stats entered.", bg=POPUP_BG, fg=FG).pack(anchor="w")
-
-        pop = len(result["composite_populated"])
+        ).pack(anchor="w", pady=(4, 0))
         tk.Label(
-            self,
-            text=f"Composites filled: {pop}/11",
+            header,
+            text=f"Peer success score: {score:.1f}",
             bg=POPUP_BG,
             fg="#B8D4FF",
             font=("Segoe UI", 9),
-            padx=12,
-            pady=8,
+            justify="left",
+        ).pack(anchor="w", pady=(2, 0))
+        if conf:
+            method = conf.get("method")
+            if method == "predictive_quartile":
+                tk.Label(
+                    header,
+                    text=(
+                        f"Error-model quartiles: {conf.get('bust_chance_pct'):.0f}% chance "
+                        f"< {conf.get('ppr_low')}  ·  {conf.get('boom_chance_pct'):.0f}% chance "
+                        f"> {conf.get('ppr_high')}"
+                    ),
+                    bg=POPUP_BG,
+                    fg="#B8D4FF",
+                    font=("Segoe UI", 8),
+                    justify="left",
+                    wraplength=360,
+                ).pack(anchor="w", pady=(2, 0))
+            elif method == "peer_quartile":
+                tk.Label(
+                    header,
+                    text=(
+                        f"Bust = bottom quartile (≤Q1)  ·  Boom = top quartile (≥Q3)  ·  "
+                        f"~{conf.get('bust_chance_pct')}%/{conf.get('boom_chance_pct')}%"
+                    ),
+                    bg=POPUP_BG,
+                    fg="#B8D4FF",
+                    font=("Segoe UI", 8),
+                    justify="left",
+                    wraplength=360,
+                ).pack(anchor="w", pady=(2, 0))
+            elif method == "cqr":
+                cov = conf.get("nominal_coverage_pct", 80)
+                tk.Label(
+                    header,
+                    text=(
+                        f"{cov:.0f}% conformal interval (CQR)  ·  "
+                        f"bust/boom ~{conf.get('bust_chance_pct')}%/"
+                        f"{conf.get('boom_chance_pct')}% (asymmetric)"
+                    ),
+                    bg=POPUP_BG,
+                    fg="#B8D4FF",
+                    font=("Segoe UI", 8),
+                    justify="left",
+                    wraplength=360,
+                ).pack(anchor="w", pady=(2, 0))
+            else:
+                tk.Label(
+                    header,
+                    text=(
+                        f"Error band from holdout MAE × missing composites "
+                        f"(×{conf.get('multiplier', 1):.2f})"
+                    ),
+                    bg=POPUP_BG,
+                    fg="#B8D4FF",
+                    font=("Segoe UI", 8),
+                    justify="left",
+                    wraplength=360,
+                ).pack(anchor="w", pady=(2, 0))
+
+        plot_frame = tk.Frame(self, bg=POPUP_BG, padx=8, pady=2)
+        plot_frame.pack(fill="x")
+        BoomBustGauge(
+            plot_frame,
+            player_name=entry["name"],
+            predicted=p,
+            ppr_low=low,
+            ppr_high=high,
+            boom_chance_pct=boom_pct,
+            bust_chance_pct=bust_pct,
+            width=370,
+            height=130,
         ).pack(fill="x")
+
+        self._show_drivers_var = tk.BooleanVar(value=False)
+        FillCheckbox(
+            self,
+            self._show_drivers_var,
+            text="Show what influences this score",
+            command=self._toggle_drivers,
+            bg=POPUP_BG,
+            fg=FG,
+        ).pack(anchor="w", padx=12, pady=(4, 0))
+
+        self._drivers_holder = tk.Frame(self, bg=POPUP_BG, padx=12, pady=0)
+        self._drivers_holder.pack(fill="x")
+
+        pop = len(result.get("composite_populated", []))
+        tk.Label(
+            self,
+            text=f"Composites used: {pop}/11",
+            bg=POPUP_BG,
+            fg="#B8D4FF",
+            font=("Segoe UI", 9),
+        ).pack(anchor="w", padx=12, pady=(4, 6))
+
+        self.geometry(f"400x200+{x}+{y}")
+        self.after_idle(self._fit_and_relayout_compare)
+
+    def _fit_and_relayout_compare(self) -> None:
+        self._fitted_height = _fit_popup_to_content(
+            self, width=COMPARE_POPUP_WIDTH, bottom_pad=4
+        )
+        parent = self.master
+        layout = getattr(parent, "_layout_compare_popups", None)
+        if callable(layout):
+            parent.after_idle(layout)
+
+    def _toggle_drivers(self) -> None:
+        if self._drivers_holder is None:
+            return
+        for child in self._drivers_holder.winfo_children():
+            child.destroy()
+        if not self._show_drivers_var.get():
+            self._fit_and_relayout_compare()
+            return
+
+        drivers = list(self._result.get("score_drivers") or [])
+        if not drivers:
+            tk.Label(
+                self._drivers_holder,
+                text="No score drivers available for this player.",
+                bg=POPUP_BG,
+                fg="#B8D4FF",
+                font=("Segoe UI", 8),
+                wraplength=360,
+                justify="left",
+            ).pack(anchor="w", pady=(4, 2))
+            self._fit_and_relayout_compare()
+            return
+
+        tk.Label(
+            self._drivers_holder,
+            text="Top drivers (Δ points vs typical / average):",
+            bg=POPUP_BG,
+            fg="#B8D4FF",
+            font=("Segoe UI", 8),
+            justify="left",
+        ).pack(anchor="w", pady=(4, 2))
+
+        for item in drivers:
+            delta = float(item.get("delta_ppr") or 0.0)
+            sign = "+" if delta >= 0 else ""
+            color = BOOM_COLOR if delta >= 0 else BUST_COLOR
+            row = tk.Frame(self._drivers_holder, bg=POPUP_BG)
+            row.pack(fill="x", pady=1)
+            tk.Label(
+                row,
+                text=str(item.get("label") or item.get("feature") or "—"),
+                bg=POPUP_BG,
+                fg=FG,
+                font=("Segoe UI", 9),
+                anchor="w",
+            ).pack(side="left", fill="x", expand=True)
+            tk.Label(
+                row,
+                text=f"{sign}{delta:.1f} points",
+                bg=POPUP_BG,
+                fg=color,
+                font=("Segoe UI", 9, "bold"),
+                anchor="e",
+            ).pack(side="right")
+
+        self._fit_and_relayout_compare()
 
 
 class RookieScorerApp(tk.Tk):
     def __init__(self) -> None:
         super().__init__()
-        self.title("Rookie PPR Success Scorer")
+        self.title("Rookie Points Scorer")
         self.configure(bg=BG)
         self.geometry("520x760")
         self.minsize(480, 620)
@@ -457,21 +1167,29 @@ class RookieScorerApp(tk.Tk):
         self._compare_entries: list[dict] = []
         self._compare_vars: list[tk.BooleanVar] = []
         self._compare_popups: list[ComparePlayerPopup] = []
+        self._prediction_popup: PredictionPopup | None = None
 
         header = tk.Frame(self, bg=BG, padx=12, pady=10)
         header.pack(fill="x")
         tk.Label(
             header,
-            text="Rookie PPR ML Scorer",
+            text="Rookie Points Scorer",
             bg=BG,
             fg=FG,
             font=("Segoe UI", 14, "bold"),
         ).pack(anchor="w")
         tk.Label(
             header,
+            text="Fantasy scoring format: PPR (points per reception)",
+            bg=BG,
+            fg="#B8D4FF",
+            font=("Segoe UI", 9),
+        ).pack(anchor="w", pady=(2, 0))
+        tk.Label(
+            header,
             text=(
                 f"Default lookup: {INCOMING_DRAFT_YEAR}–{INCOMING_DRAFT_YEAR + 1} rookies. "
-                "Type to filter. Add players to compare and open side popups."
+                "Type to filter. Add up to 4 players, then open a 2×2 grid of side popups."
             ),
             bg=BG,
             fg=FG,
@@ -605,7 +1323,7 @@ class RookieScorerApp(tk.Tk):
             pady=6,
         ).pack(side="left", padx=(8, 0))
 
-        self.result_var = tk.StringVar(value="Enter stats and click Calculate score.")
+        self.result_var = tk.StringVar(value="Enter stats and click Calculate score. Prediction opens in a side window.")
         tk.Label(
             self,
             textvariable=self.result_var,
@@ -720,6 +1438,9 @@ class RookieScorerApp(tk.Tk):
         label = self.player_var.get().strip()
         if not label or label not in self._label_to_index:
             return
+        # New search closes the prediction popup unless compare windows are open
+        if not self._comparing_active():
+            self._close_prediction_popup()
         idx = self._label_to_index[label]
         data = row_from_player(self.master_df, idx)
         for col, var in self.vars.items():
@@ -728,8 +1449,36 @@ class RookieScorerApp(tk.Tk):
             else:
                 var.set("")
 
+    def _comparing_active(self) -> bool:
+        alive = []
+        for popup in self._compare_popups:
+            try:
+                if popup.winfo_exists():
+                    alive.append(popup)
+            except tk.TclError:
+                pass
+        self._compare_popups = alive
+        return bool(alive)
+
+    def _close_prediction_popup(self) -> None:
+        if self._prediction_popup is not None:
+            try:
+                self._prediction_popup.destroy()
+            except tk.TclError:
+                pass
+            self._prediction_popup = None
+
+    def _open_prediction_popup(self, name: str, result: dict) -> None:
+        self._close_prediction_popup()
+        self.update_idletasks()
+        x = self.winfo_x() + self.winfo_width() + 12
+        y = self.winfo_y()
+        self._prediction_popup = PredictionPopup(self, name, result, x, y)
+
     def _clear_fields(self) -> None:
         self._hide_all_dropdowns()
+        if not self._comparing_active():
+            self._close_prediction_popup()
         self.player_var.set("")
         for var in self.vars.values():
             var.set("")
@@ -784,6 +1533,13 @@ class RookieScorerApp(tk.Tk):
         if any(entry["name"] == name for entry in self._compare_entries):
             messagebox.showinfo("Compare", f"{name} is already in the compare list.")
             return
+        if len(self._compare_entries) >= MAX_COMPARE_WINDOWS:
+            messagebox.showinfo(
+                "Compare",
+                f"You can compare up to {MAX_COMPARE_WINDOWS} players (2×2 grid). "
+                "Clear compare or remove a player first.",
+            )
+            return
         self._compare_entries.append({"name": name, "row": row.copy(), "result": result})
         self._compare_vars.append(tk.BooleanVar(value=True))
         self._refresh_compare_list()
@@ -794,7 +1550,10 @@ class RookieScorerApp(tk.Tk):
         if not self._compare_entries:
             tk.Label(
                 self.compare_list_frame,
-                text="No players added yet. Check players below, then open compare windows.",
+                text=(
+                    f"No players added yet. Add up to {MAX_COMPARE_WINDOWS}, "
+                    "check them, then open compare windows."
+                ),
                 bg=BG,
                 fg="#B8D4FF",
                 font=("Segoe UI", 8),
@@ -815,7 +1574,7 @@ class RookieScorerApp(tk.Tk):
             tk.Label(
                 row,
                 text=(
-                    f"{entry['name']}  —  PPR {result['predicted_rookie_ppr']:.1f}, "
+                    f"{entry['name']}  —  {result['predicted_rookie_ppr']:.1f} points, "
                     f"Score {result['success_score_0_100']:.1f}"
                 ),
                 bg=BG,
@@ -846,6 +1605,142 @@ class RookieScorerApp(tk.Tk):
             return
         self._add_to_compare(label.split(" (")[0], row, result)
 
+    def _compare_anchor(self) -> tuple[int, int]:
+        """Top-left for the compare grid: beside the main picker (past prediction if open)."""
+        self.update_idletasks()
+        base_x = self.winfo_x() + self.winfo_width() + 12
+        base_y = self.winfo_y()
+        if self._prediction_popup is not None:
+            try:
+                if self._prediction_popup.winfo_exists():
+                    pred_right = (
+                        self._prediction_popup.winfo_x()
+                        + self._prediction_popup.winfo_width()
+                        + COMPARE_GRID_GAP
+                    )
+                    base_x = max(base_x, pred_right)
+            except tk.TclError:
+                pass
+        return base_x, base_y
+
+    def _compare_window_positions(
+        self,
+        count: int,
+        *,
+        cell_w: int | None = None,
+        cell_h: int | None = None,
+        row_heights: list[int] | None = None,
+    ) -> tuple[list[tuple[int, int]], int, list[int]]:
+        """2×2 slot positions beside the main popup; clamps/shrinks if screen is tight.
+
+        Returns (positions, cell_width, row_heights) after any screen-fit shrink.
+        """
+        if count <= 0:
+            return [], cell_w or COMPARE_POPUP_WIDTH, []
+
+        gap = COMPARE_GRID_GAP
+        width = cell_w or COMPARE_POPUP_WIDTH
+        est_h = cell_h or COMPARE_POPUP_EST_HEIGHT
+        base_x, base_y = self._compare_anchor()
+
+        cols = min(2, count)
+        rows = (count + 1) // 2
+        if row_heights is None:
+            row_heights = [est_h] * rows
+        while len(row_heights) < rows:
+            row_heights.append(est_h)
+
+        grid_w = cols * width + max(0, cols - 1) * gap
+        grid_h = sum(row_heights[:rows]) + max(0, rows - 1) * gap
+
+        screen_w = self.winfo_screenwidth()
+        screen_h = self.winfo_screenheight()
+        available_w = max(COMPARE_POPUP_MIN_WIDTH, screen_w - base_x - 12)
+        available_h = max(COMPARE_POPUP_MIN_HEIGHT, screen_h - base_y - 12)
+
+        # Shrink cell width if the 2-column grid cannot fit to the right
+        if grid_w > available_w and cols > 0:
+            width = max(
+                COMPARE_POPUP_MIN_WIDTH,
+                (available_w - max(0, cols - 1) * gap) // cols,
+            )
+            grid_w = cols * width + max(0, cols - 1) * gap
+
+        if grid_h > available_h and rows > 0:
+            scale = available_h / grid_h
+            row_heights = [
+                max(COMPARE_POPUP_MIN_HEIGHT, int(h * scale)) for h in row_heights[:rows]
+            ]
+            grid_h = sum(row_heights) + max(0, rows - 1) * gap
+
+        if base_x + grid_w > screen_w - 8:
+            base_x = max(0, screen_w - grid_w - 8)
+        if base_y + grid_h > screen_h - 8:
+            base_y = max(0, screen_h - grid_h - 8)
+
+        positions: list[tuple[int, int]] = []
+        for i in range(count):
+            col = i % 2
+            row = i // 2
+            x = base_x + col * (width + gap)
+            y = base_y + sum(row_heights[:row]) + row * gap
+            positions.append((x, y))
+        return positions, width, row_heights[:rows]
+
+    def _layout_compare_popups(self) -> None:
+        """Reposition open compare windows into a non-overlapping 2×2 grid."""
+        alive: list[ComparePlayerPopup] = []
+        for popup in self._compare_popups:
+            try:
+                if popup.winfo_exists():
+                    alive.append(popup)
+            except tk.TclError:
+                pass
+        self._compare_popups = alive
+        if not alive:
+            return
+
+        # Fit each window to content first so tiling never reads a stale
+        # pre-fit height (e.g. initial 400x200) and shrinks them again.
+        natural_heights: list[int] = []
+        for popup in alive:
+            natural_heights.append(
+                _fit_popup_to_content(popup, width=COMPARE_POPUP_WIDTH, bottom_pad=4)
+            )
+
+        rows = (len(alive) + 1) // 2
+        row_heights: list[int] = []
+        for row in range(rows):
+            idxs = [i for i in range(len(alive)) if i // 2 == row]
+            if idxs:
+                row_heights.append(max(natural_heights[i] for i in idxs))
+            else:
+                row_heights.append(COMPARE_POPUP_EST_HEIGHT)
+
+        positions, cell_w, row_heights = self._compare_window_positions(
+            len(alive),
+            cell_w=COMPARE_POPUP_WIDTH,
+            row_heights=row_heights,
+        )
+
+        for i, (popup, (x, y)) in enumerate(zip(alive, positions)):
+            row = i // 2
+            slot_h = row_heights[row] if row < len(row_heights) else natural_heights[i]
+            natural_h = natural_heights[i]
+            try:
+                if cell_w != COMPARE_POPUP_WIDTH:
+                    natural_h = _fit_popup_to_content(popup, width=cell_w, bottom_pad=4)
+                    natural_heights[i] = natural_h
+                # Prefer natural content height; only modestly shrink when the
+                # screen cannot fit the 2×2 grid (avoids overlap / off-screen clip).
+                h = natural_h if natural_h <= slot_h else slot_h
+                popup.geometry(f"{cell_w}x{h}+{x}+{y}")
+                popup._fitted_height = h
+            except tk.TclError:
+                pass
+        # Commit geometries before any follow-up idle callbacks read sizes.
+        self.update_idletasks()
+
     def _open_compare_windows(self) -> None:
         selected = [
             self._compare_entries[i]
@@ -855,7 +1750,15 @@ class RookieScorerApp(tk.Tk):
         if not selected:
             messagebox.showinfo("Compare", "Check at least one player in the compare list.")
             return
+        if len(selected) > MAX_COMPARE_WINDOWS:
+            messagebox.showinfo(
+                "Compare",
+                f"You can open at most {MAX_COMPARE_WINDOWS} compare windows (2×2 grid). "
+                "Uncheck extras, then try again.",
+            )
+            return
 
+        # Compare mode: keep prediction popup if open; place compare windows in a 2×2 grid beside picker
         for popup in self._compare_popups:
             try:
                 popup.destroy()
@@ -863,17 +1766,13 @@ class RookieScorerApp(tk.Tk):
                 pass
         self._compare_popups.clear()
 
-        self.update_idletasks()
-        base_x = self.winfo_x() + self.winfo_width() + 12
-        base_y = self.winfo_y()
-        popup_width = 340
-        gap = 8
-
-        for i, entry in enumerate(selected):
-            x = base_x + i * (popup_width + gap)
-            y = base_y
+        positions, _, _ = self._compare_window_positions(len(selected))
+        for entry, (x, y) in zip(selected, positions):
             popup = ComparePlayerPopup(self, entry, x, y)
             self._compare_popups.append(popup)
+
+        # After content fit settles, re-tile so taller windows do not overlap the row below
+        self.after_idle(self._layout_compare_popups)
 
     def _clear_compare(self) -> None:
         for popup in self._compare_popups:
@@ -896,14 +1795,15 @@ class RookieScorerApp(tk.Tk):
 
         pop = len(result["composite_populated"])
         miss = len(result["composite_missing"])
-        detail = (
-            f"Predicted rookie PPR: {result['predicted_rookie_ppr']:.1f}  |  "
-            f"Success score (0–100): {result['success_score_0_100']:.1f}  |  "
-            f"Composites filled: {pop}/11"
-        )
+        # Main window keeps missing / coverage info; prediction opens beside
+        detail = f"Composites filled: {pop}/11"
         if miss:
             detail += f"  |  Missing: {', '.join(result['composite_missing'])}"
+        else:
+            detail += "  |  All composite groups populated"
         self.result_var.set(detail)
+
+        self._open_prediction_popup(self._display_name(row), result)
 
 
 def main() -> int:

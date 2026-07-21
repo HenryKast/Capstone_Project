@@ -86,13 +86,32 @@ COMPOSITE_SPECS: list[dict] = [
         "name": "score_team_context",
         "members": [
             {"feature": "sos_opp_win_pct", "invert": True},
-            {"feature": "team_opportunity_ppr", "invert": False},
+            {"feature": "vacated_touches", "invert": False},
+            {"feature": "vacated_carries", "invert": False},
+            {"feature": "incumbent_pos_ppr", "invert": True},
+            {"feature": "incumbent_pos_carries", "invert": True},
+            {"feature": "incumbent_pos_touches", "invert": True},
             {"feature": "off_pass_rate_proxy", "invert": False},
-            {"feature": "off_pass_yards", "invert": True},
-            {"feature": "off_rush_yards", "invert": True},
+            {"feature": "off_pass_yards", "invert": False},
+            {"feature": "off_rush_yards", "invert": False},
         ],
     },
 ]
+
+# RB: emphasize vacated rushing volume + incumbent competition; drop noisy pass-rate proxies
+COMPOSITE_MEMBER_OVERRIDES: dict[str, dict[str, list[dict]]] = {
+    "RB": {
+        "score_team_context": [
+            {"feature": "vacated_touches", "invert": False},
+            {"feature": "vacated_carries", "invert": False},
+            {"feature": "incumbent_pos_ppr", "invert": True},
+            {"feature": "incumbent_pos_carries", "invert": True},
+            {"feature": "incumbent_pos_touches", "invert": True},
+            {"feature": "sos_opp_win_pct", "invert": True},
+            {"feature": "off_rush_yards", "invert": False},
+        ],
+    },
+}
 
 SCORE_COLUMNS = [spec["name"] for spec in COMPOSITE_SPECS]
 ID_COLUMNS = ["gsis_id", "player_name", "position", "draft_year"]
@@ -156,6 +175,29 @@ def _position_z(
     return out
 
 
+def _members_for_spec(spec: dict, position: str | None) -> list[dict]:
+    pos = str(position) if position is not None else ""
+    override = COMPOSITE_MEMBER_OVERRIDES.get(pos, {}).get(spec["name"])
+    return list(override) if override else list(spec["members"])
+
+
+def _all_member_features() -> list[dict]:
+    """Union of default + override members (for fitting norms/weights)."""
+    seen: set[str] = set()
+    members: list[dict] = []
+    for spec in COMPOSITE_SPECS:
+        for member in spec["members"]:
+            if member["feature"] not in seen:
+                seen.add(member["feature"])
+                members.append(member)
+        for pos_map in COMPOSITE_MEMBER_OVERRIDES.values():
+            for member in pos_map.get(spec["name"], []):
+                if member["feature"] not in seen:
+                    seen.add(member["feature"])
+                    members.append(member)
+    return members
+
+
 def build_composite_artifacts(
     train_df: pd.DataFrame,
     feature_corr: pd.DataFrame | None = None,
@@ -167,17 +209,25 @@ def build_composite_artifacts(
     work = _add_derived_columns(train_df)
     position = work["position"] if "position" in work.columns else pd.Series("UNK", index=work.index)
 
+    # Fit norms for every feature that any position composite may use
+    for member in _all_member_features():
+        feat = member["feature"]
+        if feat not in work.columns:
+            continue
+        raw = pd.to_numeric(work[feat], errors="coerce")
+        if member.get("invert"):
+            raw = raw * -1
+        _position_z(raw, position, position_norms, feat, fit=True)
+
     for spec in COMPOSITE_SPECS:
         group_weights: dict[str, float] = {}
-        for member in spec["members"]:
-            feat = member["feature"]
-            group_weights[feat] = weights_src.get(feat, 1.0)
-            if feat not in work.columns:
-                continue
-            raw = pd.to_numeric(work[feat], errors="coerce")
-            if member.get("invert"):
-                raw = raw * -1
-            _position_z(raw, position, position_norms, feat, fit=True)
+        for member in _all_member_features():
+            # Only store weights for features in this composite (default or any override)
+            used = {m["feature"] for m in spec["members"]}
+            for pos_map in COMPOSITE_MEMBER_OVERRIDES.values():
+                used.update(m["feature"] for m in pos_map.get(spec["name"], []))
+            if member["feature"] in used:
+                group_weights[member["feature"]] = weights_src.get(member["feature"], 1.0)
         weights[spec["name"]] = group_weights
 
     return CompositeArtifacts(position_norms=position_norms, weights=weights, specs=COMPOSITE_SPECS)
@@ -195,33 +245,45 @@ def apply_composites(
 
     for spec in artifacts.specs:
         name = spec["name"]
-        z_cols: list[pd.Series] = []
-        w_cols: list[float] = []
-        for member in spec["members"]:
-            feat = member["feature"]
-            if feat not in work.columns:
+        scores = pd.Series(np.nan, index=work.index, dtype=float)
+        coverage = pd.Series(0.0, index=work.index, dtype=float)
+
+        positions = position.fillna("UNK").unique()
+        for pos in positions:
+            members = _members_for_spec(spec, pos)
+            mask = position.fillna("UNK") == pos
+            if not mask.any():
                 continue
-            raw = pd.to_numeric(work[feat], errors="coerce")
-            if member.get("invert"):
-                raw = raw * -1
-            z = _position_z(raw, position, artifacts.position_norms, feat, fit=False)
-            w = artifacts.weights.get(name, {}).get(feat, weights_src.get(feat, 1.0))
-            z_cols.append(z)
-            w_cols.append(float(w))
 
-        if not z_cols:
-            out[name] = pd.NA
-            out[f"{name}_coverage"] = 0.0
-            continue
+            z_cols: list[pd.Series] = []
+            w_cols: list[float] = []
+            for member in members:
+                feat = member["feature"]
+                if feat not in work.columns:
+                    continue
+                raw = pd.to_numeric(work[feat], errors="coerce")
+                if member.get("invert"):
+                    raw = raw * -1
+                z = _position_z(raw, position, artifacts.position_norms, feat, fit=False)
+                w = artifacts.weights.get(name, {}).get(feat, weights_src.get(feat, 1.0))
+                z_cols.append(z)
+                w_cols.append(float(w))
 
-        z_frame = pd.concat(z_cols, axis=1)
-        weights_arr = np.array(w_cols, dtype=float)
-        mask = z_frame.notna()
-        weighted = z_frame.where(mask).mul(weights_arr, axis=1)
-        denom = mask.mul(weights_arr, axis=1).sum(axis=1)
-        numer = weighted.sum(axis=1, skipna=True)
-        out[name] = np.where(denom > 0, numer / denom, np.nan)
-        out[f"{name}_coverage"] = mask.sum(axis=1) / len(z_cols)
+            if not z_cols:
+                continue
+
+            z_frame = pd.concat(z_cols, axis=1)
+            weights_arr = np.array(w_cols, dtype=float)
+            present = z_frame.notna()
+            weighted = z_frame.where(present).mul(weights_arr, axis=1)
+            denom = present.mul(weights_arr, axis=1).sum(axis=1)
+            numer = weighted.sum(axis=1, skipna=True)
+            pos_score = np.where(denom > 0, numer / denom, np.nan)
+            scores.loc[mask] = pos_score[mask.to_numpy()]
+            coverage.loc[mask] = (present.sum(axis=1) / len(z_cols)).loc[mask]
+
+        out[name] = scores
+        out[f"{name}_coverage"] = coverage
 
     return out
 

@@ -36,6 +36,8 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--cfb-rec-td", type=float, dest="cfb_rec_td")
     parser.add_argument("--sos-opp-win-pct", type=float, dest="sos_opp_win_pct")
     parser.add_argument("--team-opportunity-ppr", type=float, dest="team_opportunity_ppr")
+    parser.add_argument("--incumbent-pos-ppr", type=float, dest="incumbent_pos_ppr")
+    parser.add_argument("--incumbent-pos-ppr-sum", type=float, dest="incumbent_pos_ppr_sum")
     parser.add_argument("--off-pass-rate-proxy", type=float, dest="off_pass_rate_proxy")
     parser.add_argument("--off-pass-yards", type=float, dest="off_pass_yards")
     parser.add_argument("--off-rush-yards", type=float, dest="off_rush_yards")
@@ -47,8 +49,47 @@ def main() -> int:
     row = {k: v for k, v in vars(args).items() if v is not None}
     result = score_player(row)
     print(f"Position: {result['position']}")
-    print(f"Predicted rookie PPR: {result['predicted_rookie_ppr']:.1f}")
+    print(f"Predicted points: {result['predicted_rookie_ppr']:.1f}")
     print(f"Success score (0-100): {result['success_score_0_100']:.1f}")
+    print(f"Boom/bust band: {result.get('boom_bust', 'unknown')}")
+    conf = result.get("confidence") or {}
+    if conf:
+        method = conf.get("method", "unknown")
+        if method == "predictive_quartile":
+            print(
+                f"Predictive quartiles: {conf.get('bust_chance_pct'):.0f}% chance "
+                f"< {conf.get('ppr_low')}  |  {conf.get('boom_chance_pct'):.0f}% chance "
+                f"> {conf.get('ppr_high')}"
+            )
+            if conf.get("cqr_low") is not None:
+                print(
+                    f"CQR {conf.get('nominal_coverage_pct', 80):.0f}% model band: "
+                    f"{conf.get('cqr_low')} - {conf.get('cqr_high')}"
+                )
+        elif method == "peer_quartile":
+            print(
+                f"Peer quartiles Q1-Q3: {conf.get('ppr_low')} - {conf.get('ppr_high')} "
+                f"(bust/boom ~{conf.get('bust_chance_pct')}%/"
+                f"{conf.get('boom_chance_pct')}%)"
+            )
+            if conf.get("cqr_low") is not None:
+                print(
+                    f"CQR {conf.get('nominal_coverage_pct', 80):.0f}% model band: "
+                    f"{conf.get('cqr_low')} - {conf.get('cqr_high')}"
+                )
+        elif method == "cqr":
+            print(
+                f"CQR {conf.get('nominal_coverage_pct', 80):.0f}% interval: "
+                f"{conf.get('ppr_low')} - {conf.get('ppr_high')} "
+                f"(q_hat={conf.get('q_hat')}; "
+                f"bust/boom ~{conf.get('bust_chance_pct')}%/"
+                f"{conf.get('boom_chance_pct')}%)"
+            )
+        else:
+            print(
+                f"Confidence band: {conf.get('ppr_low')} - {conf.get('ppr_high')} "
+                f"(MAE {conf.get('mae_base')} x {conf.get('multiplier')})"
+            )
     print(
         f"Composite groups populated ({len(result['composite_populated'])}): "
         f"{', '.join(result['composite_populated']) or 'none'}"
