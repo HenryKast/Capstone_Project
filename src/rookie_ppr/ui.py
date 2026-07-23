@@ -9,6 +9,7 @@ import numpy as np
 
 from rookie_ppr.analysis_config import AnalysisMode, get_mode
 from rookie_ppr.config import INCOMING_DRAFT_YEAR
+from rookie_ppr.mascot_assets import MASCOT_DIR
 from rookie_ppr.score_runner import load_players_master, player_lookup_labels, row_from_player, score_player
 from rookie_ppr.scoring_fields import FIELD_SPECS, GROUP_ORDER
 
@@ -53,6 +54,7 @@ TAB_INACTIVE_FG = "#9BB8E8"
 TAB_ACTIVE_BG = BG
 TAB_ACTIVE_FG = FG
 TAB_ACCENT = IMPORTANT_FG
+MUTED_FG = "#B8D4FF"
 
 BOOM_BUST_LABELS = {
     "boom": "Boom (>75 success score)",
@@ -60,6 +62,436 @@ BOOM_BUST_LABELS = {
     "neutral": "Neutral (25–75)",
     "unknown": "—",
 }
+
+
+def _hex_to_rgb(color: str) -> tuple[int, int, int]:
+    h = color.lstrip("#")
+    if len(h) != 6:
+        return (11, 61, 145)
+    return int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16)
+
+
+def _rgb_to_hex(r: float, g: float, b: float) -> str:
+    return (
+        f"#{int(max(0, min(255, round(r)))):02X}"
+        f"{int(max(0, min(255, round(g)))):02X}"
+        f"{int(max(0, min(255, round(b)))):02X}"
+    )
+
+
+def _blend_hex(a: str, b: str, t: float) -> str:
+    ar, ag, ab = _hex_to_rgb(a)
+    br, bg_, bb = _hex_to_rgb(b)
+    return _rgb_to_hex(ar + (br - ar) * t, ag + (bg_ - ag) * t, ab + (bb - ab) * t)
+
+
+def _luminance(color: str) -> float:
+    r, g, b = _hex_to_rgb(color)
+    return 0.299 * r + 0.587 * g + 0.114 * b
+
+
+def _theme_colors(primary: str, secondary: str) -> dict[str, str]:
+    """Build a full UI palette from a team primary / secondary pair."""
+    dark_shell = _luminance(primary) < 150
+    bg = primary
+    fg = "#FFFFFF" if dark_shell else "#101820"
+    tab_bar = _blend_hex(primary, "#000000", 0.28)
+    inactive = _blend_hex(primary, "#000000" if dark_shell else "#FFFFFF", 0.12)
+    field = _blend_hex(primary, "#FFFFFF" if dark_shell else "#000000", 0.14)
+    popup = _blend_hex(primary, "#000000", 0.18)
+    accent = _blend_hex(primary, secondary, 0.35) if dark_shell else secondary
+    muted = _blend_hex(fg, primary, 0.35) if dark_shell else _blend_hex("#1A1A1A", primary, 0.25)
+    important = secondary if _luminance(secondary) > 120 else "#FFE566"
+    box = _blend_hex(primary, "#FFFFFF", 0.35)
+    return {
+        "BG": bg,
+        "BG_FIELD": field,
+        "FG": fg,
+        "IMPORTANT_FG": important,
+        "ACCENT_BTN": accent,
+        "POPUP_BG": popup,
+        "CHECK_FILL": "#FFFFFF",
+        "CHECK_EMPTY": bg,
+        "BOX_COLOR": box,
+        "GAUGE_BOOM": bg,
+        "TAB_BAR_BG": tab_bar,
+        "TAB_INACTIVE_BG": inactive,
+        "TAB_INACTIVE_FG": muted,
+        "TAB_ACTIVE_BG": bg,
+        "TAB_ACTIVE_FG": fg,
+        "TAB_ACCENT": important,
+        "MUTED_FG": muted,
+    }
+
+
+# Default cobalt UI + 32 NFL teams (8 divisions × 4) for the helmet picker
+DEFAULT_THEME_ID = "default"
+NFL_TEAM_THEMES: list[tuple[str, str, str, str]] = [
+    # (id, label, primary, secondary) — AFC then NFC, 8 rows × 4
+    ("buf", "Buffalo Bills", "#00338D", "#C60C30"),
+    ("mia", "Miami Dolphins", "#008E97", "#FC4C02"),
+    ("ne", "New England Patriots", "#002244", "#C60C30"),
+    ("nyj", "New York Jets", "#125740", "#FFFFFF"),
+    ("bal", "Baltimore Ravens", "#241773", "#9E7C0C"),
+    ("cin", "Cincinnati Bengals", "#FB4F14", "#000000"),
+    ("cle", "Cleveland Browns", "#311D00", "#FF3C00"),
+    ("pit", "Pittsburgh Steelers", "#101820", "#FFB612"),
+    ("hou", "Houston Texans", "#03202F", "#A71930"),
+    ("ind", "Indianapolis Colts", "#002C5F", "#A2AAAD"),
+    ("jax", "Jacksonville Jaguars", "#006778", "#9F792C"),
+    ("ten", "Tennessee Titans", "#0C2340", "#4B92DB"),
+    ("den", "Denver Broncos", "#FB4F14", "#002244"),
+    ("kc", "Kansas City Chiefs", "#E31837", "#FFB81C"),
+    ("lv", "Las Vegas Raiders", "#000000", "#A5ACAF"),
+    ("lac", "Los Angeles Chargers", "#0080C6", "#FFC20E"),
+    ("dal", "Dallas Cowboys", "#003594", "#869397"),
+    ("nyg", "New York Giants", "#0B2265", "#A71930"),
+    ("phi", "Philadelphia Eagles", "#004C54", "#A5ACAF"),
+    ("was", "Washington Commanders", "#5A1414", "#FFB612"),
+    ("chi", "Chicago Bears", "#0B162A", "#C83803"),
+    ("det", "Detroit Lions", "#0076B6", "#B0B7BC"),
+    ("gb", "Green Bay Packers", "#203731", "#FFB612"),
+    ("min", "Minnesota Vikings", "#4F2683", "#FFC62F"),
+    ("atl", "Atlanta Falcons", "#A71930", "#000000"),
+    ("car", "Carolina Panthers", "#0085CA", "#101820"),
+    ("no", "New Orleans Saints", "#101820", "#D3BC8D"),
+    ("tb", "Tampa Bay Buccaneers", "#D50A0A", "#FF7900"),
+    ("ari", "Arizona Cardinals", "#97233F", "#000000"),
+    ("lar", "Los Angeles Rams", "#003594", "#FFA300"),
+    ("sf", "San Francisco 49ers", "#AA0000", "#B3995D"),
+    ("sea", "Seattle Seahawks", "#002244", "#69BE28"),
+]
+
+THEME_CATALOG: dict[str, dict[str, str]] = {
+    DEFAULT_THEME_ID: {
+        "label": "Default blue",
+        "primary": "#0B3D91",
+        "secondary": "#FFE566",
+        **_theme_colors("#0B3D91", "#FFE566"),
+    }
+}
+for _tid, _label, _pri, _sec in NFL_TEAM_THEMES:
+    THEME_CATALOG[_tid] = {
+        "label": _label,
+        "primary": _pri,
+        "secondary": _sec,
+        **_theme_colors(_pri, _sec),
+    }
+
+
+def _snapshot_theme_globals() -> dict[str, str]:
+    return {
+        "BG": BG,
+        "BG_FIELD": BG_FIELD,
+        "FG": FG,
+        "IMPORTANT_FG": IMPORTANT_FG,
+        "ACCENT_BTN": ACCENT_BTN,
+        "POPUP_BG": POPUP_BG,
+        "CHECK_FILL": CHECK_FILL,
+        "CHECK_EMPTY": CHECK_EMPTY,
+        "BOX_COLOR": BOX_COLOR,
+        "GAUGE_BOOM": GAUGE_BOOM,
+        "TAB_BAR_BG": TAB_BAR_BG,
+        "TAB_INACTIVE_BG": TAB_INACTIVE_BG,
+        "TAB_INACTIVE_FG": TAB_INACTIVE_FG,
+        "TAB_ACTIVE_BG": TAB_ACTIVE_BG,
+        "TAB_ACTIVE_FG": TAB_ACTIVE_FG,
+        "TAB_ACCENT": TAB_ACCENT,
+        "MUTED_FG": MUTED_FG,
+    }
+
+
+def _apply_theme_globals(theme: dict[str, str]) -> None:
+    global BG, BG_FIELD, FG, IMPORTANT_FG, ACCENT_BTN, POPUP_BG
+    global CHECK_FILL, CHECK_EMPTY, BOX_COLOR, GAUGE_BOOM
+    global TAB_BAR_BG, TAB_INACTIVE_BG, TAB_INACTIVE_FG, TAB_ACTIVE_BG, TAB_ACTIVE_FG, TAB_ACCENT
+    global MUTED_FG
+    BG = theme["BG"]
+    BG_FIELD = theme["BG_FIELD"]
+    FG = theme["FG"]
+    IMPORTANT_FG = theme["IMPORTANT_FG"]
+    ACCENT_BTN = theme["ACCENT_BTN"]
+    POPUP_BG = theme["POPUP_BG"]
+    CHECK_FILL = theme["CHECK_FILL"]
+    CHECK_EMPTY = theme["CHECK_EMPTY"]
+    BOX_COLOR = theme["BOX_COLOR"]
+    GAUGE_BOOM = theme["GAUGE_BOOM"]
+    TAB_BAR_BG = theme["TAB_BAR_BG"]
+    TAB_INACTIVE_BG = theme["TAB_INACTIVE_BG"]
+    TAB_INACTIVE_FG = theme["TAB_INACTIVE_FG"]
+    TAB_ACTIVE_BG = theme["TAB_ACTIVE_BG"]
+    TAB_ACTIVE_FG = theme["TAB_ACTIVE_FG"]
+    TAB_ACCENT = theme["TAB_ACCENT"]
+    MUTED_FG = theme["MUTED_FG"]
+
+
+def _restyle_widget_tree(widget: tk.Misc, color_map: dict[str, str]) -> None:
+    """Remap known theme colors on an existing widget tree (case-insensitive hex)."""
+    norm = {k.upper(): v for k, v in color_map.items()}
+
+    def _map(val: str) -> str | None:
+        if not isinstance(val, str):
+            return None
+        key = val.upper() if val.startswith("#") else val
+        return norm.get(key)
+
+    opts = (
+        "bg",
+        "fg",
+        "activebackground",
+        "activeforeground",
+        "highlightbackground",
+        "highlightcolor",
+        "insertbackground",
+        "selectbackground",
+        "selectforeground",
+        "disabledforeground",
+    )
+    for opt in opts:
+        try:
+            cur = str(widget.cget(opt))
+        except tk.TclError:
+            continue
+        mapped = _map(cur)
+        if mapped is not None:
+            try:
+                widget.configure(**{opt: mapped})
+            except tk.TclError:
+                pass
+
+    # Canvas fill/outline items
+    if isinstance(widget, tk.Canvas):
+        for item in widget.find_all():
+            for opt in ("fill", "outline"):
+                try:
+                    cur = widget.itemcget(item, opt)
+                except tk.TclError:
+                    continue
+                mapped = _map(cur)
+                if mapped is not None and cur not in ("", "none"):
+                    try:
+                        widget.itemconfigure(item, **{opt: mapped})
+                    except tk.TclError:
+                        pass
+
+    for child in widget.winfo_children():
+        _restyle_widget_tree(child, color_map)
+
+
+def draw_helmet(
+    canvas: tk.Canvas,
+    *,
+    shell: str,
+    x: int = 2,
+    y: int = 3,
+    scale: float = 1.0,
+    outline: str = "#FFFFFF",
+    facemask: str = "#FFFFFF",
+) -> None:
+    """Simple side-view helmet: colored shell, white outline + facemask."""
+    s = scale
+    # Shell
+    canvas.create_oval(
+        x + 2 * s,
+        y + 2 * s,
+        x + 26 * s,
+        y + 22 * s,
+        fill=shell,
+        outline=outline,
+        width=max(1, int(1.5 * s)),
+    )
+    # Ear / rear bump
+    canvas.create_oval(
+        x + 1 * s,
+        y + 8 * s,
+        x + 10 * s,
+        y + 18 * s,
+        fill=shell,
+        outline=outline,
+        width=1,
+    )
+    # Facemask bars
+    canvas.create_arc(
+        x + 14 * s,
+        y + 8 * s,
+        x + 30 * s,
+        y + 22 * s,
+        start=200,
+        extent=100,
+        style="arc",
+        outline=facemask,
+        width=max(1, int(1.5 * s)),
+    )
+    canvas.create_line(
+        x + 18 * s,
+        y + 12 * s,
+        x + 28 * s,
+        y + 12 * s,
+        fill=facemask,
+        width=max(1, int(1.2 * s)),
+    )
+    canvas.create_line(
+        x + 17 * s,
+        y + 15 * s,
+        x + 27 * s,
+        y + 15 * s,
+        fill=facemask,
+        width=max(1, int(1.2 * s)),
+    )
+    canvas.create_line(
+        x + 17 * s,
+        y + 18 * s,
+        x + 25 * s,
+        y + 18 * s,
+        fill=facemask,
+        width=max(1, int(1.2 * s)),
+    )
+    # Facemask posts
+    canvas.create_line(
+        x + 16 * s,
+        y + 10 * s,
+        x + 18 * s,
+        y + 20 * s,
+        fill=facemask,
+        width=max(1, int(1.2 * s)),
+    )
+
+
+class HelmetButton(tk.Canvas):
+    """Small helmet control that opens the team-color theme menu."""
+
+    def __init__(
+        self,
+        master: tk.Misc,
+        *,
+        theme_id: str = DEFAULT_THEME_ID,
+        command: Callable[[], None] | None = None,
+        size: int = 28,
+    ) -> None:
+        theme = THEME_CATALOG[theme_id]
+        super().__init__(
+            master,
+            width=size,
+            height=size,
+            bg=TAB_BAR_BG,
+            highlightthickness=0,
+            cursor="hand2",
+        )
+        self._command = command
+        self._theme_id = theme_id
+        self._size = size
+        self.bind("<Button-1>", lambda _e: self._command() if self._command else None)
+        self.redraw(theme_id)
+
+    def redraw(self, theme_id: str, *, bar_bg: str | None = None) -> None:
+        self._theme_id = theme_id
+        theme = THEME_CATALOG.get(theme_id) or THEME_CATALOG[DEFAULT_THEME_ID]
+        bg = bar_bg if bar_bg is not None else TAB_BAR_BG
+        self.configure(bg=bg)
+        self.delete("all")
+        scale = self._size / 30.0
+        draw_helmet(
+            self,
+            shell=theme["primary"],
+            x=1,
+            y=2,
+            scale=scale,
+            outline="#FFFFFF",
+            facemask="#FFFFFF",
+        )
+
+
+class ThemeHelmetMenu(tk.Toplevel):
+    """Dropdown: default helmet + 8×4 NFL team helmets."""
+
+    COLS = 4
+    ROWS = 8
+
+    def __init__(
+        self,
+        parent: tk.Misc,
+        *,
+        current_id: str,
+        on_pick: Callable[[str], None],
+        anchor_widget: tk.Misc,
+    ) -> None:
+        super().__init__(parent)
+        self.overrideredirect(True)
+        self.configure(bg=TAB_BAR_BG)
+        self._on_pick = on_pick
+        self._current_id = current_id
+
+        wrap = tk.Frame(self, bg=TAB_BAR_BG, padx=8, pady=8)
+        wrap.pack(fill="both", expand=True)
+        tk.Label(
+            wrap,
+            text="UI color (helmet)",
+            bg=TAB_BAR_BG,
+            fg=TAB_INACTIVE_FG,
+            font=("Segoe UI", 9, "bold"),
+        ).pack(anchor="w", pady=(0, 6))
+
+        # Default row
+        default_row = tk.Frame(wrap, bg=TAB_BAR_BG)
+        default_row.pack(fill="x", pady=(0, 6))
+        self._add_helmet_cell(default_row, DEFAULT_THEME_ID, tip="Default blue")
+
+        grid = tk.Frame(wrap, bg=TAB_BAR_BG)
+        grid.pack()
+        for i, (tid, label, _pri, _sec) in enumerate(NFL_TEAM_THEMES):
+            r, c = divmod(i, self.COLS)
+            cell = tk.Frame(grid, bg=TAB_BAR_BG)
+            cell.grid(row=r, column=c, padx=3, pady=3)
+            self._add_helmet_cell(cell, tid, tip=label)
+
+        self.update_idletasks()
+        ax = anchor_widget.winfo_rootx()
+        ay = anchor_widget.winfo_rooty() + anchor_widget.winfo_height() + 2
+        w = self.winfo_reqwidth()
+        # Right-align under the helmet button
+        x = ax + anchor_widget.winfo_width() - w
+        self.geometry(f"+{x}+{ay}")
+        self.bind("<Escape>", lambda _e: self.destroy())
+        self.after(10, self.focus_force)
+
+    def _add_helmet_cell(self, parent: tk.Misc, theme_id: str, *, tip: str) -> None:
+        theme = THEME_CATALOG[theme_id]
+        selected = theme_id == self._current_id
+        border = tk.Frame(
+            parent,
+            bg=IMPORTANT_FG if selected else TAB_BAR_BG,
+            padx=1,
+            pady=1,
+        )
+        border.pack()
+        cv = tk.Canvas(
+            border,
+            width=34,
+            height=30,
+            bg=TAB_INACTIVE_BG,
+            highlightthickness=0,
+            cursor="hand2",
+        )
+        cv.pack()
+        draw_helmet(cv, shell=theme["primary"], x=2, y=2, scale=1.05)
+        cv.bind("<Button-1>", lambda _e, t=theme_id: self._pick(t))
+        border.bind("<Button-1>", lambda _e, t=theme_id: self._pick(t))
+
+        def _enter(_e, c=cv, b=border):
+            c.configure(bg=_blend_hex(TAB_INACTIVE_BG, "#FFFFFF", 0.12))
+            if theme_id != self._current_id:
+                b.configure(bg=TAB_INACTIVE_FG)
+
+        def _leave(_e, c=cv, b=border):
+            c.configure(bg=TAB_INACTIVE_BG)
+            b.configure(bg=IMPORTANT_FG if theme_id == self._current_id else TAB_BAR_BG)
+
+        cv.bind("<Enter>", _enter)
+        cv.bind("<Leave>", _leave)
+
+    def _pick(self, theme_id: str) -> None:
+        self._on_pick(theme_id)
+        self.destroy()
 
 class FillCheckbox(tk.Frame):
     """Small checkbox: solid white fill when selected, empty box when unselected."""
@@ -1334,7 +1766,7 @@ class RookieScorerPanel(tk.Frame):
         subtitle = (
             "Fantasy scoring format: PPR — predicted Y1–Y3 total points"
             if is_dynasty
-            else "Fantasy scoring format: PPR (points per reception)"
+            else "Fantasy scoring format: PPR"
         )
 
         try:
@@ -2060,6 +2492,8 @@ class TabbedScorerApp(tk.Tk):
         self.minsize(480, 640)
         self._init_failed = False
         self._active_mode = "redraft"
+        self._theme_id = DEFAULT_THEME_ID
+        self._theme_menu: ThemeHelmetMenu | None = None
         self._panels: dict[str, RookieScorerPanel] = {}
         self._tab_buttons: dict[str, tk.Button] = {}
         self._tab_accents: dict[str, tk.Frame] = {}
@@ -2073,10 +2507,10 @@ class TabbedScorerApp(tk.Tk):
             return
 
         # Tab strip
-        tab_bar = tk.Frame(self, bg=TAB_BAR_BG, padx=8, pady=0)
-        tab_bar.pack(fill="x")
+        self._tab_bar = tk.Frame(self, bg=TAB_BAR_BG, padx=8, pady=0)
+        self._tab_bar.pack(fill="x")
 
-        tabs_row = tk.Frame(tab_bar, bg=TAB_BAR_BG)
+        tabs_row = tk.Frame(self._tab_bar, bg=TAB_BAR_BG)
         tabs_row.pack(side="left", anchor="sw")
 
         for key, label in (("redraft", "Redraft"), ("dynasty", "Dynasty")):
@@ -2099,13 +2533,23 @@ class TabbedScorerApp(tk.Tk):
             self._tab_buttons[key] = btn
             self._tab_accents[key] = accent
 
-        tk.Label(
-            tab_bar,
+        right = tk.Frame(self._tab_bar, bg=TAB_BAR_BG)
+        right.pack(side="right", padx=(4, 2), pady=4)
+        self._helmet_btn = HelmetButton(
+            right,
+            theme_id=self._theme_id,
+            command=self._toggle_theme_menu,
+            size=28,
+        )
+        self._helmet_btn.pack(side="right")
+        self._ppr_label = tk.Label(
+            right,
             text="PPR",
             bg=TAB_BAR_BG,
             fg=TAB_INACTIVE_FG,
             font=("Segoe UI", 9),
-        ).pack(side="right", padx=8, pady=8)
+        )
+        self._ppr_label.pack(side="right", padx=(0, 8))
 
         # Content host
         self._content = tk.Frame(self, bg=BG)
@@ -2122,8 +2566,81 @@ class TabbedScorerApp(tk.Tk):
             self.destroy()
             return
 
+        # Team mascot overlay (bottom-right); hidden on default theme
+        self._mascot_photo: object | None = None
+        self._mascot_label = tk.Label(self._content, bg=BG, bd=0, highlightthickness=0)
+        self._mascot_label.place(relx=1.0, rely=1.0, x=-10, y=-8, anchor="se")
+        self._update_mascot_overlay()
+
         start = initial_mode if initial_mode in self._panels else "redraft"
         self._select_tab(start)
+
+    def _mascot_path(self, theme_id: str):
+        if theme_id == DEFAULT_THEME_ID:
+            return None
+        path = MASCOT_DIR / f"{theme_id}.png"
+        return path if path.exists() else None
+
+    def _update_mascot_overlay(self) -> None:
+        path = self._mascot_path(self._theme_id)
+        if path is None:
+            self._mascot_photo = None
+            self._mascot_label.configure(image="", bg=BG)
+            self._mascot_label.place_forget()
+            return
+        try:
+            from PIL import Image, ImageTk
+
+            img = Image.open(path).convert("RGBA")
+            # Corner accent — high-res assets downscaled for display (~1/3 of prior 80px)
+            max_h = 27
+            if img.height > max_h:
+                w = max(1, int(img.width * (max_h / img.height)))
+                img = img.resize((w, max_h), Image.Resampling.LANCZOS)
+            self._mascot_photo = ImageTk.PhotoImage(img)
+            self._mascot_label.configure(image=self._mascot_photo, bg=BG)
+            self._mascot_label.place(relx=1.0, rely=1.0, x=-10, y=-8, anchor="se")
+            self._mascot_label.lift()
+        except Exception:  # noqa: BLE001
+            self._mascot_photo = None
+            self._mascot_label.place_forget()
+
+    def _toggle_theme_menu(self) -> None:
+        if self._theme_menu is not None:
+            try:
+                if self._theme_menu.winfo_exists():
+                    self._theme_menu.destroy()
+                    self._theme_menu = None
+                    return
+            except tk.TclError:
+                self._theme_menu = None
+        self._theme_menu = ThemeHelmetMenu(
+            self,
+            current_id=self._theme_id,
+            on_pick=self._set_theme,
+            anchor_widget=self._helmet_btn,
+        )
+
+    def _set_theme(self, theme_id: str) -> None:
+        theme = THEME_CATALOG.get(theme_id)
+        if theme is None:
+            return
+        old = _snapshot_theme_globals()
+        _apply_theme_globals(theme)
+        new = _snapshot_theme_globals()
+        color_map = {old[k]: new[k] for k in old if old[k] != new[k]}
+        # Also remap common hardcoded muted blues from the default palette
+        color_map.setdefault("#B8D4FF", new["MUTED_FG"])
+        color_map.setdefault("#B8D0F0", new["MUTED_FG"])
+        color_map.setdefault("#9BB8E8", new["TAB_INACTIVE_FG"])
+
+        self.configure(bg=BG)
+        _restyle_widget_tree(self, color_map)
+        self._theme_id = theme_id
+        self._helmet_btn.redraw(theme_id, bar_bg=TAB_BAR_BG)
+        self._select_tab(self._active_mode)
+        self._update_mascot_overlay()
+        self._theme_menu = None
 
     def _select_tab(self, mode: str) -> None:
         if mode not in self._panels:
@@ -2153,6 +2670,10 @@ class TabbedScorerApp(tk.Tk):
 
         subtitle = "Y1–Y3 dynasty" if mode == "dynasty" else "rookie season (redraft)"
         self.title(f"Fantasy Points Scorer — {subtitle}")
+        try:
+            self._mascot_label.lift()
+        except Exception:  # noqa: BLE001
+            pass
 
 
 # Back-compat aliases
