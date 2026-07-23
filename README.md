@@ -187,23 +187,6 @@ Top raw correlates are the same story: **`draft_overall` / `draft_round`**, then
 
 Use the success score and IQR as **uncertainty context**, not as a guarantee.
 
----
-
-## The Mike Washington problem (incumbent workhorses)
-
-**Problem.** Mike Washington Jr. (Raiders RB) projected like an open backfield while a returning workhorse still owned the touches. Early team-context features emphasized **vacated** volume and often **missed 2026 fills**, so opportunity barely pulled the forecast down. The point model could also sit **outside** the predictive IQR because mean and quartile heads disagree under skew and thin inputs.
-
-**What changed**
-
-1. **Incumbent competition features** — prior-season same-team/position returning max PPR, carries, and touches (`incumbent_pos_*`), inverted in composites so a strong returning workhorse lowers the opportunity score.
-2. **Vacated volume kept, but paired with incumbents** — open backfields still help; closed ones are no longer invisible.
-3. **RB-specific `score_team_context`** — focuses on vacated carries/touches, incumbent workhorse signals, SOS, and team rush yards; drops noisier pass-rate proxies that diluted RB opportunity.
-4. **Better recent-season fills** — NFL.com / prior-season fallbacks so incoming classes are less likely to score with a blank team-context block.
-5. **UI fields** — incumbent workhorse points/carries/touches editable so analysts can stress-test “behind a starter” scenarios.
-
-Net: leaflets/trees still learn from all RB composites, but **landing-spot competition is an explicit, weighted signal** instead of hoping vacated-only opportunity implied a workhorse. Cases like Washington should score lower (and more honestly uncertain) when an incumbent owns the job.
-
----
 
 ## Project layout
 
