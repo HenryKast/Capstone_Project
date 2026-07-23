@@ -156,6 +156,7 @@ def build_tables(
     college: pd.DataFrame,
     ff_rankings: pd.DataFrame,
     incumbent: pd.DataFrame | None = None,
+    dynasty: pd.DataFrame | None = None,
 ) -> dict[str, pd.DataFrame]:
     players = _fuzzy_match_recruiting(fantasy, recruiting)
 
@@ -362,6 +363,36 @@ def build_tables(
         ]
     ].copy()
 
+    dynasty_cols = [
+        "gsis_id",
+        "player_name",
+        "position",
+        "draft_year",
+        "first_stat_season",
+        "ppr_y1",
+        "ppr_y2",
+        "ppr_y3",
+        "games_y1",
+        "games_y2",
+        "games_y3",
+        "dynasty_seasons_observed",
+        "dynasty_seasons_complete",
+        "dynasty_ppr_y1_y3_total",
+        "dynasty_ppr_y1_y3_avg_season",
+        "dynasty_ppr_y1_y3_avg_game",
+        "dynasty_games_y1_y3",
+    ]
+    if dynasty is not None and not dynasty.empty:
+        # Prefer dynasty frame columns when present; fall back to players after merge below
+        dynasty_sheet = dynasty[[c for c in dynasty_cols if c in dynasty.columns]].copy()
+        # Align to cohort players
+        key = [c for c in ("gsis_id", "draft_year", "position") if c in dynasty_sheet.columns and c in players.columns]
+        if key:
+            keep = players[key].drop_duplicates()
+            dynasty_sheet = dynasty_sheet.merge(keep, on=key, how="inner")
+    else:
+        dynasty_sheet = players[[c for c in dynasty_cols if c in players.columns]].copy()
+
     # Wide master
     master = players.copy()
     for frame, prefix_note in (
@@ -369,14 +400,13 @@ def build_tables(
         (team_context, "team"),
         (college_sheet, "college"),
         (pre_draft, "ff"),
+        (dynasty_sheet, "dynasty"),
     ):
         if frame is None or frame.empty:
             continue
         key = [c for c in ("gsis_id", "player_name", "position", "draft_year") if c in frame.columns and c in master.columns]
         if not key:
             continue
-        extra = [c for c in frame.columns if c not in master.columns or c in key]
-        # Avoid duplicate key-only merges
         add_cols = [c for c in frame.columns if c not in master.columns]
         if not add_cols:
             continue
@@ -412,7 +442,14 @@ def build_tables(
             {"sheet": "team_context", "column": "off_pass_rate_proxy", "description": "Team pass-rate proxy (latest available season before draft)", "source": "nflverse team stats"},
             {"sheet": "combine", "column": "forty", "description": "40-yard dash", "source": "nflverse combine"},
             {"sheet": "college_production", "column": "cfb_*", "description": "Final CFB season production (requires CFBD_API_KEY)", "source": "CollegeFootballData"},
-            {"sheet": "fantasy_rookie", "column": "rookie_ppr", "description": "PPR fantasy points in first NFL season", "source": "nflverse player stats"},
+            {"sheet": "fantasy_rookie", "column": "rookie_ppr", "description": "PPR fantasy points in first NFL season (redraft target)", "source": "nflverse player stats"},
+            {"sheet": "fantasy_dynasty", "column": "ppr_y1", "description": "PPR in first NFL season (dynasty Y1)", "source": "nflverse player stats"},
+            {"sheet": "fantasy_dynasty", "column": "ppr_y2", "description": "PPR in second NFL season (dynasty Y2)", "source": "nflverse player stats"},
+            {"sheet": "fantasy_dynasty", "column": "ppr_y3", "description": "PPR in third NFL season (dynasty Y3)", "source": "nflverse player stats"},
+            {"sheet": "fantasy_dynasty", "column": "dynasty_ppr_y1_y3_total", "description": "Sum of PPR across first three NFL seasons (null unless all three observed)", "source": "derived"},
+            {"sheet": "fantasy_dynasty", "column": "dynasty_ppr_y1_y3_avg_season", "description": "Mean PPR per season over Y1–Y3 (complete windows only)", "source": "derived"},
+            {"sheet": "fantasy_dynasty", "column": "dynasty_ppr_y1_y3_avg_game", "description": "Mean PPR per game over Y1–Y3 (complete windows only)", "source": "derived"},
+            {"sheet": "fantasy_dynasty", "column": "dynasty_seasons_complete", "description": "1 if Y1–Y3 all observed", "source": "derived"},
             {"sheet": "pre_draft_fantasy", "column": "ff_adp", "description": "FantasyPros overall ADP (AVG) in the player's rookie season only", "source": "data/manual/FantasyPros_*_Overall_ADP_Rankings.csv"},
             {"sheet": "pre_draft_fantasy", "column": "ff_adp_rank", "description": "FantasyPros overall rank in that same rookie-season ADP file", "source": "FantasyPros"},
             {"sheet": "players_master", "column": "*", "description": "Wide joined modeling table", "source": "compiled"},
@@ -428,6 +465,7 @@ def build_tables(
         "team_context": team_context,
         "pre_draft_fantasy": pre_draft,
         "fantasy_rookie": fantasy_sheet,
+        "fantasy_dynasty": dynasty_sheet,
         "players_master": master,
         "data_dictionary": data_dictionary,
     }

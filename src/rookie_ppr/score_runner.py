@@ -5,12 +5,21 @@ import json
 import numpy as np
 import pandas as pd
 
-from rookie_ppr.config import MODELS_DIR, OUTPUT_DIR
+from rookie_ppr.analysis_config import AnalysisMode, get_mode
+from rookie_ppr.config import CSV_OUTPUT_DIR, MODELS_DIR, OUTPUT_DIR
 from rookie_ppr.feature_composites import SCORE_COLUMNS, apply_composites, load_composite_artifacts
-from rookie_ppr.model_score import explain_prediction, predict_from_composites
+from rookie_ppr.model_score import explain_prediction, load_model_bundle, predict_from_composites
 
 MASTER_PATH = OUTPUT_DIR / "players_master.csv"
-PERCENTILE_PATH = MODELS_DIR / "percentile_lookup.json"
+
+# Raw columns reattached after apply_composites (IDs/composites only otherwise)
+_DYNASTY_ATTACH_COLS = ("ff_adp", "ff_adp_rank", "draft_overall")
+
+
+def _as_mode(mode: str | AnalysisMode | None = None) -> AnalysisMode:
+    if isinstance(mode, AnalysisMode):
+        return mode
+    return get_mode(mode or "redraft")
 
 
 def load_players_master() -> pd.DataFrame:
@@ -21,16 +30,28 @@ def load_players_master() -> pd.DataFrame:
     return pd.read_csv(MASTER_PATH)
 
 
-def load_percentile_lookup() -> dict[str, list[float]]:
-    if not PERCENTILE_PATH.exists():
+def load_percentile_lookup(mode: str | AnalysisMode | None = None) -> dict[str, list[float]]:
+    analysis = _as_mode(mode)
+    path = MODELS_DIR / analysis.percentile_file
+    if not path.exists():
         return {}
-    return json.loads(PERCENTILE_PATH.read_text(encoding="utf-8"))
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
-def position_ppr_distribution(position: str, lookup: dict[str, list[float]] | None = None) -> dict:
-    """Same-position historical rookie PPR quartiles for the optional distribution plot."""
-    lookup = lookup if lookup is not None else load_percentile_lookup()
-    hist = lookup.get(str(position), [])
+def position_ppr_distribution(
+    position: str,
+    lookup: dict[str, list[float]] | None = None,
+    mode: str | AnalysisMode | None = None,
+) -> dict:
+    """Same-position historical PPR quartiles for the optional distribution plot."""
+    lookup = lookup if lookup is not None else load_percentile_lookup(mode)
+    # Nested multi-target dynasty lookups store primary under by_target; ignore that key here
+    if isinstance(lookup, dict) and position not in lookup and "by_target" in lookup:
+        primary = _as_mode(mode).primary_target
+        nested = lookup.get("by_target") or {}
+        if isinstance(nested, dict) and primary in nested:
+            lookup = nested[primary]
+    hist = lookup.get(str(position), []) if isinstance(lookup, dict) else []
     if len(hist) < 4:
         return {
             "position": position,
@@ -64,8 +85,9 @@ def classify_boom_bust(success_score: float) -> str:
     return "neutral"
 
 
-def load_model_metrics() -> dict:
-    path = MODELS_DIR / "model_metrics.json"
+def load_model_metrics(mode: str | AnalysisMode | None = None) -> dict:
+    analysis = _as_mode(mode)
+    path = MODELS_DIR / analysis.metrics_file
     if not path.exists():
         return {}
     return json.loads(path.read_text(encoding="utf-8"))
@@ -84,6 +106,7 @@ def prediction_confidence_band(
     composite_populated: list[str],
     composite_missing: list[str],
     *,
+    mode: str | AnalysisMode | None = None,
     ppr_low: float | None = None,
     ppr_high: float | None = None,
     cqr_alpha: float | None = None,
@@ -101,7 +124,8 @@ def prediction_confidence_band(
     Bust/boom header % are ~25% / ~25% (chance below Q1 / above Q3 of that error model).
     Optional CQR 80% band kept as side metadata.
     """
-    metrics = load_model_metrics()
+    analysis = _as_mode(mode)
+    metrics = load_model_metrics(analysis)
 
     if ppr_low is not None and ppr_high is not None and np.isfinite(ppr_low) and np.isfinite(ppr_high):
         low = float(ppr_low)
@@ -147,7 +171,7 @@ def prediction_confidence_band(
         feature_cols = list(SCORE_COLUMNS)
 
     weights: dict[str, dict[str, float]] = {}
-    weights_path = MODELS_DIR / "composite_weights.json"
+    weights_path = MODELS_DIR / analysis.composite_weights_file
     if weights_path.exists():
         data = json.loads(weights_path.read_text(encoding="utf-8"))
         weights = data.get("weights") or {}
@@ -225,6 +249,11 @@ def row_from_player(master: pd.DataFrame, index: int) -> dict:
             out[col] = int(val)
         else:
             out[col] = val
+
+    # Dynasty year outcomes (for UI actual vs predicted breakdown)
+    for col in ("ppr_y1", "ppr_y2", "ppr_y3", "dynasty_ppr_y1_y3_total"):
+        if col in row.index and pd.notna(row.get(col)):
+            out[col] = float(row[col])
     return out
 
 
@@ -241,32 +270,155 @@ def _clean_row(row: dict) -> dict:
     return out
 
 
-def score_player(row: dict) -> dict:
+def _reattach_gate_cols(composites: pd.DataFrame, raw: pd.DataFrame) -> pd.DataFrame:
+    """apply_composites keeps only IDs + scores; reattach ADP/draft when present on the raw row."""
+    out = composites.copy()
+    for col in _DYNASTY_ATTACH_COLS:
+        if col in raw.columns:
+            out[col] = pd.to_numeric(raw[col], errors="coerce").to_numpy()
+    return out
+
+
+def _try_precomputed_dynasty_row(row: dict, analysis: AnalysisMode) -> dict | None:
+    """Fallback: look up a precomputed prediction in ml_features_dynasty.csv."""
+    path = CSV_OUTPUT_DIR / "ml_features_dynasty.csv"
+    if not path.exists():
+        return None
+    try:
+        feats = pd.read_csv(path)
+    except Exception:  # noqa: BLE001
+        return None
+    if analysis.predicted_col not in feats.columns:
+        return None
+
+    mask = pd.Series(True, index=feats.index)
+    for key in ("gsis_id", "player_name", "position", "draft_year"):
+        if key not in row or key not in feats.columns:
+            continue
+        val = row[key]
+        if val is None or (isinstance(val, float) and pd.isna(val)):
+            continue
+        if key == "draft_year":
+            mask &= pd.to_numeric(feats[key], errors="coerce") == float(val)
+        else:
+            mask &= feats[key].astype(str) == str(val)
+    hits = feats.loc[mask]
+    if hits.empty:
+        return None
+    hit = hits.iloc[0]
+    predicted = hit.get(analysis.predicted_col)
+    if predicted is None or (isinstance(predicted, float) and pd.isna(predicted)):
+        return None
+    success = hit.get(analysis.success_score_col)
+    if success is None or (isinstance(success, float) and pd.isna(success)):
+        success = float("nan")
+    return {
+        "predicted": float(predicted),
+        "success": float(success),
+        "source": "ml_features_dynasty",
+        "row": hit,
+    }
+
+
+def score_player(row: dict, mode: str | AnalysisMode | None = None) -> dict:
+    analysis = _as_mode(mode)
     row = _clean_row(row)
     position = row.get("position")
     if not position:
         raise ValueError("Position is required (QB, RB, WR, or TE).")
 
-    if not (MODELS_DIR / "hgb_rookie_ppr.joblib").exists():
+    model_path = MODELS_DIR / analysis.model_file
+    if not model_path.exists():
         raise FileNotFoundError(
-            "ML model not found. Run: python -m rookie_ppr.compile"
+            f"ML model not found ({model_path.name}). Run: python -m rookie_ppr.compile"
         )
 
-    artifacts = load_composite_artifacts(MODELS_DIR / "composite_weights.json")
+    artifacts = load_composite_artifacts(MODELS_DIR / analysis.composite_weights_file)
     raw = pd.DataFrame([row])
     composites = apply_composites(raw, artifacts)
-    result = predict_from_composites(composites, position=str(position))
+    composites = _reattach_gate_cols(composites, raw)
+
+    bundle = load_model_bundle(analysis)
+    percentile_lookup = load_percentile_lookup(analysis)
+    used_precomputed = False
+    precomputed_row = None
+    try:
+        result = predict_from_composites(
+            composites,
+            position=str(position),
+            bundle=bundle,
+            percentile_lookup=percentile_lookup,
+            mode=analysis,
+        )
+        predicted = float(result[analysis.predicted_col].iloc[0])
+        success = float(result[analysis.success_score_col].iloc[0])
+    except Exception as live_exc:  # noqa: BLE001
+        if analysis.name != "dynasty":
+            raise
+        pre = _try_precomputed_dynasty_row(row, analysis)
+        if pre is None:
+            raise live_exc
+        used_precomputed = True
+        precomputed_row = pre["row"]
+        predicted = float(pre["predicted"])
+        success = float(pre["success"])
+        result = composites.copy()
+        result[analysis.predicted_col] = predicted
+        result[analysis.success_score_col] = success
+        pre_row = pre["row"]
+        copy_cols = [
+            "predictive_q25",
+            "predictive_q75",
+            "ppr_low",
+            "ppr_high",
+            "cqr_alpha",
+            "cqr_q_hat",
+        ]
+        for i in (1, 2, 3):
+            yt = f"ppr_y{i}"
+            copy_cols.extend(
+                [
+                    f"predicted_{yt}",
+                    f"predictive_q25_{yt}",
+                    f"predictive_q75_{yt}",
+                    f"ppr_low_{yt}",
+                    f"ppr_high_{yt}",
+                ]
+            )
+        for col in copy_cols:
+            if col not in pre_row.index or pd.isna(pre_row.get(col)):
+                continue
+            # Normalize year IQR names to the live predict_from_composites scheme
+            dest = col
+            if col.startswith("predictive_q25_ppr_y"):
+                dest = f"predictive_q25_ppr_y{col[-1]}"
+            elif col.startswith("predictive_q75_ppr_y"):
+                dest = f"predictive_q75_ppr_y{col[-1]}"
+            elif col.startswith("ppr_low_ppr_y"):
+                dest = f"ppr_low_ppr_y{col[-1]}"
+            elif col.startswith("ppr_high_ppr_y"):
+                dest = f"ppr_high_ppr_y{col[-1]}"
+            elif col.startswith("predicted_ppr_y"):
+                dest = f"predicted_ppr_y{col[-1]}"
+            elif col == "ppr_low":
+                dest = "cqr_low"
+            elif col == "ppr_high":
+                dest = "cqr_high"
+            result[dest] = pre_row[col]
+            result[col] = pre_row[col]
 
     populated = [
         c for c in SCORE_COLUMNS if c in result.columns and pd.notna(result.iloc[0].get(c))
     ]
     missing = [c for c in SCORE_COLUMNS if c not in populated]
 
-    predicted = float(result["predicted_rookie_ppr"].iloc[0])
-    success = float(result["success_score_0_100"].iloc[0])
-    dist = position_ppr_distribution(str(position))
-    score_drivers = explain_prediction(
-        composites, str(position), predicted=predicted
+    dist = position_ppr_distribution(str(position), lookup=percentile_lookup, mode=analysis)
+    score_drivers = (
+        []
+        if used_precomputed
+        else explain_prediction(
+            composites, str(position), predicted=predicted, bundle=bundle, mode=analysis
+        )
     )
     composites_out = {
         c: round(float(result.iloc[0][c]), 3)
@@ -291,7 +443,7 @@ def score_player(row: dict) -> dict:
 
     # Fallback: shift point forecast by calibration residual quartiles
     if pq25 is None or pq75 is None:
-        metrics = load_model_metrics()
+        metrics = load_model_metrics(analysis)
         conf_pos = (metrics.get("conformal_by_position") or {}).get(str(position)) or {}
         rq25 = conf_pos.get("residual_q25")
         rq75 = conf_pos.get("residual_q75")
@@ -305,6 +457,7 @@ def score_player(row: dict) -> dict:
             predicted,
             populated,
             missing,
+            mode=analysis,
             ppr_low=pq25,
             ppr_high=pq75,
             bust_chance_pct=25.0,
@@ -321,6 +474,7 @@ def score_player(row: dict) -> dict:
             predicted,
             populated,
             missing,
+            mode=analysis,
             ppr_low=cqr_low,
             ppr_high=cqr_high,
             cqr_alpha=cqr_alpha,
@@ -328,10 +482,18 @@ def score_player(row: dict) -> dict:
             threshold_method="cqr",
         )
 
-    return {
-        "position": position,
+    out = {
+        "mode": analysis.name,
+        "predicted_col": analysis.predicted_col,
+        "success_score_col": analysis.success_score_col,
+        "predicted_points": predicted,
+        "success_score": success,
+        analysis.predicted_col: predicted,
+        analysis.success_score_col: success,
+        # Aliases so existing UI helpers keep working
         "predicted_rookie_ppr": predicted,
         "success_score_0_100": success,
+        "position": position,
         "composite_populated": populated,
         "composite_missing": missing,
         "composites": composites_out,
@@ -339,4 +501,94 @@ def score_player(row: dict) -> dict:
         "ppr_distribution": dist,
         "boom_bust": classify_boom_bust(success),
         "confidence": confidence,
+        "prediction_source": "precomputed" if used_precomputed else "live",
     }
+
+    if analysis.name == "dynasty":
+        years: dict[str, dict] = {}
+        lookup = percentile_lookup
+        by_target = lookup.get("by_target") if isinstance(lookup, dict) else None
+        for i in (1, 2, 3):
+            yt = f"ppr_y{i}"
+            pred_y = _cell(f"predicted_ppr_y{i}")
+            q25 = _cell(f"predictive_q25_ppr_y{i}")
+            q75 = _cell(f"predictive_q75_ppr_y{i}")
+            cqr_lo = _cell(f"ppr_low_ppr_y{i}")
+            cqr_hi = _cell(f"ppr_high_ppr_y{i}")
+
+            if precomputed_row is not None:
+                def _pre(col: str):
+                    if col in precomputed_row.index and pd.notna(precomputed_row.get(col)):
+                        return float(precomputed_row[col])
+                    return None
+
+                if pred_y is None:
+                    pred_y = _pre(f"predicted_{yt}")
+                if q25 is None:
+                    q25 = _pre(f"predictive_q25_{yt}")
+                if q75 is None:
+                    q75 = _pre(f"predictive_q75_{yt}")
+                if cqr_lo is None:
+                    cqr_lo = _pre(f"ppr_low_{yt}")
+                if cqr_hi is None:
+                    cqr_hi = _pre(f"ppr_high_{yt}")
+
+            if pred_y is not None and np.isfinite(pred_y):
+                pred_y = round(float(pred_y), 2)
+
+            actual_y = None
+            raw_actual = row.get(f"ppr_y{i}")
+            if raw_actual is not None and raw_actual != "":
+                try:
+                    actual_y = float(raw_actual)
+                except (TypeError, ValueError):
+                    actual_y = None
+
+            year_conf = None
+            if pred_y is not None and q25 is not None and q75 is not None:
+                year_conf = {
+                    "method": "predictive_quartile",
+                    "ppr_low": round(float(q25), 2),
+                    "ppr_high": round(float(q75), 2),
+                    "bust_chance_pct": 25.0,
+                    "boom_chance_pct": 25.0,
+                    "cqr_low": round(float(cqr_lo), 2) if cqr_lo is not None else None,
+                    "cqr_high": round(float(cqr_hi), 2) if cqr_hi is not None else None,
+                }
+            elif pred_y is not None and cqr_lo is not None and cqr_hi is not None:
+                year_conf = {
+                    "method": "cqr",
+                    "ppr_low": round(float(cqr_lo), 2),
+                    "ppr_high": round(float(cqr_hi), 2),
+                    "bust_chance_pct": 25.0,
+                    "boom_chance_pct": 25.0,
+                    "cqr_low": round(float(cqr_lo), 2),
+                    "cqr_high": round(float(cqr_hi), 2),
+                }
+
+            y_lookup = (by_target or {}).get(yt) if isinstance(by_target, dict) else None
+            y_dist = (
+                position_ppr_distribution(str(position), lookup=y_lookup, mode=analysis)
+                if y_lookup
+                else {}
+            )
+            y_success = None
+            if pred_y is not None and y_lookup:
+                from rookie_ppr.model_score import _to_success_score
+
+                y_success = _to_success_score(pred_y, str(position), y_lookup)
+
+            years[f"y{i}"] = {
+                "label": f"Y{i}",
+                "target": yt,
+                "predicted": pred_y,
+                "actual": actual_y if actual_y is not None and np.isfinite(actual_y) else None,
+                "success_score": round(float(y_success), 1) if y_success is not None and np.isfinite(y_success) else None,
+                "confidence": year_conf,
+                "ppr_distribution": y_dist,
+            }
+
+        out["year_by_year"] = years
+        out["year_breakdown_scaled_to_total"] = False
+
+    return out

@@ -17,7 +17,14 @@ team_context,incumbent_pos_touches,Max prior-season touches among returning same
 team_context,off_pass_rate_proxy,Team pass-rate proxy (latest available season before draft),nflverse team stats
 combine,forty,40-yard dash,nflverse combine
 college_production,cfb_*,Final CFB season production (requires CFBD_API_KEY),CollegeFootballData
-fantasy_rookie,rookie_ppr,PPR fantasy points in first NFL season,nflverse player stats
+fantasy_rookie,rookie_ppr,PPR fantasy points in first NFL season (redraft target),nflverse player stats
+fantasy_dynasty,ppr_y1,PPR in first NFL season (dynasty Y1),nflverse player stats
+fantasy_dynasty,ppr_y2,PPR in second NFL season (dynasty Y2),nflverse player stats
+fantasy_dynasty,ppr_y3,PPR in third NFL season (dynasty Y3),nflverse player stats
+fantasy_dynasty,dynasty_ppr_y1_y3_total,Sum of PPR across first three NFL seasons (null unless all three observed),derived
+fantasy_dynasty,dynasty_ppr_y1_y3_avg_season,Mean PPR per season over Y1–Y3 (complete windows only),derived
+fantasy_dynasty,dynasty_ppr_y1_y3_avg_game,Mean PPR per game over Y1–Y3 (complete windows only),derived
+fantasy_dynasty,dynasty_seasons_complete,1 if Y1–Y3 all observed,derived
 pre_draft_fantasy,ff_adp,FantasyPros overall ADP (AVG) in the player's rookie season only,data/manual/FantasyPros_*_Overall_ADP_Rankings.csv
 pre_draft_fantasy,ff_adp_rank,FantasyPros overall rank in that same rookie-season ADP file,FantasyPros
 players_master,*,Wide joined modeling table,compiled
@@ -25,6 +32,8 @@ feature_correlation,*,Per-feature correlation vs rookie PPR,analyze_correlation
 strongest_factors,*,Factors ranked by impact on rookie PPR success,analyze_correlation
 dataset_correlation,*,Dataset-block correlation scores vs rookie PPR,analyze_correlation
 group_averages,*,"Mean rookie PPR by position, round, recruiting band, etc.",analyze_groups
+fantasy_dynasty,*,Y1–Y3 PPR outcomes for dynasty mode (aggregates require complete windows),ingest_nfl.build_dynasty_fantasy
+dynasty_trajectory,*,Within-class year ranks and late-bloomer flags (dynasty exploration),analyze_trajectory
 ml_features,*,Correlation-weighted composite scores + predicted PPR + success score,model_score
 composite_correlation,*,Composite score correlation vs rookie PPR,feature_composites
 incoming_rookies_2026,*,Pre-rookie inputs + ML predictions for 2026 draft class (2026-2027 NFL season); rookie PPR blank until season ends,compile + model_score
