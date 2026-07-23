@@ -35,6 +35,14 @@ INCOMING_DRAFT_YEAR = 2026
 HOLDOUT_ROOKIE_SEASONS = (2023, 2024, 2025, 2026)
 TUNING_ROOKIE_SEASON = 2022  # validation season for hyperparameter tuning (pre-holdout)
 
+# Dynasty mode (Y1–Y3): parallel to redraft; does not change redraft holdout/models
+DYNASTY_YEARS = 3
+# Latest NFL fantasy season available for labeling (bump after each compile season)
+LATEST_FANTASY_SEASON = 2025
+# Holdout by first_stat_season when Y3 has completed (Y1 + 2 <= LATEST_FANTASY_SEASON)
+HOLDOUT_DYNASTY_FIRST_STAT_SEASONS = (2021, 2022, 2023)
+TUNING_DYNASTY_FIRST_STAT_SEASON = 2020
+
 CFBD_API_KEY = os.getenv("CFBD_API_KEY", "").strip()
 CFBD_BASE_URL = "https://api.collegefootballdata.com"
 

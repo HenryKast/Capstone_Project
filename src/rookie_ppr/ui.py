@@ -7,6 +7,7 @@ from typing import Callable
 
 import numpy as np
 
+from rookie_ppr.analysis_config import AnalysisMode, get_mode
 from rookie_ppr.config import INCOMING_DRAFT_YEAR
 from rookie_ppr.score_runner import load_players_master, player_lookup_labels, row_from_player, score_player
 from rookie_ppr.scoring_fields import FIELD_SPECS, GROUP_ORDER
@@ -44,6 +45,14 @@ COMPARE_POPUP_EST_HEIGHT = 320  # collapsed content ~315; drivers expand further
 COMPARE_GRID_GAP = 8
 COMPARE_POPUP_MIN_WIDTH = 280
 COMPARE_POPUP_MIN_HEIGHT = 160
+
+# Browser-style format tabs
+TAB_BAR_BG = "#072A6B"
+TAB_INACTIVE_BG = "#0A3578"
+TAB_INACTIVE_FG = "#9BB8E8"
+TAB_ACTIVE_BG = BG
+TAB_ACTIVE_FG = FG
+TAB_ACCENT = IMPORTANT_FG
 
 BOOM_BUST_LABELS = {
     "boom": "Boom (>75 success score)",
@@ -689,12 +698,165 @@ class BoomBustGauge(tk.Canvas):
         )
 
 
-# Back-compat alias
-PredictionCenteredPlot = BoomBustGauge
+
+
+
+def _result_mode(result: dict) -> str:
+    return str(result.get("mode") or "redraft")
+
+
+def _result_predicted_points(result: dict) -> float:
+    if "predicted_points" in result and result["predicted_points"] is not None:
+        return float(result["predicted_points"])
+    return float(result.get("predicted_rookie_ppr", 0.0))
+
+
+def _result_success_score(result: dict) -> float:
+    if "success_score" in result and result["success_score"] is not None:
+        return float(result["success_score"])
+    return float(result.get("success_score_0_100", 0.0))
+
+
+def _predicted_points_label(mode: str | AnalysisMode | None) -> str:
+    name = mode.name if isinstance(mode, AnalysisMode) else str(mode or "redraft")
+    if name == "dynasty":
+        return "Predicted Y1–Y3 total points"
+    return "Predicted points"
+
+
+def _pack_year_by_year(parent: tk.Misc, result: dict, *, wraplength: int = 360) -> None:
+    """Show dynasty Y1/Y2/Y3 predicted (and actual if present) as a text summary."""
+    years = result.get("year_by_year")
+    if not years or _result_mode(result) != "dynasty":
+        return
+
+    frame = tk.Frame(parent, bg=POPUP_BG)
+    frame.pack(fill="x", pady=(6, 0))
+    tk.Label(
+        frame,
+        text="Year-by-year points",
+        bg=POPUP_BG,
+        fg=FG,
+        font=("Segoe UI", 9, "bold"),
+        justify="left",
+    ).pack(anchor="w")
+
+    parts: list[str] = []
+    for i in (1, 2, 3):
+        block = years.get(f"y{i}") or {}
+        pred = block.get("predicted")
+        actual = block.get("actual")
+        if pred is None and actual is None:
+            parts.append(f"Y{i}: —")
+            continue
+        if pred is not None and actual is not None:
+            parts.append(f"Y{i}: {float(pred):.0f} pred / {float(actual):.0f} actual")
+        elif pred is not None:
+            parts.append(f"Y{i}: {float(pred):.0f}")
+        else:
+            parts.append(f"Y{i}: {float(actual):.0f} actual")
+
+    tk.Label(
+        frame,
+        text="  ·  ".join(parts),
+        bg=POPUP_BG,
+        fg="#B8D4FF",
+        font=("Segoe UI", 9),
+        justify="left",
+        wraplength=wraplength,
+    ).pack(anchor="w", pady=(2, 0))
+
+
+def _horizon_plot_args(block: dict | None, fallback_pred: float | None = None) -> tuple[float, float, float, float, float] | None:
+    """Extract BoomBustGauge args from a year_by_year block or total confidence."""
+    if not block:
+        return None
+    pred = block.get("predicted")
+    if pred is None:
+        pred = fallback_pred
+    if pred is None:
+        return None
+    conf = block.get("confidence") or {}
+    low = conf.get("ppr_low")
+    high = conf.get("ppr_high")
+    if low is None or high is None:
+        return None
+    boom = float(conf.get("boom_chance_pct", 25.0))
+    bust = float(conf.get("bust_chance_pct", 25.0))
+    return float(pred), float(low), float(high), boom, bust
+
+
+def _pack_dynasty_horizon_gauges(
+    parent: tk.Misc,
+    name: str,
+    result: dict,
+    *,
+    width: int = 370,
+) -> None:
+    """One boom/bust gauge per season (Y1–Y3) plus the Y1–Y3 total."""
+    if _result_mode(result) != "dynasty":
+        return
+
+    years = result.get("year_by_year") or {}
+    total_conf = result.get("confidence") or {}
+    total_block = {
+        "predicted": _result_predicted_points(result),
+        "confidence": total_conf,
+    }
+
+    sections: list[tuple[str, dict | None]] = [
+        ("Year 1", years.get("y1")),
+        ("Year 2", years.get("y2")),
+        ("Year 3", years.get("y3")),
+        ("Y1–Y3 total", total_block),
+    ]
+
+    wrap = tk.Frame(parent, bg=POPUP_BG)
+    wrap.pack(fill="x", padx=8, pady=(2, 0))
+
+    for title, block in sections:
+        args = _horizon_plot_args(block)
+        if args is None:
+            continue
+        pred, low, high, boom_pct, bust_pct = args
+        section = tk.Frame(wrap, bg=POPUP_BG)
+        section.pack(fill="x", pady=(6, 0))
+        subtitle = title
+        if block and block.get("actual") is not None:
+            subtitle = f"{title}  (actual {float(block['actual']):.0f})"
+        elif block and block.get("success_score") is not None and title != "Y1–Y3 total":
+            subtitle = f"{title}  ·  peer score {float(block['success_score']):.0f}"
+        tk.Label(
+            section,
+            text=subtitle,
+            bg=POPUP_BG,
+            fg=FG,
+            font=("Segoe UI", 9, "bold"),
+            anchor="w",
+        ).pack(anchor="w", padx=4)
+        BoomBustGauge(
+            section,
+            player_name=name,
+            predicted=pred,
+            ppr_low=low,
+            ppr_high=high,
+            boom_chance_pct=boom_pct,
+            bust_chance_pct=bust_pct,
+            width=width,
+            height=120,
+        ).pack(fill="x")
+
+
+def _historical_dist_title(result: dict, dist: dict) -> str:
+    pos = result.get("position", "")
+    n = dist.get("n", 0)
+    if _result_mode(result) == "dynasty":
+        return f"Historical {pos} Y1–Y3 totals (n={n})"
+    return f"Historical {pos} rookie points (n={n})"
 
 
 def _prediction_plot_args(result: dict) -> tuple[float, float, float, float, float]:
-    pred = float(result["predicted_rookie_ppr"])
+    pred = _result_predicted_points(result)
     conf = result.get("confidence") or {}
     half = float(conf.get("half_width") or 0.0)
     low = float(conf.get("ppr_low", pred - half))
@@ -762,11 +924,12 @@ class PredictionPopup(tk.Toplevel):
         self._popup_x = x
         self._popup_y = y
 
-        pred = result["predicted_rookie_ppr"]
-        score = result["success_score_0_100"]
+        pred = _result_predicted_points(result)
+        score = _result_success_score(result)
         conf = result.get("confidence") or {}
         dist = result.get("ppr_distribution") or {}
         p, low, high, boom_pct, bust_pct = _prediction_plot_args(result)
+        pred_label = _predicted_points_label(result.get("mode"))
 
         header = tk.Frame(self, bg=POPUP_BG, padx=12, pady=8)
         header.pack(fill="x")
@@ -781,7 +944,7 @@ class PredictionPopup(tk.Toplevel):
         ).pack(anchor="w")
         tk.Label(
             header,
-            text=f"Predicted points: {pred:.1f}",
+            text=f"{pred_label}: {pred:.1f}",
             bg=POPUP_BG,
             fg=IMPORTANT_FG,
             font=("Segoe UI", 12, "bold"),
@@ -795,7 +958,9 @@ class PredictionPopup(tk.Toplevel):
             font=("Segoe UI", 9),
             justify="left",
         ).pack(anchor="w", pady=(2, 0))
-        if conf:
+        _pack_year_by_year(header, result, wraplength=360)
+        is_dynasty = _result_mode(result) == "dynasty"
+        if conf and not is_dynasty:
             method = conf.get("method")
             if method == "predictive_quartile":
                 tk.Label(
@@ -866,17 +1031,20 @@ class PredictionPopup(tk.Toplevel):
 
         plot_frame = tk.Frame(self, bg=POPUP_BG, padx=8, pady=2)
         plot_frame.pack(fill="x")
-        BoomBustGauge(
-            plot_frame,
-            player_name=name,
-            predicted=p,
-            ppr_low=low,
-            ppr_high=high,
-            boom_chance_pct=boom_pct,
-            bust_chance_pct=bust_pct,
-            width=370,
-            height=130,
-        ).pack(fill="x")
+        if is_dynasty:
+            _pack_dynasty_horizon_gauges(plot_frame, name, result, width=370)
+        else:
+            BoomBustGauge(
+                plot_frame,
+                player_name=name,
+                predicted=p,
+                ppr_low=low,
+                ppr_high=high,
+                boom_chance_pct=boom_pct,
+                bust_chance_pct=bust_pct,
+                width=370,
+                height=130,
+            ).pack(fill="x")
 
         self._show_ppr_var = tk.BooleanVar(value=False)
         FillCheckbox(
@@ -917,8 +1085,7 @@ class PredictionPopup(tk.Toplevel):
             self._ppr_plot_holder,
             self._ppr_dist,
             float(self._pred),
-            title=f"Historical {self._result.get('position', '')} rookie points "
-            f"(n={self._ppr_dist.get('n', 0)})",
+            title=_historical_dist_title(self._result, self._ppr_dist),
             low_label="Low",
             mid_label="IQR",
             high_label="High",
@@ -946,10 +1113,11 @@ class ComparePlayerPopup(tk.Toplevel):
         self._fitted_height = COMPARE_POPUP_EST_HEIGHT
 
         result = entry["result"]
-        pred = result["predicted_rookie_ppr"]
-        score = result["success_score_0_100"]
+        pred = _result_predicted_points(result)
+        score = _result_success_score(result)
         conf = result.get("confidence") or {}
         p, low, high, boom_pct, bust_pct = _prediction_plot_args(result)
+        pred_label = _predicted_points_label(result.get("mode"))
 
         header = tk.Frame(self, bg=POPUP_BG, padx=12, pady=8)
         header.pack(fill="x")
@@ -964,7 +1132,7 @@ class ComparePlayerPopup(tk.Toplevel):
         ).pack(anchor="w")
         tk.Label(
             header,
-            text=f"Predicted points: {pred:.1f}",
+            text=f"{pred_label}: {pred:.1f}",
             bg=POPUP_BG,
             fg=IMPORTANT_FG,
             font=("Segoe UI", 12, "bold"),
@@ -978,7 +1146,9 @@ class ComparePlayerPopup(tk.Toplevel):
             font=("Segoe UI", 9),
             justify="left",
         ).pack(anchor="w", pady=(2, 0))
-        if conf:
+        _pack_year_by_year(header, result, wraplength=360)
+        is_dynasty = _result_mode(result) == "dynasty"
+        if conf and not is_dynasty:
             method = conf.get("method")
             if method == "predictive_quartile":
                 tk.Label(
@@ -1038,17 +1208,20 @@ class ComparePlayerPopup(tk.Toplevel):
 
         plot_frame = tk.Frame(self, bg=POPUP_BG, padx=8, pady=2)
         plot_frame.pack(fill="x")
-        BoomBustGauge(
-            plot_frame,
-            player_name=entry["name"],
-            predicted=p,
-            ppr_low=low,
-            ppr_high=high,
-            boom_chance_pct=boom_pct,
-            bust_chance_pct=bust_pct,
-            width=370,
-            height=130,
-        ).pack(fill="x")
+        if is_dynasty:
+            _pack_dynasty_horizon_gauges(plot_frame, entry["name"], result, width=370)
+        else:
+            BoomBustGauge(
+                plot_frame,
+                player_name=entry["name"],
+                predicted=p,
+                ppr_low=low,
+                ppr_high=high,
+                boom_chance_pct=boom_pct,
+                bust_chance_pct=bust_pct,
+                width=370,
+                height=130,
+            ).pack(fill="x")
 
         self._show_drivers_var = tk.BooleanVar(value=False)
         FillCheckbox(
@@ -1142,22 +1315,37 @@ class ComparePlayerPopup(tk.Toplevel):
         self._fit_and_relayout_compare()
 
 
-class RookieScorerApp(tk.Tk):
-    def __init__(self) -> None:
-        super().__init__()
-        self.title("Rookie Points Scorer")
-        self.configure(bg=BG)
-        self.geometry("520x760")
-        self.minsize(480, 620)
+class RookieScorerPanel(tk.Frame):
+    """One format's scorer UI (redraft or dynasty) as an embeddable panel."""
+
+    def __init__(
+        self,
+        master: tk.Misc,
+        mode: str | AnalysisMode = "redraft",
+        *,
+        master_df=None,
+        show_header: bool = True,
+    ) -> None:
+        super().__init__(master, bg=BG)
+        self.analysis_mode = mode if isinstance(mode, AnalysisMode) else get_mode(mode)
+        self.mode_name = self.analysis_mode.name
+        is_dynasty = self.mode_name == "dynasty"
+        title = "Dynasty Points Scorer" if is_dynasty else "Rookie Points Scorer"
+        subtitle = (
+            "Fantasy scoring format: PPR — predicted Y1–Y3 total points"
+            if is_dynasty
+            else "Fantasy scoring format: PPR (points per reception)"
+        )
 
         try:
-            self.master_df = load_players_master()
+            self.master_df = master_df if master_df is not None else load_players_master()
             self.dropdowns = self._build_dropdowns()
             self.lookup_items = player_lookup_labels(self.master_df)
         except FileNotFoundError as exc:
             messagebox.showerror("Data missing", str(exc))
-            self.destroy()
+            self._init_failed = True
             return
+        self._init_failed = False
 
         self.vars: dict[str, tk.StringVar] = {}
         self._field_widgets: dict[str, tk.Misc] = {}
@@ -1169,34 +1357,58 @@ class RookieScorerApp(tk.Tk):
         self._compare_popups: list[ComparePlayerPopup] = []
         self._prediction_popup: PredictionPopup | None = None
 
-        header = tk.Frame(self, bg=BG, padx=12, pady=10)
-        header.pack(fill="x")
-        tk.Label(
-            header,
-            text="Rookie Points Scorer",
-            bg=BG,
-            fg=FG,
-            font=("Segoe UI", 14, "bold"),
-        ).pack(anchor="w")
-        tk.Label(
-            header,
-            text="Fantasy scoring format: PPR (points per reception)",
-            bg=BG,
-            fg="#B8D4FF",
-            font=("Segoe UI", 9),
-        ).pack(anchor="w", pady=(2, 0))
-        tk.Label(
-            header,
-            text=(
-                f"Default lookup: {INCOMING_DRAFT_YEAR}–{INCOMING_DRAFT_YEAR + 1} rookies. "
-                "Type to filter. Add up to 4 players, then open a 2×2 grid of side popups."
-            ),
-            bg=BG,
-            fg=FG,
-            font=("Segoe UI", 9),
-            wraplength=480,
-            justify="left",
-        ).pack(anchor="w", pady=(4, 0))
+        if show_header:
+            header = tk.Frame(self, bg=BG, padx=12, pady=10)
+            header.pack(fill="x")
+            tk.Label(
+                header,
+                text=title,
+                bg=BG,
+                fg=FG,
+                font=("Segoe UI", 14, "bold"),
+            ).pack(anchor="w")
+            tk.Label(
+                header,
+                text=subtitle,
+                bg=BG,
+                fg="#B8D4FF",
+                font=("Segoe UI", 9),
+            ).pack(anchor="w", pady=(2, 0))
+            tk.Label(
+                header,
+                text=(
+                    f"Default lookup: {INCOMING_DRAFT_YEAR}–{INCOMING_DRAFT_YEAR + 1} rookies. "
+                    "Type to filter. Add up to 4 players, then open a 2×2 grid of side popups."
+                ),
+                bg=BG,
+                fg=FG,
+                font=("Segoe UI", 9),
+                wraplength=480,
+                justify="left",
+            ).pack(anchor="w", pady=(4, 0))
+        else:
+            # Compact subtitle under the shared tab bar
+            sub = tk.Frame(self, bg=BG)
+            sub.pack(fill="x", padx=12, pady=(8, 0))
+            tk.Label(
+                sub,
+                text=subtitle,
+                bg=BG,
+                fg="#B8D4FF",
+                font=("Segoe UI", 9),
+            ).pack(anchor="w")
+            tk.Label(
+                sub,
+                text=(
+                    f"Default lookup: {INCOMING_DRAFT_YEAR}–{INCOMING_DRAFT_YEAR + 1} rookies. "
+                    "Type to filter. Add up to 4 players, then open a 2×2 grid of side popups."
+                ),
+                bg=BG,
+                fg=FG,
+                font=("Segoe UI", 9),
+                wraplength=480,
+                justify="left",
+            ).pack(anchor="w", pady=(2, 0))
 
         lookup_frame = tk.Frame(self, bg=BG, padx=12, pady=6)
         lookup_frame.pack(fill="x")
@@ -1336,6 +1548,9 @@ class RookieScorerApp(tk.Tk):
             pady=8,
         ).pack(fill="x")
 
+    def _app_window(self) -> tk.Misc:
+        return self.winfo_toplevel()
+
     def _lookup_labels_for_mode(self) -> list[str]:
         return [label for label, _ in self._filtered_lookup_items()]
 
@@ -1471,9 +1686,10 @@ class RookieScorerApp(tk.Tk):
     def _open_prediction_popup(self, name: str, result: dict) -> None:
         self._close_prediction_popup()
         self.update_idletasks()
-        x = self.winfo_x() + self.winfo_width() + 12
-        y = self.winfo_y()
-        self._prediction_popup = PredictionPopup(self, name, result, x, y)
+        top = self._app_window()
+        x = top.winfo_x() + top.winfo_width() + 12
+        y = top.winfo_y()
+        self._prediction_popup = PredictionPopup(top, name, result, x, y)
 
     def _clear_fields(self) -> None:
         self._hide_all_dropdowns()
@@ -1524,7 +1740,7 @@ class RookieScorerApp(tk.Tk):
             messagebox.showwarning("Missing position", "Select or enter a position (QB, RB, WR, TE).")
             return None
         try:
-            return score_player(row)
+            return score_player(row, mode=self.analysis_mode)
         except Exception as exc:  # noqa: BLE001
             messagebox.showerror("Scoring error", str(exc))
             return None
@@ -1571,11 +1787,13 @@ class RookieScorerApp(tk.Tk):
                 fg=FG,
             ).pack(side="left", padx=(0, 4))
             result = entry["result"]
+            pts = _result_predicted_points(result)
+            sc = _result_success_score(result)
             tk.Label(
                 row,
                 text=(
-                    f"{entry['name']}  —  {result['predicted_rookie_ppr']:.1f} points, "
-                    f"Score {result['success_score_0_100']:.1f}"
+                    f"{entry['name']}  —  {pts:.1f} points, "
+                    f"Score {sc:.1f}"
                 ),
                 bg=BG,
                 fg=FG,
@@ -1608,8 +1826,9 @@ class RookieScorerApp(tk.Tk):
     def _compare_anchor(self) -> tuple[int, int]:
         """Top-left for the compare grid: beside the main picker (past prediction if open)."""
         self.update_idletasks()
-        base_x = self.winfo_x() + self.winfo_width() + 12
-        base_y = self.winfo_y()
+        top = self._app_window()
+        base_x = top.winfo_x() + top.winfo_width() + 12
+        base_y = top.winfo_y()
         if self._prediction_popup is not None:
             try:
                 if self._prediction_popup.winfo_exists():
@@ -1806,12 +2025,150 @@ class RookieScorerApp(tk.Tk):
         self._open_prediction_popup(self._display_name(row), result)
 
 
-def main() -> int:
-    app = RookieScorerApp()
-    if not app.winfo_exists():
+def main(mode: str | None = None) -> int:
+    """
+    Launch the combined scorer UI with Redraft / Dynasty tabs.
+
+    CLI: ``python -m rookie_ppr.ui`` or ``--mode redraft|dynasty`` to pick the starting tab.
+    """
+    import argparse
+
+    parser = argparse.ArgumentParser(add_help=True)
+    parser.add_argument(
+        "--mode",
+        choices=("redraft", "dynasty"),
+        default=mode or "redraft",
+        help="Initial tab: redraft (Y1) or dynasty (Y1–Y3). Both stay available in the UI.",
+    )
+    args, _unknown = parser.parse_known_args()
+
+    app = TabbedScorerApp(initial_mode=args.mode)
+    if getattr(app, "_init_failed", False) or not app.winfo_exists():
         return 1
     app.mainloop()
     return 0
+
+
+class TabbedScorerApp(tk.Tk):
+    """Single window with browser-style Redraft / Dynasty tabs."""
+
+    def __init__(self, initial_mode: str = "redraft") -> None:
+        super().__init__()
+        self.title("Fantasy Points Scorer")
+        self.configure(bg=BG)
+        self.geometry("520x800")
+        self.minsize(480, 640)
+        self._init_failed = False
+        self._active_mode = "redraft"
+        self._panels: dict[str, RookieScorerPanel] = {}
+        self._tab_buttons: dict[str, tk.Button] = {}
+        self._tab_accents: dict[str, tk.Frame] = {}
+
+        try:
+            master_df = load_players_master()
+        except FileNotFoundError as exc:
+            messagebox.showerror("Data missing", str(exc))
+            self._init_failed = True
+            self.destroy()
+            return
+
+        # Tab strip
+        tab_bar = tk.Frame(self, bg=TAB_BAR_BG, padx=8, pady=0)
+        tab_bar.pack(fill="x")
+
+        tabs_row = tk.Frame(tab_bar, bg=TAB_BAR_BG)
+        tabs_row.pack(side="left", anchor="sw")
+
+        for key, label in (("redraft", "Redraft"), ("dynasty", "Dynasty")):
+            col = tk.Frame(tabs_row, bg=TAB_BAR_BG)
+            col.pack(side="left", padx=(0, 2))
+            btn = tk.Button(
+                col,
+                text=label,
+                command=lambda m=key: self._select_tab(m),
+                relief="flat",
+                bd=0,
+                padx=18,
+                pady=8,
+                font=("Segoe UI", 11),
+                cursor="hand2",
+            )
+            btn.pack(fill="x")
+            accent = tk.Frame(col, bg=TAB_BAR_BG, height=3)
+            accent.pack(fill="x")
+            self._tab_buttons[key] = btn
+            self._tab_accents[key] = accent
+
+        tk.Label(
+            tab_bar,
+            text="PPR",
+            bg=TAB_BAR_BG,
+            fg=TAB_INACTIVE_FG,
+            font=("Segoe UI", 9),
+        ).pack(side="right", padx=8, pady=8)
+
+        # Content host
+        self._content = tk.Frame(self, bg=BG)
+        self._content.pack(fill="both", expand=True)
+
+        self._panels["redraft"] = RookieScorerPanel(
+            self._content, mode="redraft", master_df=master_df, show_header=False
+        )
+        self._panels["dynasty"] = RookieScorerPanel(
+            self._content, mode="dynasty", master_df=master_df, show_header=False
+        )
+        if any(getattr(p, "_init_failed", False) for p in self._panels.values()):
+            self._init_failed = True
+            self.destroy()
+            return
+
+        start = initial_mode if initial_mode in self._panels else "redraft"
+        self._select_tab(start)
+
+    def _select_tab(self, mode: str) -> None:
+        if mode not in self._panels:
+            return
+        self._active_mode = mode
+        for key, panel in self._panels.items():
+            if key == mode:
+                panel.pack(fill="both", expand=True)
+            else:
+                panel.pack_forget()
+                # Hide open dropdowns on the inactive tab
+                try:
+                    panel._hide_all_dropdowns()
+                except Exception:  # noqa: BLE001
+                    pass
+
+        for key, btn in self._tab_buttons.items():
+            active = key == mode
+            btn.configure(
+                bg=TAB_ACTIVE_BG if active else TAB_INACTIVE_BG,
+                fg=TAB_ACTIVE_FG if active else TAB_INACTIVE_FG,
+                activebackground=TAB_ACTIVE_BG if active else TAB_INACTIVE_BG,
+                activeforeground=TAB_ACTIVE_FG if active else TAB_INACTIVE_FG,
+                font=("Segoe UI", 11, "bold") if active else ("Segoe UI", 11),
+            )
+            self._tab_accents[key].configure(bg=TAB_ACCENT if active else TAB_BAR_BG)
+
+        subtitle = "Y1–Y3 dynasty" if mode == "dynasty" else "rookie season (redraft)"
+        self.title(f"Fantasy Points Scorer — {subtitle}")
+
+
+# Back-compat aliases
+class RookieScorerApp(TabbedScorerApp):
+    """Legacy name — launches the tabbed app (optional initial mode)."""
+
+    def __init__(self, mode: str | AnalysisMode = "redraft") -> None:
+        name = mode.name if isinstance(mode, AnalysisMode) else str(mode or "redraft")
+        super().__init__(initial_mode=name if name in ("redraft", "dynasty") else "redraft")
+
+
+class DynastyScorerApp(TabbedScorerApp):
+    """Legacy name — opens on the Dynasty tab."""
+
+    def __init__(self) -> None:
+        super().__init__(initial_mode="dynasty")
 
 
 if __name__ == "__main__":

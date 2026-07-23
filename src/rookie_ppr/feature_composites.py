@@ -139,6 +139,25 @@ class CompositeArtifacts:
         )
 
 
+def feature_corr_for_weights(
+    feature_corr: pd.DataFrame | None,
+    *,
+    source_abs_col: str = "abs_corr_rookie_ppr",
+) -> pd.DataFrame:
+    """
+    Thin adapter so dynasty (or other) corr tables feed _weight_map unchanged.
+
+    Copies source_abs_col into abs_corr_rookie_ppr when needed; redraft tables
+    already use that column and pass through as-is.
+    """
+    if feature_corr is None or feature_corr.empty:
+        return pd.DataFrame() if feature_corr is None else feature_corr.copy()
+    out = feature_corr.copy()
+    if source_abs_col != "abs_corr_rookie_ppr" and source_abs_col in out.columns:
+        out["abs_corr_rookie_ppr"] = out[source_abs_col]
+    return out
+
+
 def _weight_map(feature_corr: pd.DataFrame) -> dict[str, float]:
     if feature_corr is None or feature_corr.empty:
         return {}
@@ -288,16 +307,23 @@ def apply_composites(
     return out
 
 
-def build_composite_correlation(composites: pd.DataFrame, master: pd.DataFrame) -> pd.DataFrame:
-    if composites.empty or master.empty or TARGET not in master.columns:
+def build_composite_correlation(
+    composites: pd.DataFrame,
+    master: pd.DataFrame,
+    *,
+    target: str = TARGET,
+    abs_corr_col: str = "abs_corr_rookie_ppr",
+) -> pd.DataFrame:
+    """Composite vs outcome correlation. Default target/column names preserve redraft schema."""
+    if composites.empty or master.empty or target not in master.columns:
         return pd.DataFrame()
 
     merged = composites.merge(
-        master[[c for c in ID_COLUMNS + [TARGET] if c in master.columns]],
+        master[[c for c in ID_COLUMNS + [target] if c in master.columns]],
         on=[c for c in ID_COLUMNS if c in composites.columns and c in master.columns],
         how="left",
     )
-    target = pd.to_numeric(merged[TARGET], errors="coerce")
+    y = pd.to_numeric(merged[target], errors="coerce")
     rows = []
     abs_corrs: list[float] = []
 
@@ -305,7 +331,7 @@ def build_composite_correlation(composites: pd.DataFrame, master: pd.DataFrame) 
         if col not in merged.columns:
             continue
         x = pd.to_numeric(merged[col], errors="coerce")
-        pair = pd.DataFrame({"x": x, "y": target}).dropna()
+        pair = pd.DataFrame({"x": x, "y": y}).dropna()
         n = len(pair)
         if n < 10:
             continue
@@ -321,7 +347,7 @@ def build_composite_correlation(composites: pd.DataFrame, master: pd.DataFrame) 
                 "pearson_p": round(float(pearson_p), 6),
                 "spearman_r": round(float(spearman_r), 4),
                 "spearman_p": round(float(spearman_p), 6),
-                "abs_corr_rookie_ppr": round(float(abs_r), 4),
+                abs_corr_col: round(float(abs_r), 4),
             }
         )
 
@@ -329,8 +355,8 @@ def build_composite_correlation(composites: pd.DataFrame, master: pd.DataFrame) 
     if out.empty:
         return out
     max_abs = max(abs_corrs) if abs_corrs else 1.0
-    out["impact_0_100"] = (out["abs_corr_rookie_ppr"] / max_abs * 100).round(1)
-    out = out.sort_values("abs_corr_rookie_ppr", ascending=False).reset_index(drop=True)
+    out["impact_0_100"] = (out[abs_corr_col] / max_abs * 100).round(1)
+    out = out.sort_values(abs_corr_col, ascending=False).reset_index(drop=True)
     out.insert(0, "rank", range(1, len(out) + 1))
     return out
 

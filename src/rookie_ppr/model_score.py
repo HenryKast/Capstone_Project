@@ -10,6 +10,13 @@ from scipy import stats
 from sklearn.ensemble import HistGradientBoostingRegressor
 from sklearn.metrics import mean_absolute_error, r2_score
 
+from rookie_ppr.analysis_config import (
+    DYNASTY_MODE,
+    REDRAFT_MODE,
+    AnalysisMode,
+    get_mode,
+)
+from rookie_ppr.analyze_correlation import NUMERIC_FEATURES, _add_derived_columns
 from rookie_ppr.config import (
     CSV_OUTPUT_DIR,
     HOLDOUT_ROOKIE_SEASONS,
@@ -23,6 +30,7 @@ from rookie_ppr.feature_composites import (
     apply_composites,
     build_composite_artifacts,
     build_composite_correlation,
+    feature_corr_for_weights,
     save_composite_artifacts,
 )
 
@@ -32,6 +40,9 @@ COMPOSITE_FILE = "composite_weights.json"
 PERCENTILE_FILE = "percentile_lookup.json"
 METRICS_FILE = "model_metrics.json"
 ADP_BASELINE_CSV = "model_vs_adp_baseline.csv"
+ML_FEATURES_DYNASTY_CSV = "ml_features_dynasty.csv"
+COMPOSITE_CORR_DYNASTY_CSV = "composite_correlation_dynasty.csv"
+DYNASTY_ABS_CORR_COL = "abs_corr_dynasty_ppr"
 
 # True ADP-only baseline (not the full pre-draft fantasy composite)
 ADP_FEATURE_COLS = ["ff_adp", "ff_adp_rank"]
@@ -122,16 +133,59 @@ WR_PARAM_GRID: list[dict[str, Any]] = PARAM_GRID + [
     {"max_depth": 3, "learning_rate": 0.1, "max_iter": 200, "min_samples_leaf": 25, "l2_regularization": 2.0},
 ]
 
+# Dynasty residual path: exclude score_pre_draft_fantasy (ADP handled via residual baseline)
+POSITION_FEATURE_COLS_DYNASTY: dict[str, list[str]] = {
+    "QB": [
+        "score_draft_capital",
+        "score_recruiting",
+        "score_timing",
+        "score_cfb_passing",
+        "score_team_context",
+    ],
+    "RB": [
+        "score_draft_capital",
+        "score_recruiting",
+        "score_timing",
+        "score_cfb_rushing",
+        "score_cfb_receiving",
+        "score_combine_speed",
+        "score_team_context",
+    ],
+    # WR: drop combine + pre-draft fantasy (ADP via residual path)
+    "WR": [
+        "score_draft_capital",
+        "score_recruiting",
+        "score_timing",
+        "score_cfb_receiving",
+        "score_team_context",
+    ],
+    "TE": [
+        "score_draft_capital",
+        "score_recruiting",
+        "score_timing",
+        "score_cfb_receiving",
+        "score_team_context",
+    ],
+}
+
+CFB_COMPOSITE_COLS = ["score_cfb_rushing", "score_cfb_receiving", "score_cfb_passing"]
+CFB_GATE_DRAFT_OVERALL = 50
+CFB_GATE_FF_ADP = 40
+
+# Kept for loading older ADP-residual dynasty joblibs (current trainer is position_specific)
+ADP_EXPECTED_COL = "adp_expected_dynasty_total"
+DYNASTY_ECR_COLS = ["dynasty_ecr", "dynasty_ecr_rank"]
+
 # Composites are position z-score averages; 0 = typical player on that axis
 TYPICAL_COMPOSITE_BASELINE = 0.0
 
 
-def _percentile_lookup(train_df: pd.DataFrame) -> dict[str, list[float]]:
+def _percentile_lookup(train_df: pd.DataFrame, target: str = TARGET) -> dict[str, list[float]]:
     lookup: dict[str, list[float]] = {}
-    if TARGET not in train_df.columns or "position" not in train_df.columns:
+    if target not in train_df.columns or "position" not in train_df.columns:
         return lookup
     for pos, grp in train_df.groupby("position"):
-        vals = pd.to_numeric(grp[TARGET], errors="coerce").dropna().sort_values().tolist()
+        vals = pd.to_numeric(grp[target], errors="coerce").dropna().sort_values().tolist()
         lookup[str(pos)] = vals
     return lookup
 
@@ -198,7 +252,7 @@ def _holdout_metric_block(y_true: pd.Series, y_pred: np.ndarray, positions: pd.S
     return block
 
 
-def _export_adp_baseline_csv(comparable: dict[str, Any]) -> None:
+def _export_adp_baseline_csv(comparable: dict[str, Any], filename: str = ADP_BASELINE_CSV) -> None:
     """Write overall + by-position full vs ADP-only comparison CSV."""
     CSV_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     rows: list[dict[str, Any]] = [
@@ -228,12 +282,26 @@ def _export_adp_baseline_csv(comparable: dict[str, Any]) -> None:
                 "lift_mae": stats_row.get("lift_mae"),
             }
         )
-    pd.DataFrame(rows).to_csv(CSV_OUTPUT_DIR / ADP_BASELINE_CSV, index=False)
+    pd.DataFrame(rows).to_csv(CSV_OUTPUT_DIR / filename, index=False)
 
 
 def _position_feature_cols(position: str) -> list[str]:
     cols = POSITION_FEATURE_COLS.get(position, SCORE_COLUMNS)
     return [c for c in cols if c in SCORE_COLUMNS]
+
+
+def _position_feature_cols_dynasty(position: str, available_cols: list[str] | set[str] | None = None) -> list[str]:
+    """Dynasty residual features: position slim set, never score_pre_draft_fantasy.
+
+    Market ECR columns are intentionally excluded here (reported as baselines only)
+    to avoid current-market leakage into historical holdouts.
+    """
+    cols = list(POSITION_FEATURE_COLS_DYNASTY.get(position, POSITION_FEATURE_COLS.get(position, SCORE_COLUMNS)))
+    cols = [c for c in cols if c != "score_pre_draft_fantasy" and c in SCORE_COLUMNS]
+    if available_cols is not None:
+        avail = set(available_cols)
+        cols = [c for c in cols if c in avail]
+    return cols
 
 
 def _param_grid_for_position(position: str) -> list[dict[str, Any]]:
@@ -246,21 +314,60 @@ def _param_grid_for_position(position: str) -> list[dict[str, Any]]:
     return PARAM_GRID
 
 
+def _apply_cfb_gate(frame: pd.DataFrame) -> pd.DataFrame:
+    """Zero/NaN CFB composites for early-draft or strong-ADP elites (legacy residual path)."""
+    if frame.empty:
+        return frame
+    out = frame.copy()
+    draft = (
+        pd.to_numeric(out["draft_overall"], errors="coerce")
+        if "draft_overall" in out.columns
+        else pd.Series(np.nan, index=out.index)
+    )
+    adp = (
+        pd.to_numeric(out["ff_adp"], errors="coerce")
+        if "ff_adp" in out.columns
+        else pd.Series(np.nan, index=out.index)
+    )
+    gate = (draft.notna() & (draft <= CFB_GATE_DRAFT_OVERALL)) | (adp.notna() & (adp <= CFB_GATE_FF_ADP))
+    if not gate.any():
+        return out
+    for col in CFB_COMPOSITE_COLS:
+        if col in out.columns:
+            out.loc[gate, col] = np.nan
+    return out
+
+
 def _fit_point_model(
     train_df: pd.DataFrame,
     feature_cols: list[str],
     params: dict[str, Any],
+    target: str = TARGET,
+    *,
+    monotonic_cst: list[int] | None = None,
 ) -> HistGradientBoostingRegressor:
     """Median (q50) point model — robust to right-skewed rookie outcomes."""
     X = _feature_matrix(train_df, feature_cols)
-    y = pd.to_numeric(train_df[TARGET], errors="coerce")
-    model = HistGradientBoostingRegressor(
-        loss="quantile",
-        quantile=PRED_Q50,
-        random_state=42,
+    y = pd.to_numeric(train_df[target], errors="coerce")
+    fit_kwargs: dict[str, Any] = {
+        "loss": "quantile",
+        "quantile": PRED_Q50,
+        "random_state": 42,
         **params,
-    )
-    model.fit(X, y)
+    }
+    if monotonic_cst is not None:
+        fit_kwargs["monotonic_cst"] = monotonic_cst
+    model = HistGradientBoostingRegressor(**fit_kwargs)
+    try:
+        model.fit(X, y)
+    except ValueError:
+        # Rare binning failure with mono constraints on sparse/gated columns
+        if monotonic_cst is not None:
+            fit_kwargs.pop("monotonic_cst", None)
+            model = HistGradientBoostingRegressor(**fit_kwargs)
+            model.fit(X, y)
+        else:
+            raise
     return model
 
 
@@ -281,21 +388,28 @@ def _tune_position_model(
     train_df: pd.DataFrame,
     val_df: pd.DataFrame,
     feature_cols: list[str],
+    *,
+    target: str = TARGET,
+    param_grid: list[dict[str, Any]] | None = None,
+    monotonic_cst: list[int] | None = None,
 ) -> tuple[HistGradientBoostingRegressor, dict[str, Any], float]:
     """Pick hyperparameters maximizing Pearson r on the validation fold (median model)."""
+    grid = param_grid if param_grid is not None else _param_grid_for_position(position)
     best_r = float("-inf")
-    best_params: dict[str, Any] = _param_grid_for_position(position)[0]
+    best_params: dict[str, Any] = grid[0]
     best_model: HistGradientBoostingRegressor | None = None
 
     X_val = _feature_matrix(val_df, feature_cols)
-    y_val = pd.to_numeric(val_df[TARGET], errors="coerce")
+    y_val = pd.to_numeric(val_df[target], errors="coerce")
 
-    for params in _param_grid_for_position(position):
+    for params in grid:
         if len(train_df) < 15:
             continue
-        model = _fit_point_model(train_df, feature_cols, params)
+        model = _fit_point_model(
+            train_df, feature_cols, params, target=target, monotonic_cst=monotonic_cst
+        )
         pred_val = model.predict(X_val) if len(X_val) >= 5 else model.predict(_feature_matrix(train_df, feature_cols))
-        y_eval = y_val if len(X_val) >= 5 else pd.to_numeric(train_df[TARGET], errors="coerce")
+        y_eval = y_val if len(X_val) >= 5 else pd.to_numeric(train_df[target], errors="coerce")
         r = _pearson_r(y_eval, pred_val)
         if pd.notna(r) and r > best_r:
             best_r = r
@@ -304,9 +418,11 @@ def _tune_position_model(
 
     if best_model is None:
         best_params = {"max_depth": 3, "learning_rate": 0.05, "max_iter": 250, "min_samples_leaf": 15, "l2_regularization": 1.0}
-        best_model = _fit_point_model(train_df, feature_cols, best_params)
+        best_model = _fit_point_model(
+            train_df, feature_cols, best_params, target=target, monotonic_cst=monotonic_cst
+        )
         best_r = _pearson_r(
-            pd.to_numeric(train_df[TARGET], errors="coerce"),
+            pd.to_numeric(train_df[target], errors="coerce"),
             best_model.predict(_feature_matrix(train_df, feature_cols)),
         )
 
@@ -320,9 +436,9 @@ def _rookie_season(frame: pd.DataFrame) -> pd.Series:
     return stat.where(stat.notna(), draft)
 
 
-def _holdout_mask(frame: pd.DataFrame) -> pd.Series:
+def _holdout_mask(frame: pd.DataFrame, holdout_seasons: tuple[int, ...] = HOLDOUT_ROOKIE_SEASONS) -> pd.Series:
     season = _rookie_season(frame)
-    return season.isin(HOLDOUT_ROOKIE_SEASONS)
+    return season.isin(holdout_seasons)
 
 
 def _split_train_val(position_df: pd.DataFrame, val_season: int | None) -> tuple[pd.DataFrame, pd.DataFrame]:
@@ -382,13 +498,30 @@ def _fit_quantile_model(
     feature_cols: list[str],
     params: dict[str, Any],
     quantile: float,
+    *,
+    target: str = TARGET,
+    monotonic_cst: list[int] | None = None,
 ) -> HistGradientBoostingRegressor:
     X = _feature_matrix(fit_df, feature_cols)
-    y = pd.to_numeric(fit_df[TARGET], errors="coerce")
-    model = HistGradientBoostingRegressor(
-        loss="quantile", quantile=quantile, random_state=42, **params
-    )
-    model.fit(X, y)
+    y = pd.to_numeric(fit_df[target], errors="coerce")
+    fit_kwargs: dict[str, Any] = {
+        "loss": "quantile",
+        "quantile": quantile,
+        "random_state": 42,
+        **params,
+    }
+    if monotonic_cst is not None:
+        fit_kwargs["monotonic_cst"] = monotonic_cst
+    model = HistGradientBoostingRegressor(**fit_kwargs)
+    try:
+        model.fit(X, y)
+    except ValueError:
+        if monotonic_cst is not None:
+            fit_kwargs.pop("monotonic_cst", None)
+            model = HistGradientBoostingRegressor(**fit_kwargs)
+            model.fit(X, y)
+        else:
+            raise
     return model
 
 
@@ -396,10 +529,17 @@ def _fit_quantile_pair(
     fit_df: pd.DataFrame,
     feature_cols: list[str],
     params: dict[str, Any],
+    *,
+    target: str = TARGET,
+    monotonic_cst: list[int] | None = None,
 ) -> tuple[HistGradientBoostingRegressor, HistGradientBoostingRegressor]:
     return (
-        _fit_quantile_model(fit_df, feature_cols, params, CQR_Q_LO),
-        _fit_quantile_model(fit_df, feature_cols, params, CQR_Q_HI),
+        _fit_quantile_model(
+            fit_df, feature_cols, params, CQR_Q_LO, target=target, monotonic_cst=monotonic_cst
+        ),
+        _fit_quantile_model(
+            fit_df, feature_cols, params, CQR_Q_HI, target=target, monotonic_cst=monotonic_cst
+        ),
     )
 
 
@@ -407,12 +547,58 @@ def _fit_predictive_quartile_pair(
     fit_df: pd.DataFrame,
     feature_cols: list[str],
     params: dict[str, Any],
+    *,
+    target: str = TARGET,
+    monotonic_cst: list[int] | None = None,
 ) -> tuple[HistGradientBoostingRegressor, HistGradientBoostingRegressor]:
     """25th / 75th percentile models: P(Y < q25)≈25%, P(Y > q75)≈25%."""
     return (
-        _fit_quantile_model(fit_df, feature_cols, params, PRED_Q25),
-        _fit_quantile_model(fit_df, feature_cols, params, PRED_Q75),
+        _fit_quantile_model(
+            fit_df, feature_cols, params, PRED_Q25, target=target, monotonic_cst=monotonic_cst
+        ),
+        _fit_quantile_model(
+            fit_df, feature_cols, params, PRED_Q75, target=target, monotonic_cst=monotonic_cst
+        ),
     )
+
+
+def _build_dynasty_feature_corr(master: pd.DataFrame, target: str) -> pd.DataFrame:
+    """
+    Feature abs-corr vs dynasty target on complete-label rows.
+    Emits abs_corr_dynasty_ppr; use feature_corr_for_weights() for composite weights.
+    """
+    if master.empty or target not in master.columns:
+        return pd.DataFrame()
+    work = _add_derived_columns(master)
+    if "dynasty_seasons_complete" in work.columns:
+        work = work[pd.to_numeric(work["dynasty_seasons_complete"], errors="coerce") == 1].copy()
+    y = pd.to_numeric(work[target], errors="coerce")
+    rows: list[dict[str, Any]] = []
+    abs_corrs: list[float] = []
+    for feature in NUMERIC_FEATURES:
+        if feature not in work.columns:
+            continue
+        x = pd.to_numeric(work[feature], errors="coerce")
+        pair = pd.DataFrame({"x": x, "y": y}).dropna()
+        if len(pair) < 10 or pair["x"].nunique() < 2:
+            continue
+        pearson_r, _ = stats.pearsonr(pair["x"], pair["y"])
+        abs_r = abs(float(pearson_r))
+        abs_corrs.append(abs_r)
+        rows.append(
+            {
+                "feature": feature,
+                "n_pairs": int(len(pair)),
+                "pearson_r": round(float(pearson_r), 4),
+                DYNASTY_ABS_CORR_COL: round(abs_r, 4),
+            }
+        )
+    out = pd.DataFrame(rows)
+    if out.empty:
+        return out
+    max_abs = max(abs_corrs) if abs_corrs else 1.0
+    out["impact_0_100"] = (out[DYNASTY_ABS_CORR_COL] / max_abs * 100).round(1)
+    return out.sort_values(DYNASTY_ABS_CORR_COL, ascending=False).reset_index(drop=True)
 
 
 def _cqr_interval_row(
@@ -838,11 +1024,197 @@ def train_and_score(
     return ml_features, composite_corr, metrics
 
 
-def load_model_bundle() -> dict:
-    path = MODELS_DIR / MODEL_FILE
+def train_and_score_dynasty(
+    master: pd.DataFrame,
+    feature_corr: pd.DataFrame | None = None,
+) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
+    """
+    Parallel dynasty trainer: redraft-style direct HGB + CQR/IQR for Y1, Y2, Y3, and total.
+
+    Writes ONLY dynasty artifacts (hgb_dynasty_ppr.joblib, composite_weights_dynasty.json, …).
+    Does not overwrite redraft model/metrics/CSV files.
+    Implementation lives in rookie_ppr.dynasty_train (lazy import avoids circular deps).
+    """
+    from rookie_ppr.dynasty_train import train_and_score_dynasty as _impl
+
+    return _impl(master, feature_corr)
+
+
+def load_model_bundle(mode: str | AnalysisMode | None = None) -> dict:
+    """Load redraft or dynasty joblib bundle (default: redraft)."""
+    analysis = mode if isinstance(mode, AnalysisMode) else get_mode(mode or "redraft")
+    path = MODELS_DIR / analysis.model_file
     if not path.exists():
-        raise FileNotFoundError(f"Model not found at {path}. Run python -m rookie_ppr.compile first.")
+        raise FileNotFoundError(
+            f"Model not found at {path}. Run python -m rookie_ppr.compile first."
+        )
     return joblib.load(path)
+
+
+def _resolve_analysis_mode(
+    mode: str | AnalysisMode | None = None,
+    bundle: dict | None = None,
+) -> AnalysisMode:
+    if isinstance(mode, AnalysisMode):
+        return mode
+    if mode:
+        return get_mode(mode)
+    if bundle and bundle.get("analysis_mode"):
+        return get_mode(str(bundle["analysis_mode"]))
+    if bundle and bundle.get("model_type") == "position_specific_adp_residual":
+        return DYNASTY_MODE
+    return REDRAFT_MODE
+
+
+def _load_percentile_lookup_for_mode(analysis: AnalysisMode) -> dict[str, list[float]]:
+    path = MODELS_DIR / analysis.percentile_file
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _predict_horizon_row(
+    row: pd.DataFrame,
+    position: str,
+    horizon: dict[str, Any],
+    *,
+    fallback_feature_cols: list[str] | None = None,
+) -> dict[str, Any]:
+    """Redraft-style point + predictive IQR (+ CQR) for one dynasty horizon."""
+    models = horizon.get("models_by_position") or horizon.get("models") or {}
+    if position not in models:
+        return {
+            "predicted": None,
+            "predictive_q25": None,
+            "predictive_q75": None,
+            "cqr_low": None,
+            "cqr_high": None,
+        }
+
+    feature_cols_map = horizon.get("feature_cols_by_position") or {}
+    feature_cols = list(
+        feature_cols_map.get(position)
+        or fallback_feature_cols
+        or _position_feature_cols(position)
+    )
+    X = _feature_matrix(row, feature_cols)
+    pred = float(models[position].predict(X)[0])
+
+    q_models = (horizon.get("quantile_models_by_position") or {}).get(position)
+    conf = (horizon.get("conformal_by_position") or {}).get(position)
+    pq25 = pq75 = cqr_low = cqr_high = float("nan")
+    if q_models and conf:
+        cqr_low, cqr_high, _, _ = _cqr_interval_row(
+            X, q_models["lo"], q_models["hi"], float(conf["q_hat"])
+        )
+        if "q25" in q_models and "q75" in q_models:
+            pq25 = float(q_models["q25"].predict(X)[0])
+            pq75 = float(q_models["q75"].predict(X)[0])
+        else:
+            pq25 = pred + float(conf.get("residual_q25", 0.0))
+            pq75 = pred + float(conf.get("residual_q75", 0.0))
+        if pq25 > pq75:
+            pq25, pq75 = pq75, pq25
+        pred = _clamp_pred_to_iqr(pred, pq25, pq75)
+
+    return {
+        "predicted": round(float(max(pred, 0.0)), 2) if np.isfinite(pred) else None,
+        "predictive_q25": round(float(pq25), 2) if np.isfinite(pq25) else None,
+        "predictive_q75": round(float(pq75), 2) if np.isfinite(pq75) else None,
+        "cqr_low": round(float(cqr_low), 2) if np.isfinite(cqr_low) else None,
+        "cqr_high": round(float(cqr_high), 2) if np.isfinite(cqr_high) else None,
+        "bust_chance_pct": 25.0 if np.isfinite(pq25) else None,
+        "boom_chance_pct": 25.0 if np.isfinite(pq75) else None,
+    }
+
+
+def _predict_year_breakdown(
+    row: pd.DataFrame,
+    position: str,
+    bundle: dict,
+    *,
+    total: float | None = None,
+) -> dict[str, Any]:
+    """
+    Predict Y1/Y2/Y3 with the same uncertainty stack as redraft.
+    Years are independent (not rescaled to the total).
+    """
+    feature_cols_map = bundle.get("feature_cols_by_position", {}) or {}
+    fallback_cols = list(
+        feature_cols_map.get(position) or _position_feature_cols(position)
+    )
+    horizons = bundle.get("horizon_targets") or {}
+    year_bundle = bundle.get("year_targets") or {}
+
+    out: dict[str, Any] = {"year_breakdown_scaled_to_total": False}
+    year_sum = 0.0
+    n_years = 0
+    for i, key in enumerate(("ppr_y1", "ppr_y2", "ppr_y3"), start=1):
+        hz = horizons.get(key) or year_bundle.get(key) or {}
+        # Normalize older secondary-style year bundles
+        if "models_by_position" not in hz and "models" in hz:
+            hz = {
+                **hz,
+                "models_by_position": hz.get("models") or {},
+                "feature_cols_by_position": hz.get("feature_cols_by_position")
+                or feature_cols_map,
+            }
+        pred_info = _predict_horizon_row(
+            row, position, hz, fallback_feature_cols=fallback_cols
+        )
+        out[f"predicted_ppr_y{i}"] = pred_info["predicted"]
+        out[f"predictive_q25_ppr_y{i}"] = pred_info["predictive_q25"]
+        out[f"predictive_q75_ppr_y{i}"] = pred_info["predictive_q75"]
+        out[f"ppr_low_ppr_y{i}"] = pred_info["cqr_low"]
+        out[f"ppr_high_ppr_y{i}"] = pred_info["cqr_high"]
+        out[f"bust_chance_pct_ppr_y{i}"] = pred_info.get("bust_chance_pct")
+        out[f"boom_chance_pct_ppr_y{i}"] = pred_info.get("boom_chance_pct")
+        if pred_info["predicted"] is not None:
+            year_sum += float(pred_info["predicted"])
+            n_years += 1
+
+    out["predicted_year_sum"] = round(year_sum, 2) if n_years else None
+    if total is not None and np.isfinite(total):
+        out["predicted_total"] = round(float(total), 2)
+    return out
+
+
+def _predict_adp_residual_row(
+    row: pd.DataFrame,
+    position: str,
+    bundle: dict,
+) -> tuple[float, float, float]:
+    """
+    Dynasty point estimate: ADP expected + residual (or direct fallback).
+
+    Returns (predicted_total, adp_expected, residual_or_nan).
+    """
+    feature_cols_map = bundle.get("feature_cols_by_position", {})
+    residual_models = bundle.get("models_by_position", {})
+    direct_models = bundle.get("direct_fallback_models_by_position", {}) or {}
+    adp_models = bundle.get("adp_models_by_position", {}) or {}
+
+    feature_cols = list(
+        feature_cols_map.get(position) or _position_feature_cols_dynasty(position, list(row.columns))
+    )
+    X = _feature_matrix(row, feature_cols)
+    adp_exp = _adp_expected_for_row(row, position, adp_models)
+
+    if position in residual_models and np.isfinite(adp_exp):
+        residual = float(residual_models[position].predict(X)[0])
+        return adp_exp + residual, adp_exp, residual
+
+    if position in direct_models:
+        return float(direct_models[position].predict(X)[0]), adp_exp, float("nan")
+
+    if position in residual_models:
+        # Residual without ADP is not on total scale — refuse rather than mis-scale
+        raise ValueError(
+            f"Dynasty model for {position} needs ff_adp + ff_adp_rank (or a direct fallback)."
+        )
+
+    available = sorted(set(residual_models) | set(direct_models))
+    raise ValueError(f"No trained dynasty model for position {position}. Available: {available}")
 
 
 COMPOSITE_DISPLAY_NAMES: dict[str, str] = {
@@ -866,6 +1238,7 @@ def explain_prediction(
     *,
     predicted: float | None = None,
     bundle: dict | None = None,
+    mode: str | AnalysisMode | None = None,
     top_n: int = 8,
     baseline: float = TYPICAL_COMPOSITE_BASELINE,
 ) -> list[dict[str, Any]]:
@@ -875,18 +1248,41 @@ def explain_prediction(
     For each populated composite used by the position model, re-predict with that
     feature set to a typical baseline (default 0 = position-average composite).
     Positive delta_ppr means the player's value raised the forecast vs typical.
+
+    Legacy ADP-residual dynasty bundles explain on the total (ADP + residual) scale.
     """
-    bundle = bundle or load_model_bundle()
+    analysis = _resolve_analysis_mode(mode, bundle)
+    bundle = bundle or load_model_bundle(analysis)
+    is_residual = bundle.get("model_type") == "position_specific_adp_residual"
+
+    row = composites_row.copy()
+    if is_residual:
+        row = _apply_cfb_gate(row)
+
     models = bundle.get("models_by_position", {})
+    direct_models = bundle.get("direct_fallback_models_by_position", {}) or {}
     feature_cols_map = bundle.get("feature_cols_by_position", {})
-    if position not in models:
-        return []
 
-    feature_cols = list(feature_cols_map.get(position) or _position_feature_cols(position))
-    model = models[position]
-    X_base = _feature_matrix(composites_row, feature_cols)
-    base_pred = float(predicted) if predicted is not None else float(model.predict(X_base)[0])
+    if is_residual:
+        if position not in models and position not in direct_models:
+            return []
+        feature_cols = list(
+            feature_cols_map.get(position)
+            or _position_feature_cols_dynasty(position, list(row.columns))
+        )
+        if predicted is not None:
+            base_pred = float(predicted)
+        else:
+            base_pred, _, _ = _predict_adp_residual_row(row, position, bundle)
+    else:
+        if position not in models:
+            return []
+        feature_cols = list(feature_cols_map.get(position) or _position_feature_cols(position))
+        model = models[position]
+        X_base = _feature_matrix(row, feature_cols)
+        base_pred = float(predicted) if predicted is not None else float(model.predict(X_base)[0])
 
+    X_base = _feature_matrix(row, feature_cols)
     drivers: list[dict[str, Any]] = []
     for col in feature_cols:
         if col not in X_base.columns:
@@ -897,9 +1293,14 @@ def explain_prediction(
         # Skip near-typical values — impact is noise at the baseline
         if abs(float(val) - float(baseline)) < 1e-9:
             continue
-        X_alt = X_base.copy()
-        X_alt.iloc[0, X_alt.columns.get_loc(col)] = float(baseline)
-        alt_pred = float(model.predict(X_alt)[0])
+        alt_row = row.copy()
+        alt_row[col] = float(baseline)
+
+        if is_residual:
+            alt_pred, _, _ = _predict_adp_residual_row(alt_row, position, bundle)
+        else:
+            X_alt = _feature_matrix(alt_row, feature_cols)
+            alt_pred = float(models[position].predict(X_alt)[0])
         delta = base_pred - alt_pred
         drivers.append(
             {
@@ -924,59 +1325,170 @@ def predict_from_composites(
     position: str,
     bundle: dict | None = None,
     percentile_lookup: dict[str, list[float]] | None = None,
+    mode: str | AnalysisMode | None = None,
 ) -> pd.DataFrame:
-    bundle = bundle or load_model_bundle()
+    analysis = _resolve_analysis_mode(mode, bundle)
+    bundle = bundle or load_model_bundle(analysis)
     if percentile_lookup is None:
-        percentile_lookup = json.loads((MODELS_DIR / PERCENTILE_FILE).read_text(encoding="utf-8"))
+        percentile_lookup = _load_percentile_lookup_for_mode(analysis)
 
     row = composites_row.copy()
-    models = bundle.get("models_by_position", {})
+    is_residual = bundle.get("model_type") == "position_specific_adp_residual"
     feature_cols_map = bundle.get("feature_cols_by_position", {})
 
-    if position not in models:
-        raise ValueError(f"No trained model for position {position}. Available: {list(models)}")
-
-    feature_cols = feature_cols_map.get(position, _position_feature_cols(position))
-    model = models[position]
-    X = _feature_matrix(row, feature_cols)
-
-    pred = float(model.predict(X)[0])
-    row["predicted_median"] = pred
-
-    q_models = (bundle.get("quantile_models_by_position") or {}).get(position)
-    conf = (bundle.get("conformal_by_position") or {}).get(position)
-    if q_models and conf:
-        # 80% CQR band (model uncertainty metadata)
-        cqr_low, cqr_high, q_lo, q_hi = _cqr_interval_row(
-            X, q_models["lo"], q_models["hi"], float(conf["q_hat"])
+    if is_residual:
+        row = _apply_cfb_gate(row)
+        residual_models = bundle.get("models_by_position", {})
+        direct_models = bundle.get("direct_fallback_models_by_position", {}) or {}
+        if position not in residual_models and position not in direct_models:
+            available = sorted(set(residual_models) | set(direct_models))
+            raise ValueError(
+                f"No trained model for position {position}. Available: {available}"
+            )
+        feature_cols = list(
+            feature_cols_map.get(position)
+            or _position_feature_cols_dynasty(position, list(row.columns))
         )
-        row["cqr_low"] = cqr_low
-        row["cqr_high"] = cqr_high
-        row["ppr_low"] = cqr_low  # back-compat
-        row["ppr_high"] = cqr_high
-        row["quantile_lo"] = q_lo
-        row["quantile_hi"] = q_hi
-        row["cqr_alpha"] = float(conf.get("alpha", CQR_ALPHA))
-        row["cqr_q_hat"] = float(conf["q_hat"])
+        X = _feature_matrix(row, feature_cols)
+        pred, adp_exp, residual = _predict_adp_residual_row(row, position, bundle)
+        row["predicted_median"] = pred
+        if np.isfinite(adp_exp):
+            row[ADP_EXPECTED_COL] = adp_exp
+        if np.isfinite(residual):
+            row["predicted_dynasty_residual"] = residual
 
-        # Predictive IQR from error model: 25% chance below q25, 25% above q75
-        if "q25" in q_models and "q75" in q_models:
-            pq25 = float(q_models["q25"].predict(X)[0])
-            pq75 = float(q_models["q75"].predict(X)[0])
-        else:
-            pq25 = pred + float(conf.get("residual_q25", 0.0))
-            pq75 = pred + float(conf.get("residual_q75", 0.0))
-        if pq25 > pq75:
-            pq25, pq75 = pq75, pq25
-        row["predictive_q25"] = pq25
-        row["predictive_q75"] = pq75
-        pred = _clamp_pred_to_iqr(pred, pq25, pq75)
-        # By definition of predictive quartiles
-        row["bust_chance_pct"] = 25.0
-        row["boom_chance_pct"] = 25.0
+        q_models = (bundle.get("quantile_models_by_position") or {}).get(position)
+        conf = (bundle.get("conformal_by_position") or {}).get(position)
+        # Quantile/CQR models are fit on residual scale; shift by ADP expected for totals
+        if q_models and conf and np.isfinite(adp_exp):
+            cqr_low_res, cqr_high_res, q_lo, q_hi = _cqr_interval_row(
+                X, q_models["lo"], q_models["hi"], float(conf["q_hat"])
+            )
+            cqr_low = adp_exp + cqr_low_res
+            cqr_high = adp_exp + cqr_high_res
+            row["cqr_low"] = cqr_low
+            row["cqr_high"] = cqr_high
+            row["ppr_low"] = cqr_low
+            row["ppr_high"] = cqr_high
+            row["quantile_lo"] = adp_exp + q_lo
+            row["quantile_hi"] = adp_exp + q_hi
+            row["cqr_alpha"] = float(conf.get("alpha", CQR_ALPHA))
+            row["cqr_q_hat"] = float(conf["q_hat"])
+
+            if "q25" in q_models and "q75" in q_models:
+                pq25 = adp_exp + float(q_models["q25"].predict(X)[0])
+                pq75 = adp_exp + float(q_models["q75"].predict(X)[0])
+            else:
+                pq25 = pred + float(conf.get("residual_q25", 0.0))
+                pq75 = pred + float(conf.get("residual_q75", 0.0))
+            if pq25 > pq75:
+                pq25, pq75 = pq75, pq25
+            row["predictive_q25"] = pq25
+            row["predictive_q75"] = pq75
+            pred = _clamp_pred_to_iqr(pred, pq25, pq75)
+            row["bust_chance_pct"] = 25.0
+            row["boom_chance_pct"] = 25.0
+    else:
+        models = bundle.get("models_by_position", {})
+        if position not in models:
+            raise ValueError(
+                f"No trained model for position {position}. Available: {list(models)}"
+            )
+
+        feature_cols = feature_cols_map.get(position, _position_feature_cols(position))
+        model = models[position]
+        X = _feature_matrix(row, feature_cols)
+
+        pred = float(model.predict(X)[0])
+        row["predicted_median"] = pred
+
+        q_models = (bundle.get("quantile_models_by_position") or {}).get(position)
+        conf = (bundle.get("conformal_by_position") or {}).get(position)
+        if q_models and conf:
+            # 80% CQR band (model uncertainty metadata)
+            cqr_low, cqr_high, q_lo, q_hi = _cqr_interval_row(
+                X, q_models["lo"], q_models["hi"], float(conf["q_hat"])
+            )
+            row["cqr_low"] = cqr_low
+            row["cqr_high"] = cqr_high
+            row["ppr_low"] = cqr_low  # back-compat
+            row["ppr_high"] = cqr_high
+            row["quantile_lo"] = q_lo
+            row["quantile_hi"] = q_hi
+            row["cqr_alpha"] = float(conf.get("alpha", CQR_ALPHA))
+            row["cqr_q_hat"] = float(conf["q_hat"])
+
+            # Predictive IQR from error model: 25% chance below q25, 25% above q75
+            if "q25" in q_models and "q75" in q_models:
+                pq25 = float(q_models["q25"].predict(X)[0])
+                pq75 = float(q_models["q75"].predict(X)[0])
+            else:
+                pq25 = pred + float(conf.get("residual_q25", 0.0))
+                pq75 = pred + float(conf.get("residual_q75", 0.0))
+            if pq25 > pq75:
+                pq25, pq75 = pq75, pq25
+            row["predictive_q25"] = pq25
+            row["predictive_q75"] = pq75
+            pred = _clamp_pred_to_iqr(pred, pq25, pq75)
+            # By definition of predictive quartiles
+            row["bust_chance_pct"] = 25.0
+            row["boom_chance_pct"] = 25.0
 
     score = _to_success_score(pred, position, percentile_lookup)
-    row["predicted_rookie_ppr"] = pred
-    row["success_score_0_100"] = score
+    row[analysis.predicted_col] = pred
+    row[analysis.success_score_col] = score
+    # Stable aliases for callers that still expect redraft column names
+    row["predicted_points"] = pred
+    row["success_score"] = score
+    if analysis.name == "redraft":
+        row["predicted_rookie_ppr"] = pred
+        row["success_score_0_100"] = score
+    else:
+        # Keep redraft-named aliases so older UI helpers keep working
+        row["predicted_rookie_ppr"] = pred
+        row["success_score_0_100"] = score
+        year_break = _predict_year_breakdown(row, position, bundle, total=float(pred))
+        for k, v in year_break.items():
+            row[k] = v
 
     return row
+
+
+if __name__ == "__main__":
+    import sys
+
+    from rookie_ppr.config import OUTPUT_DIR
+
+    mode = (sys.argv[1] if len(sys.argv) > 1 else "dynasty").strip().lower()
+    if mode != "dynasty":
+        raise SystemExit("Usage: python -m rookie_ppr.model_score dynasty")
+
+    master_path = OUTPUT_DIR / "players_master.csv"
+    if not master_path.exists():
+        raise SystemExit(f"Missing {master_path}; run compile first or point at master CSV.")
+
+    master_df = pd.read_csv(master_path)
+    redraft_mtime = None
+    redraft_metrics = MODELS_DIR / METRICS_FILE
+    if redraft_metrics.exists():
+        redraft_mtime = redraft_metrics.stat().st_mtime
+
+    ml_dyn, _, dyn_metrics = train_and_score_dynasty(master_df)
+    hold_r = dyn_metrics.get("holdout_pearson_r")
+    by_pos = (dyn_metrics.get("holdout") or {}).get("by_position") or dyn_metrics.get("holdout_by_position") or {}
+    print(f"Dynasty holdout total r: {hold_r}")
+    print(f"WR holdout r: {(by_pos.get('WR') or {}).get('pearson_r')}")
+    for name, block in (dyn_metrics.get("year_targets") or {}).items():
+        print(f"Year {name}: r={block.get('pearson_r')} mae={block.get('mae')} n={block.get('n')}")
+    ecr = dyn_metrics.get("ecr") or {}
+    print(f"ECR matched: {ecr.get('n_matched')} / loaded={ecr.get('loaded')} err={ecr.get('error')}")
+    print(f"ml_features rows: {len(ml_dyn)}")
+
+    if redraft_mtime is not None and redraft_metrics.exists():
+        unchanged = abs(redraft_metrics.stat().st_mtime - redraft_mtime) < 1e-6
+        print(f"Redraft model_metrics.json mtime unchanged: {unchanged}")
+        try:
+            redraft = json.loads(redraft_metrics.read_text(encoding="utf-8"))
+            print(f"Redraft holdout_pearson_r: {redraft.get('holdout_pearson_r')}")
+        except Exception as exc:  # noqa: BLE001
+            print(f"Could not read redraft metrics: {exc}")

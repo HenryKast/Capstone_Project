@@ -165,6 +165,56 @@ def load_player_season_stats(seasons: list[int]) -> pd.DataFrame:
     return weekly
 
 
+def _ppr_series(stats: pd.DataFrame) -> pd.Series:
+    """Season PPR from fantasy_points_ppr or counting-stat fallback."""
+    if "fantasy_points_ppr" in stats.columns:
+        return pd.to_numeric(stats["fantasy_points_ppr"], errors="coerce")
+
+    def col(name: str, default: float = 0.0) -> pd.Series:
+        if name in stats.columns:
+            return pd.to_numeric(stats[name], errors="coerce").fillna(0)
+        return pd.Series(default, index=stats.index)
+
+    return (
+        col("receptions")
+        + col("rushing_yards") / 10.0
+        + col("receiving_yards") / 10.0
+        + col("passing_yards") / 25.0
+        + col("rushing_tds") * 6.0
+        + col("receiving_tds") * 6.0
+        + col("passing_tds") * 4.0
+        - col("interceptions") * 2.0
+        - col("rushing_fumbles_lost") * 2.0
+        - col("receiving_fumbles_lost") * 2.0
+    )
+
+
+def _season_ppr_frame(stats: pd.DataFrame) -> pd.DataFrame:
+    """Per-player, per-season PPR and games for dynasty windowing."""
+    if stats.empty:
+        return pd.DataFrame(columns=["gsis_id", "season", "ppr", "games"])
+
+    id_col = next((c for c in ("player_id", "gsis_id", "gsisId") if c in stats.columns), None)
+    if id_col is None or "season" not in stats.columns:
+        return pd.DataFrame(columns=["gsis_id", "season", "ppr", "games"])
+
+    s = stats.copy()
+    s["ppr"] = _ppr_series(s)
+    games_col = next((c for c in ("games", "season_games", "games_played") if c in s.columns), None)
+    if games_col:
+        s["games"] = pd.to_numeric(s[games_col], errors="coerce")
+    else:
+        s["games"] = pd.NA
+
+    out = s[[id_col, "season", "ppr", "games"]].copy()
+    if id_col != "gsis_id":
+        out = out.rename(columns={id_col: "gsis_id"})
+    out["season"] = pd.to_numeric(out["season"], errors="coerce")
+    out["ppr"] = pd.to_numeric(out["ppr"], errors="coerce")
+    out["games"] = pd.to_numeric(out["games"], errors="coerce")
+    return out.dropna(subset=["gsis_id", "season"]).sort_values(["gsis_id", "season"])
+
+
 def build_rookie_fantasy(draft: pd.DataFrame, stats: pd.DataFrame, rosters: pd.DataFrame) -> pd.DataFrame:
     """Compute PPR for each player's first NFL season."""
     if draft.empty:
@@ -203,26 +253,7 @@ def build_rookie_fantasy(draft: pd.DataFrame, stats: pd.DataFrame, rosters: pd.D
         return fantasy
 
     s = stats.copy()
-    if "fantasy_points_ppr" in s.columns:
-        s["ppr"] = pd.to_numeric(s["fantasy_points_ppr"], errors="coerce")
-    else:
-        def col(name: str, default: float = 0.0) -> pd.Series:
-            if name in s.columns:
-                return pd.to_numeric(s[name], errors="coerce").fillna(0)
-            return pd.Series(default, index=s.index)
-
-        s["ppr"] = (
-            col("receptions")
-            + col("rushing_yards") / 10.0
-            + col("receiving_yards") / 10.0
-            + col("passing_yards") / 25.0
-            + col("rushing_tds") * 6.0
-            + col("receiving_tds") * 6.0
-            + col("passing_tds") * 4.0
-            - col("interceptions") * 2.0
-            - col("rushing_fumbles_lost") * 2.0
-            - col("receiving_fumbles_lost") * 2.0
-        )
+    s["ppr"] = _ppr_series(s)
 
     games_col = next((c for c in ("games", "season_games", "games_played") if c in s.columns), None)
     if "season" not in s.columns:
@@ -256,6 +287,83 @@ def build_rookie_fantasy(draft: pd.DataFrame, stats: pd.DataFrame, rosters: pd.D
         ascending=False, method="min"
     )
     return merged
+
+
+def build_dynasty_fantasy(
+    fantasy: pd.DataFrame,
+    stats: pd.DataFrame,
+    *,
+    years: int = 3,
+) -> pd.DataFrame:
+    """
+    First N NFL seasons of PPR (Y1..YN) plus dynasty aggregates.
+
+    Anchored on first_stat_season from the redraft fantasy table. Aggregate targets
+    (total / avg_season / avg_game) are null unless all N seasons are observed.
+    Does not modify rookie_ppr columns.
+    """
+    if fantasy.empty:
+        return pd.DataFrame()
+
+    out = fantasy.copy()
+    for i in range(1, years + 1):
+        out[f"ppr_y{i}"] = pd.NA
+        out[f"games_y{i}"] = pd.NA
+
+    empty_aggs = {
+        "dynasty_seasons_observed": 0,
+        "dynasty_seasons_complete": 0,
+        "dynasty_ppr_y1_y3_total": pd.NA,
+        "dynasty_ppr_y1_y3_avg_season": pd.NA,
+        "dynasty_ppr_y1_y3_avg_game": pd.NA,
+        "dynasty_games_y1_y3": pd.NA,
+    }
+    if "first_stat_season" not in out.columns or "gsis_id" not in out.columns:
+        for k, v in empty_aggs.items():
+            out[k] = v
+        return out
+
+    season_stats = _season_ppr_frame(stats)
+    debut = pd.to_numeric(out["first_stat_season"], errors="coerce")
+    draft = (
+        pd.to_numeric(out["draft_year"], errors="coerce")
+        if "draft_year" in out.columns
+        else pd.Series(pd.NA, index=out.index)
+    )
+    valid_debut = debut.isna() | (debut <= draft + 1)
+
+    if not season_stats.empty:
+        season_stats = (
+            season_stats.groupby(["gsis_id", "season"], as_index=False)
+            .agg(ppr=("ppr", "sum"), games=("games", "sum"))
+        )
+        for i in range(1, years + 1):
+            keys = pd.DataFrame(
+                {
+                    "gsis_id": out["gsis_id"],
+                    "season": debut + (i - 1),
+                },
+                index=out.index,
+            )
+            keys.loc[~valid_debut, "season"] = pd.NA
+            merged = keys.merge(season_stats, on=["gsis_id", "season"], how="left")
+            out[f"ppr_y{i}"] = merged["ppr"].to_numpy()
+            out[f"games_y{i}"] = merged["games"].to_numpy()
+
+    ppr_cols = [f"ppr_y{i}" for i in range(1, years + 1)]
+    games_cols = [f"games_y{i}" for i in range(1, years + 1)]
+    observed = out[ppr_cols].notna().sum(axis=1)
+    out["dynasty_seasons_observed"] = observed.astype(int)
+    out["dynasty_seasons_complete"] = (observed == years).astype(int)
+
+    total = out[ppr_cols].sum(axis=1, min_count=years)
+    games_total = out[games_cols].sum(axis=1, min_count=1)
+    complete = out["dynasty_seasons_complete"] == 1
+    out["dynasty_ppr_y1_y3_total"] = total.where(complete)
+    out["dynasty_ppr_y1_y3_avg_season"] = (total / years).where(complete)
+    out["dynasty_games_y1_y3"] = games_total.where(complete)
+    out["dynasty_ppr_y1_y3_avg_game"] = (total / games_total.replace({0: pd.NA})).where(complete)
+    return out
 
 
 def load_combine() -> pd.DataFrame:

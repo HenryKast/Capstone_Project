@@ -18,6 +18,7 @@ from rookie_ppr.features_sos import compute_team_sos
 from rookie_ppr.ingest_college import load_college_production
 from rookie_ppr.ingest_fantasypros_adp import load_fantasypros_adp
 from rookie_ppr.ingest_nfl import (
+    build_dynasty_fantasy,
     build_rookie_fantasy,
     load_combine,
     load_draft_picks,
@@ -79,6 +80,13 @@ def main(fetch_on3: bool = False) -> int:
     fantasy = build_rookie_fantasy(draft, stats, rosters)
     print(f"  fantasy rows: {len(fantasy)}")
 
+    print("Building dynasty fantasy targets (Y1–Y3, parallel to redraft) ...")
+    from rookie_ppr.config import DYNASTY_YEARS
+
+    dynasty = build_dynasty_fantasy(fantasy, stats, years=DYNASTY_YEARS)
+    n_complete = int(pd.to_numeric(dynasty.get("dynasty_seasons_complete"), errors="coerce").fillna(0).sum()) if not dynasty.empty else 0
+    print(f"  dynasty rows: {len(dynasty)}, complete Y1–Y3: {n_complete}")
+
     print("Loading recruiting CSVs (if present) ...")
     recruiting = load_recruiting()
     print(f"  recruiting rows: {len(recruiting)}")
@@ -132,6 +140,7 @@ def main(fetch_on3: bool = False) -> int:
         college=college,
         ff_rankings=ff_rankings,
         incumbent=incumbent,
+        dynasty=dynasty,
     )
     master_n = len(tables.get("players_master", []))
     print(f"  players_master rows: {master_n}")
@@ -139,6 +148,13 @@ def main(fetch_on3: bool = False) -> int:
     print("Running redraft correlation analysis ...")
     master = tables.get("players_master", pd.DataFrame())
     if not master.empty:
+        from rookie_ppr.analyze_trajectory import build_dynasty_trajectory
+
+        trajectory = build_dynasty_trajectory(master)
+        tables["dynasty_trajectory"] = trajectory
+        n_late = int(trajectory["late_bloomer_y3"].sum()) if not trajectory.empty and "late_bloomer_y3" in trajectory.columns else 0
+        print(f"  dynasty_trajectory rows: {len(trajectory)}, late_bloomer_y3: {n_late}")
+
         analysis = run_correlation_analysis(master)
         tables.update(analysis)
         tables["group_averages"] = build_group_averages(master)
@@ -150,6 +166,8 @@ def main(fetch_on3: bool = False) -> int:
                 {"sheet": "strongest_factors", "column": "*", "description": "Factors ranked by impact on rookie PPR success", "source": "analyze_correlation"},
                 {"sheet": "dataset_correlation", "column": "*", "description": "Dataset-block correlation scores vs rookie PPR", "source": "analyze_correlation"},
                 {"sheet": "group_averages", "column": "*", "description": "Mean rookie PPR by position, round, recruiting band, etc.", "source": "analyze_groups"},
+                {"sheet": "fantasy_dynasty", "column": "*", "description": "Y1–Y3 PPR outcomes for dynasty mode (aggregates require complete windows)", "source": "ingest_nfl.build_dynasty_fantasy"},
+                {"sheet": "dynasty_trajectory", "column": "*", "description": "Within-class year ranks and late-bloomer flags (dynasty exploration)", "source": "analyze_trajectory"},
             ]
         )
         tables["data_dictionary"] = pd.concat([dd, extra], ignore_index=True)
@@ -197,6 +215,50 @@ def main(fetch_on3: bool = False) -> int:
             ]
         )
         tables["data_dictionary"] = pd.concat([dd, ml_dd], ignore_index=True)
+
+        print("Training dynasty ML scorer (Y1–Y3 total) ...")
+        from rookie_ppr.model_score import train_and_score_dynasty
+
+        ml_features_dynasty, composite_corr_dynasty, dynasty_metrics = train_and_score_dynasty(master)
+        tables["ml_features_dynasty"] = ml_features_dynasty
+        tables["composite_correlation_dynasty"] = composite_corr_dynasty
+        if dynasty_metrics:
+            holdout_r = dynasty_metrics.get("holdout_pearson_r", "n/a")
+            print(
+                f"  Dynasty train rows: {dynasty_metrics.get('train_rows')}, "
+                f"holdout r: {holdout_r}, holdout MAE: {dynasty_metrics.get('holdout_mae', 'n/a')}"
+            )
+            by_pos = (dynasty_metrics.get("holdout") or {}).get("by_position") or dynasty_metrics.get(
+                "holdout_by_position"
+            ) or {}
+            if by_pos:
+                parts = [
+                    f"{pos} r={pos_stats.get('pearson_r')} MAE={pos_stats.get('mae')} n={pos_stats.get('n')}"
+                    for pos, pos_stats in sorted(by_pos.items())
+                ]
+                print(f"  Dynasty holdout by position: {'; '.join(parts)}")
+            for yt, block in (dynasty_metrics.get("year_targets") or {}).items():
+                print(
+                    f"  Dynasty {yt}: r={block.get('pearson_r')} MAE={block.get('mae')} n={block.get('n')}"
+                )
+        dd = tables.get("data_dictionary", pd.DataFrame())
+        dynasty_dd = pd.DataFrame(
+            [
+                {
+                    "sheet": "ml_features_dynasty",
+                    "column": "*",
+                    "description": "Dynasty composite scores + predicted Y1–Y3 PPR total + success score",
+                    "source": "model_score.train_and_score_dynasty",
+                },
+                {
+                    "sheet": "composite_correlation_dynasty",
+                    "column": "*",
+                    "description": "Composite score correlation vs dynasty Y1–Y3 PPR total",
+                    "source": "model_score.train_and_score_dynasty",
+                },
+            ]
+        )
+        tables["data_dictionary"] = pd.concat([dd, dynasty_dd], ignore_index=True)
 
         incoming = build_incoming_rookies_sheet(master, ml_features)
         tables[f"incoming_rookies_{INCOMING_DRAFT_YEAR}"] = incoming
