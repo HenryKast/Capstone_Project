@@ -1,0 +1,11 @@
+# Render Blueprint — connect this repo and deploy the ForeKast API.
+# Dashboard: https://dashboard.render.com → New → Blueprint
+services:
+  - type: web
+    name: nerds-united-forekast-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: "8000"

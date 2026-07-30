@@ -64,6 +64,11 @@ python -m rookie_ppr.ui --mode dynasty  # start on Dynasty tab
 python -m rookie_ppr.compile            # refresh data + retrain redraft (+ dynasty sheets/models)
 python -m rookie_ppr.model_score dynasty  # retrain dynasty only
 python -m rookie_ppr.score --position WR --draft-overall 4 --ff-adp 61.5
+
+# ForeKast API (weekly playoff/title odds + injuries/trades for the league site)
+python -m rookie_ppr.api
+# Open http://127.0.0.1:8000/docs — contract: docs/FOREKAST_API.md
+# Hosting: docs/HOSTING.md (Render/Railway + what to send the website owner)
 ```
 
 ---

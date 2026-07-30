@@ -1,0 +1,14 @@
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.cursor/
+.git/
+**/__pycache__/
+*.pyc
+data/raw/
+data/manual/
+*.pdf
+scripts/_tmp_*
+_git_status.txt
