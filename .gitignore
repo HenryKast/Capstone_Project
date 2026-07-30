@@ -15,27 +15,38 @@ build/
 .mypy_cache/
 .ruff_cache/
 
-# IDE / OS
+# IDE / OS / local tooling
 .idea/
 .vscode/
+.cursor/
 *.swp
 .DS_Store
 Thumbs.db
+_git_status.txt
 
-# Secrets / local env
+# Secrets / local env (CFBD key, ESPN cookies — never commit)
 .env
 .env.*
 !.env.example
 
-# Downloaded caches (regenerable)
+# Auth-backed ESPN raw cache (private league payloads). Compiled league CSVs
+# under data/output/csv/ are the portable artifacts and are tracked instead.
+data/raw/espn_cache/
+
+# Regenerable download caches
 data/raw/nflverse_cache/
 data/raw/cfbd_cache/
 data/raw/nfl_com/
 
-# Large model artifacts (later phase)
-data/output/models/
+# Local scratch / one-off scripts (not part of the product)
+scripts/_tmp_*.py
+data/output/csv/_*.json
+*_tmp_*.json
+league_finish_proj_vs_actual.pdf
 
-# Keep output structure, ignore generated data dumps if desired:
-# Uncomment the next two lines if you do not want compiled outputs in git:
-# data/output/*.xlsx
-# data/output/csv/
+# Trained models and compiled data sheets ARE tracked so clones can run
+# without retraining or a full recompile. Do not ignore:
+#   data/output/models/
+#   data/output/csv/
+#   data/output/*.xlsx
+#   data/output/*.csv

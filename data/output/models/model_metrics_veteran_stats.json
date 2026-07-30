@@ -1,0 +1,384 @@
+{
+  "model_type": "veteran_component_stats",
+  "targets": [
+    "passing_yards_next",
+    "passing_tds_next",
+    "interceptions_next",
+    "carries_next",
+    "rushing_yards_next",
+    "rushing_tds_next",
+    "targets_next",
+    "receptions_next",
+    "receiving_yards_next",
+    "receiving_tds_next",
+    "fumbles_lost_next",
+    "games_next"
+  ],
+  "holdout_target_seasons": [
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "by_position": {
+    "QB": {
+      "passing_yards_next": {
+        "n_train": 618,
+        "n_holdout": 258,
+        "holdout_pearson_r": 0.7072,
+        "holdout_mae": 876.065,
+        "holdout_mean_actual": 1713.43,
+        "holdout_mean_pred": 1815.84
+      },
+      "passing_tds_next": {
+        "n_train": 618,
+        "n_holdout": 258,
+        "holdout_pearson_r": 0.6797,
+        "holdout_mae": 6.283,
+        "holdout_mean_actual": 10.78,
+        "holdout_mean_pred": 11.96
+      },
+      "interceptions_next": {
+        "n_train": 618,
+        "n_holdout": 258,
+        "holdout_pearson_r": 0.5542,
+        "holdout_mae": 3.133,
+        "holdout_mean_actual": 5.36,
+        "holdout_mean_pred": 5.27
+      },
+      "carries_next": {
+        "n_train": 618,
+        "n_holdout": 258,
+        "holdout_pearson_r": 0.7456,
+        "holdout_mae": 15.674,
+        "holdout_mean_actual": 30.89,
+        "holdout_mean_pred": 30.29
+      },
+      "rushing_yards_next": {
+        "n_train": 618,
+        "n_holdout": 258,
+        "holdout_pearson_r": 0.7254,
+        "holdout_mae": 86.868,
+        "holdout_mean_actual": 135.35,
+        "holdout_mean_pred": 142.18
+      },
+      "rushing_tds_next": {
+        "n_train": 618,
+        "n_holdout": 258,
+        "holdout_pearson_r": 0.5798,
+        "holdout_mae": 1.287,
+        "holdout_mean_actual": 1.44,
+        "holdout_mean_pred": 1.47
+      },
+      "targets_next": {
+        "n_train": 618,
+        "n_holdout": 258,
+        "holdout_pearson_r": 0.0847,
+        "holdout_mae": 0.511,
+        "holdout_mean_actual": 0.31,
+        "holdout_mean_pred": 0.28
+      },
+      "receptions_next": {
+        "n_train": 618,
+        "n_holdout": 258,
+        "holdout_pearson_r": 0.0706,
+        "holdout_mae": 0.399,
+        "holdout_mean_actual": 0.24,
+        "holdout_mean_pred": 0.19
+      },
+      "receiving_yards_next": {
+        "n_train": 618,
+        "n_holdout": 258,
+        "holdout_pearson_r": 0.0324,
+        "holdout_mae": 3.357,
+        "holdout_mean_actual": 1.68,
+        "holdout_mean_pred": 1.5
+      },
+      "receiving_tds_next": {
+        "skipped": "rare for position",
+        "nonzero_share": 0.0162,
+        "constant": 0.024
+      },
+      "fumbles_lost_next": {
+        "n_train": 618,
+        "n_holdout": 258,
+        "holdout_pearson_r": 0.322,
+        "holdout_mae": 1.292,
+        "holdout_mean_actual": 1.5,
+        "holdout_mean_pred": 1.58
+      },
+      "games_next": {
+        "n_train": 618,
+        "n_holdout": 258,
+        "holdout_pearson_r": 0.6412,
+        "holdout_mae": 3.385,
+        "holdout_mean_actual": 8.67,
+        "holdout_mean_pred": 8.58
+      }
+    },
+    "RB": {
+      "passing_yards_next": {
+        "skipped": "rare for position",
+        "nonzero_share": 0.0136,
+        "constant": 0.248
+      },
+      "passing_tds_next": {
+        "skipped": "rare for position",
+        "nonzero_share": 0.0052,
+        "constant": 0.005
+      },
+      "interceptions_next": {
+        "skipped": "rare for position",
+        "nonzero_share": 0.0031,
+        "constant": 0.003
+      },
+      "carries_next": {
+        "n_train": 958,
+        "n_holdout": 453,
+        "holdout_pearson_r": 0.744,
+        "holdout_mae": 45.826,
+        "holdout_mean_actual": 86.6,
+        "holdout_mean_pred": 85.32
+      },
+      "rushing_yards_next": {
+        "n_train": 958,
+        "n_holdout": 453,
+        "holdout_pearson_r": 0.7114,
+        "holdout_mae": 216.007,
+        "holdout_mean_actual": 373.24,
+        "holdout_mean_pred": 380.42
+      },
+      "rushing_tds_next": {
+        "n_train": 958,
+        "n_holdout": 453,
+        "holdout_pearson_r": 0.5979,
+        "holdout_mae": 2.139,
+        "holdout_mean_actual": 2.75,
+        "holdout_mean_pred": 3.06
+      },
+      "targets_next": {
+        "n_train": 958,
+        "n_holdout": 453,
+        "holdout_pearson_r": 0.6826,
+        "holdout_mae": 13.092,
+        "holdout_mean_actual": 23.21,
+        "holdout_mean_pred": 24.94
+      },
+      "receptions_next": {
+        "n_train": 958,
+        "n_holdout": 453,
+        "holdout_pearson_r": 0.6853,
+        "holdout_mae": 10.279,
+        "holdout_mean_actual": 18.12,
+        "holdout_mean_pred": 19.34
+      },
+      "receiving_yards_next": {
+        "n_train": 958,
+        "n_holdout": 453,
+        "holdout_pearson_r": 0.6448,
+        "holdout_mae": 87.164,
+        "holdout_mean_actual": 133.8,
+        "holdout_mean_pred": 151.05
+      },
+      "receiving_tds_next": {
+        "n_train": 958,
+        "n_holdout": 453,
+        "holdout_pearson_r": 0.3847,
+        "holdout_mae": 0.839,
+        "holdout_mean_actual": 0.7,
+        "holdout_mean_pred": 0.78
+      },
+      "fumbles_lost_next": {
+        "n_train": 958,
+        "n_holdout": 453,
+        "holdout_pearson_r": 0.4004,
+        "holdout_mae": 0.573,
+        "holdout_mean_actual": 0.46,
+        "holdout_mean_pred": 0.55
+      },
+      "games_next": {
+        "n_train": 958,
+        "n_holdout": 453,
+        "holdout_pearson_r": 0.4884,
+        "holdout_mae": 4.078,
+        "holdout_mean_actual": 10.24,
+        "holdout_mean_pred": 10.01
+      }
+    },
+    "WR": {
+      "passing_yards_next": {
+        "n_train": 1214,
+        "n_holdout": 664,
+        "holdout_pearson_r": -0.0306,
+        "holdout_mae": 3.825,
+        "holdout_mean_actual": 0.42,
+        "holdout_mean_pred": 3.47
+      },
+      "passing_tds_next": {
+        "skipped": "rare for position",
+        "nonzero_share": 0.0255,
+        "constant": 0.032
+      },
+      "interceptions_next": {
+        "skipped": "rare for position",
+        "nonzero_share": 0.0049,
+        "constant": 0.013
+      },
+      "carries_next": {
+        "n_train": 1214,
+        "n_holdout": 664,
+        "holdout_pearson_r": 0.4466,
+        "holdout_mae": 2.318,
+        "holdout_mean_actual": 2.01,
+        "holdout_mean_pred": 2.23
+      },
+      "rushing_yards_next": {
+        "n_train": 1214,
+        "n_holdout": 664,
+        "holdout_pearson_r": 0.3519,
+        "holdout_mae": 15.341,
+        "holdout_mean_actual": 11.11,
+        "holdout_mean_pred": 13.26
+      },
+      "rushing_tds_next": {
+        "skipped": "rare for position",
+        "nonzero_share": 0.0478,
+        "constant": 0.068
+      },
+      "targets_next": {
+        "n_train": 1214,
+        "n_holdout": 664,
+        "holdout_pearson_r": 0.7936,
+        "holdout_mae": 22.601,
+        "holdout_mean_actual": 50.63,
+        "holdout_mean_pred": 56.36
+      },
+      "receptions_next": {
+        "n_train": 1214,
+        "n_holdout": 664,
+        "holdout_pearson_r": 0.7856,
+        "holdout_mae": 15.115,
+        "holdout_mean_actual": 32.25,
+        "holdout_mean_pred": 35.52
+      },
+      "receiving_yards_next": {
+        "n_train": 1214,
+        "n_holdout": 664,
+        "holdout_pearson_r": 0.7832,
+        "holdout_mae": 197.884,
+        "holdout_mean_actual": 406.87,
+        "holdout_mean_pred": 452.91
+      },
+      "receiving_tds_next": {
+        "n_train": 1214,
+        "n_holdout": 664,
+        "holdout_pearson_r": 0.6731,
+        "holdout_mae": 1.672,
+        "holdout_mean_actual": 2.44,
+        "holdout_mean_pred": 2.83
+      },
+      "fumbles_lost_next": {
+        "n_train": 1214,
+        "n_holdout": 664,
+        "holdout_pearson_r": 0.1956,
+        "holdout_mae": 0.31,
+        "holdout_mean_actual": 0.19,
+        "holdout_mean_pred": 0.21
+      },
+      "games_next": {
+        "n_train": 1214,
+        "n_holdout": 664,
+        "holdout_pearson_r": 0.5482,
+        "holdout_mae": 3.621,
+        "holdout_mean_actual": 10.53,
+        "holdout_mean_pred": 10.37
+      }
+    },
+    "TE": {
+      "passing_yards_next": {
+        "skipped": "rare for position",
+        "nonzero_share": 0.0104,
+        "constant": 4.9
+      },
+      "passing_tds_next": {
+        "skipped": "rare for position",
+        "nonzero_share": 0.0039,
+        "constant": 0.026
+      },
+      "interceptions_next": {
+        "skipped": "rare for position",
+        "nonzero_share": 0.0052,
+        "constant": 0.018
+      },
+      "carries_next": {
+        "n_train": 768,
+        "n_holdout": 368,
+        "holdout_pearson_r": 0.1597,
+        "holdout_mae": 2.16,
+        "holdout_mean_actual": 0.58,
+        "holdout_mean_pred": 1.92
+      },
+      "rushing_yards_next": {
+        "n_train": 768,
+        "n_holdout": 368,
+        "holdout_pearson_r": 0.1947,
+        "holdout_mae": 11.369,
+        "holdout_mean_actual": 1.85,
+        "holdout_mean_pred": 10.77
+      },
+      "rushing_tds_next": {
+        "skipped": "rare for position",
+        "nonzero_share": 0.0221,
+        "constant": 0.044
+      },
+      "targets_next": {
+        "n_train": 768,
+        "n_holdout": 368,
+        "holdout_pearson_r": 0.7431,
+        "holdout_mae": 17.065,
+        "holdout_mean_actual": 34.98,
+        "holdout_mean_pred": 37.77
+      },
+      "receptions_next": {
+        "n_train": 768,
+        "n_holdout": 368,
+        "holdout_pearson_r": 0.7183,
+        "holdout_mae": 12.541,
+        "holdout_mean_actual": 25.02,
+        "holdout_mean_pred": 26.09
+      },
+      "receiving_yards_next": {
+        "n_train": 768,
+        "n_holdout": 368,
+        "holdout_pearson_r": 0.7257,
+        "holdout_mae": 139.697,
+        "holdout_mean_actual": 254.96,
+        "holdout_mean_pred": 280.98
+      },
+      "receiving_tds_next": {
+        "n_train": 768,
+        "n_holdout": 368,
+        "holdout_pearson_r": 0.5288,
+        "holdout_mae": 1.451,
+        "holdout_mean_actual": 1.78,
+        "holdout_mean_pred": 2.15
+      },
+      "fumbles_lost_next": {
+        "n_train": 768,
+        "n_holdout": 368,
+        "holdout_pearson_r": 0.1935,
+        "holdout_mae": 0.304,
+        "holdout_mean_actual": 0.16,
+        "holdout_mean_pred": 0.24
+      },
+      "games_next": {
+        "n_train": 768,
+        "n_holdout": 368,
+        "holdout_pearson_r": 0.5829,
+        "holdout_mae": 3.337,
+        "holdout_mean_actual": 10.23,
+        "holdout_mean_pred": 9.67
+      }
+    }
+  }
+}

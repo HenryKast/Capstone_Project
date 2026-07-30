@@ -119,6 +119,14 @@ RB_PARAM_GRID: list[dict[str, Any]] = [
     {"max_depth": 3, "learning_rate": 0.05, "max_iter": 300, "min_samples_leaf": 15, "l2_regularization": 1.0},
 ]
 
+# When ADP is a feature, allow a bit more capacity so early-ADP / high-volume RB
+# leaves are not forced into the same shallow mean-reverting surface.
+RB_PARAM_GRID_WITH_MARKET: list[dict[str, Any]] = RB_PARAM_GRID + [
+    {"max_depth": 4, "learning_rate": 0.05, "max_iter": 300, "min_samples_leaf": 12, "l2_regularization": 0.5},
+    {"max_depth": 4, "learning_rate": 0.05, "max_iter": 350, "min_samples_leaf": 10, "l2_regularization": 0.25},
+    {"max_depth": 5, "learning_rate": 0.05, "max_iter": 300, "min_samples_leaf": 8, "l2_regularization": 0.25},
+]
+
 # TE: small-n friendly — shallow, high L2, prioritize stable ADP/draft signal
 TE_PARAM_GRID: list[dict[str, Any]] = [
     {"max_depth": 2, "learning_rate": 0.03, "max_iter": 200, "min_samples_leaf": 20, "l2_regularization": 3.0},
@@ -371,8 +379,40 @@ def _fit_point_model(
     return model
 
 
-def _clamp_pred_to_iqr(pred: float, q25: float, q75: float) -> float:
-    """Keep the displayed point estimate inside the predictive IQR when available."""
+# How hard the point estimate is pulled into the predictive IQR.
+# 1.0 = hard clip (old behavior); 0.0 = leave the median prediction alone.
+# The IQR is fit on realized outcomes, so a hard clip bakes injury/missed-game
+# mean-reversion into every printed number. Soft strength lets boom/recovery
+# medians sit outside that band while still damping extreme outliers.
+DEFAULT_IQR_CLAMP_STRENGTH = 0.4
+
+# Prior seasons shorter than this are treated as injury-truncated for IQR relief.
+# Pull the median toward q75 (less injury-pessimistic edge) before soft-clamping.
+INJURY_IQR_GAMES_CUTOFF = 8.0
+DEFAULT_INJURY_IQR_RELIEF = 0.75
+
+
+def _clamp_pred_to_iqr(
+    pred: float,
+    q25: float,
+    q75: float,
+    *,
+    strength: float = DEFAULT_IQR_CLAMP_STRENGTH,
+    prior_games: float | None = None,
+    injury_relief: float = DEFAULT_INJURY_IQR_RELIEF,
+    injury_games_cutoff: float = INJURY_IQR_GAMES_CUTOFF,
+) -> float:
+    """Soft-pull the point estimate toward the predictive IQR.
+
+    ``strength=1`` hard-clips into ``[q25, q75]``. ``strength=0`` returns ``pred``
+    unchanged (after optional injury relief). Values in between blend the raw
+    median with the clipped value so injury-aware IQR bounds do not fully
+    override the point model.
+
+    When ``prior_games`` is below ``injury_games_cutoff``, blend toward ``q75``
+    first — the upper quartile is the less injury-pessimistic edge of the band,
+    so short prior seasons are not clamped as hard into a truncated-year median.
+    """
     if not np.isfinite(pred):
         return pred
     lo, hi = float(q25), float(q75)
@@ -380,7 +420,30 @@ def _clamp_pred_to_iqr(pred: float, q25: float, q75: float) -> float:
         return float(pred)
     if lo > hi:
         lo, hi = hi, lo
-    return float(np.clip(pred, lo, hi))
+
+    adjusted = float(pred)
+    if (
+        prior_games is not None
+        and np.isfinite(prior_games)
+        and injury_games_cutoff > 0
+        and float(prior_games) < float(injury_games_cutoff)
+        and np.isfinite(hi)
+    ):
+        w = float(injury_relief) * (
+            1.0 - float(prior_games) / float(injury_games_cutoff)
+        )
+        w = float(np.clip(w, 0.0, 1.0))
+        if w > 0.0:
+            # Never pull *down* for injury relief; only lift toward / past q75.
+            adjusted = (1.0 - w) * adjusted + w * max(hi, adjusted)
+
+    hard = float(np.clip(adjusted, lo, hi))
+    s = float(np.clip(strength, 0.0, 1.0))
+    if s >= 1.0:
+        return hard
+    if s <= 0.0:
+        return float(adjusted)
+    return float((1.0 - s) * float(adjusted) + s * hard)
 
 
 def _tune_position_model(

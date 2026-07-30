@@ -1,0 +1,443 @@
+season,as_of_week,last_week_from,gap_weeks,from_team_id,to_team_id,player_name,player_key,espn_player_id,gsis_id,overall_pick,pick_label,kind,package_id,team_id,direction,counterparty_team_id,label
+2018,8,7,0,4,1,Cooper Kupp,2977187,2977187,00-0033908,107.0,11.07,bilateral,e987ebd7,1,acquired,4,Cooper Kupp traded in from Team Boswellnt (11.07)
+2018,8,7,0,4,1,Calvin Ridley,3925357,3925357,00-0034837,,,bilateral,e987ebd7,1,acquired,4,Calvin Ridley traded in from Team Boswellnt
+2018,8,7,0,1,4,T.Y. Hilton,14924,14924,00-0029608,43.0,5.03,bilateral,e987ebd7,1,traded_away,4,T.Y. Hilton traded to Team Boswellnt (5.03)
+2018,8,7,0,1,4,T.Y. Hilton,14924,14924,00-0029608,43.0,5.03,bilateral,e987ebd7,4,acquired,1,T.Y. Hilton traded in from Team  Ooga kamara (5.03)
+2018,8,7,0,4,1,Cooper Kupp,2977187,2977187,00-0033908,107.0,11.07,bilateral,e987ebd7,4,traded_away,1,Cooper Kupp traded to Team  Ooga kamara (11.07)
+2018,8,7,0,4,1,Calvin Ridley,3925357,3925357,00-0034837,,,bilateral,e987ebd7,4,traded_away,1,Calvin Ridley traded to Team  Ooga kamara
+2018,10,9,0,5,1,T.J. Yeldon,2976516,2976516,00-0032209,,,bilateral,fa2e4ff2,1,acquired,5,T.J. Yeldon traded in from A. Brown Man
+2018,10,9,0,1,5,Doug Martin,14885,14885,00-0029613,,,bilateral,fa2e4ff2,1,traded_away,5,Doug Martin traded to A. Brown Man
+2018,10,9,0,1,5,Calvin Ridley,3925357,3925357,00-0034837,,,bilateral,fa2e4ff2,1,traded_away,5,Calvin Ridley traded to A. Brown Man
+2018,10,9,0,1,5,Doug Martin,14885,14885,00-0029613,,,bilateral,fa2e4ff2,5,acquired,1,Doug Martin traded in from Team  Ooga kamara
+2018,10,9,0,1,5,Calvin Ridley,3925357,3925357,00-0034837,,,bilateral,fa2e4ff2,5,acquired,1,Calvin Ridley traded in from Team  Ooga kamara
+2018,10,9,0,5,1,T.J. Yeldon,2976516,2976516,00-0032209,,,bilateral,fa2e4ff2,5,traded_away,1,T.J. Yeldon traded to Team  Ooga kamara
+2018,11,10,0,7,1,Isaiah Crowell,17133,17133,00-0030656,115.0,12.05,bilateral,33aefa15,1,acquired,7,Isaiah Crowell traded in from Waka Waka (12.05)
+2018,11,10,0,1,7,Ryan Fitzpatrick,8664,8664,00-0023682,,,bilateral,33aefa15,1,traded_away,7,Ryan Fitzpatrick traded to Waka Waka
+2018,11,10,0,5,2,Golden Tate,13217,13217,00-0027891,39.0,4.09,bilateral,2dd3ec17,2,acquired,5,Golden Tate traded in from A. Brown Man (4.09)
+2018,11,10,0,2,5,Trey Burton,16974,16974,00-0030710,110.0,11.10,bilateral,2dd3ec17,2,traded_away,5,Trey Burton traded to A. Brown Man (11.10)
+2018,11,10,0,2,5,Trey Burton,16974,16974,00-0030710,110.0,11.10,bilateral,2dd3ec17,5,acquired,2,Trey Burton traded in from Team Hmar (11.10)
+2018,11,10,0,5,2,Golden Tate,13217,13217,00-0027891,39.0,4.09,bilateral,2dd3ec17,5,traded_away,2,Golden Tate traded to Team Hmar (4.09)
+2018,11,10,0,1,7,Ryan Fitzpatrick,8664,8664,00-0023682,,,bilateral,33aefa15,7,acquired,1,Ryan Fitzpatrick traded in from Team  Ooga kamara
+2018,11,10,0,7,1,Isaiah Crowell,17133,17133,00-0030656,115.0,12.05,bilateral,33aefa15,7,traded_away,1,Isaiah Crowell traded to Team  Ooga kamara (12.05)
+2019,5,4,0,3,1,Le'Veon Bell,15825,15825,00-0030496,11.0,2.01,bilateral,4d97d383,1,acquired,3,Le'Veon Bell traded in from Team SUpton (2.01)
+2019,5,4,0,1,3,Todd Gurley II,2977644,2977644,00-0032241,4.0,1.04,bilateral,4d97d383,1,traded_away,3,Todd Gurley II traded to Team SUpton (1.04)
+2019,5,4,0,1,3,Marquise Brown,4241372,4241372,00-0035662,144.0,15.04,bilateral,4d97d383,1,traded_away,3,Marquise Brown traded to Team SUpton (15.04)
+2019,5,4,0,1,3,Todd Gurley II,2977644,2977644,00-0032241,4.0,1.04,bilateral,4d97d383,3,acquired,1,Todd Gurley II traded in from Henrys Not A. Hooper (1.04)
+2019,5,4,0,1,3,Marquise Brown,4241372,4241372,00-0035662,144.0,15.04,bilateral,4d97d383,3,acquired,1,Marquise Brown traded in from Henrys Not A. Hooper (15.04)
+2019,5,4,0,3,1,Le'Veon Bell,15825,15825,00-0030496,11.0,2.01,bilateral,4d97d383,3,traded_away,1,Le'Veon Bell traded to Henrys Not A. Hooper (2.01)
+2020,4,3,0,8,7,Darren Waller,2576925,2576925,00-0031610,59.0,6.09,bilateral,bcafbe3f,7,acquired,8,Darren Waller traded in from ( (6.09)
+2020,4,3,0,7,8,Robert Woods,15880,15880,00-0030431,41.0,5.01,bilateral,bcafbe3f,7,traded_away,8,Robert Woods traded to ( (5.01)
+2020,4,3,0,7,8,Robert Woods,15880,15880,00-0030431,41.0,5.01,bilateral,bcafbe3f,8,acquired,7,Robert Woods traded in from Waller? I hardly know her (5.01)
+2020,4,3,0,8,7,Darren Waller,2576925,2576925,00-0031610,59.0,6.09,bilateral,bcafbe3f,8,traded_away,7,Darren Waller traded to Waller? I hardly know her (6.09)
+2020,9,8,0,9,5,Giovani Bernard,15826,15826,00-0030456,,,bilateral,24fae6d2,5,acquired,9,Giovani Bernard traded in from Ekeler? I Hardly Know Her
+2020,9,8,0,5,9,Tee Higgins,4239993,4239993,00-0036410,,,bilateral,24fae6d2,5,traded_away,9,Tee Higgins traded to Ekeler? I Hardly Know Her
+2020,9,8,0,5,9,Tee Higgins,4239993,4239993,00-0036410,,,bilateral,24fae6d2,9,acquired,5,Tee Higgins traded in from Beat Ankit
+2020,9,8,0,9,5,Giovani Bernard,15826,15826,00-0030456,,,bilateral,24fae6d2,9,traded_away,5,Giovani Bernard traded to Beat Ankit
+2020,12,11,0,7,3,Justin Jefferson,4262921,4262921,00-0036322,160.0,16.10,bilateral,f11d338c,3,acquired,7,Justin Jefferson traded in from Waller? I hardly know her (16.10)
+2020,12,11,0,7,3,Chase Edmonds,3119195,3119195,00-0034681,,,bilateral,f11d338c,3,acquired,7,Chase Edmonds traded in from Waller? I hardly know her
+2020,12,11,0,3,7,Antonio Gibson,4360294,4360294,00-0036328,68.0,7.08,bilateral,f11d338c,3,traded_away,7,Antonio Gibson traded to Waller? I hardly know her (7.08)
+2020,12,11,0,3,7,Myles Gaskin,3886818,3886818,00-0035311,,,bilateral,f11d338c,3,traded_away,7,Myles Gaskin traded to Waller? I hardly know her
+2020,12,11,0,9,5,Taysom Hill,2468609,2468609,00-0033357,,,bilateral,6c370173,5,acquired,9,Taysom Hill traded in from Ekeler? I Hardly Know Her
+2020,12,11,0,5,9,Michael Thomas,2976316,2976316,00-0032765,7.0,1.07,bilateral,6c370173,5,traded_away,9,Michael Thomas traded to Ekeler? I Hardly Know Her (1.07)
+2020,12,11,0,3,7,Antonio Gibson,4360294,4360294,00-0036328,68.0,7.08,bilateral,f11d338c,7,acquired,3,Antonio Gibson traded in from Russel My Willy (7.08)
+2020,12,11,0,3,7,Myles Gaskin,3886818,3886818,00-0035311,,,bilateral,f11d338c,7,acquired,3,Myles Gaskin traded in from Russel My Willy
+2020,12,11,0,7,3,Justin Jefferson,4262921,4262921,00-0036322,160.0,16.10,bilateral,f11d338c,7,traded_away,3,Justin Jefferson traded to Russel My Willy (16.10)
+2020,12,11,0,7,3,Chase Edmonds,3119195,3119195,00-0034681,,,bilateral,f11d338c,7,traded_away,3,Chase Edmonds traded to Russel My Willy
+2020,12,11,0,5,9,Michael Thomas,2976316,2976316,00-0032765,7.0,1.07,bilateral,6c370173,9,acquired,5,Michael Thomas traded in from Beat Ankit (1.07)
+2020,12,11,0,9,5,Taysom Hill,2468609,2468609,00-0033357,,,bilateral,6c370173,9,traded_away,5,Taysom Hill traded to Beat Ankit
+2021,2,1,0,9,6,David Montgomery,4035538,4035538,00-0035685,28.0,3.08,bilateral,35546ee4,6,acquired,9,David Montgomery traded in from CeeDee's Balls (3.08)
+2021,2,1,0,6,9,Calvin Ridley,3925357,3925357,00-0034837,16.0,2.06,bilateral,35546ee4,6,traded_away,9,Calvin Ridley traded to CeeDee's Balls (2.06)
+2021,2,1,0,6,9,Calvin Ridley,3925357,3925357,00-0034837,16.0,2.06,bilateral,35546ee4,9,acquired,6,Calvin Ridley traded in from Yeh Dil Maange  Moore (2.06)
+2021,2,1,0,9,6,David Montgomery,4035538,4035538,00-0035685,28.0,3.08,bilateral,35546ee4,9,traded_away,6,David Montgomery traded to Yeh Dil Maange  Moore (3.08)
+2021,5,4,0,5,4,Tyreek Hill,3116406,3116406,00-0033040,11.0,2.01,bilateral,94ea88b6,4,acquired,5,"Tyreek Hill traded in from Titan Killer, Derrick Henry (2.01)"
+2021,5,4,0,5,4,Josh Jacobs,4047365,4047365,00-0035700,30.0,3.10,bilateral,94ea88b6,4,acquired,5,"Josh Jacobs traded in from Titan Killer, Derrick Henry (3.10)"
+2021,5,4,0,4,5,Derrick Henry,3043078,3043078,00-0032764,2.0,1.02,bilateral,94ea88b6,4,traded_away,5,"Derrick Henry traded to Titan Killer, Derrick Henry (1.02)"
+2021,5,4,0,4,5,Zack Moss,4035676,4035676,00-0036251,102.0,11.02,bilateral,94ea88b6,4,traded_away,5,"Zack Moss traded to Titan Killer, Derrick Henry (11.02)"
+2021,5,4,0,4,5,Derrick Henry,3043078,3043078,00-0032764,2.0,1.02,bilateral,94ea88b6,5,acquired,4,Derrick Henry traded in from Baby Im ThielenUrHeart (1.02)
+2021,5,4,0,4,5,Zack Moss,4035676,4035676,00-0036251,102.0,11.02,bilateral,94ea88b6,5,acquired,4,Zack Moss traded in from Baby Im ThielenUrHeart (11.02)
+2021,5,4,0,5,4,Tyreek Hill,3116406,3116406,00-0033040,11.0,2.01,bilateral,94ea88b6,5,traded_away,4,Tyreek Hill traded to Baby Im ThielenUrHeart (2.01)
+2021,5,4,0,5,4,Josh Jacobs,4047365,4047365,00-0035700,30.0,3.10,bilateral,94ea88b6,5,traded_away,4,Josh Jacobs traded to Baby Im ThielenUrHeart (3.10)
+2021,7,6,0,5,2,Cordarrelle Patterson,15807,15807,00-0030578,,,bilateral,2f9c5350,2,acquired,5,"Cordarrelle Patterson traded in from Titan Killer, Derrick Henry"
+2021,7,6,0,2,5,Stefon Diggs,2976212,2976212,00-0031588,17.0,2.07,bilateral,2f9c5350,2,traded_away,5,"Stefon Diggs traded to Titan Killer, Derrick Henry (2.07)"
+2021,7,6,0,2,5,Stefon Diggs,2976212,2976212,00-0031588,17.0,2.07,bilateral,2f9c5350,5,acquired,2,Stefon Diggs traded in from Tucker right in The (2.07)
+2021,7,6,0,5,2,Cordarrelle Patterson,15807,15807,00-0030578,,,bilateral,2f9c5350,5,traded_away,2,Cordarrelle Patterson traded to Tucker right in The
+2021,9,8,0,5,2,Keenan Allen,15818,15818,00-0030279,31.0,4.01,bilateral,45804b86,2,acquired,5,"Keenan Allen traded in from Titan Killer, Derrick Henry (4.01)"
+2021,9,8,0,5,2,Antonio Brown,13934,13934,00-0027793,130.0,13.10,bilateral,45804b86,2,acquired,5,"Antonio Brown traded in from Titan Killer, Derrick Henry (13.10)"
+2021,9,8,0,2,5,D'Andre Swift,4259545,4259545,00-0036275,37.0,4.07,bilateral,45804b86,2,traded_away,5,"D'Andre Swift traded to Titan Killer, Derrick Henry (4.07)"
+2021,9,8,0,2,5,Tony Pollard,3916148,3916148,00-0035261,,,bilateral,45804b86,2,traded_away,5,"Tony Pollard traded to Titan Killer, Derrick Henry"
+2021,9,8,0,2,5,D'Andre Swift,4259545,4259545,00-0036275,37.0,4.07,bilateral,45804b86,5,acquired,2,D'Andre Swift traded in from Tucker right in The (4.07)
+2021,9,8,0,2,5,Tony Pollard,3916148,3916148,00-0035261,,,bilateral,45804b86,5,acquired,2,Tony Pollard traded in from Tucker right in The
+2021,9,8,0,5,2,Keenan Allen,15818,15818,00-0030279,31.0,4.01,bilateral,45804b86,5,traded_away,2,Keenan Allen traded to Tucker right in The (4.01)
+2021,9,8,0,5,2,Antonio Brown,13934,13934,00-0027793,130.0,13.10,bilateral,45804b86,5,traded_away,2,Antonio Brown traded to Tucker right in The (13.10)
+2021,9,8,0,9,8,DeVonta Smith,4241478,4241478,00-0036912,88.0,9.08,bilateral,94f1d746,8,acquired,9,DeVonta Smith traded in from CeeDee's Balls (9.08)
+2021,9,8,0,9,8,Zack Moss,4035676,4035676,00-0036251,102.0,11.02,bilateral,94f1d746,8,acquired,9,Zack Moss traded in from CeeDee's Balls (11.02)
+2021,9,8,0,8,9,Marquise Brown,4241372,4241372,00-0035662,112.0,12.02,bilateral,94f1d746,8,traded_away,9,Marquise Brown traded to CeeDee's Balls (12.02)
+2021,9,8,0,8,9,Marquise Brown,4241372,4241372,00-0035662,112.0,12.02,bilateral,94f1d746,9,acquired,8,"Marquise Brown traded in from Sahit, I don't have kik, stop (12.02)"
+2021,9,8,0,9,8,DeVonta Smith,4241478,4241478,00-0036912,88.0,9.08,bilateral,94f1d746,9,traded_away,8,"DeVonta Smith traded to Sahit, I don't have kik, stop (9.08)"
+2021,9,8,0,9,8,Zack Moss,4035676,4035676,00-0036251,102.0,11.02,bilateral,94f1d746,9,traded_away,8,"Zack Moss traded to Sahit, I don't have kik, stop (11.02)"
+2021,10,9,0,9,5,Chase Claypool,4046692,4046692,00-0036326,68.0,7.08,bilateral,8c9ccc56,5,acquired,9,Chase Claypool traded in from CeeDee's Balls (7.08)
+2021,10,9,0,9,5,Michael Carter,4240657,4240657,00-0036924,131.0,14.01,bilateral,8c9ccc56,5,acquired,9,Michael Carter traded in from CeeDee's Balls (14.01)
+2021,10,9,0,9,5,Kadarius Toney,4240600,4240600,00-0036913,,,bilateral,8c9ccc56,5,acquired,9,Kadarius Toney traded in from CeeDee's Balls
+2021,10,9,0,5,9,Stefon Diggs,2976212,2976212,00-0031588,17.0,2.07,bilateral,8c9ccc56,5,traded_away,9,Stefon Diggs traded to CeeDee's Balls (2.07)
+2021,10,9,0,5,9,Jeremy McNichols,3127586,3127586,00-0033955,,,bilateral,8c9ccc56,5,traded_away,9,Jeremy McNichols traded to CeeDee's Balls
+2021,10,9,0,5,9,Stefon Diggs,2976212,2976212,00-0031588,17.0,2.07,bilateral,8c9ccc56,9,acquired,5,"Stefon Diggs traded in from Titan Killer, Derrick Henry (2.07)"
+2021,10,9,0,5,9,Jeremy McNichols,3127586,3127586,00-0033955,,,bilateral,8c9ccc56,9,acquired,5,"Jeremy McNichols traded in from Titan Killer, Derrick Henry"
+2021,10,9,0,9,5,Chase Claypool,4046692,4046692,00-0036326,68.0,7.08,bilateral,8c9ccc56,9,traded_away,5,"Chase Claypool traded to Titan Killer, Derrick Henry (7.08)"
+2021,10,9,0,9,5,Michael Carter,4240657,4240657,00-0036924,131.0,14.01,bilateral,8c9ccc56,9,traded_away,5,"Michael Carter traded to Titan Killer, Derrick Henry (14.01)"
+2021,10,9,0,9,5,Kadarius Toney,4240600,4240600,00-0036913,,,bilateral,8c9ccc56,9,traded_away,5,"Kadarius Toney traded to Titan Killer, Derrick Henry"
+2021,12,11,0,5,2,Nick Chubb,3128720,3128720,00-0034791,10.0,1.10,bilateral,d96fac5c,2,acquired,5,"Nick Chubb traded in from Titan Killer, Derrick Henry (1.10)"
+2021,12,11,0,5,2,Chase Claypool,4046692,4046692,00-0036326,68.0,7.08,bilateral,d96fac5c,2,acquired,5,"Chase Claypool traded in from Titan Killer, Derrick Henry (7.08)"
+2021,12,11,0,2,5,James Robinson,4052042,4052042,00-0035831,24.0,3.04,bilateral,d96fac5c,2,traded_away,5,"James Robinson traded to Titan Killer, Derrick Henry (3.04)"
+2021,12,11,0,2,5,Antonio Brown,13934,13934,00-0027793,130.0,13.10,bilateral,d96fac5c,2,traded_away,5,"Antonio Brown traded to Titan Killer, Derrick Henry (13.10)"
+2021,12,11,0,2,5,James Robinson,4052042,4052042,00-0035831,24.0,3.04,bilateral,d96fac5c,5,acquired,2,James Robinson traded in from Tucker right in The (3.04)
+2021,12,11,0,2,5,Antonio Brown,13934,13934,00-0027793,130.0,13.10,bilateral,d96fac5c,5,acquired,2,Antonio Brown traded in from Tucker right in The (13.10)
+2021,12,11,0,5,2,Nick Chubb,3128720,3128720,00-0034791,10.0,1.10,bilateral,d96fac5c,5,traded_away,2,Nick Chubb traded to Tucker right in The (1.10)
+2021,12,11,0,5,2,Chase Claypool,4046692,4046692,00-0036326,68.0,7.08,bilateral,d96fac5c,5,traded_away,2,Chase Claypool traded to Tucker right in The (7.08)
+2021,13,12,0,6,3,Tee Higgins,4239993,4239993,00-0036410,60.0,6.10,bilateral,652137a1,3,acquired,6,Tee Higgins traded in from Yeh Dil Maange  Moore (6.10)
+2021,13,12,0,6,3,Kareem Hunt,3059915,3059915,00-0033923,65.0,7.05,bilateral,652137a1,3,acquired,6,Kareem Hunt traded in from Yeh Dil Maange  Moore (7.05)
+2021,13,12,0,3,6,Saquon Barkley,3929630,3929630,00-0034844,7.0,1.07,bilateral,652137a1,3,traded_away,6,Saquon Barkley traded to Yeh Dil Maange  Moore (1.07)
+2021,13,12,0,3,6,Saquon Barkley,3929630,3929630,00-0034844,7.0,1.07,bilateral,652137a1,6,acquired,3,Saquon Barkley traded in from Robert's Wood (1.07)
+2021,13,12,0,6,3,Tee Higgins,4239993,4239993,00-0036410,60.0,6.10,bilateral,652137a1,6,traded_away,3,Tee Higgins traded to Robert's Wood (6.10)
+2021,13,12,0,6,3,Kareem Hunt,3059915,3059915,00-0033923,65.0,7.05,bilateral,652137a1,6,traded_away,3,Kareem Hunt traded to Robert's Wood (7.05)
+2022,2,1,0,5,2,Jaylen Waddle,4372016,4372016,00-0036613,53.0,6.03,bilateral,60a0162b,2,acquired,5,Jaylen Waddle traded in from F@(k Fantasy  Football (6.03)
+2022,2,1,0,9,2,Zach Ertz,15835,15835,00-0030061,91.0,10.01,bilateral,54baa887,2,acquired,9,Zach Ertz traded in from Team Subcontinent (10.01)
+2022,2,1,0,5,2,Darrell Henderson Jr.,4039359,4039359,00-0035664,128.0,13.08,bilateral,60a0162b,2,acquired,5,Darrell Henderson Jr. traded in from F@(k Fantasy  Football (13.08)
+2022,2,1,0,2,5,Aaron Jones,3042519,3042519,00-0033293,15.0,2.05,bilateral,60a0162b,2,traded_away,5,Aaron Jones traded to F@(k Fantasy  Football (2.05)
+2022,2,1,0,2,9,Courtland Sutton,3128429,3128429,00-0034348,66.0,7.06,bilateral,54baa887,2,traded_away,9,Courtland Sutton traded to Team Subcontinent (7.06)
+2022,2,1,0,2,5,Pat Freiermuth,4361411,4361411,00-0036894,106.0,11.06,bilateral,60a0162b,2,traded_away,5,Pat Freiermuth traded to F@(k Fantasy  Football (11.06)
+2022,2,1,0,2,5,Aaron Jones,3042519,3042519,00-0033293,15.0,2.05,bilateral,60a0162b,5,acquired,2,Aaron Jones traded in from Tucker right in The (2.05)
+2022,2,1,0,2,5,Pat Freiermuth,4361411,4361411,00-0036894,106.0,11.06,bilateral,60a0162b,5,acquired,2,Pat Freiermuth traded in from Tucker right in The (11.06)
+2022,2,1,0,5,2,Jaylen Waddle,4372016,4372016,00-0036613,53.0,6.03,bilateral,60a0162b,5,traded_away,2,Jaylen Waddle traded to Tucker right in The (6.03)
+2022,2,1,0,5,2,Darrell Henderson Jr.,4039359,4039359,00-0035664,128.0,13.08,bilateral,60a0162b,5,traded_away,2,Darrell Henderson Jr. traded to Tucker right in The (13.08)
+2022,2,1,0,2,9,Courtland Sutton,3128429,3128429,00-0034348,66.0,7.06,bilateral,54baa887,9,acquired,2,Courtland Sutton traded in from Tucker right in The (7.06)
+2022,2,1,0,9,2,Zach Ertz,15835,15835,00-0030061,91.0,10.01,bilateral,54baa887,9,traded_away,2,Zach Ertz traded to Tucker right in The (10.01)
+2022,4,3,0,5,2,Michael Carter,4240657,4240657,00-0036924,113.0,12.03,bilateral,5e10f064,2,acquired,5,Michael Carter traded in from F@(k Fantasy  Football (12.03)
+2022,4,3,0,2,5,Brandon Aiyuk,4360438,4360438,00-0036261,95.0,10.05,bilateral,5e10f064,2,traded_away,5,Brandon Aiyuk traded to F@(k Fantasy  Football (10.05)
+2022,4,3,0,2,5,Brandon Aiyuk,4360438,4360438,00-0036261,95.0,10.05,bilateral,5e10f064,5,acquired,2,Brandon Aiyuk traded in from Tucker right in The (10.05)
+2022,4,3,0,5,2,Michael Carter,4240657,4240657,00-0036924,113.0,12.03,bilateral,5e10f064,5,traded_away,2,Michael Carter traded to Tucker right in The (12.03)
+2022,6,5,0,5,2,Kareem Hunt,3059915,3059915,00-0033923,73.0,8.03,bilateral,1d7858f5,2,acquired,5,Kareem Hunt traded in from F@(k Fantasy  Football (8.03)
+2022,6,5,0,2,5,Darrell Henderson Jr.,4039359,4039359,00-0035664,128.0,13.08,bilateral,1d7858f5,2,traded_away,5,Darrell Henderson Jr. traded to F@(k Fantasy  Football (13.08)
+2022,6,5,0,6,3,Christian Kirk,3895856,3895856,00-0034775,77.0,8.07,bilateral,0e0effd4,3,acquired,6,Christian Kirk traded in from Yeh Dil Maange Moore (8.07)
+2022,6,5,0,6,3,Tyler Lockett,2577327,2577327,00-0032211,84.0,9.04,bilateral,0e0effd4,3,acquired,6,Tyler Lockett traded in from Yeh Dil Maange Moore (9.04)
+2022,6,5,0,6,3,Jeff Wilson Jr.,3122976,3122976,00-0034115,,,bilateral,0e0effd4,3,acquired,6,Jeff Wilson Jr. traded in from Yeh Dil Maange Moore
+2022,6,5,0,3,6,Jonathan Taylor,4242335,4242335,00-0036223,1.0,1.01,bilateral,0e0effd4,3,traded_away,6,Jonathan Taylor traded to Yeh Dil Maange Moore (1.01)
+2022,6,5,0,2,5,Darrell Henderson Jr.,4039359,4039359,00-0035664,128.0,13.08,bilateral,1d7858f5,5,acquired,2,Darrell Henderson Jr. traded in from Tucker right in The (13.08)
+2022,6,5,0,5,2,Kareem Hunt,3059915,3059915,00-0033923,73.0,8.03,bilateral,1d7858f5,5,traded_away,2,Kareem Hunt traded to Tucker right in The (8.03)
+2022,6,5,0,3,6,Jonathan Taylor,4242335,4242335,00-0036223,1.0,1.01,bilateral,0e0effd4,6,acquired,3,Jonathan Taylor traded in from Sahit on my face (1.01)
+2022,6,5,0,6,3,Christian Kirk,3895856,3895856,00-0034775,77.0,8.07,bilateral,0e0effd4,6,traded_away,3,Christian Kirk traded to Sahit on my face (8.07)
+2022,6,5,0,6,3,Tyler Lockett,2577327,2577327,00-0032211,84.0,9.04,bilateral,0e0effd4,6,traded_away,3,Tyler Lockett traded to Sahit on my face (9.04)
+2022,6,5,0,6,3,Jeff Wilson Jr.,3122976,3122976,00-0034115,,,bilateral,0e0effd4,6,traded_away,3,Jeff Wilson Jr. traded to Sahit on my face
+2022,7,6,0,4,2,Najee Harris,4241457,4241457,00-0036893,9.0,1.09,bilateral,14652a2f,2,acquired,4,Najee Harris traded in from PiercingMy Heart (1.09)
+2022,7,6,0,4,2,Drake London,4426502,4426502,00-0037238,72.0,8.02,bilateral,14652a2f,2,acquired,4,Drake London traded in from PiercingMy Heart (8.02)
+2022,7,6,0,2,4,Jaylen Waddle,4372016,4372016,00-0036613,53.0,6.03,bilateral,14652a2f,2,traded_away,4,Jaylen Waddle traded to PiercingMy Heart (6.03)
+2022,7,6,0,2,4,Kareem Hunt,3059915,3059915,00-0033923,73.0,8.03,bilateral,14652a2f,2,traded_away,4,Kareem Hunt traded to PiercingMy Heart (8.03)
+2022,7,6,0,2,4,Jaylen Waddle,4372016,4372016,00-0036613,53.0,6.03,bilateral,14652a2f,4,acquired,2,Jaylen Waddle traded in from Tucker right in The (6.03)
+2022,7,6,0,2,4,Kareem Hunt,3059915,3059915,00-0033923,73.0,8.03,bilateral,14652a2f,4,acquired,2,Kareem Hunt traded in from Tucker right in The (8.03)
+2022,7,6,0,4,2,Najee Harris,4241457,4241457,00-0036893,9.0,1.09,bilateral,14652a2f,4,traded_away,2,Najee Harris traded to Tucker right in The (1.09)
+2022,7,6,0,4,2,Drake London,4426502,4426502,00-0037238,72.0,8.02,bilateral,14652a2f,4,traded_away,2,Drake London traded to Tucker right in The (8.02)
+2022,8,7,0,5,4,Aaron Jones,3042519,3042519,00-0033293,15.0,2.05,bilateral,14f2ecb3,4,acquired,5,Aaron Jones traded in from F@(k Fantasy  Football (2.05)
+2022,8,7,0,5,4,DeAndre Hopkins,15795,15795,00-0030564,93.0,10.03,bilateral,14f2ecb3,4,acquired,5,DeAndre Hopkins traded in from F@(k Fantasy  Football (10.03)
+2022,8,7,0,6,4,Taysom Hill,2468609,2468609,00-0033357,,,bilateral,6409362d,4,acquired,6,Taysom Hill traded in from Yeh Dil Maange Moore
+2022,8,7,0,4,5,D'Andre Swift,4259545,4259545,00-0036275,12.0,2.02,bilateral,14f2ecb3,4,traded_away,5,D'Andre Swift traded to F@(k Fantasy  Football (2.02)
+2022,8,7,0,4,6,Kyle Pitts,4360248,4360248,00-0036970,32.0,4.02,bilateral,6409362d,4,traded_away,6,Kyle Pitts traded to Yeh Dil Maange Moore (4.02)
+2022,8,7,0,4,5,Jaylen Waddle,4372016,4372016,00-0036613,53.0,6.03,bilateral,14f2ecb3,4,traded_away,5,Jaylen Waddle traded to F@(k Fantasy  Football (6.03)
+2022,8,7,0,4,5,D'Andre Swift,4259545,4259545,00-0036275,12.0,2.02,bilateral,14f2ecb3,5,acquired,4,D'Andre Swift traded in from PiercingMy Heart (2.02)
+2022,8,7,0,4,5,Jaylen Waddle,4372016,4372016,00-0036613,53.0,6.03,bilateral,14f2ecb3,5,acquired,4,Jaylen Waddle traded in from PiercingMy Heart (6.03)
+2022,8,7,0,5,4,Aaron Jones,3042519,3042519,00-0033293,15.0,2.05,bilateral,14f2ecb3,5,traded_away,4,Aaron Jones traded to PiercingMy Heart (2.05)
+2022,8,7,0,5,4,DeAndre Hopkins,15795,15795,00-0030564,93.0,10.03,bilateral,14f2ecb3,5,traded_away,4,DeAndre Hopkins traded to PiercingMy Heart (10.03)
+2022,8,7,0,4,6,Kyle Pitts,4360248,4360248,00-0036970,32.0,4.02,bilateral,6409362d,6,acquired,4,Kyle Pitts traded in from PiercingMy Heart (4.02)
+2022,8,7,0,6,4,Taysom Hill,2468609,2468609,00-0033357,,,bilateral,6409362d,6,traded_away,4,Taysom Hill traded to PiercingMy Heart
+2022,10,9,0,7,5,Amon-Ra St. Brown,4374302,4374302,00-0036963,54.0,6.04,bilateral,6b685773,5,acquired,7,Amon-Ra St. Brown traded in from Waller? I hardly know her (6.04)
+2022,10,9,0,7,5,Kyler Murray,3917315,3917315,00-0035228,74.0,8.04,bilateral,6b685773,5,acquired,7,Kyler Murray traded in from Waller? I hardly know her (8.04)
+2022,10,9,0,5,7,Ja'Marr Chase,4362628,4362628,00-0036900,8.0,1.08,bilateral,6b685773,5,traded_away,7,Ja'Marr Chase traded to Waller? I hardly know her (1.08)
+2022,10,9,0,5,7,Rondale Moore,4372485,4372485,00-0036936,,,bilateral,6b685773,5,traded_away,7,Rondale Moore traded to Waller? I hardly know her
+2022,10,9,0,5,7,Ja'Marr Chase,4362628,4362628,00-0036900,8.0,1.08,bilateral,6b685773,7,acquired,5,Ja'Marr Chase traded in from F@(k Fantasy  Football (1.08)
+2022,10,9,0,5,7,Rondale Moore,4372485,4372485,00-0036936,,,bilateral,6b685773,7,acquired,5,Rondale Moore traded in from F@(k Fantasy  Football
+2022,10,9,0,7,5,Amon-Ra St. Brown,4374302,4374302,00-0036963,54.0,6.04,bilateral,6b685773,7,traded_away,5,Amon-Ra St. Brown traded to F@(k Fantasy  Football (6.04)
+2022,10,9,0,7,5,Kyler Murray,3917315,3917315,00-0035228,74.0,8.04,bilateral,6b685773,7,traded_away,5,Kyler Murray traded to F@(k Fantasy  Football (8.04)
+2022,11,10,0,8,6,Marquise Brown,4241372,4241372,00-0035662,43.0,5.03,bilateral,226cefaa,6,acquired,8,"Marquise Brown traded in from Sahit, I don't have kik, stop (5.03)"
+2022,11,10,0,6,8,Tyler Boyd,3045144,3045144,00-0033009,104.0,11.04,bilateral,226cefaa,6,traded_away,8,"Tyler Boyd traded to Sahit, I don't have kik, stop (11.04)"
+2022,11,10,0,6,8,D'Onta Foreman,3125116,3125116,00-0033925,,,bilateral,226cefaa,6,traded_away,8,"D'Onta Foreman traded to Sahit, I don't have kik, stop"
+2022,11,10,0,6,8,Tyler Boyd,3045144,3045144,00-0033009,104.0,11.04,bilateral,226cefaa,8,acquired,6,Tyler Boyd traded in from Yeh Dil Maange Moore (11.04)
+2022,11,10,0,6,8,D'Onta Foreman,3125116,3125116,00-0033925,,,bilateral,226cefaa,8,acquired,6,D'Onta Foreman traded in from Yeh Dil Maange Moore
+2022,11,10,0,8,6,Marquise Brown,4241372,4241372,00-0035662,43.0,5.03,bilateral,226cefaa,8,traded_away,6,Marquise Brown traded to Yeh Dil Maange Moore (5.03)
+2023,3,2,0,5,2,Terry McLaurin,3121422,3121422,00-0035659,55.0,6.05,bilateral,5efed8f4,2,acquired,5,Terry McLaurin traded in from Lamb Sauve (6.05)
+2023,3,2,0,5,2,Gabe Davis,4243537,4243537,00-0036196,103.0,11.03,bilateral,5efed8f4,2,acquired,5,Gabe Davis traded in from Lamb Sauve (11.03)
+2023,3,2,0,2,5,DeAndre Hopkins,15795,15795,00-0030564,44.0,5.04,bilateral,5efed8f4,2,traded_away,5,DeAndre Hopkins traded to Lamb Sauve (5.04)
+2023,3,2,0,2,5,Breece Hall,4427366,4427366,00-0038120,59.0,6.09,bilateral,5efed8f4,2,traded_away,5,Breece Hall traded to Lamb Sauve (6.09)
+2023,3,2,0,2,5,DeAndre Hopkins,15795,15795,00-0030564,44.0,5.04,bilateral,5efed8f4,5,acquired,2,DeAndre Hopkins traded in from Chasing this Johnston (5.04)
+2023,3,2,0,2,5,Breece Hall,4427366,4427366,00-0038120,59.0,6.09,bilateral,5efed8f4,5,acquired,2,Breece Hall traded in from Chasing this Johnston (6.09)
+2023,3,2,0,5,2,Terry McLaurin,3121422,3121422,00-0035659,55.0,6.05,bilateral,5efed8f4,5,traded_away,2,Terry McLaurin traded to Chasing this Johnston (6.05)
+2023,3,2,0,5,2,Gabe Davis,4243537,4243537,00-0036196,103.0,11.03,bilateral,5efed8f4,5,traded_away,2,Gabe Davis traded to Chasing this Johnston (11.03)
+2023,4,3,0,9,2,Jordan Addison,4429205,4429205,00-0038994,89.0,9.09,bilateral,d9f3f2eb,2,acquired,9,Jordan Addison traded in from Je-Romen Empire (9.09)
+2023,4,3,0,9,2,Samaje Perine,3116389,3116389,00-0033526,109.0,11.09,bilateral,d9f3f2eb,2,acquired,9,Samaje Perine traded in from Je-Romen Empire (11.09)
+2023,4,3,0,2,9,Jerome Ford,4372019,4372019,00-0037267,,,bilateral,d9f3f2eb,2,traded_away,9,Jerome Ford traded to Je-Romen Empire
+2023,4,3,0,2,9,Jerome Ford,4372019,4372019,00-0037267,,,bilateral,d9f3f2eb,9,acquired,2,Jerome Ford traded in from Chasing this Johnston
+2023,4,3,0,9,2,Jordan Addison,4429205,4429205,00-0038994,89.0,9.09,bilateral,d9f3f2eb,9,traded_away,2,Jordan Addison traded to Chasing this Johnston (9.09)
+2023,4,3,0,9,2,Samaje Perine,3116389,3116389,00-0033526,109.0,11.09,bilateral,d9f3f2eb,9,traded_away,2,Samaje Perine traded to Chasing this Johnston (11.09)
+2023,5,4,0,10,6,Keenan Allen,15818,15818,00-0030279,42.0,5.02,bilateral,7667eeee,6,acquired,10,Keenan Allen traded in from Can McCaffrey Get A McPickTwo? (5.02)
+2023,5,4,0,10,6,Michael Thomas,2976316,2976316,00-0032765,79.0,8.09,bilateral,7667eeee,6,acquired,10,Michael Thomas traded in from Can McCaffrey Get A McPickTwo? (8.09)
+2023,5,4,0,6,10,Christian Watson,4248528,4248528,00-0038124,46.0,5.06,bilateral,7667eeee,6,traded_away,10,Christian Watson traded to Can McCaffrey Get A McPickTwo? (5.06)
+2023,5,4,0,6,10,Kenneth Walker III,4567048,4567048,00-0038134,58.0,6.08,bilateral,7667eeee,6,traded_away,10,Kenneth Walker III traded to Can McCaffrey Get A McPickTwo? (6.08)
+2023,5,4,0,6,10,Christian Watson,4248528,4248528,00-0038124,46.0,5.06,bilateral,7667eeee,10,acquired,6,Christian Watson traded in from Justin Time to CeeDee Rings (5.06)
+2023,5,4,0,6,10,Kenneth Walker III,4567048,4567048,00-0038134,58.0,6.08,bilateral,7667eeee,10,acquired,6,Kenneth Walker III traded in from Justin Time to CeeDee Rings (6.08)
+2023,5,4,0,10,6,Keenan Allen,15818,15818,00-0030279,42.0,5.02,bilateral,7667eeee,10,traded_away,6,Keenan Allen traded to Justin Time to CeeDee Rings (5.02)
+2023,5,4,0,10,6,Michael Thomas,2976316,2976316,00-0032765,79.0,8.09,bilateral,7667eeee,10,traded_away,6,Michael Thomas traded to Justin Time to CeeDee Rings (8.09)
+2023,7,6,0,6,2,Dalton Schultz,3117256,3117256,00-0034383,116.0,12.06,bilateral,2aae15d1,2,acquired,6,Dalton Schultz traded in from Justin Time to CeeDee Rings (12.06)
+2023,7,6,0,6,2,Curtis Samuel,3121427,3121427,00-0033282,,,bilateral,2aae15d1,2,acquired,6,Curtis Samuel traded in from Justin Time to CeeDee Rings
+2023,7,6,0,2,6,DK Metcalf,4047650,4047650,00-0035640,22.0,3.02,bilateral,2aae15d1,2,traded_away,6,DK Metcalf traded to Justin Time to CeeDee Rings (3.02)
+2023,7,6,0,2,6,DK Metcalf,4047650,4047650,00-0035640,22.0,3.02,bilateral,2aae15d1,6,acquired,2,DK Metcalf traded in from Chasing this Johnston (3.02)
+2023,7,6,0,6,2,Dalton Schultz,3117256,3117256,00-0034383,116.0,12.06,bilateral,2aae15d1,6,traded_away,2,Dalton Schultz traded to Chasing this Johnston (12.06)
+2023,7,6,0,6,2,Curtis Samuel,3121427,3121427,00-0033282,,,bilateral,2aae15d1,6,traded_away,2,Curtis Samuel traded to Chasing this Johnston
+2023,10,9,0,6,4,DK Metcalf,4047650,4047650,00-0035640,22.0,3.02,bilateral,1b87ca24,4,acquired,6,DK Metcalf traded in from Justin Time to CeeDee Rings (3.02)
+2023,10,9,0,6,4,Isiah Pacheco,4361529,4361529,00-0037197,66.0,7.06,bilateral,1b87ca24,4,acquired,6,Isiah Pacheco traded in from Justin Time to CeeDee Rings (7.06)
+2023,10,9,0,6,4,Michael Thomas,2976316,2976316,00-0032765,79.0,8.09,bilateral,1b87ca24,4,acquired,6,Michael Thomas traded in from Justin Time to CeeDee Rings (8.09)
+2023,10,9,0,4,6,Bijan Robinson,4430807,4430807,00-0038542,10.0,1.10,bilateral,1b87ca24,4,traded_away,6,Bijan Robinson traded to Justin Time to CeeDee Rings (1.10)
+2023,10,9,0,7,6,Justin Jefferson,4262921,4262921,00-0036322,1.0,1.01,bilateral,962890ee,6,acquired,7,Justin Jefferson traded in from Bathroom coercer (1.01)
+2023,10,9,0,4,6,Bijan Robinson,4430807,4430807,00-0038542,10.0,1.10,bilateral,1b87ca24,6,acquired,4,Bijan Robinson traded in from SkyysTheLimit (1.10)
+2023,10,9,0,6,4,DK Metcalf,4047650,4047650,00-0035640,22.0,3.02,bilateral,1b87ca24,6,traded_away,4,DK Metcalf traded to SkyysTheLimit (3.02)
+2023,10,9,0,6,4,Isiah Pacheco,4361529,4361529,00-0037197,66.0,7.06,bilateral,1b87ca24,6,traded_away,4,Isiah Pacheco traded to SkyysTheLimit (7.06)
+2023,10,9,0,6,4,Michael Thomas,2976316,2976316,00-0032765,79.0,8.09,bilateral,1b87ca24,6,traded_away,4,Michael Thomas traded to SkyysTheLimit (8.09)
+2023,10,9,0,6,7,Dalton Kincaid,4385690,4385690,00-0038933,154.0,16.04,bilateral,962890ee,6,traded_away,7,Dalton Kincaid traded to Bathroom coercer (16.04)
+2023,10,9,0,6,7,Dalton Kincaid,4385690,4385690,00-0038933,154.0,16.04,bilateral,962890ee,7,acquired,6,Dalton Kincaid traded in from Justin Time to CeeDee Rings (16.04)
+2023,10,9,0,7,6,Justin Jefferson,4262921,4262921,00-0036322,1.0,1.01,bilateral,962890ee,7,traded_away,6,Justin Jefferson traded to Justin Time to CeeDee Rings (1.01)
+2023,11,10,0,8,6,DeVonta Smith,4241478,4241478,00-0036912,27.0,3.07,bilateral,9c8d30c8,6,acquired,8,"DeVonta Smith traded in from Sahit, I don't have kik, stop (3.07)"
+2023,11,10,0,6,8,Calvin Ridley,3925357,3925357,00-0034837,43.0,5.03,bilateral,9c8d30c8,6,traded_away,8,"Calvin Ridley traded to Sahit, I don't have kik, stop (5.03)"
+2023,11,10,0,6,8,Taysom Hill,2468609,2468609,00-0033357,,,bilateral,9c8d30c8,6,traded_away,8,"Taysom Hill traded to Sahit, I don't have kik, stop"
+2023,11,10,0,6,8,Calvin Ridley,3925357,3925357,00-0034837,43.0,5.03,bilateral,9c8d30c8,8,acquired,6,Calvin Ridley traded in from Justin Time to CeeDee Rings (5.03)
+2023,11,10,0,6,8,Taysom Hill,2468609,2468609,00-0033357,,,bilateral,9c8d30c8,8,acquired,6,Taysom Hill traded in from Justin Time to CeeDee Rings
+2023,11,10,0,8,6,DeVonta Smith,4241478,4241478,00-0036912,27.0,3.07,bilateral,9c8d30c8,8,traded_away,6,DeVonta Smith traded to Justin Time to CeeDee Rings (3.07)
+2023,12,11,0,9,1,Chris Godwin,3116165,3116165,00-0033921,49.0,5.09,bilateral,8f23a9f6,1,acquired,9,Chris Godwin traded in from Je-Romen Empire (5.09)
+2023,12,11,0,9,1,Dallas Goedert,3121023,3121023,00-0034351,69.0,7.09,bilateral,8f23a9f6,1,acquired,9,Dallas Goedert traded in from Je-Romen Empire (7.09)
+2023,12,11,0,1,9,Javonte Williams,4361579,4361579,00-0036997,88.0,9.08,bilateral,8f23a9f6,1,traded_away,9,Javonte Williams traded to Je-Romen Empire (9.08)
+2023,12,11,0,9,4,Jaylen Warren,4569987,4569987,00-0037228,,,bilateral,36215911,4,acquired,9,Jaylen Warren traded in from Je-Romen Empire
+2023,12,11,0,4,9,Jake Ferguson,4242355,4242355,00-0038041,,,bilateral,36215911,4,traded_away,9,Jake Ferguson traded to Je-Romen Empire
+2023,12,11,0,1,9,Javonte Williams,4361579,4361579,00-0036997,88.0,9.08,bilateral,8f23a9f6,9,acquired,1,Javonte Williams traded in from Intermixon between Kasts (9.08)
+2023,12,11,0,4,9,Jake Ferguson,4242355,4242355,00-0038041,,,bilateral,36215911,9,acquired,4,Jake Ferguson traded in from SkyysTheLimit
+2023,12,11,0,9,1,Chris Godwin,3116165,3116165,00-0033921,49.0,5.09,bilateral,8f23a9f6,9,traded_away,1,Chris Godwin traded to Intermixon between Kasts (5.09)
+2023,12,11,0,9,1,Dallas Goedert,3121023,3121023,00-0034351,69.0,7.09,bilateral,8f23a9f6,9,traded_away,1,Dallas Goedert traded to Intermixon between Kasts (7.09)
+2023,12,11,0,9,4,Jaylen Warren,4569987,4569987,00-0037228,,,bilateral,36215911,9,traded_away,4,Jaylen Warren traded to SkyysTheLimit
+2023,14,13,0,6,5,Austin Ekeler,3068267,3068267,00-0033699,3.0,1.03,bilateral,5177af63,5,acquired,6,Austin Ekeler traded in from Justin Time to CeeDee Rings (1.03)
+2023,14,13,0,6,5,Travis Kelce,15847,15847,00-0030506,6.0,1.06,bilateral,5177af63,5,acquired,6,Travis Kelce traded in from Justin Time to CeeDee Rings (1.06)
+2023,14,13,0,6,5,DeVonta Smith,4241478,4241478,00-0036912,27.0,3.07,bilateral,5177af63,5,acquired,6,DeVonta Smith traded in from Justin Time to CeeDee Rings (3.07)
+2023,14,13,0,5,6,CeeDee Lamb,4241389,4241389,00-0036358,15.0,2.05,bilateral,5177af63,5,traded_away,6,CeeDee Lamb traded to Justin Time to CeeDee Rings (2.05)
+2023,14,13,0,5,6,Aaron Jones,3042519,3042519,00-0033293,35.0,4.05,bilateral,5177af63,5,traded_away,6,Aaron Jones traded to Justin Time to CeeDee Rings (4.05)
+2023,14,13,0,5,6,David Montgomery,4035538,4035538,00-0035685,83.0,9.03,bilateral,5177af63,5,traded_away,6,David Montgomery traded to Justin Time to CeeDee Rings (9.03)
+2023,14,13,0,5,6,Trey McBride,4361307,4361307,00-0037744,,,bilateral,5177af63,5,traded_away,6,Trey McBride traded to Justin Time to CeeDee Rings
+2023,14,13,0,5,6,CeeDee Lamb,4241389,4241389,00-0036358,15.0,2.05,bilateral,5177af63,6,acquired,5,CeeDee Lamb traded in from Lamb Sauve (2.05)
+2023,14,13,0,5,6,Aaron Jones,3042519,3042519,00-0033293,35.0,4.05,bilateral,5177af63,6,acquired,5,Aaron Jones traded in from Lamb Sauve (4.05)
+2023,14,13,0,5,6,David Montgomery,4035538,4035538,00-0035685,83.0,9.03,bilateral,5177af63,6,acquired,5,David Montgomery traded in from Lamb Sauve (9.03)
+2023,14,13,0,5,6,Trey McBride,4361307,4361307,00-0037744,,,bilateral,5177af63,6,acquired,5,Trey McBride traded in from Lamb Sauve
+2023,14,13,0,6,5,Austin Ekeler,3068267,3068267,00-0033699,3.0,1.03,bilateral,5177af63,6,traded_away,5,Austin Ekeler traded to Lamb Sauve (1.03)
+2023,14,13,0,6,5,Travis Kelce,15847,15847,00-0030506,6.0,1.06,bilateral,5177af63,6,traded_away,5,Travis Kelce traded to Lamb Sauve (1.06)
+2023,14,13,0,6,5,DeVonta Smith,4241478,4241478,00-0036912,27.0,3.07,bilateral,5177af63,6,traded_away,5,DeVonta Smith traded to Lamb Sauve (3.07)
+2023,14,13,0,9,8,Davante Adams,16800,16800,00-0031381,12.0,2.02,bilateral,4d7c762a,8,acquired,9,Davante Adams traded in from Je-Romen Empire (2.02)
+2023,14,13,0,9,8,Jahmyr Gibbs,4429795,4429795,00-0039139,41.0,5.01,bilateral,4d7c762a,8,acquired,9,Jahmyr Gibbs traded in from Je-Romen Empire (5.01)
+2023,14,13,0,8,9,Kyren Williams,4430737,4430737,00-0037840,,,bilateral,4d7c762a,8,traded_away,9,Kyren Williams traded to Je-Romen Empire
+2023,14,13,0,8,9,Kyren Williams,4430737,4430737,00-0037840,,,bilateral,4d7c762a,9,acquired,8,"Kyren Williams traded in from Sahit, I don't have kik, stop"
+2023,14,13,0,9,8,Davante Adams,16800,16800,00-0031381,12.0,2.02,bilateral,4d7c762a,9,traded_away,8,"Davante Adams traded to Sahit, I don't have kik, stop (2.02)"
+2023,14,13,0,9,8,Jahmyr Gibbs,4429795,4429795,00-0039139,41.0,5.01,bilateral,4d7c762a,9,traded_away,8,"Jahmyr Gibbs traded to Sahit, I don't have kik, stop (5.01)"
+2024,3,2,0,9,1,Alvin Kamara,3054850,3054850,00-0033906,21.0,3.01,bilateral,6067f49d,1,acquired,9,Alvin Kamara traded in from Courtland Trailblazers (3.01)
+2024,3,2,0,2,1,Jaylen Warren,4569987,4569987,00-0037228,74.0,8.04,bilateral,16a5999b,1,acquired,2,Jaylen Warren traded in from Mixon up da Browns (8.04)
+2024,3,2,0,1,9,Kyren Williams,4430737,4430737,00-0037840,18.0,2.08,bilateral,6067f49d,1,traded_away,9,Kyren Williams traded to Courtland Trailblazers (2.08)
+2024,3,2,0,1,9,DeVonta Smith,4241478,4241478,00-0036912,58.0,6.08,bilateral,6067f49d,1,traded_away,9,DeVonta Smith traded to Courtland Trailblazers (6.08)
+2024,3,2,0,1,2,Kyler Murray,3917315,3917315,00-0035228,103.0,11.03,bilateral,16a5999b,1,traded_away,2,Kyler Murray traded to Mixon up da Browns (11.03)
+2024,3,2,0,9,2,Christian McCaffrey,3117251,3117251,00-0033280,1.0,1.01,bilateral,fa97661e,2,acquired,9,Christian McCaffrey traded in from Courtland Trailblazers (1.01)
+2024,3,2,0,9,2,Michael Pittman Jr.,4035687,4035687,00-0036252,20.0,2.10,bilateral,fa97661e,2,acquired,9,Michael Pittman Jr. traded in from Courtland Trailblazers (2.10)
+2024,3,2,0,9,2,Cooper Kupp,2977187,2977187,00-0033908,41.0,5.01,bilateral,fa97661e,2,acquired,9,Cooper Kupp traded in from Courtland Trailblazers (5.01)
+2024,3,2,0,1,2,Kyler Murray,3917315,3917315,00-0035228,103.0,11.03,bilateral,16a5999b,2,acquired,1,Kyler Murray traded in from North of the Mason-Njigba (11.03)
+2024,3,2,0,9,2,Colby Parkinson,4242557,4242557,00-0036244,,,bilateral,fa97661e,2,acquired,9,Colby Parkinson traded in from Courtland Trailblazers
+2024,3,2,0,2,9,Amon-Ra St. Brown,4374302,4374302,00-0036963,7.0,1.07,bilateral,fa97661e,2,traded_away,9,Amon-Ra St. Brown traded to Courtland Trailblazers (1.07)
+2024,3,2,0,2,9,DK Metcalf,4047650,4047650,00-0035640,47.0,5.07,bilateral,fa97661e,2,traded_away,9,DK Metcalf traded to Courtland Trailblazers (5.07)
+2024,3,2,0,2,1,Jaylen Warren,4569987,4569987,00-0037228,74.0,8.04,bilateral,16a5999b,2,traded_away,1,Jaylen Warren traded to North of the Mason-Njigba (8.04)
+2024,3,2,0,2,9,Amon-Ra St. Brown,4374302,4374302,00-0036963,7.0,1.07,bilateral,fa97661e,9,acquired,2,Amon-Ra St. Brown traded in from Mixon up da Browns (1.07)
+2024,3,2,0,1,9,Kyren Williams,4430737,4430737,00-0037840,18.0,2.08,bilateral,6067f49d,9,acquired,1,Kyren Williams traded in from North of the Mason-Njigba (2.08)
+2024,3,2,0,2,9,DK Metcalf,4047650,4047650,00-0035640,47.0,5.07,bilateral,fa97661e,9,acquired,2,DK Metcalf traded in from Mixon up da Browns (5.07)
+2024,3,2,0,1,9,DeVonta Smith,4241478,4241478,00-0036912,58.0,6.08,bilateral,6067f49d,9,acquired,1,DeVonta Smith traded in from North of the Mason-Njigba (6.08)
+2024,3,2,0,9,2,Christian McCaffrey,3117251,3117251,00-0033280,1.0,1.01,bilateral,fa97661e,9,traded_away,2,Christian McCaffrey traded to Mixon up da Browns (1.01)
+2024,3,2,0,9,2,Michael Pittman Jr.,4035687,4035687,00-0036252,20.0,2.10,bilateral,fa97661e,9,traded_away,2,Michael Pittman Jr. traded to Mixon up da Browns (2.10)
+2024,3,2,0,9,1,Alvin Kamara,3054850,3054850,00-0033906,21.0,3.01,bilateral,6067f49d,9,traded_away,1,Alvin Kamara traded to North of the Mason-Njigba (3.01)
+2024,3,2,0,9,2,Cooper Kupp,2977187,2977187,00-0033908,41.0,5.01,bilateral,fa97661e,9,traded_away,2,Cooper Kupp traded to Mixon up da Browns (5.01)
+2024,3,2,0,9,2,Colby Parkinson,4242557,4242557,00-0036244,,,bilateral,fa97661e,9,traded_away,2,Colby Parkinson traded to Mixon up da Browns
+2024,6,5,0,5,4,Brian Thomas Jr.,4432773,4432773,00-0039893,96.0,10.06,bilateral,3a950483,4,acquired,5,Brian Thomas Jr. traded in from Im going Tua Hill Myself (10.06)
+2024,6,5,0,5,4,Tucker Kraft,4572680,4572680,00-0038996,,,bilateral,3a950483,4,acquired,5,Tucker Kraft traded in from Im going Tua Hill Myself
+2024,6,5,0,4,5,Nico Collins,4258173,4258173,00-0036554,24.0,3.04,bilateral,3a950483,4,traded_away,5,Nico Collins traded to Im going Tua Hill Myself (3.04)
+2024,6,5,0,4,5,Nico Collins,4258173,4258173,00-0036554,24.0,3.04,bilateral,3a950483,5,acquired,4,Nico Collins traded in from GiveMeMyFlowers (3.04)
+2024,6,5,0,5,4,Brian Thomas Jr.,4432773,4432773,00-0039893,96.0,10.06,bilateral,3a950483,5,traded_away,4,Brian Thomas Jr. traded to GiveMeMyFlowers (10.06)
+2024,6,5,0,5,4,Tucker Kraft,4572680,4572680,00-0038996,,,bilateral,3a950483,5,traded_away,4,Tucker Kraft traded to GiveMeMyFlowers
+2024,7,6,0,6,3,Josh Jacobs,4047365,4047365,00-0035700,22.0,3.02,bilateral,85566264,3,acquired,6,Josh Jacobs traded in from My Hock Hurts (3.02)
+2024,7,6,0,3,6,Kenneth Walker III,4567048,4567048,00-0038134,35.0,4.05,bilateral,85566264,3,traded_away,6,Kenneth Walker III traded to My Hock Hurts (4.05)
+2024,7,6,0,3,6,Daniel Jones,3917792,3917792,00-0035710,,,bilateral,85566264,3,traded_away,6,Daniel Jones traded to My Hock Hurts
+2024,7,6,0,3,6,Kenneth Walker III,4567048,4567048,00-0038134,35.0,4.05,bilateral,85566264,6,acquired,3,Kenneth Walker III traded in from Sahit on my face (4.05)
+2024,7,6,0,3,6,Daniel Jones,3917792,3917792,00-0035710,,,bilateral,85566264,6,acquired,3,Daniel Jones traded in from Sahit on my face
+2024,7,6,0,6,3,Josh Jacobs,4047365,4047365,00-0035700,22.0,3.02,bilateral,85566264,6,traded_away,3,Josh Jacobs traded to Sahit on my face (3.02)
+2024,7,6,0,8,7,Jonathan Taylor,4242335,4242335,00-0036223,10.0,1.10,bilateral,be30690f,7,acquired,8,"Jonathan Taylor traded in from Sahit, I don't have kik, stop (1.10)"
+2024,7,6,0,8,7,C.J. Stroud,4432577,4432577,00-0039163,50.0,5.10,bilateral,be30690f,7,acquired,8,"C.J. Stroud traded in from Sahit, I don't have kik, stop (5.10)"
+2024,7,6,0,7,8,Tony Pollard,3916148,3916148,00-0035261,88.0,9.08,bilateral,be30690f,7,traded_away,8,"Tony Pollard traded to Sahit, I don't have kik, stop (9.08)"
+2024,7,6,0,7,8,Chase Brown,4362238,4362238,00-0038597,108.0,11.08,bilateral,be30690f,7,traded_away,8,"Chase Brown traded to Sahit, I don't have kik, stop (11.08)"
+2024,7,6,0,7,8,Tony Pollard,3916148,3916148,00-0035261,88.0,9.08,bilateral,be30690f,8,acquired,7,Tony Pollard traded in from Gibbing my Jonathan a tug (9.08)
+2024,7,6,0,7,8,Chase Brown,4362238,4362238,00-0038597,108.0,11.08,bilateral,be30690f,8,acquired,7,Chase Brown traded in from Gibbing my Jonathan a tug (11.08)
+2024,7,6,0,8,7,Jonathan Taylor,4242335,4242335,00-0036223,10.0,1.10,bilateral,be30690f,8,traded_away,7,Jonathan Taylor traded to Gibbing my Jonathan a tug (1.10)
+2024,7,6,0,8,7,C.J. Stroud,4432577,4432577,00-0039163,50.0,5.10,bilateral,be30690f,8,traded_away,7,C.J. Stroud traded to Gibbing my Jonathan a tug (5.10)
+2024,10,9,0,8,6,Xavier Worthy,4683062,4683062,00-0039894,71.0,8.01,bilateral,ea80b671,6,acquired,8,"Xavier Worthy traded in from Sahit, I don't have kik, stop (8.01)"
+2024,10,9,0,8,6,Chase Brown,4362238,4362238,00-0038597,108.0,11.08,bilateral,ea80b671,6,acquired,8,"Chase Brown traded in from Sahit, I don't have kik, stop (11.08)"
+2024,10,9,0,8,6,Bo Nix,4426338,4426338,00-0039732,,,bilateral,ea80b671,6,acquired,8,"Bo Nix traded in from Sahit, I don't have kik, stop"
+2024,10,9,0,6,8,Dalton Kincaid,4385690,4385690,00-0038933,59.0,6.09,bilateral,ea80b671,6,traded_away,8,"Dalton Kincaid traded to Sahit, I don't have kik, stop (6.09)"
+2024,10,9,0,6,8,Austin Ekeler,3068267,3068267,00-0033699,90.0,9.10,bilateral,ea80b671,6,traded_away,8,"Austin Ekeler traded to Sahit, I don't have kik, stop (9.10)"
+2024,10,9,0,6,8,Cedric Tillman,4369863,4369863,00-0038979,,,bilateral,ea80b671,6,traded_away,8,"Cedric Tillman traded to Sahit, I don't have kik, stop"
+2024,10,9,0,6,8,Dalton Kincaid,4385690,4385690,00-0038933,59.0,6.09,bilateral,ea80b671,8,acquired,6,Dalton Kincaid traded in from My Hock Hurts (6.09)
+2024,10,9,0,6,8,Austin Ekeler,3068267,3068267,00-0033699,90.0,9.10,bilateral,ea80b671,8,acquired,6,Austin Ekeler traded in from My Hock Hurts (9.10)
+2024,10,9,0,6,8,Cedric Tillman,4369863,4369863,00-0038979,,,bilateral,ea80b671,8,acquired,6,Cedric Tillman traded in from My Hock Hurts
+2024,10,9,0,8,6,Xavier Worthy,4683062,4683062,00-0039894,71.0,8.01,bilateral,ea80b671,8,traded_away,6,Xavier Worthy traded to My Hock Hurts (8.01)
+2024,10,9,0,8,6,Chase Brown,4362238,4362238,00-0038597,108.0,11.08,bilateral,ea80b671,8,traded_away,6,Chase Brown traded to My Hock Hurts (11.08)
+2024,10,9,0,8,6,Bo Nix,4426338,4426338,00-0039732,,,bilateral,ea80b671,8,traded_away,6,Bo Nix traded to My Hock Hurts
+2024,11,10,0,9,7,DeVonta Smith,4241478,4241478,00-0036912,58.0,6.08,bilateral,9aca7ab8,7,acquired,9,DeVonta Smith traded in from Courtland Trailblazers (6.08)
+2024,11,10,0,9,7,Diontae Johnson,3932905,3932905,00-0035216,61.0,7.01,bilateral,9aca7ab8,7,acquired,9,Diontae Johnson traded in from Courtland Trailblazers (7.01)
+2024,11,10,0,7,9,Patrick Mahomes,3139477,3139477,00-0033873,44.0,5.04,bilateral,9aca7ab8,7,traded_away,9,Patrick Mahomes traded to Courtland Trailblazers (5.04)
+2024,11,10,0,7,9,Amari Cooper,2976499,2976499,00-0031544,68.0,7.08,bilateral,9aca7ab8,7,traded_away,9,Amari Cooper traded to Courtland Trailblazers (7.08)
+2024,11,10,0,7,9,Najee Harris,4241457,4241457,00-0036893,73.0,8.03,bilateral,9aca7ab8,7,traded_away,9,Najee Harris traded to Courtland Trailblazers (8.03)
+2024,11,10,0,7,9,Patrick Mahomes,3139477,3139477,00-0033873,44.0,5.04,bilateral,9aca7ab8,9,acquired,7,Patrick Mahomes traded in from Gibbing my Jonathan a tug (5.04)
+2024,11,10,0,7,9,Amari Cooper,2976499,2976499,00-0031544,68.0,7.08,bilateral,9aca7ab8,9,acquired,7,Amari Cooper traded in from Gibbing my Jonathan a tug (7.08)
+2024,11,10,0,7,9,Najee Harris,4241457,4241457,00-0036893,73.0,8.03,bilateral,9aca7ab8,9,acquired,7,Najee Harris traded in from Gibbing my Jonathan a tug (8.03)
+2024,11,10,0,9,7,DeVonta Smith,4241478,4241478,00-0036912,58.0,6.08,bilateral,9aca7ab8,9,traded_away,7,DeVonta Smith traded to Gibbing my Jonathan a tug (6.08)
+2024,11,10,0,9,7,Diontae Johnson,3932905,3932905,00-0035216,61.0,7.01,bilateral,9aca7ab8,9,traded_away,7,Diontae Johnson traded to Gibbing my Jonathan a tug (7.01)
+2025,3,2,0,9,1,Jacory Croskey-Merritt,4575131,4575131,00-0040242,,,bilateral,0e564f0b,1,acquired,9,Jacory Croskey-Merritt traded in from Karma is the guy on the Chiefs
+2025,3,2,0,1,9,Keon Coleman,4635008,4635008,00-0039901,101.0,11.01,bilateral,0e564f0b,1,traded_away,9,Keon Coleman traded to Karma is the guy on the Chiefs (11.01)
+2025,3,2,0,1,9,Keon Coleman,4635008,4635008,00-0039901,101.0,11.01,bilateral,0e564f0b,9,acquired,1,Keon Coleman traded in from Phil 1010 Prof: Hurts MTW 10-12 (11.01)
+2025,3,2,0,9,1,Jacory Croskey-Merritt,4575131,4575131,00-0040242,,,bilateral,0e564f0b,9,traded_away,1,Jacory Croskey-Merritt traded to Phil 1010 Prof: Hurts MTW 10-12
+2025,4,3,0,5,2,Davante Adams,16800,16800,00-0031381,38.0,4.08,bilateral,2a70a616,2,acquired,5,Davante Adams traded in from Free Win (4.08)
+2025,4,3,0,5,2,Cam Skattebo,4696981,4696981,00-0040715,98.0,10.08,bilateral,2a70a616,2,acquired,5,Cam Skattebo traded in from Free Win (10.08)
+2025,4,3,0,2,5,CeeDee Lamb,4241389,4241389,00-0036358,5.0,1.05,bilateral,2a70a616,2,traded_away,5,CeeDee Lamb traded to Free Win (1.05)
+2025,4,3,0,2,5,CeeDee Lamb,4241389,4241389,00-0036358,5.0,1.05,bilateral,2a70a616,5,acquired,2,CeeDee Lamb traded in from Jauantanomo Bay (1.05)
+2025,4,3,0,5,2,Davante Adams,16800,16800,00-0031381,38.0,4.08,bilateral,2a70a616,5,traded_away,2,Davante Adams traded to Jauantanomo Bay (4.08)
+2025,4,3,0,5,2,Cam Skattebo,4696981,4696981,00-0040715,98.0,10.08,bilateral,2a70a616,5,traded_away,2,Cam Skattebo traded to Jauantanomo Bay (10.08)
+2025,6,5,0,7,4,Caleb Williams,4431611,4431611,00-0039918,106.0,11.06,bilateral,d57f7172,4,acquired,7,Caleb Williams traded in from Padma's Pack (11.06)
+2025,6,5,0,4,7,Bijan Robinson,4430807,4430807,00-0038542,2.0,1.02,bilateral,d57f7172,4,traded_away,7,Bijan Robinson traded to Padma's Pack (1.02)
+2025,6,5,0,4,7,Woody Marks,4429059,4429059,00-0040583,,,bilateral,d57f7172,4,traded_away,7,Woody Marks traded to Padma's Pack
+2025,6,5,0,7,5,Justin Jefferson,4262921,4262921,00-0036322,6.0,1.06,bilateral,1cd7d341,5,acquired,7,Justin Jefferson traded in from Padma's Pack (1.06)
+2025,6,5,0,7,5,Kyle Pitts Sr.,4360248,4360248,00-0036970,155.0,16.05,bilateral,1cd7d341,5,acquired,7,Kyle Pitts Sr. traded in from Padma's Pack (16.05)
+2025,6,5,0,5,7,Tetairoa McMillan,4685472,4685472,00-0040124,58.0,6.08,bilateral,1cd7d341,5,traded_away,7,Tetairoa McMillan traded to Padma's Pack (6.08)
+2025,6,5,0,5,7,Rome Odunze,4431299,4431299,00-0039919,78.0,8.08,bilateral,1cd7d341,5,traded_away,7,Rome Odunze traded to Padma's Pack (8.08)
+2025,6,5,0,4,7,Bijan Robinson,4430807,4430807,00-0038542,2.0,1.02,bilateral,d57f7172,7,acquired,4,Bijan Robinson traded in from OhPlzMrsRobinson (1.02)
+2025,6,5,0,5,7,Tetairoa McMillan,4685472,4685472,00-0040124,58.0,6.08,bilateral,1cd7d341,7,acquired,5,Tetairoa McMillan traded in from Free Win (6.08)
+2025,6,5,0,5,7,Rome Odunze,4431299,4431299,00-0039919,78.0,8.08,bilateral,1cd7d341,7,acquired,5,Rome Odunze traded in from Free Win (8.08)
+2025,6,5,0,4,7,Woody Marks,4429059,4429059,00-0040583,,,bilateral,d57f7172,7,acquired,4,Woody Marks traded in from OhPlzMrsRobinson
+2025,6,5,0,7,5,Justin Jefferson,4262921,4262921,00-0036322,6.0,1.06,bilateral,1cd7d341,7,traded_away,5,Justin Jefferson traded to Free Win (1.06)
+2025,6,5,0,7,4,Caleb Williams,4431611,4431611,00-0039918,106.0,11.06,bilateral,d57f7172,7,traded_away,4,Caleb Williams traded to OhPlzMrsRobinson (11.06)
+2025,6,5,0,7,5,Kyle Pitts Sr.,4360248,4360248,00-0036970,155.0,16.05,bilateral,1cd7d341,7,traded_away,5,Kyle Pitts Sr. traded to Free Win (16.05)
+2025,7,6,0,10,5,Puka Nacua,4426515,4426515,00-0039075,8.0,1.08,bilateral,eff2c49e,5,acquired,10,Puka Nacua traded in from Boswell That Ends Well (1.08)
+2025,7,6,0,9,5,Garrett Wilson,4569618,4569618,00-0037740,46.0,5.06,bilateral,ba036ac1,5,acquired,9,Garrett Wilson traded in from Karma is the guy on the Chiefs (5.06)
+2025,7,6,0,10,5,Chris Godwin Jr.,3116165,3116165,00-0033921,73.0,8.03,bilateral,eff2c49e,5,acquired,10,Chris Godwin Jr. traded in from Boswell That Ends Well (8.03)
+2025,7,6,0,10,5,Javonte Williams,4361579,4361579,00-0036997,88.0,9.08,bilateral,eff2c49e,5,acquired,10,Javonte Williams traded in from Boswell That Ends Well (9.08)
+2025,7,6,0,9,5,Travis Etienne Jr.,4239996,4239996,00-0036973,100.0,10.10,bilateral,ba036ac1,5,acquired,9,Travis Etienne Jr. traded in from Karma is the guy on the Chiefs (10.10)
+2025,7,6,0,5,10,Justin Jefferson,4262921,4262921,00-0036322,6.0,1.06,bilateral,eff2c49e,5,traded_away,10,Justin Jefferson traded to Boswell That Ends Well (1.06)
+2025,7,6,0,5,10,Drake London,4426502,4426502,00-0037238,18.0,2.08,bilateral,eff2c49e,5,traded_away,10,Drake London traded to Boswell That Ends Well (2.08)
+2025,7,6,0,5,10,Omarion Hampton,4685382,4685382,00-0040666,29.0,3.09,bilateral,eff2c49e,5,traded_away,10,Omarion Hampton traded to Boswell That Ends Well (3.09)
+2025,7,6,0,5,10,Jaylen Waddle,4372016,4372016,00-0036613,83.0,9.03,bilateral,eff2c49e,5,traded_away,10,Jaylen Waddle traded to Boswell That Ends Well (9.03)
+2025,7,6,0,5,9,Kimani Vidal,4430968,4430968,00-0039391,,,bilateral,ba036ac1,5,traded_away,9,Kimani Vidal traded to Karma is the guy on the Chiefs
+2025,7,6,0,10,6,Ladd McConkey,4612826,4612826,00-0039915,28.0,3.08,bilateral,66b1b7dd,6,acquired,10,Ladd McConkey traded in from Boswell That Ends Well (3.08)
+2025,7,6,0,10,6,David Montgomery,4035538,4035538,00-0035685,68.0,7.08,bilateral,66b1b7dd,6,acquired,10,David Montgomery traded in from Boswell That Ends Well (7.08)
+2025,7,6,0,10,6,Quentin Johnston,4429025,4429025,00-0038544,,,bilateral,66b1b7dd,6,acquired,10,Quentin Johnston traded in from Boswell That Ends Well
+2025,7,6,0,6,10,Tony Pollard,3916148,3916148,00-0035261,74.0,8.04,bilateral,66b1b7dd,6,traded_away,10,Tony Pollard traded to Boswell That Ends Well (8.04)
+2025,7,6,0,6,10,Chris Olave,4361370,4361370,00-0037239,87.0,9.07,bilateral,66b1b7dd,6,traded_away,10,Chris Olave traded to Boswell That Ends Well (9.07)
+2025,7,6,0,6,10,Ricky Pearsall,4428209,4428209,00-0039916,107.0,11.07,bilateral,66b1b7dd,6,traded_away,10,Ricky Pearsall traded to Boswell That Ends Well (11.07)
+2025,7,6,0,6,10,Dak Prescott,2577417,2577417,00-0033077,127.0,13.07,bilateral,66b1b7dd,6,traded_away,10,Dak Prescott traded to Boswell That Ends Well (13.07)
+2025,7,6,0,5,9,Kimani Vidal,4430968,4430968,00-0039391,,,bilateral,ba036ac1,9,acquired,5,Kimani Vidal traded in from Free Win
+2025,7,6,0,9,5,Garrett Wilson,4569618,4569618,00-0037740,46.0,5.06,bilateral,ba036ac1,9,traded_away,5,Garrett Wilson traded to Free Win (5.06)
+2025,7,6,0,9,5,Travis Etienne Jr.,4239996,4239996,00-0036973,100.0,10.10,bilateral,ba036ac1,9,traded_away,5,Travis Etienne Jr. traded to Free Win (10.10)
+2025,7,6,0,5,10,Justin Jefferson,4262921,4262921,00-0036322,6.0,1.06,bilateral,eff2c49e,10,acquired,5,Justin Jefferson traded in from Free Win (1.06)
+2025,7,6,0,5,10,Drake London,4426502,4426502,00-0037238,18.0,2.08,bilateral,eff2c49e,10,acquired,5,Drake London traded in from Free Win (2.08)
+2025,7,6,0,5,10,Omarion Hampton,4685382,4685382,00-0040666,29.0,3.09,bilateral,eff2c49e,10,acquired,5,Omarion Hampton traded in from Free Win (3.09)
+2025,7,6,0,6,10,Tony Pollard,3916148,3916148,00-0035261,74.0,8.04,bilateral,66b1b7dd,10,acquired,6,Tony Pollard traded in from Ladd's McCaffrican Boutte (8.04)
+2025,7,6,0,5,10,Jaylen Waddle,4372016,4372016,00-0036613,83.0,9.03,bilateral,eff2c49e,10,acquired,5,Jaylen Waddle traded in from Free Win (9.03)
+2025,7,6,0,6,10,Chris Olave,4361370,4361370,00-0037239,87.0,9.07,bilateral,66b1b7dd,10,acquired,6,Chris Olave traded in from Ladd's McCaffrican Boutte (9.07)
+2025,7,6,0,6,10,Ricky Pearsall,4428209,4428209,00-0039916,107.0,11.07,bilateral,66b1b7dd,10,acquired,6,Ricky Pearsall traded in from Ladd's McCaffrican Boutte (11.07)
+2025,7,6,0,6,10,Dak Prescott,2577417,2577417,00-0033077,127.0,13.07,bilateral,66b1b7dd,10,acquired,6,Dak Prescott traded in from Ladd's McCaffrican Boutte (13.07)
+2025,7,6,0,10,5,Puka Nacua,4426515,4426515,00-0039075,8.0,1.08,bilateral,eff2c49e,10,traded_away,5,Puka Nacua traded to Free Win (1.08)
+2025,7,6,0,10,6,Ladd McConkey,4612826,4612826,00-0039915,28.0,3.08,bilateral,66b1b7dd,10,traded_away,6,Ladd McConkey traded to Ladd's McCaffrican Boutte (3.08)
+2025,7,6,0,10,6,David Montgomery,4035538,4035538,00-0035685,68.0,7.08,bilateral,66b1b7dd,10,traded_away,6,David Montgomery traded to Ladd's McCaffrican Boutte (7.08)
+2025,7,6,0,10,5,Chris Godwin Jr.,3116165,3116165,00-0033921,73.0,8.03,bilateral,eff2c49e,10,traded_away,5,Chris Godwin Jr. traded to Free Win (8.03)
+2025,7,6,0,10,5,Javonte Williams,4361579,4361579,00-0036997,88.0,9.08,bilateral,eff2c49e,10,traded_away,5,Javonte Williams traded to Free Win (9.08)
+2025,7,6,0,10,6,Quentin Johnston,4429025,4429025,00-0038544,,,bilateral,66b1b7dd,10,traded_away,6,Quentin Johnston traded to Ladd's McCaffrican Boutte
+2025,8,7,0,6,1,Cade Otton,4243331,4243331,00-0038129,,,bilateral,1304d9a9,1,acquired,6,Cade Otton traded in from Ladd's McCaffrican Boutte
+2025,8,7,0,1,6,Brian Robinson Jr.,4241474,4241474,00-0037746,81.0,9.01,bilateral,1304d9a9,1,traded_away,6,Brian Robinson Jr. traded to Ladd's McCaffrican Boutte (9.01)
+2025,8,7,0,1,6,Brian Robinson Jr.,4241474,4241474,00-0037746,81.0,9.01,bilateral,1304d9a9,6,acquired,1,Brian Robinson Jr. traded in from Phil 1010 Prof: Hurts MTW 10-12 (9.01)
+2025,8,7,0,6,1,Cade Otton,4243331,4243331,00-0038129,,,bilateral,1304d9a9,6,traded_away,1,Cade Otton traded to Phil 1010 Prof: Hurts MTW 10-12
+2025,9,8,0,10,2,Justin Jefferson,4262921,4262921,00-0036322,6.0,1.06,bilateral,4b495366,2,acquired,10,Justin Jefferson traded in from Boswell That Ends Well (1.06)
+2025,9,8,0,10,2,D'Andre Swift,4259545,4259545,00-0036275,48.0,5.08,bilateral,4b495366,2,acquired,10,D'Andre Swift traded in from Boswell That Ends Well (5.08)
+2025,9,8,0,10,2,Chris Olave,4361370,4361370,00-0037239,87.0,9.07,bilateral,4b495366,2,acquired,10,Chris Olave traded in from Boswell That Ends Well (9.07)
+2025,9,8,0,2,10,Josh Jacobs,4047365,4047365,00-0035700,16.0,2.06,bilateral,4b495366,2,traded_away,10,Josh Jacobs traded to Boswell That Ends Well (2.06)
+2025,9,8,0,2,10,Davante Adams,16800,16800,00-0031381,38.0,4.08,bilateral,4b495366,2,traded_away,10,Davante Adams traded to Boswell That Ends Well (4.08)
+2025,9,8,0,5,4,Travis Etienne Jr.,4239996,4239996,00-0036973,100.0,10.10,bilateral,dff1bca2,4,acquired,5,Travis Etienne Jr. traded in from Free Win (10.10)
+2025,9,8,0,5,4,Troy Franklin,4431280,4431280,00-0039868,,,bilateral,dff1bca2,4,acquired,5,Troy Franklin traded in from Free Win
+2025,9,8,0,4,5,Emeka Egbuka,4567750,4567750,00-0040129,82.0,9.02,bilateral,dff1bca2,4,traded_away,5,Emeka Egbuka traded to Free Win (9.02)
+2025,9,8,0,4,5,Emeka Egbuka,4567750,4567750,00-0040129,82.0,9.02,bilateral,dff1bca2,5,acquired,4,Emeka Egbuka traded in from OhPlzMrsRobinson (9.02)
+2025,9,8,0,5,4,Travis Etienne Jr.,4239996,4239996,00-0036973,100.0,10.10,bilateral,dff1bca2,5,traded_away,4,Travis Etienne Jr. traded to OhPlzMrsRobinson (10.10)
+2025,9,8,0,5,4,Troy Franklin,4431280,4431280,00-0039868,,,bilateral,dff1bca2,5,traded_away,4,Troy Franklin traded to OhPlzMrsRobinson
+2025,9,8,0,9,8,Chuba Hubbard,4241416,4241416,00-0036555,40.0,4.10,bilateral,64756da7,8,acquired,9,Chuba Hubbard traded in from Karma is the guy on the Chiefs (4.10)
+2025,9,8,0,9,8,DK Metcalf,4047650,4047650,00-0035640,47.0,5.07,bilateral,64756da7,8,acquired,9,DK Metcalf traded in from Karma is the guy on the Chiefs (5.07)
+2025,9,8,0,9,8,Bo Nix,4426338,4426338,00-0039732,92.0,10.02,bilateral,64756da7,8,acquired,9,Bo Nix traded in from Karma is the guy on the Chiefs (10.02)
+2025,9,8,0,9,8,Dallas Goedert,3121023,3121023,00-0034351,149.0,15.09,bilateral,64756da7,8,acquired,9,Dallas Goedert traded in from Karma is the guy on the Chiefs (15.09)
+2025,9,8,0,8,9,Jayden Daniels,4426348,4426348,00-0039910,30.0,3.10,bilateral,64756da7,8,traded_away,9,Jayden Daniels traded to Karma is the guy on the Chiefs (3.10)
+2025,9,8,0,8,9,Travis Kelce,15847,15847,00-0030506,70.0,7.10,bilateral,64756da7,8,traded_away,9,Travis Kelce traded to Karma is the guy on the Chiefs (7.10)
+2025,9,8,0,8,9,Jaylen Warren,4569987,4569987,00-0037228,90.0,9.10,bilateral,64756da7,8,traded_away,9,Jaylen Warren traded to Karma is the guy on the Chiefs (9.10)
+2025,9,8,0,8,9,Trey Benson,4429275,4429275,00-0039921,110.0,11.10,bilateral,64756da7,8,traded_away,9,Trey Benson traded to Karma is the guy on the Chiefs (11.10)
+2025,9,8,0,8,9,Jayden Daniels,4426348,4426348,00-0039910,30.0,3.10,bilateral,64756da7,9,acquired,8,"Jayden Daniels traded in from Sahit, I don't have kik, stop (3.10)"
+2025,9,8,0,8,9,Travis Kelce,15847,15847,00-0030506,70.0,7.10,bilateral,64756da7,9,acquired,8,"Travis Kelce traded in from Sahit, I don't have kik, stop (7.10)"
+2025,9,8,0,8,9,Jaylen Warren,4569987,4569987,00-0037228,90.0,9.10,bilateral,64756da7,9,acquired,8,"Jaylen Warren traded in from Sahit, I don't have kik, stop (9.10)"
+2025,9,8,0,8,9,Trey Benson,4429275,4429275,00-0039921,110.0,11.10,bilateral,64756da7,9,acquired,8,"Trey Benson traded in from Sahit, I don't have kik, stop (11.10)"
+2025,9,8,0,9,8,Chuba Hubbard,4241416,4241416,00-0036555,40.0,4.10,bilateral,64756da7,9,traded_away,8,"Chuba Hubbard traded to Sahit, I don't have kik, stop (4.10)"
+2025,9,8,0,9,8,DK Metcalf,4047650,4047650,00-0035640,47.0,5.07,bilateral,64756da7,9,traded_away,8,"DK Metcalf traded to Sahit, I don't have kik, stop (5.07)"
+2025,9,8,0,9,8,Bo Nix,4426338,4426338,00-0039732,92.0,10.02,bilateral,64756da7,9,traded_away,8,"Bo Nix traded to Sahit, I don't have kik, stop (10.02)"
+2025,9,8,0,9,8,Dallas Goedert,3121023,3121023,00-0034351,149.0,15.09,bilateral,64756da7,9,traded_away,8,"Dallas Goedert traded to Sahit, I don't have kik, stop (15.09)"
+2025,9,8,0,2,10,Josh Jacobs,4047365,4047365,00-0035700,16.0,2.06,bilateral,4b495366,10,acquired,2,Josh Jacobs traded in from Jauantanomo Bay (2.06)
+2025,9,8,0,2,10,Davante Adams,16800,16800,00-0031381,38.0,4.08,bilateral,4b495366,10,acquired,2,Davante Adams traded in from Jauantanomo Bay (4.08)
+2025,9,8,0,10,2,Justin Jefferson,4262921,4262921,00-0036322,6.0,1.06,bilateral,4b495366,10,traded_away,2,Justin Jefferson traded to Jauantanomo Bay (1.06)
+2025,9,8,0,10,2,D'Andre Swift,4259545,4259545,00-0036275,48.0,5.08,bilateral,4b495366,10,traded_away,2,D'Andre Swift traded to Jauantanomo Bay (5.08)
+2025,9,8,0,10,2,Chris Olave,4361370,4361370,00-0037239,87.0,9.07,bilateral,4b495366,10,traded_away,2,Chris Olave traded to Jauantanomo Bay (9.07)
+2025,11,10,0,10,2,Joe Flacco,11252,11252,00-0026158,,,bilateral,2d1cdccc,2,acquired,10,Joe Flacco traded in from Boswell That Ends Well
+2025,11,10,0,9,2,Kimani Vidal,4430968,4430968,00-0039391,,,bilateral,1db1451a,2,acquired,9,Kimani Vidal traded in from Karma is the guy on the Chiefs
+2025,11,10,0,9,2,Kyle Monangai,4608686,4608686,00-0040236,,,bilateral,1db1451a,2,acquired,9,Kyle Monangai traded in from Karma is the guy on the Chiefs
+2025,11,10,0,2,10,Terry McLaurin,3121422,3121422,00-0035659,36.0,4.06,bilateral,2d1cdccc,2,traded_away,10,Terry McLaurin traded to Boswell That Ends Well (4.06)
+2025,11,10,0,2,9,Chris Olave,4361370,4361370,00-0037239,87.0,9.07,bilateral,1db1451a,2,traded_away,9,Chris Olave traded to Karma is the guy on the Chiefs (9.07)
+2025,11,10,0,2,9,Chris Olave,4361370,4361370,00-0037239,87.0,9.07,bilateral,1db1451a,9,acquired,2,Chris Olave traded in from Jauantanomo Bay (9.07)
+2025,11,10,0,9,2,Kimani Vidal,4430968,4430968,00-0039391,,,bilateral,1db1451a,9,traded_away,2,Kimani Vidal traded to Jauantanomo Bay
+2025,11,10,0,9,2,Kyle Monangai,4608686,4608686,00-0040236,,,bilateral,1db1451a,9,traded_away,2,Kyle Monangai traded to Jauantanomo Bay
+2025,11,10,0,2,10,Terry McLaurin,3121422,3121422,00-0035659,36.0,4.06,bilateral,2d1cdccc,10,acquired,2,Terry McLaurin traded in from Jauantanomo Bay (4.06)
+2025,11,10,0,10,2,Joe Flacco,11252,11252,00-0026158,,,bilateral,2d1cdccc,10,traded_away,2,Joe Flacco traded to Jauantanomo Bay
+2025,12,11,0,7,1,Bijan Robinson,4430807,4430807,00-0038542,2.0,1.02,bilateral,91bcfb5a,1,acquired,7,Bijan Robinson traded in from Padma's Pack (1.02)
+2025,12,11,0,7,1,Tetairoa McMillan,4685472,4685472,00-0040124,58.0,6.08,bilateral,91bcfb5a,1,acquired,7,Tetairoa McMillan traded in from Padma's Pack (6.08)
+2025,12,11,0,1,7,Ja'Marr Chase,4362628,4362628,00-0036900,1.0,1.01,bilateral,91bcfb5a,1,traded_away,7,Ja'Marr Chase traded to Padma's Pack (1.01)
+2025,12,11,0,1,7,Derrick Henry,3043078,3043078,00-0032764,20.0,2.10,bilateral,91bcfb5a,1,traded_away,7,Derrick Henry traded to Padma's Pack (2.10)
+2025,12,11,0,1,7,Ja'Marr Chase,4362628,4362628,00-0036900,1.0,1.01,bilateral,91bcfb5a,7,acquired,1,Ja'Marr Chase traded in from Phil 1010 Prof: Hurts MTW 10-12 (1.01)
+2025,12,11,0,1,7,Derrick Henry,3043078,3043078,00-0032764,20.0,2.10,bilateral,91bcfb5a,7,acquired,1,Derrick Henry traded in from Phil 1010 Prof: Hurts MTW 10-12 (2.10)
+2025,12,11,0,7,1,Bijan Robinson,4430807,4430807,00-0038542,2.0,1.02,bilateral,91bcfb5a,7,traded_away,1,Bijan Robinson traded to Phil 1010 Prof: Hurts MTW 10-12 (1.02)
+2025,12,11,0,7,1,Tetairoa McMillan,4685472,4685472,00-0040124,58.0,6.08,bilateral,91bcfb5a,7,traded_away,1,Tetairoa McMillan traded to Phil 1010 Prof: Hurts MTW 10-12 (6.08)
+2025,13,12,0,10,6,Jonathan Taylor,4242335,4242335,00-0036223,13.0,2.03,bilateral,2e17e1a2,6,acquired,10,Jonathan Taylor traded in from Boswell That Ends Well (2.03)
+2025,13,12,0,10,6,Jaylen Waddle,4372016,4372016,00-0036613,83.0,9.03,bilateral,2e17e1a2,6,acquired,10,Jaylen Waddle traded in from Boswell That Ends Well (9.03)
+2025,13,12,0,10,6,Ricky Pearsall,4428209,4428209,00-0039916,107.0,11.07,bilateral,2e17e1a2,6,acquired,10,Ricky Pearsall traded in from Boswell That Ends Well (11.07)
+2025,13,12,0,10,6,Tyler Warren,4431459,4431459,00-0040128,113.0,12.03,bilateral,2e17e1a2,6,acquired,10,Tyler Warren traded in from Boswell That Ends Well (12.03)
+2025,13,12,0,6,10,Christian McCaffrey,3117251,3117251,00-0033280,7.0,1.07,bilateral,2e17e1a2,6,traded_away,10,Christian McCaffrey traded to Boswell That Ends Well (1.07)
+2025,13,12,0,6,10,George Kittle,3040151,3040151,00-0033288,34.0,4.04,bilateral,2e17e1a2,6,traded_away,10,George Kittle traded to Boswell That Ends Well (4.04)
+2025,13,12,0,6,10,Michael Wilson,4360761,4360761,00-0038559,,,bilateral,2e17e1a2,6,traded_away,10,Michael Wilson traded to Boswell That Ends Well
+2025,13,12,0,6,10,Emanuel Wilson,4887558,4887558,00-0038797,,,bilateral,2e17e1a2,6,traded_away,10,Emanuel Wilson traded to Boswell That Ends Well
+2025,13,12,0,9,7,Rico Dowdle,4038815,4038815,00-0036139,,,bilateral,4fa0bb84,7,acquired,9,Rico Dowdle traded in from Karma is the guy on the Chiefs
+2025,13,12,0,7,9,Derrick Henry,3043078,3043078,00-0032764,20.0,2.10,bilateral,4fa0bb84,7,traded_away,9,Derrick Henry traded to Karma is the guy on the Chiefs (2.10)
+2025,13,12,0,7,9,Derrick Henry,3043078,3043078,00-0032764,20.0,2.10,bilateral,4fa0bb84,9,acquired,7,Derrick Henry traded in from Padma's Pack (2.10)
+2025,13,12,0,9,7,Rico Dowdle,4038815,4038815,00-0036139,,,bilateral,4fa0bb84,9,traded_away,7,Rico Dowdle traded to Padma's Pack
+2025,13,12,0,6,10,Christian McCaffrey,3117251,3117251,00-0033280,7.0,1.07,bilateral,2e17e1a2,10,acquired,6,Christian McCaffrey traded in from Ladd's McCaffrican Boutte (1.07)
+2025,13,12,0,6,10,George Kittle,3040151,3040151,00-0033288,34.0,4.04,bilateral,2e17e1a2,10,acquired,6,George Kittle traded in from Ladd's McCaffrican Boutte (4.04)
+2025,13,12,0,6,10,Michael Wilson,4360761,4360761,00-0038559,,,bilateral,2e17e1a2,10,acquired,6,Michael Wilson traded in from Ladd's McCaffrican Boutte
+2025,13,12,0,6,10,Emanuel Wilson,4887558,4887558,00-0038797,,,bilateral,2e17e1a2,10,acquired,6,Emanuel Wilson traded in from Ladd's McCaffrican Boutte
+2025,13,12,0,10,6,Jonathan Taylor,4242335,4242335,00-0036223,13.0,2.03,bilateral,2e17e1a2,10,traded_away,6,Jonathan Taylor traded to Ladd's McCaffrican Boutte (2.03)
+2025,13,12,0,10,6,Jaylen Waddle,4372016,4372016,00-0036613,83.0,9.03,bilateral,2e17e1a2,10,traded_away,6,Jaylen Waddle traded to Ladd's McCaffrican Boutte (9.03)
+2025,13,12,0,10,6,Ricky Pearsall,4428209,4428209,00-0039916,107.0,11.07,bilateral,2e17e1a2,10,traded_away,6,Ricky Pearsall traded to Ladd's McCaffrican Boutte (11.07)
+2025,13,12,0,10,6,Tyler Warren,4431459,4431459,00-0040128,113.0,12.03,bilateral,2e17e1a2,10,traded_away,6,Tyler Warren traded to Ladd's McCaffrican Boutte (12.03)
+2025,14,13,0,9,7,Amon-Ra St. Brown,4374302,4374302,00-0036963,12.0,2.02,bilateral,bd4f0207,7,acquired,9,Amon-Ra St. Brown traded in from Karma is the guy on the Chiefs (2.02)
+2025,14,13,0,9,7,Jacoby Brissett,2578570,2578570,00-0033119,,,bilateral,bd4f0207,7,acquired,9,Jacoby Brissett traded in from Karma is the guy on the Chiefs
+2025,14,13,0,7,9,Josh Allen,3918298,3918298,00-0034857,26.0,3.06,bilateral,bd4f0207,7,traded_away,9,Josh Allen traded to Karma is the guy on the Chiefs (3.06)
+2025,14,13,0,7,9,Rome Odunze,4431299,4431299,00-0039919,78.0,8.08,bilateral,bd4f0207,7,traded_away,9,Rome Odunze traded to Karma is the guy on the Chiefs (8.08)
+2025,14,13,0,7,9,Josh Allen,3918298,3918298,00-0034857,26.0,3.06,bilateral,bd4f0207,9,acquired,7,Josh Allen traded in from Padma's Pack (3.06)
+2025,14,13,0,7,9,Rome Odunze,4431299,4431299,00-0039919,78.0,8.08,bilateral,bd4f0207,9,acquired,7,Rome Odunze traded in from Padma's Pack (8.08)
+2025,14,13,0,9,7,Amon-Ra St. Brown,4374302,4374302,00-0036963,12.0,2.02,bilateral,bd4f0207,9,traded_away,7,Amon-Ra St. Brown traded to Padma's Pack (2.02)
+2025,14,13,0,9,7,Jacoby Brissett,2578570,2578570,00-0033119,,,bilateral,bd4f0207,9,traded_away,7,Jacoby Brissett traded to Padma's Pack

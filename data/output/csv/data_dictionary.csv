@@ -14,6 +14,8 @@ team_context,incumbent_pos_ppr,Max prior-season fantasy points among returning s
 team_context,incumbent_pos_ppr_sum,Sum of prior-season fantasy points among returning same-team/position players,nflverse stats + rosters
 team_context,incumbent_pos_carries,Max prior-season carries among returning same-team/position players,nflverse stats + rosters
 team_context,incumbent_pos_touches,Max prior-season touches among returning same-team/position players,nflverse stats + rosters
+team_context,incumbent_ff_adp,Best (lowest) FantasyPros ADP among other same-team/position players in rookie-season Overall rankings,FantasyPros Overall ADP
+team_context,adp_vs_incumbent,incumbent_ff_adp − ff_adp (positive = market ranks rookie ahead of incumbent),derived
 team_context,off_pass_rate_proxy,Team pass-rate proxy (latest available season before draft),nflverse team stats
 combine,forty,40-yard dash,nflverse combine
 college_production,cfb_*,Final CFB season production (requires CFBD_API_KEY),CollegeFootballData
@@ -32,8 +34,10 @@ feature_correlation,*,Per-feature correlation vs rookie PPR,analyze_correlation
 strongest_factors,*,Factors ranked by impact on rookie PPR success,analyze_correlation
 dataset_correlation,*,Dataset-block correlation scores vs rookie PPR,analyze_correlation
 group_averages,*,"Mean rookie PPR by position, round, recruiting band, etc.",analyze_groups
-fantasy_dynasty,*,Y1–Y3 PPR outcomes for dynasty mode (aggregates require complete windows),ingest_nfl.build_dynasty_fantasy
+fantasy_dynasty,*,Y1â€“Y3 PPR outcomes for dynasty mode (aggregates require complete windows),ingest_nfl.build_dynasty_fantasy
 dynasty_trajectory,*,Within-class year ranks and late-bloomer flags (dynasty exploration),analyze_trajectory
 ml_features,*,Correlation-weighted composite scores + predicted PPR + success score,model_score
 composite_correlation,*,Composite score correlation vs rookie PPR,feature_composites
+ml_features_dynasty,*,Dynasty composite scores + predicted Y1â€“Y3 PPR total + success score,model_score.train_and_score_dynasty
+composite_correlation_dynasty,*,Composite score correlation vs dynasty Y1â€“Y3 PPR total,model_score.train_and_score_dynasty
 incoming_rookies_2026,*,Pre-rookie inputs + ML predictions for 2026 draft class (2026-2027 NFL season); rookie PPR blank until season ends,compile + model_score

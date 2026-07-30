@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import sys
 from pathlib import Path
@@ -80,12 +80,12 @@ def main(fetch_on3: bool = False) -> int:
     fantasy = build_rookie_fantasy(draft, stats, rosters)
     print(f"  fantasy rows: {len(fantasy)}")
 
-    print("Building dynasty fantasy targets (Y1–Y3, parallel to redraft) ...")
+    print("Building dynasty fantasy targets (Y1â€“Y3, parallel to redraft) ...")
     from rookie_ppr.config import DYNASTY_YEARS
 
     dynasty = build_dynasty_fantasy(fantasy, stats, years=DYNASTY_YEARS)
     n_complete = int(pd.to_numeric(dynasty.get("dynasty_seasons_complete"), errors="coerce").fillna(0).sum()) if not dynasty.empty else 0
-    print(f"  dynasty rows: {len(dynasty)}, complete Y1–Y3: {n_complete}")
+    print(f"  dynasty rows: {len(dynasty)}, complete Y1â€“Y3: {n_complete}")
 
     print("Loading recruiting CSVs (if present) ...")
     recruiting = load_recruiting()
@@ -166,7 +166,7 @@ def main(fetch_on3: bool = False) -> int:
                 {"sheet": "strongest_factors", "column": "*", "description": "Factors ranked by impact on rookie PPR success", "source": "analyze_correlation"},
                 {"sheet": "dataset_correlation", "column": "*", "description": "Dataset-block correlation scores vs rookie PPR", "source": "analyze_correlation"},
                 {"sheet": "group_averages", "column": "*", "description": "Mean rookie PPR by position, round, recruiting band, etc.", "source": "analyze_groups"},
-                {"sheet": "fantasy_dynasty", "column": "*", "description": "Y1–Y3 PPR outcomes for dynasty mode (aggregates require complete windows)", "source": "ingest_nfl.build_dynasty_fantasy"},
+                {"sheet": "fantasy_dynasty", "column": "*", "description": "Y1â€“Y3 PPR outcomes for dynasty mode (aggregates require complete windows)", "source": "ingest_nfl.build_dynasty_fantasy"},
                 {"sheet": "dynasty_trajectory", "column": "*", "description": "Within-class year ranks and late-bloomer flags (dynasty exploration)", "source": "analyze_trajectory"},
             ]
         )
@@ -216,7 +216,7 @@ def main(fetch_on3: bool = False) -> int:
         )
         tables["data_dictionary"] = pd.concat([dd, ml_dd], ignore_index=True)
 
-        print("Training dynasty ML scorer (Y1–Y3 total) ...")
+        print("Training dynasty ML scorer (Y1â€“Y3 total) ...")
         from rookie_ppr.model_score import train_and_score_dynasty
 
         ml_features_dynasty, composite_corr_dynasty, dynasty_metrics = train_and_score_dynasty(master)
@@ -247,13 +247,13 @@ def main(fetch_on3: bool = False) -> int:
                 {
                     "sheet": "ml_features_dynasty",
                     "column": "*",
-                    "description": "Dynasty composite scores + predicted Y1–Y3 PPR total + success score",
+                    "description": "Dynasty composite scores + predicted Y1â€“Y3 PPR total + success score",
                     "source": "model_score.train_and_score_dynasty",
                 },
                 {
                     "sheet": "composite_correlation_dynasty",
                     "column": "*",
-                    "description": "Composite score correlation vs dynasty Y1–Y3 PPR total",
+                    "description": "Composite score correlation vs dynasty Y1â€“Y3 PPR total",
                     "source": "model_score.train_and_score_dynasty",
                 },
             ]
@@ -281,7 +281,10 @@ def main(fetch_on3: bool = False) -> int:
 
     print("Exporting workbook + CSVs ...")
     xlsx_path = export_workbook_and_csvs(tables)
-    print(f"Wrote {xlsx_path}")
+    if xlsx_path is not None:
+        print(f"Wrote {xlsx_path}")
+    else:
+        print("CSVs updated; xlsx skipped (likely locked).")
     print("Wrote individual CSVs under data/output/csv/")
     print("Done (compile + correlation + ML scorer).")
     return 0

@@ -1,0 +1,80 @@
+{
+  "slopes_by_position": {
+    "QB": {
+      "rush": 0.0396,
+      "pass": 0.0455
+    },
+    "RB": {
+      "rush": 0.1153,
+      "pass": 0.0343
+    },
+    "WR": {
+      "rush": 0.0757,
+      "pass": 0.0385
+    },
+    "TE": {
+      "pass": 0.0516
+    }
+  },
+  "diagnostics": {
+    "QB": {
+      "rush": {
+        "fit_stat": "rushing_yards",
+        "n_player_weeks": 4041,
+        "slope": 0.0396,
+        "pct_swing_per_sd": 3.96
+      },
+      "pass": {
+        "fit_stat": "passing_yards",
+        "n_player_weeks": 5332,
+        "slope": 0.0455,
+        "pct_swing_per_sd": 4.55
+      }
+    },
+    "RB": {
+      "rush": {
+        "fit_stat": "rushing_yards",
+        "n_player_weeks": 12159,
+        "slope": 0.1153,
+        "pct_swing_per_sd": 11.53
+      },
+      "pass": {
+        "fit_stat": "receiving_yards",
+        "n_player_weeks": 11279,
+        "slope": 0.0343,
+        "pct_swing_per_sd": 3.43
+      }
+    },
+    "WR": {
+      "rush": {
+        "fit_stat": "rushing_yards",
+        "n_player_weeks": 1163,
+        "slope": 0.0757,
+        "pct_swing_per_sd": 7.57
+      },
+      "pass": {
+        "fit_stat": "receiving_yards",
+        "n_player_weeks": 19655,
+        "slope": 0.0385,
+        "pct_swing_per_sd": 3.85
+      }
+    },
+    "TE": {
+      "pass": {
+        "fit_stat": "receiving_yards",
+        "n_player_weeks": 9555,
+        "slope": 0.0516,
+        "pct_swing_per_sd": 5.16
+      }
+    }
+  },
+  "calibration_seasons": [
+    2015,
+    2026
+  ],
+  "min_games_for_ratio": 8,
+  "multiplier_bounds": [
+    0.72,
+    1.28
+  ]
+}

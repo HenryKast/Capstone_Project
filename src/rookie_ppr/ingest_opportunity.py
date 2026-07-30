@@ -174,6 +174,7 @@ def build_incumbent_competition(
         "incumbent_pos_carries",
         "incumbent_pos_targets",
         "incumbent_pos_touches",
+        "incumbent_top_name_norm",
     ]
     if draft.empty or stats.empty:
         return pd.DataFrame(columns=cols)
@@ -187,6 +188,12 @@ def build_incumbent_competition(
     if id_col is None:
         return pd.DataFrame(columns=cols)
 
+    name_col = next(
+        (c for c in ("player_display_name", "player_name", "player_name_norm") if c in s.columns),
+        None,
+    )
+    from rookie_ppr.utils import normalize_name
+
     s["position"] = s["position"].map(normalize_position) if "position" in s.columns else pd.NA
     s = s[s["position"].isin(["QB", "RB", "WR", "TE"])].copy()
     s["ppr"] = pd.to_numeric(s["fantasy_points_ppr"], errors="coerce")
@@ -198,15 +205,23 @@ def build_incumbent_competition(
     s["_touches"] = s["_carries"].fillna(0) + s["_rec"].fillna(0)
     both_miss = s["_carries"].isna() & s["_rec"].isna()
     s.loc[both_miss, "_touches"] = np.nan
+    if name_col == "player_name_norm":
+        s["_name_norm"] = s[name_col]
+    elif name_col:
+        s["_name_norm"] = s[name_col].map(normalize_name)
+    else:
+        s["_name_norm"] = pd.NA
 
+    agg_map = {
+        "ppr": ("ppr", "sum"),
+        "carries": ("_carries", "sum"),
+        "targets": ("_targets", "sum"),
+        "touches": ("_touches", "sum"),
+        "name_norm": ("_name_norm", "first"),
+    }
     player_season = (
         s.groupby([id_col, "season", "_team", "position"], as_index=False)
-        .agg(
-            ppr=("ppr", "sum"),
-            carries=("_carries", "sum"),
-            targets=("_targets", "sum"),
-            touches=("_touches", "sum"),
-        )
+        .agg(**{k: v for k, v in agg_map.items()})
         .rename(columns={id_col: "gsis_id", "_team": "draft_team"})
     )
     available_stats = sorted(player_season["season"].dropna().unique())
@@ -250,6 +265,7 @@ def build_incumbent_competition(
             "incumbent_pos_carries": np.nan,
             "incumbent_pos_targets": np.nan,
             "incumbent_pos_touches": np.nan,
+            "incumbent_top_name_norm": pd.NA,
         }
         if pd.isna(y) or pd.isna(team) or pd.isna(pos):
             continue
@@ -291,6 +307,12 @@ def build_incumbent_competition(
         car_vals = pd.to_numeric(prod["carries"], errors="coerce").dropna()
         tgt_vals = pd.to_numeric(prod["targets"], errors="coerce").dropna()
         touch_vals = pd.to_numeric(prod["touches"], errors="coerce").dropna()
+        top_name = pd.NA
+        if "name_norm" in prod.columns and len(prod):
+            ranked = prod.sort_values("ppr", ascending=False)
+            top_name = ranked.iloc[0].get("name_norm")
+            if isinstance(top_name, float) and pd.isna(top_name):
+                top_name = pd.NA
         rows.append(
             {
                 "draft_year": y,
@@ -301,6 +323,7 @@ def build_incumbent_competition(
                 "incumbent_pos_carries": float(car_vals.max()) if len(car_vals) else np.nan,
                 "incumbent_pos_targets": float(tgt_vals.max()) if len(tgt_vals) else np.nan,
                 "incumbent_pos_touches": float(touch_vals.max()) if len(touch_vals) else np.nan,
+                "incumbent_top_name_norm": top_name,
             }
         )
 

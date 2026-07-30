@@ -1,0 +1,11 @@
+baseline,scope,position,n,full_r,baseline_r,lift_r,full_mae,baseline_mae
+last_season_ppr,overall,,1743,0.7862,0.7369,0.0493,41.056,46.072
+last_season_ppr,by_position,QB,258,0.7546,0.693,0.0616,58.64,66.602
+last_season_ppr,by_position,RB,453,0.7678,0.6958,0.072,43.579,49.144
+last_season_ppr,by_position,TE,368,0.784,0.7652,0.0188,27.94,30.934
+last_season_ppr,by_position,WR,664,0.802,0.7626,0.0394,39.772,44.388
+trail3_mean_ppr,overall,,1743,0.7862,0.7397,0.0465,41.056,46.567
+trail3_mean_ppr,by_position,QB,258,0.7546,0.7138,0.0408,58.64,64.933
+trail3_mean_ppr,by_position,RB,453,0.7678,0.6986,0.0692,43.579,49.842
+trail3_mean_ppr,by_position,TE,368,0.784,0.7652,0.0188,27.94,29.883
+trail3_mean_ppr,by_position,WR,664,0.802,0.7515,0.0505,39.772,46.443

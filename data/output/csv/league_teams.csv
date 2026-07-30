@@ -1,0 +1,81 @@
+season,team_id,team_name,team_abbrev,division_id,is_my_team,wins,losses,ties,points_for,points_against,playoff_seed,final_rank
+2018,1,Team  Ooga kamara,L,0,False,10,3,0,1678.7,1496.84,2,4
+2018,2,Team Hmar,H,0,False,5,8,0,1528.8,1671.7000000000005,7,9
+2018,3,Team SUpton,Dub,0,False,6,7,0,1637.94,1635.8000000000002,6,6
+2018,4,Team Boswellnt,PIT,0,False,7,6,0,1830.6,1709.74,4,3
+2018,5,A. Brown Man,A,0,False,4,9,0,1449.06,1701.36,9,7
+2018,6,Camera Man,CMR,1,False,4,9,0,1568.14,1702.0,8,10
+2018,7,Waka Waka,KAST,1,True,6,7,0,1760.76,1701.2799999999995,5,5
+2018,8,Team Vibranium,VIBR,1,False,3,10,0,1343.14,1643.8399999999997,10,8
+2018,9,Sexual Thielen,NOAH,1,False,10,3,0,1788.0,1550.58,1,1
+2018,10,Gould Standard,TAI,1,False,10,3,0,1736.4400000000005,1508.44,3,2
+2019,1,Henry’s Not A. Hooper,L,0,False,7,6,0,1665.46,1590.62,4,3
+2019,2,Hot Chubb Tom Machine,HCTM,0,False,6,7,0,1385.38,1473.2800000000002,8,8
+2019,3,Team SUpton,Dub,0,False,7,6,0,1528.48,1438.06,5,5
+2019,4,Team Boswellnt,PIT,0,False,4,9,0,1489.6600000000003,1640.3200000000004,9,7
+2019,5,Beat Ankit,SG,0,False,8,5,0,1650.02,1589.4600000000005,2,4
+2019,6,Camera Man,CMR,1,False,9,4,0,1690.7000000000005,1655.54,1,1
+2019,7,fReE wIn,KAST,1,True,8,5,0,1665.2,1568.96,3,2
+2019,8,All Ma Hom(i)es,VIBR,1,False,4,9,0,1456.22,1676.7800000000002,10,9
+2019,9,Please Win,WIN,1,False,6,7,0,1613.0600000000002,1568.2799999999995,6,6
+2019,10,Henry is a  Hekler,DTAI,1,False,6,7,0,1488.44,1431.3200000000002,7,10
+2020,1,Dalvin and the Pickups,L,0,False,7,6,0,1589.0800000000004,1573.6600000000003,5,6
+2020,2,Lutz Get  This W,HCTM,0,False,9,4,0,1689.98,1495.6,3,5
+2020,3,Russel My Willy,RMW,0,False,9,4,0,1691.5599999999995,1558.98,1,1
+2020,4,Team Boswellnt,PIT,0,False,6,7,0,1567.06,1539.2400000000002,6,4
+2020,5,Beat Ankit,SG,0,False,5,8,0,1484.5,1578.42,8,7
+2020,6,Camera Man,CMR,1,False,4,9,0,1427.88,1624.46,9,9
+2020,7,Waller? I hardly know her,KAST,1,True,8,5,0,1740.54,1671.52,2,2
+2020,8,(╯°□°）╯ ︵ ┻━┻,VIBR,1,False,6,7,0,1392.3200000000002,1384.08,7,10
+2020,9,Ekeler? I Hardly Know Her,Sour,1,False,8,5,0,1546.7200000000005,1468.6,4,3
+2020,10,Terminator III: Skynet v Conner,DTAI,1,False,3,10,0,1418.5,1653.58,10,8
+2021,1,Sahit in my DMs We not the same,L,0,False,7,7,0,1700.18,1776.74,5,2
+2021,2,Tucker right in The 😽,HCTM,0,False,6,8,0,1659.12,1773.86,7,7
+2021,3,Robert's Wood,SU,0,False,7,7,0,1720.9399999999998,1701.84,4,5
+2021,4,Baby Im ThielenUrHeart,THR,0,False,12,2,0,1764.38,1364.2,1,3
+2021,5,"Titan Killer, Derrick Henry",SG,0,False,6,8,0,1612.52,1694.6399999999996,8,8
+2021,6,Yeh Dil Maange  Moore,YDMM,1,False,6,8,0,1722.06,1741.06,6,1
+2021,7,Waller? I hardly know her,KAST,1,True,5,9,0,1666.8,1698.02,9,9
+2021,8,"Sahit, I don't have kik, stop",VIBR,1,False,5,9,0,1589.06,1728.3000000000002,10,10
+2021,9,CeeDee's Balls,Sour,1,False,8,6,0,1744.68,1671.54,2,4
+2021,10,Day __ of  Ignoring Sahit,DTAI,1,False,8,6,0,1744.06,1773.5999999999997,3,6
+2022,1,Gould Standard Redemption Arc,L,0,False,9,5,0,1617.34,1566.6799999999998,4,6
+2022,2,Tucker right in The 😽,HCTM,0,False,9,5,0,1747.2000000000005,1603.7600000000002,2,1
+2022,3,Sahit on my face🥵💩,SU,0,False,6,8,0,1512.52,1692.9199999999998,7,8
+2022,4,PiercingMy Heart,DDL,0,False,3,11,0,1489.5999999999997,1707.02,10,9
+2022,5,F@(k Fantasy  Football,FFF,0,False,6,8,0,1700.4400000000005,1763.3399999999997,6,5
+2022,6,Yeh Dil Maange Moore,YDMM,1,False,10,4,0,1979.18,1589.92,1,2
+2022,7,Waller? I hardly know her,KAST,1,True,10,4,0,1806.6,1579.9399999999998,3,3
+2022,8,"Sahit, I don't have kik, stop",SDHK,1,False,8,6,0,1598.8200000000002,1583.5000000000002,5,4
+2022,9,Team Subcontinent,Sour,1,False,4,10,0,1452.06,1740.6999999999998,9,7
+2022,10,Stefon Digglett,TDOG,1,False,5,9,0,1682.0000000000005,1757.9800000000002,8,10
+2023,1,Intermixon between Kasts,L,0,False,8,6,0,1886.84,1626.58,2,4
+2023,2,Chasing this Johnston,HCTM,0,False,4,10,0,1611.9999999999998,1757.24,9,10
+2023,3,Sahit on my face🥵💩,SU,0,False,7,7,0,1645.4400000000005,1733.74,6,2
+2023,4,SkyysTheLimit,STL,0,False,6,8,0,1611.34,1606.76,8,7
+2023,5,Lamb Sauve,SG,0,False,6,8,0,1662.9,1776.6,7,8
+2023,6,Justin Time to CeeDee Rings,RING,1,False,10,4,0,1690.94,1621.06,1,1
+2023,7,Bathroom coercer,KAST,1,True,4,10,0,1558.84,1736.9800000000005,10,9
+2023,8,"Sahit, I don't have kik, stop",SDHK,1,False,7,7,0,1683.12,1690.48,5,3
+2023,9,Je-Romen Empire,Rome,1,False,9,5,0,1704.16,1750.9,4,5
+2023,10,Can McCaffrey Get A McPickTwo?,TAI,1,False,9,5,0,1835.32,1590.56,3,6
+2024,1,North of the Mason-Njigba,L,0,False,9,5,0,1728.7400000000002,1690.4199999999998,4,4
+2024,2,Mixon up da Browns,HCTM,0,False,6,8,0,1695.0999999999997,1740.9,6,6
+2024,3,Sahit on my face🥵💩,SU,0,False,10,4,0,1767.9,1633.0399999999995,3,3
+2024,4,GiveMeMyFlowers,GMF,0,False,5,9,0,1594.6800000000003,1687.5,9,8
+2024,5,Im going Tua Hill Myself,SG,0,False,11,3,0,1889.88,1704.88,1,2
+2024,6,My Hock Hurts,MHH,1,False,5,9,0,1661.0399999999995,1658.1,8,9
+2024,7,Gibbing my Jonathan a tug,KAST,1,True,8,6,0,1783.86,1622.1,2,1
+2024,8,"Sahit, I don't have kik, stop",SDHK,1,False,4,10,0,1421.6799999999998,1650.52,10,10
+2024,9,Courtland Trailblazers,Amon,1,False,6,8,0,1675.7599999999998,1741.8800000000003,7,7
+2024,10,Avengers: Saquontumania,TAI,1,False,6,8,0,1725.88,1815.18,5,5
+2025,1,Phil 1010 Prof: Hurts MTW 10-12,L,0,False,5,9,0,1578.8,1704.64,10,7
+2025,2,Jauantanomo Bay,JTB,0,False,6,8,0,1582.28,1671.86,8,10
+2025,3,Sahit on my face🥵💩,SU,0,False,8,6,0,1550.42,1639.28,3,3
+2025,4,OhPlzMrsRobinson,OPR,0,False,5,9,0,1606.78,1674.64,9,8
+2025,5,Free Win,SG,0,False,10,4,0,1903.06,1640.06,1,1
+2025,6,Ladd's McCaffrican Boutte,LMB,1,False,7,7,0,1673.2199999999998,1706.88,6,6
+2025,7,Padma's Pack,KAST,1,True,9,5,0,1805.2,1596.14,2,2
+2025,8,"Sahit, I don't have kik, stop",SDHK,1,False,7,7,0,1678.8600000000004,1725.08,5,4
+2025,9,Karma is the guy on the Chiefs,Amon,1,False,6,8,0,1608.9999999999998,1776.8200000000002,7,9
+2025,10,Boswell That Ends Well,TAI,1,False,7,7,0,1853.36,1705.5800000000002,4,5

@@ -1,0 +1,600 @@
+{
+  "model_type": "veteran_next_season_phase3",
+  "phase": 3,
+  "phase1_holdout_pearson_r_ref": 0.7411,
+  "phase2_holdout_pearson_r_ref": 0.7482,
+  "target": "ppr_next",
+  "tuning_target_season": 2021,
+  "holdout_target_seasons": [
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "n_labeled": 5301,
+  "n_train": 3104,
+  "n_tune": 454,
+  "n_holdout": 1743,
+  "iqr_clamp_strength": 0.4,
+  "injury_iqr_relief": 0.75,
+  "elite_rb_lift": true,
+  "elite_rb_adp_max": 24,
+  "elite_rb_model_weight": 0.4,
+  "elite_rb_lifted_n": 74,
+  "monotonic_by_position": {
+    "QB": false,
+    "RB": true,
+    "WR": false,
+    "TE": false
+  },
+  "use_adp_features": true,
+  "use_opportunity_features": true,
+  "tuning_r_by_position": {
+    "QB": 0.8414,
+    "RB": 0.7709,
+    "WR": 0.7345,
+    "TE": 0.7739
+  },
+  "best_params_by_position": {
+    "QB": {
+      "max_depth": 5,
+      "learning_rate": 0.05,
+      "max_iter": 350,
+      "min_samples_leaf": 8,
+      "l2_regularization": 0.1
+    },
+    "RB": {
+      "max_depth": 2,
+      "learning_rate": 0.05,
+      "max_iter": 250,
+      "min_samples_leaf": 20,
+      "l2_regularization": 2.0
+    },
+    "WR": {
+      "max_depth": 2,
+      "learning_rate": 0.03,
+      "max_iter": 200,
+      "min_samples_leaf": 25,
+      "l2_regularization": 2.0
+    },
+    "TE": {
+      "max_depth": 6,
+      "learning_rate": 0.05,
+      "max_iter": 300,
+      "min_samples_leaf": 5,
+      "l2_regularization": 0.0
+    }
+  },
+  "feature_cols_by_position": {
+    "QB": [
+      "ppr",
+      "games",
+      "ppr_per_game",
+      "passing_yards",
+      "passing_tds",
+      "rushing_yards",
+      "rushing_tds",
+      "lag1_ppr",
+      "lag2_ppr",
+      "delta_ppr",
+      "ppr_trail3_mean",
+      "career_seasons",
+      "age",
+      "team_changed",
+      "off_pass_yards",
+      "off_pass_rate_proxy",
+      "sos_opp_win_pct",
+      "ol_sack_rate",
+      "ol_qb_hit_rate",
+      "delta_ol_sack_rate",
+      "off_epa_per_play",
+      "off_pass_epa",
+      "opp_def_epa_faced",
+      "opp_def_pass_epa_faced",
+      "next_opp_def_epa_faced",
+      "next_opp_def_pass_epa_faced",
+      "off_snap_pct",
+      "delta_off_snap_pct",
+      "depth_rank",
+      "ngs_avg_ttt",
+      "ngs_cpoe",
+      "ngs_aggressiveness",
+      "adp_log_rank",
+      "adp_pos_rank",
+      "adp_rank",
+      "target_share",
+      "carry_share",
+      "touch_share",
+      "pos_target_share",
+      "pos_carry_share",
+      "pos_touch_share",
+      "team_targets",
+      "team_carries",
+      "team_touches"
+    ],
+    "RB": [
+      "ppr",
+      "games",
+      "ppr_per_game",
+      "carries",
+      "targets",
+      "receptions",
+      "rushing_yards",
+      "receiving_yards",
+      "rushing_tds",
+      "receiving_tds",
+      "touches",
+      "lag1_ppr",
+      "lag2_ppr",
+      "delta_ppr",
+      "delta_touches",
+      "ppr_trail3_mean",
+      "career_seasons",
+      "age",
+      "team_changed",
+      "off_rush_yards",
+      "off_pass_rate_proxy",
+      "sos_opp_win_pct",
+      "ol_sack_rate",
+      "delta_ol_sack_rate",
+      "off_epa_per_play",
+      "off_rush_epa",
+      "opp_def_epa_faced",
+      "opp_def_rush_epa_faced",
+      "next_opp_def_epa_faced",
+      "next_opp_def_rush_epa_faced",
+      "off_snap_pct",
+      "delta_off_snap_pct",
+      "depth_rank",
+      "ngs_ryoe",
+      "ngs_ryoe_per_att",
+      "ngs_rush_efficiency",
+      "adp_log_rank",
+      "adp_pos_rank",
+      "adp_rank",
+      "target_share",
+      "carry_share",
+      "touch_share",
+      "pos_target_share",
+      "pos_carry_share",
+      "pos_touch_share",
+      "team_targets",
+      "team_carries",
+      "team_touches"
+    ],
+    "WR": [
+      "ppr",
+      "games",
+      "ppr_per_game",
+      "targets",
+      "receptions",
+      "receiving_yards",
+      "receiving_tds",
+      "touches",
+      "lag1_ppr",
+      "lag2_ppr",
+      "delta_ppr",
+      "delta_touches",
+      "ppr_trail3_mean",
+      "career_seasons",
+      "age",
+      "team_changed",
+      "off_pass_yards",
+      "off_pass_rate_proxy",
+      "sos_opp_win_pct",
+      "ol_sack_rate",
+      "delta_ol_sack_rate",
+      "off_epa_per_play",
+      "off_pass_epa",
+      "opp_def_epa_faced",
+      "opp_def_pass_epa_faced",
+      "next_opp_def_epa_faced",
+      "next_opp_def_pass_epa_faced",
+      "off_snap_pct",
+      "delta_off_snap_pct",
+      "depth_rank",
+      "ngs_avg_separation",
+      "ngs_yac_oe",
+      "adp_log_rank",
+      "adp_pos_rank",
+      "adp_rank",
+      "target_share",
+      "carry_share",
+      "touch_share",
+      "pos_target_share",
+      "pos_carry_share",
+      "pos_touch_share",
+      "team_targets",
+      "team_carries",
+      "team_touches"
+    ],
+    "TE": [
+      "ppr",
+      "games",
+      "ppr_per_game",
+      "targets",
+      "receptions",
+      "receiving_yards",
+      "receiving_tds",
+      "touches",
+      "lag1_ppr",
+      "lag2_ppr",
+      "delta_ppr",
+      "delta_touches",
+      "ppr_trail3_mean",
+      "career_seasons",
+      "age",
+      "team_changed",
+      "off_pass_yards",
+      "off_pass_rate_proxy",
+      "sos_opp_win_pct",
+      "ol_sack_rate",
+      "delta_ol_sack_rate",
+      "off_epa_per_play",
+      "off_pass_epa",
+      "opp_def_epa_faced",
+      "opp_def_pass_epa_faced",
+      "next_opp_def_epa_faced",
+      "next_opp_def_pass_epa_faced",
+      "off_snap_pct",
+      "delta_off_snap_pct",
+      "depth_rank",
+      "ngs_avg_separation",
+      "ngs_yac_oe",
+      "adp_log_rank",
+      "adp_pos_rank",
+      "adp_rank",
+      "target_share",
+      "carry_share",
+      "touch_share",
+      "pos_target_share",
+      "pos_carry_share",
+      "pos_touch_share",
+      "team_targets",
+      "team_carries",
+      "team_touches"
+    ]
+  },
+  "conformal_by_position": {
+    "QB": {
+      "q_hat": 40.69997696571562,
+      "n_cal": 123,
+      "residuals_n": 123
+    },
+    "RB": {
+      "q_hat": 3.783610650599119,
+      "n_cal": 191,
+      "residuals_n": 191
+    },
+    "WR": {
+      "q_hat": -0.49052523874244147,
+      "n_cal": 242,
+      "residuals_n": 242
+    },
+    "TE": {
+      "q_hat": 16.515423429609708,
+      "n_cal": 153,
+      "residuals_n": 153
+    }
+  },
+  "holdout": {
+    "n": 1743,
+    "pearson_r": 0.7862,
+    "mae": 41.056,
+    "by_position": {
+      "QB": {
+        "n": 258,
+        "pearson_r": 0.7546,
+        "mae": 58.64
+      },
+      "RB": {
+        "n": 453,
+        "pearson_r": 0.7678,
+        "mae": 43.579
+      },
+      "TE": {
+        "n": 368,
+        "pearson_r": 0.784,
+        "mae": 27.94
+      },
+      "WR": {
+        "n": 664,
+        "pearson_r": 0.802,
+        "mae": 39.772
+      }
+    }
+  },
+  "holdout_pearson_r": 0.7862,
+  "holdout_mae": 41.056,
+  "holdout_tiered_by_prior_ppr": {
+    "tiers": [
+      20,
+      50,
+      100
+    ],
+    "by_position": {
+      "QB": {
+        "top_20": {
+          "n": 80,
+          "pearson_r": 0.4703,
+          "mae": 67.92
+        },
+        "top_50": {
+          "n": 200,
+          "pearson_r": 0.7004,
+          "mae": 66.846
+        },
+        "top_100": {
+          "n": 258,
+          "pearson_r": 0.7546,
+          "mae": 58.64
+        }
+      },
+      "RB": {
+        "top_20": {
+          "n": 80,
+          "pearson_r": 0.4535,
+          "mae": 68.345
+        },
+        "top_50": {
+          "n": 200,
+          "pearson_r": 0.5972,
+          "mae": 59.992
+        },
+        "top_100": {
+          "n": 400,
+          "pearson_r": 0.7515,
+          "mae": 46.729
+        }
+      },
+      "TE": {
+        "top_20": {
+          "n": 80,
+          "pearson_r": 0.5481,
+          "mae": 38.997
+        },
+        "top_50": {
+          "n": 200,
+          "pearson_r": 0.6698,
+          "mae": 36.35
+        },
+        "top_100": {
+          "n": 368,
+          "pearson_r": 0.784,
+          "mae": 27.94
+        }
+      },
+      "WR": {
+        "top_20": {
+          "n": 80,
+          "pearson_r": 0.457,
+          "mae": 56.507
+        },
+        "top_50": {
+          "n": 200,
+          "pearson_r": 0.6187,
+          "mae": 53.645
+        },
+        "top_100": {
+          "n": 400,
+          "pearson_r": 0.7339,
+          "mae": 47.3
+        }
+      }
+    },
+    "overall_pooled": {
+      "top_20": {
+        "n": 320,
+        "pearson_r": 0.5736,
+        "mae": 57.942
+      },
+      "top_50": {
+        "n": 800,
+        "pearson_r": 0.6905,
+        "mae": 54.208
+      },
+      "top_100": {
+        "n": 1426,
+        "pearson_r": 0.7719,
+        "mae": 44.195
+      }
+    },
+    "all_holdout": {
+      "n": 1743,
+      "pearson_r": 0.7862,
+      "mae": 41.056
+    }
+  },
+  "holdout_weighted_star_r": {
+    "n": 1743,
+    "weighted_pearson_r": 0.7603
+  },
+  "holdout_by_year": {
+    "2022": {
+      "n": 449,
+      "pearson_r": 0.8032,
+      "mae": 39.053,
+      "by_position": {
+        "QB": {
+          "n": 68,
+          "pearson_r": 0.7501,
+          "mae": 57.841
+        },
+        "RB": {
+          "n": 122,
+          "pearson_r": 0.7886,
+          "mae": 40.529
+        },
+        "TE": {
+          "n": 89,
+          "pearson_r": 0.8127,
+          "mae": 24.651
+        },
+        "WR": {
+          "n": 170,
+          "pearson_r": 0.8335,
+          "mae": 38.018
+        }
+      }
+    },
+    "2023": {
+      "n": 424,
+      "pearson_r": 0.7629,
+      "mae": 42.832,
+      "by_position": {
+        "QB": {
+          "n": 64,
+          "pearson_r": 0.7028,
+          "mae": 64.171
+        },
+        "RB": {
+          "n": 117,
+          "pearson_r": 0.7082,
+          "mae": 45.34
+        },
+        "TE": {
+          "n": 88,
+          "pearson_r": 0.7777,
+          "mae": 29.085
+        },
+        "WR": {
+          "n": 155,
+          "pearson_r": 0.8303,
+          "mae": 39.933
+        }
+      }
+    },
+    "2024": {
+      "n": 424,
+      "pearson_r": 0.7807,
+      "mae": 43.129,
+      "by_position": {
+        "QB": {
+          "n": 63,
+          "pearson_r": 0.8091,
+          "mae": 54.36
+        },
+        "RB": {
+          "n": 107,
+          "pearson_r": 0.7812,
+          "mae": 44.086
+        },
+        "TE": {
+          "n": 91,
+          "pearson_r": 0.7099,
+          "mae": 32.862
+        },
+        "WR": {
+          "n": 163,
+          "pearson_r": 0.755,
+          "mae": 43.892
+        }
+      }
+    },
+    "2025": {
+      "n": 446,
+      "pearson_r": 0.7966,
+      "mae": 39.413,
+      "by_position": {
+        "QB": {
+          "n": 63,
+          "pearson_r": 0.76,
+          "mae": 58.162
+        },
+        "RB": {
+          "n": 107,
+          "pearson_r": 0.7989,
+          "mae": 44.624
+        },
+        "TE": {
+          "n": 100,
+          "pearson_r": 0.8384,
+          "mae": 25.381
+        },
+        "WR": {
+          "n": 176,
+          "pearson_r": 0.7967,
+          "mae": 37.507
+        }
+      }
+    }
+  },
+  "baselines": {
+    "last_season_ppr": {
+      "n": 1743,
+      "full_r": 0.7862,
+      "baseline_r": 0.7369,
+      "full_mae": 41.056,
+      "baseline_mae": 46.072,
+      "lift_r": 0.0493,
+      "by_position": {
+        "QB": {
+          "n": 258,
+          "full_r": 0.7546,
+          "baseline_r": 0.693,
+          "full_mae": 58.64,
+          "baseline_mae": 66.602
+        },
+        "RB": {
+          "n": 453,
+          "full_r": 0.7678,
+          "baseline_r": 0.6958,
+          "full_mae": 43.579,
+          "baseline_mae": 49.144
+        },
+        "TE": {
+          "n": 368,
+          "full_r": 0.784,
+          "baseline_r": 0.7652,
+          "full_mae": 27.94,
+          "baseline_mae": 30.934
+        },
+        "WR": {
+          "n": 664,
+          "full_r": 0.802,
+          "baseline_r": 0.7626,
+          "full_mae": 39.772,
+          "baseline_mae": 44.388
+        }
+      }
+    },
+    "trail3_mean_ppr": {
+      "n": 1743,
+      "full_r": 0.7862,
+      "baseline_r": 0.7397,
+      "full_mae": 41.056,
+      "baseline_mae": 46.567,
+      "lift_r": 0.0465,
+      "by_position": {
+        "QB": {
+          "n": 258,
+          "full_r": 0.7546,
+          "baseline_r": 0.7138,
+          "full_mae": 58.64,
+          "baseline_mae": 64.933
+        },
+        "RB": {
+          "n": 453,
+          "full_r": 0.7678,
+          "baseline_r": 0.6986,
+          "full_mae": 43.579,
+          "baseline_mae": 49.842
+        },
+        "TE": {
+          "n": 368,
+          "full_r": 0.784,
+          "baseline_r": 0.7652,
+          "full_mae": 27.94,
+          "baseline_mae": 29.883
+        },
+        "WR": {
+          "n": 664,
+          "full_r": 0.802,
+          "baseline_r": 0.7515,
+          "full_mae": 39.772,
+          "baseline_mae": 46.443
+        }
+      }
+    }
+  }
+}

@@ -44,20 +44,38 @@ conda activate rookie-ppr
 | `setup_env.sh` | macOS/Linux venv bootstrap |
 | `.python-version` | Hint for pyenv users |
 
-## Optional API key (college production)
+## Optional API keys / cookies
 
-College Football Data (CFBD) college stats require a free API key:
+### College Football Data (CFBD)
+
+College production stats require a free API key:
 
 1. Create a key at https://collegefootballdata.com/
 2. Copy `.env.example` to `.env` in the repo root
 3. Set `CFBD_API_KEY=your_key`
 
-Without a key, college-production columns are left blank and the rest of the compile still runs.
+Without a key, college-production columns are left blank and the rest of the compile still runs. Compiled CSVs already include college features when they were built with a key.
+
+### ESPN private league (optional refresh)
+
+Pre-built league tables live under `data/output/csv/league_*.csv`, so you do **not** need ESPN cookies to use the app.
+
+To re-pull raw ESPN history you must set in `.env`:
+
+- `ESPN_LEAGUE_ID`
+- `ESPN_S2` (espn_s2 cookie)
+- `ESPN_SWID` (SWID cookie)
+
+Never commit `.env`. The raw `data/raw/espn_cache/` folder is gitignored.
 
 ## After setup
 
 ```powershell
+# Optional full rebuild (not required if using shipped CSVs + models)
 python -m rookie_ppr.compile
+
+# Launch UI (uses data/output/csv and data/output/models)
+python -m rookie_ppr.ui
 ```
 
-Outputs land in `data/output/`.
+Outputs land in `data/output/`. Trained models ship under `data/output/models/`.

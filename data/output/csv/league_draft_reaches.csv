@@ -1,0 +1,161 @@
+season,team_id,manager_name,team_name,player_name,position,adp_rank,overall_pick,draft_delta,abs_delta,finish_label,avg_ppg,actual_season_ppr,games
+2018,5,Sahit Gadde,A. Brown Man,Ben Roethlisberger,QB,96.0,19,77.0,77.0,QB3,21.36625,341.86,16.0
+2025,7,Henry Kast,Padma's Pack,Joe Mixon,RB,114.0,55,59.0,59.0,-,,,
+2018,10,Daniel Tai,Gould Standard,Drew Brees,QB,67.0,21,46.0,46.0,QB8,20.332,304.98,15.0
+2018,2,David Maleh,Team Hmar,Cam Newton,QB,59.0,16,43.0,43.0,QB13,20.185714285714287,282.6,14.0
+2021,5,Sahit Gadde,"Titan Killer, Derrick Henry",Sony Michel,RB,113.0,70,43.0,43.0,RB32,8.605882352941178,146.3,17.0
+2018,4,Braden Jenkins,Team Boswellnt,Russell Wilson,QB,52.0,14,38.0,38.0,QB9,18.71375,299.42,16.0
+2025,1,Liam Davis,Phil 1010 Prof: Hurts MTW 10-12,Brian Robinson Jr.,RB,119.0,81,38.0,38.0,RB63,3.676470588235294,62.5,17.0
+2019,4,Braden Jenkins,Team Boswellnt,LeSean McCoy,RB,96.0,62,34.0,34.0,RB41,9.123076923076924,118.6,13.0
+2018,7,Henry Kast,Waka Waka,Tom Brady,QB,47.0,15,32.0,32.0,QB14,17.58125,281.3,16.0
+2019,9,Noah Adams,Please Win,Devin Singletary,RB,105.0,74,31.0,31.0,RB32,12.325,147.9,12.0
+2023,4,Rahul Manne,SkyysTheLimit,Skyy Moore,WR,122.0,91,31.0,31.0,WR107,4.130769230769231,53.7,13.0
+2018,8,Ayo Obisesan,Team Vibranium,Jay Ajayi,RB,42.0,13,29.0,29.0,RB83,10.85,43.4,4.0
+2020,2,David Maleh,Lutz Get  This W,Antonio Gibson,RB,97.0,68,29.0,29.0,RB13,14.44285714285714,202.2,14.0
+2023,7,Henry Kast,Bathroom coercer,Jerry Jeudy,WR,69.0,40,29.0,29.0,WR50,8.8625,141.8,16.0
+2025,10,Daniel Tai,Boswell That Ends Well,Chris Godwin Jr.,WR,102.0,73,29.0,29.0,WR77,9.22222222222222,83.0,9.0
+2019,2,David Maleh,Hot Chubb Tom Machine,Emmanuel Sanders,WR,93.0,66,27.0,27.0,WR64,10.96,109.6,10.0
+2021,3,Spencer U,Robert's Wood,Michael Gallup,WR,114.0,87,27.0,27.0,WR76,10.166666666666666,91.5,9.0
+2023,7,Henry Kast,Bathroom coercer,Jonathan Taylor,RB,47.0,20,27.0,27.0,RB33,15.64,156.4,10.0
+2019,2,David Maleh,Hot Chubb Tom Machine,Josh Gordon,WR,72.0,46,26.0,26.0,WR104,9.133333333333336,54.8,6.0
+2022,4,Rahul Manne,PiercingMy Heart,Drake London,WR,98.0,72,26.0,26.0,WR31,10.505882352941176,178.6,17.0
+2023,4,Rahul Manne,SkyysTheLimit,Christian Kirk,WR,77.0,51,26.0,26.0,WR47,12.521666666666668,150.26,12.0
+2024,6,Ankit Shrivastava,My Hock Hurts,Rashee Rice,WR,68.0,42,26.0,26.0,WR99,21.633333333333336,64.9,3.0
+2022,9,Noah Adams,Team Subcontinent,Kadarius Toney,WR,115.0,90,25.0,25.0,WR110,7.857142857142857,55.0,7.0
+2018,3,Spencer U,Team SUpton,Aaron Rodgers,QB,28.0,4,24.0,24.0,QB6,19.53625,312.58,16.0
+2022,8,Avery Lyle,"Sahit, I don't have kik, stop",Chris Olave,WR,107.0,83,24.0,24.0,WR25,13.213333333333331,198.2,15.0
+2024,2,David Maleh,Mixon up da Browns,Jerome Ford,RB,111.0,87,24.0,24.0,RB33,9.571428571428571,134.0,14.0
+2018,4,Braden Jenkins,Team Boswellnt,Robert Woods,WR,77.0,54,23.0,23.0,WR11,16.6,265.6,16.0
+2019,2,David Maleh,Hot Chubb Tom Machine,Eric Ebron,TE,98.0,75,23.0,23.0,TE28,7.863636363636363,86.5,11.0
+2022,6,Ankit Shrivastava,Yeh Dil Maange Moore,Christian Kirk,WR,100.0,77,23.0,23.0,WR11,14.347058823529412,243.9,17.0
+2024,9,Noah Adams,Courtland Trailblazers,Diontae Johnson,WR,84.0,61,23.0,23.0,WR87,12.042857142857144,84.3,7.0
+2019,4,Braden Jenkins,Team Boswellnt,Sammy Watkins,WR,81.0,59,22.0,22.0,WR49,10.653846153846152,138.5,13.0
+2020,8,Ayo Obisesan,(,Deshaun Watson,QB,61.0,39,22.0,22.0,QB5,23.0825,369.32,16.0
+2024,5,Sahit Gadde,Im going Tua Hill Myself,Brian Thomas Jr.,WR,118.0,96,22.0,22.0,WR4,16.705882352941178,284.0,17.0
+2025,9,Noah Adams,Karma is the guy on the Chiefs,Jerry Jeudy,WR,74.0,52,22.0,22.0,WR50,7.1000000000000005,120.7,17.0
+2020,1,Liam Davis,Dalvin and the Pickups,Henry Ruggs III,WR,116.0,95,21.0,21.0,WR94,6.46923076923077,84.10000000000001,13.0
+2022,6,Ankit Shrivastava,Yeh Dil Maange Moore,Devin Singletary,RB,78.0,57,21.0,21.0,RB23,11.11875,177.9,16.0
+2022,1,Liam Davis,Gould Standard Redemption Arc,Allen Lazard,WR,103.0,82,21.0,21.0,WR34,11.653333333333334,174.8,15.0
+2025,4,Rahul Manne,OhPlzMrsRobinson,Kyler Murray,QB,83.0,62,21.0,21.0,QB38,15.556,77.78,5.0
+2019,6,Ankit Shrivastava,Camera Man,Deshaun Watson,QB,43.0,23,20.0,20.0,QB4,21.398666666666667,320.98,15.0
+2023,10,Daniel Tai,Can McCaffrey Get A McPickTwo?,Michael Thomas,WR,99.0,79,20.0,20.0,WR75,8.98,89.8,10.0
+2019,10,Daniel Tai,Henry is a  Hekler,Matt Breida,RB,104.0,85,19.0,19.0,RB46,8.608333333333333,103.3,12.0
+2021,1,Liam Davis,Sahit in my DMs We not the same,Chase Edmonds,RB,62.0,43,19.0,19.0,RB34,11.941666666666668,143.3,12.0
+2021,3,Spencer U,Robert's Wood,Kenny Golladay,WR,73.0,54,19.0,19.0,WR78,6.364285714285715,89.10000000000001,14.0
+2023,8,Avery Lyle,"Sahit, I don't have kik, stop",Jaxon Smith-Njigba,WR,93.0,74,19.0,19.0,WR48,8.811764705882354,149.8,17.0
+2024,9,Noah Adams,Courtland Trailblazers,Alvin Kamara,RB,40.0,21,19.0,19.0,RB9,18.95,265.3,14.0
+2025,9,Noah Adams,Karma is the guy on the Chiefs,Jakobi Meyers,WR,88.0,69,19.0,19.0,WR58,11.955555555555556,107.6,9.0
+2025,8,Avery Lyle,"Sahit, I don't have kik, stop",Cooper Kupp,WR,90.0,71,19.0,19.0,WR53,7.26875,116.3,16.0
+2025,10,Daniel Tai,Boswell That Ends Well,Javonte Williams,RB,107.0,88,19.0,19.0,RB12,15.175,242.8,16.0
+2019,10,Daniel Tai,Henry is a  Hekler,Duke Johnson,RB,74.0,56,18.0,18.0,RB29,9.625,154.0,16.0
+2022,2,David Maleh,Tucker right in The,Jerry Jeudy,WR,64.0,46,18.0,18.0,WR22,13.613333333333332,204.2,15.0
+2023,10,Daniel Tai,Can McCaffrey Get A McPickTwo?,Alvin Kamara,RB,57.0,39,18.0,18.0,RB11,17.923076923076923,233.0,13.0
+2023,3,Spencer U,Sahit on my face,James Conner,RB,63.0,45,18.0,18.0,RB18,15.5,201.5,13.0
+2023,6,Ankit Shrivastava,Justin Time to CeeDee Rings,JuJu Smith-Schuster,WR,104.0,86,18.0,18.0,WR97,5.545454545454546,61.0,11.0
+2024,10,Daniel Tai,Avengers: Saquontumania,Courtland Sutton,WR,110.0,92,18.0,18.0,WR14,15.01875,240.3,16.0
+2025,10,Daniel Tai,Boswell That Ends Well,Rashee Rice,WR,71.0,53,18.0,18.0,WR37,18.7625,150.1,8.0
+2020,1,Liam Davis,Dalvin and the Pickups,Jared Cook,TE,103.0,86,17.0,17.0,TE19,8.493333333333334,127.4,15.0
+2021,5,Sahit Gadde,"Titan Killer, Derrick Henry",JuJu Smith-Schuster,WR,68.0,51,17.0,17.0,WR133,6.959999999999999,34.8,5.0
+2021,8,Ayo Obisesan,"Sahit, I don't have kik, stop",William Fuller V,WR,106.0,89,17.0,17.0,WR182,4.3,8.6,2.0
+2023,9,Noah Adams,Je-Romen Empire,Chris Godwin,WR,66.0,49,17.0,17.0,WR28,12.305882352941175,209.2,17.0
+2018,6,Ankit Shrivastava,Camera Man,Kirk Cousins,QB,86.0,70,16.0,16.0,QB12,17.695,283.12,16.0
+2021,4,Rahul Manne,Baby Im ThielenUrHeart,Mike Evans,WR,35.0,19,16.0,16.0,WR9,16.40625,262.5,16.0
+2021,4,Rahul Manne,Baby Im ThielenUrHeart,Dallas Goedert,TE,95.0,79,16.0,16.0,TE7,11.0,165.0,15.0
+2022,3,Spencer U,Sahit on my face,Cam Akers,RB,37.0,21,16.0,16.0,RB33,9.42,141.3,15.0
+2024,9,Noah Adams,Courtland Trailblazers,Michael Pittman Jr.,WR,36.0,20,16.0,16.0,WR41,10.3625,165.8,16.0
+2024,10,Daniel Tai,Avengers: Saquontumania,Evan Engram,TE,65.0,49,16.0,16.0,TE33,9.944444444444445,89.5,9.0
+2024,8,Avery Lyle,"Sahit, I don't have kik, stop",Rhamondre Stevenson,RB,67.0,51,16.0,16.0,RB28,11.726666666666668,175.9,15.0
+2024,7,Henry Kast,Gibbing my Jonathan a tug,Dak Prescott,QB,69.0,53,16.0,16.0,QB32,14.565,116.52,8.0
+2024,10,Daniel Tai,Avengers: Saquontumania,Brian Robinson Jr.,RB,88.0,72,16.0,16.0,RB29,11.414285714285713,159.79999999999998,14.0
+2020,8,Ayo Obisesan,(,Noah Fant,TE,114.0,99,15.0,15.0,TE9,10.664285714285716,149.3,14.0
+2021,7,Henry Kast,Waller? I hardly know her,Brandon Aiyuk,WR,61.0,46,15.0,15.0,WR35,10.64375,170.3,16.0
+2021,2,David Maleh,Tucker right in The,Logan Thomas,TE,79.0,64,15.0,15.0,TE44,10.72,53.6,5.0
+2022,10,Trey Matthews,Stefon Digglett,Chase Claypool,WR,111.0,96,15.0,15.0,WR93,9.83,78.64,8.0
+2024,8,Avery Lyle,"Sahit, I don't have kik, stop",DJ Moore,WR,45.0,30,15.0,15.0,WR15,14.005882352941176,238.1,17.0
+2024,2,David Maleh,Mixon up da Browns,Jaylen Warren,RB,89.0,74,15.0,15.0,RB39,8.273333333333333,124.1,15.0
+2024,1,Liam Davis,North of the Mason-Njigba,Jaxon Smith-Njigba,WR,93.0,78,15.0,15.0,WR9,14.882352941176473,253.0,17.0
+2019,2,David Maleh,Hot Chubb Tom Machine,Sony Michel,RB,49.0,35,14.0,14.0,RB31,9.5375,152.6,16.0
+2019,6,Ankit Shrivastava,Camera Man,James White,RB,52.0,38,14.0,14.0,RB17,13.48,202.2,15.0
+2020,2,David Maleh,Lutz Get  This W,Ronald Jones II,RB,87.0,73,14.0,14.0,RB20,13.30714285714286,186.3,14.0
+2020,10,Daniel Tai,Terminator III: Skynet v Conner,Sterling Shepard,WR,104.0,90,14.0,14.0,WR43,13.541666666666666,162.5,12.0
+2022,5,Sahit Gadde,F@(k Fantasy  Football,DJ Moore,WR,42.0,28,14.0,14.0,WR24,11.711764705882354,199.1,17.0
+2023,9,Noah Adams,Je-Romen Empire,Dameon Pierce,RB,46.0,32,14.0,14.0,RB55,6.361538461538462,82.7,13.0
+2024,8,Avery Lyle,"Sahit, I don't have kik, stop",Xavier Worthy,WR,85.0,71,14.0,14.0,WR33,11.7,187.2,16.0
+2022,2,David Maleh,Tucker right in The,Josh Jacobs,RB,48.0,35,13.0,13.0,RB2,19.311764705882357,328.3,17.0
+2022,1,Liam Davis,Gould Standard Redemption Arc,Darnell Mooney,WR,72.0,59,13.0,13.0,WR71,9.227272727272728,101.5,11.0
+2025,10,Daniel Tai,Boswell That Ends Well,Tucker Kraft,TE,106.0,93,13.0,13.0,TE24,14.65,117.2,8.0
+2020,9,Noah Adams,Ekeler? I Hardly Know Her,Jarvis Landry,WR,70.0,58,12.0,12.0,WR33,12.530666666666669,187.96,15.0
+2020,1,Liam Davis,Dalvin and the Pickups,T.Y. Hilton,WR,57.0,46,11.0,11.0,WR42,10.946666666666667,164.20000000000002,15.0
+2020,8,Ayo Obisesan,(,Michael Gallup,WR,73.0,62,11.0,11.0,WR38,10.83125,173.3,16.0
+2025,6,Ankit Shrivastava,Ladd's McCaffrican Boutte,Calvin Ridley,WR,65.0,54,11.0,11.0,WR115,6.757142857142857,47.3,7.0
+2025,1,Liam Davis,Phil 1010 Prof: Hurts MTW 10-12,Derrick Henry,RB,10.0,20,-10.0,10.0,RB8,16.441176470588236,279.5,17.0
+2020,6,Ankit Shrivastava,Camera Man,Cooper Kupp,WR,38.0,49,-11.0,11.0,WR26,14.046666666666663,210.7,15.0
+2020,10,Daniel Tai,Terminator III: Skynet v Conner,Melvin Gordon III,RB,39.0,50,-11.0,11.0,RB14,13.226666666666668,198.4,15.0
+2020,1,Liam Davis,Dalvin and the Pickups,Mark Ingram II,RB,55.0,66,-11.0,11.0,RB77,5.29,52.9,10.0
+2020,10,Daniel Tai,Terminator III: Skynet v Conner,Drew Brees,QB,80.0,91,-11.0,11.0,QB21,17.456666666666667,209.48,12.0
+2025,5,Sahit Gadde,Free Win,Jaylen Waddle,WR,72.0,83,-11.0,11.0,WR23,12.1325,194.12,16.0
+2025,3,Spencer U,Sahit on my face,Mark Andrews,TE,73.0,84,-11.0,11.0,TE16,7.705882352941177,131.0,17.0
+2025,3,Spencer U,Sahit on my face,Stefon Diggs,WR,86.0,97,-11.0,11.0,WR16,12.370588235294118,210.3,17.0
+2020,7,Henry Kast,Waller? I hardly know her,DK Metcalf,WR,49.0,61,-12.0,12.0,WR7,17.08125,273.3,16.0
+2020,2,David Maleh,Lutz Get  This W,Rob Gronkowski,TE,76.0,88,-12.0,12.0,TE9,9.33125,149.3,16.0
+2022,5,Sahit Gadde,F@(k Fantasy  Football,DeAndre Hopkins,WR,80.0,93,-13.0,13.0,WR47,16.855555555555554,151.7,9.0
+2023,5,Sahit Gadde,Lamb Sauve,Drake London,WR,65.0,78,-13.0,13.0,WR37,10.89875,174.38,16.0
+2019,1,Liam Davis,Henrys Not A. Hooper,Adam Thielen,WR,23.0,37,-14.0,14.0,WR62,11.44,114.4,10.0
+2020,9,Noah Adams,Ekeler? I Hardly Know Her,Hunter Henry,TE,84.0,98,-14.0,14.0,TE13,10.37857142857143,145.3,14.0
+2023,10,Daniel Tai,Can McCaffrey Get A McPickTwo?,George Kittle,TE,48.0,62,-14.0,14.0,TE5,12.7,203.2,16.0
+2024,7,Henry Kast,Gibbing my Jonathan a tug,Amari Cooper,WR,54.0,68,-14.0,14.0,WR105,8.814285714285715,61.7,7.0
+2025,4,Rahul Manne,OhPlzMrsRobinson,TreVeyon Henderson,RB,45.0,59,-14.0,14.0,RB21,12.129411764705882,206.2,17.0
+2019,9,Noah Adams,Please Win,Odell Beckham Jr.,WR,12.0,27,-15.0,15.0,WR22,13.49375,215.9,16.0
+2019,10,Daniel Tai,Henry is a  Hekler,Cooper Kupp,WR,50.0,65,-15.0,15.0,WR4,16.90625,270.5,16.0
+2019,7,Henry Kast,fReE wIn,Phillip Lindsay,RB,53.0,68,-15.0,15.0,RB18,12.35625,197.7,16.0
+2019,7,Henry Kast,fReE wIn,Carson Wentz,QB,78.0,93,-15.0,15.0,QB10,17.24125,275.86,16.0
+2020,9,Noah Adams,Ekeler? I Hardly Know Her,Lamar Jackson,QB,23.0,38,-15.0,15.0,QB10,22.18533333333333,332.78,15.0
+2021,1,Liam Davis,Sahit in my DMs We not the same,Justin Herbert,QB,63.0,78,-15.0,15.0,QB2,22.51529411764706,382.76,17.0
+2023,5,Sahit Gadde,Lamb Sauve,Kenneth Walker III,RB,43.0,58,-15.0,15.0,RB19,13.293333333333331,199.4,15.0
+2023,1,Liam Davis,Intermixon between Kasts,Evan Engram,TE,78.0,93,-15.0,15.0,TE2,13.547058823529412,230.3,17.0
+2025,7,Henry Kast,Padma's Pack,Isiah Pacheco,RB,60.0,75,-15.0,15.0,RB56,6.715384615384616,87.3,13.0
+2025,6,Ankit Shrivastava,Ladd's McCaffrican Boutte,Deebo Samuel,WR,79.0,94,-15.0,15.0,WR24,11.7625,188.2,16.0
+2018,9,Noah Adams,Sexual Thielen,Jimmy Graham,TE,53.0,69,-16.0,16.0,TE12,8.1625,130.6,16.0
+2020,4,Braden Jenkins,Team Boswellnt,Patrick Mahomes,QB,21.0,37,-16.0,16.0,QB4,24.96,374.4,15.0
+2020,9,Noah Adams,Ekeler? I Hardly Know Her,Leonard Fournette,RB,62.0,78,-16.0,16.0,RB35,11.0,132.0,12.0
+2021,6,Ankit Shrivastava,Yeh Dil Maange  Moore,Josh Allen,QB,29.0,45,-16.0,16.0,QB1,23.681176470588237,402.58,17.0
+2021,3,Spencer U,Robert's Wood,T.J. Hockenson,TE,58.0,74,-16.0,16.0,TE14,12.108333333333334,145.3,12.0
+2022,8,Avery Lyle,"Sahit, I don't have kik, stop",Josh Allen,QB,22.0,38,-16.0,16.0,QB2,24.72,395.52,16.0
+2022,7,Henry Kast,Waller? I hardly know her,Adam Thielen,WR,71.0,87,-16.0,16.0,WR30,10.588235294117649,180.0,17.0
+2023,1,Liam Davis,Intermixon between Kasts,Javonte Williams,RB,72.0,88,-16.0,16.0,RB29,11.2,179.2,16.0
+2024,4,Rahul Manne,GiveMeMyFlowers,Patrick Mahomes,QB,28.0,44,-16.0,16.0,QB12,17.68875,283.02,16.0
+2018,10,Daniel Tai,Gould Standard,Joe Mixon,RB,24.0,41,-17.0,17.0,RB10,17.385714285714286,243.4,14.0
+2018,5,Sahit Gadde,A. Brown Man,Travis Kelce,TE,25.0,42,-17.0,17.0,TE1,18.4125,294.6,16.0
+2018,6,Ankit Shrivastava,Camera Man,Kenyan Drake,RB,33.0,50,-17.0,17.0,RB14,12.8875,206.2,16.0
+2024,1,Liam Davis,North of the Mason-Njigba,Josh Allen,QB,21.0,38,-17.0,17.0,QB3,23.27125,372.34,16.0
+2024,4,Rahul Manne,GiveMeMyFlowers,David Montgomery,RB,60.0,77,-17.0,17.0,RB18,15.837142857142856,221.72,14.0
+2021,10,Daniel Tai,Day __ of  Ignoring Sahit,Lamar Jackson,QB,43.0,61,-18.0,18.0,QB16,19.99833333333333,239.98,12.0
+2021,4,Rahul Manne,Baby Im ThielenUrHeart,Leonard Fournette,RB,81.0,99,-18.0,18.0,RB6,18.257142857142856,255.6,14.0
+2022,7,Henry Kast,Waller? I hardly know her,Patrick Mahomes,QB,29.0,47,-18.0,18.0,QB1,24.552941176470583,417.4,17.0
+2021,9,Noah Adams,CeeDee's Balls,CeeDee Lamb,WR,33.0,53,-20.0,20.0,WR19,14.55,232.8,16.0
+2021,9,Noah Adams,CeeDee's Balls,Aaron Rodgers,QB,53.0,73,-20.0,20.0,QB5,20.83125,333.3,16.0
+2023,10,Daniel Tai,Can McCaffrey Get A McPickTwo?,Breece Hall,RB,39.0,59,-20.0,20.0,RB2,17.08823529411765,290.5,17.0
+2018,2,David Maleh,Team Hmar,Marquise Goodwin,WR,64.0,85,-21.0,21.0,WR81,7.945454545454546,87.4,11.0
+2019,5,Sahit Gadde,Beat Ankit,Aaron Rodgers,QB,51.0,72,-21.0,21.0,QB9,17.39875,278.38,16.0
+2019,4,Braden Jenkins,Team Boswellnt,Baker Mayfield,QB,58.0,79,-21.0,21.0,QB19,14.71375,235.42,16.0
+2019,8,Ayo Obisesan,All Ma Hom(i)es,A.J. Green,WR,60.0,81,-21.0,21.0,-,,,
+2021,7,Henry Kast,Waller? I hardly know her,Russell Wilson,QB,54.0,75,-21.0,21.0,QB15,17.344285714285714,242.82,14.0
+2022,1,Liam Davis,Gould Standard Redemption Arc,Lamar Jackson,QB,41.0,62,-21.0,21.0,QB14,19.673333333333336,236.08,12.0
+2023,5,Sahit Gadde,Lamb Sauve,Justin Herbert,QB,42.0,63,-21.0,21.0,QB17,18.012307692307694,234.16,13.0
+2018,5,Sahit Gadde,A. Brown Man,Alex Collins,RB,37.0,59,-22.0,22.0,RB45,10.86,108.6,10.0
+2018,9,Noah Adams,Sexual Thielen,Josh Gordon,WR,50.0,72,-22.0,22.0,WR54,11.818181818181818,130.0,11.0
+2022,7,Henry Kast,Waller? I hardly know her,Kyler Murray,QB,52.0,74,-22.0,22.0,QB18,18.229090909090907,200.52,11.0
+2022,4,Rahul Manne,PiercingMy Heart,AJ Dillon,RB,67.0,89,-22.0,22.0,RB26,9.858823529411763,167.6,17.0
+2025,9,Noah Adams,Karma is the guy on the Chiefs,Bo Nix,QB,70.0,92,-22.0,22.0,QB7,17.93176470588235,304.84,17.0
+2018,1,Liam Davis,Team  Ooga kamara,Derrick Henry,RB,40.0,63,-23.0,23.0,RB16,12.585,201.36,16.0
+2023,2,David Maleh,Chasing this Johnston,Trevor Lawrence,QB,54.0,77,-23.0,23.0,QB12,16.40875,262.54,16.0
+2025,1,Liam Davis,Phil 1010 Prof: Hurts MTW 10-12,Jameson Williams,WR,57.0,80,-23.0,23.0,WR11,12.93529411764706,219.9,17.0
+2021,4,Rahul Manne,Baby Im ThielenUrHeart,Patrick Mahomes,QB,18.0,42,-24.0,24.0,QB4,21.274117647058823,361.66,17.0
+2021,3,Spencer U,Robert's Wood,Tom Brady,QB,69.0,94,-25.0,25.0,QB3,22.043529411764705,374.74,17.0
+2024,9,Noah Adams,Courtland Trailblazers,Anthony Richardson,QB,55.0,81,-26.0,26.0,QB25,14.85090909090909,163.36,11.0
+2018,9,Noah Adams,Sexual Thielen,Carlos Hyde,RB,61.0,89,-28.0,28.0,RB65,12.85,77.1,6.0
+2022,2,David Maleh,Tucker right in The,Joe Burrow,QB,57.0,86,-29.0,29.0,QB4,21.91875,350.7,16.0
+2018,2,David Maleh,Team Hmar,Lamar Miller,RB,46.0,76,-30.0,30.0,RB23,12.328571428571427,172.6,14.0
+2018,10,Daniel Tai,Gould Standard,Mark Ingram II,RB,51.0,81,-30.0,30.0,RB32,11.875,142.5,12.0
+2023,9,Noah Adams,Je-Romen Empire,Dalvin Cook,RB,60.0,92,-32.0,32.0,RB73,2.8714285714285714,40.2,14.0
+2019,7,Henry Kast,fReE wIn,Damien Williams,RB,34.0,88,-54.0,54.0,RB38,12.827272727272726,141.1,11.0

@@ -95,6 +95,23 @@ def load_rosters(seasons: list[int]) -> pd.DataFrame:
     return pd.concat(frames, ignore_index=True)
 
 
+FUMBLE_LOST_PARTS = ("sack_fumbles_lost", "rushing_fumbles_lost", "receiving_fumbles_lost")
+
+
+def _normalize_turnover_cols(df: pd.DataFrame) -> pd.DataFrame:
+    """Give both stat releases the same interception / fumbles-lost columns."""
+    if "interceptions" not in df.columns and "passing_interceptions" in df.columns:
+        df = df.rename(columns={"passing_interceptions": "interceptions"})
+    if "fumbles_lost" not in df.columns:
+        parts = [c for c in FUMBLE_LOST_PARTS if c in df.columns]
+        if parts:
+            df = df.copy()
+            df["fumbles_lost"] = sum(
+                pd.to_numeric(df[c], errors="coerce").fillna(0) for c in parts
+            )
+    return df
+
+
 def _aggregate_weekly_to_season(weekly: pd.DataFrame) -> pd.DataFrame:
     """Aggregate nflverse weekly player_stats to season totals (REG only when available)."""
     if weekly.empty:
@@ -130,6 +147,8 @@ def _aggregate_weekly_to_season(weekly: pd.DataFrame) -> pd.DataFrame:
         "rushing_tds",
         "receiving_tds",
         "passing_tds",
+        "interceptions",
+        "fumbles_lost",
     ):
         if col in w.columns:
             named_aggs[col] = (col, "sum")
@@ -141,28 +160,40 @@ def _aggregate_weekly_to_season(weekly: pd.DataFrame) -> pd.DataFrame:
 
 
 def load_player_season_stats(seasons: list[int]) -> pd.DataFrame:
+    """
+    Season totals per player, one release file per season.
+
+    Seasons from 2025 on live in the newer ``stats_player`` release; the weekly
+    asset is preferred so every season runs through the same aggregation, and it
+    names the team column ``team`` where the legacy files used ``recent_team``.
+    """
     frames: list[pd.DataFrame] = []
     for season in seasons:
         df = try_read_release_csv(
             [
                 ("player_stats", f"player_stats_{season}.csv"),
                 ("player_stats", f"player_stats_{season}.csv.gz"),
-                ("stats_player", f"stats_player_season_{season}.csv"),
+                ("stats_player", f"stats_player_week_{season}.csv.gz"),
+                ("stats_player", f"stats_player_week_{season}.csv"),
+                ("stats_player", f"stats_player_reg_{season}.csv.gz"),
+                ("stats_player", f"stats_player_reg_{season}.csv"),
             ]
         )
         if df.empty:
             continue
         if "season" not in df.columns:
             df["season"] = season
-        frames.append(df)
+        if "recent_team" not in df.columns and "team" in df.columns:
+            df = df.rename(columns={"team": "recent_team"})
+        df = _normalize_turnover_cols(df)
+        # Aggregate per file: weekly and season-level assets must not be pooled
+        # before aggregation or season-level rows would each count as one game.
+        frames.append(_aggregate_weekly_to_season(df) if "week" in df.columns else df)
+
+    frames = [f for f in frames if not f.empty]
     if not frames:
         return pd.DataFrame()
-
-    weekly = pd.concat(frames, ignore_index=True)
-    # Weekly files include a week column; season files usually do not
-    if "week" in weekly.columns:
-        return _aggregate_weekly_to_season(weekly)
-    return weekly
+    return pd.concat(frames, ignore_index=True)
 
 
 def _ppr_series(stats: pd.DataFrame) -> pd.Series:

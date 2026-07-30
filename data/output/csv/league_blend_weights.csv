@@ -1,0 +1,9 @@
+season,blend_model_weight,fit_n,fit_r,source
+2018,0.3,0,,default
+2019,0.35,127,0.6235,walkforward
+2020,0.3,254,0.5787,walkforward
+2021,0.4,380,0.5812,walkforward
+2022,0.3,509,0.5939,walkforward
+2023,0.35,633,0.6039,walkforward
+2024,0.35,760,0.5928,walkforward
+2025,0.35,886,0.5853,walkforward

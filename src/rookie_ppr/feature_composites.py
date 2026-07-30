@@ -107,6 +107,8 @@ COMPOSITE_MEMBER_OVERRIDES: dict[str, dict[str, list[dict]]] = {
             {"feature": "incumbent_pos_ppr", "invert": True},
             {"feature": "incumbent_pos_carries", "invert": True},
             {"feature": "incumbent_pos_touches", "invert": True},
+            {"feature": "incumbent_ff_adp", "invert": True},
+            {"feature": "adp_vs_incumbent", "invert": False},
             {"feature": "sos_opp_win_pct", "invert": True},
             {"feature": "off_rush_yards", "invert": False},
         ],

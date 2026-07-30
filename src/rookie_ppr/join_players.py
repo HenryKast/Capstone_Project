@@ -335,15 +335,29 @@ def build_tables(
         college_sheet = college_sheet[[c for c in cols if c in college_sheet.columns]].drop_duplicates()
 
     # Pre-draft fantasy ADP: FantasyPros overall ADP for the player's rookie season only
-    from rookie_ppr.ingest_fantasypros_adp import attach_rookie_adp
+    from rookie_ppr.ingest_fantasypros_adp import attach_incumbent_adp, attach_rookie_adp
 
     if ff_rankings is not None and not ff_rankings.empty and "season" in ff_rankings.columns:
         pre_draft = attach_rookie_adp(players, ff_rankings)
+        incumbent_adp = attach_incumbent_adp(
+            players, ff_rankings, rookie_adp=pre_draft, incumbent=incumbent
+        )
+        if not incumbent_adp.empty:
+            drop_cols = [c for c in ("incumbent_ff_adp", "adp_vs_incumbent") if c in team_context.columns]
+            if drop_cols:
+                team_context = team_context.drop(columns=drop_cols)
+            team_context = team_context.merge(
+                incumbent_adp[["gsis_id", "incumbent_ff_adp", "adp_vs_incumbent"]].drop_duplicates("gsis_id"),
+                how="left",
+                on="gsis_id",
+            )
     else:
         pre_draft = players[["gsis_id", "player_name", "player_name_norm", "position", "draft_year"]].copy()
         pre_draft["ff_adp"] = pd.NA
         pre_draft["ff_adp_rank"] = pd.NA
         pre_draft["ff_rankings_note"] = "No FantasyPros ADP files found in data/manual/."
+        team_context["incumbent_ff_adp"] = pd.NA
+        team_context["adp_vs_incumbent"] = pd.NA
 
     fantasy_sheet = players[
         [
@@ -439,6 +453,8 @@ def build_tables(
             {"sheet": "team_context", "column": "incumbent_pos_ppr_sum", "description": "Sum of prior-season fantasy points among returning same-team/position players", "source": "nflverse stats + rosters"},
             {"sheet": "team_context", "column": "incumbent_pos_carries", "description": "Max prior-season carries among returning same-team/position players", "source": "nflverse stats + rosters"},
             {"sheet": "team_context", "column": "incumbent_pos_touches", "description": "Max prior-season touches among returning same-team/position players", "source": "nflverse stats + rosters"},
+            {"sheet": "team_context", "column": "incumbent_ff_adp", "description": "Best (lowest) FantasyPros ADP among other same-team/position players in rookie-season Overall rankings", "source": "FantasyPros Overall ADP"},
+            {"sheet": "team_context", "column": "adp_vs_incumbent", "description": "incumbent_ff_adp − ff_adp (positive = market ranks rookie ahead of incumbent)", "source": "derived"},
             {"sheet": "team_context", "column": "off_pass_rate_proxy", "description": "Team pass-rate proxy (latest available season before draft)", "source": "nflverse team stats"},
             {"sheet": "combine", "column": "forty", "description": "40-yard dash", "source": "nflverse combine"},
             {"sheet": "college_production", "column": "cfb_*", "description": "Final CFB season production (requires CFBD_API_KEY)", "source": "CollegeFootballData"},
