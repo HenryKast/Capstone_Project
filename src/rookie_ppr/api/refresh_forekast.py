@@ -8,16 +8,17 @@ from __future__ import annotations
 import argparse
 
 from rookie_ppr.api.csv_store import clear_cache
-from rookie_ppr.league.config import LEAGUE_SEASONS
-from rookie_ppr.league.injury_events import detect_injury_events
-from rookie_ppr.league.trade_events import detect_trade_events
-from rookie_ppr.league.weekly_odds import run_weekly_odds
 from rookie_ppr.league.config import (
     CSV_OUTPUT_DIR,
     LEAGUE_INJURY_EVENTS_CSV,
+    LEAGUE_SEASONS,
     LEAGUE_TRADE_EVENTS_CSV,
     LEAGUE_WEEKLY_ODDS_CSV,
 )
+from rookie_ppr.league.draft_reaches import export_league_managers
+from rookie_ppr.league.injury_events import detect_injury_events
+from rookie_ppr.league.trade_events import detect_trade_events
+from rookie_ppr.league.weekly_odds import run_weekly_odds
 
 
 def main() -> None:
@@ -41,8 +42,18 @@ def main() -> None:
         action="store_true",
         help="Only rebuild weekly odds",
     )
+    parser.add_argument(
+        "--skip-managers",
+        action="store_true",
+        help="Do not rebuild league_managers.csv",
+    )
     args = parser.parse_args()
     seasons = list(args.seasons or LEAGUE_SEASONS)
+
+    if not args.skip_managers:
+        print(f"league managers seasons={seasons} ...")
+        mgr = export_league_managers(seasons)
+        print(f"  -> rows={len(mgr)}")
 
     if not args.skip_odds:
         print(f"weekly odds seasons={seasons} ...")

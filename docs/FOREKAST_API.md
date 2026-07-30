@@ -39,7 +39,7 @@ Playoff / title odds only. Team objects use site field names:
 | Field | Meaning |
 | --- | --- |
 | `teamId` | Franchise id (string) |
-| `ownerName` | Primary manager |
+| `ownerName` | Primary manager (`league_managers.csv`) |
 | `teamName` | Season team name |
 | `playoffOddsPct` | 0–1 |
 | `titleOddsPct` | 0–1 |

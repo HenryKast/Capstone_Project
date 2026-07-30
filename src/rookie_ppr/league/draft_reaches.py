@@ -14,6 +14,7 @@ from rookie_ppr.league.config import (
     CSV_OUTPUT_DIR,
     LEAGUE_BACKTEST_ROSTERS_CSV,
     LEAGUE_DRAFT_REACHES_CSV,
+    LEAGUE_MANAGERS_CSV,
     LEAGUE_SEASONS,
     LEAGUE_TEAMS_CSV,
     MODELED_POSITIONS,
@@ -50,8 +51,20 @@ def _ascii(name: object) -> str:
 
 
 def load_manager_map(seasons: list[int] | None = None) -> pd.DataFrame:
-    """(season, team_id) -> primary owner display name from ESPN mTeam cache."""
+    """(season, team_id) -> primary owner display name.
+
+    Prefers shipped ``league_managers.csv`` (no ESPN cookies). Falls back to
+    the local ESPN mTeam cache when regenerating on a machine that has it.
+    """
     seasons = list(seasons or LEAGUE_SEASONS)
+    path = CSV_OUTPUT_DIR / LEAGUE_MANAGERS_CSV
+    if path.exists():
+        frame = pd.read_csv(path)
+        if not frame.empty and "manager_name" in frame.columns:
+            out = frame[frame["season"].isin(seasons)].copy()
+            out["manager_name"] = out["manager_name"].map(_ascii)
+            return out.reset_index(drop=True)
+
     rows: list[dict] = []
     for season in seasons:
         try:
@@ -79,6 +92,48 @@ def load_manager_map(seasons: list[int] | None = None) -> pd.DataFrame:
                 }
             )
     return pd.DataFrame(rows)
+
+
+def export_league_managers(seasons: list[int] | None = None) -> pd.DataFrame:
+    """Build and write ``league_managers.csv`` from ESPN mTeam cache."""
+    # Force ESPN path even if an older CSV exists
+    seasons = list(seasons or LEAGUE_SEASONS)
+    rows: list[dict] = []
+    for season in seasons:
+        try:
+            node = fetch_view(season, ["mTeam"], force=False)
+        except Exception:
+            continue
+        members = {
+            m.get("id"): m for m in (node.get("members") or []) if m.get("id")
+        }
+        for team in node.get("teams") or []:
+            tid = team.get("id")
+            if tid is None:
+                continue
+            owner = members.get(team.get("primaryOwner") or "", {})
+            first = str(owner.get("firstName") or "").strip()
+            last = str(owner.get("lastName") or "").strip()
+            name = _ascii(f"{first} {last}".strip())
+            if not name:
+                name = f"Team {int(tid)}"
+            rows.append(
+                {
+                    "season": int(season),
+                    "team_id": int(tid),
+                    "manager_name": name,
+                }
+            )
+    out = pd.DataFrame(rows)
+    if out.empty:
+        return out
+    out = out.sort_values(["season", "team_id"]).drop_duplicates(
+        subset=["season", "team_id"], keep="last"
+    )
+    path = CSV_OUTPUT_DIR / LEAGUE_MANAGERS_CSV
+    CSV_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    out.to_csv(path, index=False)
+    return out.reset_index(drop=True)
 
 
 def _season_actuals() -> pd.DataFrame:
