@@ -76,6 +76,14 @@ python -m rookie_ppr.compile
 
 # Launch UI (uses data/output/csv and data/output/models)
 python -m rookie_ppr.ui
+
+# ForeKast HTTP API for nerds-united.vercel.app
+pip install fastapi "uvicorn[standard]" pydantic   # or: pip install -r env/requirements.txt
+python -m rookie_ppr.api
+# Docs: http://127.0.0.1:8000/docs — contract: docs/FOREKAST_API.md
+
+# After new ESPN weeks (needs cookies in .env):
+python -m rookie_ppr.api.refresh_forekast --seasons 2025
 ```
 
 Outputs land in `data/output/`. Trained models ship under `data/output/models/`.

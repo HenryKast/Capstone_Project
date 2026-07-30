@@ -10,6 +10,9 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "beautifulsoup4>=4.12",
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "pydantic>=2.7",
 ]
 
 [tool.setuptools.packages.find]
@@ -28,3 +31,5 @@ rookie-ppr-league-sim = "rookie_ppr.league.simulate_season:main"
 rookie-ppr-league-espn-h2h = "rookie_ppr.league.espn_weekly_h2h:main"
 rookie-ppr-league-compile = "rookie_ppr.league.compile:main"
 rookie-ppr-league-board = "rookie_ppr.league.player_board:main"
+rookie-ppr-api = "rookie_ppr.api.__main__:main"
+rookie-ppr-refresh-forekast = "rookie_ppr.api.refresh_forekast:main"
