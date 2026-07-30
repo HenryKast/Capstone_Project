@@ -1,0 +1,396 @@
+{
+  "model_type": "position_specific",
+  "analysis_mode": "dynasty",
+  "target": "dynasty_ppr_y1_y3_total",
+  "point_estimate": "median_q50",
+  "train_rows": 305,
+  "holdout_first_stat_seasons": [
+    2021,
+    2022,
+    2023
+  ],
+  "tuning_validation_season": 2020,
+  "tuning_r_by_position": {
+    "QB": 0.6792,
+    "RB": 0.7075,
+    "WR": 0.5777,
+    "TE": 0.8667
+  },
+  "best_params_by_position": {
+    "QB": {
+      "max_depth": 5,
+      "learning_rate": 0.05,
+      "max_iter": 350,
+      "min_samples_leaf": 8,
+      "l2_regularization": 0.1
+    },
+    "RB": {
+      "max_depth": 3,
+      "learning_rate": 0.05,
+      "max_iter": 300,
+      "min_samples_leaf": 15,
+      "l2_regularization": 1.0
+    },
+    "WR": {
+      "max_depth": 3,
+      "learning_rate": 0.05,
+      "max_iter": 250,
+      "min_samples_leaf": 20,
+      "l2_regularization": 1.0
+    },
+    "TE": {
+      "max_depth": 3,
+      "learning_rate": 0.05,
+      "max_iter": 300,
+      "min_samples_leaf": 12,
+      "l2_regularization": 1.0
+    }
+  },
+  "feature_cols_by_position": {
+    "QB": [
+      "score_draft_capital",
+      "score_pre_draft_fantasy",
+      "score_recruiting",
+      "score_timing",
+      "score_cfb_passing",
+      "score_combine_size",
+      "score_combine_speed",
+      "score_team_context"
+    ],
+    "RB": [
+      "score_draft_capital",
+      "score_pre_draft_fantasy",
+      "score_recruiting",
+      "score_timing",
+      "score_cfb_rushing",
+      "score_cfb_receiving",
+      "score_combine_speed",
+      "score_team_context"
+    ],
+    "WR": [
+      "score_draft_capital",
+      "score_pre_draft_fantasy",
+      "score_recruiting",
+      "score_timing",
+      "score_cfb_receiving",
+      "score_combine_speed",
+      "score_combine_explosion",
+      "score_combine_size",
+      "score_team_context"
+    ],
+    "TE": [
+      "score_draft_capital",
+      "score_pre_draft_fantasy",
+      "score_recruiting",
+      "score_timing",
+      "score_cfb_receiving",
+      "score_team_context"
+    ]
+  },
+  "cqr_alpha": 0.2,
+  "conformal_by_position": {
+    "QB": {
+      "alpha": 0.2,
+      "q_lo": 0.1,
+      "q_hi": 0.9,
+      "q_hat": 224.502,
+      "n_cal": 8,
+      "n_fit": 18,
+      "residual_q25": -201.5704,
+      "residual_q75": 176.2703,
+      "one_sided_scores_lo": [
+        -482.1453,
+        125.3028,
+        -214.7904,
+        -138.1897,
+        -157.3446,
+        -56.4379,
+        -307.0372,
+        -712.9304
+      ],
+      "one_sided_scores_hi": [
+        224.502,
+        -302.3583,
+        -569.2148,
+        -471.4936,
+        83.2087,
+        -192.698,
+        105.3429,
+        -80.2603
+      ]
+    },
+    "RB": {
+      "alpha": 0.2,
+      "q_lo": 0.1,
+      "q_hi": 0.9,
+      "q_hat": 142.5758,
+      "n_cal": 13,
+      "n_fit": 82,
+      "residual_q25": -263.0388,
+      "residual_q75": -34.6104,
+      "one_sided_scores_lo": [
+        83.7572,
+        -57.0131,
+        -334.8076,
+        -424.1365,
+        138.1898,
+        -78.3977,
+        -341.5917,
+        142.5758,
+        -49.4765,
+        156.9954,
+        48.6012,
+        140.2021,
+        -4.7194
+      ],
+      "one_sided_scores_hi": [
+        -312.2323,
+        -253.4756,
+        -280.4233,
+        92.1667,
+        -571.8173,
+        -190.0685,
+        -68.0576,
+        -387.7135,
+        -215.2707,
+        -547.6614,
+        -198.2467,
+        -487.9186,
+        -211.9332
+      ]
+    },
+    "WR": {
+      "alpha": 0.2,
+      "q_lo": 0.1,
+      "q_hi": 0.9,
+      "q_hat": 119.371,
+      "n_cal": 22,
+      "n_fit": 106,
+      "residual_q25": -92.3677,
+      "residual_q75": 242.3418,
+      "one_sided_scores_lo": [
+        -154.9113,
+        -475.31,
+        13.5449,
+        -708.3235,
+        -380.9183,
+        -511.2278,
+        -418.1266,
+        -234.556,
+        -30.7359,
+        -344.46,
+        -190.1901,
+        23.3767,
+        -26.4344,
+        -107.9466,
+        -378.3773,
+        -27.5025,
+        -358.6837,
+        -252.8538,
+        -92.2464,
+        38.5601,
+        -44.4039,
+        56.0202
+      ],
+      "one_sided_scores_hi": [
+        -269.2563,
+        129.3085,
+        -412.0955,
+        411.4006,
+        -94.8086,
+        129.9298,
+        -21.7649,
+        -231.6202,
+        -485.2902,
+        14.3577,
+        -266.6031,
+        -329.7196,
+        -300.9466,
+        -204.5974,
+        -34.5671,
+        -253.6717,
+        119.371,
+        -57.2534,
+        -128.0312,
+        -292.1416,
+        -229.2227,
+        -512.2412
+      ]
+    },
+    "TE": {
+      "alpha": 0.2,
+      "q_lo": 0.1,
+      "q_hi": 0.9,
+      "q_hat": 139.2831,
+      "n_cal": 8,
+      "n_fit": 48,
+      "residual_q25": -88.2729,
+      "residual_q75": -52.2435,
+      "one_sided_scores_lo": [
+        -77.6279,
+        139.2831,
+        -69.0873,
+        -48.4792,
+        -41.6631,
+        -17.7881,
+        -5.8364,
+        41.0335
+      ],
+      "one_sided_scores_hi": [
+        -114.7708,
+        -219.3092,
+        -39.6113,
+        -44.3846,
+        -92.8128,
+        -87.3359,
+        -122.3089,
+        -133.0352
+      ]
+    }
+  },
+  "ecr": {
+    "loaded": false,
+    "n_matched": 0,
+    "match_rate": 0.0,
+    "caveat": "Current-market ECR; not used as a model feature."
+  },
+  "holdout": {
+    "n": 119,
+    "pearson_r": 0.4753,
+    "mae": 172.582,
+    "by_position": {
+      "QB": {
+        "n": 15,
+        "pearson_r": 0.5525,
+        "mae": 233.769
+      },
+      "RB": {
+        "n": 33,
+        "pearson_r": 0.7237,
+        "mae": 169.49
+      },
+      "TE": {
+        "n": 22,
+        "pearson_r": 0.5082,
+        "mae": 94.239
+      },
+      "WR": {
+        "n": 49,
+        "pearson_r": 0.2737,
+        "mae": 191.109
+      }
+    }
+  },
+  "holdout_pearson_r": 0.4753,
+  "holdout_mae": 172.582,
+  "holdout_n": 119,
+  "year_targets": {
+    "ppr_y1": {
+      "target": "ppr_y1",
+      "tuning_r_by_position": {
+        "QB": 0.8285,
+        "RB": 0.8559,
+        "WR": 0.6135,
+        "TE": 0.6666
+      },
+      "n": 222,
+      "pearson_r": 0.6974,
+      "mae": 38.645,
+      "by_position": {
+        "QB": {
+          "n": 29,
+          "pearson_r": 0.738,
+          "mae": 41.657
+        },
+        "RB": {
+          "n": 56,
+          "pearson_r": 0.7559,
+          "mae": 41.081
+        },
+        "TE": {
+          "n": 43,
+          "pearson_r": 0.68,
+          "mae": 30.432
+        },
+        "WR": {
+          "n": 94,
+          "pearson_r": 0.6706,
+          "mae": 40.02
+        }
+      }
+    },
+    "ppr_y2": {
+      "target": "ppr_y2",
+      "tuning_r_by_position": {
+        "QB": 0.2394,
+        "RB": 0.7281,
+        "WR": 0.5098,
+        "TE": 0.8637
+      },
+      "n": 190,
+      "pearson_r": 0.4857,
+      "mae": 61.512,
+      "by_position": {
+        "QB": {
+          "n": 23,
+          "pearson_r": 0.3824,
+          "mae": 98.411
+        },
+        "RB": {
+          "n": 46,
+          "pearson_r": 0.5789,
+          "mae": 71.078
+        },
+        "TE": {
+          "n": 40,
+          "pearson_r": 0.4958,
+          "mae": 32.692
+        },
+        "WR": {
+          "n": 81,
+          "pearson_r": 0.4561,
+          "mae": 59.833
+        }
+      }
+    },
+    "ppr_y3": {
+      "target": "ppr_y3",
+      "tuning_r_by_position": {
+        "QB": 0.5138,
+        "RB": 0.6515,
+        "WR": 0.5708,
+        "TE": 0.4568
+      },
+      "n": 125,
+      "pearson_r": 0.3248,
+      "mae": 82.027,
+      "by_position": {
+        "QB": {
+          "n": 16,
+          "pearson_r": 0.6005,
+          "mae": 99.217
+        },
+        "RB": {
+          "n": 36,
+          "pearson_r": 0.4428,
+          "mae": 78.916
+        },
+        "TE": {
+          "n": 22,
+          "pearson_r": -0.0806,
+          "mae": 53.46
+        },
+        "WR": {
+          "n": 51,
+          "pearson_r": 0.223,
+          "mae": 91.152
+        }
+      }
+    }
+  },
+  "horizon_labels": {
+    "ppr_y1": "Y1",
+    "ppr_y2": "Y2",
+    "ppr_y3": "Y3"
+  }
+}

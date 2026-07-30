@@ -18,3 +18,13 @@ where = ["src"]
 [project.scripts]
 rookie-ppr-compile = "rookie_ppr.compile:main"
 rookie-ppr-ui = "rookie_ppr.ui:main"
+rookie-ppr-veteran = "rookie_ppr.veteran.compile:main"
+rookie-ppr-draft-board = "rookie_ppr.veteran.draft_board:main"
+rookie-ppr-weekly = "rookie_ppr.veteran.weekly_projection:main"
+rookie-ppr-league-ingest = "rookie_ppr.league.ingest:main"
+rookie-ppr-league-projections = "rookie_ppr.league.backtest_projections:main"
+rookie-ppr-league-rosters = "rookie_ppr.league.backtest_rosters:main"
+rookie-ppr-league-sim = "rookie_ppr.league.simulate_season:main"
+rookie-ppr-league-espn-h2h = "rookie_ppr.league.espn_weekly_h2h:main"
+rookie-ppr-league-compile = "rookie_ppr.league.compile:main"
+rookie-ppr-league-board = "rookie_ppr.league.player_board:main"

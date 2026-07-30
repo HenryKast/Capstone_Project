@@ -1,0 +1,757 @@
+{
+  "position_norms": {
+    "WR": {
+      "draft_overall": {
+        "mean": -113.9672131147541,
+        "std": 75.62594046498631
+      },
+      "ff_adp": {
+        "mean": -265.54285714285714,
+        "std": 136.40529210512952
+      },
+      "ff_adp_rank": {
+        "mean": -274.9130434782609,
+        "std": 147.64384474574058
+      },
+      "recruiting_rank": {
+        "mean": -501.99484536082474,
+        "std": 586.9559436329426
+      },
+      "recruiting_stars": {
+        "mean": 3.752577319587629,
+        "std": 0.6523123927393036
+      },
+      "age_at_draft": {
+        "mean": -22.37704918032787,
+        "std": 0.9500086103353271
+      },
+      "hs_class": {
+        "mean": 2014.1352459016393,
+        "std": 2.6391612999714673
+      },
+      "cfb_rec": {
+        "mean": 62.13191489361702,
+        "std": 26.79463770170023
+      },
+      "cfb_rec_yards": {
+        "mean": 928.8553191489361,
+        "std": 383.1589184082419
+      },
+      "cfb_rec_td": {
+        "mean": 8.059574468085106,
+        "std": 4.426593082029932
+      },
+      "cfb_rush_yards": {
+        "mean": 60.1,
+        "std": 147.34421872590153
+      },
+      "cfb_rush_td": {
+        "mean": 0.49333333333333335,
+        "std": 1.329816390750851
+      },
+      "cfb_pass_yards": {
+        "mean": 27.319148936170212,
+        "std": 62.32771258261996
+      },
+      "cfb_pass_td": {
+        "mean": 0.2978723404255319,
+        "std": 0.6225785655684533
+      },
+      "forty": {
+        "mean": -4.472251308900524,
+        "std": 0.09289869800154914
+      },
+      "cone": {
+        "mean": -6.963953488372092,
+        "std": 0.19887739079585554
+      },
+      "shuttle": {
+        "mean": -4.236015037593985,
+        "std": 0.1450388654789825
+      },
+      "vertical": {
+        "mean": 35.85372340425532,
+        "std": 2.992617827787676
+      },
+      "broad_jump": {
+        "mean": 123.08152173913044,
+        "std": 5.886808989259593
+      },
+      "ht_inches": {
+        "mean": 72.72641509433963,
+        "std": 2.2750783283965856
+      },
+      "wt": {
+        "mean": 202.42924528301887,
+        "std": 14.864624292321464
+      },
+      "sos_opp_win_pct": {
+        "mean": -0.49908282118597197,
+        "std": 0.030145888218622352
+      },
+      "vacated_touches": {
+        "mean": 114.99145299145299,
+        "std": 44.066277770040486
+      },
+      "vacated_carries": {
+        "mean": 5.205128205128205,
+        "std": 9.574230848241767
+      },
+      "incumbent_pos_ppr": {
+        "mean": -190.31162995594713,
+        "std": 77.21266537449762
+      },
+      "incumbent_pos_carries": {
+        "mean": -5.506607929515418,
+        "std": 7.593878557120256
+      },
+      "incumbent_pos_touches": {
+        "mean": -70.18942731277534,
+        "std": 28.289030882210316
+      },
+      "off_pass_rate_proxy": {
+        "mean": 0.5640334625817001,
+        "std": 0.04825763907129898
+      },
+      "off_pass_yards": {
+        "mean": 4018.3360655737706,
+        "std": 519.3817805047257
+      },
+      "off_rush_yards": {
+        "mean": 1884.827868852459,
+        "std": 347.0678635889244
+      },
+      "incumbent_ff_adp": {
+        "mean": -126.36342592592591,
+        "std": 140.13930280616904
+      },
+      "adp_vs_incumbent": {
+        "mean": -133.45035460992906,
+        "std": 196.04158036502415
+      }
+    },
+    "RB": {
+      "draft_overall": {
+        "mean": -132.5,
+        "std": 68.56079667154317
+      },
+      "ff_adp": {
+        "mean": -206.74761904761908,
+        "std": 155.7142930956748
+      },
+      "ff_adp_rank": {
+        "mean": -206.11111111111111,
+        "std": 148.41963332239962
+      },
+      "recruiting_rank": {
+        "mean": -598.7074829931972,
+        "std": 624.574597263098
+      },
+      "recruiting_stars": {
+        "mean": 3.63265306122449,
+        "std": 0.6629286687909555
+      },
+      "age_at_draft": {
+        "mean": -22.33529411764706,
+        "std": 0.8900775689025188
+      },
+      "hs_class": {
+        "mean": 2014.3294117647058,
+        "std": 2.5738247058470822
+      },
+      "cfb_rec": {
+        "mean": 21.70625,
+        "std": 12.689616849462537
+      },
+      "cfb_rec_yards": {
+        "mean": 204.20625,
+        "std": 142.14524845665798
+      },
+      "cfb_rec_td": {
+        "mean": 1.3125,
+        "std": 1.5344574769043529
+      },
+      "cfb_rush_yards": {
+        "mean": 1028.8658536585365,
+        "std": 563.980926062082
+      },
+      "cfb_rush_td": {
+        "mean": 10.878048780487806,
+        "std": 6.823615154501825
+      },
+      "cfb_pass_yards": {
+        "mean": 59.43478260869565,
+        "std": 223.87736620483594
+      },
+      "cfb_pass_td": {
+        "mean": 0.6956521739130435,
+        "std": 1.4596008983995234
+      },
+      "forty": {
+        "mean": -4.529626865671642,
+        "std": 0.08994072163457015
+      },
+      "cone": {
+        "mean": -7.070985915492958,
+        "std": 0.19952196391502125
+      },
+      "shuttle": {
+        "mean": -4.275194805194805,
+        "std": 0.13117495739028517
+      },
+      "vertical": {
+        "mean": 34.37022900763359,
+        "std": 3.3296960973936103
+      },
+      "broad_jump": {
+        "mean": 121.00806451612904,
+        "std": 5.118904811319365
+      },
+      "ht_inches": {
+        "mean": 70.61267605633803,
+        "std": 1.68787327491983
+      },
+      "wt": {
+        "mean": 214.73426573426573,
+        "std": 12.532746430205057
+      },
+      "sos_opp_win_pct": {
+        "mean": -0.49630031294524735,
+        "std": 0.032460317188665225
+      },
+      "vacated_touches": {
+        "mean": 209.38787878787878,
+        "std": 103.00660574832129
+      },
+      "vacated_carries": {
+        "mean": 165.8181818181818,
+        "std": 87.5543923434186
+      },
+      "incumbent_pos_ppr": {
+        "mean": -169.69924528301888,
+        "std": 88.22620936932495
+      },
+      "incumbent_pos_carries": {
+        "mean": -156.7987421383648,
+        "std": 78.0109356074976
+      },
+      "incumbent_pos_touches": {
+        "mean": -188.9811320754717,
+        "std": 89.20063232009755
+      },
+      "off_pass_rate_proxy": {
+        "mean": 0.5685688370658619,
+        "std": 0.05046839098922304
+      },
+      "off_pass_yards": {
+        "mean": 4023.3823529411766,
+        "std": 530.7292189325461
+      },
+      "off_rush_yards": {
+        "mean": 1823.129411764706,
+        "std": 362.13864382951664
+      },
+      "incumbent_ff_adp": {
+        "mean": -113.92302631578947,
+        "std": 135.23288936845097
+      },
+      "adp_vs_incumbent": {
+        "mean": -89.3798245614035,
+        "std": 221.00642691965305
+      }
+    },
+    "QB": {
+      "draft_overall": {
+        "mean": -89.54929577464789,
+        "std": 81.28939286496194
+      },
+      "ff_adp": {
+        "mean": -327.15106382978723,
+        "std": 144.8746967920306
+      },
+      "ff_adp_rank": {
+        "mean": -347.48936170212767,
+        "std": 166.04869274591474
+      },
+      "recruiting_rank": {
+        "mean": -522.2,
+        "std": 573.0081314868053
+      },
+      "recruiting_stars": {
+        "mean": 3.6769230769230767,
+        "std": 0.6871065307617041
+      },
+      "age_at_draft": {
+        "mean": -22.774647887323944,
+        "std": 0.9739049982796291
+      },
+      "hs_class": {
+        "mean": 2014.225352112676,
+        "std": 2.4564619336330713
+      },
+      "cfb_rec": {
+        "mean": 1.0952380952380953,
+        "std": 0.4364357804719847
+      },
+      "cfb_rec_yards": {
+        "mean": 9.857142857142858,
+        "std": 9.509393851795782
+      },
+      "cfb_rec_td": {
+        "mean": 0.3333333333333333,
+        "std": 0.48304589153964794
+      },
+      "cfb_rush_yards": {
+        "mean": 233.5072463768116,
+        "std": 304.1115131768572
+      },
+      "cfb_rush_td": {
+        "mean": 4.898550724637682,
+        "std": 4.253527696949051
+      },
+      "cfb_pass_yards": {
+        "mean": 3218.6323529411766,
+        "std": 1216.6795026102777
+      },
+      "cfb_pass_td": {
+        "mean": 26.485294117647058,
+        "std": 12.583444047291193
+      },
+      "forty": {
+        "mean": -4.8,
+        "std": 0.14663546905272853
+      },
+      "cone": {
+        "mean": -7.077173913043477,
+        "std": 0.16603430761245644
+      },
+      "shuttle": {
+        "mean": -4.313191489361701,
+        "std": 0.161610191012318
+      },
+      "vertical": {
+        "mean": 31.555555555555557,
+        "std": 2.782469831782525
+      },
+      "broad_jump": {
+        "mean": 113.86,
+        "std": 5.580615136893284
+      },
+      "ht_inches": {
+        "mean": 74.95384615384616,
+        "std": 1.8151340276854322
+      },
+      "wt": {
+        "mean": 222.55384615384617,
+        "std": 8.944325661471721
+      },
+      "sos_opp_win_pct": {
+        "mean": -0.5002705190920611,
+        "std": 0.030552805430737226
+      },
+      "vacated_touches": {
+        "mean": 19.885714285714286,
+        "std": 24.678537795892026
+      },
+      "vacated_carries": {
+        "mean": 19.714285714285715,
+        "std": 24.55289637694287
+      },
+      "incumbent_pos_ppr": {
+        "mean": -193.75333333333333,
+        "std": 104.78624837076214
+      },
+      "incumbent_pos_carries": {
+        "mean": -37.21052631578947,
+        "std": 31.408447932105133
+      },
+      "incumbent_pos_touches": {
+        "mean": -37.333333333333336,
+        "std": 31.471831698777727
+      },
+      "off_pass_rate_proxy": {
+        "mean": 0.563576007315137,
+        "std": 0.0497577863525485
+      },
+      "off_pass_yards": {
+        "mean": 3897.5915492957747,
+        "std": 532.5936424025031
+      },
+      "off_rush_yards": {
+        "mean": 1865.943661971831,
+        "std": 344.6599934230812
+      },
+      "incumbent_ff_adp": {
+        "mean": -213.0112903225806,
+        "std": 145.03180556187417
+      },
+      "adp_vs_incumbent": {
+        "mean": -111.13414634146342,
+        "std": 226.34676230261846
+      }
+    },
+    "TE": {
+      "draft_overall": {
+        "mean": -120.30841121495327,
+        "std": 60.99465043275691
+      },
+      "ff_adp": {
+        "mean": -367.6156862745098,
+        "std": 174.7690434516926
+      },
+      "ff_adp_rank": {
+        "mean": -403.94117647058823,
+        "std": 203.48419218845535
+      },
+      "recruiting_rank": {
+        "mean": -760.4659090909091,
+        "std": 720.8286570659077
+      },
+      "recruiting_stars": {
+        "mean": 3.5,
+        "std": 0.5872202195147035
+      },
+      "age_at_draft": {
+        "mean": -22.61682242990654,
+        "std": 0.9177994582314205
+      },
+      "hs_class": {
+        "mean": 2014.1308411214952,
+        "std": 2.5883779146864287
+      },
+      "cfb_rec": {
+        "mean": 34.38834951456311,
+        "std": 18.54894585541804
+      },
+      "cfb_rec_yards": {
+        "mean": 450.0873786407767,
+        "std": 260.2168442196049
+      },
+      "cfb_rec_td": {
+        "mean": 3.912621359223301,
+        "std": 2.9872500178175705
+      },
+      "cfb_rush_yards": {
+        "mean": 25.56,
+        "std": 80.99026690493947
+      },
+      "cfb_rush_td": {
+        "mean": 0.72,
+        "std": 2.3895606290697042
+      },
+      "cfb_pass_yards": {
+        "mean": 8.285714285714286,
+        "std": 9.62140470884728
+      },
+      "cfb_pass_td": {
+        "mean": 0.14285714285714285,
+        "std": 0.37796447300922725
+      },
+      "forty": {
+        "mean": -4.723291139240506,
+        "std": 0.12254482716161506
+      },
+      "cone": {
+        "mean": -7.149193548387097,
+        "std": 0.20073878620128008
+      },
+      "shuttle": {
+        "mean": -4.3590625,
+        "std": 0.13112115747089764
+      },
+      "vertical": {
+        "mean": 33.40277777777778,
+        "std": 2.9617739365674427
+      },
+      "broad_jump": {
+        "mean": 118.11764705882354,
+        "std": 5.783479848426499
+      },
+      "ht_inches": {
+        "mean": 76.44329896907216,
+        "std": 1.3917096213302158
+      },
+      "wt": {
+        "mean": 251.63917525773195,
+        "std": 8.257806366062447
+      },
+      "sos_opp_win_pct": {
+        "mean": -0.4994411522167965,
+        "std": 0.03011111484587787
+      },
+      "vacated_touches": {
+        "mean": 34.40384615384615,
+        "std": 21.149729384194146
+      },
+      "vacated_carries": {
+        "mean": 0.125,
+        "std": 0.5155353518713592
+      },
+      "incumbent_pos_ppr": {
+        "mean": -93.78702127659574,
+        "std": 72.77332151527189
+      },
+      "incumbent_pos_carries": {
+        "mean": -0.8617021276595744,
+        "std": 2.9931860388232097
+      },
+      "incumbent_pos_touches": {
+        "mean": -35.829787234042556,
+        "std": 25.979577710554878
+      },
+      "off_pass_rate_proxy": {
+        "mean": 0.5622286944226424,
+        "std": 0.048825711155085105
+      },
+      "off_pass_yards": {
+        "mean": 3940.467289719626,
+        "std": 465.11835210741083
+      },
+      "off_rush_yards": {
+        "mean": 1841.3177570093458,
+        "std": 353.19924886485126
+      },
+      "incumbent_ff_adp": {
+        "mean": -228.55256410256408,
+        "std": 175.63460869817422
+      },
+      "adp_vs_incumbent": {
+        "mean": -105.23170731707317,
+        "std": 225.89135711556605
+      }
+    }
+  },
+  "weights": {
+    "score_draft_capital": {
+      "draft_overall": 0.5756
+    },
+    "score_pre_draft_fantasy": {
+      "ff_adp": 0.5204,
+      "ff_adp_rank": 0.5454
+    },
+    "score_recruiting": {
+      "recruiting_rank": 0.1236,
+      "recruiting_stars": 0.1754
+    },
+    "score_timing": {
+      "age_at_draft": 0.2409,
+      "hs_class": 0.1354
+    },
+    "score_cfb_receiving": {
+      "cfb_rec": 0.134,
+      "cfb_rec_yards": 0.1214,
+      "cfb_rec_td": 0.1118
+    },
+    "score_cfb_rushing": {
+      "cfb_rush_yards": 0.1243,
+      "cfb_rush_td": 0.1502
+    },
+    "score_cfb_passing": {
+      "cfb_pass_yards": 0.156,
+      "cfb_pass_td": 0.1895
+    },
+    "score_combine_speed": {
+      "forty": 0.15,
+      "cone": 0.1547,
+      "shuttle": 0.1253
+    },
+    "score_combine_explosion": {
+      "vertical": 0.0992,
+      "broad_jump": 0.1105
+    },
+    "score_combine_size": {
+      "ht_inches": 0.088,
+      "wt": 0.0902
+    },
+    "score_team_context": {
+      "sos_opp_win_pct": 0.004,
+      "vacated_touches": 0.1151,
+      "vacated_carries": 0.1165,
+      "incumbent_pos_ppr": 0.1062,
+      "incumbent_pos_carries": 0.0355,
+      "incumbent_pos_touches": 0.0126,
+      "off_pass_rate_proxy": 0.0145,
+      "off_pass_yards": 0.0153,
+      "off_rush_yards": 0.0086,
+      "incumbent_ff_adp": 0.1247,
+      "adp_vs_incumbent": 0.4636
+    }
+  },
+  "specs": [
+    {
+      "name": "score_draft_capital",
+      "members": [
+        {
+          "feature": "draft_overall",
+          "invert": true
+        }
+      ]
+    },
+    {
+      "name": "score_pre_draft_fantasy",
+      "members": [
+        {
+          "feature": "ff_adp",
+          "invert": true
+        },
+        {
+          "feature": "ff_adp_rank",
+          "invert": true
+        }
+      ]
+    },
+    {
+      "name": "score_recruiting",
+      "members": [
+        {
+          "feature": "recruiting_rank",
+          "invert": true
+        },
+        {
+          "feature": "recruiting_stars",
+          "invert": false
+        }
+      ]
+    },
+    {
+      "name": "score_timing",
+      "members": [
+        {
+          "feature": "age_at_draft",
+          "invert": true
+        },
+        {
+          "feature": "hs_class",
+          "invert": false
+        }
+      ]
+    },
+    {
+      "name": "score_cfb_receiving",
+      "members": [
+        {
+          "feature": "cfb_rec",
+          "invert": false
+        },
+        {
+          "feature": "cfb_rec_yards",
+          "invert": false
+        },
+        {
+          "feature": "cfb_rec_td",
+          "invert": false
+        }
+      ]
+    },
+    {
+      "name": "score_cfb_rushing",
+      "members": [
+        {
+          "feature": "cfb_rush_yards",
+          "invert": false
+        },
+        {
+          "feature": "cfb_rush_td",
+          "invert": false
+        }
+      ]
+    },
+    {
+      "name": "score_cfb_passing",
+      "members": [
+        {
+          "feature": "cfb_pass_yards",
+          "invert": false
+        },
+        {
+          "feature": "cfb_pass_td",
+          "invert": false
+        }
+      ]
+    },
+    {
+      "name": "score_combine_speed",
+      "members": [
+        {
+          "feature": "forty",
+          "invert": true
+        },
+        {
+          "feature": "cone",
+          "invert": true
+        },
+        {
+          "feature": "shuttle",
+          "invert": true
+        }
+      ]
+    },
+    {
+      "name": "score_combine_explosion",
+      "members": [
+        {
+          "feature": "vertical",
+          "invert": false
+        },
+        {
+          "feature": "broad_jump",
+          "invert": false
+        }
+      ]
+    },
+    {
+      "name": "score_combine_size",
+      "members": [
+        {
+          "feature": "ht_inches",
+          "invert": false
+        },
+        {
+          "feature": "wt",
+          "invert": false
+        }
+      ]
+    },
+    {
+      "name": "score_team_context",
+      "members": [
+        {
+          "feature": "sos_opp_win_pct",
+          "invert": true
+        },
+        {
+          "feature": "vacated_touches",
+          "invert": false
+        },
+        {
+          "feature": "vacated_carries",
+          "invert": false
+        },
+        {
+          "feature": "incumbent_pos_ppr",
+          "invert": true
+        },
+        {
+          "feature": "incumbent_pos_carries",
+          "invert": true
+        },
+        {
+          "feature": "incumbent_pos_touches",
+          "invert": true
+        },
+        {
+          "feature": "off_pass_rate_proxy",
+          "invert": false
+        },
+        {
+          "feature": "off_pass_yards",
+          "invert": false
+        },
+        {
+          "feature": "off_rush_yards",
+          "invert": false
+        }
+      ]
+    }
+  ]
+}

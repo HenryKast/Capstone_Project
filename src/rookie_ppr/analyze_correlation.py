@@ -23,6 +23,8 @@ FEATURE_BLOCKS: dict[str, list[str]] = {
         "incumbent_pos_touches",
         "vacated_touches",
         "vacated_carries",
+        "incumbent_ff_adp",
+        "adp_vs_incumbent",
         "off_pass_rate_proxy",
         "off_pass_yards",
         "off_rush_yards",

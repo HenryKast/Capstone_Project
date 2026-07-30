@@ -127,6 +127,20 @@ FIELD_SPECS: list[FieldSpec] = [
         "Team context",
     ),
     FieldSpec(
+        "incumbent_ff_adp",
+        "Incumbent FantasyPros ADP",
+        "(best same-team/pos ADP; higher = weaker incumbent)",
+        "Team context",
+        important=True,
+    ),
+    FieldSpec(
+        "adp_vs_incumbent",
+        "ADP vs incumbent",
+        "(incumbent ADP − your ADP; positive = market prefers you)",
+        "Team context",
+        important=True,
+    ),
+    FieldSpec(
         "vacated_touches",
         "Vacated touches",
         "(team touches − returning workhorse; higher = more open)",

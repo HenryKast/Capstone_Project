@@ -1,0 +1,504 @@
+{
+  "seasons": {
+    "2018": {
+      "n_projected": 553,
+      "n_graded": 392,
+      "train_through": 2016,
+      "tuned_on": 2017,
+      "by_position": {
+        "QB": {
+          "n_train": 398,
+          "n_features": 32,
+          "n_predicted": 73,
+          "tune_r": 0.8228,
+          "best_params": {
+            "max_depth": 2,
+            "learning_rate": 0.03,
+            "max_iter": 200,
+            "min_samples_leaf": 25,
+            "l2_regularization": 2.0
+          }
+        },
+        "RB": {
+          "n_train": 492,
+          "n_features": 36,
+          "n_predicted": 160,
+          "tune_r": 0.6632,
+          "best_params": {
+            "max_depth": 2,
+            "learning_rate": 0.03,
+            "max_iter": 200,
+            "min_samples_leaf": 25,
+            "l2_regularization": 2.0
+          }
+        },
+        "WR": {
+          "n_train": 586,
+          "n_features": 33,
+          "n_predicted": 206,
+          "tune_r": 0.7422,
+          "best_params": {
+            "max_depth": 3,
+            "learning_rate": 0.08,
+            "max_iter": 300,
+            "min_samples_leaf": 15,
+            "l2_regularization": 0.5
+          }
+        },
+        "TE": {
+          "n_train": 409,
+          "n_features": 33,
+          "n_predicted": 114,
+          "tune_r": 0.6635,
+          "best_params": {
+            "max_depth": 5,
+            "learning_rate": 0.05,
+            "max_iter": 350,
+            "min_samples_leaf": 8,
+            "l2_regularization": 0.1
+          }
+        }
+      },
+      "pearson_r": 0.7396,
+      "baseline_prior_ppr_r": 0.6996
+    },
+    "2019": {
+      "n_projected": 567,
+      "n_graded": 398,
+      "train_through": 2017,
+      "tuned_on": 2018,
+      "by_position": {
+        "QB": {
+          "n_train": 449,
+          "n_features": 35,
+          "n_predicted": 73,
+          "tune_r": 0.8246,
+          "best_params": {
+            "max_depth": 6,
+            "learning_rate": 0.05,
+            "max_iter": 300,
+            "min_samples_leaf": 5,
+            "l2_regularization": 0.0
+          }
+        },
+        "RB": {
+          "n_train": 605,
+          "n_features": 37,
+          "n_predicted": 155,
+          "tune_r": 0.6938,
+          "best_params": {
+            "max_depth": 3,
+            "learning_rate": 0.05,
+            "max_iter": 300,
+            "min_samples_leaf": 15,
+            "l2_regularization": 1.0
+          }
+        },
+        "WR": {
+          "n_train": 733,
+          "n_features": 35,
+          "n_predicted": 215,
+          "tune_r": 0.7661,
+          "best_params": {
+            "max_depth": 4,
+            "learning_rate": 0.05,
+            "max_iter": 300,
+            "min_samples_leaf": 10,
+            "l2_regularization": 0.25
+          }
+        },
+        "TE": {
+          "n_train": 490,
+          "n_features": 35,
+          "n_predicted": 124,
+          "tune_r": 0.7826,
+          "best_params": {
+            "max_depth": 3,
+            "learning_rate": 0.08,
+            "max_iter": 300,
+            "min_samples_leaf": 15,
+            "l2_regularization": 0.5
+          }
+        }
+      },
+      "pearson_r": 0.745,
+      "baseline_prior_ppr_r": 0.7025
+    },
+    "2020": {
+      "n_projected": 568,
+      "n_graded": 429,
+      "train_through": 2018,
+      "tuned_on": 2019,
+      "by_position": {
+        "QB": {
+          "n_train": 500,
+          "n_features": 35,
+          "n_predicted": 71,
+          "tune_r": 0.6964,
+          "best_params": {
+            "max_depth": 6,
+            "learning_rate": 0.05,
+            "max_iter": 300,
+            "min_samples_leaf": 5,
+            "l2_regularization": 0.0
+          }
+        },
+        "RB": {
+          "n_train": 713,
+          "n_features": 37,
+          "n_predicted": 154,
+          "tune_r": 0.7758,
+          "best_params": {
+            "max_depth": 3,
+            "learning_rate": 0.05,
+            "max_iter": 250,
+            "min_samples_leaf": 20,
+            "l2_regularization": 1.5
+          }
+        },
+        "WR": {
+          "n_train": 883,
+          "n_features": 35,
+          "n_predicted": 220,
+          "tune_r": 0.7244,
+          "best_params": {
+            "max_depth": 3,
+            "learning_rate": 0.05,
+            "max_iter": 250,
+            "min_samples_leaf": 20,
+            "l2_regularization": 1.0
+          }
+        },
+        "TE": {
+          "n_train": 579,
+          "n_features": 35,
+          "n_predicted": 123,
+          "tune_r": 0.6864,
+          "best_params": {
+            "max_depth": 2,
+            "learning_rate": 0.03,
+            "max_iter": 200,
+            "min_samples_leaf": 25,
+            "l2_regularization": 2.0
+          }
+        }
+      },
+      "pearson_r": 0.7739,
+      "baseline_prior_ppr_r": 0.687
+    },
+    "2021": {
+      "n_projected": 595,
+      "n_graded": 454,
+      "train_through": 2019,
+      "tuned_on": 2020,
+      "by_position": {
+        "QB": {
+          "n_train": 557,
+          "n_features": 35,
+          "n_predicted": 81,
+          "tune_r": 0.8603,
+          "best_params": {
+            "max_depth": 3,
+            "learning_rate": 0.08,
+            "max_iter": 300,
+            "min_samples_leaf": 15,
+            "l2_regularization": 0.5
+          }
+        },
+        "RB": {
+          "n_train": 831,
+          "n_features": 39,
+          "n_predicted": 165,
+          "tune_r": 0.6759,
+          "best_params": {
+            "max_depth": 3,
+            "learning_rate": 0.05,
+            "max_iter": 300,
+            "min_samples_leaf": 15,
+            "l2_regularization": 1.0
+          }
+        },
+        "WR": {
+          "n_train": 1041,
+          "n_features": 35,
+          "n_predicted": 221,
+          "tune_r": 0.7837,
+          "best_params": {
+            "max_depth": 3,
+            "learning_rate": 0.08,
+            "max_iter": 300,
+            "min_samples_leaf": 15,
+            "l2_regularization": 0.5
+          }
+        },
+        "TE": {
+          "n_train": 675,
+          "n_features": 35,
+          "n_predicted": 128,
+          "tune_r": 0.7069,
+          "best_params": {
+            "max_depth": 6,
+            "learning_rate": 0.05,
+            "max_iter": 300,
+            "min_samples_leaf": 5,
+            "l2_regularization": 0.0
+          }
+        }
+      },
+      "pearson_r": 0.7695,
+      "baseline_prior_ppr_r": 0.7379
+    },
+    "2022": {
+      "n_projected": 611,
+      "n_graded": 449,
+      "train_through": 2020,
+      "tuned_on": 2021,
+      "by_position": {
+        "QB": {
+          "n_train": 618,
+          "n_features": 35,
+          "n_predicted": 82,
+          "tune_r": 0.8464,
+          "best_params": {
+            "max_depth": 4,
+            "learning_rate": 0.05,
+            "max_iter": 300,
+            "min_samples_leaf": 10,
+            "l2_regularization": 0.25
+          }
+        },
+        "RB": {
+          "n_train": 958,
+          "n_features": 39,
+          "n_predicted": 168,
+          "tune_r": 0.783,
+          "best_params": {
+            "max_depth": 2,
+            "learning_rate": 0.05,
+            "max_iter": 250,
+            "min_samples_leaf": 20,
+            "l2_regularization": 2.0
+          }
+        },
+        "WR": {
+          "n_train": 1214,
+          "n_features": 35,
+          "n_predicted": 236,
+          "tune_r": 0.7347,
+          "best_params": {
+            "max_depth": 6,
+            "learning_rate": 0.05,
+            "max_iter": 300,
+            "min_samples_leaf": 5,
+            "l2_regularization": 0.0
+          }
+        },
+        "TE": {
+          "n_train": 768,
+          "n_features": 35,
+          "n_predicted": 125,
+          "tune_r": 0.7542,
+          "best_params": {
+            "max_depth": 2,
+            "learning_rate": 0.03,
+            "max_iter": 200,
+            "min_samples_leaf": 25,
+            "l2_regularization": 2.0
+          }
+        }
+      },
+      "pearson_r": 0.8136,
+      "baseline_prior_ppr_r": 0.7751
+    },
+    "2023": {
+      "n_projected": 589,
+      "n_graded": 424,
+      "train_through": 2021,
+      "tuned_on": 2022,
+      "by_position": {
+        "QB": {
+          "n_train": 686,
+          "n_features": 35,
+          "n_predicted": 84,
+          "tune_r": 0.792,
+          "best_params": {
+            "max_depth": 3,
+            "learning_rate": 0.08,
+            "max_iter": 300,
+            "min_samples_leaf": 15,
+            "l2_regularization": 0.5
+          }
+        },
+        "RB": {
+          "n_train": 1080,
+          "n_features": 39,
+          "n_predicted": 161,
+          "tune_r": 0.8042,
+          "best_params": {
+            "max_depth": 2,
+            "learning_rate": 0.03,
+            "max_iter": 200,
+            "min_samples_leaf": 25,
+            "l2_regularization": 2.0
+          }
+        },
+        "WR": {
+          "n_train": 1384,
+          "n_features": 35,
+          "n_predicted": 226,
+          "tune_r": 0.8297,
+          "best_params": {
+            "max_depth": 2,
+            "learning_rate": 0.03,
+            "max_iter": 200,
+            "min_samples_leaf": 25,
+            "l2_regularization": 2.0
+          }
+        },
+        "TE": {
+          "n_train": 857,
+          "n_features": 35,
+          "n_predicted": 118,
+          "tune_r": 0.809,
+          "best_params": {
+            "max_depth": 3,
+            "learning_rate": 0.05,
+            "max_iter": 250,
+            "min_samples_leaf": 20,
+            "l2_regularization": 1.0
+          }
+        }
+      },
+      "pearson_r": 0.7753,
+      "baseline_prior_ppr_r": 0.7048
+    },
+    "2024": {
+      "n_projected": 559,
+      "n_graded": 424,
+      "train_through": 2022,
+      "tuned_on": 2023,
+      "by_position": {
+        "QB": {
+          "n_train": 750,
+          "n_features": 35,
+          "n_predicted": 81,
+          "tune_r": 0.7507,
+          "best_params": {
+            "max_depth": 3,
+            "learning_rate": 0.08,
+            "max_iter": 300,
+            "min_samples_leaf": 15,
+            "l2_regularization": 0.5
+          }
+        },
+        "RB": {
+          "n_train": 1197,
+          "n_features": 39,
+          "n_predicted": 150,
+          "tune_r": 0.7316,
+          "best_params": {
+            "max_depth": 2,
+            "learning_rate": 0.05,
+            "max_iter": 250,
+            "min_samples_leaf": 20,
+            "l2_regularization": 2.0
+          }
+        },
+        "WR": {
+          "n_train": 1539,
+          "n_features": 35,
+          "n_predicted": 212,
+          "tune_r": 0.8332,
+          "best_params": {
+            "max_depth": 3,
+            "learning_rate": 0.08,
+            "max_iter": 300,
+            "min_samples_leaf": 15,
+            "l2_regularization": 0.5
+          }
+        },
+        "TE": {
+          "n_train": 945,
+          "n_features": 35,
+          "n_predicted": 116,
+          "tune_r": 0.7818,
+          "best_params": {
+            "max_depth": 2,
+            "learning_rate": 0.03,
+            "max_iter": 200,
+            "min_samples_leaf": 25,
+            "l2_regularization": 2.0
+          }
+        }
+      },
+      "pearson_r": 0.7868,
+      "baseline_prior_ppr_r": 0.7116
+    },
+    "2025": {
+      "n_projected": 570,
+      "n_graded": 446,
+      "train_through": 2023,
+      "tuned_on": 2024,
+      "by_position": {
+        "QB": {
+          "n_train": 813,
+          "n_features": 35,
+          "n_predicted": 78,
+          "tune_r": 0.8408,
+          "best_params": {
+            "max_depth": 4,
+            "learning_rate": 0.05,
+            "max_iter": 300,
+            "min_samples_leaf": 10,
+            "l2_regularization": 0.25
+          }
+        },
+        "RB": {
+          "n_train": 1304,
+          "n_features": 39,
+          "n_predicted": 146,
+          "tune_r": 0.809,
+          "best_params": {
+            "max_depth": 2,
+            "learning_rate": 0.03,
+            "max_iter": 200,
+            "min_samples_leaf": 25,
+            "l2_regularization": 2.0
+          }
+        },
+        "WR": {
+          "n_train": 1702,
+          "n_features": 35,
+          "n_predicted": 227,
+          "tune_r": 0.7573,
+          "best_params": {
+            "max_depth": 2,
+            "learning_rate": 0.03,
+            "max_iter": 200,
+            "min_samples_leaf": 25,
+            "l2_regularization": 2.0
+          }
+        },
+        "TE": {
+          "n_train": 1036,
+          "n_features": 35,
+          "n_predicted": 119,
+          "tune_r": 0.7513,
+          "best_params": {
+            "max_depth": 6,
+            "learning_rate": 0.05,
+            "max_iter": 300,
+            "min_samples_leaf": 5,
+            "l2_regularization": 0.0
+          }
+        }
+      },
+      "pearson_r": 0.7858,
+      "baseline_prior_ppr_r": 0.7527
+    }
+  },
+  "use_adp": true,
+  "clamp": true,
+  "overall_pearson_r": 0.7734,
+  "overall_n_graded": 3416
+}

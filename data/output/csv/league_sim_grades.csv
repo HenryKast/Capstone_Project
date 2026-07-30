@@ -1,0 +1,4 @@
+source,n_team_seasons,wins_pearson_r,wins_spearman_r,wins_mae,points_pearson_r,points_spearman_r,points_bias,seed_spearman_r,playoff_brier,title_brier,playoff_hit_rate
+adp,80,0.3351,0.2855,1.579,0.428,0.3338,-276.1,0.286,0.2353,0.0943,0.6875
+blend,80,0.348,0.2831,1.58,0.4451,0.3597,-291.8,0.3229,0.2298,0.0897,0.7083
+model,80,0.2625,0.2384,1.6,0.3459,0.3019,-300.7,0.2763,0.2372,0.0867,0.625

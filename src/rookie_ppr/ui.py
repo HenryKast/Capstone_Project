@@ -11,6 +11,8 @@ from rookie_ppr.analysis_config import AnalysisMode, get_mode
 from rookie_ppr.config import INCOMING_DRAFT_YEAR
 from rookie_ppr.mascot_assets import MASCOT_DIR
 from rookie_ppr.score_runner import load_players_master, player_lookup_labels, row_from_player, score_player
+from rookie_ppr.league.ui_panel import CrestButton, open_nerd_united_window
+from rookie_ppr.veteran.ui_panel import VeteranScorerPanel
 from rookie_ppr.scoring_fields import FIELD_SPECS, GROUP_ORDER
 
 # Chinese / cobalt blue
@@ -2459,18 +2461,18 @@ class RookieScorerPanel(tk.Frame):
 
 def main(mode: str | None = None) -> int:
     """
-    Launch the combined scorer UI with Redraft / Dynasty tabs.
+    Launch the combined scorer UI with Redraft / Dynasty / Veterans tabs.
 
-    CLI: ``python -m rookie_ppr.ui`` or ``--mode redraft|dynasty`` to pick the starting tab.
+    CLI: ``python -m rookie_ppr.ui`` or ``--mode redraft|dynasty|veteran``.
     """
     import argparse
 
     parser = argparse.ArgumentParser(add_help=True)
     parser.add_argument(
         "--mode",
-        choices=("redraft", "dynasty"),
+        choices=("redraft", "dynasty", "veteran"),
         default=mode or "redraft",
-        help="Initial tab: redraft (Y1) or dynasty (Y1–Y3). Both stay available in the UI.",
+        help="Initial tab. All available tabs stay in the UI.",
     )
     args, _unknown = parser.parse_known_args()
 
@@ -2494,7 +2496,7 @@ class TabbedScorerApp(tk.Tk):
         self._active_mode = "redraft"
         self._theme_id = DEFAULT_THEME_ID
         self._theme_menu: ThemeHelmetMenu | None = None
-        self._panels: dict[str, RookieScorerPanel] = {}
+        self._panels: dict[str, tk.Frame] = {}
         self._tab_buttons: dict[str, tk.Button] = {}
         self._tab_accents: dict[str, tk.Frame] = {}
 
@@ -2513,7 +2515,7 @@ class TabbedScorerApp(tk.Tk):
         tabs_row = tk.Frame(self._tab_bar, bg=TAB_BAR_BG)
         tabs_row.pack(side="left", anchor="sw")
 
-        for key, label in (("redraft", "Redraft"), ("dynasty", "Dynasty")):
+        for key, label in (("redraft", "Redraft"), ("dynasty", "Dynasty"), ("veteran", "Veterans")):
             col = tk.Frame(tabs_row, bg=TAB_BAR_BG)
             col.pack(side="left", padx=(0, 2))
             btn = tk.Button(
@@ -2542,6 +2544,12 @@ class TabbedScorerApp(tk.Tk):
             size=28,
         )
         self._helmet_btn.pack(side="right")
+        self._crest_btn = CrestButton(
+            right,
+            command=self._open_nerd_united,
+            size=28,
+        )
+        self._crest_btn.pack(side="right", padx=(0, 8))
         self._ppr_label = tk.Label(
             right,
             text="PPR",
@@ -2561,10 +2569,22 @@ class TabbedScorerApp(tk.Tk):
         self._panels["dynasty"] = RookieScorerPanel(
             self._content, mode="dynasty", master_df=master_df, show_header=False
         )
+        self._panels["veteran"] = VeteranScorerPanel(self._content)
         if any(getattr(p, "_init_failed", False) for p in self._panels.values()):
-            self._init_failed = True
-            self.destroy()
-            return
+            # Veterans can fail if compile not run; keep redraft/dynasty usable
+            if getattr(self._panels["veteran"], "_init_failed", False):
+                self._panels.pop("veteran", None)
+                btn = self._tab_buttons.pop("veteran", None)
+                self._tab_accents.pop("veteran", None)
+                if btn is not None:
+                    try:
+                        btn.master.destroy()
+                    except Exception:  # noqa: BLE001
+                        pass
+            if any(getattr(self._panels.get(k), "_init_failed", False) for k in ("redraft", "dynasty")):
+                self._init_failed = True
+                self.destroy()
+                return
 
         # Team mascot overlay (bottom-right); hidden on default theme
         self._mascot_photo: object | None = None
@@ -2638,9 +2658,13 @@ class TabbedScorerApp(tk.Tk):
         _restyle_widget_tree(self, color_map)
         self._theme_id = theme_id
         self._helmet_btn.redraw(theme_id, bar_bg=TAB_BAR_BG)
+        self._crest_btn.redraw(bar_bg=TAB_BAR_BG)
         self._select_tab(self._active_mode)
         self._update_mascot_overlay()
         self._theme_menu = None
+
+    def _open_nerd_united(self) -> None:
+        open_nerd_united_window(self)
 
     def _select_tab(self, mode: str) -> None:
         if mode not in self._panels:
@@ -2668,7 +2692,12 @@ class TabbedScorerApp(tk.Tk):
             )
             self._tab_accents[key].configure(bg=TAB_ACCENT if active else TAB_BAR_BG)
 
-        subtitle = "Y1–Y3 dynasty" if mode == "dynasty" else "rookie season (redraft)"
+        if mode == "dynasty":
+            subtitle = "Y1–Y3 dynasty"
+        elif mode == "veteran":
+            subtitle = "veteran next-season"
+        else:
+            subtitle = "rookie season (redraft)"
         self.title(f"Fantasy Points Scorer — {subtitle}")
         try:
             self._mascot_label.lift()
@@ -2682,7 +2711,9 @@ class RookieScorerApp(TabbedScorerApp):
 
     def __init__(self, mode: str | AnalysisMode = "redraft") -> None:
         name = mode.name if isinstance(mode, AnalysisMode) else str(mode or "redraft")
-        super().__init__(initial_mode=name if name in ("redraft", "dynasty") else "redraft")
+        super().__init__(
+            initial_mode=name if name in ("redraft", "dynasty", "veteran") else "redraft"
+        )
 
 
 class DynastyScorerApp(TabbedScorerApp):
