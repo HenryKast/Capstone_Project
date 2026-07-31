@@ -53,7 +53,8 @@ Include at least:
 
 **Never commit:** `.env`, `data/raw/espn_cache/`, `.venv/`
 
-Models + `data/output/csv/league_*` are already tracked on this branch so clones/deploys work without recompile.
+Models + `data/output/csv/league_*` (including `league_managers.csv`) are already
+tracked so clones/deploys resolve `ownerName` without ESPN cookies.
 
 ## Weekly refresh (optional, your machine)
 

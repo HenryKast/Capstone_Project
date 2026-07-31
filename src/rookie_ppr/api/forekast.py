@@ -9,6 +9,7 @@ from rookie_ppr.api.csv_store import json_safe, load_csv
 from rookie_ppr.league.config import (
     LEAGUE_FINISH_PROJ_VS_ACTUAL_CSV,
     LEAGUE_INJURY_EVENTS_CSV,
+    LEAGUE_MANAGERS_CSV,
     LEAGUE_TEAMS_CSV,
     LEAGUE_TRADE_EVENTS_CSV,
     LEAGUE_WEEKLY_ODDS_CSV,
@@ -55,6 +56,18 @@ def resolve_season_week(
 
 
 def _manager_lookup(season: int) -> dict[int, str]:
+    """Prefer shipped league_managers.csv (works on Railway without ESPN cache)."""
+    try:
+        managers = load_csv(LEAGUE_MANAGERS_CSV)
+        sdf = managers[managers["season"] == int(season)]
+        if not sdf.empty:
+            return {
+                int(r.team_id): _ascii(r.manager_name)
+                for r in sdf.itertuples(index=False)
+                if pd.notna(r.manager_name) and _ascii(r.manager_name)
+            }
+    except FileNotFoundError:
+        pass
     try:
         managers = load_manager_map([season])
     except Exception:
@@ -285,6 +298,7 @@ def health_payload() -> dict[str, Any]:
         LEAGUE_TRADE_EVENTS_CSV,
         LEAGUE_FINISH_PROJ_VS_ACTUAL_CSV,
         LEAGUE_TEAMS_CSV,
+        LEAGUE_MANAGERS_CSV,
     ]
     artifacts = {}
     for name in names:

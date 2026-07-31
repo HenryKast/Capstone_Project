@@ -145,6 +145,7 @@ STAT_SOURCE_PROJECTED = 1
 LEAGUE_SETTINGS_CSV = "league_settings.csv"
 LEAGUE_SCORING_CSV = "league_scoring.csv"
 LEAGUE_TEAMS_CSV = "league_teams.csv"
+LEAGUE_MANAGERS_CSV = "league_managers.csv"
 LEAGUE_MATCHUPS_CSV = "league_matchups.csv"
 LEAGUE_ROSTERS_CSV = "league_rosters.csv"
 LEAGUE_DRAFT_CSV = "league_draft.csv"
@@ -188,6 +189,7 @@ __all__ = [
     "LEAGUE_DRAFT_REACHES_CSV",
     "LEAGUE_FINISH_PROJ_VS_ACTUAL_CSV",
     "LEAGUE_INJURY_EVENTS_CSV",
+    "LEAGUE_MANAGERS_CSV",
     "LEAGUE_MATCHUPS_CSV",
     "LEAGUE_PLAYER_BOARD_CSV",
     "LEAGUE_PLAYER_METRICS_FILE",
