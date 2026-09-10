@@ -17,6 +17,10 @@ LEAGUE_SEASON_MIN = 2018
 LEAGUE_SEASON_MAX = 2025
 LEAGUE_TARGET_SEASON = 2026
 LEAGUE_SEASONS = tuple(range(LEAGUE_SEASON_MIN, LEAGUE_SEASON_MAX + 1))
+# Everything the API may serve, including the season currently under way.
+# Backtests and model fitting want LEAGUE_SEASONS (completed seasons only);
+# refresh jobs want this, so an in-progress season is never silently skipped.
+LEAGUE_ALL_SEASONS = LEAGUE_SEASONS + (LEAGUE_TARGET_SEASON,)
 
 # Weekly lineups and ESPN's weekly projections go back to the league's first
 # season. The older leagueHistory endpoint returns one frozen end-of-season
@@ -169,6 +173,8 @@ LEAGUE_WEEKLY_ODDS_CSV = "league_weekly_odds.csv"
 LEAGUE_INJURY_EVENTS_CSV = "league_injury_events.csv"
 LEAGUE_TRADE_EVENTS_CSV = "league_trade_events.csv"
 LEAGUE_DRAFT_REACHES_CSV = "league_draft_reaches.csv"
+LEAGUE_DRAFT_GRADES_CSV = "league_draft_grades.csv"
+LEAGUE_DRAFT_GRADE_CALIBRATION_CSV = "league_draft_grade_calibration.csv"
 LEAGUE_FINISH_PROJ_VS_ACTUAL_CSV = "league_finish_proj_vs_actual_all.csv"
 
 # Default blend when no prior league season exists to fit on (2018).
@@ -182,10 +188,13 @@ __all__ = [
     "ESPN_S2",
     "ESPN_STAT_NAMES",
     "ESPN_SWID",
+    "LEAGUE_ALL_SEASONS",
     "LEAGUE_BACKTEST_ROSTERS_CSV",
     "LEAGUE_BENCH_SIZE",
     "LEAGUE_BLEND_WEIGHTS_CSV",
     "LEAGUE_DRAFT_CSV",
+    "LEAGUE_DRAFT_GRADES_CSV",
+    "LEAGUE_DRAFT_GRADE_CALIBRATION_CSV",
     "LEAGUE_DRAFT_REACHES_CSV",
     "LEAGUE_FINISH_PROJ_VS_ACTUAL_CSV",
     "LEAGUE_INJURY_EVENTS_CSV",

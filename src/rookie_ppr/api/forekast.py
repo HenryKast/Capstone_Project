@@ -7,6 +7,8 @@ import pandas as pd
 
 from rookie_ppr.api.csv_store import json_safe, load_csv
 from rookie_ppr.league.config import (
+    LEAGUE_DRAFT_GRADE_CALIBRATION_CSV,
+    LEAGUE_DRAFT_GRADES_CSV,
     LEAGUE_FINISH_PROJ_VS_ACTUAL_CSV,
     LEAGUE_INJURY_EVENTS_CSV,
     LEAGUE_MANAGERS_CSV,
@@ -230,9 +232,23 @@ def build_snapshot(
     }
 
 
+def latest_finish_season() -> int:
+    """Latest season with a finish table.
+
+    This board compares projected finish against actual finish, so it only
+    exists once a season is over. Defaulting it to the newest season in the odds
+    CSV would blank the board the moment an upcoming season is published.
+    """
+    finish = load_csv(LEAGUE_FINISH_PROJ_VS_ACTUAL_CSV)
+    seasons = sorted(int(s) for s in finish["season"].dropna().unique())
+    if not seasons:
+        raise FileNotFoundError("No seasons in finish table")
+    return seasons[-1]
+
+
 def build_season_forekast(season: int | None = None) -> dict[str, Any]:
     """Adapter for the site's Henry ForeKast finish table."""
-    s = int(season) if season is not None else latest_season()
+    s = int(season) if season is not None else latest_finish_season()
     finish = load_csv(LEAGUE_FINISH_PROJ_VS_ACTUAL_CSV)
     sdf = finish[finish["season"] == s].copy()
     managers = _manager_lookup(s)
@@ -289,6 +305,100 @@ def build_season_forekast(season: int | None = None) -> dict[str, Any]:
     }
 
 
+CALIBRATION_NOTE = (
+    "What each letter has actually been worth across completed seasons "
+    "(2018-2025). Draft grades are weak predictors by nature: the strongest "
+    "draft-time signal explains roughly a tenth of the variance in wins, and a "
+    "manager's grade one year barely predicts the next. Read the letters as a "
+    "description of the draft, not a forecast of the season."
+)
+
+
+def draft_grade_seasons() -> list[int]:
+    grades = load_csv(LEAGUE_DRAFT_GRADES_CSV)
+    return sorted(int(s) for s in grades["season"].dropna().unique())
+
+
+def _calibration_payload() -> dict[str, Any]:
+    try:
+        frame = load_csv(LEAGUE_DRAFT_GRADE_CALIBRATION_CSV)
+    except FileNotFoundError:
+        return {"note": CALIBRATION_NOTE, "value": [], "roster": []}
+    out: dict[str, Any] = {"note": CALIBRATION_NOTE}
+    for kind in ("value", "roster"):
+        sdf = frame[frame["grade_kind"] == kind]
+        out[kind] = [
+            {
+                "grade": json_safe(r.grade),
+                "nTeamSeasons": json_safe(r.n_team_seasons),
+                "avgWins": json_safe(r.avg_wins),
+                "avgFinalRank": json_safe(r.avg_final_rank),
+                "playoffRatePct": json_safe(r.playoff_rate),
+                "titleRatePct": json_safe(r.title_rate),
+            }
+            for r in sdf.itertuples(index=False)
+        ]
+    return out
+
+
+def _pick_payload(row: Any, prefix: str) -> dict[str, Any]:
+    return {
+        "playerName": _ascii(getattr(row, f"{prefix}_player", "")),
+        "position": json_safe(getattr(row, f"{prefix}_position", None)),
+        "overallPick": json_safe(getattr(row, f"{prefix}_overall", None)),
+        "adpRank": json_safe(getattr(row, f"{prefix}_adp", None)),
+        "valueAdded": json_safe(getattr(row, f"{prefix}_value", None)),
+    }
+
+
+def build_draft_grades(season: int | None = None) -> dict[str, Any]:
+    """Draft value and roster grades, with the calibration that qualifies them.
+
+    Both grades are schedule-free and available as soon as a draft ends. Playoff
+    and title odds stay null until that season's odds have been published.
+    """
+    grades = load_csv(LEAGUE_DRAFT_GRADES_CSV)
+    seasons = draft_grade_seasons()
+    if not seasons:
+        raise FileNotFoundError("No graded drafts available")
+    s = int(season) if season is not None else seasons[-1]
+    sdf = grades[grades["season"] == s].copy()
+    if sdf.empty:
+        raise FileNotFoundError(f"No draft grades for season {s}")
+    sdf = sdf.sort_values("value_points", ascending=False)
+    managers = _manager_lookup(s)
+
+    teams: list[dict[str, Any]] = []
+    for row in sdf.itertuples(index=False):
+        tid = int(row.team_id)
+        teams.append(
+            {
+                "teamId": str(tid),
+                "ownerName": managers.get(tid) or _ascii(row.manager_name) or None,
+                "teamName": _ascii(row.team_name),
+                "valueGrade": json_safe(row.value_grade),
+                "valuePoints": json_safe(row.value_points),
+                "valueZ": json_safe(row.value_z),
+                "rosterGrade": json_safe(row.roster_grade),
+                "rosterPointsPerWeek": json_safe(row.roster_points_per_week),
+                "rosterZ": json_safe(row.roster_z),
+                "playoffOddsPct": json_safe(row.playoff_odds),
+                "titleOddsPct": json_safe(row.title_odds),
+                "skillPicks": json_safe(row.n_skill_picks),
+                "firstPick": json_safe(row.first_pick),
+                "bestPick": _pick_payload(row, "best_pick"),
+                "biggestReach": _pick_payload(row, "reach"),
+            }
+        )
+    return {
+        "season": s,
+        "availableSeasons": seasons,
+        "generatedFrom": LEAGUE_DRAFT_GRADES_CSV,
+        "calibration": _calibration_payload(),
+        "teams": teams,
+    }
+
+
 def health_payload() -> dict[str, Any]:
     from rookie_ppr.api.csv_store import csv_path
 
@@ -299,6 +409,8 @@ def health_payload() -> dict[str, Any]:
         LEAGUE_FINISH_PROJ_VS_ACTUAL_CSV,
         LEAGUE_TEAMS_CSV,
         LEAGUE_MANAGERS_CSV,
+        LEAGUE_DRAFT_GRADES_CSV,
+        LEAGUE_DRAFT_GRADE_CALIBRATION_CSV,
     ]
     artifacts = {}
     for name in names:

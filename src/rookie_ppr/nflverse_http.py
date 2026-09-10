@@ -60,12 +60,13 @@ def try_read_release_csv(
     candidates: list[tuple[str, str]],
     *,
     usecols: list[str] | None = None,
+    force: bool = False,
 ) -> pd.DataFrame:
     """Try multiple release/filename pairs; return first success or empty frame."""
     errors: list[str] = []
     for release, filename in candidates:
         try:
-            df = read_release_csv(release, filename, usecols=usecols)
+            df = read_release_csv(release, filename, force=force, usecols=usecols)
             if df is not None and not df.empty:
                 return df
         except Exception as exc:  # noqa: BLE001 - best-effort multi-candidate load

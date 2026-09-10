@@ -180,6 +180,10 @@ def build_backtest_rosters(
         for g, s, v in zip(actuals["gsis_id"], actuals["season"], actuals["ppr"])
         if pd.notna(v)
     }
+    # A season with no stat rows at all has not been played. Its picks get NaN
+    # rather than 0.0, so an upcoming season never looks like a league-wide bust
+    # to the blend fit or the grader.
+    played_seasons = {int(s) for s in actuals["season"].dropna().unique()}
 
     rows: list[dict] = []
     for season in seasons:
@@ -216,7 +220,9 @@ def build_backtest_rosters(
                     "proj_season_ppr": proj,
                     "adp_curve_ppr": curve_val,
                     "actual_season_ppr": actual_lookup.get((str(gsis), season), 0.0)
-                    if gsis and position in MODELED_POSITIONS
+                    if gsis
+                    and position in MODELED_POSITIONS
+                    and season in played_seasons
                     else np.nan,
                 }
             )

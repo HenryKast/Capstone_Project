@@ -5,9 +5,12 @@ For each as-of week W:
   * rebuild remaining-season strength from that week's ESPN roster
     (trades/waivers show up as roster membership; soft injury discount when
     ESPN projects ~0 and the player is not started, excluding NFL bye weeks)
+  * update remaining-week player pace from in-season usage and scoring, shrunk
+    toward the preseason prior so one spike cannot re-rate a player
   * Monte Carlo the rest of the regular season + playoff bracket
 
-Week 0 uses the draft-day backtest roster (same as the preseason sim).
+Week 0 is the preseason view: current rosters before kickoff, draft-day
+rosters once week 1 has been played.
 """
 from __future__ import annotations
 
@@ -29,8 +32,14 @@ from rookie_ppr.league.config import (
     LEAGUE_ROSTERS_CSV,
     LEAGUE_SEASONS,
     LEAGUE_SETTINGS_CSV,
+    LEAGUE_TARGET_SEASON,
     LEAGUE_TEAMS_CSV,
     MODELED_POSITIONS,
+)
+from rookie_ppr.league.in_season import (
+    apply_in_season_update,
+    load_rates_for_season,
+    load_weekly_player_stats,
 )
 from rookie_ppr.league.simulate_season import (
     DEFAULT_SIMS,
@@ -55,6 +64,24 @@ INJURY_MULT = 0.10
 def _ascii_name(name: object, team_id: int) -> str:
     text = str(name).encode("ascii", "ignore").decode("ascii").strip()
     return text or f"Team {team_id}"
+
+
+def completed_weeks(matchups: pd.DataFrame, season: int, reg_weeks: int) -> int:
+    """Highest regular-season week that has actually been played.
+
+    An upcoming season has a full schedule but no scores, so this returns 0 and
+    the only honest as-of week is the preseason one.
+    """
+    played = matchups[
+        (matchups["season"] == season)
+        & (matchups["week"] <= reg_weeks)
+        & matchups["opp_team_id"].notna()
+        & matchups["points"].notna()
+        & matchups["opp_points"].notna()
+    ]
+    # A scheduled-but-unplayed matchup comes back as 0-0.
+    played = played[(played["points"] > 0) | (played["opp_points"] > 0)]
+    return int(played["week"].max()) if not played.empty else 0
 
 
 def _actual_wins_points(
@@ -110,6 +137,9 @@ def _live_roster_frame(
     week: int,
     byes: dict[str, set[int]],
     default_games: int,
+    as_of_week: int | None = None,
+    weekly_stats: pd.DataFrame | None = None,
+    rates: dict[str, dict[str, float]] | None = None,
 ) -> pd.DataFrame:
     """Skill-player roster at ``week``, with season pace + soft injury discount."""
     snap = league_rosters[
@@ -136,6 +166,17 @@ def _live_roster_frame(
     merged.loc[missing, "proj_season_ppr"] = espn_week[missing].clip(lower=0.0) * default_games
     merged.loc[missing, "adp_curve_ppr"] = merged.loc[missing, "proj_season_ppr"]
     merged.loc[missing, "proj_source"] = "espn_weekly"
+
+    update_through = as_of_week if as_of_week is not None else week
+    merged = apply_in_season_update(
+        merged,
+        season=season,
+        as_of_week=update_through,
+        league_rosters=league_rosters,
+        default_games=default_games,
+        weekly_stats=weekly_stats,
+        rates=rates,
+    )
 
     # Soft injury / inactive: ESPN projects ~0 and player is not started, and
     # it is not their NFL bye week.
@@ -172,6 +213,9 @@ def simulate_as_of_week(
     slot_stats: dict[str, tuple[float, float]],
     games: dict[str, int],
     byes: dict[str, set[int]],
+    use_live_preseason: bool = False,
+    weekly_stats: pd.DataFrame | None = None,
+    rates: dict[str, dict[str, float]] | None = None,
 ) -> pd.DataFrame:
     season_teams = teams[teams["season"] == season].sort_values("team_id")
     team_ids = season_teams["team_id"].to_numpy()
@@ -185,10 +229,17 @@ def simulate_as_of_week(
     default_games = 17 if season >= 2021 else 16
     weeks = list(range(1, reg_weeks + PLAYOFF_ROUNDS + 1))
 
-    if as_of_week <= 0:
+    season_roster_weeks = pd.to_numeric(
+        league_rosters.loc[league_rosters["season"] == season, "week"], errors="coerce"
+    ).dropna()
+    max_roster_week = int(season_roster_weeks.max()) if not season_roster_weeks.empty else 0
+
+    if max_roster_week <= 0 or (as_of_week <= 0 and not use_live_preseason):
+        # For a season already under way, week 0 means draft day, so the drafted
+        # roster is the right view even though later snapshots exist.
         roster_src = _draft_roster_frame(backtest, draft, season)
     else:
-        snap_week = min(as_of_week, int(league_rosters.loc[league_rosters["season"] == season, "week"].max()))
+        snap_week = max(1, min(as_of_week, max_roster_week))
         roster_src = _live_roster_frame(
             league_rosters,
             backtest,
@@ -196,6 +247,9 @@ def simulate_as_of_week(
             week=snap_week,
             byes=byes,
             default_games=default_games,
+            as_of_week=as_of_week,
+            weekly_stats=weekly_stats,
+            rates=rates,
         )
 
     means = np.zeros((n_teams, len(weeks)))
@@ -313,12 +367,36 @@ def run_weekly_odds(
     rng = np.random.default_rng(seed)
     frames: list[pd.DataFrame] = []
     for season in seasons:
+        if season not in reg_weeks_map:
+            raise KeyError(
+                f"{season} is not in {LEAGUE_SETTINGS_CSV}; ingest the season first: "
+                f"python -m rookie_ppr.league.ingest --seasons {season}"
+            )
+        # An empty roster frame would simulate every team at zero points and
+        # quietly emit coin-flip odds, so fail loudly instead.
+        if not (backtest["season"] == season).any():
+            raise ValueError(
+                f"No {season} rows in {LEAGUE_BACKTEST_ROSTERS_CSV}; build them first: "
+                f"python -m rookie_ppr.league.target_season --run --season {season}"
+            )
         reg_weeks = int(reg_weeks_map[season])
         games, byes = team_games_and_byes(season)
         noise = calibrate_weekly_noise(league_rosters, before_season=season) or {}
         slot_stats = slot_average_stats(league_rosters, before_season=season) or {}
         w = weights.get(int(season), DEFAULT_BLEND_MODEL_WEIGHT)
-        for as_of in range(0, reg_weeks + 1):
+        weekly_stats = load_weekly_player_stats(
+            season, force=season >= LEAGUE_TARGET_SEASON
+        )
+        rates = load_rates_for_season(season)
+        # Only weeks that have been played carry information; an upcoming
+        # season stops at the preseason (week 0) view.
+        last_week = min(reg_weeks, completed_weeks(matchups, season, reg_weeks))
+        # Nothing has kicked off yet, so week 0 is the league as it stands right
+        # now rather than a draft-day retrospective, and it should track waiver
+        # and trade activity. Once week 1 is in the books it reverts to meaning
+        # draft day, which is what the completed seasons already publish.
+        preseason = last_week == 0
+        for as_of in range(0, last_week + 1):
             frames.append(
                 simulate_as_of_week(
                     season,
@@ -336,10 +414,17 @@ def run_weekly_odds(
                     slot_stats=slot_stats,
                     games=games,
                     byes=byes,
+                    use_live_preseason=preseason,
+                    weekly_stats=weekly_stats,
+                    rates=rates,
                 )
             )
-        print(f"  weekly odds {season} weeks 0..{reg_weeks}")
-    return pd.concat(frames, ignore_index=True)
+        source = "current rosters" if preseason else "drafted rosters at W0"
+        extra = ""
+        if last_week > 0:
+            extra = "; remaining pace updates from in-season usage/scoring"
+        print(f"  weekly odds {season} weeks 0..{last_week} ({source}{extra})")
+    return pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
 
 
 def main() -> None:

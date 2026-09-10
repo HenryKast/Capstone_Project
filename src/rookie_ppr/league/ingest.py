@@ -501,7 +501,17 @@ def ingest_league(
     return tables
 
 
-def save_league_tables(tables: dict[str, pd.DataFrame]) -> dict[str, str]:
+def save_league_tables(
+    tables: dict[str, pd.DataFrame], seasons: list[int] | None = None
+) -> dict[str, str]:
+    """Write each table, replacing only the seasons this run rebuilt.
+
+    A scoped ingest (say just the upcoming season) must leave the rest of league
+    history alone, and a table this run skipped must not truncate the file it
+    would otherwise have written, so empty frames are left on disk untouched.
+    Rows are stable-sorted by season, which keeps seasons grouped without
+    reshuffling any season's existing row order.
+    """
     ensure_directories()
     targets = {
         "settings": LEAGUE_SETTINGS_CSV,
@@ -514,10 +524,17 @@ def save_league_tables(tables: dict[str, pd.DataFrame]) -> dict[str, str]:
     written: dict[str, str] = {}
     for key, filename in targets.items():
         df = tables.get(key)
-        if df is None:
+        if df is None or df.empty:
             continue
         path = CSV_OUTPUT_DIR / filename
-        df.to_csv(path, index=False)
+        out = df
+        if path.exists() and seasons and "season" in df.columns:
+            prior = pd.read_csv(path, low_memory=False)
+            if not prior.empty and "season" in prior.columns:
+                kept = prior[~prior["season"].isin(seasons)]
+                out = pd.concat([kept, df], ignore_index=True)
+                out = out.sort_values("season", kind="stable").reset_index(drop=True)
+        out.to_csv(path, index=False)
         written[key] = str(path)
     return written
 
@@ -546,13 +563,14 @@ def main() -> None:
     tables = ingest_league(
         args.seasons, force=args.force, include_rosters=not args.skip_rosters
     )
-    written = save_league_tables(tables)
+    written = save_league_tables(tables, args.seasons)
 
     for key in ("settings", "scoring", "teams", "matchups", "rosters", "draft"):
         df = tables.get(key)
         if df is None:
             continue
-        print(f"{key:<9} rows={len(df):<6} -> {written.get(key, '(not written)')}")
+        target = written.get(key) or "(left as-is; nothing rebuilt)"
+        print(f"{key:<9} rows={len(df):<6} -> {target}")
 
     rosters = tables["rosters"]
     if not rosters.empty:

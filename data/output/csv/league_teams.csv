@@ -79,3 +79,13 @@ season,team_id,team_name,team_abbrev,division_id,is_my_team,wins,losses,ties,poi
 2025,8,"Sahit, I don't have kik, stop",SDHK,1,False,7,7,0,1678.8600000000004,1725.08,5,4
 2025,9,Karma is the guy on the Chiefs,Amon,1,False,6,8,0,1608.9999999999998,1776.8200000000002,7,9
 2025,10,Boswell That Ends Well,TAI,1,False,7,7,0,1853.36,1705.5800000000002,4,5
+2026,1,BFSN (Bill Finna Score Nine),L,0,False,0,0,0,0.0,0.0,10,0
+2026,2,Critical Chase Theory,CTC,0,False,0,0,0,0.0,0.0,9,0
+2026,3,Fumble Prime Factory (RIP PC),FPF,1,False,0,0,0,0.0,0.0,8,0
+2026,4,BowToTheGibber,BTG,0,False,0,0,0,0.0,0.0,7,0
+2026,5,Free Win,SG,1,False,0,0,0,0.0,0.0,6,0
+2026,6,Ladd's McCaffrican Boutte,LMB,0,False,0,0,0,0.0,0.0,5,0
+2026,7,The Secret March to Yorktown,KAST,1,True,0,0,0,0.0,0.0,4,0
+2026,8,"Sahit, I don't have kik, stop",SDHK,1,False,0,0,0,0.0,0.0,3,0
+2026,9,Karma is the guy on the Chiefs,Amon,1,False,0,0,0,0.0,0.0,2,0
+2026,10,Local Halal Lamb and Rice Cart,TAI,0,False,0,0,0,0.0,0.0,1,0

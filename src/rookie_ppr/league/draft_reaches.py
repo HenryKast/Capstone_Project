@@ -95,7 +95,11 @@ def load_manager_map(seasons: list[int] | None = None) -> pd.DataFrame:
 
 
 def export_league_managers(seasons: list[int] | None = None) -> pd.DataFrame:
-    """Build and write ``league_managers.csv`` from ESPN mTeam cache."""
+    """Build and write ``league_managers.csv`` from ESPN mTeam cache.
+
+    Seasons outside ``seasons`` are preserved from the existing file, so a
+    scoped refresh (say, just the upcoming season) never drops league history.
+    """
     # Force ESPN path even if an older CSV exists
     seasons = list(seasons or LEAGUE_SEASONS)
     rows: list[dict] = []
@@ -127,10 +131,15 @@ def export_league_managers(seasons: list[int] | None = None) -> pd.DataFrame:
     out = pd.DataFrame(rows)
     if out.empty:
         return out
+    path = CSV_OUTPUT_DIR / LEAGUE_MANAGERS_CSV
+    if path.exists():
+        prior = pd.read_csv(path)
+        if not prior.empty:
+            kept = prior[~prior["season"].isin(out["season"].unique())]
+            out = pd.concat([kept, out], ignore_index=True)
     out = out.sort_values(["season", "team_id"]).drop_duplicates(
         subset=["season", "team_id"], keep="last"
     )
-    path = CSV_OUTPUT_DIR / LEAGUE_MANAGERS_CSV
     CSV_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     out.to_csv(path, index=False)
     return out.reset_index(drop=True)

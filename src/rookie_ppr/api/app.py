@@ -59,6 +59,7 @@ def meta() -> dict:
             "/v1/forekast/trades",
             "/v1/forekast/snapshot",
             "/v1/forekast/season",
+            "/v1/forekast/draft-grades",
         ],
     }
 
@@ -132,5 +133,16 @@ def season_board(
     """Season finish board shaped like the site's Henry ForeKast table."""
     try:
         return forekast.build_season_forekast(season)
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+
+
+@app.get("/v1/forekast/draft-grades")
+def draft_grades(
+    season: int | None = Query(None, description="Season year; default latest graded"),
+) -> dict:
+    """Draft value and roster grades, with the historical calibration inline."""
+    try:
+        return forekast.build_draft_grades(season)
     except FileNotFoundError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc

@@ -108,7 +108,15 @@ def compile_league(
 
     # ---- 3. Drafted rosters for team sim (BASE projections only) ----
     print("3/5 building drafted rosters from team-track (base) projections:")
-    rosters = build_backtest_rosters(seasons, projections_csv=LEAGUE_WF_PROJECTIONS_CSV)
+    # The target season is included when it has been drafted, so the preseason
+    # ForeKast can run off the same table. Grading below stays on completed
+    # seasons only.
+    roster_seasons = list(seasons)
+    if include_target_season and LEAGUE_TARGET_SEASON not in roster_seasons:
+        roster_seasons.append(LEAGUE_TARGET_SEASON)
+    rosters = build_backtest_rosters(
+        roster_seasons, projections_csv=LEAGUE_WF_PROJECTIONS_CSV
+    )
     roster_path = CSV_OUTPUT_DIR / LEAGUE_BACKTEST_ROSTERS_CSV
     rosters.to_csv(roster_path, index=False)
     print(f"  rows={len(rosters)} -> {roster_path}")
