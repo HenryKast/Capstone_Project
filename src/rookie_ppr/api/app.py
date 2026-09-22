@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import RedirectResponse
 
 from rookie_ppr.api import forekast
 from rookie_ppr.api.csv_store import clear_cache
@@ -31,6 +32,12 @@ app.add_middleware(
     allow_methods=["GET", "POST"],
     allow_headers=["*"],
 )
+
+
+@app.get("/", include_in_schema=False)
+def root() -> RedirectResponse:
+    """Render's primary URL has no page; send browsers to the interactive docs."""
+    return RedirectResponse(url="/docs")
 
 
 @app.get("/health")

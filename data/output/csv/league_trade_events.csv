@@ -441,3 +441,17 @@ season,as_of_week,last_week_from,gap_weeks,from_team_id,to_team_id,player_name,p
 2025,14,13,0,7,9,Rome Odunze,4431299,4431299,00-0039919,78.0,8.08,bilateral,bd4f0207,9,acquired,7,Rome Odunze traded in from Padma's Pack (8.08)
 2025,14,13,0,9,7,Amon-Ra St. Brown,4374302,4374302,00-0036963,12.0,2.02,bilateral,bd4f0207,9,traded_away,7,Amon-Ra St. Brown traded to Padma's Pack (2.02)
 2025,14,13,0,9,7,Jacoby Brissett,2578570,2578570,00-0033119,,,bilateral,bd4f0207,9,traded_away,7,Jacoby Brissett traded to Padma's Pack
+2026,2,1,0,5,4,D'Andre Swift,4259545,4259545,00-0036275,51.0,6.01,bilateral,ea5d2fbe,4,acquired,5,D'Andre Swift traded in from A heart is a heavy Burden (6.01)
+2026,2,1,0,5,4,Parker Washington,4432620,4432620,00-0038606,74.0,8.04,bilateral,ea5d2fbe,4,acquired,5,Parker Washington traded in from A heart is a heavy Burden (8.04)
+2026,2,1,0,4,5,Nico Collins,4258173,4258173,00-0036554,19.0,2.09,bilateral,ea5d2fbe,4,traded_away,5,Nico Collins traded to A heart is a heavy Burden (2.09)
+2026,2,1,0,4,5,Nico Collins,4258173,4258173,00-0036554,19.0,2.09,bilateral,ea5d2fbe,5,acquired,4,Nico Collins traded in from BowToTheGibber (2.09)
+2026,2,1,0,6,5,Rachaad White,4697815,4697815,00-0037256,106.0,11.06,bilateral,0e211318,5,acquired,6,Rachaad White traded in from McCaffrican Ladds (11.06)
+2026,2,1,0,6,5,Juwan Johnson,3929645,3929645,00-0036040,146.0,15.06,bilateral,0e211318,5,acquired,6,Juwan Johnson traded in from McCaffrican Ladds (15.06)
+2026,2,1,0,5,4,D'Andre Swift,4259545,4259545,00-0036275,51.0,6.01,bilateral,ea5d2fbe,5,traded_away,4,D'Andre Swift traded to BowToTheGibber (6.01)
+2026,2,1,0,5,4,Parker Washington,4432620,4432620,00-0038606,74.0,8.04,bilateral,ea5d2fbe,5,traded_away,4,Parker Washington traded to BowToTheGibber (8.04)
+2026,2,1,0,5,6,Quentin Johnston,4429025,4429025,00-0038544,94.0,10.04,bilateral,0e211318,5,traded_away,6,Quentin Johnston traded to McCaffrican Ladds (10.04)
+2026,2,1,0,5,6,Kaelon Black,4696044,4696044,00-0041052,,,bilateral,0e211318,5,traded_away,6,Kaelon Black traded to McCaffrican Ladds
+2026,2,1,0,5,6,Quentin Johnston,4429025,4429025,00-0038544,94.0,10.04,bilateral,0e211318,6,acquired,5,Quentin Johnston traded in from A heart is a heavy Burden (10.04)
+2026,2,1,0,5,6,Kaelon Black,4696044,4696044,00-0041052,,,bilateral,0e211318,6,acquired,5,Kaelon Black traded in from A heart is a heavy Burden
+2026,2,1,0,6,5,Rachaad White,4697815,4697815,00-0037256,106.0,11.06,bilateral,0e211318,6,traded_away,5,Rachaad White traded to A heart is a heavy Burden (11.06)
+2026,2,1,0,6,5,Juwan Johnson,3929645,3929645,00-0036040,146.0,15.06,bilateral,0e211318,6,traded_away,5,Juwan Johnson traded to A heart is a heavy Burden (15.06)
