@@ -45,7 +45,7 @@ Playoff / title odds only. Team objects use site field names:
 | `titleOddsPct` | 0–1 |
 | `simulatedWins` | Mean remaining+locked wins |
 
-Odds already bake in that week’s ESPN roster (**trades/waivers**) and a **soft injury discount** (ESPN ~0 proj + not started, non-bye). From week 1 onward they also **re-rate remaining-season player pace** from in-season usage and scoring, shrunk toward the preseason prior so a single spike cannot rewrite a projection. Injury/trade **event lists** are narrative overlays.
+Odds already bake in that week’s ESPN roster (**trades/waivers**) and a **soft injury discount** (ESPN ~0 proj + not started, non-bye). The latest as-of week uses live ESPN ``mRoster`` plus accepted-but-unprocessed ``TRADE_ACCEPT`` transactions. From week 1 onward they also **re-rate remaining-season player pace** from in-season usage and scoring, shrunk toward the preseason prior so a single spike cannot rewrite a projection. Injury/trade **event lists** are narrative overlays.
 
 ### `GET /v1/forekast/injuries?season=&week=&exact=`
 

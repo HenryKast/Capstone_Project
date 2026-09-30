@@ -3,8 +3,9 @@
 For each as-of week W:
   * lock actual H2H results for weeks 1..W
   * rebuild remaining-season strength from that week's ESPN roster
-    (trades/waivers show up as roster membership; soft injury discount when
-    ESPN projects ~0 and the player is not started, excluding NFL bye weeks)
+    (the latest as-of week uses live mRoster plus accepted-but-unprocessed
+    ESPN trades; soft injury discount when ESPN projects ~0 and the player
+    is not started, excluding NFL bye weeks)
   * update remaining-week player pace from in-season usage and scoring, shrunk
     toward the preseason prior so one spike cannot re-rate a player
   * Monte Carlo the rest of the regular season + playoff bracket
@@ -36,6 +37,7 @@ from rookie_ppr.league.config import (
     LEAGUE_TEAMS_CSV,
     MODELED_POSITIONS,
 )
+from rookie_ppr.league.pending_trades import overlay_latest_week_rosters
 from rookie_ppr.league.in_season import (
     apply_in_season_update,
     load_rates_for_season,
@@ -391,6 +393,17 @@ def run_weekly_odds(
         # Only weeks that have been played carry information; an upcoming
         # season stops at the preseason (week 0) view.
         last_week = min(reg_weeks, completed_weeks(matchups, season, reg_weeks))
+        if season == LEAGUE_TARGET_SEASON and last_week > 0:
+            league_rosters, overlay = overlay_latest_week_rosters(
+                league_rosters, season=season, week=last_week
+            )
+            extra = (
+                f"live ESPN roster + {overlay['pending_moves']} accepted pending "
+                f"trade item(s) stamped as week {last_week}"
+            )
+            if overlay.get("error"):
+                extra += f" ({overlay['error']})"
+            print(f"  overlay {season}: {extra}")
         # Nothing has kicked off yet, so week 0 is the league as it stands right
         # now rather than a draft-day retrospective, and it should track waiver
         # and trade activity. Once week 1 is in the books it reverts to meaning
