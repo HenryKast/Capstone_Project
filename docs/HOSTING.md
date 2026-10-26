@@ -130,7 +130,8 @@ ESPN responses are cached on disk, so without it you re-read last week's
 rosters and scores.
 
 `refresh_forekast` picks up the new week on its own. It simulates through the
-newest week that has actually been played. Remaining-season strength for that
+newest week that has actually been played, using ESPN live scores when the
+current week is not marked final yet. Remaining-season strength for that
 latest week uses live ESPN rosters and treats ESPN ``TRADE_ACCEPT`` rows that
 have not processed yet as already completed. Remaining-week player
 projections also update from in-season usage (targets, carries, dropbacks) and

@@ -215,22 +215,89 @@ def build_teams(seasons: list[int], *, force: bool = False) -> pd.DataFrame:
 # ---------------------------------------------------------------- matchups
 
 
+def _side_points(side: dict | None) -> float | None:
+    """Official total, else live ESPN scoring if the week is not final yet."""
+    if not side:
+        return None
+    official = side.get("totalPoints")
+    try:
+        official_f = float(official) if official is not None else None
+    except (TypeError, ValueError):
+        official_f = None
+    if official_f is not None and official_f > 0:
+        return official_f
+    live = side.get("totalPointsLive")
+    try:
+        live_f = float(live) if live is not None else None
+    except (TypeError, ValueError):
+        live_f = None
+    if live_f is not None and live_f > 0:
+        return live_f
+    period = side.get("pointsByScoringPeriod") or {}
+    if isinstance(period, dict) and period:
+        total = 0.0
+        any_val = False
+        for value in period.values():
+            if value is None:
+                continue
+            total += float(value)
+            any_val = True
+        if any_val:
+            return total
+    return official_f
+
+
+def _matchup_key(game: dict) -> tuple[int | None, int | None, int | None]:
+    week = game.get("matchupPeriodId")
+    home = (game.get("home") or {}).get("teamId")
+    away = (game.get("away") or {}).get("teamId")
+    return (
+        int(week) if week is not None else None,
+        int(home) if home is not None else None,
+        int(away) if away is not None else None,
+    )
+
+
+def _merge_live_side(base: dict, live: dict) -> dict:
+    if not live:
+        return base
+    out = dict(base)
+    for key in ("totalPoints", "totalPointsLive", "pointsByScoringPeriod", "adjustment", "adjustmentReason"):
+        if live.get(key) is not None:
+            out[key] = live.get(key)
+    return out
+
+
 def build_matchups(seasons: list[int], *, force: bool = False) -> pd.DataFrame:
     rows: list[dict] = []
     for season in seasons:
         node = fetch_view(season, ["mMatchupScore"], force=force)
+        live_by_key: dict[tuple[int | None, int | None, int | None], dict] = {}
+        status = node.get("status") or {}
+        current = status.get("currentMatchupPeriod") or node.get("scoringPeriodId")
+        if current:
+            live_node = fetch_view(
+                season,
+                ["mScoreboard", "mMatchupScore"],
+                scoring_period=int(current),
+                matchup_period=int(current),
+                force=force,
+            )
+            for live_game in live_node.get("schedule") or []:
+                live_by_key[_matchup_key(live_game)] = live_game
         for game in node.get("schedule") or []:
             week = game.get("matchupPeriodId")
             tier = game.get("playoffTierType")
-            home = game.get("home") or {}
-            away = game.get("away") or {}
+            live_game = live_by_key.get(_matchup_key(game)) or {}
+            home = _merge_live_side(game.get("home") or {}, live_game.get("home") or {})
+            away = _merge_live_side(game.get("away") or {}, live_game.get("away") or {})
             # Playoff byes come back with only one side populated.
             sides = [(home, away, True), (away, home, False)]
             for side, other, is_home in sides:
                 if not side:
                     continue
-                points = side.get("totalPoints")
-                opp_points = other.get("totalPoints") if other else None
+                points = _side_points(side)
+                opp_points = _side_points(other) if other else None
                 if not other:
                     result = "BYE"
                 elif points is None or opp_points is None:
