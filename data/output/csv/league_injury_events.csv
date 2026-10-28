@@ -284,6 +284,7 @@ season,team_id,as_of_week,end_week,n_weeks,player_name,overall_pick,pick_label,k
 2026,3,7,14,8,Terry McLaurin,54.0,6.04,out_3plus,Terry McLaurin out 8 weeks (W7-W14) (6.04)
 2026,6,7,14,8,Juwan Johnson,146.0,15.06,out_for_season,Juwan Johnson out for season (15.06)
 2026,8,7,14,8,Jalen Hurts,63.0,7.03,out_for_season,Jalen Hurts out for season (7.03)
-2026,10,7,14,8,Harold Fannin Jr.,67.0,7.07,out_3plus,Harold Fannin Jr. out 8 weeks (W7-W14) (7.07)
+2026,5,8,14,7,Woody Marks,123.0,13.03,out_3plus,Woody Marks out 7 weeks (W8-W14) (13.03)
+2026,5,8,14,7,Kyler Murray,134.0,14.04,out_3plus,Kyler Murray out 7 weeks (W8-W14) (14.04)
+2026,5,8,14,7,Emanuel Wilson,,,out_for_season,Emanuel Wilson out for season
 2026,1,12,14,3,Davante Adams,52.0,6.02,out_3plus,Davante Adams out 3 weeks (W12-W14) (6.02)
-2026,5,12,14,3,Emanuel Wilson,,,out_3plus,Emanuel Wilson out 3 weeks (W12-W14)
